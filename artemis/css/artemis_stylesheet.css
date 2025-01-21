@@ -2,13 +2,16 @@ body {
     overflow-x: hidden;
 }
 
+a:hover {
+    text-decoration: none;
+}
 
 #openBtn {
     position: fixed;
     bottom: 20px;
     right: 20px;
     padding: 10px 20px;
-    background-color: #245c6d;
+    background-color: #a69837 !important;
     color: white;
     border: none;
     cursor: pointer;
@@ -25,7 +28,7 @@ body {
     right: 0;
     height: 75%;
     width: 35%;
-    background: linear-gradient(#237d9e, #8fbfd1);
+    background: linear-gradient(#a69837, #d2c047);
     color: #fff;
     /* Text color for contrast */
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
@@ -80,17 +83,6 @@ body {
     letter-spacing: 0.83px;
 }
 
-.tab:hover {
-    border-bottom: 3px solid #FFF !important;
-}
-
-.tab.active {
-    border-radius: 0px;
-    color: #FFF;
-    background-color: transparent;
-    border-bottom: 3px solid #FFF !important;
-    text-decoration: none;
-}
 #closeBtn {
     background-color: red;
     color: white;
@@ -110,6 +102,20 @@ body {
 .drawer-items {
     font-size: 24px;
     margin-bottom: 10px;
+}
+
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none !important;
+    border: none;
+}
+
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: transparent !important;
 }
 
 /* Mobile Responsive */
@@ -191,6 +197,20 @@ body {
     top: 0px;
 }
 
+
+.helth-check {
+    border: 3px dotted #d5d5d5;
+    margin-block: 65px;
+    padding: 35px;
+    text-align: center;
+}
+
+.xmx {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+
 #swipeArea {
     width: 138px;
     height: 100%;
@@ -199,19 +219,11 @@ body {
     z-index: 1;
 }
 
-.helth-check {
-    border: 3px dotted #d5d5d5;
-    margin-block: 65px;
-    padding: 35px;
-    text-align: center;
-    padding-left: 64px;
-}
-
 #sidebar {
     width: 0;
     position: fixed;
     height: 100%;
-    background-color: #245c6d;
+    background-color: #a69837;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -250,8 +262,8 @@ body {
 
 .topbar {
     z-index: 99;
-    background: white;
-    color: #245c6d;
+    background: #a69837;
+    color: white;
     font-size: 16px;
     position: fixed;
     height: 63px;
@@ -262,7 +274,7 @@ body {
 }
 
 .fa {
-    font-size: 18px !important;
+    font-size: 19px !important;
     margin-block: 5px;
 }
 
@@ -284,26 +296,24 @@ body {
     padding-right: 1rem;
     padding-left: 1rem;
     font-size: 14px;
-    color: #fff;
+    color: #4e4949;
     font-weight: 600;
 }
 
 .navbar {
     padding-inline: 126px;
-    margin-top: 68px;
-    background: #328090;
-    margin-bottom: -4px;
+    margin-top: 54px;
 }
 
 .slider {
-    background-image: url(../img/aster-hos.webp);
+    background-image: url(../img/artmis-hos.jpg);
     height: 438px;
     background-size: 100% 121%;
 }
 
 /* cardio dr */
 .card-img-top1 {
-    background-image: url(../assets/Cardiology/Dr.\ Rajasekhar\ Varma.png);
+    background-image: url(../assets/Cardiology/Dr.\ Akhil\ Govil.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 13px;
@@ -315,7 +325,7 @@ body {
 }
 
 .card-img-top2 {
-    background-image: url(../assets/Cardiology/Dr.\ Edwin\ Francis.png);
+    background-image: url(../assets/Cardiology/Dr.\ Balbir\ Kalra.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -325,7 +335,7 @@ body {
 }
 
 .card-img-top3 {
-    background-image: url(../assets/Cardiology/Dr.\ Rajasekhar\ Varma.png);
+    background-image: url(../assets/Cardiology/Dr.\ Kuldeep\ Arora.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -335,18 +345,7 @@ body {
 }
 
 .card-img-top4 {
-    background-image: url(../assets/Cardiology/Dr.\ Sajan\ Koshy.png);
-    height: 207.53px;
-    background-size: 100% 100%;
-    border-radius: 6px 6px 0px 0px;
-    margin-inline: 11px;
-    margin-top: 11px;
-
-}
-
-
-.card-img-top5 {
-    background-image: url(../assets/Cardiology/Dr.Manoj\ P\ Nair.png);
+    background-image: url(../assets/Cardiology/Dr.\ Sushant\ Srivastava.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -360,7 +359,7 @@ body {
 /* end cardio dr */
 /*neuro*/
 .card-img-top8 {
-    background-image: url(../assets/Neurology/Dr.\ Anup\ P\ Nair.png);
+    background-image: url(../assets/Neurology/Dr.\ Aditya\ Gupta.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -369,7 +368,7 @@ body {
 }
 
 .card-img-top9 {
-    background-image: url(../assets/Neurology/Dr.\ Asha\ Kishore.png);
+    background-image: url(../assets/Neurology/Dr.\ Pawan\ Goyal.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -378,7 +377,7 @@ body {
 }
 
 .card-img-top10 {
-    background-image: url(../assets/Neurology/Dr.\ Davidson\ Devasia.png);
+    background-image: url(../assets/Neurology/Dr.\ SK\ Rajan.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -387,7 +386,7 @@ body {
 }
 
 .card-img-top11 {
-    background-image: url(../assets/Neurology/Dr.\ Dilip\ Panikar.png);
+    background-image: url(../assets/Neurology/Dr.\ Vipul\ Gupta.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -396,7 +395,7 @@ body {
 }
 
 .card-img-top12 {
-    background-image: url(../assets/Neurology/Dr.\ Shyam\ Sundar\ S.png);
+    background-image: url(../assets/Neurology/Sumit\ Singh.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -409,7 +408,7 @@ body {
 /*neuro*/
 /*Orthopedic*/
 .card-img-top13 {
-    background-image: url(../assets/ORTHOPAEDIC/Dr.\ Ananthakrishna\ Bhat\ V.png);
+    background-image: url(../assets/ORTHOPAEDIC/Dr.\ Hitesh\ Garg.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -418,7 +417,25 @@ body {
 }
 
 .card-img-top14 {
-    background-image: url(../assets/ORTHOPAEDIC/Dr.\ Joe\ Davis.png);
+    background-image: url(../assets/ORTHOPAEDIC/Dr.\ Ramkinkar\ Jha.png);
+    height: 207.53px;
+    background-size: 100% 100%;
+    border-radius: 6px 6px 0px 0px;
+    margin-inline: 11px;
+    margin-top: 11px;
+}
+
+.card-img-top15 {
+    background-image: url(../assets/ORTHOPAEDIC/Dr.\ Ravi\ Sahota.png);
+    height: 207.53px;
+    background-size: 100% 100%;
+    border-radius: 6px 6px 0px 0px;
+    margin-inline: 11px;
+    margin-top: 11px;
+}
+
+.card-img-top16 {
+    background-image: url(../assets/ORTHOPAEDIC/Dr.\ Sanjay\ Sarup.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -434,7 +451,7 @@ body {
 
 /*end ortho */
 .card-img-top23 {
-    background-image: url(../assets/ONCOLOGY/Dr.\ Arun\ R\ Warrier.png);
+    background-image: url(../assets/ONCOLOGY/Dr.\ Hari\ Goyal.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -443,7 +460,7 @@ body {
 }
 
 .card-img-top24 {
-    background-image: url(../assets/ONCOLOGY/Dr.\ Durgapoorna.png);
+    background-image: url(../assets/ONCOLOGY/Dr.\ Lalit\ Kumar.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -452,7 +469,7 @@ body {
 }
 
 .card-img-top25 {
-    background-image: url(../assets/ONCOLOGY/Dr.\ Jem\ Kalathil.png);
+    background-image: url(../assets/ONCOLOGY/Dr.\ Parveen\ Yadav.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -461,16 +478,7 @@ body {
 }
 
 .card-img-top26 {
-    background-image: url(../assets/ONCOLOGY/Dr.\ Ramaswamy\ N\ V.png);
-    height: 207.53px;
-    background-size: 100% 100%;
-    border-radius: 6px 6px 0px 0px;
-    margin-inline: 11px;
-    margin-top: 11px;
-}
-
-.card-img-top27 {
-    background-image: url(../assets/ONCOLOGY/Dr.\ Subin\ Sugath.png);
+    background-image: url(../assets/ONCOLOGY/Dr.\ Subodh\ Chandra\ Pande.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -483,7 +491,7 @@ body {
 
 
 .card-img-top39 {
-    background-image: url(../assets/Kidney/Dr.\ Bipi\ PK.png);
+    background-image: url(../assets/Kidney/Dr.\ Giriraj\ Bora.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -494,7 +502,7 @@ body {
 
 
 .card-img-top40 {
-    background-image: url(../assets/Kidney/Dr.\ Geetha\ Mammayil.png);
+    background-image: url(../assets/Kidney/Dr.\ Harsha\ Jauhari.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -504,27 +512,7 @@ body {
 
 
 .card-img-top41 {
-    background-image: url(../assets/Kidney/Dr.\ Kishore\ T.A.png);
-    height: 207.53px;
-    background-size: 100% 100%;
-    border-radius: 6px 6px 0px 0px;
-    margin-inline: 11px;
-    margin-top: 11px;
-}
-
-.card-img-top42 {
-    background-image: url(../assets/Kidney/Dr.\ Mathew\ Jacob.png);
-    height: 207.53px;
-    background-size: 100% 100%;
-    border-radius: 6px 6px 0px 0px;
-    margin-inline: 11px;
-    margin-top: 11px;
-}
-
-
-
-.card-img-top44 {
-    background-image: url(../assets/Kidney/Dr.\ V.\ Narayanan\ Unni.png);
+    background-image: url(../assets/Kidney/Dr.\ Sandeep\ Harkar.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -658,18 +646,22 @@ body {
 .dr_btn {
     height: 43px;
     border-radius: 10px;
-    background: #245c6d;
+    background: #a69837;
     border: none;
     color: white;
     padding: 8px 26px 8px 26px;
     margin-top: 4px;
     width: 100%;
-    font-size: 15px;
+    font-size: 16px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
 }
 
 .banner-bn {
-    background: #245c6d;
+    background: #a69837;
     height: 163px;
     color: white;
     font-size: 25px;
@@ -679,12 +671,16 @@ body {
 .btn-bnnr {
     border-radius: 15px;
     background: #fff;
-    color: #245c6d;
+    color: #a69837;
     padding: 12px 24px 12px 24px;
     cursor: pointer;
     border: none;
     font-weight: 500;
-    margin-top: -11px;
+    margin-top: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: end;
 }
 
 .dr_btn2 {
@@ -693,18 +689,13 @@ body {
     border-radius: 10px;
     background: #ffffff;
     border: none;
-    color: #245c6d;
-    padding: 8px 14px;
+    color: #a69837;
+    padding: 8px 26px 8px 26px;
     margin-top: 4px;
     width: 100%;
-    font-size: 14px;
-    /* margin-bottom: -11px; */
+    font-size: 16px;
+    margin-bottom: -11px;
     border: 1px solid;
-    display: flex;
-    align-items: baseline;
-    gap: 8px;
-    justify-content: center;
-    font-size: 15px;
 }
 
 .card-title {
@@ -737,14 +728,14 @@ body {
 }
 
 ul {
-    list-style-type: disc !important;
+    list-style-type: none;
     text-align: left;
 }
 
 .btn-primary2 {
     color: #fff !important;
-    background-color: #245c6d !important;
-    border-color: #245c6d !important;
+    background-color: #a69837 !important;
+    border-color: #a69837 !important;
     font-size: 14px;
     height: 55px;
     margin-bottom: 10px;
@@ -758,8 +749,8 @@ ul {
 
 .btn-primary {
     color: #fff !important;
-    background-color: #245c6d !important;
-    border-color: #245c6d !important;
+    background-color: #a69837 !important;
+    border-color: #a69837 !important;
     font-size: 9px;
     height: 51px;
     margin-bottom: 10px;
@@ -769,9 +760,29 @@ ul {
     font-size: 15px;
 }
 
+.tab:hover {
+    border-bottom: 3px solid #FFF !important;
+}
+
+.tab.active {
+    border-radius: 0px;
+    color: #FFF;
+    background-color: transparent;
+    border-bottom: 3px solid #FFF !important;
+    text-decoration: none;
+}
+
+.btn:hover {
+    text-decoration: none !important;
+}
+
+.btn-primary:hover {
+    text-decoration: none !important;
+}
+
 .btn-info {
     color: #fff;
-    background-color: #245c6d;
+    background-color: #a69837;
     left: 0px;
     position: relative;
     height: 89px;
@@ -787,8 +798,8 @@ ul {
 }
 
 .btn-info:hover {
-    background-color: #245c6d !important;
-    border-color: #245c6d !important;
+    background-color: #a69837 !important;
+    border-color: #a69837 !important;
 
 }
 
@@ -797,7 +808,6 @@ ul {
     color: rgb(77, 77, 77);
     margin-bottom: 2px;
     margin-top: 27px;
-    font-weight: 300;
 }
 
 .Patient_Services2 {
@@ -805,7 +815,6 @@ ul {
     color: rgb(77, 77, 77);
     margin-bottom: -7px;
     margin-top: 11px;
-    font-weight: 400;
 }
 
 #myBtn {
@@ -816,7 +825,7 @@ ul {
     font-size: 19px;
     border: none;
     outline: none;
-    background-color: #245c6d;
+    background-color: #a69837;
     color: white;
     cursor: pointer;
     padding: 6px;
@@ -831,7 +840,7 @@ ul {
 
 .heading {
     font-size: 32px;
-    color: #245c6d;
+    color: #a69837;
     text-align: center;
     padding-bottom: 18px;
     font-weight: 500;
@@ -861,7 +870,7 @@ body {
 }
 
 .footer {
-    background-color: #0a1f29;
+    background-color: #706722;
     padding: 50px 0px 41px;
     margin-top: 0px;
     color: white;
@@ -934,7 +943,7 @@ table {
     font-size: 9px;
     border-radius: 4px;
     border: none;
-    background: #245c6d;
+    background: #a69837;
     color: white;
     text-align: left;
     padding-left: 23px;
@@ -954,7 +963,7 @@ table {
     position: relative;
     top: 40px;
     left: 31px;
-    color: #245c6d;
+    color: #a69837;
     font-size: 31px;
 }
 
@@ -974,7 +983,7 @@ table {
 .sticky-element {
     position: sticky;
     top: 61px;
-    background-color: #245c6d !important;
+    background-color: #a69837;
     padding: 10px;
     width: 100%;
     text-align: center;
@@ -987,11 +996,10 @@ table {
     margin-top: 15px;
     text-align: justify;
     padding-inline: 44px;
-    font-weight: 300;
 }
 
 .sidebar-top {
-    background-color: #245c6d;
+    background-color: #a69837;
     padding: 8px;
     position: relative;
     top: -60px;
@@ -1005,7 +1013,7 @@ table {
 }
 
 .sidebar_end_span {
-    color: #245c6d;
+    color: #a69837;
 
 }
 
@@ -1016,20 +1024,19 @@ table {
 .new_mr {
     margin-left: 12px;
     margin-right: 16px;
-    background-color: #245c6d !important;
+    background: #a69837;
 
 }
 
 .sidebar-h1 {
     font-size: 52px;
     margin-top: 16px;
-    color: #245c6d;
+    color: #a69837;
 }
 
 .footer-links2 {
     line-height: 30px;
     color: white !important;
-
 }
 
 .footer-ph {
@@ -1055,7 +1062,7 @@ table {
     font-size: 34px;
     font-weight: 600;
     margin-bottom: 14px;
-    color: #245c6d;
+    color: #a69837;
     cursor: pointer;
     border: 1px solid;
 }
@@ -1064,7 +1071,7 @@ table {
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show>.nav-link {
-    color: #fff;
+    color: #a69837;
 }
 
 .footer-links {
@@ -1074,7 +1081,7 @@ table {
 .sidebar-span {
     font-size: 23px;
     font-weight: 600;
-    color: #245c6d;
+    color: #a69837;
 }
 
 #lst_lg_box {
@@ -1096,7 +1103,7 @@ table {
 .service-bottom {}
 
 .background-div {
-    background-image: url(../img/aster-medcity-kochi-logo.png);
+    background-image: url(../img/sidebar_logo.png);
     background-position: center center;
     height: 151px;
     display: flex;
@@ -1130,8 +1137,7 @@ table {
 .bnnr-row {
     margin-inline: 12px;
     align-items: center;
-    margin-top: 36px;
-    padding-top: 37px;
+    margin-top: 37px;
 }
 
 .marz {
@@ -1165,13 +1171,13 @@ table {
 }
 
 .card-title-new {
-    color: #245c6d;
+    color: #a69837;
     margin-block: 20px;
     font-size: 23px;
 }
 
 .text-muted {
-    color: #245c6d !important;
+    color: #a69837 !important;
 }
 
 .card-blog {
@@ -1180,7 +1186,21 @@ table {
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #42a895;
+    color: #a69837;
+}
+
+.style-helth {
+    padding: 36px;
+    box-shadow: 0px 0px 2px 0px #d1d1d1;
+    border-radius: 7px;
+    background: #ffffff;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 32px;
+    border: 1px solid #897d2c;
+    position: relative;
+    left: -47px;
+    padding-left: 139px;
 }
 
 li {
@@ -1192,8 +1212,8 @@ li {
     color: #454545;
     padding-inline: 11px;
     text-align: left;
-    color: #ffffff !important;
-    list-style-type: none !important;
+    color: #7f7429 !important;
+    list-style-type: disc;
 
 }
 
@@ -1209,40 +1229,13 @@ h1 {
 
 }
 
-.style-helth {
-    padding: 35px;
-    box-shadow: 0px 0px 2px 0px #d1d1d1;
-    border-radius: 7px;
-    background: #c5f4f3;
-    color: #006f6c;
-    font-weight: 500;
-    margin-bottom: 32px;
-}
-
-.style-helth:hover {
-    border: 1px solid #c5f4f3;
-    background: none;
-    box-shadow: 0px 0px 6px 1px #c5f4f3b8;
-}
-
 .font_set {
     font-size: 32px;
-    color: #006f6c;
+    color: #706621;
     text-align: left;
 }
 
 @media screen and (max-width: 800px) {
-    .style-helth {
-        padding: 35px;
-        box-shadow: 0px 0px 2px 0px #d1d1d1;
-        border-radius: 7px;
-        font-weight: 500;
-        margin-bottom: 14px;
-        position: relative;
-        left: -31px !important;
-        overflow: hidden;
-    }
-
     li {
 
         font-size: 12px !important;
@@ -1263,6 +1256,14 @@ h1 {
         position: relative;
         left: -23px;
         overflow: hidden;
+    }
+
+    .helth-check {
+        margin-block: 65px;
+        text-align: center;
+        padding: 0px !important;
+        border: none !important;
+        width: 85%;
     }
 
     .footer_col2_font {
@@ -1371,7 +1372,7 @@ h1 {
         font-size: 13px;
         font-weight: 600;
         margin-bottom: 14px;
-        color: #245c6d;
+        color: #a69837;
         border: none;
         border: 1px solid;
     }
@@ -1420,7 +1421,7 @@ h1 {
     .footer-links2 {
         margin-left: 163px;
         margin-top: -190px;
-        font-size: 17px !important;
+        font-size: 26px !important;
     }
 
     .footer-links {
@@ -1448,12 +1449,11 @@ h1 {
     }
 
     .background-div {
-        background-size: 100% 100%;
-        height: 67px !important;
-        margin-top: 14px;
+        height: 106px;
+        margin-top: 7px;
         margin-bottom: 46px;
-        width: 120px !important;
-        margin-left: -10px;
+        width: 187px;
+        margin-left: -44px;
     }
 
     .navbar-toggler {
@@ -1483,7 +1483,7 @@ h1 {
 
     .btn-primary2 {
         color: #fff !important;
-        background-color: #245c6d !important;
+        background-color: #a69837 !important;
         font-size: 16px;
         height: 48px !important;
         margin-bottom: 10px;
@@ -1492,7 +1492,7 @@ h1 {
 
     .btn-primary {
         color: #fff !important;
-        background-color: #245c6d !important;
+        background-color: #a69837 !important;
         font-size: 9px;
         height: 34px;
         margin-bottom: 10px;
@@ -1500,6 +1500,8 @@ h1 {
         margin: 2px;
         font-weight: 600;
     }
+
+
 
     .text-bnnr {
         color: white;
@@ -1690,22 +1692,8 @@ h1 {
 
     .navbar {
         padding-inline: 27px !important;
-        height: 69px;
+        height: 49px;
         top: 19px !important;
-        margin-bottom: -27px;
-    }
-
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 1rem;
-        padding-left: 1rem;
-        font-size: 14px;
-        color: #328090 !important;
-        font-weight: 600;
-    }
-
-    .navbar-light .navbar-toggler {
-        color: rgb(223 29 29 / 50%);
-        border-color: rgb(255 255 255 / 77%);
     }
 
     .navbar-nav {
@@ -1718,7 +1706,7 @@ h1 {
     .navbar-light .navbar-nav .nav-link.show,
     .navbar-light .navbar-nav .show>.nav-link {
         color: rgb(255 255 255 / 90%);
-        background: #245c6d;
+        background: #a69837;
         width: 100% !important;
     }
 
