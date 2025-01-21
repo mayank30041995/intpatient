@@ -1468,10 +1468,11 @@ h1 {
     }
 
     .logo-x {
-        height: 61px;
+        height: 30px;
         position: relative;
-        top: -13px;
-        width: 138px;
+        top: -3px;
+            width: 15px;
+            object-fit: contain;
     }
 
     .sidebar-logo {
@@ -1686,7 +1687,7 @@ h1 {
     .slider {
         height: 389px;
         background-size: 120% 100% !important;
-        margin-top: 42px;
+        margin-top: 20px;
         z-index: 0;
     }
 
