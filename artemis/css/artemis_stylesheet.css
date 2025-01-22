@@ -63,6 +63,7 @@ a:hover {
     color: #2d9f28;
     font-weight: 600;
     border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .drawer-items button:active {
@@ -130,8 +131,8 @@ a:hover {
         font-size: 14px;
         background-color: red;
         color: white;
-        top: 50px;
-        right: 45px;
+        top: -100%;
+            right: 5px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         border-radius: 23px;
         padding: 7px 10px 10px 10px;
@@ -1471,7 +1472,7 @@ h1 {
         height: 30px;
         position: relative;
         top: -3px;
-            width: 15px;
+        width: 15px;
             object-fit: contain;
     }
 
@@ -1687,7 +1688,7 @@ h1 {
     .slider {
         height: 389px;
         background-size: 120% 100% !important;
-        margin-top: 20px;
+        margin-top: 30px;
         z-index: 0;
     }
 

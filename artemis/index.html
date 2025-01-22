@@ -87,7 +87,7 @@
       <!-- ... -->
       <nav class="navbar navbar-expand-lg navbar-light ">
         <a class="navbar-brand" href="#" aria-label="alpha">
-          <img src="img/artimis-logo.png" class="logo-x" alt="HTML5 Icon"
+          <img src="img/artimis-logo.png"  alt="HTML5 Icon"
             width="140px" height="100%">
 
         </a>
@@ -1909,7 +1909,7 @@ function stickyFunction() {
       <script>
 
     function openDrawer() {
-      setTimeout(function () {
+      setInterval(function () {
         // Get the element by its ID
         const element = document.getElementById("drawer");
 
@@ -1917,7 +1917,7 @@ function stickyFunction() {
         if (element) {
           document.getElementById('drawer').style.bottom = '0'; // Change to 'block' or any other desired display type
         }
-      }, 5000);
+      }, 10000);
     }
     function callevent() {
       setTimeout(openNav, 10000);

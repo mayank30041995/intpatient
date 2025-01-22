@@ -91,6 +91,7 @@ body {
     border-bottom: 3px solid #FFF !important;
     text-decoration: none;
 }
+
 #closeBtn {
     background-color: red;
     color: white;
@@ -1474,6 +1475,12 @@ h1 {
         width: 138px;
     }
 
+        .logo-y {
+            height: 40px;
+            position: relative;
+            top: -8px;
+            width: 40px;
+        }
     .sidebar-logo {
         margin-top: -36px;
         text-align: center;
