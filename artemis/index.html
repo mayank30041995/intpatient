@@ -1895,10 +1895,13 @@ function stickyFunction() {
 
 
         document.body.addEventListener('click', (event) => {
-          // Close drawer if the click is outside the drawer or open button
-          // if (!drawer.contains(event.target) && !openBtn.contains(event.target)) {
-          //   document.getElementById('drawer').style.bottom = '-100%';
-          // }
+          const mobileBreakpoint = 768;
+
+         if (window.innerWidth >= mobileBreakpoint) {
+          if (!drawer.contains(event.target) && !openBtn.contains(event.target)) {
+            document.getElementById('drawer').style.bottom = '-100%';
+          }
+         }     
         });
 
         // Prevent clicks inside the drawer or open button from triggering body click listener

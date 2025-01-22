@@ -135,15 +135,17 @@
   <!-- Drawer -->
 
   <div id="drawer" class="drawer">
-    <div id="imasCircle">IMAS</div>
+    <div id="imasCircle"> <img src="img/mobile logo.webp" class="logo-x"
+            alt="HTML5 Icon"
+            width="40px" height="80%" style="margin-bottom: 20px;object-fit: contain;"></div>
     <div class="drawer-content">
       <button id="closeBtn" type="button" class="close" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
 
       <div class="drawer-banner">
-        <h2>International Patient Care</h2>
-        <p>International Support On Whatsapp</p>
+        <h2>24 × 7 Support</h2>
+        <p>On Whatsapp</p>
       </div>
       <div class="drawer-items">
         <h2>International Support On Whatsapp</h2>
@@ -2487,7 +2489,7 @@
     }
 
     function openDrawer() {
-      setTimeout(function () {
+      setInterval(function () {
         // Get the element by its ID
         const element = document.getElementById("drawer");
 
@@ -2495,7 +2497,7 @@
         if (element) {
           document.getElementById('drawer').style.bottom = '0'; // Change to 'block' or any other desired display type
         }
-      }, 5000);
+      }, 10000);
     }
     function callevent() {
       setTimeout(openNav, 10000);
@@ -2539,10 +2541,13 @@
 
 
     document.body.addEventListener('click', (event) => {
+     const mobileBreakpoint = 768;
+
+      if (window.innerWidth >= mobileBreakpoint) {
       // Close drawer if the click is outside the drawer or open button
       if (!drawer.contains(event.target) && !openBtn.contains(event.target)) {
         document.getElementById('drawer').style.bottom = '-100%';
-      }
+      }}
     });
 
     // Prevent clicks inside the drawer or open button from triggering body click listener

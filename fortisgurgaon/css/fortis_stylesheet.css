@@ -1052,8 +1052,8 @@
                     font-size: 14px;
                     background-color: red;
                     color: white;
-                    top: 50px;
-                    right: 45px;
+                    top: -110%;
+                      right: 5px;
                     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
                     border-radius: 23px;
                     padding: 7px 10px 10px 10px;
@@ -1142,7 +1142,7 @@
 
     .img-mobile {
       display: block !important;
-      width: 446px !important;
+      width: 350px !important;
       height: 302px !important;
       margin-left: -33px;
     }
