@@ -58,6 +58,28 @@
     </div>
   </nav>
 
+  <button id="openBtn">International Patient Care</button>
+
+  <div id="drawer" class="drawer">
+    <div id="imasCircle">IMAS</div>
+    <div class="drawer-content">
+      <button id="closeBtn" type="button" class="close" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+
+      <div class="drawer-banner">
+        <h2>International Patient Care</h2>
+        <p>International Support On Whatsapp</p>
+      </div>
+      <div class="drawer-items">
+        <h2>International Support On Whatsapp</h2>
+        <button class="btn"><i class="fa fa-whatsapp fa-btn"
+            style="font-size:20px;"></i>
+          Connect on Whatsapp</button>
+      </div>
+    </div>
+  </div>
+
   <!--end navbar-->
   <!--slider strat-->
   <div class="container-fluid slider-all">
@@ -1186,8 +1208,121 @@
       </div>
     </div>
   </div>
+
+
+  <script>
+
+    function openDrawer() {
+      setTimeout(function () {
+        // Get the element by its ID
+        const element = document.getElementById("drawer");
+
+        // Check if the element exists
+        if (element) {
+          document.getElementById('drawer').style.bottom = '0'; // Change to 'block' or any other desired display type
+        }
+      }, 5000);
+    }
+    function callevent() {
+      setTimeout(openNav, 10000);
+
+    }
+    callevent();
+    openDrawer()
+
+    /*
+    function handleClick() {
+      callevent();
+    }
+    callevent();
+    myButton.addEventListener('click', handleClick); */
+
+    // Call the function initially
+
+    // Set up the interval to call the function every 30 seconds (30000 milliseconds)
+
+
+
+
+
+    // Counter to keep track of the number of clicks
+    let clickCount = 0;
+
+    // Function to be executed on the first click
+    function onFirstClick() {
+      setTimeout(openNav, 15000); // Execute openNav after 10 seconds
+    }
+
+    // Function to be executed on the second click
+    function onSecondClick() {
+      setTimeout(openNav, 30000); // Execute openNav after 150 seconds (2.5 minutes)
+    }
+
+    // Function to be executed on the third click
+    function onThirdClick() {
+      setTimeout(openNav, 60000); // Execute openNav after 150 seconds (2.5 minutes)
+
+    }
+
+    // Function to handle button clicks
+    function handleButtonClick() {
+      clickCount++;
+
+      if (clickCount === 1) {
+        onFirstClick();
+      } else if (clickCount === 2) {
+        onSecondClick();
+      } else if (clickCount === 3) {
+        onThirdClick();
+        // Reset the click count after the third click
+        clickCount = 0;
+      }
+    }
+
+    // Attach the click event listener to the button
+    document.getElementById('sidebar').addEventListener('click', handleButtonClick);
+
+
+
+
+
+  </script>
+
+  <script>
+        const drawer = document.getElementById('drawer');
+
+        const openButton = document.getElementById('openBtn');
+
+
+        document.getElementById('openBtn').addEventListener('click', function (event) {
+          event.stopPropagation();
+        document.getElementById('drawer').style.bottom = '0';
+      });
+
+      document.getElementById('closeBtn').addEventListener('click', function () {
+        event.stopPropagation();
+        document.getElementById('drawer').style.bottom = '-100%';
+      });
+
+
+        document.body.addEventListener('click', (event) => {
+          // Close drawer if the click is outside the drawer or open button
+          if (!drawer.contains(event.target) && !openBtn.contains(event.target)) {
+            document.getElementById('drawer').style.bottom = '-100%';
+          }
+        });
+
+        // Prevent clicks inside the drawer or open button from triggering body click listener
+        drawer.addEventListener('click', (event) => {
+          event.stopPropagation(); // Prevent click inside drawer from closing it
+        });
+
+    
+
+    </script>
+  
   <!--end footer-->
-  <script defer>
+  <!-- <script defer>
     /* Start of LiveChat (www.livechat.com) code */
   
   function ipLookUp() {
@@ -1324,4 +1459,5 @@
   function setInitialCardVisibility(){};
   
   </script>
+   -->
 </body>
