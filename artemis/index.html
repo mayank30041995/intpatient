@@ -62,7 +62,8 @@
       <!-- Drawer -->
 
       <div id="drawer" class="drawer">
-        <div id="imasCircle"> <img src="img/fav-icon.webp" class="logo-x" alt="HTML5 Icon"
+        <div id="imasCircle"> <img src="img/fav-icon.webp" class="logo-x"
+            alt="HTML5 Icon"
             width="20px" height="30%"></div>
         <div class="drawer-content">
           <button id="closeBtn" type="button" class="close" aria-label="Close">
@@ -87,7 +88,7 @@
       <!-- ... -->
       <nav class="navbar navbar-expand-lg navbar-light ">
         <a class="navbar-brand" href="#" aria-label="alpha">
-          <img src="img/artimis-logo.png"  alt="HTML5 Icon"
+          <img src="img/artimis-logo.png" alt="HTML5 Icon"
             width="140px" height="100%">
 
         </a>
@@ -1895,9 +1896,9 @@ function stickyFunction() {
 
         document.body.addEventListener('click', (event) => {
           // Close drawer if the click is outside the drawer or open button
-          if (!drawer.contains(event.target) && !openBtn.contains(event.target)) {
-            document.getElementById('drawer').style.bottom = '-100%';
-          }
+          // if (!drawer.contains(event.target) && !openBtn.contains(event.target)) {
+          //   document.getElementById('drawer').style.bottom = '-100%';
+          // }
         });
 
         // Prevent clicks inside the drawer or open button from triggering body click listener
