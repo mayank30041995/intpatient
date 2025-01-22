@@ -66,6 +66,7 @@
                   color: #2d9f28;
                     font-weight: 600;
                     border-radius: 25px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
                 }
         
                 .drawer-items button:active {
@@ -1052,8 +1053,8 @@
                     font-size: 14px;
                     background-color: red;
                     color: white;
-                    top: 50px;
-                    right: 45px;
+                    top: -110%;
+                      right: 5px;
                     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
                     border-radius: 23px;
                     padding: 7px 10px 10px 10px;
@@ -1142,8 +1143,8 @@
 
     .img-mobile {
       display: block !important;
-      width: 446px !important;
-      height: 302px !important;
+      width: 350px !important;
+      height: 250px !important;
       margin-left: -33px;
     }
 
@@ -1171,6 +1172,9 @@
       display: none;
     }
 
+        .tab button {
+          font-size: 12px;
+        }
   }
 
   .hotel_btn {
