@@ -1143,7 +1143,7 @@
     .img-mobile {
       display: block !important;
       width: 350px !important;
-      height: 302px !important;
+      height: 250px !important;
       margin-left: -33px;
     }
 
@@ -1171,6 +1171,9 @@
       display: none;
     }
 
+        .tab button {
+          font-size: 12px;
+        }
   }
 
   .hotel_btn {
