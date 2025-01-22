@@ -117,16 +117,19 @@ body {
 @media (max-width: 768px) {
     #openBtn {
         bottom: 10px;
-        left: 10px;
-        font-size: 14px;
+        left: 15px;
+            font-size: 24px;
+            height: 8rem;
+            border-radius: 12px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 
     #closeBtn {
         font-size: 14px;
         background-color: red;
         color: white;
-        top: 50px;
-        right: 45px;
+        top: -104%;
+            right: 5px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         border-radius: 23px;
         padding: 7px 10px 10px 10px;
@@ -135,9 +138,9 @@ body {
     #drawer {
         height: 45%;
         width: 100%;
-        border-top-left-radius: 160px;
+        border-top-left-radius: 100px;
         /* Rounded top-left corner */
-        border-top-right-radius: 160px;
+        border-top-right-radius: 100px;
         border: 5px solid #8fbfd1;
     }
 
@@ -147,14 +150,14 @@ body {
         height: 70px;
         width: 70px;
         border-radius: 38px;
-        top: -35px;
+        top: 9px;
         left: 41%;
         background-color: #0f0f0f;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
         border: 1px solid #fff;
         text-align: center;
         padding: 21px 14px;
-        border: 2px solid #e924cb;
+        /* border: 2px solid #e924cb; */
     }
 
     .drawer-items {
@@ -1476,11 +1479,14 @@ h1 {
     }
 
         .logo-y {
-            height: 40px;
+        height: 70px;
             position: relative;
-            top: -8px;
-            width: 40px;
+        top: -21px;
+            width: 70px;
+            object-fit: contain;
+            left: -15px;
         }
+
     .sidebar-logo {
         margin-top: -36px;
         text-align: center;

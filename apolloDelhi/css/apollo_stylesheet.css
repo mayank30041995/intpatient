@@ -57,8 +57,9 @@ body {
   height: 2.8rem;
   border-radius: 2px;
   color: #2d9f28;
-    font-weight: 600;
+  font-weight: 600;
     border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .drawer-items button:active {
@@ -112,8 +113,8 @@ body {
     font-size: 14px;
     background-color: red;
     color: white;
-    top: 50px;
-    right: 45px;
+    top: -100%;
+      right: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 23px;
     padding: 7px 10px 10px 10px;
@@ -122,26 +123,32 @@ body {
   #drawer {
     height: 45%;
     width: 100%;
-    border-top-left-radius: 160px;
+    border-top-left-radius: 100px;
     /* Rounded top-left corner */
-    border-top-right-radius: 160px;
+    border-top-right-radius: 100px;
     border: 5px solid #8fbfd1;
   }
+    .drawer-icon-x {
+      object-fit: cover;
+      height: min-content;
+      position: relative;
+      top: -19px;
+    }
 
   #imasCircle {
     display: block;
     position: absolute;
     height: 70px;
-    width: 70px;
-    border-radius: 38px;
-    top: -35px;
-    left: 41%;
-    background-color: #0f0f0f;
+    width: 130px;
+      border-radius: 12px;
+      top: 9px;
+      left: 34%;
+      background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
     border: 1px solid #fff;
     text-align: center;
     padding: 21px 14px;
-    border: 2px solid #e924cb;
+    /* border: 2px solid #e924cb; */
   }
 
   .drawer-items {
@@ -154,7 +161,7 @@ body {
   }
 
   .drawer-banner {
-    margin-top: 80px;
+    margin-top: 70px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
     padding: 15px 2px 2px;
@@ -164,12 +171,12 @@ body {
   }
 
   .drawer-banner h2 {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 700;
   }
 
   .drawer-banner p {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
