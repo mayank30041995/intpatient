@@ -4,10 +4,12 @@
 }
 
 #openBtn {
+  display: grid;
   position: fixed;
   bottom: 20px;
   right: 20px;
   padding: 10px 20px;
+  justify-items: center;
   background-color: #04356f;
   color: white;
   border: none;
@@ -17,6 +19,21 @@
   font-weight: 600;
   z-index: 10;
   border-radius: 2px;
+}
+.logo-yx {
+  position: absolute;
+  width: 17%;
+  height: 13%;
+  top: 24px;
+  object-fit: contain;
+
+}
+.logo-y {
+  height: 40px;
+  position: relative;
+  width: 40px;
+  object-fit: contain;
+  left: 0px;
 }
 
 #drawer {
@@ -92,8 +109,17 @@
   border-radius: 8px;
 }
 
+
+
+
+.drawer-items {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
 #imasCircle {
-  display: none;
+  display: flex;
+      justify-content: center;
 }
 
 .drawer-items {
@@ -130,7 +156,7 @@
     border: 5px solid #8fbfd1;
   }
 
-  #imasCircle {
+  #imasCircle {    
     display: block;
     position: absolute;
     height: 70px;
@@ -229,7 +255,7 @@ p {
   width: 164px;
 }
 
-.side-msg {
+.side-msg { 
   display: flex;
   font-size: 22px;
 }
@@ -312,7 +338,7 @@ p {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #248dab;
+  background-color: #248dab; 
   color: white;
 }
 
@@ -425,11 +451,6 @@ p {
 .card-deck .card {
   margin: 0 0 1rem;
 }
-
-
-
-
-
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .card-deck .card {
@@ -1396,3 +1417,4 @@ div.desc {
   }
 
 }
+

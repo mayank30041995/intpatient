@@ -3,11 +3,13 @@
     font-display: swap;
 }
 #openBtn {
+    display: grid;
+    justify-items: center;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    padding: 10px 20px;
-    background-color: #04356f;
+    padding: 10px 50px;
+    background-color: #245c6d;
     color: white;
     border: none;
     cursor: pointer;
@@ -16,6 +18,22 @@
     font-weight: 600;
     z-index: 10;
     border-radius: 2px;
+}
+
+.logo-yx {
+    position: absolute;
+    width: 17%;
+    height: 13%;
+    top: 24px;
+    object-fit: contain;
+
+}
+.logo-y {
+    height: 40px;
+    position: relative;
+    width: 40px;
+    object-fit: contain;
+    left: 0px;
 }
 
 #drawer {
@@ -92,8 +110,10 @@
 }
 
 #imasCircle {
-    display: none;
+    display: flex;
+        justify-content: center;
 }
+
 
 .drawer-items {
     font-size: 24px;
@@ -118,6 +138,22 @@
         border-radius: 23px;
         padding: 7px 10px 10px 10px;
     }
+    
+    #imasCircle {
+        display: block;
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        border-radius: 38px;
+        top: 10px;
+        left: 41%;
+        /* background-color: #0f0f0f;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); */
+        border: none;
+        text-align: center;
+        padding: 21px 14px;
+        /* border: 2px solid #e924cb; */
+    }
 
     #drawer {
         height: 45%;
@@ -128,21 +164,7 @@
         border: 5px solid #8fbfd1;
     }
 
-    #imasCircle {
-        display: block;
-        position: absolute;
-        height: 70px;
-        width: 70px;
-        border-radius: 38px;
-        top: -35px;
-        left: 41%;
-        background-color: #0f0f0f;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-        border: 1px solid #fff;
-        text-align: center;
-        padding: 21px 14px;
-        border: 2px solid #e924cb;
-    }
+
 
     .drawer-items {
         margin-top: 20px;
@@ -653,6 +675,32 @@ li {
   
     
 }
+
+.logo-x {
+    height: 61px;
+    position: relative;
+    top: -13px;
+    width: 130px;
+}
+
+            .logo-yx {
+    height: 70px;
+    position: relative;
+    top: -21px;
+    width: 70px;
+    object-fit: contain;
+        left: -15px;
+    }
+
+            .logo-y {
+                height: 70px;
+                position: relative;
+                /* top: -21px; */
+                width: 70px;
+                object-fit: contain;
+                /* left: -15px; */
+            }
+
 
 .head-1 {
     padding-inline: 90px;color: #04356f;
