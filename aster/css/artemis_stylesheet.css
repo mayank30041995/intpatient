@@ -41,7 +41,7 @@ body {
     position: fixed;
     bottom: -100%;
     right: 0;
-    height: 75%;
+    /* height: 75%; */
     width: 35%;
     background: linear-gradient(#237d9e, #8fbfd1);
     color: #fff;
@@ -78,6 +78,7 @@ body {
     color: #2d9f28;
     font-weight: 600;
     border-radius: 25px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .drawer-items button:active {

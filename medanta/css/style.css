@@ -6,26 +6,30 @@ body {
 
 
 #openBtn {
+    display: grid;
     position: fixed;
     bottom: 20px;
     right: 20px;
     padding: 10px 20px;
     background-color: #973911;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 22px;
     letter-spacing: 0.83px;
     font-weight: 600;
     z-index: 100;
-    border-radius: 2px;
+    border-radius: 8px;
+        width: 15rem;
+        justify-items: center;
 }
 
 #drawer {
     position: fixed;
     bottom: -100%;
     right: 0;
-    height: 75%;
+    height: 65%;
     width: 35%;
     background: linear-gradient(#973911, #bb6552);
     color: #fff;
@@ -44,6 +48,12 @@ body {
     overflow-y: auto;
 }
 
+.logo-yx {
+    background: #FFF;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    object-fit: contain;
+}
 .drawer-items {
     color: #000;
     margin-top: 20px;
@@ -55,7 +65,7 @@ body {
 
 .drawer-items>h2 {
     color: #FFF;
-
+    font-size: 28px;
 }
 
 .drawer-items button {
@@ -67,7 +77,7 @@ body {
     border-radius: 2px;
     color: #2d9f28;
     font-weight: 600;
-        border-radius: 25px;
+    border-radius: 25px;
 }
 
 .drawer-items button:hover {
@@ -89,6 +99,7 @@ body {
 }
 
 .drawer-banner h2 {
+    font-size: 32px;
     letter-spacing: 0.83px;
 }
 
@@ -105,7 +116,20 @@ body {
 }
 
 #imasCircle {
-    display: none;
+    display: flex;
+        position: absolute;
+        height: 85px;
+        width: 100%;
+        border-radius: 38px;
+        /* top: -35px; */
+        /* left: 41%; */
+        /* background-color: #0f0f0f; */
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); */
+        /* border: 1px solid #fff; */
+        text-align: center;
+        padding: 21px 14px;
+        justify-content: center;
+        /* border: 2px solid #e924cb; */
 }
 
 .drawer-items {
@@ -116,9 +140,12 @@ body {
 /* Mobile Responsive */
 @media (max-width: 768px) {
     #openBtn {
+        width: 95%;
         bottom: 10px;
         left: 10px;
-        font-size: 14px;
+        font-size: 28px;
+            height: 8rem;
+            border-radius: 12px;
     }
 
     #closeBtn {
@@ -126,37 +153,22 @@ body {
         background-color: red;
         color: white;
         top: -100%;
-            right: 5px;
+        right: 5px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 50px;
+        border-radius: 50px;
             padding: 4px 9px;
     }
 
     #drawer {
         height: 45%;
         width: 100%;
-        border-top-left-radius: 160px;
+        border-top-left-radius: 100px;
         /* Rounded top-left corner */
-        border-top-right-radius: 160px;
+        border-top-right-radius: 100px;
         border: 5px solid #8fbfd1;
     }
 
-    #imasCircle {
-        display: block;
-        position: absolute;
-        height: 70px;
-        width: 70px;
-        border-radius: 38px;
-        top: -35px;
-        left: 41%;
-        background-color: #0f0f0f;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-        border: 1px solid #fff;
-        text-align: center;
-        padding: 21px 14px;
-        border: 2px solid #e924cb;
-    }
 
     .drawer-items {
         margin-top: 20px;
@@ -551,9 +563,10 @@ h1.card-title-h1 {
 
 @media (max-width:600px) {
     .tab {
-            display: flex;
+        display: flex;
             overflow: scroll;
         }
+
     .tab button {
         padding: 10px 18px;
         font-size: 13px;

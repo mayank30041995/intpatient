@@ -19,7 +19,9 @@ a:hover {
     letter-spacing: 0.83px;
     font-weight: 600;
     z-index: 10;
-    border-radius: 2px;
+    border-radius: 8px;
+        display: grid;
+        justify-items: center;
 }
 
 #drawer {
@@ -96,8 +98,17 @@ a:hover {
     border-radius: 8px;
 }
 
+.logo-y {
+    background: #FFF;
+    height: 30px;
+    width: 28px;
+    margin-bottom: 8px;
+    padding: 4px;
+    border-radius: 8px;
+}
 #imasCircle {
-    display: none;
+    display: grid;
+        justify-items: center;
 }
 
 .drawer-items {
@@ -121,10 +132,21 @@ a:hover {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+.logo-y {
+        background: #FFF;
+        height: 30px;
+        width: 28px;
+        margin-bottom: 8px;
+        padding: 4px;
+    }
     #openBtn {
         bottom: 10px;
         left: 10px;
-        font-size: 14px;
+        font-size: 23px;
+            display: grid;
+            justify-items: center;
+            border-radius: 12px;
+            padding: 26px 0;
     }
 
     #closeBtn {
@@ -132,7 +154,7 @@ a:hover {
         background-color: red;
         color: white;
         top: -100%;
-            right: 5px;
+        right: 5px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         border-radius: 23px;
         padding: 7px 10px 10px 10px;
@@ -141,26 +163,27 @@ a:hover {
     #drawer {
         height: 45%;
         width: 100%;
-        border-top-left-radius: 160px;
+        border-top-left-radius: 100px;
         /* Rounded top-left corner */
-        border-top-right-radius: 160px;
+        border-top-right-radius: 100px;
         border: 5px solid #8fbfd1;
     }
 
     #imasCircle {
-        display: block;
+        display: flex;
+            justify-content: center;
         position: absolute;
         height: 70px;
         width: 70px;
         border-radius: 38px;
-        top: -35px;
-        left: 41%;
-        background-color: #0f0f0f;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+        top: 10px;
+            left: 40%;
+            /* background-color: #0f0f0f; */
+            /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); */
         border: 1px solid #fff;
         text-align: center;
         padding: 21px 14px;
-        border: 2px solid #e924cb;
+        border: none;
     }
 
     .drawer-items {
@@ -1236,6 +1259,15 @@ h1 {
     text-align: left;
 }
 
+.logo-x {
+    position: absolute;
+    top: 20px;
+    height: 35px;
+    width: 30px;
+    border-radius: 4px;
+    padding: 4px;
+    background: #FFF;
+}
 @media screen and (max-width: 800px) {
     li {
 
@@ -1471,9 +1503,11 @@ h1 {
     .logo-x {
         height: 30px;
         position: relative;
-        top: -3px;
-        width: 15px;
+        top: -10px;
+            width: 48px;
             object-fit: contain;
+        background: #fff;
+            border-radius: 8px;
     }
 
     .sidebar-logo {

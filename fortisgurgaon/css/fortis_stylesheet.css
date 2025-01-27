@@ -7,106 +7,127 @@
     touch-action: manipulation;
   }
 
-                #openBtn {
-                  position: fixed;
-                  bottom: 20px;
-                  right: 20px;
-                  padding: 10px 20px;
-                  background: #0A6632;
-                  color: white;
-                  border: none;
-                  cursor: pointer;
-                  font-size: 16px;
-                  letter-spacing: 0.83px;
-                  font-weight: 600;
-                  z-index: 100;
-                  border-radius: 2px;
-                }
-        
-        
-        
-                #drawer {
-                  position: fixed;
-                  bottom: -100%;
-                  right: 0;
-                  height: 75%;
-                  width: 35%;
-                  background: linear-gradient(#0A6632, #12a012);
-                  color: #fff;
-                  /* Text color for contrast */
-                  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
-                  transition: bottom 0.3s ease-in-out;
-                  z-index: 100;
-                  border-top-left-radius: 20px;
-                  /* Rounded top-left corner */
-                  border-top-right-radius: 20px;
-                }
-        
-                .drawer-content {
-                  padding: 20px;
-                  height: 100%;
-                  overflow-y: auto;
-                }
-        
-                .drawer-items {
-                  margin-top: 20px;
-                  text-align: center;
-                  display: grid;
-                  justify-items: center;
-                  gap: 5px;
-                }
-        
-                .drawer-items button {
-                  background: #FFF;
-                  display: flex;
-                  align-items: center;
-                  gap: 5px;
-                  height: 2.8rem;
-                  border-radius: 2px;
-                  color: #2d9f28;
-                    font-weight: 600;
-                    border-radius: 25px;
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-                }
-        
-                .drawer-items button:active {
-                  transform: scale(0.99);
-                }
-        
-                .drawer-banner {
-                  margin-top: 100px;
-                  background-color: #fff;
-                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-                  padding: 15px 2px 2px;
-                  color: #000;
-                  border-radius: 8px;
-                  text-align: center;
-                }
-        
-                .drawer-banner h2 {
-                  letter-spacing: 0.83px;
-                }
-        
-                #closeBtn {
-                  background-color: red;
-                  color: white;
-                  border: none;
-                  padding: 2px 5px 7px;
-                  cursor: pointer;
-                  position: absolute;
-                  right: 30px;
-                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                  border-radius: 8px;
-                }
-        
-                #imasCircle {
-                  display: none;
-                }
-        
-                .drawer-items {
-                  font-size: 24px;
-                  margin-bottom: 10px;
-                }
+        #openBtn {
+    display: grid;
+    position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background: #0A6632;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      letter-spacing: 0.83px;
+      font-weight: 600;
+      z-index: 100;
+    border-radius: 8px;
+      width: 15rem;
+      justify-items: center;
+    }
+    
+    
+    
+    #drawer {
+      position: fixed;
+      bottom: -100%;
+      right: 0;
+    width: 35%;
+      background: linear-gradient(#0A6632, #12a012);
+      color: #fff;
+      /* Text color for contrast */
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+      transition: bottom 0.3s ease-in-out;
+      z-index: 100;
+      border-top-left-radius: 20px;
+      /* Rounded top-left corner */
+      border-top-right-radius: 20px;
+    }
+    
+    .drawer-content {
+      padding: 20px;
+      height: 100%;
+      overflow-y: auto;
+    }
+    
+    .drawer-items {
+      margin-top: 20px;
+      text-align: center;
+      display: grid;
+      justify-items: center;
+      gap: 5px;
+    }
+        .logo-yx {
+          background: #FFF;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+          object-fit: contain;
+        }
+    
+        .drawer-items button {
+          background: #FFF;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          height: 2.8rem;
+          border-radius: 2px;
+          color: #2d9f28;
+          font-weight: 600;
+          border-radius: 25px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+    
+        .drawer-items button:active {
+          transform: scale(0.99);
+        }
+    
+        .drawer-banner {
+          margin-top: 100px;
+          background-color: #fff;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+          padding: 15px 2px 2px;
+          color: #000;
+          border-radius: 8px;
+          text-align: center;
+        }
+    
+        .drawer-banner h2 {
+          letter-spacing: 0.83px;
+        }
+    
+        #closeBtn {
+          background-color: red;
+          color: white;
+          border: none;
+          padding: 2px 5px 7px;
+          cursor: pointer;
+          position: absolute;
+          right: 30px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          border-radius: 8px;
+        }
+    
+        #imasCircle {
+    display: block;
+      position: absolute;
+      height: 70px;
+      width: 70px;
+      border-radius: 38px;
+      top: 20px;
+      left: 41%;
+      background-color: #FFF;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+      border: 1px solid #fff;
+      text-align: center;
+      padding: 21px 14px;
+      /* border: 2px solid #e924cb; */
+    }
+    
+    .drawer-items {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
   .p_50 {
     padding: 50px;
   }
@@ -452,7 +473,7 @@
     box-shadow: 3px 3px 15px #0000001A;
     margin-bottom: 34px;
     position: sticky;
-      top: 5px;
+    top: 5px;
       z-index: 99;
   }
 
@@ -473,7 +494,7 @@
     box-shadow: none !important;
     background: transparent !important;
   }
-  
+
 
   .tab button:hover {
     background-color: #e0dadc;
@@ -611,14 +632,14 @@
     border: 1px solid #d7d7d7;
     margin-inline: 172px;
     box-shadow: 3px 3px 15px #0000001A;
-      border-radius: 8px;
+    border-radius: 8px;
   }
 
   .card {
     margin: 6px;
     width: 100%;
     box-shadow: 3px 3px 15px #0000001A;
-      border-radius: 8px;
+    border-radius: 8px;
     overflow: hidden;
   }
 
@@ -1041,78 +1062,70 @@
 
   }
 
-                /* Mobile Responsive */
-                @media (max-width: 768px) {
-                  #openBtn {
-                    bottom: 10px;
-                    left: 10px;
-                    font-size: 14px;
-                  }
-        
-                  #closeBtn {
-                    font-size: 14px;
-                    background-color: red;
-                    color: white;
-                    top: -110%;
-                      right: 5px;
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                    border-radius: 23px;
-                    padding: 7px 10px 10px 10px;
-                  }
-        
-                  #drawer {
-                    height: 45%;
-                    width: 100%;
-                    border-top-left-radius: 160px;
-                    /* Rounded top-left corner */
-                    border-top-right-radius: 160px;
-                    border: 5px solid #8fbfd1;
-                  }
-        
-                  #imasCircle {
-                    display: block;
-                    position: absolute;
-                    height: 70px;
-                    width: 70px;
-                    border-radius: 38px;
-                    top: -35px;
-                    left: 41%;
-                    background-color: #0f0f0f;
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-                    border: 1px solid #fff;
-                    text-align: center;
-                    padding: 21px 14px;
-                    border: 2px solid #e924cb;
-                  }
-        
-                  .drawer-items {
-                    margin-top: 20px;
-                    text-align: center;
-                  }
-        
-                  .drawer-items h2 {
-                    font-size: 18px;
-                  }
-        
-                  .drawer-banner {
-                    margin-top: 80px;
-                    background-color: #fff;
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-                    padding: 15px 2px 2px;
-                    color: #000;
-                    border-radius: 8px;
-                    text-align: center;
-                  }
-        
-                  .drawer-banner h2 {
-                    font-size: 18px;
-                    font-weight: 700;
-                  }
-        
-                  .drawer-banner p {
-                    font-size: 14px;
-                  }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+          #openBtn {
+      width: 95%;
+      bottom: 10px;
+        left: 10px;
+      font-size: 28px;
+        height: 8rem;
+        border-radius: 12px;
+      }
+      
+      #imasCircle {
+        top: 10px;
+      }
+      
+      #closeBtn {
+        font-size: 14px;
+        background-color: red;
+        color: white;
+        top: -110%;
+        right: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 23px;
+        padding: 7px 10px 10px 10px;
+      }
+      
+      #drawer {
+        height: 45%;
+        width: 100%;
+        border-top-left-radius: 100px;
+          /* Rounded top-left corner */
+        border-top-right-radius: 100px;
+          border: 5px solid #8fbfd1;
+        }
+                .drawer-items {
+                  margin-top: 20px;
+                  text-align: center;
                 }
+        
+                .drawer-items h2 {
+                  font-size: 18px;
+                }
+        
+                .drawer-banner {
+                  margin-top: 80px;
+                  background-color: #fff;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+                  padding: 15px 2px 2px;
+                  color: #000;
+                  border-radius: 8px;
+                  text-align: center;
+                }
+        
+                .drawer-banner h2 {
+                  font-size: 18px;
+                  font-weight: 700;
+                }
+        
+                .drawer-banner p {
+                  font-size: 14px;
+                }
+                }
+
   @media screen and (max-width: 800px) {
     .btn-app {
       padding: 9.719px 48.918px 5.281px 48.918px;
