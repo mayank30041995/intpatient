@@ -20,7 +20,7 @@ a:hover {
     font-weight: 600;
     z-index: 10;
     border-radius: 8px;
-        display: grid;
+    display: grid;
         justify-items: center;
 }
 
@@ -106,9 +106,10 @@ a:hover {
     padding: 4px;
     border-radius: 8px;
 }
+
 #imasCircle {
     display: grid;
-        justify-items: center;
+    justify-items: center;
 }
 
 .drawer-items {
@@ -132,18 +133,19 @@ a:hover {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-.logo-y {
+    .logo-y {
         background: #FFF;
         height: 30px;
         width: 28px;
         margin-bottom: 8px;
         padding: 4px;
     }
+
     #openBtn {
         bottom: 10px;
         left: 10px;
         font-size: 23px;
-            display: grid;
+        display: grid;
             justify-items: center;
             border-radius: 12px;
             padding: 26px 0;
@@ -171,13 +173,13 @@ a:hover {
 
     #imasCircle {
         display: flex;
-            justify-content: center;
+        justify-content: center;
         position: absolute;
         height: 70px;
         width: 70px;
         border-radius: 38px;
         top: 10px;
-            left: 40%;
+        left: 40%;
             /* background-color: #0f0f0f; */
             /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); */
         border: 1px solid #fff;
@@ -1268,6 +1270,7 @@ h1 {
     padding: 4px;
     background: #FFF;
 }
+
 @media screen and (max-width: 800px) {
     li {
 
@@ -1504,10 +1507,10 @@ h1 {
         height: 30px;
         position: relative;
         top: -10px;
-            width: 48px;
+        width: 48px;
             object-fit: contain;
         background: #fff;
-            border-radius: 8px;
+        border-radius: 8px;
     }
 
     .sidebar-logo {
