@@ -133,7 +133,7 @@
   <button id="openBtn"><img src="fortis logo.png"
                         alt="HTML5 Icon"
                         class='logo-yx'
-                        width="100px" height="80%" style='margin-bottom: 10px;'>
+                        width="100px" height="50px" style='margin-bottom: 10px;'>
                         24 × 7 Support</button>
 
   <!-- Drawer -->
@@ -2505,8 +2505,8 @@
     }
     function callevent() {
       setTimeout(openNav, 10000);
-
     }
+
     callevent();
     openDrawer();
 
@@ -2555,7 +2555,7 @@
     });
 
     // Prevent clicks inside the drawer or open button from triggering body click listener
-    drawer.addEventListener('click', (event) => {
+    drawer.addEventListener('click', event => {
       event.stopPropagation(); // Prevent click inside drawer from closing it
     });
 
