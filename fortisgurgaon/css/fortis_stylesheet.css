@@ -24,6 +24,7 @@
     border-radius: 8px;
     width: 15rem;
     justify-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     }
     #drawer {
       position: fixed;
@@ -56,7 +57,7 @@
     }
 
     .logo-yx {
-    padding: 8px;
+    padding: 16px;
     background: #FFF;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
       border-radius: 8px;

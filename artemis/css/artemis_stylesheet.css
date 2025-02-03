@@ -21,7 +21,8 @@ a:hover {
     z-index: 10;
     border-radius: 8px;
     display: grid;
-        justify-items: center;
+    justify-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 #drawer {
@@ -146,7 +147,7 @@ a:hover {
         left: 10px;
         font-size: 23px;
         display: grid;
-            justify-items: center;
+        justify-items: center;
             border-radius: 12px;
             padding: 26px 0;
     }
@@ -180,7 +181,7 @@ a:hover {
         border-radius: 38px;
         top: 10px;
         left: 40%;
-            /* background-color: #0f0f0f; */
+        /* background-color: #0f0f0f; */
             /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); */
         border: 1px solid #fff;
         text-align: center;
@@ -1015,6 +1016,7 @@ table {
     text-align: center;
     z-index: 2;
     padding-inline: 75px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 10px -12px;
 }
 
 .about-us-cont {
@@ -1508,7 +1510,7 @@ h1 {
         position: relative;
         top: -10px;
         width: 48px;
-            object-fit: contain;
+        object-fit: contain;
         background: #fff;
         border-radius: 8px;
     }
