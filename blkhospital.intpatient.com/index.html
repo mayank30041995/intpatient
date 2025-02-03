@@ -138,7 +138,7 @@
           <div class="row">
             <div class="col-3">
               <div class="logo">
-                <img src="img/logo.jpg" alt="BLK Hospitals">
+                <img src="img/logoss.png" alt="BLK Hospitals">
               </div>
             </div>
             <div class="col-8 col-md-6 offset-md-3 offset-1">
@@ -184,7 +184,7 @@
     <section id=banner>
       <div class="img-container">
         <div class="imgwrapper">
-          <img src="img/blk.jpg" class="d-block w-100 img-fluid" alt="...">
+          <img src="img/BLK-Max.jpg" class="d-block w-100 img-fluid" alt="...">
         </div>
         <div class="centered">
           <h2>BLK Super Speciality Hospital</h2>
@@ -222,12 +222,12 @@
             </ul>
             <!--   </div>
     </nav> -->
-    <button id="openBtn"><img src="img/logo.jpg" class="logo-y" alt="HTML5 Icon"
+    <button id="openBtn"><img src="img/logoss.png" class="logo-y" alt="HTML5 Icon"
       width="20px" height="30px">
   Instant Support</button>
   
   <div id="drawer" class="drawer">
-    <div id="imasCircle"> <img src="img/logo.jpg" class="logo-yx" alt="HTML5 Icon"
+    <div id="imasCircle"> <img src="img/logoss.png" class="logo-yx" alt="HTML5 Icon"
         width="20px" height="30px"></div>
       <div class="drawer-content">
         <button id="closeBtn" type="button" class="close" aria-label="Close">
@@ -898,37 +898,84 @@
 
   <!--------Drower------->
   <script>
+
+    function openNav() {
+      document.getElementById("sidebar").style.width = "40%";
+
+    }
+
+    function closeNav() {
+      document.getElementById("sidebar").style.width = "0";
+    }
+
+    function openDrawer() {
+      setInterval(function () {
+        // Get the element by its ID
+        const element = document.getElementById("drawer");
+
+        // Check if the element exists
+        if (element) {
+          document.getElementById('drawer').style.bottom = '0'; // Change to 'block' or any other desired display type
+        }
+      }, 10000);
+    }
+    function callevent() {
+      setTimeout(openNav, 10000);
+    }
+
+    callevent();
+    openDrawer();
+
+    let clickCount = 0;
+
+    // Function to be executed on the first click
+    function onFirstClick() {
+      setTimeout(openNav, 15000); // Execute openNav after 10 seconds
+    }
+
+    // Function to be executed on the second click
+    function onSecondClick() {
+      setTimeout(openNav, 30000); // Execute openNav after 150 seconds (2.5 minutes)
+    }
+
+    // Function to be executed on the third click
+    function onThirdClick() {
+      setTimeout(openNav, 60000); // Execute openNav after 150 seconds (2.5 minutes)
+
+    }
+  </script>
+  <script>
     const drawer = document.getElementById('drawer');
 
     const openButton = document.getElementById('openBtn');
-
-
-    document.getElementById('openBtn').addEventListener('click', function (event) {
+    
+    document.getElementById('openBtn').addEventListener('click', function () {
       event.stopPropagation();
-    document.getElementById('drawer').style.bottom = '0';
-  });
+      document.getElementById('drawer').style.bottom = '0';
+    });
 
-  document.getElementById('closeBtn').addEventListener('click', function () {
-    event.stopPropagation();
-    document.getElementById('drawer').style.bottom = '-100%';
-  });
+    document.getElementById('closeBtn').addEventListener('click', function () {
+      event.stopPropagation();
+      document.getElementById('drawer').style.bottom = '-100%';
+    });
 
 
     document.body.addEventListener('click', (event) => {
+     const mobileBreakpoint = 768;
+
+      if (window.innerWidth >= mobileBreakpoint) {
       // Close drawer if the click is outside the drawer or open button
       if (!drawer.contains(event.target) && !openBtn.contains(event.target)) {
         document.getElementById('drawer').style.bottom = '-100%';
-      }
+      }}
     });
 
     // Prevent clicks inside the drawer or open button from triggering body click listener
-    drawer.addEventListener('click', (event) => {
+    drawer.addEventListener('click', event => {
       event.stopPropagation(); // Prevent click inside drawer from closing it
     });
 
-
-
-</script>
+  </script>
 
 
   <!-- popup form ends -->

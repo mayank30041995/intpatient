@@ -9,7 +9,7 @@ body{
   bottom: 20px;
   right: 20px;
   padding: 10px 50px;
-  background-color: #662046;
+  background-color: #003a70;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   color: white;
   border: none;
@@ -23,18 +23,24 @@ body{
 
 .logo-yx {
   position: absolute;
-  width: 17%;
-  height: 13%;
+  width: 29%;
+  height: 12%;
   top: 24px;
   object-fit: contain;
-
+  background: #fff;
+  padding: 5px;
+  border-radius: 8px;
 }
+
 .logo-y {
   height: 40px;
   position: relative;
   width: 100px;
   object-fit: contain;
   left: 0px;
+  background: #fff;
+  padding: 5px;
+  border-radius: 8px;
 }
 
 #drawer {
@@ -43,7 +49,7 @@ body{
   right: 0;
   height: 75%;
   width: 35%;
-  background: linear-gradient(#662046, #cc70a3);
+  background: linear-gradient(#003a70, #3a5a77);
   color: #fff;
   /* Text color for contrast */
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
@@ -58,6 +64,12 @@ body{
   padding: 20px;
   height: 100%;
   overflow-y: auto;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: 24rem;
+  object-fit: none;
 }
 
 .drawer-items {
@@ -122,6 +134,78 @@ body{
   margin-bottom: 10px;
 }
 
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  #openBtn {
+    width: 95%;
+    bottom: 10px;
+    left: 10px;
+    font-size: 18px;
+  }
+
+  #closeBtn {
+    font-size: 14px;
+    background-color: red;
+    color: white;
+    top: -100%;
+    right: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 23px;
+    padding: 7px 10px 10px 10px;
+  }
+
+  #drawer {
+    height: 45%;
+    width: 100%;
+    border-top-left-radius: 100px;
+    /* Rounded top-left corner */
+    border-top-right-radius: 100px;
+    border: 5px solid #8fbfd1;
+  }
+
+    .drawer-icon-x {
+      object-fit: cover;
+      height: min-content;
+      position: relative;
+      top: -19px;
+    }
+
+  #imasCircle {
+    /* left: 34%; */
+      top: 8px;
+  }
+
+  .drawer-items {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .drawer-items h2 {
+    font-size: 18px;
+  }
+
+  .drawer-banner {
+    margin-top: 70px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px 2px 2px;
+    color: #000;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .drawer-banner h2 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .drawer-banner p {
+    font-size: 16px;
+  }
+}
+
+
 [aria-expanded="false"] > .expanded,
 [aria-expanded="true"] > .collapsed {
   display: none;
@@ -142,14 +226,14 @@ h2{font-size: 25px;}
     padding: 5px;
 }
 .navmenumain{
-	background: #662046;/*green #472615 textbrown*/
+	background: #003a70;/*green #472615 textbrown*/
 }
 .navbar{
 padding:0;
 }
 .centered {
   width: 100%;
-background: #662046;
+background: #003a70;
 padding: 2px 10px;
 }
 
@@ -160,16 +244,16 @@ padding: 2px 10px;
 .nav-tabs .nav-link.active{
 	color: #fff;
     background-color: #000000;
-    outline: 2px solid #662046;
+    outline: 2px solid #003a70;
 }
 .nav-tabs .nav-link{
 	color: #fff;
-	background: #662046;
+	background: #003a70;
     margin: 6px;
 }
 .docx{
 	color: #fff;
-	background: #662046; 
+	background: #0082a8; 
 	padding-top: 20px; 
 	padding-bottom: 20px;
 }
@@ -204,7 +288,7 @@ padding: 2px 10px;
 	padding: 20px;
 }
 .about-apollo{
-	background: #662046;
+	background: #0082a8;
 	color: #fff;
 	padding: 20px;
 }
@@ -259,7 +343,7 @@ font-size: 45px;
   left: 50%;
   width: 100%;
   transform: translate(-50%, 0%);
-background: #662046;
+background: #003a70;
 padding: 2px 10px 50px;
 }
 	#about{
@@ -281,7 +365,7 @@ width: auto;
 float: right;
 }
 .contact-form .col-md-10{
-  background: #662046 !important;
+  background: #0082a8 !important;
   padding-top: 5px;
   border-radius: 25px;
 }
@@ -350,7 +434,7 @@ form ul li label {
 }
 #pilltab .nav-link{
 	color: #fff;
-    background: #503d47;
+    background: #003a70;
     margin: 6px;
 }
 #pilltab .nav-link.active{
@@ -376,5 +460,5 @@ color: #fff;
 .why{
   color: #fff;
   font-weight: 500;
-  background: #734561a3;
+  background: #3678b6;
 }
