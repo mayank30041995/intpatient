@@ -9,7 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -20,11 +19,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <link rel="icon" type="image/x-icon" href="img/fav-icon.webp">
+  <!-- <link rel="icon" type="image/x-icon" href="img/fav-icon.webp"> -->
+  <link rel="icon" type="image/x-icon" href="img/hcg -favicon.png">
+
   <link rel="preload" as="font">
   <meta name="description" content="HCG BANGALORE">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/HCG.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </head>
@@ -100,6 +102,34 @@
 
 
       </div>
+    
+      <button id="openBtn"><img class="drawer-icon-y" src="img/logo.webp"
+        alt="HTML5 Icon"
+        width="50px" height="100%" >Instant opinion</button>
+
+        <!-- Drawer -->
+
+  <div id="drawer" class="drawer">
+    <div id="imasCircle"><img class="drawer-icon-x" src="img/logo.webp"
+            alt="HTML5 Icon"
+            width="50px" height="100%" ></div>
+    <div class="drawer-content">
+      <button id="closeBtn" type="button" class="close" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+
+      <div class="drawer-banner">
+        <h2>Instant opinion</h2>
+        <p>And Doctor Consult</p>
+      </div>
+      <div class="drawer-items">
+        <h2>International Patients Support</h2>
+        <button class="btn"><i class="fa fa-whatsapp fa-btn" style="font-size:48px;"></i>
+          Connect on Whatsapp</button>
+      </div>
+    </div>
+  </div>
+    
     </div>
     <!--end inner element-->
   </div>
@@ -163,7 +193,7 @@
                   </div>
                   <div class="col-md-12 p-2 m-0">
                     <!-- Your content goes here -->
-                    <button class="btn btn-2 " onclick="LC_API.open_chat_window() ; return false">connect on whatsapp</button>
+                    <button class="btn btn-2 " onclick="LC_API.open_chat_window() ; return false"><i  style="color:#00A91B" class="fa fa-whatsapp" aria-hidden="true"></i> Connect on Whatsapp</button>
                   </div>
                 </div>
               </div>
@@ -192,7 +222,7 @@
                   </div>
                   <div class="col-md-12 p-2 m-0">
                     <!-- Your content goes here -->
-                    <button class="btn btn-2 " onclick="LC_API.open_chat_window() ; return false">connect on whatsapp</button>
+                    <button class="btn btn-2 " onclick="LC_API.open_chat_window() ; return false"><i  style="color:#00A91B" class="fa fa-whatsapp" aria-hidden="true"></i> Connect on Whatsapp</button>
                   </div>
                 </div>
               </div>
@@ -221,7 +251,7 @@
                   </div>
                   <div class="col-md-12 p-2 m-0">
                     <!-- Your content goes here -->
-                    <button class="btn btn-2 " onclick="LC_API.open_chat_window() ; return false">connect on whatsapp</button>
+                    <button class="btn btn-2 " onclick="LC_API.open_chat_window() ; return false"><i  style="color:#00A91B" class="fa fa-whatsapp" aria-hidden="true"></i> Connect on Whatsapp</button>
                   </div>
                 </div>
               </div>
@@ -257,7 +287,7 @@
                   </div>
                   <div class="col-md-12 p-2 m-0">
                     <!-- Your content goes here -->
-                    <button class="btn btn-2 " onclick="LC_API.open_chat_window() ; return false">connect on whatsapp</button>
+                    <button class="btn btn-2 " onclick="LC_API.open_chat_window() ; return false"><i  style="color:#00A91B" class="fa fa-whatsapp" aria-hidden="true"></i> Connect on Whatsapp</button>
                   </div>
                 </div>
               </div>
@@ -286,7 +316,7 @@
                   </div>
                   <div class="col-md-12 p-2 m-0">
                     <!-- Your content goes here -->
-                    <button class="btn btn-2 " onclick="LC_API.open_chat_window() ; return false">connect on whatsapp</button>
+                    <button class="btn btn-2 " onclick="LC_API.open_chat_window() ; return false"><i  style="color:#00A91B" class="fa fa-whatsapp" aria-hidden="true"></i> Connect on Whatsapp</button>
                   </div>
                 </div>
               </div>
@@ -315,7 +345,7 @@
                   </div>
                   <div class="col-md-12 p-2 m-0">
                     <!-- Your content goes here -->
-                    <button class="btn btn-2 " onclick="LC_API.open_chat_window() ; return false">connect on whatsapp</button>
+                    <button class="btn btn-2 " onclick="LC_API.open_chat_window() ; return false"><i  style="color:#00A91B" class="fa fa-whatsapp" aria-hidden="true"></i> Connect on Whatsapp</button>
                   </div>
                 </div>
               </div>
@@ -351,13 +381,11 @@
                   </div>
                   <div class="col-md-12 p-2 m-0">
                     <!-- Your content goes here -->
-                    <button class="btn btn-2 " onclick="LC_API.open_chat_window() ; return false">connect on whatsapp</button>
+                    <button class="btn btn-2 " onclick="LC_API.open_chat_window() ; return false"><i  style="color:#00A91B" class="fa fa-whatsapp" aria-hidden="true"></i> Connect on Whatsapp</button>
                   </div>
                 </div>
               </div>
-
-
-            </div>
+             </div>
 
             <!-- Box 1 -->
             <div class="col-md-4 box-card">
@@ -380,9 +408,7 @@
                   </div>
                   <div class="col-md-12 p-2 m-0">
                     <!-- Your content goes here -->
-                    <button class="btn btn-2 " onclick="LC_API.open_chat_window() ; return false">
-                      
-                      connect on whatsapp</button>
+                    <button class="btn btn-2 " onclick="LC_API.open_chat_window() ; return false"><i  style="color:#00A91B" class="fa fa-whatsapp" aria-hidden="true"></i> Connect on Whatsapp</button>
                   </div>
                 </div>
               </div>
@@ -1075,8 +1101,45 @@
       </div>
     </div>
   </div>
+<script>
+const drawer = document.getElementById('drawer');
+
+const openButton = document.getElementById('openBtn');
+
+
+document.getElementById('openBtn').addEventListener('click', function (event) {
+  event.stopPropagation();
+document.getElementById('drawer').style.bottom = '0';
+});
+
+document.getElementById('closeBtn').addEventListener('click', function () {
+event.stopPropagation();
+document.getElementById('drawer').style.bottom = '-100%';
+});
+
+
+document.body.addEventListener('click', (event) => {
+ const mobileBreakpoint = 768;
+
+ if (window.innerWidth >= mobileBreakpoint) {
+
+  // Close drawer if the click is outside the drawer or open button
+  if (!drawer.contains(event.target) && !openBtn.contains(event.target)) {
+    document.getElementById('drawer').style.bottom = '-100%';
+  }
+  }
+});
+
+// Prevent clicks inside the drawer or open button from triggering body click listener
+drawer.addEventListener('click', (event) => {
+  event.stopPropagation(); // Prevent click inside drawer from closing it
+});
+
+
+</script>
+
   <!--end footer-->
-  <script>
+  <!-- <script>
     /* Start of LiveChat (www.livechat.com) code */
   
   function ipLookUp() {
@@ -1211,6 +1274,9 @@
   });
   
   function setInitialCardVisibility(){};
+
+
   
-  </script>
+  
+  </script> -->
 </body>
