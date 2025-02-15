@@ -111,7 +111,7 @@ body {
 
 .drawer-icon-x {
   object-fit: contain;
-  width: 4rem;
+  width: 55px;
 }
 /* Mobile Responsive */
 @media (max-width: 768px) {
