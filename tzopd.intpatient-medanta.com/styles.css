@@ -336,6 +336,10 @@ a:hover {
   min-width: 60%;
   justify-content: center;
 }
+.footer_txt {
+  font-size: 14px;
+  flex: none;
+}
 @media (max-width: 8000px) {
   .container {
     max-width: 1224px;
@@ -364,7 +368,7 @@ a:hover {
     display: grid;
     gap: 5px;
     justify-items: center;
-      top: 5px;
+    top: 5px;
   }
 }
 
@@ -460,7 +464,7 @@ a:hover {
       margin-left: 15px;
     font-size: 14px;
     flex: none;
-      width: fit-content;
+    width: fit-content;
     }
 
     .footer_txt {
@@ -472,7 +476,7 @@ a:hover {
       width: fit-content;
     font-size: 14px;
     flex: none;
-    }
+  
 }
 
 @media (max-width: 950px) {
