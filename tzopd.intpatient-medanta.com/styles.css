@@ -337,7 +337,6 @@ a:hover {
   justify-content: center;
 }
 .footer_txt {
-  font-size: 14px;
   flex: none;
 }
 @media (max-width: 8000px) {
