@@ -147,12 +147,13 @@ a:hover {
   align-items: center;
   display: inline-flex;
   gap: 4px;
+  cursor: pointer;
 }
 
 .btn-primary:hover {
-  color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  color: var(--light-blue);
+    background-color: rgb(245, 246, 252);
+    border-color: rgb(245, 246, 252);
 }
 
 .link-primary {
