@@ -336,6 +336,9 @@ a:hover {
   min-width: 60%;
   justify-content: center;
 }
+.footer_body>span {
+  flex: none;
+}
 .footer_txt {
   flex: none;
 }
