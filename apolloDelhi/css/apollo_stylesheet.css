@@ -278,8 +278,8 @@ body {
 
 .slider {
   background-image: url(../img/delhi.webp);
-  height: 438px;
-  background-size: 100% 100%;
+  height: 100%;
+    background-size: fill;
 }
 
 /* cardio dr */
@@ -757,6 +757,7 @@ body {
 .text-bnnr {
   color: white;
   padding-top: 170px;
+  text-shadow: 2px 2px #000000ba;
 }
 
 .text-bnnr-dis {
@@ -764,6 +765,8 @@ body {
   position: relative;
   top: -23px;
   font-size: 21px;
+  font-weight: 700;
+    text-shadow: 1px 2px #000000ba;
 }
 
 .bg-slider {
@@ -868,10 +871,10 @@ ul {
 }
 
 .btn-primary2 {
-  color: #161616;
-  font-weight: 600;
-  background-color: #FFF !important;
-  border-color: #6994c3 !important;
+  color: #FFF;
+    font-weight: 700;
+    background-color: #007C9d !important;
+    border: 2px solid #6994c3 !important;
   box-shadow: 6px 6px 70px rgb(16 40 81 / 23%);
   font-size: 14px;
   height: 55px;
@@ -1439,9 +1442,9 @@ table {
   }
 
   .slider {
-    background-image: url(../img/Group_x.webp);
+    background-image: url(../img/delhi.webp);
     height: 389px;
-    background-size: 100% 100%;
+    background-size: fill;
   }
 
   .slider {
@@ -1791,7 +1794,7 @@ table {
 
   .slider {
     height: 389px;
-    background-size: 100% 117% !important;
+    background-size: fill;
     margin-top: 42px;
   }
 

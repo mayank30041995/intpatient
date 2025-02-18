@@ -53,7 +53,6 @@
     }
   </style>
 
-
   <script>
     function ipLookUp() {
       var xhttp = new XMLHttpRequest();
@@ -109,17 +108,16 @@
     }
   </script>
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-922729084">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-PV25C27');</script>
-  <!-- End Google Tag Manager -->
+    gtag('config', 'AW-922729084');
+  </script>
 </head>
 
 <body>
@@ -144,7 +142,8 @@
             </div>
             <div class="col-8 col-md-6 offset-md-3 offset-1">
               <div class="call-section">
-                <span class="d-none d-md-block">Get Doctor's Opinion & Cost Estimate</span>&nbsp;&nbsp;
+                <span class="d-none d-md-block">Get Doctor's Opinion & Cost
+                  Estimate</span>&nbsp;&nbsp;
                 <a href="tel:917042839926"><i class="fa fa-phone"></i></a>&nbsp;&nbsp;
                 <a href="https://api.whatsapp.com/send?phone=917042839926&text=&source=&data=" target="_blank"><i
                     class="fab fa-whatsapp"></i></a>&nbsp;&nbsp;
@@ -223,30 +222,29 @@
             </ul>
             <!--   </div>
     </nav> -->
-    <button id="openBtn"><img src="img/logoss.png" class="logo-y" alt="HTML5 Icon"
-      width="20px" height="30px">
-  Instant Support</button>
-  
-  <div id="drawer" class="drawer">
-    <div id="imasCircle"> <img src="img/logoss.png" class="logo-yx" alt="HTML5 Icon"
-        width="20px" height="30px"></div>
-      <div class="drawer-content">
-        <button id="closeBtn" type="button" class="close" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-  
-        <div class="drawer-banner">
-          <h2>Instant Support</h2>
-          <p>On Whatsapp</p>
-        </div>
-        <div class="drawer-items">
-          <h2>International Support On Whatsapp</h2>
-          <button class="btn"><i
-            class="fab fa-whatsapp" style="font-size: 16px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);"></i>
-            Connect on Whatsapp</button>
-        </div>
-      </div>
-    </div>
+            <button id="openBtn"><img src="img/logoss.png" class="logo-y" alt="HTML5 Icon" width="20px" height="30px">
+              Instant Support</button>
+
+            <div id="drawer" class="drawer">
+              <div id="imasCircle"> <img src="img/logoss.png" class="logo-yx" alt="HTML5 Icon" width="20px"
+                  height="30px"></div>
+              <div class="drawer-content">
+                <button id="closeBtn" type="button" class="close" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+
+                <div class="drawer-banner">
+                  <h2>Instant Support</h2>
+                  <p>On Whatsapp</p>
+                </div>
+                <div class="drawer-items">
+                  <h2>International Support On Whatsapp</h2>
+                  <button class="btn"><i class="fab fa-whatsapp"
+                      style="font-size: 16px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);"></i>
+                    Connect on Whatsapp</button>
+                </div>
+              </div>
+            </div>
             <div class="tab-content">
               <div role="tabpanel" class="tab-pane fade in active show" id="cardio">
                 <div class="cat-section px-100">
@@ -254,12 +252,18 @@
                     <img src="img/iconcardio.png">
                   </h1>
                   <h2 class="text-center">Cardiology</h2>
-                  <p class="text-justify">One of the Centres of Excellence of BLK Super Speciality Hospital, the BLK
-                    Heart Centre was conceived to provide a state of art fully equipped cardiac care centre to provide
-                    comprehensive services to our patients. The entire gamut of services from diagnostic non-invasive
-                    services, nuclear scans, and CT imaging is available under one roof, as are top class Interventional
-                    cardiology, Interventional radiology and Neuro interventional services. A full range of Cardiac
-                    surgery and Vascular surgery services complete the therapeutic armamentarium for providing patients
+                  <p class="text-justify">One of the Centres of Excellence of
+                    BLK Super Speciality Hospital, the BLK
+                    Heart Centre was conceived to provide a state of art fully
+                    equipped cardiac care centre to provide
+                    comprehensive services to our patients. The entire gamut
+                    of services from diagnostic non-invasive
+                    services, nuclear scans, and CT imaging is available under
+                    one roof, as are top class Interventional
+                    cardiology, Interventional radiology and Neuro
+                    interventional services. A full range of Cardiac
+                    surgery and Vascular surgery services complete the
+                    therapeutic armamentarium for providing patients
                     with the best in class treatment that is their right.</p>
                 </div>
 
@@ -269,13 +273,20 @@
                   <h1 class="text-center">
                     <img src="img/iconortho.png">
                   </h1>
-                  <h2 class="text-center">Orthopaedics & Joint Replacement</h2><br>
-                  <p class="text-justify"> BLK Centre for Orthopaedics & Joint Replacement specializes in the treatment
-                    of musculo-skeletal system disorders. It is at par with international standards and offers Minimally
-                    Invasive Surgery (MIS) for Joint Reconstruction. The Centre is manned by experienced and highly
-                    skilled Orthopedic doctors that offer MIS solutions for Total Knee Replacement, Hip Resurfacing, Hip
-                    replacement,Unicondylar ( Partial) Knee Replacement Surgery as well as Replacement of Shoulder and
-                    Elbow joints. The centre carries out all kinds of limb salvage surgeries and Bone Tumour surgeries,
+                  <h2 class="text-center">Orthopaedics & Joint
+                    Replacement</h2><br>
+                  <p class="text-justify"> BLK Centre for Orthopaedics & Joint
+                    Replacement specializes in the treatment
+                    of musculo-skeletal system disorders. It is at par with
+                    international standards and offers Minimally
+                    Invasive Surgery (MIS) for Joint Reconstruction. The
+                    Centre is manned by experienced and highly
+                    skilled Orthopedic doctors that offer MIS solutions for
+                    Total Knee Replacement, Hip Resurfacing, Hip
+                    replacement,Unicondylar ( Partial) Knee Replacement
+                    Surgery as well as Replacement of Shoulder and
+                    Elbow joints. The centre carries out all kinds of limb
+                    salvage surgeries and Bone Tumour surgeries,
                     as well as correctional procedures for deformities.
 
                 </div>
@@ -286,14 +297,18 @@
                   <h1 class="text-center">
                     <img src="img/iconneuro.png">
                   </h1>
-                  <h2 class="text-center">Neurosurgery & Spine Surgery</h2><br>
-                  <p class="text-justify">BLK centre of Neurosciences is one of the few comprehensive neurosciences
-                    centres in the country where Neurologist, Neurosurgeons, Neuro-oncologists, Neuro-anaesthetist and
-                    Neuro-critical specialists work as a cohesive group. This has led to this centre being recognized as
-                    a leading referral tertiary centre for this part of the country.</p>
+                  <h2 class="text-center">Neurosurgery & Spine
+                    Surgery</h2><br>
+                  <p class="text-justify">BLK centre of Neurosciences is one
+                    of the few comprehensive neurosciences
+                    centres in the country where Neurologist, Neurosurgeons,
+                    Neuro-oncologists, Neuro-anaesthetist and
+                    Neuro-critical specialists work as a cohesive group.
+                    This has led to this centre being recognized as
+                    a leading referral tertiary centre for this part of the
+                    country.</p>
 
                 </div>
-
 
               </div>
               <div role="tabpanel" class="tab-pane fade" id="oncology">
@@ -302,11 +317,16 @@
                     <img src="img/icononco.png">
                   </h1>
                   <h2 class="text-center">Oncology</h2><br>
-                  <p class="text-justify">BLKCC, with state of the art equipment, facilities and experienced, faculty &
-                    staff, is wholly committed to highly personalized and comprehensive cancer care. Patient centric
-                    focus, multidisciplinary approach, personalized, cost effective solutions with utmost care to all
-                    medical needs of the patient coupled with administrative needs are meticulously looked into by a
-                    team of experienced medical and administrative teams. Patients are the focus of everything we do at
+                  <p class="text-justify">BLKCC, with state of the art
+                    equipment, facilities and experienced, faculty &
+                    staff, is wholly committed to highly personalized and
+                    comprehensive cancer care. Patient centric
+                    focus, multidisciplinary approach, personalized, cost
+                    effective solutions with utmost care to all
+                    medical needs of the patient coupled with administrative
+                    needs are meticulously looked into by a
+                    team of experienced medical and administrative teams.
+                    Patients are the focus of everything we do at
                     BLKCC informing them of all progress.<br></p>
                 </div>
 
@@ -317,14 +337,17 @@
                     <img src="img/icontransplant.png">
                   </h1>
                   <h2 class="text-center">Transplant</h2><br>
-                  <p class="text-justify">BLK Super specialty Hospital is among the top hospitals in India for
-                    transplants. it is ranked sixth and ninth by The Times and The Week respectively. The liver
-                    transplant department has been involved in over 700 liver transplant procedures and has established
-                    a successful transplant program which caters to both adult and pediatric patients with End Stage
+                  <p class="text-justify">BLK Super specialty Hospital is
+                    among the top hospitals in India for
+                    transplants. it is ranked sixth and ninth by The Times
+                    and The Week respectively. The liver
+                    transplant department has been involved in over 700
+                    liver transplant procedures and has established
+                    a successful transplant program which caters to both
+                    adult and pediatric patients with End Stage
                     Liver Disease.
                   </p>
                 </div>
-
 
               </div>
             </div>
@@ -363,7 +386,6 @@
                 <div class="tab-content" id="myTabContent">
                   <div class="tab-pane fade show active" id="cardio-pill" role="tabpanel" aria-labelledby="cardio-tabx">
 
-
                     <div id="portfolio1" class="container-fluid text-center text-white">
                       <h2 class="text-center">Team of Cardiologist</h2><br>
                       <div class="row text-center slideanim">
@@ -376,12 +398,15 @@
                           <div class="docinfo">
                             <h4 class="text-center">Dr. Subhash Chandra</h4>
                             <h5>34 Years of experience</h5>
-                            <strong>MBBS, MD - General Medicine, DNB - Cardiology, DM - Cardiology</strong>
+                            <strong>MBBS, MD - General Medicine, DNB -
+                              Cardiology, DM - Cardiology</strong>
                             <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
-                                class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book an Appointment</span> </a>
+                                class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book
+                                an Appointment</span> </a>
                             <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
                                 class="opinion d-inline-block btn btn-success d-block button-w mx-auto"><i
-                                class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on WhatsApp</span></a>
+                                  class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on
+                                WhatsApp</span></a>
 
                           </div>
                         </div>
@@ -393,12 +418,15 @@
                           <div class="docinfo">
                             <h4 class="text-center">Dr. Neeraj Bhalla</h4>
                             <h6>33 Years of experience</h6>
-                            <strong>MBBS, MD - Medicine, DM - Cardiology, FACC</strong>
+                            <strong>MBBS, MD - Medicine, DM - Cardiology,
+                              FACC</strong>
                             <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
-                                class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book an Appointment</span> </a>
+                                class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book
+                                an Appointment</span> </a>
                             <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
                                 class="opinion d-inline-block btn btn-success d-block button-w mx-auto"><i
-                                class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on WhatsApp</span></a>
+                                  class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on
+                                WhatsApp</span></a>
 
                           </div>
                         </div>
@@ -407,13 +435,12 @@
 
                     </div>
 
-
-
                   </div>
                   <div class="tab-pane fade" id="ortho-pill" role="tabpanel" aria-labelledby="ortho-tabx">
 
                     <div id="portfolio2" class="container-fluid text-center text-white">
-                      <h2 class="text-center">Team of Orthopaedic Surgeons</h2><br>
+                      <h2 class="text-center">Team of Orthopaedic
+                        Surgeons</h2><br>
                       <div class="row text-center slideanim">
                         <div class="col-md-6">
                           <div class="thumbnail">
@@ -421,15 +448,18 @@
                               class="img-fluid doc-icon">
                           </div>
                           <div class="docinfo">
-                            <h4 class="text-center">Dr. Deepak Chaudhary</h4>
+                            <h4 class="text-center">Dr. Deepak
+                              Chaudhary</h4>
                             <h6>31 Years of experience</h6>
                             <strong>MBBS, MS (Orthopaedics)</strong>
 
                             <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
-                                class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book an Appointment</span> </a>
+                                class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book
+                                an Appointment</span> </a>
                             <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
                                 class="opinion d-inline-block btn btn-success d-block button-w mx-auto"><i
-                                class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on WhatsApp</span></a>
+                                  class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on
+                                WhatsApp</span></a>
 
                           </div>
                         </div>
@@ -444,10 +474,12 @@
                             <strong>MBBS, MS, M.Ch (Ortho.)</strong>
 
                             <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
-                                class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book an Appointment</span> </a>
+                                class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book
+                                an Appointment</span> </a>
                             <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
                                 class="opinion d-inline-block btn btn-success d-block button-w mx-auto"><i
-                                class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on WhatsApp</span></a>
+                                  class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on
+                                WhatsApp</span></a>
 
                           </div>
                         </div>
@@ -455,8 +487,6 @@
                       </div>
 
                     </div>
-
-
 
                   </div>
 
@@ -472,13 +502,16 @@
                           <div class="docinfo">
                             <h4 class="text-center">Dr. Rajiv Anand</h4>
                             <h6>40 Years of experience</h6>
-                            <strong>MBBS, MD (Internal Medicine), DM (Neurology)</strong>
+                            <strong>MBBS, MD (Internal Medicine), DM
+                              (Neurology)</strong>
 
                             <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
-                                class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book an Appointment</span> </a>
+                                class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book
+                                an Appointment</span> </a>
                             <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
                                 class="opinion d-inline-block btn btn-success d-block button-w mx-auto"><i
-                                class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on WhatsApp</span></a>
+                                  class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on
+                                WhatsApp</span></a>
 
                           </div>
                         </div>
@@ -493,10 +526,12 @@
                             <strong>MBBS, MS, M.Ch (Ortho.)</strong>
 
                             <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
-                                class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book an Appointment</span> </a>
+                                class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book
+                                an Appointment</span> </a>
                             <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
                                 class="opinion d-inline-block btn btn-success d-block button-w mx-auto"><i
-                                class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on WhatsApp</span></a>
+                                  class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on
+                                WhatsApp</span></a>
 
                           </div>
                         </div>
@@ -504,8 +539,6 @@
                       </div>
 
                     </div>
-
-
 
                   </div>
                   <div class="tab-pane fade" id="onco-pill" role="tabpanel" aria-labelledby="onco-tab">
@@ -523,10 +556,12 @@
                             <strong>MBBS, MD - Radiotherapy</strong>
 
                             <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
-                                class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book an Appointment</span> </a>
+                                class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book
+                                an Appointment</span> </a>
                             <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
                                 class="opinion d-inline-block btn btn-success d-block button-w mx-auto"><i
-                                class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on WhatsApp</span></a>
+                                  class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on
+                                WhatsApp</span></a>
 
                           </div>
                         </div>
@@ -537,15 +572,19 @@
                               class="img-fluid doc-icon">
                           </div>
                           <div class="docinfo">
-                            <h4 class="text-center">Dr. Surender Kumar Dabas</h4>
+                            <h4 class="text-center">Dr. Surender Kumar
+                              Dabas</h4>
                             <h6>14 Years of experience</h6>
-                            <strong>MBBS, MS - General Surgery, DNB - Surgical Oncology</strong>
+                            <strong>MBBS, MS - General Surgery, DNB -
+                              Surgical Oncology</strong>
 
                             <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
-                                class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book an Appointment</span> </a>
+                                class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book
+                                an Appointment</span> </a>
                             <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
                                 class="opinion d-inline-block btn btn-success d-block button-w mx-auto"><i
-                                class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on WhatsApp</span></a>
+                                  class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on
+                                WhatsApp</span></a>
 
                           </div>
                         </div>
@@ -554,13 +593,12 @@
 
                     </div>
 
-
-
                   </div>
 
                   <div class="tab-pane fade" id="transplant-pill" role="tabpanel" aria-labelledby="transplant-tab">
                     <div id="portfolio5" class="container-fluid text-center text-white">
-                      <h2 class="text-center">Team of Transplant Surgeons</h2><br>
+                      <h2 class="text-center">Team of Transplant
+                        Surgeons</h2><br>
                       <div class="row text-center slideanim">
                         <div class="col-md-6">
                           <div class="thumbnail">
@@ -570,13 +608,16 @@
                           <div class="docinfo">
                             <h4 class="text-center">Dr. Sunil Prakash</h4>
                             <h6>35 Years of experience</h6>
-                            <strong>MBBS, MD - Internal Medicine, DM - Nephrology</strong>
+                            <strong>MBBS, MD - Internal Medicine, DM -
+                              Nephrology</strong>
 
                             <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
-                                class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book an Appointment</span> </a>
+                                class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book
+                                an Appointment</span> </a>
                             <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
                                 class="opinion d-inline-block btn btn-success d-block button-w mx-auto"><i
-                                class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on WhatsApp</span></a>
+                                  class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on
+                                WhatsApp</span></a>
 
                           </div>
                         </div>
@@ -592,17 +633,17 @@
                             <strong>MBBS, MD - Radiotherapy</strong>
 
                             <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
-                                class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book an Appointment</span> </a>
-                                <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
-                                  class="opinion d-inline-block btn btn-success d-block button-w mx-auto"><i
-                                class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on WhatsApp</span></a>
+                                class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book
+                                an Appointment</span> </a>
+                            <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
+                                class="opinion d-inline-block btn btn-success d-block button-w mx-auto"><i
+                                  class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on
+                                WhatsApp</span></a>
 
                           </div>
                         </div>
                       </div>
                     </div>
-
-
 
                   </div>
                 </div>
@@ -620,7 +661,8 @@
         <div class="why" id="whyus">
           <div class="row">
             <div class="col-sm-12">
-              <h1 class="section-title text-center">Why Treatment Traveller?</h1>
+              <h1 class="section-title text-center">Why Treatment
+                Traveller?</h1>
             </div>
           </div>
           <div class="row">
@@ -636,7 +678,8 @@
               <ul class="justifiedlist">
                 <li>Video/Photo call with specialists</li>
                 <li>Customised treatment plan</li>
-                <li>A dedicated patient care manager (a doctor) handles all details </li>
+                <li>A dedicated patient care manager (a doctor) handles all
+                  details </li>
               </ul>
             </div>
           </div>
@@ -647,32 +690,40 @@
       <div class="container pb-5">
         <div class="row">
           <div class="col-sm-12 text-center">
-            <h1 class="section-title" style="font-weight: 200;">Patient Services at BLK Hospital</h1>
+            <h1 class="section-title" style="font-weight: 200;">Patient
+              Services at BLK Hospital</h1>
             <h3>by</h3>
-            <h6 class="text-center"><img src="img/ttlogoblack.png" alt="" class="img-fluid" /></h6>
+            <h6 class="text-center"><img src="img/ttlogoblack.png" alt class="img-fluid" /></h6>
           </div>
         </div>
         <div class="row pt-row">
           <div class=col-md-4>
-            <h5 class="text-center"><img src="img/assistant-icon.jpg" alt="" /></h5>
+            <h5 class="text-center"><img src="img/assistant-icon.jpg" alt /></h5>
             <h4 class="text-center">Personalised Assistance</h4>
-            <p class="text-justify">Our teams comprise of travel professionals & doctors. Each provides a personalized
-              care to our patients. This ensures the highest quality of care is given at a pace the patient is
+            <p class="text-justify">Our teams comprise of travel
+              professionals & doctors. Each provides a personalized
+              care to our patients. This ensures the highest quality of care
+              is given at a pace the patient is
               comfortable with & improves overall healthcare experience.</p>
           </div>
           <div class=col-md-4>
-            <h5 class="text-center"><img src="img/save-time-icon.jpg" alt="" /></h5>
+            <h5 class="text-center"><img src="img/save-time-icon.jpg" alt /></h5>
             <h4 class="text-center">Save Time & Money</h4>
-            <p class="text-justify">We understand the criticality of time in healthcare. Our protocols & teams are well
-              designed to handle emergencies & planned treatments. We save our patient�s precious time & money at all
+            <p class="text-justify">We understand the criticality of time in
+              healthcare. Our protocols & teams are well
+              designed to handle emergencies & planned treatments. We save
+              our patient�s precious time & money at all
               steps of travel & treatment.</p>
           </div>
           <div class=col-md-4>
-            <h5 class="text-center"><img src="img/comprehensive-care-icon.jpg" alt="" /></h5>
+            <h5 class="text-center"><img src="img/comprehensive-care-icon.jpg" alt /></h5>
             <h4 class="text-center">Comprehensive Care</h4>
-            <p class="text-justify">End-to-End care from initial Opinion & Cost Estimates form best 5 hospitals,
-              visa-related, flights, airport pick-up, guest house, food, kitchen, local transport, SIM card, wi-fi,
-              doctors meetings, hospital admission, discharge, follow up, drop back to airport.</p>
+            <p class="text-justify">End-to-End care from initial Opinion &
+              Cost Estimates form best 5 hospitals,
+              visa-related, flights, airport pick-up, guest house, food,
+              kitchen, local transport, SIM card, wi-fi,
+              doctors meetings, hospital admission, discharge, follow up,
+              drop back to airport.</p>
           </div>
           <!--  <div class="col-md-3 col-6 pt-4">
              <a href="#location"> <h5 class="text-center"><i class="fa fa-hospital" aria-hidden="true" style="font-size: 3rem; color: #33414e;"></i>
@@ -716,18 +767,24 @@
           <div class="col-12 about-apollo px-100 text-center">
             <h2>About BLK Super Speciality Hospital</h2>
             <p class="text-justify">
-              BLK Super Speciality Hospital is the largest stand-alone private sector hospital in Delhi. The Hospital
-              has a capacity of 650 beds with dedicated 125 critical care beds with over 150 specialists across various
-              super specialties making it one of the best hospitals in India. BLK comprehensive Cancer Care with organ
-              specific specialist teams makes it best Cancer Hospital in India.
+              BLK Super Speciality Hospital is the largest stand-alone
+              private sector hospital in Delhi. The Hospital
+              has a capacity of 650 beds with dedicated 125 critical care
+              beds with over 150 specialists across various
+              super specialties making it one of the best hospitals in
+              India. BLK comprehensive Cancer Care with organ
+              specific specialist teams makes it best Cancer Hospital in
+              India.
             </p>
             <p class="text-justify"><strong>Vision:</strong> <br>
-              To create a patient-centric, tertiary healthcare organization focused on non-intrusive quality care
+              To create a patient-centric, tertiary healthcare organization
+              focused on non-intrusive quality care
               utilizing leading edge technology with a human touch.</p>
 
             <p class="text-justify"><strong>Mission:</strong><br>
             <ul class="text-left">
-              <li>Achieve Professional Excellence in delivering Quality care.
+              <li>Achieve Professional Excellence in delivering Quality
+                care.
               </li>
               <li>Ensure care with Integrity and Ethics.
               </li>
@@ -778,8 +835,7 @@
                         <!-- </ul>
                   <ul style="line-height: 1.4;"> -->
 
-
-                        <!-- <li><input class="form-control" align="left" style="float: left;" class="contactno" type='text'
+    <!-- <li><input class="form-control" align="left" style="float: left;" class="contactno" type='text'
                             id='Phone' name='Phone' maxlength='20' onkeypress="return fncInputNumericValuesOnly();"
                             onfocusout=" return validatePhoneLen(this)" autocomplete="off" required="required"
                             placeholder="Contact Number" /></li>
@@ -796,12 +852,12 @@
                     </div>
                   </ul> -->
 
-                  <!-- <ul class="d-none">
+    <!-- <ul class="d-none">
                     <input type="hidden" id="Source" name="Source" value="Hospitals in India">
                     <input type="hidden" id="mx_Hospital_List" name="mx_Hospital_List" value="Medanta Hospital">
                     <input type="hidden" id="mx_Speciality" name="mx_Speciality" value="Transplant">
                   </ul> -->
-                  <!-- <input type="hidden" name="MXHOrgCode" value="9986">
+    <!-- <input type="hidden" name="MXHOrgCode" value="9986">
                   <input type="hidden" name="MXHLandingPageId" value="f997c042-1dca-11e6-b61b-22000aa8e760">
                   <input type="hidden" name="MXHFormBehaviour" value="1">
                   <input type="hidden" name="MXHFormDataTransfer" value="2">
@@ -811,8 +867,8 @@
                   <input type="hidden" name="MXHOutputMessagePosition" value="0">
                   <input type="hidden" name="MXHIsExternallyUsed" value="1">
                 </form> -->
-                <!-- <script type="text/javascript"> var MXLandingPageId = 'f997c042-1dca-11e6-b61b-22000aa8e760'; </script> -->
-              <!-- </div>
+    <!-- <script type="text/javascript"> var MXLandingPageId = 'f997c042-1dca-11e6-b61b-22000aa8e760'; </script> -->
+    <!-- </div>
             </div>
           </div>
         </div>
@@ -827,7 +883,8 @@
         <div class="modal-dialog modal-dialog-centered" style="max-width: 720px;" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h3>Get free opinion and treatment plan from Top Oncology Hosptials in India</h3>
+              <h3>Get free opinion and treatment plan from Top Oncology
+                Hosptials in India</h3>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -847,7 +904,8 @@
                           required="required" placeholder="Email ID" /></li>
                     </div>
                     <div class="col-md-4">
-                      <li class="form-group"><label for="exclude_FileUpload_1">Attach Your Report (Upload
+                      <li class="form-group"><label for="exclude_FileUpload_1">Attach Your Report
+                          (Upload
                           Files)</label><input type='file' class="form-control" id='exclude_FileUpload_1'
                           name='exclude_FileUpload_1' autocomplete='off' /></li>
                     </div>
@@ -856,7 +914,6 @@
                           name='exclude_FileUpload_1_label' value='Attach Reports' /></li>
                       <!-- </ul>
                   <ul style="line-height: 1.4;"> -->
-
 
                       <li><input class="form-control" align="left" style="float: left;" class="contactno" type='text'
                           id='Phone' name='Phone' maxlength='20' onkeypress="return fncInputNumericValuesOnly();"
@@ -875,8 +932,8 @@
                 </ul>
                 <ul class="d-none">
                   <li><input type='hidden' id='Source' name='Source' value='Hospitals in India' /></li>
-                  <li><input type='hidden' id='mx_Hospital_List' name='mx_Hospital_List' value='' /></li>
-                  <li><input type='hidden' id='mx_Speciality' name='mx_Speciality' value='' /></li>
+                  <li><input type='hidden' id='mx_Hospital_List' name='mx_Hospital_List' value /></li>
+                  <li><input type='hidden' id='mx_Speciality' name='mx_Speciality' value /></li>
                 </ul>
 
                 <input type="hidden" name="MXHOrgCode" value="9986">
@@ -949,7 +1006,7 @@
     const drawer = document.getElementById('drawer');
 
     const openButton = document.getElementById('openBtn');
-    
+
     document.getElementById('openBtn').addEventListener('click', function () {
       event.stopPropagation();
       document.getElementById('drawer').style.bottom = '0';
@@ -962,13 +1019,14 @@
 
 
     document.body.addEventListener('click', (event) => {
-     const mobileBreakpoint = 768;
+      const mobileBreakpoint = 768;
 
       if (window.innerWidth >= mobileBreakpoint) {
-      // Close drawer if the click is outside the drawer or open button
-      if (!drawer.contains(event.target) && !openBtn.contains(event.target)) {
-        document.getElementById('drawer').style.bottom = '-100%';
-      }}
+        // Close drawer if the click is outside the drawer or open button
+        if (!drawer.contains(event.target) && !openBtn.contains(event.target)) {
+          document.getElementById('drawer').style.bottom = '-100%';
+        }
+      }
     });
 
     // Prevent clicks inside the drawer or open button from triggering body click listener
@@ -978,24 +1036,11 @@
 
   </script>
 
-
   <!-- popup form ends -->
   <script src="js/jquery-slim.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EGPK7ZS1P8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-EGPK7ZS1P8');
-</script>
 </body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PV25C27" height="0" width="0"
-    style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
 </html>
