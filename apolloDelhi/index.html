@@ -35,6 +35,22 @@
     gtag('config', 'AW-922729084');
   </script>
 
+<!-- Event snippet for Lead conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof (url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-922729084/zVS5CMT9j2YQ_PT-twM',
+      'event_callback': callback
+    });
+    return false;
+  }
+</script>
 </head>
 
 <body>
@@ -58,12 +74,12 @@
         <a href="https://what.sapp.link/apollo-india" target="_blank" aria-label="Whatsapp"> <i class="fa fa-phone "
             style="padding-left: 9px; color: rgb(31, 166, 229);" aria-hidden="true"><span
               class="tb_text"></span></i></a>&nbsp;
-        <a onclick="LC_API.open_chat_window() ; return false" href="" style="color: white;" aria-label="Whatsapp"> <i
+        <a onclick="gtag_report_conversion();  return false" href="" style="color: white;" aria-label="Whatsapp"> <i
             class="fa fa-comments " style="padding-left: 23%; color: rgb(20, 178, 83);" aria-hidden="true"><span
               class="tb_text"></span></i> </a>&emsp;
 
-        <a  return false" href="" style="color: white;"
-          data-url="https://what.sapp.link/apollo-india">  (+91) 98991
+        <a return false" href="" style="color: white;" onclick="gtag_report_conversion();"
+          data-url="https://what.sapp.link/apollo-india"> (+91) 98991
           87773 </a>
 
       </div>
@@ -100,7 +116,7 @@
           <a class="nav-link" aria-label="Healthcare Packages" href="#HealthPackages">Preventive checkups</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" onclick="LC_API.open_chat_window() ; return false" href="#"> Connect on whatsapp
+          <a class="nav-link" onclick="gtag_report_conversion();  return false" href="#"> Connect on whatsapp
           </a>
         </li>
         <li class="nav-item">
@@ -117,7 +133,7 @@
     <div class="text-center  ">
       <h1 class="text-bnnr"><b>Apollo Hospitals</b>,Delhi
       </h1><br><span class="text-bnnr-dis">INTERNATIONAL PATIENTS​</span><br>
-      <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-primary2"
+      <button type="button" onclick="gtag_report_conversion();  return false" class="btn btn-primary2"
         data-url="https://what.sapp.link/apollo-india">GET FREE
         OPINION</button><br>
       <a href="#scrool_about" aria-label="Whatsapp">
@@ -191,9 +207,9 @@
           <div class="card-body">
             <h1 class="card-title">Dr. Amita Mahajan </h1>
             <p class="card-text">Oncology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button data-url="https://what.sapp.link/apollo-india" class="dr_btn2"
-              onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i>Connect On Whatsapp</button>
             <!--call btn dr-->
 
@@ -210,9 +226,9 @@
             <h1 class="card-title">Dr. Dipanjan Panda
             </h1>
             <p class="card-text">Oncology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button data-url="https://what.sapp.link/apollo-india" class="dr_btn2"
-              onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i>Connect On Whatsapp</button>
 
             <!--end here-->
@@ -228,9 +244,9 @@
             <h1 class="card-title">Dr. Ganesh Jadhav
             </h1>
             <p class="card-text">Oncology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button data-url="https://what.sapp.link/apollo-india" class="dr_btn2"
-              onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i>Connect On Whatsapp</button>
 
             <!--end here-->
@@ -254,9 +270,9 @@
             <h1 class="card-title">Dr. P K Das
             </h1>
             <p class="card-text">Oncology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button data-url="https://what.sapp.link/apollo-india" class="dr_btn2"
-              onclick="LC_API.open_chat_window() ; return false"><i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"><i class="fa fa-whatsapp fa-btn"
                 style="font-size:48px;"></i> Connect on Whatsapp</button>
 
             <!--end here-->
@@ -270,9 +286,9 @@
             <h1 class="card-title">Dr. Praveen Kumar Garg
             </h1>
             <p class="card-text">Oncology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button data-url="https://what.sapp.link/apollo-india" class="dr_btn2"
-              onclick="LC_API.open_chat_window() ; return false"><i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"><i class="fa fa-whatsapp fa-btn"
                 style="font-size:48px;"></i> Connect on Whatsapp</button>
 
             <!--end here-->
@@ -286,9 +302,9 @@
             <h1 class="card-title">Dr. Ramesh Sarin
             </h1>
             <p class="card-text">Oncology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button data-url="https://what.sapp.link/apollo-india" class="dr_btn2"
-              onclick="LC_API.open_chat_window() ; return false"><i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"><i class="fa fa-whatsapp fa-btn"
                 style="font-size:48px;"></i> Connect on Whatsapp</button>
 
 
@@ -303,9 +319,9 @@
             <h1 class="card-title">Dr. Robin Khosa
             </h1>
             <p class="card-text">Oncology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button data-url="https://what.sapp.link/apollo-india" class="dr_btn2"
-              onclick="LC_API.open_chat_window() ; return false"><i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"><i class="fa fa-whatsapp fa-btn"
                 style="font-size:48px;"></i> Connect on Whatsapp</button>
 
             <!--end here-->
@@ -319,9 +335,9 @@
             <h1 class="card-title">Dr. Ruquaya Ahmad Mir
             </h1>
             <p class="card-text">Oncology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button data-url="https://what.sapp.link/apollo-india" class="dr_btn2"
-              onclick="LC_API.open_chat_window() ; return false"><i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"><i class="fa fa-whatsapp fa-btn"
                 style="font-size:48px;"></i> Connect on Whatsapp</button>
 
             <!--end here-->
@@ -336,9 +352,9 @@
 
             </h1>
             <p class="card-text">Oncology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button data-url="https://what.sapp.link/apollo-india" class="dr_btn2"
-              onclick="LC_API.open_chat_window() ; return false"><i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"><i class="fa fa-whatsapp fa-btn"
                 style="font-size:48px;"></i> Connect on Whatsapp</button>
 
             <!--end here-->
@@ -353,9 +369,9 @@
 
             </h1>
             <p class="card-text">Oncology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button data-url="https://what.sapp.link/apollo-india" class="dr_btn2"
-              onclick="LC_API.open_chat_window() ; return false"><i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"><i class="fa fa-whatsapp fa-btn"
                 style="font-size:48px;"></i> Connect on Whatsapp</button>
 
             <!--end here-->
@@ -371,9 +387,9 @@
 
             </h1>
             <p class="card-text">Oncology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button data-url="https://what.sapp.link/apollo-india" class="dr_btn2"
-              onclick="LC_API.open_chat_window() ; return false"><i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"><i class="fa fa-whatsapp fa-btn"
                 style="font-size:48px;"></i> Connect on Whatsapp</button>
 
             <!--end here-->
@@ -389,9 +405,9 @@
 
             </h1>
             <p class="card-text">Oncology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button data-url="https://what.sapp.link/apollo-india" class="dr_btn2"
-              onclick="LC_API.open_chat_window() ; return false"><i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"><i class="fa fa-whatsapp fa-btn"
                 style="font-size:48px;"></i> Connect on Whatsapp</button>
 
             <!--end here-->
@@ -407,9 +423,9 @@
 
             </h1>
             <p class="card-text">Oncology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button data-url="https://what.sapp.link/apollo-india" class="dr_btn2"
-              onclick="LC_API.open_chat_window() ; return false"><i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"><i class="fa fa-whatsapp fa-btn"
                 style="font-size:48px;"></i> Connect on Whatsapp</button>
 
             <!--end here-->
@@ -425,9 +441,9 @@
 
             </h1>
             <p class="card-text">Oncology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button data-url="https://what.sapp.link/apollo-india" class="dr_btn2"
-              onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp fa-btn"
                 style="font-size:48px;"></i> Connect on Whatsapp</button>
 
             <!--end here-->
@@ -442,9 +458,9 @@
             <h1 class="card-title">Dr. Harsh Dua
             </h1>
             <p class="card-text">Oncology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i>Connect On Whatsapp</button>
 
             <!--end here-->
@@ -464,7 +480,7 @@
         </div>
         <div class="col-6 text-right chat_col">
           <button class="btn-bnnr" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp"
+            onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp"
               style="font-size:48px;"></i>Conncet On Whatsapp
           </button>
         </div>
@@ -486,9 +502,9 @@
           <div class="card-body">
             <h1 class="card-title">Dr. Anoop K Ganjoo</h1>
             <p class="card-text">Cardiology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i>Connect On Whatsapp</button>
             <!--call btn dr-->
 
@@ -503,9 +519,9 @@
           <div class="card-body">
             <h1 class="card-title">Dr. Amit Mittal</h1>
             <p class="card-text">Cardiology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i>Connect On Whatsapp</button>
 
             <!--end here-->
@@ -519,9 +535,9 @@
           <div class="card-body">
             <h1 class="card-title">Dr. K K Kapur</h1>
             <p class="card-text">Cardiology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i>Connect On Whatsapp</button>
 
             <!--end here-->
@@ -545,9 +561,9 @@
           <div class="card-body">
             <h1 class="card-title">Dr. Col V Hariharan</h1>
             <p class="card-text">Cardiology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i>Connect On Whatsapp</button>
 
 
@@ -561,9 +577,9 @@
           <div class="card-body">
             <h1 class="card-title">Dr. Mukesh Goel </h1>
             <p class="card-text">Cardiology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i>Connect On Whatsapp</button>
 
             <!--end here-->
@@ -578,9 +594,9 @@
             <h1 class="card-title">Dr. Prashanta Kumar
             </h1>
             <p class="card-text">Cardiology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i>Connect On Whatsapp</button>
 
             <!--end here-->
@@ -603,7 +619,7 @@
         </div>
         <div class="col-6 text-right chat_col">
           <button class="btn-bnnr" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp"
+            onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp"
               style="font-size:48px;"></i>Conncet On Whatsapp
           </button>
         </div>
@@ -626,9 +642,9 @@
           <div class="card-body">
             <h1 class="card-title">Dr. Anoop Kohli </h1>
             <p class="card-text">Neurology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"><i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"><i class="fa fa-whatsapp fa-btn"
                 style="font-size:48px;"></i> Connect on Whatsapp</button>
 
             <!--end here-->
@@ -642,9 +658,9 @@
           <div class="card-body">
             <h1 class="card-title">Dr. Charu Gauba </h1>
             <p class="card-text">Neurology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i>Connect On Whatsapp</button>
 
             <!--end here-->
@@ -658,9 +674,9 @@
           <div class="card-body">
             <h1 class="card-title">Dr. Mukul Varma</h1>
             <p class="card-text">Neurology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i>Connect On Whatsapp</button>
 
             <!--end here-->
@@ -673,9 +689,9 @@
           <div class="card-body">
             <h1 class="card-title">Dr. Mukul Varma </h1>
             <p class="card-text">Neurology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i>Connect On Whatsapp</button>
 
             <!--end here-->
@@ -688,9 +704,9 @@
           <div class="card-body">
             <h1 class="card-title">Dr Pushpendra Nath </h1>
             <p class="card-text">Neurology</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"><i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"><i class="fa fa-whatsapp fa-btn"
                 style="font-size:48px;"></i> Connect on Whatsapp</button>
 
             <!--end here-->
@@ -718,7 +734,7 @@
         </div>
         <div class="col-6 text-right chat_col">
           <button class="btn-bnnr" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp " style="font-size:48px;"></i>
+            onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp " style="font-size:48px;"></i>
             Conncet on Whatsapp
           </button>
         </div>
@@ -742,9 +758,9 @@
           <div class="card-body">
             <h1 class="card-title">Dr. Chander Shekar </h1>
             <p class="card-text">Orthopedic</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"><i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"><i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i> Connect on Whatsapp</button>
 
             <!--end here-->
@@ -758,9 +774,9 @@
           <div class="card-body">
             <h1 class="card-title">Dr. Harsh Bhargava </h1>
             <p class="card-text">Orthopedic</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i>Connect on Whatsapp</button>
 
             <!--end here-->
@@ -775,9 +791,9 @@
             <h1 class="card-title">Dr. Havind Tandon
             </h1>
             <p class="card-text">Orthopedic</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i>Connect on Whatsapp</button>
 
             <!--end here-->
@@ -801,9 +817,9 @@
           <div class="card-body">
             <h1 class="card-title">Dr. Raju Vaishya </h1>
             <p class="card-text">Orthopedic</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"><i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"><i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i> Connect on Whatsapp</button>
 
             <!--end here-->
@@ -818,9 +834,9 @@
             <h1 class="card-title">Dr. Ramani Narasimhan
             </h1>
             <p class="card-text">Orthopedic</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i>Connect on Whatsapp</button>
 
             <!--end here-->
@@ -836,9 +852,9 @@
 
             </h1>
             <p class="card-text">Orthopedic</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i>Connect on Whatsapp</button>
 
             <!--end here-->
@@ -853,9 +869,9 @@
 
             </h1>
             <p class="card-text">Orthopedic</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i>Connect on Whatsapp</button>
 
             <!--end here-->
@@ -869,9 +885,9 @@
             <h1 class="card-title">Dr. M N Sehar
             </h1>
             <p class="card-text">Orthopedic</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i>Connect on Whatsapp</button>
 
             <!--end here-->
@@ -886,9 +902,9 @@
 
             </h1>
             <p class="card-text">Orthopedic</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"><i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"><i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i> Connect on Whatsapp</button>
 
             <!--end here-->
@@ -906,9 +922,9 @@
             <h1 class="card-title">Dr. Prof Amit Kumar
             </h1>
             <p class="card-text">Orthopedic</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"><i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"><i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i> Connect on Whatsapp</button>
 
             <!--end here-->
@@ -929,7 +945,7 @@
         </div>
         <div class="col-6 text-right chat_col">
           <button class="btn-bnnr" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp" style="font-size:48px;"></i>
+            onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp" style="font-size:48px;"></i>
             Conncet on Whatsapp
           </button>
         </div>
@@ -952,9 +968,9 @@
             <h1 class="card-title">Dr. S N Mehta
             </h1>
             <p class="card-text">Kidney Transplant</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"><i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"><i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i> Connect on Whatsapp</button>
 
             <!--end here-->
@@ -969,9 +985,9 @@
             <h1 class="card-title">Dr. Sandeep Guleria
             </h1>
             <p class="card-text">Kidney Transplant</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i>Connect on Whatsapp</button>
 
             <!--end here-->
@@ -985,9 +1001,9 @@
             <h1 class="card-title">Dr. Neerav Goyal
             </h1>
             <p class="card-text">Liver Transplant</p>
-            <button class="dr_btn" onclick="LC_API.open_chat_window() ; return false">Book an Appointment</button><br>
+            <button class="dr_btn" onclick="gtag_report_conversion();  return false">Book an Appointment</button><br>
             <button class="dr_btn2" data-url="https://what.sapp.link/apollo-india"
-              onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp fa-btn"
+              onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp fa-btn"
                 style="font-size:25px;"></i>Connect on Whatsapp</button>
 
             <!--end here-->
@@ -1011,7 +1027,7 @@
         </div>
         <div class="col-6 text-right chat_col">
           <button class="btn-bnnr" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp" style="font-size:48px;"></i>
+            onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp" style="font-size:48px;"></i>
             Conncet on Whatsapp
           </button>
         </div>
@@ -1225,7 +1241,7 @@
           <p>This is a sliding drawer from the bottom.</p>
         </div>
       </div> -->
-  <!-- <div id="sidebar" onclick="LC_API.open_chat_window() ; return false"> -->
+  <!-- <div id="sidebar" onclick="gtag_report_conversion();  return false"> -->
 
   <!--slider inner  contant -->
   <!-- <div class="container text-center sidebar-top">
@@ -1256,7 +1272,8 @@
         Support</h1><br>
       <span class="sidebar_end_span ">Get appointments, Tele-consultation, Visa Support and all International Patient
         Services </span><br>
-      <button class="sidebar-button" onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp " style="font-size:48px;"></i>Connect On Whatsapp</button>
+      <button class="sidebar-button" onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp "
+          style="font-size:48px;"></i>Connect On Whatsapp</button>
     </div>
   </div> -->
 
@@ -1314,7 +1331,7 @@
       <div class="col-md-2 col-sm-6 mb-3  ">
         <h1 class="price">₹4000</h1><br>
 
-        <button onclick="LC_API.open_chat_window() ; return false " class="btn-hotel">Connect on Whatsapp</button>
+        <button onclick="gtag_report_conversion();  return false " class="btn-hotel">Connect on Whatsapp</button>
         <p class="hotel_tc">*rates may vary depending on type of room, desired features and level of customization
         </p>
       </div>
@@ -1357,7 +1374,7 @@
       <div class="col-md-2 col-sm-6 mb-3  ">
         <h1 class="price">₹3000</h1><br>
 
-        <button onclick="LC_API.open_chat_window() ; return false " class="btn-hotel">Connect on Whatsapp</button>
+        <button onclick="gtag_report_conversion();  return false " class="btn-hotel">Connect on Whatsapp</button>
         <p class="hotel_tc">*rates may vary depending on type of room, desired features and level of customization
         </p>
       </div>
@@ -1398,7 +1415,7 @@
       <div class="col-md-2 col-sm-6 mb-3  ">
         <h1 class="price">₹3000</h1><br>
 
-        <button onclick="LC_API.open_chat_window() ; return false " class="btn-hotel">Connect on Whatsapp</button>
+        <button onclick="gtag_report_conversion();  return false " class="btn-hotel">Connect on Whatsapp</button>
         <p class="hotel_tc">*rates may vary depending on type of room, desired features and level of customization
         </p>
       </div>
@@ -1441,7 +1458,7 @@
       <div class="col-md-2 col-sm-6 mb-3  ">
         <h1 class="price">₹2621</h1><br>
 
-        <button onclick="LC_API.open_chat_window() ; return false " class="btn-hotel">Connect on Whatsapp</button>
+        <button onclick="gtag_report_conversion();  return false " class="btn-hotel">Connect on Whatsapp</button>
         <p class="hotel_tc">*rates may vary depending on type of room, desired features and level of customization
         </p>
       </div>
@@ -1483,7 +1500,7 @@
       <div class="col-md-2 col-sm-6 mb-3  ">
         <h1 class="price">₹2195</h1><br>
 
-        <button onclick="LC_API.open_chat_window() ; return false " class="btn-hotel">Connect on Whatsapp</button>
+        <button onclick="gtag_report_conversion();  return false " class="btn-hotel">Connect on Whatsapp</button>
         <p class="hotel_tc">*rates may vary depending on type of room, desired features and level of customization
         </p>
       </div>
@@ -1561,7 +1578,7 @@ color: #047c9e;
         </div>
         <div class="col-6 text-right chat_col">
           <button data-url="https://what.sapp.link/apollo-india" class="btn-bnnr "
-            onclick="LC_API.open_chat_window() ; return false"> <i class="fa fa-whatsapp "
+            onclick="gtag_report_conversion();  return false"> <i class="fa fa-whatsapp "
               style="font-size:48px;"></i>Conncet On Whatsapp
           </button>
         </div>
@@ -2025,6 +2042,8 @@ color: #047c9e;
       // function setInitialCardVisibility() { };
 
     </script>
+
+
 
 </body>
 
