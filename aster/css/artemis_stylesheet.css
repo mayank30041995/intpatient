@@ -10,7 +10,7 @@ body {
     bottom: 20px;
     right: 20px;
     padding: 10px 50px;
-    background-color: #245c6d;
+    background-color: #164289;
     color: white;
     border: none;
     cursor: pointer;
@@ -43,7 +43,7 @@ body {
     right: 0;
     /* height: 75%; */
     width: 35%;
-    background: linear-gradient(#237d9e, #8fbfd1);
+    background: linear-gradient(#164289, #3465b3);
     color: #fff;
     /* Text color for contrast */
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
@@ -235,7 +235,7 @@ body {
     width: 0;
     position: fixed;
     height: 100%;
-    background-color: #245c6d;
+    background-color: #164289;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -275,7 +275,7 @@ body {
 .topbar {
     z-index: 99;
     background: white;
-    color: #245c6d;
+    color: #164289;
     font-size: 16px;
     position: fixed;
     height: 63px;
@@ -315,7 +315,7 @@ body {
 .navbar {
     padding-inline: 126px;
     margin-top: 68px;
-    background: #328090;
+    background: #164289;
     margin-bottom: -4px;
 }
 
@@ -682,7 +682,7 @@ body {
 .dr_btn {
     height: 43px;
     border-radius: 10px;
-    background: #245c6d;
+    background: #164289;
     border: none;
     color: white;
     padding: 8px 26px 8px 26px;
@@ -693,7 +693,7 @@ body {
 }
 
 .banner-bn {
-    background: #245c6d;
+    background: #164289;
     height: 163px;
     color: white;
     font-size: 25px;
@@ -717,7 +717,7 @@ body {
     border-radius: 10px;
     background: #ffffff;
     border: none;
-    color: #245c6d;
+    color: #164289;
     padding: 8px 14px;
     margin-top: 4px;
     width: 100%;
@@ -767,7 +767,7 @@ ul {
 
 .btn-primary2 {
     color: #fff !important;
-    background-color: #245c6d !important;
+    background-color: #164289 !important;
     border-color: #245c6d !important;
     font-size: 14px;
     height: 55px;
@@ -782,8 +782,8 @@ ul {
 
 .btn-primary {
     color: #fff !important;
-    background-color: #245c6d !important;
-    border-color: #245c6d !important;
+    background-color: #164289 !important;
+        border-color: #164289 !important;
     font-size: 9px;
     height: 51px;
     margin-bottom: 10px;
@@ -795,7 +795,7 @@ ul {
 
 .btn-info {
     color: #fff;
-    background-color: #245c6d;
+    background-color: #164289;
     left: 0px;
     position: relative;
     height: 89px;
@@ -811,8 +811,8 @@ ul {
 }
 
 .btn-info:hover {
-    background-color: #245c6d !important;
-    border-color: #245c6d !important;
+    background-color: #164289 !important;
+        border-color: #164289 !important;
 
 }
 
@@ -840,7 +840,7 @@ ul {
     font-size: 19px;
     border: none;
     outline: none;
-    background-color: #245c6d;
+    background-color: #164289;
     color: white;
     cursor: pointer;
     padding: 6px;
@@ -855,7 +855,7 @@ ul {
 
 .heading {
     font-size: 32px;
-    color: #245c6d;
+    color: #164289;
     text-align: center;
     padding-bottom: 18px;
     font-weight: 500;
@@ -958,7 +958,7 @@ table {
     font-size: 9px;
     border-radius: 4px;
     border: none;
-    background: #245c6d;
+    background: #164289;
     color: white;
     text-align: left;
     padding-left: 23px;
@@ -998,7 +998,7 @@ table {
 .sticky-element {
     position: sticky;
     top: 61px;
-    background-color: #245c6d !important;
+    background-color: #164289 !important;
     padding: 10px;
     width: 100%;
     text-align: center;
@@ -1015,7 +1015,7 @@ table {
 }
 
 .sidebar-top {
-    background-color: #245c6d;
+    background-color: #164289;
     padding: 8px;
     position: relative;
     top: -60px;
@@ -1040,7 +1040,7 @@ table {
 .new_mr {
     margin-left: 12px;
     margin-right: 16px;
-    background-color: #245c6d !important;
+    background-color: #164289 !important;
 
 }
 
@@ -1238,7 +1238,7 @@ h1 {
     box-shadow: 0px 0px 2px 0px #d1d1d1;
     border-radius: 7px;
     background: #c5f4f3;
-    color: #006f6c;
+    color: #164289;
     font-weight: 500;
     margin-bottom: 32px;
 }
@@ -1251,7 +1251,7 @@ h1 {
 
 .font_set {
     font-size: 32px;
-    color: #006f6c;
+    color: #164289;
     text-align: left;
 }
 
@@ -1525,7 +1525,7 @@ h1 {
 
     .btn-primary2 {
         color: #fff !important;
-        background-color: #245c6d !important;
+        background-color: #164289 !important;
         font-size: 16px;
         height: 48px !important;
         margin-bottom: 10px;
@@ -1535,7 +1535,7 @@ h1 {
 
     .btn-primary {
         color: #fff !important;
-        background-color: #245c6d !important;
+        background-color: #164289 !important;
         font-size: 9px;
         height: 34px;
         margin-bottom: 10px;
@@ -1742,7 +1742,7 @@ h1 {
         padding-right: 1rem;
         padding-left: 1rem;
         font-size: 14px;
-        color: #328090 !important;
+        color: #164289 !important;
         font-weight: 600;
     }
 
@@ -1761,7 +1761,7 @@ h1 {
     .navbar-light .navbar-nav .nav-link.show,
     .navbar-light .navbar-nav .show>.nav-link {
         color: rgb(255 255 255 / 90%);
-        background: #245c6d;
+        background: #164289;
         width: 100% !important;
     }
 
