@@ -331,7 +331,7 @@ body {
 
 /* cardio dr */
 .card-img-top1 {
-    background-image: url(../assets/Cardiology/Dr.\ Rajasekhar\ Varma.png);
+    background-image: url(../assets/Cardiology/Dr\ Anil\ Kumar.webp);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 13px;
@@ -1071,6 +1071,10 @@ table {
 
 .footer-ph {
     margin-top: -8px;
+    cursor: pointer;
+    }
+    
+    .footer-ph:hover {
 }
 
 .table-con {
