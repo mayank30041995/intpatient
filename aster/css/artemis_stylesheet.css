@@ -1072,9 +1072,9 @@ table {
 .footer-ph {
     margin-top: -8px;
     cursor: pointer;
-    }
-    
-    .footer-ph:hover {
+}
+.footer-ph:hover {
+text-decoration: underline;
 }
 
 .table-con {
