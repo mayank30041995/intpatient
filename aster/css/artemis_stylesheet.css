@@ -18,9 +18,12 @@ body {
     letter-spacing: 0.83px;
     font-weight: 600;
     z-index: 10;
-    border-radius: 2px;
+    border-radius: 6px;
 }
 
+#openBtn:hover {
+    background: #2b518f;
+}
 .logo-yx {
     position: absolute;
     width: 17%;
@@ -29,6 +32,7 @@ body {
     object-fit: contain;
 
 }
+
 .logo-y {
     height: 40px;
     position: relative;
@@ -125,7 +129,7 @@ body {
 
 #imasCircle {
     display: flex;
-        justify-content: center;
+    justify-content: center;
 }
 
 .drawer-items {
@@ -140,7 +144,7 @@ body {
         left: 15px;
         font-size: 24px;
         height: 8rem;
-            border-radius: 12px;
+        border-radius: 12px;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 
@@ -692,6 +696,9 @@ body {
     cursor: pointer;
 }
 
+.dr_btn:hover {
+    background: #2b518f;
+}
 .banner-bn {
     background: #164289;
     height: 163px;
@@ -700,6 +707,9 @@ body {
     border: none;
 }
 
+.banner-bn:hover {
+    background: #2b518f;
+}
 .btn-bnnr {
     border-radius: 15px;
     background: #fff;
@@ -776,6 +786,9 @@ ul {
     border-radius: 7px;
 }
 
+.btn-primary2:hover {
+    background: #2b518f !important;
+}
 .sidebar_top_font {
     margin-top: -17px;
 }
@@ -783,7 +796,7 @@ ul {
 .btn-primary {
     color: #fff !important;
     background-color: #164289 !important;
-        border-color: #164289 !important;
+    border-color: #164289 !important;
     font-size: 9px;
     height: 51px;
     margin-bottom: 10px;
@@ -812,7 +825,7 @@ ul {
 
 .btn-info:hover {
     background-color: #164289 !important;
-        border-color: #164289 !important;
+    border-color: #164289 !important;
 
 }
 
@@ -1504,7 +1517,7 @@ h1 {
         top: -21px;
         width: 70px;
         object-fit: contain;
-            left: -15px;
+        left: -15px;
         }
 
                 .logo-y {
