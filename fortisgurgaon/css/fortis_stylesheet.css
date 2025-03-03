@@ -1238,7 +1238,7 @@ h1 {
   height: 95px;
   padding: 6px;
   /* max-width: 15%; */
-  border: 6px solid #09622e;
+  border: 6px solid #0a6632;
   border-radius: 18px;
   display: grid;
   align-content: center;
@@ -1354,6 +1354,16 @@ h1 {
   border-top: none;
 }
 
+.curve.up.long-divider {
+  left: 52%;
+  border-radius: 0px;
+  border-bottom: none;
+  height: 135px;
+  bottom: -136px;
+  border-right: none;
+  border-top: none;
+}
+
 .curve.right {
   height: 210px;
   transform: translateX(-30%) rotate(0deg);
@@ -1407,4 +1417,9 @@ h1 {
 .ar-5 {
   left: 141%;
   top: -115px;
+}
+
+.ar-6 {
+  top: 120px;
+  left: 52%;
 }
