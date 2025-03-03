@@ -1423,3 +1423,30 @@ h1 {
   top: 120px;
   left: 52%;
 }
+
+
+.card-bg {
+  padding: 30px 20px;
+  min-height: 350px;
+  color: #000;
+  background: #edfaff;
+  border: 2px solid #f6e9e9;
+}
+
+.expect .count-expect:nth-child(even) .card-bg {
+  background: #fff;
+}
+
+.expect .count-expect .card img {
+  max-width: 75px;
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .wireframes {
+    margin-top: 0px;
+    display: none;
+  }
+}
