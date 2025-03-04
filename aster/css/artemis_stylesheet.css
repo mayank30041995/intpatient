@@ -1017,7 +1017,7 @@ table {
     top: 61px;
     background-color: #5783c9 !important;
     opacity: 85%;
-    padding: 10px;
+    padding: 0px;
     width: 100%;
     text-align: center;
     z-index: 2;
@@ -1837,9 +1837,19 @@ h1 {
     padding: 6px;
     /* max-width: 15%; */
     border: 6px solid #164289;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     border-radius: 18px;
     display: grid;
     align-content: center;
+    color: #245c6d;
+}
+
+.step:nth-child(even) {
+    background: #e3e7ef;
+}
+
+.step:nth-child(odd) {
+    background: #b8bdc5;
 }
 
 .step-1 {
