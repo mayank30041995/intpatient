@@ -2037,6 +2037,7 @@ h1 {
     padding: 30px 20px;
     min-height: 350px;
     color: #000;
+    font-weight: 600;
     background: #e3e7ef;
     border: 2px solid #f6e9e9;
 }
