@@ -1011,7 +1011,7 @@ table {
     position: sticky;
     top: 61px;
     background-color: #a69837;
-    padding: 10px;
+    padding: 2px;
     width: 100%;
     text-align: center;
     z-index: 2;
@@ -1792,7 +1792,7 @@ h1 {
   position: relative; */
     min-width: 100%;
     padding: 12px 8%;
-    height: 25rem;
+    height: 23rem;
 }
 
 .step {
@@ -1807,7 +1807,7 @@ h1 {
     border-radius: 18px;
     display: grid;
     align-content: center;
-    color: d9d1d1bd;
+    color: #d9d1d1bd;
 }
 
 .step:nth-child(even) {

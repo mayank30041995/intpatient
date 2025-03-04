@@ -35,6 +35,23 @@
         gtag('config', 'AW-922729084');
     </script>
 
+    <!-- Event snippet for Lead conversion page
+        In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-922729084/zVS5CMT9j2YQ_PT-twM',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
+
 </head>
 
 <body>
@@ -67,7 +84,7 @@
                         <form class="d-flex ps-5 ">
 
                             <img src="images/messagecircle.webp" alt="" class="mt-2" style="width:20px;height:20px;">
-                            <p class="p-header ps-2 pt-1" onclick="LC_API.open_chat_window() ; return false"><a
+                            <p class="p-header ps-2 pt-1"onclick="gtag_report_conversion(); "><a
                                     href="#">Live Chat With Doctor &nbsp;&nbsp;</a></p>
                         </form>
                     </li> -->
@@ -227,12 +244,12 @@
                             <hr style="border-top: 2.234px solid #973911;">
                             <div class="text-center">
                                 <a href="#" class="btn btn-primary appointment"
-                                    onclick="LC_API.open_chat_window() ; return false"
-                                    onclick="LC_API.open_chat_window() ; return false">Book
+                                    data-url="https://what.sapp.link/international"
+                                    onclick="gtag_report_conversion(); ">Book
                                     an Appointment</a>
                                 <a href="#" class="btn btn-primary opinion"
-                                    onclick="LC_API.open_chat_window() ; return false"
-                                    onclick="LC_API.open_chat_window() ; return false">Get
+                                    data-url="https://what.sapp.link/international"
+                                    onclick="gtag_report_conversion(); ">Get
                                     Free Opinion</a>
                             </div>
                         </div>
@@ -249,12 +266,12 @@
                             <hr style="border-top: 2.234px solid #973911;">
                             <div class="text-center">
                                 <a href="#" class="btn btn-primary appointment"
-                                    onclick="LC_API.open_chat_window() ; return false"
-                                    onclick="LC_API.open_chat_window() ; return false">Book
+                                    data-url="https://what.sapp.link/international"
+                                    onclick="gtag_report_conversion(); ">Book
                                     an Appointment</a>
                                 <a href="#" class="btn btn-primary opinion"
-                                    onclick="LC_API.open_chat_window() ; return false"
-                                    onclick="LC_API.open_chat_window() ; return false">Get
+                                    data-url="https://what.sapp.link/international"
+                                    onclick="gtag_report_conversion(); ">Get
                                     Free Opinion</a>
                             </div>
                         </div>
@@ -271,12 +288,12 @@
                             <hr style="border-top: 2.234px solid #973911;">
                             <div class="text-center">
                                 <a href="#" class="btn btn-primary appointment"
-                                    onclick="LC_API.open_chat_window() ; return false"
-                                    onclick="LC_API.open_chat_window() ; return false">Book
+                                    data-url="https://what.sapp.link/international"
+                                    onclick="gtag_report_conversion(); ">Book
                                     an Appointment</a>
                                 <a href="#" class="btn btn-primary opinion"
-                                    onclick="LC_API.open_chat_window() ; return false"
-                                    onclick="LC_API.open_chat_window() ; return false">Get
+                                    data-url="https://what.sapp.link/international"
+                                    onclick="gtag_report_conversion(); ">Get
                                     Free Opinion</a>
                             </div>
                         </div>
@@ -294,12 +311,11 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Book
                                 an Appointment</a>
-                            <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                            <a href="#" class="btn btn-primary opinion" data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -316,12 +332,11 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Book
                                 an Appointment</a>
-                            <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                            <a href="#" class="btn btn-primary opinion" data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -339,12 +354,11 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Book
                                 an Appointment</a>
-                            <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                            <a href="#" class="btn btn-primary opinion" data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -364,12 +378,11 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Book
                                 an Appointment</a>
-                            <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                            <a href="#" class="btn btn-primary opinion" data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -386,12 +399,11 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Book
                                 an Appointment</a>
-                            <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                            <a href="#" class="btn btn-primary opinion" data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -408,12 +420,11 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Book
                                 an Appointment</a>
-                            <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                            <a href="#" class="btn btn-primary opinion" data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -433,12 +444,11 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Book
                                 an Appointment</a>
-                            <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                            <a href="#" class="btn btn-primary opinion" data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -455,12 +465,11 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Book
                                 an Appointment</a>
-                            <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                            <a href="#" class="btn btn-primary opinion" data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -477,12 +486,11 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Book
                                 an Appointment</a>
-                            <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                            <a href="#" class="btn btn-primary opinion" data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -502,12 +510,11 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Book
                                 an Appointment</a>
-                            <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                            <a href="#" class="btn btn-primary opinion" data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -524,12 +531,11 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Book
                                 an Appointment</a>
-                            <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                            <a href="#" class="btn btn-primary opinion" data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -545,12 +551,11 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Book
                                 an Appointment</a>
-                            <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                            <a href="#" class="btn btn-primary opinion" data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -571,12 +576,11 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Book
                                 an Appointment</a>
-                            <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                            <a href="#" class="btn btn-primary opinion" data-url="https://what.sapp.link/international"
+                                onclick="gtag_report_conversion(); ">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -599,10 +603,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -618,10 +622,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -639,10 +643,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -662,10 +666,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -682,10 +686,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -702,10 +706,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -724,10 +728,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -749,10 +753,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -769,10 +773,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -789,10 +793,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -812,10 +816,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -832,10 +836,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -859,10 +863,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -879,10 +883,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -900,10 +904,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -923,10 +927,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -943,10 +947,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -963,10 +967,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -988,12 +992,12 @@
                                         style="border-top: 2.234px solid #973911;">
                                     <div class="text-center">
                                         <a href="#"
-                                            class="btn btn-primary appointment"
-                                            onclick="LC_API.open_chat_window() ; return false">Book
+                                            class="btn btn-primary appointment" data-url="https://what.sapp.link/international"
+                                        >Book
                                             an Appointment</a>
                                         <a href="#"
-                                            class="btn btn-primary opinion"
-                                            onclick="LC_API.open_chat_window() ; return false">Get
+                                            class="btn btn-primary opinion" data-url="https://what.sapp.link/international"
+                                            >Get
                                             Free Opinion</a>
                                     </div>
                                 </div>
@@ -1013,12 +1017,12 @@
                                         style="border-top: 2.234px solid #973911;">
                                     <div class="text-center">
                                         <a href="#"
-                                            class="btn btn-primary appointment"
-                                            onclick="LC_API.open_chat_window() ; return false">Book
+                                            class="btn btn-primary appointment" data-url="https://what.sapp.link/international"
+                                        >Book
                                             an Appointment</a>
                                         <a href="#"
-                                            class="btn btn-primary opinion"
-                                            onclick="LC_API.open_chat_window() ; return false">Get
+                                            class="btn btn-primary opinion" data-url="https://what.sapp.link/international"
+                                            >Get
                                             Free Opinion</a>
                                     </div>
                                 </div>
@@ -1040,10 +1044,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -1060,10 +1064,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -1080,10 +1084,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -1103,10 +1107,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -1123,10 +1127,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -1143,10 +1147,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -1166,10 +1170,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -1191,11 +1195,11 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an
                                 Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free
                                 Opinion</a>
                         </div>
@@ -1213,11 +1217,11 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an
                                 Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free
                                 Opinion</a>
                         </div>
@@ -1235,10 +1239,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -1255,10 +1259,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -1275,10 +1279,10 @@
                         <hr style="border-top: 2.234px solid #973911;">
                         <div class="text-center">
                             <a href="#" class="btn btn-primary appointment"
-                                onclick="LC_API.open_chat_window() ; return false">Book
+                                data-url="https://what.sapp.link/international">Book
                                 an Appointment</a>
                             <a href="#" class="btn btn-primary opinion"
-                                onclick="LC_API.open_chat_window() ; return false">Get
+                                data-url="https://what.sapp.link/international">Get
                                 Free Opinion</a>
                         </div>
                     </div>
@@ -1682,7 +1686,7 @@
                         <!-- Button trigger modal -->
                         <button type="button" data-url="https://what.sapp.link/international"
                             class="btn btn-primary spec-button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            onclick="LC_API.open_chat_window() ; return false">
+                            onclick="gtag_report_conversion(); ">
                             Book an Appointment
                         </button>
 
@@ -1709,7 +1713,7 @@
                         <!-- Button trigger modal -->
                         <button type="button" data-url="https://what.sapp.link/international"
                             class="btn btn-primary spec-button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            onclick="LC_API.open_chat_window() ; return false">
+                            onclick="gtag_report_conversion(); ">
                             Get Free Opinion
                         </button>
 
@@ -1743,7 +1747,7 @@
                         <!-- Button trigger modal -->
                         <button type="button" data-url="https://what.sapp.link/international"
                             class="btn btn-primary spec-button spec-button-1" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal" onclick="LC_API.open_chat_window() ; return false">
+                            data-bs-target="#exampleModal" onclick="gtag_report_conversion(); ">
                             Book Tele-Consult
                         </button>
 
@@ -3522,7 +3526,7 @@
                             Gurugram, Haryana 122001
                         </p>
                         <button type="button" data-url="https://what.sapp.link/international"
-                            class="btn btn-primary w-100" onclick="LC_API.open_chat_window() ; return false"><i
+                            class="btn btn-primary w-100" onclick="gtag_report_conversion(); "><i
                                 class="fa fa-whatsapp ps-2" aria-hidden="true"></i> Contact On
                             WhatsApp</button>
 
@@ -3573,7 +3577,7 @@
                             Haryana 122001
                         </p>
                         <button type="button" data-url="https://what.sapp.link/international"
-                            class="btn btn-primary w-100" onclick="LC_API.open_chat_window() ; return false"><i
+                            class="btn btn-primary w-100" onclick="gtag_report_conversion(); "><i
                                 class="fa fa-whatsapp ps-2" aria-hidden="true"></i> Contact On
                             WhatsApp</button>
 
@@ -3623,7 +3627,7 @@
                             Lines Rd, Civil Lines, Gurugram, Haryana 122001
                         </p>
                         <button type="button" data-url="https://what.sapp.link/international"
-                            class="btn btn-primary w-100" onclick="LC_API.open_chat_window() ; return false"><i
+                            class="btn btn-primary w-100" onclick="gtag_report_conversion(); "><i
                                 class="fa fa-whatsapp ps-2" aria-hidden="true"></i> Contact On
                             WhatsApp</button>
 
@@ -3673,7 +3677,7 @@
                             39, Gurugram, Haryana 122003
                         </p>
                         <button type="button" data-url="https://what.sapp.link/international"
-                            class="btn btn-primary w-100" onclick="LC_API.open_chat_window() ; return false"><i
+                            class="btn btn-primary w-100" onclick="gtag_report_conversion(); "><i
                                 class="fa fa-whatsapp ps-2" aria-hidden="true"></i> Contact On
                             WhatsApp</button>
 
@@ -3722,7 +3726,7 @@
                             Colony, Sector 38, Gurugram, Haryana 122001
                         </p>
                         <button type="button" data-url="https://what.sapp.link/international"
-                            class="btn btn-primary w-100" onclick="LC_API.open_chat_window() ; return false"><i
+                            class="btn btn-primary w-100" onclick="gtag_report_conversion(); "><i
                                 class="fa fa-whatsapp ps-2" aria-hidden="true"></i> Contact On
                             WhatsApp</button>
 
@@ -3959,7 +3963,7 @@
 
         document.addEventListener('DOMContentLoaded', function () {
             // Get all button elements on the page
-            const buttons = document.querySelectorAll('button');
+            const buttons = document.querySelectorAll('button,a,p');
 
             // Loop through each button
             buttons.forEach(function (button) {
@@ -4229,14 +4233,14 @@
 
     </script>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EGPK7ZS1P8"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-EGPK7ZS1P8"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-EGPK7ZS1P8');
-    </script>
+    </script> -->
 </body>
 
 </html>
