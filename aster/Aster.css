@@ -25,6 +25,7 @@ body {
     z-index: 999;
     top: 17px;
 }
+
 .navbar-brand {
     display: inline-block;
     padding-top: 0.3125rem;
@@ -63,6 +64,7 @@ body {
     border-radius: 27px;
     margin-left: 17px;
 }
+
 .btn-block {
     background-color: #004185 !important;
     color: white;
@@ -92,7 +94,7 @@ body {
     outline: none;
     cursor: pointer;
     padding: 20px 62px;
-        transition: 0.3s;
+    transition: 0.3s;
     font-size: 17px;
     border-radius: 50px;
     color: #606060;
@@ -119,6 +121,7 @@ body {
     padding: 6px 12px;
     border-top: none;
 }
+
 .circular-img {
     border-radius: 50% !important;
     height: 240px;
@@ -127,6 +130,7 @@ body {
     position: relative;
     top: -116px;
 }
+
 .col-md-4 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 33.333333%;
@@ -159,9 +163,12 @@ body {
 
 
 }
-.h1, h1 {
+
+.h1,
+h1 {
     font-size: 1.5rem;
 }
+
 .text-dr {
     font-size: 19px;
     padding-block: 36px;
@@ -172,6 +179,7 @@ body {
 .slider-all {
     overflow: hidden;
 }
+
 .inner-dadta-slider {
     background: #0000009e;
     color: white;
@@ -183,12 +191,14 @@ body {
     margin-left: -16px;
     width: 103%;
 }
+
 .helth-check {
     border: 3px dotted #d5d5d5;
-        margin-block: 65px;
+    margin-block: 65px;
     padding: 35px;
     text-align: center;
 }
+
 .style-helth {
     padding: 35px;
     box-shadow: 0px 0px 2px 0px #d1d1d1;
@@ -198,46 +208,53 @@ body {
     font-weight: 500;
     margin-bottom: 32px;
 }
-.font_set{
- 
-        font-size: 22px;
-        position: relative;
-        top: 14px;
-    
+
+.font_set {
+
+    font-size: 22px;
+    position: relative;
+    top: 14px;
+
 }
+
 .style-helth:hover {
     border: 1px solid #c5f4f3;
     background: none;
     box-shadow: 0px 0px 6px 1px #c5f4f3b8;
 }
-.box-all{
 
-}
+.box-all {}
+
 @media screen and (max-width: 800px) {
     .footer-all {
         background-color: black !important;
-        padding-inline: 0px !important;    } 
-        .helth-check {
-            margin-block: 65px;
-            text-align: center;
-            padding: 0px !important;
-            border: none !important;
-            width: 85%;
-        }
-        .style-helth {
-            padding: 35px;
-            box-shadow: 0px 0px 2px 0px #d1d1d1;
-            border-radius: 7px;
-            background: #c5f4f3;
-            color: #006f6c;
-            font-weight: 500;
-            margin-bottom: 14px;
-            position: relative;
-            left: -23px;
-        }
+        padding-inline: 0px !important;
+    }
+
+    .helth-check {
+        margin-block: 65px;
+        text-align: center;
+        padding: 0px !important;
+        border: none !important;
+        width: 85%;
+    }
+
+    .style-helth {
+        padding: 35px;
+        box-shadow: 0px 0px 2px 0px #d1d1d1;
+        border-radius: 7px;
+        background: #c5f4f3;
+        color: #006f6c;
+        font-weight: 500;
+        margin-bottom: 14px;
+        position: relative;
+        left: -23px;
+    }
+
     .arrow-down {
         left: 170px;
     }
+
     .tab button {
         padding: 13px 11px;
         font-size: 17px;
@@ -245,6 +262,7 @@ body {
         font-weight: 500;
         margin-bottom: 13px;
     }
+
     .inner-dadta-slider {
         text-align: left;
         top: 359px;
@@ -252,12 +270,14 @@ body {
         margin-left: -15px;
         width: 109%;
     }
+
     .p-d {
         padding-inline: 38px;
         padding-block: 7px;
         font-size: 18px;
         border-bottom: 1px solid #ffffff12;
     }
+
     .box-patients {
         margin-inline: 0px !important;
     }
@@ -268,58 +288,73 @@ body {
         margin-inline: 50px;
         margin-bottom: 12px;
     }
+
     .price-box {
         max-width: 100% !important;
         margin-inline: 15px !important;
         margin-bottom: 12px;
         padding-block: 12px;
     }
-    .h1, h1 {
-    font-size: 1.5rem;
-}
-.price-box-text-right {
-    margin-top: -29px !important;
-    margin-right: 33px !important;
-}
-.service-al {
-    width: 90% !important;
-    margin-inline: 15px;
-}
+
+    .h1,
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .price-box-text-right {
+        margin-top: -29px !important;
+        margin-right: 33px !important;
+    }
+
+    .service-al {
+        width: 90% !important;
+        margin-inline: 15px;
+    }
+
     .btn-1 {
 
         border-bottom: 1px solid #067370;
     }
+
     .btn-block {
         width: 100% !important;
         margin-top: 15px;
         margin-inline: 0px;
     }
+
     .price-box {
         max-width: 88.333333% !important;
     }
-    .f-m-32{
+
+    .f-m-32 {
         font-size: 32px !important;
     }
+
     .slider-all {
-   
+
         top: -1px !important;
     }
+
     .navbar-light .navbar-toggler-icon {
         background-image: url('menu.png');
     }
+
     .navbar-light .navbar-toggler {
         color: rgb(255 255 255 / 50%);
         border: none;
     }
+
     .navbar {
         z-index: 999;
         position: absolute;
         width: 100%;
     }
+
     .Patient_Services {
         font-size: 19px;
         color: #4D4D4D;
     }
+
     .check-up {
         border-radius: 13px !important;
         border: px solid #d9d9d9 !important;
@@ -328,6 +363,7 @@ body {
         margin-block: 97px;
         width: 92%;
     }
+
     .navbar-nav {
         padding-left: 0px;
         margin-bottom: 0;
@@ -339,33 +375,40 @@ body {
         border-radius: 7px;
         box-shadow: 0px 0px 24px 1px #7772728c;
     }
+
     .box-card {
         box-shadow: 0px 0px 3.4885714054107666px 0px rgba(0, 0, 0, 0.25);
         margin: 136px 0px 26px 0px !important;
     }
+
     .navbar-expand-lg .navbar-nav .nav-link {
 
         font-size: 19px;
         border-bottom: 1px solid #ffffff66;
         height: 56px;
     }
+
     .col-md-4 {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 33.333333%;
         flex: 1 0 100.333333% !important;
         max-width: 100% !important;
     }
+
     .hotel-row {
         border: 0.8px solid #9b9a9a !important;
         margin-inline: -7px;
     }
-    .boxt-f-color{
+
+    .boxt-f-color {
         margin-top: -90px;
         margin-bottom: 30px;
     }
+
     .logo_mob {
         width: 49%;
     }
+
     .hotel-img {
         width: 333px !important;
         height: 242px !important;
@@ -373,10 +416,12 @@ body {
         margin-top: 9px !important;
         border-radius: 11px;
     }
+
     .slider-all {
         background-size: 149% 107%;
         top: -10px !important;
     }
+
     .border-b {
         margin-top: 62px;
         width: 110%;
@@ -385,49 +430,53 @@ body {
         padding: 33px;
         padding-bottom: 84px;
     }
+
     .hotel-row {
         border: 0.8px solid #9b9a9a !important;
         margin-inline: -7px;
     }
+
     .hotel-btn {
 
         padding: 15px 57px 15px 57px;
     }
+
     .head-1 {
         padding-inline: 33px !important;
         position: relative;
         top: 35px;
     }
-    
+
     .head-2 {
         padding-inline: 33px !important;
         font-size: 14px !important;
         margin-top: 34px;
     }
-    
-  
-    
+
+
+
 }
 
 .head-1 {
-    padding-inline: 90px;color: #338090;
+    padding-inline: 90px;
+    color: #338090;
     font-size: 36px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    }
+}
 
-    .head-2 {
-        color: #064451;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 196.9%; 
-        padding-inline: 90px;
-        text-align: justify;
-        }
+.head-2 {
+    color: #064451;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 196.9%;
+    padding-inline: 90px;
+    text-align: justify;
+}
 
-.btn-service{
+.btn-service {
     background: none;
     border: none;
     text-decoration: underline;
@@ -435,13 +484,15 @@ body {
 
 
 }
-.btn-service:hover{
- position: relative;
- top: -2px;
+
+.btn-service:hover {
+    position: relative;
+    top: -2px;
 
 
 
 }
+
 .h-font {
     margin-bottom: -16px;
     margin-top: 32px;
@@ -457,6 +508,7 @@ body {
     overflow: hidden;
     padding: 26px;
 }
+
 .hotel-btn {
     border-radius: 31px;
     background: #007C99;
@@ -465,6 +517,7 @@ body {
     border: none;
     margin-top: 50px;
 }
+
 .hotel-row {
 
     overflow: hidden;
@@ -472,15 +525,18 @@ body {
     border: 0.8px solid #D8D8D8;
     background: #FFF;
 }
+
 .hotel-img {
 
     width: 333px !important;
     height: 242px !important;
     margin-left: -14px !important;
 }
+
 .image-column {
     overflow: hidden;
 }
+
 .hotel-row {
 
     overflow: hidden;
@@ -488,8 +544,9 @@ body {
     border: 0.8px solid #D8D8D8;
     background: #FFF;
 }
+
 .price-box {
-    max-width: 100% ;
+    max-width: 100%;
 }
 
 .inter-adv {
@@ -570,26 +627,28 @@ body {
         height: 145px !important;
         width: 50%;
     }
+
     .text_dec {
         font-size: 22px;
         font-weight: 600
-      }
-  
-      .text_dec:after {
+    }
+
+    .text_dec:after {
 
         width: 143px !important;
         height: 2px;
         right: -19px !important;
 
     }
-  
-      .text_dec:before {
-     
+
+    .text_dec:before {
+
         width: 143px !important;
         height: 2px;
         left: -19px !important;
-      }
-      .i-con-box {
+    }
+
+    .i-con-box {
         margin-inline: 12px;
         width: 93% !important;
     }
@@ -662,21 +721,22 @@ li {
     color: white;
     list-style-image: url('double\ arrow.svg') !important;
 }
+
 .Patient_Services {
     font-size: 27px;
     color: #4D4D4D
-  }
+}
 
-  .text_dec {
+.text_dec {
     margin: auto;
     text-align: center;
     color: #1b1b1b;
     font-size: 27px;
     max-width: 292px;
     position: relative
-  }
+}
 
-  .text_dec:before {
+.text_dec:before {
     content: "";
     display: block;
     width: 193px;
@@ -685,14 +745,15 @@ li {
     left: -63px;
     top: 50%;
     position: absolute
-  }
-  .img-mobi{
+}
+
+.img-mobi {
     margin-left: -11px;
 
-  }
+}
 
 
-  .text_dec:after {
+.text_dec:after {
     content: "";
     display: block;
     width: 193px;
@@ -702,8 +763,9 @@ li {
     top: 50%;
 
     position: absolute
-  }
-  .i-con-box {
+}
+
+.i-con-box {
     background-image: url(../img/IMAGE.webp);
     background-size: cover;
     height: auto;
