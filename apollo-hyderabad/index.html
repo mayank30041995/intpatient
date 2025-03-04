@@ -36,6 +36,22 @@
     gtag('config', 'AW-922729084');
   </script>
 
+  <!-- Event snippet for Lead conversion page
+            In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof (url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-922729084/zVS5CMT9j2YQ_PT-twM',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script>
 
 </head>
 
@@ -44,7 +60,7 @@
   <div class="container-flud mob-hdr-code" style="margin-top: -24px;">
     <div class="top_bar col-sm ">
       <div style="width: 50%;">
-        <p class="text-left"><b>Live Chat:(+91) 88008 44573</b></p>
+        <p class="text-left"><b>Live Chat(+91) 98991 87773</b></p>
       </div>
       <div style="width: 50%;">
         <p class="text-right"><b class="top_bar_add"><i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -83,12 +99,13 @@
 
           <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
             <a aria-label="apollo" data-toggle="collapse" data-target=".navbar-collapse"
-              onclick="LC_API.open_chat_window() ; return false" class="nav-link" href="#block_IV">
+              onclick="gtag_report_conversion(); return false" class="nav-link" href="#block_IV">
               <i style="color:#00A91B" class="fa fa-comments" aria-hidden="true"></i> Live Chat with Doctor</a>
           </li>
           <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
             <a aria-label="apollo" class="nav-link" href="https://wa.me/8800844573 "> <i style="color:#00A91B"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Whatsapp:(+91) 88008 44573</a>
+                class="fa fa-whatsapp" aria-hidden="true"></i> Whatsapp:(+91) 98991
+              87773</a>
           </li>
         </ul>
 
@@ -110,30 +127,37 @@
 
 
 
-  <button id="openBtn">International Patient Care</button>
+  <button id="openBtn" data-url="https://what.sapp.link/apollo-india"><img class="drawer-icon-y"
+      src="assets_mob\Icons & Logos\webp\apollo logo.webp" alt="HTML5 Icon" width="70px" height="65px">
+    <div class="text-capitalize h5"><i class="fa  fa-whatsapp fa-btn-drawer"></i> Instant opinion</div>
+  </button>
 
   <!-- Drawer -->
 
   <div id="drawer" class="drawer">
-    <div id="imasCircle">IMAS</div>
+
+
+    <div id="imasCircle"><img class="drawer-icon-y" src="assets_mob\Icons & Logos\webp\apollo logo.webp"
+        alt="HTML5 Icon" width="70px" height="65px"></div>
+
+
     <div class="drawer-content">
       <button id="closeBtn" type="button" class="close" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
 
       <div class="drawer-banner">
-        <h2>International Patient Care</h2>
-        <p>International Support On Whatsapp</p>
+        <h2>Instant opinion</h2>
+        <p>And Doctor Consult</p>
       </div>
       <div class="drawer-items">
-        <h2>International Support On Whatsapp</h2>
-        <button class="btn"><i class="fa fa-whatsapp fa-btn" style="font-size:20px;"></i>
+        <h2>International Patients Support</h2>
+        <button class="btn" data-url="https://what.sapp.link/apollo-india"><i class="fa fa-whatsapp fa-btn"
+            style="font-size:28px;"></i>
           Connect on Whatsapp</button>
       </div>
     </div>
   </div>
-
-
 
 
   <!--slilder-->
@@ -146,7 +170,7 @@
           <span class="font-dec">Apollo Hospitals,</span><span class="font-dec">Hyderabad</span> <br>
           <span class="text_color">INTERNATIONAL PATIENTS​</span><br>
 
-          <button onclick="LC_API.open_chat_window() ; return false" id="slider-btn2" type="button"
+          <button onclick="gtag_report_conversion(); return false" id="slider-btn2" type="button"
             class="btn btn-primary btn-lg">GET FREE OPINION</button>
 
 
@@ -194,7 +218,7 @@
           <span class="font-dec">Apollo Hospitals,</span><span class="font-dec">Hyderabad</span> <br>
           <span class="text_color" style="">INTERNATIONAL PATIENTS​</span><br>
 
-          <button onclick="LC_API.open_chat_window() ; return false" id="slider-btn" type="button"
+          <button onclick="gtag_report_conversion(); return false" id="slider-btn" type="button"
             class="btn btn-primary btn-lg">GET FREE OPINION</button>
 
 
@@ -263,9 +287,10 @@
           <div class="card-body">
             <h1 class="card-title">Dr. Anand Ramamurthy</h1>
 
-            <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+            <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
+              data-url="https://what.sapp.link/apollo-india">Get Free
               Opinion</button><bR>
-            <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+            <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr">Book an
               Appoinment</button>
 
           </div>
@@ -283,9 +308,10 @@
           <div class="card-body">
             <h1 class="card-title">Dr. L Sasidhar Reddy</h1>
 
-            <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+            <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
+              data-url="https://what.sapp.link/apollo-india">Get Free
               Opinion</button><bR>
-            <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+            <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr">Book an
               Appoinment</button>
 
           </div>
@@ -308,9 +334,10 @@
             alt="Card image cap">
           <div class="card-body">
             <h1 class="card-title">Dr N Somasekhar Reddy</h1>
-            <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+            <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
+              data-url="https://what.sapp.link/apollo-india">Get Free
               Opinion</button><bR>
-            <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+            <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr">Book an
               Appoinment</button>
 
           </div>
@@ -323,9 +350,10 @@
             alt="Card image cap">
           <div class="card-body">
             <h1 class="card-title">Dr. Anand Ramamurthy</h1>
-            <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+            <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
+              data-url="https://what.sapp.link/apollo-india">Get Free
               Opinion</button><bR>
-            <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+            <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr">Book an
               Appoinment</button>
 
           </div>
@@ -340,9 +368,10 @@
           <img class="card-img-top-m-res" src="assets_mob\ORTHOPAEDIC\webp\Dr. K J Reddy.webp" alt="Card image cap">
           <div class="card-body">
             <h1 class="card-title">Dr. K J Reddy</h1>
-            <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+            <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
+              data-url="https://what.sapp.link/apollo-india">Get Free
               Opinion</button><bR>
-            <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+            <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr">Book an
               Appoinment</button>
 
           </div>
@@ -355,9 +384,10 @@
             alt="Card image cap">
           <div class="card-body">
             <h1 class="card-title">Dr. Mohan Krishna Althuri</h1>
-            <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+            <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
+              data-url="https://what.sapp.link/apollo-india">Get Free
               Opinion</button><bR>
-            <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+            <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr">Book an
               Appoinment</button>
 
           </div>
@@ -377,9 +407,10 @@
             alt="Card image cap">
           <div class="card-body">
             <h1 class="card-title">Dr. Prabhat Reddy Lakkireddi</h1>
-            <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+            <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
+              data-url="https://what.sapp.link/apollo-india">Get Free
               Opinion</button><bR>
-            <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+            <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr">Book an
               Appoinment</button>
 
           </div>
@@ -399,9 +430,10 @@
           <img class="card-img-top-m-res" src="assets_mob\Neuro\webp\Dr. Alok Ranjan.webp" alt="Card image cap">
           <div class="card-body">
             <h1 class="card-title">Dr Chander M Malhothra</h1>
-            <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+            <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
+              data-url="https://what.sapp.link/apollo-india">Get Free
               Opinion</button><bR>
-            <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+            <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr">Book an
               Appoinment</button>
 
           </div>
@@ -413,9 +445,10 @@
           <img class="card-img-top-m-res" src="assets_mob\Neuro\webp\Dr. B G Ratnam.webp" alt="Card image cap">
           <div class="card-body">
             <h1 class="card-title">Dr. B G Ratnam </h1>
-            <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+            <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
+              data-url="https://what.sapp.link/apollo-india">Get Free
               Opinion</button><bR>
-            <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+            <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr">Book an
               Appoinment</button>
 
           </div>
@@ -430,9 +463,10 @@
           <img class="card-img-top-m-res" src="assets_mob\Neuro\webp\Dr. C Rajesh Reddy.webp" alt="Card image cap">
           <div class="card-body">
             <h1 class="card-title">Dr. C Rajesh Reddy</h1>
-            <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+            <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
+              data-url="https://what.sapp.link/apollo-india">Get Free
               Opinion</button><bR>
-            <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+            <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr">Book an
               Appoinment</button>
 
           </div>
@@ -445,9 +479,10 @@
           <img class="card-img-top-m-res" src="assets_mob\Neuro\webp\Dr. Rahul Lath.webp" alt="Card image cap">
           <div class="card-body">
             <h1 class="card-title">Dr. Rahul Lath</h1>
-            <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+            <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
+              data-url="https://what.sapp.link/apollo-india">Get Free
               Opinion</button><bR>
-            <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+            <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr">Book an
               Appoinment</button>
 
           </div>
@@ -464,9 +499,10 @@
           <img class="card-img-top-m-res" src="assets_mob\Neuro\webp\Dr. Sudhir Kumar.webp" alt="Card image cap">
           <div class="card-body">
             <h1 class="card-title">Dr. Sudhir Kumar</h1>
-            <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+            <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
+              data-url="https://what.sapp.link/apollo-india">Get Free
               Opinion</button><bR>
-            <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+            <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr">Book an
               Appoinment</button>
 
           </div>
@@ -493,9 +529,10 @@
           alt="Card image cap">
         <div class="card-body">
           <h1 class="card-title">Dr Trilok Pratap Singh </h1>
-          <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+          <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
+            data-url="https://what.sapp.link/apollo-india">Get Free
             Opinion</button><bR>
-          <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+          <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr">Book an
             Appoinment</button>
 
         </div>
@@ -508,9 +545,10 @@
           alt="Card image cap">
         <div class="card-body">
           <h1 class="card-title">Dr Umanath Nayak </h1>
-          <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+          <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
+            data-url="https://what.sapp.link/apollo-india">Get Free
             Opinion</button><bR>
-          <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+          <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr">Book an
             Appoinment</button>
 
         </div>
@@ -525,9 +563,10 @@
         <img class="card-img-top-m-res" src="assets_mob\ONCOLOGY\webp\Dr. Prashant Upadhyay.webp" alt="Card image cap">
         <div class="card-body">
           <h1 class="card-title">Dr. Prashant Upadhyay</h1>
-          <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+          <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
+            data-url="https://what.sapp.link/apollo-india">Get Free
             Opinion</button><bR>
-          <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+          <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr">Book an
             Appoinment</button>
 
         </div>
@@ -539,9 +578,10 @@
         <img class="card-img-top-m-res" src="assets_mob\ONCOLOGY\webp\Dr. S V S S Prasad.webp" alt="Card image cap">
         <div class="card-body">
           <h1 class="card-title">Dr. Amita Mahajan</h1>
-          <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+          <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
+            data-url="https://what.sapp.link/apollo-india">Get Free
             Opinion</button><bR>
-          <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+          <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr">Book an
             Appoinment</button>
 
         </div>
@@ -568,9 +608,10 @@
         <img class="card-img-top-m-res" src="assets_mob\Cardio\webp\Dr. Manoj Kumar Agarwala.webp" alt="Card image cap">
         <div class="card-body">
           <h1 class="card-title">Dr. Manoj Kumar Agarwala</h1>
-          <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+          <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
+            data-url="https://what.sapp.link/apollo-india">Get Free
             Opinion</button><bR>
-          <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+          <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr">Book an
             Appoinment</button>
 
         </div>
@@ -585,9 +626,10 @@
         <img class="card-img-top-m-res" src="assets_mob\Cardio\webp\Dr. Sudhir Naik.webp" alt="Card image cap">
         <div class="card-body">
           <h1 class="card-title">Dr. Sudhir Naik</h1>
-          <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+          <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
+            data-url="https://what.sapp.link/apollo-india">Get Free
             Opinion</button><bR>
-          <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+          <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr">Book an
             Appoinment</button>
 
         </div>
@@ -600,9 +642,10 @@
         <img class="card-img-top-m-res" src="assets_mob\Cardio\webp\Dr. Vijay Dikshit.webp" alt="Card image cap">
         <div class="card-body">
           <h1 class="card-title">Dr. Vijay Dikshit</h1>
-          <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+          <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
+            data-url="https://what.sapp.link/apollo-india">Get Free
             Opinion</button><bR>
-          <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+          <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr">Book an
             Appoinment</button>
 
         </div>
@@ -639,6 +682,273 @@
 
 
   </div>
+
+  <!-- wireframes -->
+
+  <div class="container wireframes">
+
+    <div class="row all_services">
+
+      <!-- wire frames -->
+
+      <div class="col col-md-6 col-lg-12 col-sm-4">
+        <h2 class="text-dark my-4 text-capitalize text-center w-50  bg-white mx-auto ">
+          pre-arrival (in india) query
+          process
+        </h2>
+        <div class="flowchart">
+
+          <div class="step step-1">
+            <div class="icon">✈️</div>
+            <div class="label text-capitalize">patient query</div>
+            <div class="curve down right"></div>
+            <div class="arrow ar-1"></div>
+          </div>
+          <div class="step step-2">
+            <div class="icon">🏥</div>
+            <div class="label text-capitalize">medical reports</div>
+            <div class="curve up half"></div>
+            <div class="arrow up ar-2"></div>
+          </div>
+          <div class="step step-3">
+            <div class="icon">🛋️</div>
+            <div class="label text-capitalize">case history</div>
+            <div class="curve up straight"></div>
+            <div class="arrow up ar-3"></div>
+          </div>
+          <div class="step step-4">
+            <div class="icon">👨‍⚕️</div>
+            <div class="label text-capitalize">initial opinion</div>
+            <div class="curve down long left"></div>
+            <div class="arrow ar-4"></div>
+          </div>
+          <!-- <div class="step step-2">
+                        <div class="icon">👨‍⚕️</div>
+                        <div class="label">senier consultant people</div>
+                      <div class="curve right"></div>
+                        <div class="arrow up"></div> 
+                      </div> -->
+
+          <div class="step step-5">
+            <div class="icon">👨‍⚕️</div>
+            <div class="label text-capitalize">senier consultant people</div>
+            <div class="curve up long"></div>
+            <div class="arrow up ar-5"></div>
+          </div>
+
+          <div class="step step-6">
+            <div class="icon">👨‍⚕️</div>
+            <div class="label text-capitalize">opinion & cost estimate</div>
+            <div class="curve down long left"></div>
+            <div class="arrow ar-4"></div>
+          </div>
+          <div class="step step-7">
+            <div class="icon">👨‍⚕️</div>
+            <div class="label text-capitalize">patient counselling q & a</div>
+            <div class="curve up long"></div>
+            <div class="arrow up ar-5"></div>
+          </div>
+
+
+          <div class="step step-8">
+            <div class="icon">👨‍⚕️</div>
+            <div class="label text-capitalize">Doctor Consultation</div>
+            <div class="curve down long left"></div>
+            <div class="arrow ar-4"></div>
+          </div>
+
+          <div class="step step-9">
+            <div class="icon">👨‍⚕️</div>
+            <div class="label text-capitalize">arrival pickup at airport</div>
+            <div class="curve up long-divider"></div>
+            <div class="arrow ar-6"></div>
+          </div>
+        </div>
+        <h2 class="text-dark my-4 text-capitalize text-center w-50  bg-white mx-auto">post-arrival
+          comprehensive support</h2>
+        <div class="flowchart reverse">
+          <div class="step step-1 ">
+            <div class="icon">✈️</div>
+            <div class="label text-capitalize reverse">hospital registration</div>
+            <div class="curve down right"></div>
+            <div class="arrow  ar-1"></div>
+          </div>
+          <div class="step step-2">
+            <div class="icon">🏥</div>
+            <div class="label text-capitalize reverse">hospital check-in</div>
+
+            <div class="curve up half"></div>
+            <div class="arrow up ar-2"></div>
+          </div>
+          <div class="step step-3">
+            <div class="icon">🛋️</div>
+            <div class="label text-capitalize reverse">doctor consultation</div>
+            <div class="curve up straight"></div>
+            <div class="arrow up ar-3"></div>
+          </div>
+          <div class="step step-4">
+            <div class="icon">👨‍⚕️</div>
+            <div class="label text-capitalize reverse ">medical investigation</div>
+
+            <div class="curve down long left"></div>
+            <div class="arrow  ar-4"></div>
+          </div>
+          <!-- <div class="step step-2">
+                          <div class="icon">👨‍⚕️</div>
+                          <div class="label">senier consultant people</div>
+                        <div class="curve right"></div>
+                          <div class="arrow up"></div> 
+                        </div> -->
+
+          <div class="step step-5">
+            <div class="icon">👨‍⚕️</div>
+            <div class="label text-capitalize reverse">final treatment plan</div>
+            <div class="curve up long"></div>
+            <div class="arrow up ar-5"></div>
+          </div>
+
+          <div class="step step-6">
+            <div class="icon">👨‍⚕️</div>
+            <div class="label text-capitalize reverse">admission & treatment</div>
+            <div class="curve down long left"></div>
+            <div class="arrow ar-4"></div>
+          </div>
+          <div class="step step-7">
+            <div class="icon">👨‍⚕️</div>
+            <div class="label text-capitalize reverse">discharge</div>
+            <div class="curve up long"></div>
+            <div class="arrow up ar-5"></div>
+          </div>
+
+
+          <div class="step step-8">
+            <div class="icon">👨‍⚕️</div>
+            <div class="label text-capitalize reverse">follow up</div>
+            <div class="curve down long left"></div>
+            <div class="arrow  ar-4"></div>
+          </div>
+
+          <div class="step step-9">
+            <div class="icon">👨‍⚕️</div>
+            <div class="label text-capitalize reverse">airport dropoff</div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- What You can Expect -->
+  <section class="expect  pb-lg-40 pb-sm-20 ">
+    <div class="container  mt-4 py-4">
+      <h2 class="mt-4  ml-2">What You can Expect</h2>
+      <div class="row">
+        <div class="col-lg-9">
+          <p class="text-left"></p>
+
+        </div>
+
+
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 count-expect">
+          <div class="card card-bg">
+            <div class="d-flex align-items-center">
+              <img src="img/1.png" alt="Apollo Hospitals" class="img-fluid mr-4">
+              <h4>Dedicated Care Manager</h4>
+            </div>
+
+            <p>Apollo hosts dedicated Centres of Excellence and specialty clinics that cover end-to-end care
+              of
+              all
+              acute
+              and chronic diseases and conditions.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 count-expect">
+          <div class="card card-bg">
+            <div class="d-flex align-items-center">
+              <img src="img/2.png" alt="Apollo Hospitals" class="img-fluid mr-4">
+              <h4>Comprehensive Patient Assistance</h4>
+            </div>
+            <p>With internationally renowned doctors and surgeons, along with a team of leading specialists
+              committed to
+              providing advanced treatments, we make sure to provide the best services for your utmost
+              comfort.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 count-expect">
+          <div class="card card-bg">
+            <div class="d-flex align-items-center">
+              <img src="img/3.png" alt="Apollo Hospitals" class="img-fluid mr-4">
+              <h4>Excellent Treatment Outcome</h4>
+            </div>
+
+            <p>Apollo provides a luxury stay, with the latest technology and design, and infrastructure,
+              keeping
+              the
+              patient in mind.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 count-expect">
+          <div class="card card-bg">
+            <div class="d-flex align-items-center">
+              <img src="img/4.png" alt="Apollo Hospitals" class="img-fluid mr-4">
+              <h4>Convenience</h4>
+            </div>
+
+            <p>Apollo has exclusive tie-ups with the top Ayurvedic centers and Wellness spas in Kerala. We
+              offer
+              wellness
+              packages for specific conditions, as well as treatments to enhance the overall quality of
+              one’s
+              health and
+              well-being.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 count-expect">
+          <div class="card card-bg">
+            <div class="d-flex align-items-center">
+              <img src="img/5.png" alt="Apollo Hospitals" class="img-fluid mr-4">
+              <h4>Wellness | Check - ups</h4>
+            </div>
+
+            <p>Assisted in arranging accommodation for attendants of the patients near the hospital. We
+              provide
+              a spread
+              of delicious local cuisines with guidelines supervised by Apollo’s Clinical Nutritionists.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 count-expect">
+          <div class="card card-bg">
+            <div class="d-flex align-items-center">
+              <img src="img/6.png" alt="Apollo Hospitals" class="img-fluid mr-4">
+              <h4>Follow - ups Supports</h4>
+            </div>
+
+            <p>We have a 24/7 Call Centre, a Multilingual translator, and a dedicated Patient Help Desk to
+              coordinate
+              travel and visa procedures, complimentary pick-up and drop facilities from the airport/hotel
+              to
+              the
+              hospital.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
 
   <div class="container-fluid" id="block_II">
 
@@ -1247,7 +1557,8 @@ function setInitialCardVisibility(){};
                     Nagar,Jubilee Hills, Hyderabad, Telangana 500033​​</p>
                 </div>
                 <div class="add">
-                  <p><i class="fa fa-phone" aria-hidden="true"></i> (+91) 88008 44573​​</p>
+                  <p><i class="fa fa-phone" aria-hidden="true"></i> (+91) 98991
+                    87773​</p>
                 </div>
 
                 <img class="footer_logo" src="assets\Icons & Logos\webp\TT_logo.webp" alt="Loding..." width="191"
@@ -1442,6 +1753,31 @@ function setInitialCardVisibility(){};
       document.getElementById('sidebar').addEventListener('click', handleButtonClick);
 
     </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Get all button elements on the page
+
+        const buttons = document.querySelectorAll('button, p, a');
+
+        // Loop through each button
+        buttons.forEach(function (button) {
+          // Attach a click event listener to each button
+          button.addEventListener('click', function () {
+            // Get the URL from the button's data-url attribute
+            const url = button.getAttribute('data-url');
+
+            // Check if a URL is defined for the button
+            if (url) {
+              // Open the URL in a new tab
+              window.open(url, '_blank');
+            }
+          });
+        });
+      });
+
+    </script>
+
 
     <script>
       const drawer = document.getElementById('drawer');

@@ -744,7 +744,7 @@ img {
   position: relative; */
     min-width: 100%;
     padding: 9px 10%;
-    height: 25rem;
+    height: 24rem;
 }
 
 .step {
@@ -754,10 +754,18 @@ img {
     height: 95px;
     padding: 6px;
     /* max-width: 15%; */
-    border: 6px solid #0a6632;
+    border: 6px solid #973911;
     border-radius: 18px;
     display: grid;
     align-content: center;
+}
+
+.step:nth-child(even) {
+    background: #FFF1EE;
+}
+
+.step:nth-child(odd) {
+    background: #efcbc2;
 }
 
 .step-1 {
