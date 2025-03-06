@@ -4,6 +4,10 @@ body {
     overflow-x: hidden;
 }
 
+.btn {
+    font-size: 14px !important;
+}
+
 
 #openBtn {
     display: grid;
@@ -627,6 +631,7 @@ h1.card-title-h1 {
 
     a.btn {
         font-size: 17px;
+        width: 49%;
     }
 }
 
@@ -754,19 +759,19 @@ img {
     height: 95px;
     padding: 6px;
     /* max-width: 15%; */
-    border: 6px solid #973911;
-    border-radius: 18px;
+    /* border: 6px solid #973911; */
+    /* border-radius: 18px; */
     display: grid;
     align-content: center;
 }
 
-.step:nth-child(even) {
+/* .step:nth-child(even) {
     background: #FFF1EE;
 }
 
 .step:nth-child(odd) {
     background: #efcbc2;
-}
+} */
 
 .step-1 {
     right: 60px;
@@ -783,39 +788,39 @@ img {
 }
 
 .step-4 {
-    top: -288px;
+    top: -190px;
     left: 206px;
 }
 
 .step-5 {
-    top: -122px;
+    top: -30px;
     left: 336px;
 }
 
 .step-6 {
-    bottom: 476px;
+    bottom: 380px;
     left: 468px;
 }
 
 .step-7 {
-    top: -315px;
+    top: -220px;
     left: 600px;
 }
 
 .step-8 {
-    top: -665px;
+    top: -570px;
     left: 730px;
 }
 
 .step-9 {
-    top: -505px;
+    top: -410px;
     left: 860px;
 }
 
 
 .icon {
     font-size: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .label {
@@ -835,26 +840,26 @@ img {
     border-right: none;
     border-bottom-left-radius: 50px;
     height: 100px;
-    left: 61%;
-    top: 85px;
+    left: 103%;
+    top: 50px;
 }
 
 .curve.down.long {
     border-top: none;
     border-right: none;
     border-bottom-left-radius: 50px;
-    height: 225px;
-    left: 115%;
-    top: 30px;
+    height: 195px;
+    left: 108%;
+    top: 48px;
 }
 
 .curve.up.long {
-    height: 214px;
+    height: 205px;
     border-top: none;
     border-left: none;
     border-bottom-right-radius: 50px;
     left: 142%;
-    bottom: 52%;
+    bottom: 25%;
     transform: translateX(-100%) rotate(0deg);
 }
 
@@ -882,7 +887,7 @@ img {
     left: 52%;
     border-radius: 0px;
     border-bottom: none;
-    height: 135px;
+    height: 110px;
     bottom: -136px;
     border-right: none;
     border-top: none;
@@ -890,7 +895,7 @@ img {
 
 .curve.right {
     height: 210px;
-    transform: translateX(-30%) rotate(0deg);
+    transform: translateX(-30%) rotate(180deg);
 }
 
 .curve.left {
@@ -921,12 +926,12 @@ img {
 }
 
 .ar-1 {
-    left: 50%;
+    left: 130%;
 }
 
 .ar-2 {
     top: -30px;
-    left: 143%;
+    left: 141%;
 }
 
 .ar-3 {
@@ -935,16 +940,16 @@ img {
 }
 
 .ar-4 {
-    left: 142%;
+    left: 135%;
 }
 
 .ar-5 {
     left: 141%;
-    top: -115px;
+    top: -30px;
 }
 
 .ar-6 {
-    top: 120px;
+    top: 140px;
     left: 52%;
 }
 
