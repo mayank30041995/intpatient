@@ -4,6 +4,7 @@
 <head>
   <title>Manipal Hospital India</title>
   <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="img/favicon.png" type="image.png">
   <meta name="description"
     content="Manipal hospitals in India is a leader in healthcare delivery. We specialize in tertiary care surgeries.">
   <meta name="keyword"
@@ -15,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
   <!-- custom css -->
   <link rel="stylesheet" type="text/css" href="css/style-1.css" />
-  <link rel="icon" type="image/x-icon" href="image/favicon.png">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     #main,
@@ -195,9 +196,10 @@
             <div class="col-sm-12">
               <ul class="text-center text-white">
                 <li>Get Doctor’s opinion & cost estimate</li>
-                <li> <a href="tel:919899187773"><i class="fa fa-phone"></i></a><a
-                    href="https://api.whatsapp.com/send?phone=919899187773&text=&source=&data=" target="_blank"><i
-                      class="fa fa-whatsapp"></i></a> + 91 9899187773</li>
+                <li> <a data-url="https://what.sapp.link/manipalblr"><i class="fa fa-phone"></i></a><a
+                    data-url="https://what.sapp.link/manipalblr"><i class="fa fa-whatsapp"></i></a>
+                  <span data-url="https://what.sapp.link/manipalblr">+ 91 9899187773</span>
+                </li>
               </ul>
             </div>
 
@@ -207,7 +209,7 @@
 
       <nav class="navbar navbar-expand-lg bg-white">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" data-url="https://what.sapp.link/manipalblr">
             <h2><img src="image/logo.png" style="max-width: 180px;"></h2>
           </a>
           <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
@@ -231,8 +233,8 @@
       </nav>
       <!-- /navbar end -->
 
-      <button id="openBtn"><img src="image/logo.png" alt="HTML5 Icon" class='logo-yx' width="100px" height="50px"
-          style='margin-bottom: 10px;'>Get
+      <button id="openBtn" data-url="https://what.sapp.link/manipalblr"><img src="image/logo.png" alt="HTML5 Icon"
+          class='logo-yx' width="100px" height="50px" style='margin-bottom: 10px;'>Get
         Opinion</button>
 
       <!-- Drawer -->
@@ -249,11 +251,12 @@
 
           <div class="drawer-banner">
             <h2>Get Opinion</h2>
-            <p>International Support On Whatsapp</p>
+            <p data-url="https://what.sapp.link/manipalblr">International Support On Whatsapp</p>
           </div>
           <div class="drawer-items">
             <h2>International Support On Whatsapp</h2>
-            <button class="btn"><i class="fa fa-whatsapp fa-btn" style="font-size:20px;"></i>
+            <button class="btn" data-url="https://what.sapp.link/manipalblr"><i class="fa fa-whatsapp fa-btn"
+                style="font-size:20px;"></i>
               Connect on Whatsapp</button>
           </div>
         </div>
@@ -268,12 +271,12 @@
                 <h1 class="text-white">Manipal Hospital</h1>
                 <p class="lead text-white">Trusted by International
                   Patients</p>
-                <a onclick=" LC_API.open_chat_window(); return false;"
-                  href="https://api.whatsapp.com/send?phone=919899187773&text=&source=&data=" target="_blank"
+                <a onclick=" LC_API.open_chat_window(); return false;" data-url="https://what.sapp.link/manipalblr"
                   class=chat><button class="btn btn-1 btn-inline-block"><i class="fa fa-whatsapp"></i>&nbsp;Connect On
                     WhatsApp</button></a>
-                <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><button
-                    class="btn btn-inline-block btn-2"><i class="fa fa-comment"></i>&nbsp;Get Doctor’s
+                <a data-url="https://what.sapp.link/manipalblr" data-toggle="modal"
+                  data-target="#exampleModalCenter"><button class="btn btn-inline-block btn-2"><i
+                      class="fa fa-comment"></i>&nbsp;Get Doctor’s
                     opinion</button></a>
               </div>
             </div>
@@ -506,38 +509,38 @@
           <div class="row">
             <div class="col-md-4 mb-3 navvdox">
               <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
-                <li class="nav-item">
-                  <a href="#cardio-pill" class="nav-link active text-center" id="cardio-tabx" data-toggle="pill"
-                    aria-controls="cardio-pill" aria-selected="true">
+                <li class="nav-item" data-target="cardio-pill">
+                  <a href="#cardio-pill" class="nav-link active text-center" data-target="cardio-pill" id="cardio-tabx"
+                    data-toggle="pill" aria-controls="cardio-pill" aria-selected="true">
                     <div class="d-flex-align"><img class="tabIcons" src="image/TabsLogo/cardio.webp"
                         alt="/assets/TabsLogo/ology.webp" width="20" height="20" />&nbsp;Cardiologist</div>
                   </a>
 
                 </li>
                 <li class="nav-item">
-                  <a href="#ortho-pill" class="nav-link text-center" id="ortho-tabx" data-toggle="pill"
-                    aria-controls="ortho-pill" aria-selected="false">
+                  <a href="#ortho-pill" class="nav-link text-center" data-target="ortho-pill" id="ortho-tabx"
+                    data-toggle="pill" aria-controls="ortho-pill" aria-selected="false">
                     <div class="d-flex-align"><img class="tabIcons" src="image/TabsLogo/orthopaedic.webp"
                         alt="/assets/TabsLogo/ology.webp" width="20" height="20" />&nbsp;Orthopaedic Surgeons</div>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#neuro-pill" class="nav-link text-center" id="neuro-tab" data-toggle="pill"
-                    aria-controls="neuro-pill" aria-selected="false">
+                  <a href="#neuro-pill" class="nav-link text-center" data-target="neuro-pill" id="neuro-tab"
+                    data-toggle="pill" aria-controls="neuro-pill" aria-selected="false">
                     <div class="d-flex-align"><img class="tabIcons" src="image/TabsLogo/neurology.webp"
                         alt="/assets/TabsLogo/ology.webp" width="20" height="20" />&nbsp;Neurosurgeons</div>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#onco-pill" class="nav-link text-center" id="onco-tab" data-toggle="pill"
-                    aria-controls="onco-pill" aria-selected="false">
+                  <a href="#onco-pill" class=" nav-link text-center" data-target="onco-pill" id="onco-tab"
+                    data-toggle="pill" aria-controls="onco-pill" aria-selected="false">
                     <div class="d-flex-align"><img class="tabIcons" src="image/TabsLogo/ology.webp"
                         alt="/assets/TabsLogo/ology.webp" width="20" height="20" />&nbsp;Oncologists</div>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#transplant-pill" class="nav-link text-center" id="transplant-tab" data-toggle="pill"
-                    aria-controls="transplant-pill" aria-selected="false">
+                  <a href="#transplant-pill" class="nav-link text-center" data-target="transplant-pill"
+                    id="transplant-tab" data-toggle="pill" aria-controls="transplant-pill" aria-selected="false">
                     <div class="d-flex-align"><img class="tabIcons" src="image/TabsLogo/transplant.webp"
                         alt="/assets/TabsLogo/ology.webp" width="20" height="20" />&nbsp;Transplant Surgeons</div>
                   </a>
@@ -545,9 +548,14 @@
               </ul>
             </div>
             <!-- /.col-md-4 -->
+            <!-- id="cardio-pill"
+            id="ortho-pill"
+            id="neuro-pill"
+            id="onco-pill"
+            id="transplant-pill" -->
             <div class="col-md-8 nopad">
               <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="cardio-pill" role="tabpanel" aria-labelledby="cardio-tabx">
+                <div class="tab-pane  show active" id="cardio-pill" role="tabpanel" aria-labelledby="cardio-tabx">
                   <div class="doc-containerx">
                     <h1 class="text-center teamh2" id="portfolio1">Team of
                       Cardiologists</h1>
@@ -555,32 +563,32 @@
                       <div class="col-12">
                         <div class="docinfo row">
                           <div class="col-md-4">
-                            <img class="img-fluid rounded-circle mx-auto d-block" src="image/dryugal.jpg"
+                            <img class="rounded-circle mx-auto d-block"
+                              src="image/dr-chakrapani-b-s-senior-consultant-cardiology.webp"
                               alt="DR. YUGAL KISHORE MISHRA Cardiologist in Manipal Hospital" />
-                            <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
-                                class="opinion d-inline-block btn btn-info d-block   mt-2 mx-auto">Get
+                            <br />
+                            <a data-url="https://what.sapp.link/manipalblr" data-toggle="modal"
+                              data-target="#exampleModalCenter"><span
+                                class="opinion d-inline-block btn btn-info d-block   mt-2 mx-auto text-center">Get
                                 Doctor’s
                                 opinion</span> </a>
                             <a onclick=" LC_API.open_chat_window(); return false;"
-                              href="https://api.whatsapp.com/send?phone=919899187773&text=&source=&data="
-                              target="_blank"><span
-                                class="opinion d-inline-block btn btn-success d-block mt-2 mb-2   mx-auto"><i
+                              data-url="https://what.sapp.link/manipalblr" target="_blank"><span
+                                class="opinion d-inline-block btn btn-success d-block mt-2 mb-2 text-center   mx-auto"><i
                                   class="fa fa-whatsapp"></i>&nbsp;Connect
                                 On
                                 WhatsApp</span></a>
                           </div>
-                          <div class="col-md-8">
-                            <h3 class="text-center">DR. YUGAL KISHORE
-                              MISHRA</h3>
-                            <h6>MBBS, MS (Surgery), Ph.D (Cardiovascular
-                              Surgery)</h6>
+                          <div class="col-md-8 text-center">
+                            <h3 class="text-center">Dr Chakrapani B S</h3>
+                            <h6>Consultant - Cardiology - B.Sc - MBBS - Mysore University</h6>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="ortho-pill" role="tabpanel" aria-labelledby="ortho-tabx">
+                <div class="tab-pane" id="ortho-pill" role="tabpanel" aria-labelledby="ortho-tabx">
                   <div class="doc-containerx">
                     <h1 class="text-center teamh2" id="portfolio2">Team of
                       Orthopaedic Surgeons</h1>
@@ -588,19 +596,22 @@
                       <div class="col-12">
                         <div class="docinfo row">
                           <div class="col-md-4">
-                            <img class="img-fluid rounded-circle d-block mx-auto" src="image/Dr-Hemant.png"
+                            <img class="rounded-circle d-block mx-auto" src="image/Dr-Hemant.png"
                               alt="Dr. Hemant K. Kalyan Orthopedic Surgeon Manipal Hospitals Bangalore" />
-                            <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
-                                class="opinion d-inline-block btn btn-info d-block   mt-2 mx-auto">Get
+                            <br />
+                            <a data-url="https://what.sapp.link/manipalblr" data-toggle="modal"
+                              data-target="#exampleModalCenter"><span
+                                class="opinion d-inline-block btn btn-info d-block text-center mt-2 mx-auto">Get
                                 Doctor’s
                                 opinion</span> </a>
-                            <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
-                                class="opinion d-inline-block btn btn-success d-block mt-2 mb-2   mx-auto"><i
+                            <a onclick=" LC_API.open_chat_window(); return false;"
+                              data-url="https://what.sapp.link/manipalblr" class=chat><span
+                                class="opinion d-inline-block btn btn-success d-block mt-2 mb-2 text-center  mx-auto"><i
                                   class="fa fa-whatsapp"></i>&nbsp;Connect
                                 On
                                 WhatsApp</span></a>
                           </div>
-                          <div class="col-md-8">
+                          <div class="col-md-8 text-center">
                             <h3 class="text-center">Dr. Hemant K.
                               Kalyan</h3>
                             <h6>MBBS, MS (Orthopedics), D Ortho, FCPS</h6>
@@ -612,7 +623,7 @@
                   </div>
                 </div>
 
-                <div class="tab-pane fade" id="neuro-pill" role="tabpanel" aria-labelledby="neuro-tab">
+                <div class="tab-pane" id="neuro-pill" role="tabpanel" aria-labelledby="neuro-tab">
 
                   <div class="doc-containerx">
                     <h1 class="text-center teamh2" id="portfolio3">Team of
@@ -621,18 +632,21 @@
                       <div class="col-12">
                         <div class="docinfo row">
                           <div class="col-md-4">
-                            <img class="img-fluid rounded-circle d-block mx-auto" src="image/Dr-A-K-Roy.jpg"
+                            <img class="rounded-circle d-block mx-auto" src="image/Dr-A-K-Roy.jpg"
                               alt="Dr. A. K. Roy Neuro Surgeons in Manipal Hospital Bangalore" />
-                            <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
+                            <br />
+                            <a data-url="https://what.sapp.link/manipalblr" data-toggle="modal"
+                              data-target="#exampleModalCenter"><span
                                 class="opinion d-inline-block btn btn-info d-block   mt-2 mx-auto">Get
                                 Doctor’s
                                 opinion</span> </a>
-                            <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
+                            <a onclick=" LC_API.open_chat_window(); return false;"
+                              data-url="https://what.sapp.link/manipalblr" class=chat><span
                                 class="opinion d-inline-block btn btn-success d-block mt-2 mb-2   mx-auto">Connect
                                 On
                                 WhatsApp</span></a>
                           </div>
-                          <div class="col-md-8">
+                          <div class="col-md-8 text-center">
                             <h3 class="text-center">Dr. A. K. Roy</h3>
                             <h6 class="text-center">25+ Years Of
                               Experience</h6>
@@ -643,7 +657,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="onco-pill" role="tabpanel" aria-labelledby="onco-tab">
+                <div class="tab-pane" id="onco-pill" role="tabpanel" aria-labelledby="onco-tab">
                   <div class="doc-containerx">
                     <h1 class="text-center teamh2" id="portfolio4">Team of
                       Oncologists</h1>
@@ -651,18 +665,21 @@
                       <div class="col-12">
                         <div class="docinfo row">
                           <div class="col-md-4">
-                            <img class="img-fluid rounded-circle d-block mx-auto" src="image/DrMallikarjun.jpg"
+                            <img class="rounded-circle d-block mx-auto" src="image/DrMallikarjun.jpg"
                               alt="Dr. Mallikarjun Kalashetty Oncologist, Manipal Hospital Bangalore" />
-                            <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
+                            <br />
+                            <a data-url="https://what.sapp.link/manipalblr" data-toggle="modal"
+                              data-target="#exampleModalCenter"><span
                                 class="opinion d-inline-block btn btn-info d-block   mt-2 mx-auto">Get
                                 Doctor’s
                                 opinion</span> </a>
-                            <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
+                            <a onclick=" LC_API.open_chat_window(); return false;"
+                              data-url="https://what.sapp.link/manipalblr" class=chat><span
                                 class="opinion d-inline-block btn btn-success d-block mt-2 mb-2   mx-auto">Connect
                                 On
                                 WhatsApp</span></a>
                           </div>
-                          <div class="col-md-8">
+                          <div class="col-md-8 text-center">
                             <h3 class="text-center">Dr. Mallikarjun
                               Kalashetty</h3>
                             <h6 class="text-center">22+ Years Of
@@ -675,7 +692,7 @@
                   </div>
                 </div>
 
-                <div class="tab-pane fade" id="transplant-pill" role="tabpanel" aria-labelledby="transplant-tab">
+                <div class="tab-pane" id="transplant-pill" role="tabpanel" aria-labelledby="transplant-tab">
 
                   <div class="doc-containerx">
                     <h1 class="text-center teamh2" id="portfolio5">
@@ -684,18 +701,21 @@
                       <div class="col-12">
                         <div class="docinfo row">
                           <div class="col-md-4">
-                            <img class="img-fluid rounded-circle d-block mx-auto" src="image/drkishore.jpg"
+                            <img class="rounded-circle d-block mx-auto" src="image/drkishore.jpg"
                               alt="DR. KISHORE S. BABU Transplant Specialist Manipal Hospital Bangalore" />
-                            <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
+                            <br />
+                            <a data-url="https://what.sapp.link/manipalblr" data-toggle="modal"
+                              data-target="#exampleModalCenter"><span
                                 class="opinion d-inline-block btn btn-info d-block   mt-2 mx-auto">Get
                                 Doctor’s
                                 opinion</span> </a>
-                            <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
+                            <a onclick=" LC_API.open_chat_window(); return false;"
+                              data-url="https://what.sapp.link/manipalblr" class=chat><span
                                 class="opinion d-inline-block btn btn-success d-block mt-2 mb-2   mx-auto">Connect
                                 On
                                 WhatsApp</span></a>
                           </div>
-                          <div class="col-md-8">
+                          <div class="col-md-8 text-center">
                             <h3 class="text-center">DR. KISHORE S. BABU</h3>
                             <h6>MBBS, DCH, MD (PEDIATRICS), DNB
                               (NEPHROLOGY)</h6>
@@ -729,250 +749,6 @@
         </div>
       </section>
 
-<!-- wireframes -->
-
-<div class="container wireframes">
-
-  <div class="row all_services">
-
-    <!-- wire frames -->
-
-    <div class="col col-md-6 col-lg-12 col-sm-4">
-      <h1 class="text-dark my-4 text-capitalize text-center w-50  bg-white mx-auto ">
-        pre-arrival (in india) query
-        process
-      </h1>
-      <div class="flowchart">
-
-        <div class="step step-1">
-          <div class="icon">✈️</div>
-          <div class="label text-capitalize">patient query</div>
-          <div class="curve down right"></div>
-          <div class="arrow ar-1"></div>
-        </div>
-        <div class="step step-2">
-          <div class="icon">🏥</div>
-          <div class="label text-capitalize">medical reports</div>
-          <div class="curve up half"></div>
-          <div class="arrow up ar-2"></div>
-        </div>
-        <div class="step step-3">
-          <div class="icon">🛋️</div>
-          <div class="label text-capitalize">case history</div>
-          <div class="curve up straight"></div>
-          <div class="arrow up ar-3"></div>
-        </div>
-        <div class="step step-4">
-          <div class="icon">👨‍⚕️</div>
-          <div class="label text-capitalize">initial opinion</div>
-          <div class="curve down long left"></div>
-          <div class="arrow ar-4"></div>
-        </div>
-        <!-- <div class="step step-2">
-              <div class="icon">👨‍⚕️</div>
-              <div class="label">senier consultant people</div>
-            <div class="curve right"></div>
-              <div class="arrow up"></div> 
-            </div> -->
-
-        <div class="step step-5">
-          <div class="icon">👨‍⚕️</div>
-          <div class="label text-capitalize">senier consultant people</div>
-          <div class="curve up long"></div>
-          <div class="arrow up ar-5"></div>
-        </div>
-
-        <div class="step step-6">
-          <div class="icon">👨‍⚕️</div>
-          <div class="label text-capitalize">opinion & cost estimate</div>
-          <div class="curve down long left"></div>
-          <div class="arrow ar-4"></div>
-        </div>
-        <div class="step step-7">
-          <div class="icon">👨‍⚕️</div>
-          <div class="label text-capitalize">patient counselling q & a</div>
-          <div class="curve up long"></div>
-          <div class="arrow up ar-5"></div>
-        </div>
-
-
-        <div class="step step-8">
-          <div class="icon">👨‍⚕️</div>
-          <div class="label text-capitalize">Doctor Consultation</div>
-          <div class="curve down long left"></div>
-          <div class="arrow ar-4"></div>
-        </div>
-
-        <div class="step step-9">
-          <div class="icon">👨‍⚕️</div>
-          <div class="label text-capitalize">arrival pickup at airport</div>
-          <div class="curve up long-divider"></div>
-          <div class="arrow ar-6"></div>
-        </div>
-      </div>
-      <h1 class="text-dark my-4 text-capitalize text-center w-50  bg-white mx-auto">post-arrival
-        comprehensive support</h1>
-      <div class="flowchart reverse">
-        <div class="step step-1 ">
-          <div class="icon">✈️</div>
-          <div class="label text-capitalize reverse">hospital registration</div>
-          <div class="curve down right"></div>
-          <div class="arrow  ar-1"></div>
-        </div>
-        <div class="step step-2">
-          <div class="icon">🏥</div>
-          <div class="label text-capitalize reverse">hospital check-in</div>
-
-          <div class="curve up half"></div>
-          <div class="arrow up ar-2"></div>
-        </div>
-        <div class="step step-3">
-          <div class="icon">🛋️</div>
-          <div class="label text-capitalize reverse">doctor consultation</div>
-          <div class="curve up straight"></div>
-          <div class="arrow up ar-3"></div>
-        </div>
-        <div class="step step-4">
-          <div class="icon">👨‍⚕️</div>
-          <div class="label text-capitalize reverse ">medical investigation</div>
-
-          <div class="curve down long left"></div>
-          <div class="arrow  ar-4"></div>
-        </div>
-        <!-- <div class="step step-2">
-                <div class="icon">👨‍⚕️</div>
-                <div class="label">senier consultant people</div>
-              <div class="curve right"></div>
-                <div class="arrow up"></div> 
-              </div> -->
-
-        <div class="step step-5">
-          <div class="icon">👨‍⚕️</div>
-          <div class="label text-capitalize reverse">final treatment plan</div>
-          <div class="curve up long"></div>
-          <div class="arrow up ar-5"></div>
-        </div>
-
-        <div class="step step-6">
-          <div class="icon">👨‍⚕️</div>
-          <div class="label text-capitalize reverse">admission & treatment</div>
-          <div class="curve down long left"></div>
-          <div class="arrow ar-4"></div>
-        </div>
-        <div class="step step-7">
-          <div class="icon">👨‍⚕️</div>
-          <div class="label text-capitalize reverse">discharge</div>
-          <div class="curve up long"></div>
-          <div class="arrow up ar-5"></div>
-        </div>
-
-
-        <div class="step step-8">
-          <div class="icon">👨‍⚕️</div>
-          <div class="label text-capitalize reverse">follow up</div>
-          <div class="curve down long left"></div>
-          <div class="arrow  ar-4"></div>
-        </div>
-
-        <div class="step step-9">
-          <div class="icon">👨‍⚕️</div>
-          <div class="label text-capitalize reverse">airport dropoff</div>
-        </div>
-
-
-      </div>
-    </div>
-
-
-  </div>
-</div>
-<!-- What You can Expect -->
-<section class="expect  pb-lg-40 pb-sm-20 ">
-  <div class="container  mt-4 py-4">
-    <h1 class="mt-4  ml-2">What You can Expect</h1>
-    <div class="row">
-      <div class="col-lg-9">
-        <p class="text-left"></p>
-
-      </div>
-
-
-    </div>
-
-    <div class="row">
-      <div class="col-lg-4 count-expect">
-        <div class="card card-bg">
-          <div class="d-flex align-items-center">
-            <img src="image/1.png" alt="Fortis Hospitals" class="img-fluid mr-4">
-            <h4>Dedicated Care Manager</h4>
-          </div>
-
-          <p>Fortis hosts dedicated Centres of Excellence and specialty clinics that cover end-to-end care of all
-            acute
-            and chronic diseases and conditions.</p>
-        </div>
-      </div>
-      <div class="col-lg-4 count-expect">
-        <div class="card card-bg">
-          <div class="d-flex align-items-center">
-            <img src="image/2.png" alt="Fortis Hospitals" class="img-fluid mr-4">
-            <h4>Comprehensive Patient Assistance</h4>
-          </div>
-          <p>With internationally renowned doctors and surgeons, along with a team of leading specialists committed to
-            providing advanced treatments, we make sure to provide the best services for your utmost comfort.</p>
-        </div>
-      </div>
-      <div class="col-lg-4 count-expect">
-        <div class="card card-bg">
-          <div class="d-flex align-items-center">
-            <img src="image/3.png" alt="Fortis Hospitals" class="img-fluid mr-4">
-            <h4>Excellent Treatment Outcome</h4>
-          </div>
-
-          <p>Fortis provides a luxury stay, with the latest technology and design, and infrastructure, keeping the
-            patient in mind.</p>
-        </div>
-      </div>
-      <div class="col-lg-4 count-expect">
-        <div class="card card-bg">
-          <div class="d-flex align-items-center">
-            <img src="image/4.png" alt="Fortis Hospitals" class="img-fluid mr-4">
-            <h4>Convenience</h4>
-          </div>
-
-          <p>Fortis has exclusive tie-ups with the top Ayurvedic centers and Wellness spas in Kerala. We offer
-            wellness
-            packages for specific conditions, as well as treatments to enhance the overall quality of one’s health and
-            well-being.</p>
-        </div>
-      </div>
-      <div class="col-lg-4 count-expect">
-        <div class="card card-bg">
-          <div class="d-flex align-items-center">
-            <img src="image/5.png" alt="Fortis Hospitals" class="img-fluid mr-4">
-            <h4>Wellness | Check - ups</h4>
-          </div>
-
-          <p>Assisted in arranging accommodation for attendants of the patients near the hospital. We provide a spread
-            of delicious local cuisines with guidelines supervised by Fortis’s Clinical Nutritionists.</p>
-        </div>
-      </div>
-      <div class="col-lg-4 count-expect">
-        <div class="card card-bg">
-          <div class="d-flex align-items-center">
-            <img src="image/6.png" alt="Fortis Hospitals" class="img-fluid mr-4">
-            <h4>Follow - ups Supports</h4>
-          </div>
-
-          <p>We have a 24/7 Call Centre, a Multilingual translator, and a dedicated Patient Help Desk to coordinate
-            travel and visa procedures, complimentary pick-up and drop facilities from the airport/hotel to the
-            hospital.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 
 
@@ -1057,7 +833,8 @@
               </a>
             </div>
             <div class="col-md-4 col-6 pt-4">
-              <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat>
+              <a onclick=" LC_API.open_chat_window(); return false;" data-url="https://what.sapp.link/manipalblr"
+                class=chat>
                 <h5 class="text-center"><i class="fa fa-comments" aria-hidden="true"
                     style="font-size: 3rem; color: #33414e;"></i>
 
@@ -1066,7 +843,7 @@
               </a>
             </div>
             <div class="col-md-4 col-12 pt-4">
-              <a href="#" data-toggle="modal" data-target="#exampleModalCenter">
+              <a data-url="https://what.sapp.link/manipalblr" data-toggle="modal" data-target="#exampleModalCenter">
                 <h5 class="text-center"><i class="fa fa-book" aria-hidden="true"
                     style="font-size: 3rem; color: #33414e;"></i>
 
@@ -1241,6 +1018,31 @@
   </button>
   <!-- JS Active tabs -->
 
+
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get all button elements on the page
+      const buttons = document.querySelectorAll('button,a,p,span');
+
+      // Loop through each button
+      buttons.forEach(function (button) {
+        // Attach a click event listener to each button
+        button.addEventListener('click', function () {
+          // Get the URL from the button's data-url attribute
+          const url = button.getAttribute('data-url');
+
+          // Check if a URL is defined for the button
+          if (url) {
+            // Open the URL in a new tab
+            window.open(url, '_blank');
+          }
+        });
+      });
+    });
+
+  </script>
+
   <script>
     const drawer = document.getElementById('drawer');
 
@@ -1371,27 +1173,27 @@
     });
   </script>
 
-  <script>
-    const tabs = document.querySelectorAll('.nav-link');
-    const tabContents = document.querySelectorAll('.vrt-tab-content');
-    console.log('kjsdhfshdf', tabs, tabContents)
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        // Remove active class from all tabs and contents
-        tabs.forEach(t => t.classList.remove('active'));
-        tabs.forEach(t => t.classList.remove('show'));
-        tabContents.forEach(content => content.classList.remove('active'));
-        tabContents.forEach(content => content.classList.remove('show'));
 
-        // Add active class to the clicked tab and the corresponding content
-        tab.classList.add('active');
-        tab.classList.add('show');
-        const targetContent = document.querySelector('.vrt-tab-content');
-        targetContent.classList.add('active');
-        targetContent.classList.add('show');
+  <script>
+    document.querySelectorAll('.nav-link').forEach(tab => {
+      tab.addEventListener('click', function () {
+        // Remove active class from all cards
+        document.querySelectorAll('.tab-pane').forEach(card => card.classList.remove('active'));
+
+        // Remove active class from all tabs
+        document.querySelectorAll('.nav-link').forEach(t => t.classList.remove('active'));
+
+        // Add active class to clicked tab
+        this.classList.add('active');
+
+        // Get target card ID and activate it
+        const targetId = this.getAttribute('data-target');
+        document.getElementById(targetId).classList.add('active');
       });
     });
   </script>
+
+
 
   <script>
     // Vertical tab script

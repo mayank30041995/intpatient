@@ -31,8 +31,8 @@ a {
 
 #openBtn {
   display: grid;
-    width: 15rem;
-    justify-items: center;
+  width: 15rem;
+  justify-items: center;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -47,14 +47,14 @@ a {
   font-weight: 600;
   z-index: 100;
   border-radius: 8px;
-  }
-  
-  .logo-yx {
-    padding: 8px;
-    background: #FFF;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    object-fit: contain;
+}
+
+.logo-yx {
+  padding: 8px;
+  background: #FFF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  object-fit: contain;
 }
 
 #drawer {
@@ -103,7 +103,7 @@ a {
   border-radius: 2px;
   color: #2d9f28;
   font-weight: 600;
-    border-radius: 25px;
+  border-radius: 25px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -145,19 +145,20 @@ a {
   display: flex;
   justify-content: center;
 }
+
 #imasCircle {
   display: block;
-    position: absolute;
-    height: 60px;
-    width: 140px;
-    border-radius: 15px;
-    top: 20px;
-    /* left: 37%; */
-    background-color: #FFF;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-    border: 1px solid #fff;
-    text-align: center;
-    padding: 21px 14px;
+  position: absolute;
+  height: 60px;
+  width: 140px;
+  border-radius: 15px;
+  top: 20px;
+  /* left: 37%; */
+  background-color: #FFF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 21px 14px;
 }
 
 .drawer-items {
@@ -318,6 +319,7 @@ header {
 
 .docinfo img {
   width: 200px;
+  height: 200px;
 }
 
 .hcg-content {
@@ -591,12 +593,12 @@ form ul li label {
 }
 
 #pilltab .nav-link.active {
-  background-color: #b7274c !important;
+  background-color: #034ea2 !important;
   color: #fff !important;
 }
 
 .doc-containerx {
-  background-color: #b7274c;
+  background-color: #034ea2;
 }
 
 .nopad {
@@ -625,7 +627,7 @@ form ul li label {
     padding: 0 !important;
     max-height: 500px;
     min-height: 500px;
-    background-color: #b7274c;
+    background-color: #034ea2;
   }
 
 }
@@ -640,7 +642,7 @@ form ul li label {
     bottom: 18px;
     left: 10px;
     font-size: 28px;
-      width: 94%;
+    width: 94%;
   }
 
   #closeBtn {
@@ -939,7 +941,7 @@ position: relative; */
 @media screen and (max-width: 800px) {
 
   .wireframes {
-      margin-top: 0px;
-      display: none;
+    margin-top: 0px;
+    display: none;
   }
 }
