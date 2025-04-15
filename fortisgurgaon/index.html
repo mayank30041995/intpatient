@@ -195,27 +195,27 @@
     <span class=" header-all">Our Team</span>
     <h1>Our Dedicated Doctors</h1>
     <div class="tab container-flud">
-      <a href="#Cardiology">
+      <a href="#Cardiology" id="cardiologyLink">
         <button class="tablinks" id="cvb" onclick="openCity(event, 'Cardiology')"><img class="tabIcons"
             src="assets/TabsLogo/cardio.webp" alt="/assets/TabsLogo/cardiowebp" width="14"
             height="18" />&emsp;Cardiology</button>
       </a>
-      <a href="#Orthopaedic">
+      <a href="#Orthopaedic" id="orthopaedicLink">
         <button class="tablinks" onclick="openCity(event, 'London')"><img class="tabIcons"
             src="assets/TabsLogo/orthopaedic.webp" alt="/assets/TabsLogo/ology.webp" width="14"
             height="18" />&emsp;Orthopaedic</button>
       </a>
-      <a href="#Oncology">
+      <a href="#Oncology" id="oncologyLink">
         <button class="tablinks" onclick="openCity(event, 'Paris')"><img class="tabIcons"
             src="assets/TabsLogo/ology.webp" alt="/assets/TabsLogo/ology.webp" width="14"
             height="18" />&emsp;Oncology</button>
       </a>
-      <a href="#Neurology">
+      <a href="#Neurology" id="neurologyLink">
         <button class="tablinks" onclick="openCity(event, 'Tokyo')"><img class="tabIcons"
             src="assets/TabsLogo/ology.webp" alt="/assets/TabsLogo/neurology.webp" width="14"
             height="18" />&emsp;Neurology</button>
       </a>
-      <a href="#LiverTransplant">
+      <a href="#LiverTransplant" id="LiverTransplantLink">
         <button class="tablinks" onclick="openCity(event, 'Liver')"><img class="tabIcons"
             src="assets/TabsLogo/transplant.webp" alt="/assets/TabsLogo/neurology.webp" width="14"
             height="18" />&emsp;Liver Transplant</button>
@@ -653,6 +653,7 @@
 
     <script>
       function openCity(evt, cityName) {
+
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
@@ -668,7 +669,9 @@
       function myFunction() {
         document.getElementById("cvb").click();
       }
+      evt.preventDefault()
       myFunction();
+
     </script>
     <!-- End DR. Card -->
   </div>
