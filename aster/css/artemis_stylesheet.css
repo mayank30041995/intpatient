@@ -3,6 +3,10 @@ body {
 }
 
 
+.tabs>div>a:hover {
+    text-decoration: none !important;
+}
+
 #openBtn {
     display: grid;
     justify-items: center;
