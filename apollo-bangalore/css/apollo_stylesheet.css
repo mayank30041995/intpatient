@@ -56,9 +56,10 @@ body {
 
 .drawer-icon-y {
   padding: 8px;
-  border-radius: 4px;
+  border-radius: 8px;
   background: #FFF;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: fit-content;
 }
 
 .drawer-content {
@@ -234,9 +235,10 @@ p {
   display: flex;
   padding-right: 100px;
   padding-left: 129px;
-  height: 72px;
+  height: 85px;
   font-size: 13px;
-  padding-top: 30px;
+  padding-top: 10px;
+  align-items: center;
 }
 
 .mobile_col {
@@ -294,7 +296,7 @@ p {
   font-size: 32px;
   color: #047C9E;
   text-align: center;
-  padding-bottom: 67px;
+  padding-bottom: 65px;
   font-weight: 500;
 }
 
@@ -834,7 +836,7 @@ div.desc {
   position: relative;
   background: #00000073;
   padding-block: 27px;
-  top: -427px;
+  top: -500px;
 }
 
 #live_chat {
@@ -1010,7 +1012,7 @@ div.desc {
 
 @media screen and (max-width: 800px) {
   .heading-top {
-    line-height: 109px;
+    line-height: 50px;
     font-size: 45px;
   }
 }
@@ -1418,7 +1420,6 @@ div.desc {
 }
 
 .post-new {
-  max-width: 27%;
   padding-block: 12px;
 }
 
@@ -1443,7 +1444,7 @@ div.desc {
 
 .all-post {
   width: 100%;
-  margin-left: 138px;
+  margin-left: 30px;
 }
 
 @media screen and (max-width: 800px) {

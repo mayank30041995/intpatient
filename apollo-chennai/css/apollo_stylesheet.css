@@ -27,7 +27,7 @@
     position: absolute;
     top: 20px;
     height: 85px;
-    width: 80px;
+    width: 100px;
     border-radius: 4px;
     padding: 4px;
     background: #FFF;
@@ -84,7 +84,7 @@
     border-radius: 2px;
     color: #2d9f28;
     font-weight: 600;
-    border-radius: 25px;
+    border-radius: 14px;
 }
 
 .drawer-items button:active {
@@ -121,6 +121,7 @@
     background: #FFF;
     border-radius: 8px;
     padding: 5px;
+    width: fit-content;
 }
 
 #icon-container {
@@ -312,6 +313,7 @@ p {
 
 .navbar-expand-lg .navbar-nav .nav-link {
     text-align: right;
+    cursor: pointer;
 }
 
 .heading {
@@ -351,7 +353,7 @@ p {
 
 .tab {
     overflow: hidden;
-    margin-top: -71px;
+    margin-top: -45px;
     text-align: center;
 }
 
@@ -366,8 +368,8 @@ p {
     font-size: 17px;
     font-weight: 600;
     margin: 8px;
-    padding: 14px;
-    border-radius: 52px;
+    padding: 8px 22px;
+    border-radius: 15px;
     text-transform: capitalize;
 }
 
@@ -446,7 +448,7 @@ p {
 
 #block_I {
     margin-block: 23px;
-    margin-top: 106px;
+    margin-top: 40px;
 
 }
 
@@ -699,7 +701,7 @@ div.desc {
 }
 
 .btn-dr-wa:hover {
-    background: #25D388;
+    background: rgb(41, 172, 115);
 }
 
 .card-kidney {
@@ -753,12 +755,17 @@ div.desc {
 }
 
 #slider-btn {
-    margin-top: 47px;
+    margin-top: 20px;
     background: #015E79;
+    border-radius: 0.5rem;
+}
+
+#slider-btn:hover {
+    background: #0a83a5;
 }
 
 #slider-btn2 {
-    margin-top: 47px;
+    margin-top: 20px;
     background: #015E79;
     width: 376px;
     height: 99px;
