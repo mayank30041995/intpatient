@@ -7,6 +7,7 @@ body {
     right: 0px;
     top: 0px;
 }
+
 #swipeArea {
     width: 138px;
     height: 100%;
@@ -14,6 +15,7 @@ body {
     position: fixed;
     z-index: 1;
 }
+
 #sidebar {
     width: 0;
     position: fixed;
@@ -26,7 +28,7 @@ body {
     right: 0px;
     top: 0px;
     z-index: 99;
-    box-shadow: 0px 0px 0px 2px #fff;    
+    box-shadow: 0px 0px 0px 2px #fff;
 }
 
 #sidebar a {
@@ -38,10 +40,12 @@ body {
     position: relative;
     z-index: 8 !important;
 }
+
 .topbar-text {
     font-size: 17px;
     /* padding: 3px; */
 }
+
 #sidebar a:hover {
     color: #f1f1f1;
 }
@@ -52,6 +56,7 @@ body {
 
 
 }
+
 .topbar {
     z-index: 99;
     background-color: #237d9e;
@@ -60,7 +65,8 @@ body {
     position: fixed;
     height: 63px;
 }
-.main{
+
+.main {
     display: inline;
 }
 
@@ -71,7 +77,7 @@ body {
 
 .vl {
     border-right: 2px solid rgb(239 239 239);
- 
+
 
 }
 
@@ -106,11 +112,11 @@ body {
 .card-img-top1 {
     background-image: url(../assets/Cardiology/Dr.\ Abhijit\ Vilas\ Kulkarni.png);
     height: 207.53px;
-        background-size: 100% 100%;
-        border-radius: 13px;
-        margin-inline: 11px;
-        margin-top: 11px;
-        border-radius: 6px 6px 0px 0px;
+    background-size: 100% 100%;
+    border-radius: 13px;
+    margin-inline: 11px;
+    margin-top: 11px;
+    border-radius: 6px 6px 0px 0px;
 
 
 }
@@ -267,6 +273,7 @@ body {
     margin-inline: 11px;
     margin-top: 11px;
 }
+
 .card-img-top27 {
     background-image: url(../assets/ONCOLOGY/Dr.\ Vijay\ Agarwal.png);
     height: 207.53px;
@@ -275,6 +282,7 @@ body {
     margin-inline: 11px;
     margin-top: 11px;
 }
+
 .card-img-top28 {
     background-image: url(../assets/ONCOLOGY/Dr.\ Vijay\ Bhaskar\ L.png);
     height: 207.53px;
@@ -326,7 +334,7 @@ body {
     background-size: 100% 100%;
     border-radius: 13px;
 
-    
+
 }
 
 .card-img-topn2 {
@@ -398,6 +406,7 @@ body {
     height: 207.53px;
     background-size: 100% 100%;
 }
+
 .hotel_tc {
     font-size: 9px;
     margin-top: 35px;
@@ -449,8 +458,9 @@ body {
     margin-top: 4px;
     width: 100%;
     font-size: 14px;
-cursor: pointer;
+    cursor: pointer;
 }
+
 .banner-bn {
     background: #2582A1;
     height: 163px;
@@ -458,6 +468,7 @@ cursor: pointer;
     font-size: 25px;
     border: none;
 }
+
 .btn-bnnr {
     border-radius: 15px;
     background: #FDB931;
@@ -482,20 +493,23 @@ cursor: pointer;
     font-size: 14px;
     margin-bottom: -11px;
 }
+
 .card-title {
     margin-bottom: 0.75rem;
     font-size: 16px;
     color: #1d1d1d;
     font-weight: 600 !important;
 }
+
 .card-text:last-child {
     margin-bottom: 0;
     font-weight: 400 !important;
 }
+
 .card-text {
     color: #224855;
-    font-weight: 400 !important; 
-       margin-top: -7px;
+    font-weight: 400 !important;
+    margin-top: -7px;
     font-size: 13px;
 }
 
@@ -524,9 +538,11 @@ ul {
     padding: 0px 61px 0px 61px;
     border-radius: 7px;
 }
+
 .sidebar_top_font {
     margin-top: -17px;
 }
+
 .btn-primary {
     color: #fff !important;
     background-color: #237d9e !important;
@@ -563,13 +579,15 @@ ul {
     margin-bottom: 2px;
     margin-top: 27px;
 }
+
 .Patient_Services2 {
     font-size: 27px;
     color: rgb(77, 77, 77);
     margin-bottom: -7px;
     margin-top: 11px;
 }
-  #myBtn {
+
+#myBtn {
     position: fixed;
     bottom: 0px;
     left: 30px;
@@ -589,6 +607,7 @@ ul {
 #myBtn:hover {
     background-color: #555;
 }
+
 .heading {
     font-size: 32px;
     color: #047C9E;
@@ -603,14 +622,17 @@ ul {
     font-size: 17px;
     padding-top: 7px;
 }
-.footer_links{
+
+.footer_links {
     text-align: left !important;
 }
+
 .footer_logo {
     margin-top: -15px;
     width: 150px;
     height: 65px;
 }
+
 body {
     min-height: 100vh;
     display: flex;
@@ -623,15 +645,18 @@ body {
     margin-top: 0px;
     color: white;
 }
+
 .checked {
     color: orange;
     font-size: 17px !important;
 
-  }
-  .all_star{
+}
+
+.all_star {
     color: rgb(23, 22, 22);
     font-size: 11px !important;
 }
+
 .footer-column {
     text-align: center;
 }
@@ -656,14 +681,17 @@ body {
 table {
     color: #727171;
 }
+
 .add-bar {
     border-right: 1px solid #e2e2e2;
 }
+
 .no-padding-container {
     padding-left: 0px;
     padding-right: 0px;
     cursor: pointer;
 }
+
 .km-dis {
     position: relative;
     top: 113px;
@@ -675,6 +703,7 @@ table {
 .map {
     border-right: 1px solid #e2e2e2;
 }
+
 .btn-hotel {
     position: relative;
     top: 28px;
@@ -691,12 +720,15 @@ table {
     z-index: 0;
     cursor: pointer;
 }
-.eqlbox{
+
+.eqlbox {
     height: 345px;
 }
-.eqlbox2{
+
+.eqlbox2 {
     height: 168px;
 }
+
 .price {
     position: relative;
     top: 40px;
@@ -704,17 +736,20 @@ table {
     color: #237d9e;
     font-size: 31px;
 }
+
 .center-container {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .fa-style {
+}
+
+.fa-style {
     font-size: 60px !important;
     color: orange;
     margin-top: 51px;
     margin-left: 33px;
 }
+
 .sticky-element {
     position: sticky;
     top: 61px;
@@ -725,12 +760,14 @@ table {
     z-index: 2;
     padding-inline: 75px;
 }
+
 .about-us-cont {
     font-size: 16px;
     margin-top: 15px;
     text-align: justify;
     padding-inline: 44px;
 }
+
 .sidebar-top {
     background-color: #047C9E;
     padding: 8px;
@@ -738,40 +775,47 @@ table {
     top: -60px;
     height: 200px;
 }
+
 .sidebar-middle {
     margin-top: -26px;
     background-color: #fff;
     padding: 23px;
 }
+
 .sidebar_end_span {
     color: #047c9e;
 
 }
+
 .footer-width {
     width: 1098px !important;
 }
 
-.new_mr{
+.new_mr {
     margin-left: 12px;
     margin-right: 16px;
 
 
 }
+
 .sidebar-h1 {
     font-size: 52px;
     margin-top: 16px;
     color: #047c9e;
 }
-.footer-links2
-{
+
+.footer-links2 {
     line-height: 30px;
 }
+
 .footer-ph {
     margin-top: -8px;
 }
+
 .table-con {
     padding-inline: 44px;
 }
+
 .table-responsive {
     border-left: 1px solid #d4d1d1;
     border-bottom: 1px solid #d4d1d1;
@@ -791,17 +835,24 @@ table {
     cursor: pointer;
     border: none;
 }
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
     color: #237d9e;
 }
-.footer-links{
+
+.footer-links {
     line-height: 30px;
 }
+
 .sidebar-span {
     font-size: 23px;
     font-weight: 600;
     color: #047c9e;
 }
+
 #lst_lg_box {
     display: flex;
     margin-block: -3px;
@@ -809,16 +860,17 @@ table {
     overflow: none;
     padding-block: 27px;
 }
+
 .cardnew {
-      
+
     transition: 0.3s;
     width: 30%;
     margin: 19px;
     text-align: center;
-  }
-  .service-bottom {
- 
 }
+
+.service-bottom {}
+
 .background-div {
     background-image: url(../img/sidebar_logo.png);
     background-position: center center;
@@ -829,75 +881,89 @@ table {
     background-repeat: no-repeat;
     margin-top: -25px;
 }
+
 .style_box {
     margin-top: 17px;
 }
+
 .font-lst-box-s {
     font-size: 13px;
     text-align: justify;
 }
+
 .font-lst-box {
     font-size: 21px;
 }
-  .cardnew2 {
+
+.cardnew2 {
     text-align: center;
 
     transition: 0.3s;
     width: 30%;
     margin: 19px;
-  }
-  .bnnr-row {
+}
+
+.bnnr-row {
     margin-inline: 12px;
     align-items: center;
     margin-top: 37px;
 }
-  .marz{
+
+.marz {
 
     margin-inline: -15px;
 
-  }
-  .cardnew3 {
- text-align: center;
+}
+
+.cardnew3 {
+    text-align: center;
     transition: 0.3s;
     width: 30%;
     margin: 19px;
-  }
-  .card-titlex {
+}
+
+.card-titlex {
     margin-top: -28px;
     font-size: 16px;
 }
 
-.card-whatsapp{
+.card-whatsapp {
     position: relative;
     top: -9px;
 }
+
 .card-body {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     padding: 10px;
 }
-.card-title-new{
-  color: #047C9E;
-  margin-block: 20px;
-  font-size: 23px;
-}
-.text-muted {
-color: #0f6d9f !important;
-}
-.card-blog {
-width: 30%;
+
+.card-title-new {
+    color: #047C9E;
+    margin-block: 20px;
+    font-size: 23px;
 }
 
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+.text-muted {
+    color: #0f6d9f !important;
+}
+
+.card-blog {
+    width: 30%;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
     color: #237d9e;
 }
 
 
 @media screen and (max-width: 800px) {
-    .footer_col2_font{
+    .footer_col2_font {
         display: none;
     }
+
     .bnnr-mobi {
         font-size: 20px;
         padding: 0px !important;
@@ -905,6 +971,7 @@ width: 30%;
         text-align: center;
         display: contents;
     }
+
     .about-us-cont {
         font-size: 16px;
         margin-top: 18px;
@@ -913,23 +980,28 @@ width: 30%;
         font-weight: 400;
         margin-bottom: -21px;
     }
+
     .bnnr-row {
         margin-inline: 0px !important;
 
     }
+
     .card-img-top24 {
 
         background-size: 114% 100% !important;
 
     }
+
     .hotel_tc {
         font-size: 9px;
         margin-top: 22px !important;
         margin-left: 13px;
     }
+
     .eqlboxmobi {
         height: 375px !important;
     }
+
     .btn-bnnr {
         padding: 13px 7px 13px 7px !important;
         border: none;
@@ -940,11 +1012,13 @@ width: 30%;
         margin-left: 40%;
         margin-top: 0px;
     }
+
     .chat_col {
         text-align: center !important;
         position: relative;
- 
+
     }
+
     .topbar {
         padding-top: 9px;
         height: 70px !important;
@@ -954,29 +1028,36 @@ width: 30%;
 
     .cardnew {
         width: 100%;
-margin: 0px !important;    
-}
+        margin: 0px !important;
+    }
+
     .cardnew2 {
         width: 100%;
-        margin: 0px !important;    
+        margin: 0px !important;
     }
-    #sidebar{
+
+    #sidebar {
         box-shadow: 0px 0px 0px 2px #ffffff57 !important;
     }
+
     .cardnew3 {
         width: 100%;
-        margin: 0px !important;    
+        margin: 0px !important;
     }
+
     #lst_lg_box {
         display: block;
 
     }
+
     .font-lst-box {
         font-size: 14px;
     }
+
     .table-con {
         padding-inline: 26px !important;
     }
+
     .sidebar-button {
         border-radius: 7px;
         width: 100%;
@@ -988,52 +1069,64 @@ margin: 0px !important;
         color: white;
         border: none;
     }
+
     .sidebar-middle {
 
         line-height: 9px;
     }
+
     .sidebar_end_span {
         font-size: 7px;
     }
+
     .no-padding-container {
 
         cursor: pointer;
         height: 216px;
         width: 100% !important;
     }
+
     .sidebar-h1 {
         font-size: 32px;
         margin-top: 16px;
     }
+
     .sidebar-span {
         font-size: 10px;
         font-weight: 600;
     }
+
     .sidebar_top_font {
         font-size: 8px;
         margin-top: -40px;
     }
-    .mobi-head2{
+
+    .mobi-head2 {
         text-align: center !important;
         margin-left: 0px !important;
         margin-block: 18px;
     }
-    .bar{
+
+    .bar {
         display: none;
     }
+
     .footer-links2 {
         margin-left: 163px;
         margin-top: -136px;
         font-size: 16px;
     }
+
     .footer-links {
         text-align: left !important;
         font-size: 16px;
         margin-left: 0px;
     }
+
     .footer-width {
-       width: 100% !important; 
+        width: 100% !important;
     }
+
     .navbar-toggler-icon {
         display: inline-block;
         width: 16px;
@@ -1043,7 +1136,8 @@ margin: 0px !important;
         background: no-repeat center center;
         background-size: 100% 100%;
     }
-    #sidebar{
+
+    #sidebar {
         box-shadow: 0px 0px 0px 2px #ffffff57;
     }
 
@@ -1052,6 +1146,7 @@ margin: 0px !important;
         margin-top: 7px;
         margin-bottom: 46px;
     }
+
     .navbar-toggler {
         padding: 0.25rem 0.75rem;
         font-size: 1.25rem;
@@ -1062,18 +1157,21 @@ margin: 0px !important;
         position: relative;
         top: -12px;
     }
-    .logo-x{
+
+    .logo-x {
         height: 61px;
         position: relative;
         top: -13px;
         width: 64px;
     }
+
     .sidebar-logo {
         margin-top: -36px;
         text-align: center;
         margin-bottom: -18px;
         margin-left: -33px;
     }
+
     .btn-primary2 {
         color: #fff !important;
         background-color: #237d9e !important;
@@ -1119,18 +1217,22 @@ margin: 0px !important;
     .btn:not(:disabled):not(.disabled) {
         cursor: pointer;
     }
-    .liv{
+
+    .liv {
         display: none;
     }
-.Patient_Services2 {
-    margin-top: 11px !important;
-    font-weight: 400;
+
+    .Patient_Services2 {
+        margin-top: 11px !important;
+        font-weight: 400;
+    }
+
+    .btn-block {
+        font-size: 13px;
+    }
 }
-.btn-block{
-font-size: 13px;
-}
-}
-@media screen and (max-width: 800px){
+
+@media screen and (max-width: 800px) {
     .Patient_Services {
         font-size: 22px !important;
         margin-inline: 9px;
@@ -1141,12 +1243,12 @@ font-size: 13px;
     .center-container {
         display: block !important;
 
-      }
-
- 
+    }
 
 
-      .xmx {
+
+
+    .xmx {
         position: fixed;
         right: -15px;
         top: 192px;
@@ -1160,6 +1262,7 @@ font-size: 13px;
         top: 31px;
         width: 100%;
     }
+
     .fa-style {
         font-size: 60px !important;
         margin-top: 8px !important;
@@ -1178,6 +1281,7 @@ font-size: 13px;
         top: 68px;
         font-size: 18px;
     }
+
     .btn-hotel {
         top: 7px;
         left: 36px;
@@ -1210,7 +1314,7 @@ font-size: 13px;
         margin-bottom: 0.75rem;
         font-size: 19px;
         color: #666666;
-        
+
     }
 
     .heading {
@@ -1229,9 +1333,11 @@ font-size: 13px;
     .commn_id {
         height: 261px !important;
     }
-    .mob-footercol1{
+
+    .mob-footercol1 {
         text-align: center;
     }
+
     .card {
         margin-top: 20px;
         padding: 11px;
@@ -1244,14 +1350,17 @@ font-size: 13px;
     .card-img-top1 {
         background-size: 100% 130% !important;
     }
+
     .topbar-text {
         margin-left: 47px;
         text-align: center;
         margin-top: 20px !important;
     }
+
     .vl {
-display: none;
+        display: none;
     }
+
     .topbar_i-cons {
         margin-left: 29px;
         position: relative;
@@ -1311,6 +1420,6 @@ display: none;
         padding: 7px !important;
         border-radius: 4px;
         bottom: 21px;
-        
+
     }
 }
