@@ -47,8 +47,8 @@ body {
   position: fixed;
   bottom: -100%;
   right: 0;
-  height: 65%;
-  width: 35%;
+  height: 30rem;
+  width: 30rem;
   background: linear-gradient(#003a70, #3a5a77);
   color: #fff;
   /* Text color for contrast */
