@@ -2,6 +2,7 @@
     font-family: Montserrat;
     font-display: swap;
 }
+
 #openBtn {
     display: grid;
     justify-items: center;
@@ -24,10 +25,11 @@
     position: absolute;
     width: 17%;
     height: 13%;
-    top: 24px;
+    top: -15px;
     object-fit: contain;
 
 }
+
 .logo-y {
     height: 40px;
     position: relative;
@@ -40,7 +42,7 @@
     position: fixed;
     bottom: -100%;
     right: 0;
-    height: 75%;
+    height: 65%;
     width: 35%;
     background: linear-gradient(#04356f, #266bbe);
     color: #fff;
@@ -112,7 +114,7 @@
 
 #imasCircle {
     display: flex;
-        justify-content: center;
+    justify-content: center;
 }
 
 
@@ -139,7 +141,7 @@
         border-radius: 23px;
         padding: 7px 10px 10px 10px;
     }
-    
+
     #imasCircle {
         display: block;
         position: absolute;
@@ -199,16 +201,20 @@
 body {
     touch-action: manipulation;
 }
+
 a {
     color: #f1f1f1 !important;
     text-decoration: underline;
 }
+
 li {
-   
+
     color: #454442 !important;
     text-align: left;
 }
-.h1, h1 {
+
+.h1,
+h1 {
     font-size: 1.5rem;
     color: #04356f;
 }
@@ -216,10 +222,14 @@ li {
 /* CSS for the navbar container */
 .transprint-navbar {
     background-color: rgb(255 255 255) !important;
-    
+
 }
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: rgba(0,0,0,.9);
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(0, 0, 0, .9);
     text-decoration: underline;
 }
 
@@ -235,6 +245,7 @@ li {
 .navbar {
     z-index: 999;
 }
+
 .navbar-brand {
     display: inline-block;
     padding-top: 0.3125rem;
@@ -273,6 +284,7 @@ li {
 .navbar-nav {
     margin-left: 17px;
 }
+
 .btn-block {
     background-color: #004185 !important;
     color: white;
@@ -305,7 +317,7 @@ li {
     outline: none;
     cursor: pointer;
     padding: 20px 62px;
-        transition: 0.3s;
+    transition: 0.3s;
     font-size: 17px;
     border-radius: 50px;
     color: #04356f;
@@ -328,7 +340,7 @@ li {
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background: rgb(13,58,112);
+    background: rgb(13, 58, 112);
     color: white;
     box-shadow: 0px 0px 8px 2px #a1a1a1bf;
 }
@@ -339,6 +351,7 @@ li {
     padding: 6px 12px;
     border-top: none;
 }
+
 .circular-img {
     border-radius: 50% !important;
     height: 240px;
@@ -347,6 +360,7 @@ li {
     position: relative;
     top: -116px;
 }
+
 .col-md-4 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 33.333333%;
@@ -364,16 +378,18 @@ li {
 
 .btn-1 {
     width: 99%;
-    background: rgb(13,58,112);
+    background: rgb(13, 58, 112);
     padding: 16.28px 34.533px 17.72px 6.467px;
     color: white;
     font-weight: 600;
 }
-.btn-1:hover{
+
+.btn-1:hover {
     background: rgb(15, 78, 156);
 
 }
-.btn-2:hover{
+
+.btn-2:hover {
     background: rgb(15, 78, 156);
 
 }
@@ -388,15 +404,19 @@ li {
 
 
 }
-.h1, h1 {
+
+.h1,
+h1 {
     font-size: 1.5rem;
 }
+
 .text-dr {
     font-size: 19px;
     padding-block: 36px;
     color: #004185;
     margin-top: -114px;
 }
+
 .inner_gif {
     width: 47%;
     height: 26px;
@@ -416,6 +436,7 @@ li {
 .slider-all {
     overflow: hidden;
 }
+
 .inner-dadta-slider {
     background: #103c71;
     color: white;
@@ -431,12 +452,14 @@ li {
     border-radius: 2px;
     box-shadow: 0px 0px 1px 1px #ffffff61;
 }
+
 .helth-check {
     border: 3px dotted #d5d5d5;
-        margin-block: 65px;
+    margin-block: 65px;
     padding: 35px;
     text-align: center;
 }
+
 .style-helth {
     padding: 36px;
     box-shadow: 0px 0px 2px 0px #d1d1d1;
@@ -450,49 +473,58 @@ li {
     left: -47px;
     padding-left: 139px;
 }
+
 .font_set {
     font-size: 32px;
     color: #04356f;
     text-align: left;
 }
 
-.box-all{
+.box-all {}
 
-}
 @media screen and (max-width: 800px) {
     .footer-all {
         background-color: #04356f !important;
-        padding-inline: 0px !important;    } 
-        .helth-check {
-            margin-block: 65px;
-            text-align: center;
-            padding: 0px !important;
-            border: none !important;
-            width: 85%;
-        }
-        .none-circle {
-            
-            margin-left: -17px !important;
-        }
-        .marq{
-            top: -35px !important;
-        }
-        .style-helth {
-            padding: 35px;
-            box-shadow: 0px 0px 2px 0px #d1d1d1;
-            border-radius: 7px;
-            font-weight: 500;
-            margin-bottom: 14px;
-            position: relative;
-            left: -23px;
-            overflow: hidden;
-        }
-        .h1, h1 {
-            font-size: 21px !important;
-        }
+        padding-inline: 0px !important;
+    }
+
+    .helth-check {
+        margin-block: 65px;
+        text-align: center;
+        padding: 0px !important;
+        border: none !important;
+        width: 85%;
+    }
+
+    .none-circle {
+
+        margin-left: -17px !important;
+    }
+
+    .marq {
+        top: -35px !important;
+    }
+
+    .style-helth {
+        padding: 35px;
+        box-shadow: 0px 0px 2px 0px #d1d1d1;
+        border-radius: 7px;
+        font-weight: 500;
+        margin-bottom: 14px;
+        position: relative;
+        left: -23px;
+        overflow: hidden;
+    }
+
+    .h1,
+    h1 {
+        font-size: 21px !important;
+    }
+
     .arrow-down {
         left: 170px;
     }
+
     .tab button {
         padding: 10px 7px;
         font-size: 17px;
@@ -500,9 +532,11 @@ li {
         font-weight: 500;
         margin-bottom: 13px;
     }
+
     .inner-dadta-slider {
-       display: none;
+        display: none;
     }
+
     li {
         display: list-item;
         text-align: -webkit-match-parent;
@@ -513,12 +547,14 @@ li {
         padding-inline: 11px;
         text-align: left;
     }
+
     .p-d {
         padding-inline: 38px;
         padding-block: 7px;
         font-size: 18px;
         border-bottom: 1px solid #ffffff12;
     }
+
     .box-patients {
         margin-inline: 0px !important;
     }
@@ -529,62 +565,78 @@ li {
         margin-inline: 50px;
         margin-bottom: 12px;
     }
+
     .price-box {
         max-width: 100% !important;
         margin-inline: 15px !important;
         margin-bottom: 12px;
         padding-block: 12px;
     }
-    .h1, h1 {
-    font-size: 1.5rem;
-}
-.price-box-text-right {
-    margin-top: -29px !important;
-    margin-right: 33px !important;
-}
-.service-al {
-    width: 90% !important;
-    margin-inline: 15px;
-}
+
+    .h1,
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .price-box-text-right {
+        margin-top: -29px !important;
+        margin-right: 33px !important;
+    }
+
+    .service-al {
+        width: 90% !important;
+        margin-inline: 15px;
+    }
+
     .btn-1 {
 
         border-bottom: 1px solid #067370;
         margin-bottom: 2px;
     }
+
     .btn-block {
         width: 100% !important;
         margin-top: 15px;
         margin-inline: 0px;
     }
+
     .price-box {
         max-width: 88.333333% !important;
     }
-    .f-m-32{
+
+    .f-m-32 {
         font-size: 32px !important;
     }
+
     .slider-all {
-   
+
         top: -1px !important;
     }
+
     .navbar-light .navbar-toggler-icon {
         /* background-image: url('menu.png'); */
     }
+
     .navbar-light .navbar-toggler {
         color: rgb(255 255 255 / 50%);
         border: none;
     }
+
     .navbar {
         z-index: 999;
         position: absolute;
         width: 100%;
     }
+
     .Patient_Services {
         font-size: 19px;
         color: #4D4D4D;
     }
+
     #overview {
         margin-top: 2px;
     }
+
     .check-up {
         border-radius: 13px !important;
         border: px solid #d9d9d9 !important;
@@ -593,6 +645,7 @@ li {
         margin-block: 97px;
         width: 92%;
     }
+
     .navbar-nav {
         padding-left: 0px;
         margin-bottom: 0;
@@ -604,33 +657,40 @@ li {
         border-radius: 7px;
         box-shadow: 0px 0px 24px 1px #7772728c;
     }
+
     .box-card {
         box-shadow: 0px 0px 3.4885714054107666px 0px rgba(0, 0, 0, 0.25);
         margin: 136px 0px 26px 0px !important;
     }
+
     .navbar-expand-lg .navbar-nav .nav-link {
 
         font-size: 19px;
         border-bottom: 1px solid #ffffff66;
         height: 56px;
     }
+
     .col-md-4 {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 33.333333%;
         flex: 1 0 100.333333% !important;
         max-width: 100% !important;
     }
+
     .hotel-row {
         border: 0.8px solid #9b9a9a !important;
         margin-inline: -7px;
     }
-    .boxt-f-color{
+
+    .boxt-f-color {
         margin-top: -90px;
         margin-bottom: 30px;
     }
+
     .logo_mob {
         width: 49%;
     }
+
     .hotel-img {
         width: 333px !important;
         height: 242px !important;
@@ -638,10 +698,12 @@ li {
         margin-top: 9px !important;
         border-radius: 11px;
     }
+
     .slider-all {
         background-size: 149% 107%;
         top: -10px !important;
     }
+
     .border-b {
         margin-top: 62px;
         width: 110%;
@@ -650,32 +712,36 @@ li {
         padding: 33px;
         padding-bottom: 84px;
     }
+
     .hotel-row {
         border: 0.8px solid #9b9a9a !important;
         margin-inline: -7px;
     }
+
     .hotel-btn {
 
         padding: 15px 57px 15px 57px;
     }
+
     .head-1 {
         padding-inline: 31px !important;
         position: relative;
         top: 2px;
     }
+
     .footer {
         padding: 15px !important;
         text-align: justify;
     }
-    
+
     .head-2 {
         padding-inline: 33px !important;
         font-size: 14px !important;
         margin-top: -6px;
     }
-    
-  
-    
+
+
+
 }
 
 .logo-x {
@@ -685,45 +751,46 @@ li {
     width: 130px;
 }
 
-            .logo-yx {
+.logo-yx {
     height: 70px;
     position: relative;
-    top: 25px;
+    top: 15px;
     width: 70px;
     object-fit: contain;
-        left: -5px;
-    }
+    left: -5px;
+}
 
-            .logo-y {
-                height: 50px;
-                position: relative;
-                /* top: -21px; */
-                width: 50px;
-                object-fit: contain;
-                /* left: -15px; */
-            }
+.logo-y {
+    height: 50px;
+    position: relative;
+    /* top: -21px; */
+    width: 50px;
+    object-fit: contain;
+    /* left: -15px; */
+}
 
 
 .head-1 {
-    padding-inline: 90px;color: #04356f;
+    padding-inline: 90px;
+    color: #04356f;
     font-size: 36px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    }
+}
 
-    .head-2 {
-        color: #04356f;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 196.9%;
-        padding-inline: 90px;
-        text-align: justify;
-        margin-bottom: 43px;
-    }
+.head-2 {
+    color: #04356f;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 196.9%;
+    padding-inline: 90px;
+    text-align: justify;
+    margin-bottom: 43px;
+}
 
-.btn-service{
+.btn-service {
     background: none;
     border: none;
     text-decoration: underline;
@@ -731,13 +798,15 @@ li {
 
 
 }
-.btn-service:hover{
- position: relative;
- top: -2px;
+
+.btn-service:hover {
+    position: relative;
+    top: -2px;
 
 
 
 }
+
 .h-font {
     margin-bottom: -16px;
     margin-top: 32px;
@@ -753,6 +822,7 @@ li {
     overflow: hidden;
     padding: 26px;
 }
+
 .hotel-btn {
     border-radius: 31px;
     background: #04356f;
@@ -762,6 +832,7 @@ li {
     margin-top: 50px;
     cursor: pointer;
 }
+
 .hotel-row {
 
     overflow: hidden;
@@ -769,44 +840,56 @@ li {
     border: 0.8px solid #D8D8D8;
     background: #FFF;
 }
+
 .hotel-img {
 
     width: 333px !important;
     height: 242px !important;
     margin-left: -14px !important;
 }
+
 .image-column1 {
     overflow: hidden;
     background-image: url(../img/img1.webp);
     background-size: cover;
     height: 225px;
 }
+
 .image-column1 {
     overflow: hidden;
     background-image: url(../img/img1.webp);
     background-size: cover;
     height: 225px;
-}.image-column2 {
+}
+
+.image-column2 {
     overflow: hidden;
     background-image: url(../img/image%2015.webp);
     background-size: cover;
     height: 225px;
-}.image-column3 {
+}
+
+.image-column3 {
     overflow: hidden;
     background-image: url(../img/image%2016.webp);
     background-size: cover;
     height: 225px;
-}.image-column4 {
+}
+
+.image-column4 {
     overflow: hidden;
     background-image: url(../img/image%2017.webp);
     background-size: cover;
     height: 225px;
-}.image-column5 {
+}
+
+.image-column5 {
     overflow: hidden;
     background-image: url(../img/image%2018.webp);
     background-size: cover;
     height: 225px;
 }
+
 .hotel-row {
 
     overflow: hidden;
@@ -814,8 +897,9 @@ li {
     border: 0.8px solid #D8D8D8;
     background: #FFF;
 }
+
 .price-box {
-    max-width: 100% ;
+    max-width: 100%;
 }
 
 .inter-adv {
@@ -896,27 +980,28 @@ li {
         height: 145px !important;
         width: 50%;
     }
+
     .text_dec {
         font-size: 22px;
         font-weight: 600
-      }
-  
-      .text_dec:after {
+    }
+
+    .text_dec:after {
 
         width: 143px !important;
         height: 2px;
         right: -19px !important;
 
     }
-  
-      .text_dec:before {
-     
+
+    .text_dec:before {
+
         width: 143px !important;
         height: 2px;
         left: -19px !important;
-      }
-   
-   
+    }
+
+
 
 }
 
@@ -987,21 +1072,22 @@ li {
     list-style-image: url(double\ arrow.svg) !important;
     margin-left: 101px;
 }
+
 .Patient_Services {
     font-size: 27px;
     color: #4D4D4D
-  }
+}
 
-  .text_dec {
+.text_dec {
     margin: auto;
     text-align: center;
     color: #04356f;
     font-size: 27px;
     max-width: 292px;
     position: relative
-  }
+}
 
-  .text_dec:before {
+.text_dec:before {
     content: "";
     display: block;
     width: 193px;
@@ -1010,14 +1096,15 @@ li {
     left: -63px;
     top: 50%;
     position: absolute
-  }
-  .img-mobi{
+}
+
+.img-mobi {
     margin-left: -11px;
 
-  }
+}
 
 
-  .text_dec:after {
+.text_dec:after {
     content: "";
     display: block;
     width: 193px;
@@ -1027,8 +1114,9 @@ li {
     top: 50%;
 
     position: absolute
-  }
-  .i-con-box {
+}
+
+.i-con-box {
     background-image: url(../img/IMAGE.webp);
     background-size: cover;
     height: auto;

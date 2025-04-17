@@ -186,12 +186,21 @@
       <h2 style="color: #04356f;">Our Specialists</h2><br>
 
       <div class="tab">
-        <button class="tablinks" id="cvb" onclick="openCity(event, 'Kidney')"> Transplant</button>
-        <button class="tablinks" onclick="openCity(event, 'onco')">Oncology</button>
-        <button class="tablinks" onclick="openCity(event, 'ortho')"> Radiology</button>
-        <button class="tablinks" onclick="openCity(event, 'Cardio')">Gastroenterology</button>
-        <button class="tablinks" onclick="openCity(event, 'Neuro')">Hepatology</button>
-
+        <a href="#Kidney" id="KidneyLink">
+          <button class="tablinks" id="cvb" onclick="openSpecialist(event, 'Kidney')"> Transplant</button>
+        </a>
+        <a href="#Oncology" id="OncologyLink">
+          <button class="tablinks" onclick="openSpecialist(event, 'onco')">Oncology</button>
+        </a>
+        <a href="#Radiology" id="RadiologyLink">
+          <button class="tablinks" onclick="openSpecialist(event, 'ortho')">Radiology</button>
+        </a>
+        <a href="#Gastroenterology" id="GastroenterologyLink">
+          <button class="tablinks" onclick="openSpecialist(event, 'Cardio')">Gastroenterology</button>
+        </a>
+        <a href="#Hepatology" id="HepatologyLink">
+          <button class="tablinks" onclick="openSpecialist(event, 'Neuro')">Hepatology</button>
+        </a>
       </div>
       <div id="ortho" class="tabcontent">
         <div class="container ">
@@ -597,7 +606,10 @@
 
 
     <script>
-      function openCity(evt, cityName) {
+
+      document.getElementById('Kidney').style.display = "block";
+      function openSpecialist(evt, type) {
+
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
@@ -605,14 +617,17 @@
         }
         tablinks = document.getElementsByClassName("tablinks");
         for (i = 0; i < tablinks.length; i++) {
+
           tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
-        document.getElementById(cityName).style.display = "block";
+        document.getElementById(type).style.display = "block";
         evt.currentTarget.className += " active";
       }
       function myFunction() {
+
         document.getElementById("cvb").click();
       }
+      e.preventDefault()
       myFunction();
     </script>
     <!--tabs end -->
