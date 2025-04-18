@@ -18,7 +18,8 @@
     letter-spacing: 0.83px;
     font-weight: 600;
     z-index: 10;
-    border-radius: 2px;
+    border-radius: 8px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .logo-yx {

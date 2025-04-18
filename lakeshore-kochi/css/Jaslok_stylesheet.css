@@ -1,0 +1,1452 @@
+body {
+  font-family: 'Open Sans';
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+#openBtn {
+  display: grid;
+  justify-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 40px;
+  background-color: #FFF;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: #333232;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: 0.83px;
+  font-weight: 600;
+  z-index: 10;
+  border-radius: 8px;
+}
+
+#drawer {
+  position: fixed;
+  bottom: -100%;
+  right: 0;
+  height: 30rem;
+  width: 30rem;
+  background: linear-gradient(#93123e, #be5b7c);
+  color: #fff;
+  /* Text color for contrast */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: bottom 0.3s ease-in-out;
+  z-index: 15;
+  border-top-left-radius: 20px;
+  /* Rounded top-left corner */
+  border-top-right-radius: 20px;
+}
+
+.drawer-content {
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.drawer-items {
+  margin-top: 20px;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+}
+
+.drawer-items button {
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 2.8rem;
+  border-radius: 2px;
+  color: #2d9f28;
+  font-weight: 600;
+  border-radius: 15px;
+  left: 0px;
+}
+
+.drawer-items button:active {
+  transform: scale(0.99);
+}
+
+.drawer-banner {
+  margin-top: 70px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 15px 2px 2px;
+  color: #000;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.drawer-banner h2 {
+  letter-spacing: 0.83px;
+}
+
+#closeBtn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 2px 5px 7px;
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+#imasCircle {
+  display: none;
+}
+
+.drawer-items {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  #openBtn {
+    bottom: 10px;
+    left: 10px;
+    font-size: 14px;
+  }
+
+  #closeBtn {
+    font-size: 14px;
+    background-color: red;
+    color: white;
+    top: 50px;
+    right: 45px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 23px;
+    padding: 7px 10px 10px 10px;
+  }
+
+  #drawer {
+    height: 45%;
+    width: 100%;
+    border-top-left-radius: 160px;
+    /* Rounded top-left corner */
+    border-top-right-radius: 160px;
+    border: 5px solid #8fbfd1;
+  }
+
+  #imasCircle {
+    display: block;
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    border-radius: 38px;
+    top: -35px;
+    left: 41%;
+    background-color: #0f0f0f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 21px 14px;
+    border: 2px solid #e924cb;
+  }
+
+  .drawer-items {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .drawer-items h2 {
+    font-size: 18px;
+  }
+
+  .drawer-banner {
+    margin-top: 80px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px 2px 2px;
+    color: #000;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .drawer-banner h2 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .drawer-banner p {
+    font-size: 14px;
+  }
+}
+
+.xmx {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+}
+
+.top-bar {
+  background-color: #93123e;
+  color: #fff;
+  padding: 10px 20px;
+  float: right;
+  text-align: right;
+}
+
+.btn {
+  color: #343a40;
+  background-color: #fff;
+  border-color: #fff;
+  border-radius: 10px 10px 0px 0px;
+  height: 45px;
+  margin-bottom: -10px;
+  position: relative;
+  left: 189px;
+}
+
+.top-bar-text {
+  margin-left: -200px !important;
+}
+
+.logo {
+  height: 65px;
+  overflow: hidden;
+  margin-bottom: -6px;
+}
+
+.logo-x {
+  position: relative;
+  left: 67px;
+}
+
+.navbar-nav {
+  font-size: 17px;
+  position: relative;
+  left: 80px;
+  font-weight: 700;
+  font-family: 'Lato';
+
+}
+
+.slider {
+  background-image: url(../assets/img/lakeshore.jpg);
+  background-size: 100% 100%;
+  height: 395px;
+
+}
+
+.inner_text {
+  position: relative;
+  top: 58px;
+  left: 87px;
+  color: white;
+  width: 63%;
+}
+
+.text_inner {
+  font-size: 44px;
+  font-weight: 400;
+}
+
+.inner_button {
+  border: none;
+  background: #069e76;
+  width: 183px;
+  height: 52px;
+  color: white;
+  border-radius: 5px;
+}
+
+/*sticky element */
+.sticky-text {
+  position: fixed;
+  top: 85px;
+  padding: 10px;
+  background: linear-gradient(90deg, #93123e 0%, #be5b7c 100%);
+  right: 0px;
+  border-radius: 8px 0px 0px 8px;
+  height: 106px;
+  width: 279px;
+  color: white;
+  font-size: 22px;
+}
+
+.icon-container {
+  margin-top: 20px;
+  /* Adjust spacing as needed */
+}
+
+.icon-container i {
+  font-size: 33px;
+  margin-right: 10px;
+  position: relative;
+  top: -9px;
+}
+
+.about-us {
+  background: #fff;
+  width: 80%;
+  border-radius: 0px 0px 10px 0px;
+  height: 353px;
+  box-shadow: 0px 0px 10px #9d9c9c8f;
+  padding-inline: 97px;
+  padding-block: 44px;
+  margin-left: 0px;
+  overflow: hidden;
+}
+
+.head_about_us {
+  font-size: 25px;
+  color: #e7472a;
+}
+
+.about-us-scrool {
+  background-image: url(../assets/img/a.scroll-down.svg);
+  background-repeat: no-repeat;
+  height: 70px;
+  position: relative;
+  /* overflow: hidden; */
+  width: 10%;
+  float: right;
+}
+
+.scrool {
+  margin-left: 0;
+  background: red;
+  width: 87%;
+  margin-top: -209px;
+}
+
+.heading {
+  margin-top: 200px;
+}
+
+.sticky-btn {
+  position: sticky;
+  bottom: 20px;
+  margin-top: 10px;
+  background-color: #93123e;
+  border-color: #93123e;
+  color: white;
+  height: 56px;
+  margin-block: 5px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.sticky-btn:hover {
+  background-color: #93123e;
+  /* Change button color on hover */
+  border-color: #93123e;
+  /* Change button border color on hover */
+}
+
+.h1,
+h1 {
+  font-size: 29px;
+  color: #93123e;
+}
+
+.dr_button {
+  width: 740px;
+}
+
+.meet_dr {
+  color: #93123e;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.btn-after-dr {
+  float: right;
+  border-radius: 22px 22px 22px 22px;
+  width: 215px;
+  text-align: center;
+  height: 46px;
+  border: none;
+  background: #58595B;
+  margin-top: -23px;
+  color: white;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+  color: #93123e;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #93123e;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, .5);
+  margin-inline: 10px;
+}
+
+/* dr card */
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-links {
+  top: 247px;
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  text-align: left;
+}
+
+.card-links2 {
+  position: absolute;
+  bottom: 0;
+  width: 20%;
+  text-align: right;
+  float: right;
+}
+
+.whatsapp-logo {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.card1 {
+  background-image: url(../assets/Onocolgy/gangadharan-oncology.jpg);
+  background-size: 100% 100%;
+  height: 221px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+}
+
+.card2 {
+  background-image: url(../assets/Onocolgy/chitratha-surgical-oncology.jpg);
+  background-size: 100% 100%;
+  height: 221px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+}
+
+.card3 {
+  background-image: url(../assets/Onocolgy/anupamagopalakrishnabhakthan.jpg);
+  background-size: 100% 100%;
+  height: 221px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+}
+
+.card4 {
+  background-image: url(../assets/Onocolgy/josephedison.jpg);
+  background-size: 100% 100%;
+  height: 221px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+}
+
+.card5 {
+  background-image: url(../assets/Onocolgy/senthil-bcydk.jpg);
+  background-size: 100% 100%;
+  height: 221px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+}
+
+.card6 {
+  background-image: url(../assets/Onocolgy/drannususan-oncology.jpg);
+  background-size: 100% 100%;
+  height: 221px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+}
+
+.card7 {
+  background-image: url(../assets/Onocolgy/dranupamagy.jpeg);
+  background-size: 100% 100%;
+  height: 221px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+}
+
+.card8 {
+  background-image: url(../assets/Onocolgy/shawntjoseph.jpg);
+  background-size: 100% 100%;
+  height: 221px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+}
+
+.card9 {
+  background-image: url(..//assets/Transplant/drabiabraham.jpg);
+  background-size: 100% 100%;
+  height: 221px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+}
+
+.card10 {
+  background-image: url(../assets/Transplant/datsongeorgep.jpg);
+  background-size: 100% 100%;
+  height: 221px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+}
+
+.card11 {
+  background-image: url(..//assets/Gastroenterology/Dr.\ Nilesh\ Doctor.png);
+  background-size: 100% 100%;
+  height: 221px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+}
+
+.card12 {
+  background-image: url(..//assets/Gastroenterology/Dr.\ Vivek\ Shetty.png);
+  background-size: 100% 100%;
+  height: 221px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+}
+
+.card13 {
+  background-image: url(../assets/Orthopedics/rajeshsimon.jpg);
+  background-size: 100% 100%;
+  height: 221px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+}
+
+.card14 {
+  background-image: url(../assets/Orthopedics/dr.bijupjacob.jpg);
+  background-size: 100% 100%;
+  height: 221px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+}
+
+.card15 {
+  background-image: url(../assets/Neurology/muralikrishnamenon.jpg);
+  background-size: 100% 100%;
+  height: 221px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+}
+
+.card16 {
+  background-image: url(../assets/Neurology/vidyamv.jpg);
+  background-size: 100% 100%;
+  height: 221px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+}
+
+.card17 {
+  background-image: url(..//assets/Cardiology/dr.anandkumarv.jpg);
+  background-size: 100% 100%;
+  height: 221px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+}
+
+
+.card18 {
+  background-image: url(..//assets/Cardiology/cibiissac-uunauy.jpg);
+  background-size: 100% 100%;
+  height: 221px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+}
+
+.card19 {
+  background-image: url(..//assets/Cardiology/dr.p.r.bhimashankar.jpg);
+  background-size: 100% 100%;
+  height: 221px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.whats-app {
+  background-image: url(../assets/img/whtas-app.svg);
+  height: 49px;
+  background-position: 100% 100%;
+  width: 48px;
+  background-repeat: no-repeat;
+  margin-left: 163px;
+  margin-top: -61px;
+}
+
+.card {
+  background: linear-gradient(90deg, #93123e 0%, #cf4d79 100%) !important;
+  background-clip: border-box;
+  border: 1px solid linear-gradient(90deg, #93123e 0%, #cf4d79 100%);
+  border-radius: 20px 20px 0px 20px;
+  color: white;
+  padding: 9px;
+  height: 390px;
+  margin-block: 16px;
+  overflow: hidden;
+}
+
+.de-heading {
+  color: #58595B;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*end*/
+.bnnr-row {
+  margin-inline: 12px;
+  align-items: center;
+  margin-top: 36px;
+  padding-top: 37px;
+}
+
+.banner-bn {
+  background: linear-gradient(90deg, #93123e 0%, #cf4d79 100%);
+  height: 163px;
+  color: white;
+  font-size: 25px;
+  border: none;
+}
+
+.btn-bnnr {
+  border-radius: 15px;
+  background: #fff;
+  color: #93123e;
+  padding: 12px 24px 12px 24px;
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+  margin-top: -11px;
+  width: 265px;
+}
+
+.b-chat {
+  position: relative;
+  top: 12px;
+  cursor: pointer;
+
+}
+
+.emn {
+  text-decoration: none !important;
+}
+
+.l-chat {
+  position: relative;
+  top: 21px;
+  cursor: pointer;
+}
+
+.main_all {
+  background: linear-gradient(90deg, #93123e 0%, #cf4d79 100%);
+  color: #58595B;
+  height: 758px;
+  border-radius: 10px;
+  display: none;
+}
+
+.row-style {
+  border-bottom: 1px solid #d5d5d5;
+  padding-top: 14px;
+  font-size: 12px;
+  color: #474747;
+  font-weight: 500;
+}
+
+.inner_data_health {
+  background: white;
+  padding: 38px;
+  position: relative;
+  top: 43px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.mt-contant {
+  position: relative;
+  top: -23px;
+  color: #8A939E;
+  font-size: 14px;
+}
+
+.box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 0px 11px -4px #93123e;
+  padding-block: 37px;
+}
+
+.checklist-btn {
+  margin-bottom: 10px;
+  margin-left: -232px;
+  background: linear-gradient(90deg, #93123e 0%, #cf4d79 100%);
+  border-radius: 10px 11px 11px 29px;
+  width: 431px;
+  text-align: left;
+  padding-left: 44px;
+  color: white;
+}
+
+li {
+  font-size: 14px;
+}
+
+.coma {
+  font-size: 38px;
+  color: #93123e;
+  font-weight: 400;
+  margin-left: 24px;
+  position: relative;
+  left: -20px;
+  top: -9px;
+}
+
+.mobi-ul {
+  margin-left: -21px;
+}
+
+.testi-text {
+  font-size: 14px;
+  margin-top: -44px;
+  text-align: left;
+  padding-inline: 31px;
+  height: 59px;
+}
+
+.img-circle {
+  margin-top: 14px;
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  float: left;
+  margin-left: 26px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.name_testi {
+  margin-left: 96px;
+  font-weight: 600;
+  margin-top: 32px;
+}
+
+.name_testi2 {
+  font-size: 13px;
+  position: relative;
+  left: 16px;
+  top: -18px;
+}
+
+.card-img-top-I {
+  background-image: url(../assets/hotels/h1.jpg);
+  background-size: 100% 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.card-img-top-2 {
+  background-image: url(../assets/hotels/h2.jpg);
+  background-size: 100% 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.card-img-top-3 {
+  background-image: url(../assets/hotels/h3.jpg);
+  background-size: 100% 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.card-img-top-4 {
+  background-image: url(../assets/hotels/h4.jpg);
+  background-size: 100% 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.card-img-top-5 {
+  background-image: url(../assets/hotels/h5.jpg);
+  background-size: 100% 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.card-img-top-6 {
+  background-image: url(../assets/hotels/h6.jpg);
+  background-size: 100% 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.card-img-top-7 {
+  background-image: url(../assets/hotels/h7.jpg);
+  background-size: 100% 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.card-img-top-8 {
+  background-image: url(../assets/hotels/h8.jpg);
+  background-size: 100% 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+
+
+
+
+.card-hotel {
+  background: #14212A !important;
+  border-radius: 10px !important;
+}
+
+.btn-hotel {
+  position: relative;
+  left: -22px;
+  top: 13px;
+  border-radius: 7px;
+  width: 240px;
+  background: linear-gradient(90deg, #93123e 0%, #cf4d79 100%);
+  color: white !important;
+  font-size: 12px;
+  padding-block: 12px;
+}
+
+.price {
+  position: absolute;
+  background: linear-gradient(90deg, #93123e 0%, #cf4d79 100%);
+  top: 0px;
+  right: 0px;
+  width: 85px;
+  text-align: center;
+  height: 32px;
+  border-radius: 0px 0px 0px 17px;
+}
+
+.distance {
+  position: absolute;
+  background: linear-gradient(90deg, #93123e 0%, #cf4d79 100%);
+  top: 12px;
+  left: 11px;
+  width: 62px;
+  text-align: center;
+  height: 24px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 12px;
+  padding: 2px;
+}
+
+.card-title-hotel {
+  margin-left: -15px;
+  margin-top: -17px;
+}
+
+.card-text-hotel {
+  margin-left: -16px;
+  font-size: 12px;
+}
+
+.carousel-control-next-icon {
+  background-image: url(../assets/img/a.scroll-left.svg);
+  height: 195px;
+  width: 56px;
+  position: relative;
+  right: -52px;
+}
+
+.carousel-control-prev-icon {
+  display: none;
+}
+
+.rounded-circle {
+  position: relative;
+  height: 65px;
+  width: 100px;
+  top: -33px;
+}
+
+.card-pnt {
+  overflow: visible !important;
+  border-radius: 10px !important;
+  background: #E8ECF1 !important;
+  color: #595454;
+  box-shadow: 0px 0px 6px #e74a2973;
+  height: 345px;
+}
+
+.br_mobi {
+  display: none;
+}
+
+.card-title-1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer {
+  background: linear-gradient(90deg, #93123e 0%, #cf4d79 100%);
+  padding: 35px;
+  color: white;
+}
+
+.lin-as {
+  cursor: pointer;
+}
+
+.footer-btn {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  height: 52px;
+  width: 249px;
+  border-radius: 30px;
+}
+
+.con-victor {
+  display: none;
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+.row-desgn {
+  border-bottom: 1px solid #58595B;
+  width: 34%;
+  margin-top: -16px;
+}
+
+.mobile-navbar {
+  display: none;
+}
+
+a {
+  text-decoration: underline !important;
+}
+
+.nav-link {
+  text-decoration: none !important;
+
+}
+
+/*mobile css */
+@media only screen and (max-width: 360px) and (max-height: 740px) {
+  .about-us {
+    height: 748px !important;
+
+  }
+
+  .Emergency-btn {
+    text-align: center;
+    background: white;
+    border: none;
+    height: 64px;
+    width: 64px;
+    margin-top: 28px !important;
+    margin-left: 23px;
+    border-radius: 9px 9px 0px 0px;
+    padding-left: 14px;
+  }
+
+  .p-col-1 {
+    padding-top: 22px !important;
+  }
+
+  #mobileNo {
+    font-size: 14px !important;
+  }
+
+  .whats-app {
+    position: relative;
+    left: -24px;
+  }
+
+  .b-chat {
+    font-size: 14px !important;
+  }
+
+  .dr-card {
+    height: 281px !important;
+    width: 176px !important;
+    position: relative;
+    margin-bottom: -8px;
+    border: 2px solid #58595B !important;
+    margin-left: -13px !important;
+  }
+
+}
+
+.dr_button_mobile {
+  display: none;
+}
+
+.logo-mobi {
+  display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    height: 174px !important;
+  }
+
+  .mobi-br {
+    display: none;
+  }
+
+  .dr-card {
+    height: 311px !important;
+    width: 186px;
+    position: relative;
+    margin-bottom: -8px;
+    border: 2px solid #58595B !important;
+    margin-left: -10px;
+  }
+
+  .dr-name {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .b-chat {
+    font-size: 15px;
+  }
+
+  .l-chat {
+
+    font-size: 15px;
+  }
+
+  .logo-mobi {
+    display: block;
+  }
+
+  .mobile-navbar {
+    display: block;
+  }
+
+  .mobi-ul {
+    margin-left: -27px;
+  }
+
+  .checklist-btn {
+
+    margin-top: -28px;
+  }
+
+  .whats-app {
+    background-image: url(../assets/logo/whats-mobi.svg) !important;
+    height: 49px;
+    background-position: 100% 100%;
+    width: 48px;
+    background-repeat: no-repeat;
+    margin-left: 94px !important;
+    margin-top: -58px !important;
+  }
+
+  .row-desgn {
+    border-bottom: 1px solid #58595B;
+    width: 86%;
+    margin-top: -16px;
+  }
+
+  .h1,
+  h1 {
+    font-size: 23px;
+    color: #93123e;
+  }
+
+  .dr_button_mobile {
+    display: block;
+  }
+
+  .dr_button {
+    display: none;
+  }
+
+  .text_inner {
+    font-size: 23px;
+    font-weight: 400;
+  }
+
+  .slider {
+
+    height: 241px !important;
+  }
+
+  .logo-mobi {
+    height: 100px;
+    margin-top: -33px;
+  }
+
+  .top-bar {
+    display: none;
+  }
+
+  .navbar-mobile {
+    display: block;
+  }
+
+  .nav-li-mobi {
+    font-size: 20px;
+    padding-inline: 9px;
+    padding-bottom: 14px;
+    font-weight: 600;
+  }
+
+  .active-mobi {
+    border-bottom: 4px solid #93123e;
+
+  }
+
+  .nav-li-mobi:hover {
+    border-bottom: 4px solid #93123e;
+
+  }
+
+  .navbar-mobile {
+    font-family: 'Lato';
+    margin-left: -33px;
+    margin-top: 17px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .top-bar {
+
+    height: 81px !important;
+  }
+
+
+  .con-victor {
+    display: block !important;
+  }
+
+  .text-Emergency {
+    display: none;
+  }
+
+  .name_testi {
+    margin-left: 98px;
+  }
+
+  .img-circle {
+    margin-left: 30px;
+  }
+
+  .mobi-tx2 {
+    height: 85px;
+  }
+
+  .mobi-tx {
+    height: 121px;
+  }
+
+  .testi-text {
+    left: 7px;
+  }
+
+  .coma {
+    margin-left: 29px;
+  }
+
+  .checklist-btn {
+    margin-left: -112px;
+    width: 306px;
+  }
+
+  .btn-bnnr {
+    padding: 13px 7px 13px 7px !important;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    height: 48px;
+    width: 198px;
+    margin-left: 40%;
+    margin-top: 0px;
+  }
+
+  .chat_col {
+    text-align: center !important;
+    position: relative;
+
+  }
+
+  .bnnr-mobi {
+    font-size: 20px;
+    padding: 0px !important;
+    position: relative;
+    text-align: center;
+    display: contents;
+  }
+
+  .bnnr-row {
+    margin-inline: 0px !important;
+
+  }
+
+  .sticky-text {
+    right: 0px !important;
+    width: 45px;
+    height: 125px;
+  }
+
+  .inner_text {
+    top: 35px !important;
+  }
+
+  .about-us {
+    height: 722px;
+    padding-inline: 18px !important;
+    padding-block: 20px !important;
+    width: 90%;
+  }
+
+  .about-us-scrool {
+    left: 111.5% !important;
+    top: 179px !important;
+    width: 67px !important;
+  }
+
+  .logo {
+    display: none;
+
+  }
+
+  .scrool {
+    margin-left: 0;
+    background: 93123e;
+    width: 51%;
+    margin-top: -224px;
+  }
+
+  .heading {
+    margin-top: 192px;
+  }
+
+  .sticky-btn {
+
+    height: 56px;
+    width: 132px !important;
+  }
+
+  .dr_button {
+    width: 100% !important;
+  }
+
+  .sticky-btn {
+    padding: 1px;
+    height: 51px;
+    margin-left: -9px;
+  }
+
+  .btn-cnter {
+    position: relative;
+    top: 0px !important;
+    left: 0px !important;
+  }
+
+  .top-bar-text {
+    margin-left: -39px !important;
+  }
+
+  .checklist-btn {
+
+    left: 57px !important;
+  }
+
+  .logo-x {
+    left: 70% !important;
+  }
+
+  .inner_text {
+    top: 35px !important;
+    left: 19px;
+  }
+
+  .btn-after-dr {
+
+    margin-top: 12px !important;
+  }
+
+
+  .card1 {
+    height: 174px !important;
+  }
+
+  .card-links {
+    top: 194px !important;
+    font-size: 11px;
+    left: -4px;
+    position: absolute;
+    width: 100%;
+  }
+
+  .whats-app {
+    margin-left: 221px;
+    margin-top: -73px;
+  }
+
+  .main_all {
+
+    height: 2018px !important;
+  }
+
+  .banner-bn {
+    height: 218px !important;
+
+  }
+
+  .card-hotel {
+
+    height: 377px !important;
+  }
+
+  .carousel-control-next-icon {
+
+    right: 3px !important;
+  }
+
+  .card-title-hotel {
+    margin-left: -7px !important;
+    margin-top: 0px !important;
+  }
+
+  .card-text-hotel {
+    margin-left: -4px;
+  }
+
+  .q-l {
+    margin-top: 25px !important;
+  }
+
+  .card-pnt {
+    height: 302px !important;
+  }
+
+  .card-title-1 {
+    margin-top: -26px !important;
+    font-size: 23px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center !important;
+  }
+
+  .row-style {
+    border-bottom: 1px solid #d5d5d5;
+    padding-top: 14px;
+    font-size: 12px;
+    color: #474747;
+    font-weight: 500;
+    margin-inline: -56px;
+    position: relative;
+    left: 31px;
+  }
+
+  .main_all {
+    display: none;
+  }
+
+  .br_mobi {
+    display: block !important;
+  }
+
+  .mobile-navbar {
+    background: 93123e;
+    color: white;
+  }
+
+  .btn-hotel {
+    margin-left: 23px;
+    width: 100%;
+  }
+
+  .Emergency-btn {
+    text-align: center;
+    background: white;
+    border: none;
+    height: 56px;
+    width: 64px;
+    margin-top: 16px;
+    margin-left: 23px;
+    border-radius: 9px 9px 0px 0px;
+    padding-left: 14px;
+  }
+
+  .p-col-1 {
+    padding-top: 12px;
+  }
+
+  .location {
+    font-size: 15px;
+
+  }
+
+  #mobileNo {
+    font-size: 15px;
+  }
+
+  .get_text {
+    display: none;
+  }
+
+  .icon-container {
+    margin-top: -22px;
+  }
+
+  .collapse.show {
+    display: block;
+    position: relative;
+    left: -82px;
+  }
+
+  .icon-container i {
+    font-size: 30px;
+    margin-right: 10px;
+    position: relative;
+    top: -9px;
+  }
+
+  .h5,
+  h5 {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+}
