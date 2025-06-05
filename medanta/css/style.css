@@ -641,8 +641,8 @@ h1.card-title-h1 {
 }
 
 @media (max-width:600px) {
-
     /*  */
+
     #banner-image p.banner-p {
         font-family: 'Open Sans', sans-serif;
         color: #FFF !important;
