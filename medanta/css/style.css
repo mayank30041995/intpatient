@@ -641,7 +641,12 @@ h1.card-title-h1 {
 }
 
 @media (max-width:600px) {
-    /*  */
+    #banner-image {
+        background-image: url(../images/medanta-mobile.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* height: 869px; */
+    }
 
     #banner-image p.banner-p {
         font-family: 'Open Sans', sans-serif;
