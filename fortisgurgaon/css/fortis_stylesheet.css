@@ -75,8 +75,13 @@ body {
   border-radius: 2px;
   color: #2d9f28;
   font-weight: 600;
-  border-radius: 25px;
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.drawer-items button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(0.99);
 }
 
 .drawer-items button:active {
@@ -230,13 +235,20 @@ a:hover {
 
 .btn-app {
   display: inline-flex;
-  padding: 8.719px 127.918px 8.281px 129.082px;
+  padding: 12.719px 20%;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
   background: #0a6632;
   color: #fff;
   border: none;
+  font-size: 18px;
+}
+
+.btn-app:hover {
+  background: #fff;
+  color: #0a6632;
+  border: 1px solid #0a6632;
 }
 
 .padding-text {
@@ -355,6 +367,10 @@ a:hover {
   padding: 11px;
   width: max-content;
   margin-bottom: 6px;
+}
+
+.btn-color-x:hover {
+  box-shadow: 3px 3px 15px #0000001a;
 }
 
 .head-aboutus {
@@ -532,11 +548,20 @@ a:hover {
   height: 141px;
 }
 
+.icon-box:hover {
+  background: #2197217a;
+}
+
 .icon-box1 {
   height: 141px;
 }
 
 @media screen and (max-width: 800px) {
+
+  .tab {
+    position: relative;
+  }
+
   .icon-box {
     display: none;
   }
@@ -615,8 +640,11 @@ a:hover {
 }
 
 .card-img-top {
-  width: 254px !important;
-  height: 201px !important;
+  /* width: 254px !important;
+  height: 201px !important; */
+  /* object-fit: contain;
+  margin-top: -10px; */
+  /* height: fit-content; */
 }
 
 .p-story {
@@ -629,9 +657,10 @@ a:hover {
 .card {
   margin: 6px;
   width: 100%;
-  box-shadow: 3px 3px 15px #0000001a;
+  box-shadow: 3px 3px 15px #c0e0cf;
   border-radius: 8px;
   overflow: hidden;
+  border: 3px solid #c0e0cf;
 }
 
 .header-all {
@@ -689,6 +718,15 @@ a:hover {
 }
 
 @media screen and (max-width: 800px) {
+  .card-img-top {
+    object-fit: fill;
+  }
+
+  .tabIcons {
+    width: 14px !important;
+    height: 18px !important;
+  }
+
   .aboutus-img-res {
     display: none;
   }
@@ -1056,7 +1094,7 @@ h1 {
 
   #drawer {
     height: 45%;
-    width: 100%;
+    width: -webkit-fill-available;
     border-top-left-radius: 100px;
     /* Rounded top-left corner */
     border-top-right-radius: 100px;
@@ -1212,4 +1250,28 @@ h1 {
 
 .footer .col {
   flex: 1;
+}
+
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner-wrapper {
+  text-align: center;
+}
+
+.preloader-logo {
+  width: 100px;
+  /* adjust size as needed */
+  margin-bottom: 20px;
 }

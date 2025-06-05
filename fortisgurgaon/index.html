@@ -29,8 +29,8 @@
   <meta name="description" content="Fortis Gurgaon ">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preload" href="img/Frame 768.webp" as="image">
-
-
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <scrip src="js/main.js"></scrip t>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-922729084">
   </script>
@@ -59,6 +59,16 @@
 </head>
 
 <body>
+  <!-- Pre loader -->
+  <div id="preloader">
+    <div class="spinner-wrapper">
+      <img src="img/mobile logo.webp" alt="Loading..." class="preloader-logo">
+      <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+  </div>
+  <!-- End of Pre loader -->
   <!--Top Bar -->
   <div class="container-flud">
     <div class="grid text-center top_bar">
@@ -150,7 +160,7 @@
         </div>
       </div>
       <div class="col-sm-6 col-md-3">
-        <div class="icon-box1">
+        <div class="icon-box">
           <br><br>
           <p class="font_slider"><span style="color: #0CA854;font-weight: 600;">Robotic</span><br>
             Surgeries</p>
@@ -194,31 +204,31 @@
   <div id="Doctors" class="container text-center">
     <span class=" header-all">Our Team</span>
     <h1>Our Dedicated Doctors</h1>
-    <div class="tab container-flud">
+    <div class="tab container-flud my-4">
       <a href="#Cardiology" id="cardiologyLink">
         <button class="tablinks" id="cvb" onclick="openTabLink(event, 'Cardiology')"><img class="tabIcons"
-            src="assets/TabsLogo/cardio.webp" alt="/assets/TabsLogo/cardiowebp" width="14"
-            height="18" />&emsp;Cardiology</button>
+            src="assets/TabsLogo/cardio.webp" alt="/assets/TabsLogo/cardiowebp" width="45"
+            height="45" />&emsp;Cardiology</button>
       </a>
       <a href="#Orthopaedic" id="orthopaedicLink">
-        <button class="tablinks" onclick="openTabLink(event, 'London')"><img class="tabIcons"
-            src="assets/TabsLogo/orthopaedic.webp" alt="/assets/TabsLogo/ology.webp" width="14"
-            height="18" />&emsp;Orthopaedic</button>
+        <button class="tablinks" onclick="openTabLink(event, 'Orthopaedic')"><img class="tabIcons"
+            src="assets/TabsLogo/orthopaedic.webp" alt="/assets/TabsLogo/ology.webp" width="45"
+            height="45" />&emsp;Orthopaedic</button>
       </a>
       <a href="#Oncology" id="oncologyLink">
-        <button class="tablinks" onclick="openTabLink(event, 'Paris')"><img class="tabIcons"
-            src="assets/TabsLogo/ology.webp" alt="/assets/TabsLogo/ology.webp" width="14"
-            height="18" />&emsp;Oncology</button>
+        <button class="tablinks" onclick="openTabLink(event, 'Oncology')"><img class="tabIcons"
+            src="assets/TabsLogo/ology.webp" alt="/assets/TabsLogo/ology.webp" width="45"
+            height="45" />&emsp;Oncology</button>
       </a>
       <a href="#Neurology" id="neurologyLink">
-        <button class="tablinks" onclick="openTabLink(event, 'Tokyo')"><img class="tabIcons"
-            src="assets/TabsLogo/ology.webp" alt="/assets/TabsLogo/neurology.webp" width="14"
-            height="18" />&emsp;Neurology</button>
+        <button class="tablinks" onclick="openTabLink(event, 'Neurology')"><img class="tabIcons"
+            src="assets/TabsLogo/ology.webp" alt="/assets/TabsLogo/neurology.webp" width="45"
+            height="45" />&emsp;Neurology</button>
       </a>
       <a href="#LiverTransplant" id="LiverTransplantLink">
         <button class="tablinks" onclick="openTabLink(event, 'Liver')"><img class="tabIcons"
-            src="assets/TabsLogo/transplant.webp" alt="/assets/TabsLogo/neurology.webp" width="14"
-            height="18" />&emsp;Liver Transplant</button>
+            src="assets/TabsLogo/transplant.webp" alt="/assets/TabsLogo/neurology.webp" width="45"
+            height="45" />&emsp;Liver Transplant</button>
       </a>
 
 
@@ -331,7 +341,7 @@
 
     </div>
 
-    <div id="London" class="tabcontent">
+    <div id="Orthopaedic" class="tabcontent">
       <p class="hide-text">The Department of Orthopaedics targets the correction, prevention, diagnosis, and treatment
         of the skeletal deformities of patients, in all age groups. The team has expertise in treating problems in
         newborns, young athletes, and also, in old aged people. The team is also highly experienced in handling and
@@ -422,7 +432,7 @@
     </div>
     <!--end-->
     <!--tab-->
-    <div id="Paris" class="tabcontent">
+    <div id="Oncology" class="tabcontent">
       <p class="hide-text">The department of Oncology focuses on providing expert consultations, accurate diagnosis,
         and treatment of various types of cancer and includes related therapies. The oncology team is skilled in the
         most advanced and quality treatments to treat cancer. The Oncology team has extensive experience in the early
@@ -514,7 +524,7 @@
     </div>
     <!--end-->
     <!--tab-->
-    <div id="Tokyo" class="tabcontent">
+    <div id="Neurology" class="tabcontent">
       <p class="hide-text">The Neurosciences department is specialized in providing early and accurate diagnosis and
         treatment of disorders and diseases of the nervous system and brain. Fortis draws together an expert team of
         skilled neurosurgeons to conduct nerve, spine, and brain surgeries by utilizing all the latest equipment and
@@ -667,6 +677,13 @@
         }
         document.getElementById(type).style.display = "block";
         evt.currentTarget.className += " active";
+        const selectedTab = document.getElementById(type)
+        requestAnimationFrame(() => {
+          const yOffset = -80 // adjust this value as needed
+          const y =
+            selectedTab.getBoundingClientRect().top + window.pageYOffset + yOffset
+          window.scrollTo({ top: y, behavior: 'smooth' })
+        })
       }
       function myFunction() {
 
@@ -1299,7 +1316,8 @@
     <br>
 
     <br>
-    <h1 id="HealthPackages" class="text-center">Preventive Health <spam style="color: #0B6531;">Check-Up</spam> Packages
+    <h1 id="HealthPackages" class="text-center">Preventive Health <spam style="color: #0B6531;">Check-Up</spam>
+      Packages
     </h1><br>
     <h1 class="text-center">(Basic Package)</h1>
     <br>
@@ -2141,7 +2159,8 @@
     </div><br><br><br>
     <h1 class="text-center">(Lifestyle Package)</h1>
     <br>
-    <p class="text-center" style="margin-top: -22px;"> Includes all the tests from the Basic & Essential <br> + <br></p>
+    <p class="text-center" style="margin-top: -22px;"> Includes all the tests from the Basic & Essential <br> + <br>
+    </p>
 
     <!--box start 3-->
     <div class="container">
@@ -2556,12 +2575,14 @@
       </div>
       <div class="col-12 col-md-4 col-sm-6">
         <h1>Departments</h1>
-        <a class="text-center" href="#">Cardiology</a> <br>
-        <a class="text-center" href="#">Oncology</a><br>
-        <a class="text-center" href="#">Kidney Transplant</a> <br>
-        <a class="text-center" href="#">Liver Transplant</a> <br>
-        <a class="text-center" href="#">Neuro Surgery</a> <br>
-        <a class="text-center" href="#">Orthopedics</a> <br>
+
+
+        <a class="text-center" onclick="openTabLink(event, 'Cardiology')" href="#Cardiology">Cardiology</a> <br>
+        <a class="text-center" onclick="openTabLink(event, 'Oncology')" href="#Oncology">Oncology</a><br>
+        <!-- <a class="text-center" onclick="openTabLink(event, 'Kidney')" href="#">Kidney Transplant</a> <br> -->
+        <a class="text-center" onclick="openTabLink(event, 'Liver')" href="#Liver">Liver Transplant</a> <br>
+        <a class="text-center" onclick="openTabLink(event, 'Neurology')" href="#Neurology">Neuro Surgery</a> <br>
+        <a class="text-center" onclick="openTabLink(event, 'Orthopaedic')" href="#Orthopaedic">Orthopedics</a> <br>
 
 
       </div>
@@ -2590,10 +2611,10 @@
         if (element) {
           document.getElementById('drawer').style.bottom = '0'; // Change to 'block' or any other desired display type
         }
-      }, 10000);
+      }, 45000);
     }
     function callevent() {
-      setTimeout(openNav, 10000);
+      setTimeout(openNav, 45000);
     }
 
     callevent();
@@ -2675,6 +2696,14 @@
     });
 
   </script>
+
+  <script>
+    window.addEventListener('load', () => {
+      const preloader = document.getElementById('preloader');
+      preloader.style.display = 'none';
+    });
+  </script>
+
 
   <!-- <script defer >
         /* Start of LiveChat (www.livechat.com) code */
