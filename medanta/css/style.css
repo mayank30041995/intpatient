@@ -311,7 +311,7 @@ p.p-header a {
     background-image: url(../images/bckgrnd-medanta-_1_-1.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 869px; */
+    /* height: 40rem; */
 }
 
 #banner-image h1.h1 {
@@ -657,19 +657,43 @@ h1.card-title-h1 {
 
     .tab {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         position: relative;
         /* overflow: scroll; */
-        padding: 4px 5px;
-        /* background: linear-gradient(to left, #f3f3f3, rgba(240, 240, 240, 0)) */
+        padding: 8px 10px;
+        background: linear-gradient(to right, #f2eeee 0%, rgba(226, 226, 226, 0%) 50%),
+            linear-gradient(to left, #f2eeee 0%, rgba(226, 226, 226, 0%) 50%);
+    }
+
+    .tab a {
+        width: 10rem;
+        text-align: center;
+        background: #FFF;
+        /* background: linear-gradient(to left, #f3f3f3, rgba(240, 240, 240, 0)) !important; */
     }
 
     .tab button {
-        width: 10.5rem;
+        /* width: 10.5rem; */
         padding: 10px 5px;
         font-size: 15px;
-        background: linear-gradient(to left, #f3f3f3, rgba(240, 240, 240, 0));
     }
+
+
+
+    .tab a.active {
+        color: #fff;
+        background: var(--bg-background) !important;
+        border-bottom: 3px solid var(--bg-background);
+    }
+
+    .tab a:hover {
+        color: #fff;
+        background: var(--bg-background) !important;
+        border-bottom: 3px solid var(--bg-background);
+    }
+
+
 
     #banner-image h1.h1 {
 
@@ -736,6 +760,7 @@ h1.card-title-h1 {
 
 img {
     object-fit: contain;
+    /* width: 100%; */
 }
 
 .h6-checkup {

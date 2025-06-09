@@ -645,6 +645,7 @@ a:hover {
   /* object-fit: contain;
   margin-top: -10px; */
   /* height: fit-content; */
+  object-fit: cover;
 }
 
 .p-story {
@@ -1132,7 +1133,7 @@ h1 {
 
 @media screen and (max-width: 800px) {
   .btn-app {
-    padding: 9.719px 48.918px 5.281px 48.918px;
+    /* padding: 9.719px 48.918px 5.281px 48.918px; */
     font-size: 20px;
     height: 61px;
     width: 100%;
@@ -1160,9 +1161,10 @@ h1 {
 
   .img-mobile {
     display: block !important;
-    width: 350px !important;
+    /* width: 350px !important; */
     height: 250px !important;
-    margin-left: -33px;
+    object-fit: fill;
+    /* margin-left: -31px; */
   }
 
   .heading-cost {
