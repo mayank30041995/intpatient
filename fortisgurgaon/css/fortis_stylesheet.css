@@ -1040,7 +1040,7 @@ h1 {
     margin: 2px;
     display: flex;
     border-radius: 9px;
-    margin-inline: 47px;
+    /* margin-inline: 47px; */
     padding-inline: 23px;
   }
 

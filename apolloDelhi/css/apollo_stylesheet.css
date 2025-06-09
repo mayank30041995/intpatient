@@ -69,7 +69,7 @@ body {
   border-radius: 2px;
   color: #2d9f28;
   font-weight: 600;
-  border-radius: 25px;
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -82,7 +82,7 @@ body {
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
   padding: 15px 2px 2px;
-  color: #000;
+  color: #237d9e;
   border-radius: 8px;
   text-align: center;
 }
@@ -300,7 +300,10 @@ body {
 .slider {
   background-image: url(../img/delhi.webp);
   height: 100%;
-  background-size: fill;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border-bottom: 3px solid #237d9e;
 }
 
 /* cardio dr */
@@ -958,6 +961,8 @@ ul {
 
 .tabIcons {
   background: #FFF !important;
+  width: 35px;
+  height: 35px;
 }
 
 .tab:hover {
@@ -1190,10 +1195,10 @@ table {
   box-shadow: 3px 3px 15px #0000001A;
   padding: 0px;
   border-radius: 7px !important;
-  width: 93%;
+  width: 100%;
   text-align: center;
   z-index: 1;
-  max-width: 66rem;
+  max-width: 67rem;
 }
 
 .about-us-cont {

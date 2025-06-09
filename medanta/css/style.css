@@ -717,8 +717,12 @@ h1.card-title-h1 {
     }
 
     .opinion {
-        margin-top: 4px;
-        padding: 6px 26px !important;
+        padding: 9px 2px !important;
+    }
+
+    a.btn {
+        font-size: 17px;
+        width: 49%;
     }
 
     .get-free-opinin {
@@ -729,6 +733,13 @@ h1.card-title-h1 {
         margin-bottom: 30px;
     }
 
+}
+
+@media (max-width:375px) {
+    a.btn {
+        font-size: 17px;
+        width: auto;
+    }
 }
 
 @media (min-width:1600px) {
@@ -1106,6 +1117,16 @@ img {
 
 
 @media screen and (max-width: 800px) {
+
+    .health-area {
+        justify-content: normal !important;
+    }
+
+    .spec-button {
+        width: 100%;
+        padding: 18px 0;
+    }
+
     .preloader-logo {
         width: 120px;
         margin-bottom: 20px;

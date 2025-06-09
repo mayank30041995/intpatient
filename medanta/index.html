@@ -1843,7 +1843,7 @@
                 <img src="images/pseudo1.webp" alt width="6px" height="3px">
             </div>
         </div>
-        <div class="container mt-5" style=" border-radius: 64.688px;background: #FFF1EE;">
+        <div class="container my-5" style=" border-radius: 64.688px;background: #FFF1EE;">
             <div class="row">
                 <div class="col-sm-12 col-lg-5">
                     <img src="images/spec-img-1.webp" alt class="img-fluid" width="526px" height="334px">
@@ -1910,8 +1910,8 @@
                 <div class="col-sm-12 col-lg-5">
                     <img src="images/tele consult.webp" alt class="ps-5 img-fluid" width="459px" height="426px">
                 </div>
-                <div class="col-sm-12 col-lg-7">
-                    <div class="pe-5">
+                <div class="col-sm-12 col-lg-7 my-3">
+                    <div class="pe-md-5">
                         <h1 class="spec-h1 pt-4">Book Tele-Consult</h1>
                         <p class="spec-p">Experience the convenience of our
                             <strong>"Book Tele-Consult"
@@ -1958,7 +1958,7 @@
                 <img src="images/pseudo1.webp" alt width="6px" height="3px">
             </div>
         </div>
-        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-1 g-4 mt-3 justify-content-center">
+        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-1 g-4 mt-3 justify-content-center health-area">
 
             <div class="col col-md-5 pt-3 me-5"
                 style="background-color:#FFF7F5;border-radius: 9.75px;height: 924.893px;">
@@ -2373,7 +2373,7 @@
                 <img src="images/pseudo1.webp" alt width="6px" height="3px">
             </div>
         </div>
-        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-1 g-4 mt-3 justify-content-center">
+        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-1 g-4 mt-3 justify-content-center  health-area">
 
             <div class="col col-md-5 pt-3 me-5"
                 style="background-color:#FFF7F5;border-radius: 9.75px;height: 1096.893px;">
@@ -2746,7 +2746,7 @@
                 <img src="images/pseudo1.webp" alt width="6px" height="3px">
             </div>
         </div>
-        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-1 g-4 mt-3 justify-content-center">
+        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-1 g-4 mt-3 justify-content-center  health-area">
 
             <div class="col col-md-5 pt-3 me-5"
                 style="background-color:#FFF7F5;border-radius: 9.75px;height: 998.893px;">
@@ -4140,110 +4140,7 @@
 
     <!--footer section end-->
 
-    <script>
 
-        document.addEventListener('DOMContentLoaded', function () {
-            // Get all button elements on the page
-            const buttons = document.querySelectorAll('button,a,p');
-
-            // Loop through each button
-            buttons.forEach(function (button) {
-                // Attach a click event listener to each button
-                button.addEventListener('click', function () {
-                    // Get the URL from the button's data-url attribute
-                    const url = button.getAttribute('data-url');
-
-                    // Check if a URL is defined for the button
-                    if (url) {
-                        // Open the URL in a new tab
-                        window.open(url, '_blank');
-                    }
-                });
-            });
-        });
-
-    </script>
-
-    <script>
-
-        function openNav() {
-            document.getElementById("sidebar").style.width = "40%";
-
-        }
-
-        function closeNav() {
-            document.getElementById("sidebar").style.width = "0";
-        }
-
-        function openDrawer() {
-            setInterval(function () {
-                // Get the element by its ID
-                const element = document.getElementById("drawer");
-
-                // Check if the element exists
-                if (element) {
-                    document.getElementById('drawer').style.bottom = '0'; // Change to 'block' or any other desired display type
-                }
-            }, 35000);
-        }
-        function callevent() {
-            setTimeout(openNav, 35000);
-        }
-
-        callevent();
-        openDrawer();
-
-        let clickCount = 0;
-
-        // Function to be executed on the first click
-        function onFirstClick() {
-            setTimeout(openNav, 15000); // Execute openNav after 10 seconds
-        }
-
-        // Function to be executed on the second click
-        function onSecondClick() {
-            setTimeout(openNav, 30000); // Execute openNav after 150 seconds (2.5 minutes)
-        }
-
-        // Function to be executed on the third click
-        function onThirdClick() {
-            setTimeout(openNav, 60000); // Execute openNav after 150 seconds (2.5 minutes)
-
-        }
-    </script>
-    <script>
-        const drawer = document.getElementById('drawer');
-
-        const openButton = document.getElementById('openBtn');
-
-        document.getElementById('openBtn').addEventListener('click', function () {
-            event.stopPropagation();
-            document.getElementById('drawer').style.bottom = '0';
-        });
-
-        document.getElementById('closeBtn').addEventListener('click', function () {
-            event.stopPropagation();
-            document.getElementById('drawer').style.bottom = '-100%';
-        });
-
-
-        document.body.addEventListener('click', (event) => {
-            const mobileBreakpoint = 768;
-
-            if (window.innerWidth >= mobileBreakpoint) {
-                // Close drawer if the click is outside the drawer or open button
-                if (!drawer.contains(event.target) && !openBtn.contains(event.target)) {
-                    document.getElementById('drawer').style.bottom = '-100%';
-                }
-            }
-        });
-
-        // Prevent clicks inside the drawer or open button from triggering body click listener
-        drawer.addEventListener('click', event => {
-            event.stopPropagation(); // Prevent click inside drawer from closing it
-        });
-
-    </script>
 
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
