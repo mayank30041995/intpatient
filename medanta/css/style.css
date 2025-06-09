@@ -477,7 +477,7 @@ p.card-text1 {
 
 .tab button {
     /* flex: none; */
-    background-color: #fff;
+    background-color: transparent;
     color: var(--bg-background);
     /* float: left; */
     border: none;
