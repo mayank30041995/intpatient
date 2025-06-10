@@ -30,7 +30,7 @@ html {
   position: fixed;
   bottom: -100%;
   right: 0;
-  height: 30rem;
+  /* height: 25rem; */
   width: 30rem;
   background: linear-gradient(#f0a815, #e7bd69);
   color: #fff;
@@ -44,7 +44,7 @@ html {
 }
 
 .drawer-content {
-  padding: 0 20px;
+  padding: 10px 20px;
   height: 100%;
   overflow-y: auto;
 }
@@ -1084,6 +1084,11 @@ a {
     font-weight: 600;
   }
 
+  .dr-name-span {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
   .b-chat {
     font-size: 15px;
   }
@@ -1305,7 +1310,7 @@ a {
   .sticky-btn {
 
     height: 56px;
-    width: 132px !important;
+    /* width: 132px !important; */
   }
 
   .dr_button {
