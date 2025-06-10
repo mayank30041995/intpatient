@@ -231,19 +231,26 @@ html {
 
 }
 
+.slider-banner {
+  overflow: hidden;
+}
+
 .slider {
-  background-image: url(../assets/img/MIOT.webp);
+  background-image: url(../assets/img/hero.webp);
   background-size: cover;
-  height: 750px;
+  height: 650px;
+  position: relative;
+  top: -5rem;
+  z-index: 1 !important;
   background-repeat: no-repeat;
 }
 
 .inner_text {
   position: relative;
-  top: 350px;
+  top: 150px;
   left: 87px;
-  color: #2e56a6;
-  font-weight: 600;
+  color: #f0a815;
+  font-weight: 800;
   width: 63%;
 }
 
@@ -803,56 +810,57 @@ li {
 }
 
 .card-img-top-I {
-  background-image: url(../assets/hotels/h1.jpg);
+  background-image: url(../assets/hotels/naksha-tree.webp);
   background-size: 100% 100%;
   height: 200px;
   border-radius: 10px;
 }
 
 .card-img-top-2 {
-  background-image: url(../assets/hotels/h2.jpg);
+  background-image: url(../assets/hotels/dreams-luxury-stays.webp);
   background-size: 100% 100%;
   height: 200px;
   border-radius: 10px;
 }
 
 .card-img-top-3 {
-  background-image: url(../assets/hotels/h3.jpg);
+  background-image: url(../assets/hotels/hotel-bluesky-amapuram.webp);
   background-size: 100% 100%;
   height: 200px;
   border-radius: 10px;
 }
 
 .card-img-top-4 {
-  background-image: url(../assets/hotels/h4.jpg);
+  background-image: url(../assets/hotels/hotel-heminn-stay-ramapuram.webp);
   background-size: 100% 100%;
   height: 200px;
   border-radius: 10px;
 }
 
 .card-img-top-5 {
-  background-image: url(../assets/hotels/h5.jpg);
+  background-image: url(../assets/hotels/kbs-home.webp);
   background-size: 100% 100%;
   height: 200px;
   border-radius: 10px;
 }
 
 .card-img-top-6 {
-  background-image: url(../assets/hotels/h6.jpg);
+  background-image: url(../assets/hotels/kuber-inn-eite.webp);
   background-size: 100% 100%;
   height: 200px;
   border-radius: 10px;
 }
 
 .card-img-top-7 {
-  background-image: url(../assets/hotels/h7.jpg);
+  background-image: url(../assets/hotels/samrat-guest-house.webp);
   background-size: 100% 100%;
   height: 200px;
   border-radius: 10px;
 }
 
+
 .card-img-top-8 {
-  background-image: url(../assets/hotels/h8.jpg);
+  background-image: url(../assets/hotels/miot-grande.webp);
   background-size: 100% 100%;
   height: 200px;
   border-radius: 10px;
@@ -1060,6 +1068,15 @@ a {
 
 
 @media screen and (max-width: 800px) {
+  .slider {
+    background-image: url(../assets/img/MIOT.webp);
+    background-size: cover;
+    height: 750px;
+    position: relative;
+    top: 0px;
+    background-repeat: no-repeat;
+  }
+
   .card-img-top {
     width: 100%;
     height: auto;
