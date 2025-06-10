@@ -32,7 +32,7 @@ html {
   right: 0;
   height: 30rem;
   width: 30rem;
-  background: linear-gradient(#93123e, #be5b7c);
+  background: linear-gradient(#f0a815, #e7bd69);
   color: #fff;
   /* Text color for contrast */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -44,7 +44,7 @@ html {
 }
 
 .drawer-content {
-  padding: 20px;
+  padding: 0 20px;
   height: 100%;
   overflow-y: auto;
 }
@@ -64,7 +64,7 @@ html {
   gap: 5px;
   height: 2.8rem;
   border-radius: 2px;
-  color: #2d9f28;
+  color: #f0a815;
   font-weight: 600;
   border-radius: 15px;
   left: 0px;
@@ -121,8 +121,8 @@ html {
     font-size: 14px;
     background-color: red;
     color: white;
-    top: 50px;
-    right: 45px;
+    top: 15px;
+    right: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 23px;
     padding: 7px 10px 10px 10px;
@@ -131,9 +131,9 @@ html {
   #drawer {
     height: 45%;
     width: 100%;
-    border-top-left-radius: 160px;
+    border-top-left-radius: 30px;
     /* Rounded top-left corner */
-    border-top-right-radius: 160px;
+    border-top-right-radius: 30px;
     border: 5px solid #8fbfd1;
   }
 
@@ -163,7 +163,7 @@ html {
   }
 
   .drawer-banner {
-    margin-top: 80px;
+    margin-top: 35px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
     padding: 15px 2px 2px;
@@ -189,7 +189,7 @@ html {
 }
 
 .top-bar {
-  background-color: #93123e;
+  background-color: #f0a815;
   color: #fff;
   padding: 10px 20px;
   float: right;
@@ -232,17 +232,18 @@ html {
 }
 
 .slider {
-  background-image: url(../assets/img/lakeshore.jpg);
-  background-size: 100% 100%;
-  height: 395px;
-
+  background-image: url(../assets/img/MIOT.webp);
+  background-size: cover;
+  height: 750px;
+  background-repeat: no-repeat;
 }
 
 .inner_text {
   position: relative;
-  top: 58px;
+  top: 350px;
   left: 87px;
-  color: white;
+  color: #2e56a6;
+  font-weight: 600;
   width: 63%;
 }
 
@@ -253,7 +254,7 @@ html {
 
 .inner_button {
   border: none;
-  background: #069e76;
+  background: #f0a815;
   width: 183px;
   height: 52px;
   color: white;
@@ -265,7 +266,7 @@ html {
   position: fixed;
   top: 85px;
   padding: 10px;
-  background: linear-gradient(90deg, #93123e 0%, #be5b7c 100%);
+  background: linear-gradient(90deg, #f0a815 0%, #f0a815 100%);
   right: 0px;
   border-radius: 8px 0px 0px 8px;
   height: 106px;
@@ -290,7 +291,7 @@ html {
   background: #fff;
   width: 80%;
   border-radius: 0px 0px 10px 0px;
-  height: 353px;
+  /* height: 300px; */
   box-shadow: 0px 0px 10px #9d9c9c8f;
   padding-inline: 97px;
   padding-block: 44px;
@@ -328,8 +329,8 @@ html {
   position: sticky;
   bottom: 20px;
   margin-top: 10px;
-  background-color: #93123e;
-  border-color: #93123e;
+  background-color: #f0a815;
+  border-color: #f0a815;
   color: white;
   height: 56px;
   margin-block: 5px;
@@ -337,16 +338,16 @@ html {
 }
 
 .sticky-btn:hover {
-  background-color: #93123e;
+  background-color: #f0a815;
   /* Change button color on hover */
-  border-color: #93123e;
+  border-color: #f0a815;
   /* Change button border color on hover */
 }
 
 .h1,
 h1 {
   font-size: 29px;
-  color: #93123e;
+  color: #f0a815;
 }
 
 .dr_button {
@@ -354,7 +355,7 @@ h1 {
 }
 
 .meet_dr {
-  color: #93123e;
+  color: #f0a815;
   font-size: 22px;
   font-weight: 600;
 }
@@ -375,12 +376,12 @@ h1 {
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show>.nav-link {
-  color: #93123e;
+  color: #f0a815;
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #93123e;
+  color: #f0a815;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -417,7 +418,7 @@ h1 {
 }
 
 .card1 {
-  background-image: url(../assets/Onocolgy/gangadharan-oncology.jpg);
+  background-image: url(../assets/Onocolgy/dr-v-srinivasan.webp);
   background-size: 100% 100%;
   height: 221px;
   margin-bottom: 56px;
@@ -425,7 +426,7 @@ h1 {
 }
 
 .card2 {
-  background-image: url(../assets/Onocolgy/chitratha-surgical-oncology.jpg);
+  background-image: url(../assets/Onocolgy/Dr.senthil-ravichander.webp);
   background-size: 100% 100%;
   height: 221px;
   margin-bottom: 56px;
@@ -433,7 +434,7 @@ h1 {
 }
 
 .card3 {
-  background-image: url(../assets/Onocolgy/anupamagopalakrishnabhakthan.jpg);
+  background-image: url(../assets/Onocolgy/dr-kishor-s.webp);
   background-size: 100% 100%;
   height: 221px;
   margin-bottom: 56px;
@@ -441,7 +442,7 @@ h1 {
 }
 
 .card4 {
-  background-image: url(../assets/Onocolgy/josephedison.jpg);
+  background-image: url(../assets/Onocolgy/dr-prasad-e.webp);
   background-size: 100% 100%;
   height: 221px;
   margin-bottom: 56px;
@@ -449,7 +450,7 @@ h1 {
 }
 
 .card5 {
-  background-image: url(../assets/Onocolgy/senthil-bcydk.jpg);
+  background-image: url(../assets/Onocolgy/dr-suman-kalyan.webp);
   background-size: 100% 100%;
   height: 221px;
   margin-bottom: 56px;
@@ -457,14 +458,14 @@ h1 {
 }
 
 .card6 {
-  background-image: url(../assets/Onocolgy/drannususan-oncology.jpg);
+  background-image: url(../assets/Onocolgy/dr.chezhian-subash.webp);
   background-size: 100% 100%;
   height: 221px;
   margin-bottom: 56px;
   border-radius: 10px;
 }
 
-.card7 {
+/* .card7 {
   background-image: url(../assets/Onocolgy/dranupamagy.jpeg);
   background-size: 100% 100%;
   height: 221px;
@@ -478,10 +479,10 @@ h1 {
   height: 221px;
   margin-bottom: 56px;
   border-radius: 10px;
-}
+} */
 
 .card9 {
-  background-image: url(..//assets/Transplant/drabiabraham.jpg);
+  background-image: url(..//assets/Transplant/dr.prof-surendran-r.webp);
   background-size: 100% 100%;
   height: 221px;
   margin-bottom: 56px;
@@ -489,7 +490,7 @@ h1 {
 }
 
 .card10 {
-  background-image: url(../assets/Transplant/datsongeorgep.jpg);
+  background-image: url(../assets/Transplant/dr-visakan-jagadeesan.webp);
   background-size: 100% 100%;
   height: 221px;
   margin-bottom: 56px;
@@ -513,7 +514,7 @@ h1 {
 }
 
 .card13 {
-  background-image: url(../assets/Orthopedics/rajeshsimon.jpg);
+  background-image: url(../assets/Orthopedics/dr-ashok-selvaraj.webp);
   background-size: 100% 100%;
   height: 221px;
   margin-bottom: 56px;
@@ -521,7 +522,31 @@ h1 {
 }
 
 .card14 {
-  background-image: url(../assets/Orthopedics/dr.bijupjacob.jpg);
+  background-image: url(../assets/Orthopedics/dr-sowndhariya-v-a.webp);
+  background-size: 100% 100%;
+  height: 221px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+}
+
+.card13-b {
+  background-image: url(../assets/Orthopedics/dr-billy-paul-wilson.webp);
+  background-size: 100% 100%;
+  height: 221px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+}
+
+.card13-c {
+  background-image: url(../assets/Orthopedics/dr-charanjit-singh-dhillon.webp);
+  background-size: 100% 100%;
+  height: 221px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+}
+
+.card13-d {
+  background-image: url(../assets/Orthopedics/dr.m-hema.webp);
   background-size: 100% 100%;
   height: 221px;
   margin-bottom: 56px;
@@ -529,23 +554,23 @@ h1 {
 }
 
 .card15 {
-  background-image: url(../assets/Neurology/muralikrishnamenon.jpg);
+  background-image: url(../assets/Urology/dr-karrthik-krishnamurthy.webp);
   background-size: 100% 100%;
   height: 221px;
   margin-bottom: 56px;
   border-radius: 10px;
 }
 
-.card16 {
+/* .card16 {
   background-image: url(../assets/Neurology/vidyamv.jpg);
   background-size: 100% 100%;
   height: 221px;
   margin-bottom: 56px;
   border-radius: 10px;
-}
+} */
 
 .card17 {
-  background-image: url(..//assets/Cardiology/dr.anandkumarv.jpg);
+  background-image: url(..//assets/Cardiology/dr-gopal-murugesaan.webp);
   background-size: 100% 100%;
   height: 221px;
   margin-bottom: 56px;
@@ -554,7 +579,7 @@ h1 {
 
 
 .card18 {
-  background-image: url(..//assets/Cardiology/cibiissac-uunauy.jpg);
+  background-image: url(..//assets/Cardiology/dr-k-jaishankar.webp);
   background-size: 100% 100%;
   height: 221px;
   margin-bottom: 56px;
@@ -562,7 +587,23 @@ h1 {
 }
 
 .card19 {
-  background-image: url(..//assets/Cardiology/dr.p.r.bhimashankar.jpg);
+  background-image: url(..//assets/Cardiology/dr-vijit-kcherian.webp);
+  background-size: 100% 100%;
+  height: 221px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+}
+
+.card20 {
+  background-image: url(..//assets/Cardiology/dr-viginesh-thanikgaivasan.webp);
+  background-size: 100% 100%;
+  height: 221px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+}
+
+.card21 {
+  background-image: url(..//assets/Cardiology/dr-epari-kumar.webp);
   background-size: 100% 100%;
   height: 221px;
   margin-bottom: 56px;
@@ -590,9 +631,9 @@ h1 {
 }
 
 .card {
-  background: linear-gradient(90deg, #93123e 0%, #cf4d79 100%) !important;
+  background: linear-gradient(90deg, #f0a815 0%, #dbc046 100%) !important;
   background-clip: border-box;
-  border: 1px solid linear-gradient(90deg, #93123e 0%, #cf4d79 100%);
+  border: 1px solid linear-gradient(90deg, #f0a815 0%, #dbc046 100%);
   border-radius: 20px 20px 0px 20px;
   color: white;
   padding: 9px;
@@ -620,7 +661,7 @@ button {
 }
 
 .banner-bn {
-  background: linear-gradient(90deg, #93123e 0%, #cf4d79 100%);
+  background: linear-gradient(90deg, #f0a815 0%, #dbc046 100%);
   height: 163px;
   color: white;
   font-size: 25px;
@@ -630,7 +671,7 @@ button {
 .btn-bnnr {
   border-radius: 15px;
   background: #fff;
-  color: #93123e;
+  color: #f0a815;
   padding: 12px 24px 12px 24px;
   cursor: pointer;
   border: none;
@@ -657,7 +698,7 @@ button {
 }
 
 .main_all {
-  background: linear-gradient(90deg, #93123e 0%, #cf4d79 100%);
+  background: linear-gradient(90deg, #f0a815 0%, #dbc046 100%);
   color: #58595B;
   height: 758px;
   border-radius: 10px;
@@ -694,14 +735,14 @@ button {
   margin-bottom: 20px;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0px 0px 11px -4px #93123e;
+  box-shadow: 0px 0px 11px -4px #f0a815;
   padding-block: 37px;
 }
 
 .checklist-btn {
   margin-bottom: 10px;
   margin-left: -232px;
-  background: linear-gradient(90deg, #93123e 0%, #cf4d79 100%);
+  background: linear-gradient(90deg, #f0a815 0%, #dbc046 100%);
   border-radius: 10px 11px 11px 29px;
   width: 431px;
   text-align: left;
@@ -715,7 +756,7 @@ li {
 
 .coma {
   font-size: 38px;
-  color: #93123e;
+  color: #f0a815;
   font-weight: 400;
   margin-left: 24px;
   position: relative;
@@ -832,7 +873,7 @@ li {
   top: 13px;
   border-radius: 7px;
   width: 240px;
-  background: linear-gradient(90deg, #93123e 0%, #cf4d79 100%);
+  background: linear-gradient(90deg, #f0a815 0%, #dbc046 100%);
   color: white !important;
   font-size: 12px;
   padding-block: 12px;
@@ -840,7 +881,7 @@ li {
 
 .price {
   position: absolute;
-  background: linear-gradient(90deg, #93123e 0%, #cf4d79 100%);
+  background: linear-gradient(90deg, #f0a815 0%, #dbc046 100%);
   top: 0px;
   right: 0px;
   width: 85px;
@@ -851,7 +892,7 @@ li {
 
 .distance {
   position: absolute;
-  background: linear-gradient(90deg, #93123e 0%, #cf4d79 100%);
+  background: linear-gradient(90deg, #f0a815 0%, #dbc046 100%);
   top: 12px;
   left: 11px;
   width: 62px;
@@ -917,7 +958,7 @@ li {
 }
 
 .footer {
-  background: linear-gradient(90deg, #93123e 0%, #cf4d79 100%);
+  background: linear-gradient(90deg, #f0a815 0%, #dbc046 100%);
   padding: 35px;
   color: white;
 }
@@ -1088,7 +1129,7 @@ a {
   .h1,
   h1 {
     font-size: 23px;
-    color: #93123e;
+    color: #f0a815;
   }
 
   .dr_button_mobile {
@@ -1105,13 +1146,13 @@ a {
   }
 
   .slider {
-
-    height: 241px !important;
+    height: 240px !important;
   }
 
   .logo-mobi {
-    height: 100px;
-    margin-top: -33px;
+    display: flex;
+    /* height: 100px;
+    margin-top: -33px; */
   }
 
   .top-bar {
@@ -1130,12 +1171,12 @@ a {
   }
 
   .active-mobi {
-    border-bottom: 4px solid #93123e;
+    border-bottom: 4px solid #f0a815;
 
   }
 
   .nav-li-mobi:hover {
-    border-bottom: 4px solid #93123e;
+    border-bottom: 4px solid #f0a815;
 
   }
 
@@ -1233,10 +1274,10 @@ a {
   }
 
   .about-us {
-    height: 722px;
+    /* height: 722px; */
     padding-inline: 18px !important;
     padding-block: 20px !important;
-    width: 90%;
+    width: 100%;
   }
 
   .about-us-scrool {
@@ -1252,7 +1293,7 @@ a {
 
   .scrool {
     margin-left: 0;
-    background: 93123e;
+    background: f0a815;
     width: 51%;
     margin-top: -224px;
   }
@@ -1297,7 +1338,7 @@ a {
   }
 
   .inner_text {
-    top: 35px !important;
+    top: 75px !important;
     left: 19px;
   }
 
@@ -1389,7 +1430,7 @@ a {
   }
 
   .mobile-navbar {
-    background: 93123e;
+    background: #2e56a6;
     color: white;
   }
 
