@@ -1569,13 +1569,17 @@ div.desc {
     background: #FFF;
     display: flex;
     align-items: center;
-    gap: 5px;
-    height: 2.8rem;
-    border-radius: 2px;
+    gap: 15px;
+    height: 3rem;
+    border-radius: 10px;
     color: #2d9f28;
     font-weight: 600;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.drawer-items button i {
+    font-size: 80px;
 }
 
 .drawer-items button:active {
