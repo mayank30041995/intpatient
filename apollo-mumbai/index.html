@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
-    <title>Apollo-(Mumbai)</title>
+    <title>Apollo Hospital -(Mumbai)</title>
     <link rel="preload" href="assets/Icons & Logos/webp/apollo logo.webp" as="assets">
-
+    <meta name="description"
+        content="International Patient Care, Indraprastha Apollo Hospital, New Delhi,Get Opinion, Appointments.">
     <meta charset="UTF-8">
     <meta name="robots" content="noindex, nofollow">
     <meta name="theme-color" content="#015E79" />
@@ -23,7 +24,6 @@
         crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="assets\Icons & Logos\webp\apollo logo.webp">
     <link rel="preload" as="font">
-    <meta name="description" content="Apollo-(Mumbai)">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/apollo_stylesheet.css">
     <!-- Google tag (gtag.js) -->
@@ -57,9 +57,16 @@
 </head>
 
 <body>
+    <!-- Pre loader -->
+    <div id="preloader">
+        <div class="spinner-wrapper">
+            <img src="img/logo.svg" alt="Loading..." class="preloader-logo">
 
+        </div>
+    </div>
+    <!-- End of Pre loader -->
 
-    <div class="container-flud mob-hdr-code" style="margin-top: -24px;">
+    <div class="container-flud mob-hdr-code">
         <div class="top_bar col-sm ">
             <div style="width: 50%;">
                 <p class="text-left" data-url="https://what.sapp.link/apollo"><b>Live Chat: (+91) 98991 87773</b></p>
@@ -121,12 +128,13 @@
         </nav>
     </div>
 
-    <button id="openBtn"><img src="img/logo.svg" class="logo-y" alt="HTML5 Icon" width="20px" height="30px">
+    <button id="openBtn"><img src="img/logo.svg" class="logo-y" alt="HTML5 Icon" width="40px" height="50px">
         Instant Support</button>
 
     <div id="drawer" class="drawer">
         <div id="icon-container">
-            <div id="imasCircle"> <img src="img/logo.svg" class="logo-yx" alt="HTML5 Icon" width="60px" height="60px">
+            <div id="imasCircle"> <img src="img/logo.svg" class="logo-yx bg-white" alt="HTML5 Icon" width="100px"
+                    height="80px">
             </div>
         </div>
         <div class="drawer-content">
@@ -926,7 +934,7 @@
 
 
     <!-- i-con box -->
-    <div class="container" style=" margin-top: 70px;">
+    <div class="container">
         <div class="card-deck">
             <div class="card" style="box-shadow: 0px 0px 1px 2px #b0acaf40; border-radius: 15px;">
                 <img class="card-img-top-x" src="assets\Icons & Logos\webp\icons8-stethoscope-66.webp"
@@ -1398,6 +1406,14 @@
             event.stopPropagation(); // Prevent click inside drawer from closing it
         });
 
+    </script>
+
+    <script>
+        // pre load area
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader')
+            preloader.style.display = 'none'
+        })
     </script>
 </body>
 
