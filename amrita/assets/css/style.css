@@ -101,6 +101,15 @@ a:active {
   text-decoration: none;
 }
 
+.checklist-btn {
+  margin-bottom: 20px !important;
+  background: linear-gradient(90deg, #B10F56 0%, #ad3a6c 100%);
+  border-radius: 10px 11px 11px 29px;
+  text-align: left;
+  padding-left: 44px;
+  color: white;
+}
+
 textarea {
   resize: none;
 }
@@ -1809,7 +1818,7 @@ label {
 
 @media only screen and (max-width: 767px) {
   .hero {
-    background-image: none !important;
+    /* background-image: none !important; */
   }
 
   .hero .hero-action .btn {
