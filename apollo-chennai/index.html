@@ -99,7 +99,15 @@
   </nav>
   </div>
 
+  <!-- Pre loader -->
+  <div id="preloader">
+    <div class="spinner-wrapper">
+      <img src="assets_mob\Icons & Logos\webp\apollo logo.webp" alt="Loading..." class="preloader-logo">
 
+    </div>
+  </div>
+  <!-- End of Pre loader -->
+  <!-- Right Side Drader -->
   <button id="openBtn"><img src="assets_mob\Icons & Logos\webp\apollo logo.webp" class="logo-y" alt="HTML5 Icon"
       width="20px" height="30px">
     Instant Support</button>
@@ -128,7 +136,7 @@
   </div>
 
 
-
+  <!--End of Right Side Drader -->
 
   <!--slilder-->
   <div id="mob-org-slider" class="carousel slide sliderdesk" data-ride="carousel">
@@ -1856,6 +1864,15 @@
         event.stopPropagation(); // Prevent click inside drawer from closing it
       });
 
+    </script>
+
+
+    <script>
+      // pre load area
+      window.addEventListener('load', () => {
+        const preloader = document.getElementById('preloader')
+        preloader.style.display = 'none'
+      })
     </script>
 </body>
 
