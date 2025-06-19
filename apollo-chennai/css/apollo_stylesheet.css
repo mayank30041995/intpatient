@@ -38,7 +38,7 @@
     background: #FFF;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     height: 65px;
-    width: 85px;
+    width: 95px;
     margin-bottom: 8px;
     padding: 4px;
     border-radius: 8px;
@@ -50,6 +50,7 @@
     right: 0;
     height: 28rem;
     width: 28rem;
+    display: inline-grid;
     background: linear-gradient(#047C9E, #55a0b5);
     color: #fff;
     /* Text color for contrast */
@@ -153,6 +154,22 @@
         border-radius: 24px;
     }
 
+    .drawer-items i {
+        font-size: 75px !important;
+        height: auto !important;
+    }
+
+    .drawer-items button {
+        font-size: 75px;
+        align-items: baseline;
+        height: auto !important;
+    }
+
+    .logo-yx {
+        width: 18rem;
+        height: auto;
+    }
+
 
     #closeBtn {
         font-size: 14px;
@@ -166,7 +183,7 @@
     }
 
     #drawer {
-        height: 45%;
+        height: 70rem;
         width: 100%;
         border-top-left-radius: 160px;
         /* Rounded top-left corner */
@@ -175,14 +192,11 @@
     }
 
     #imasCircle {
-        display: flex;
         justify-content: center;
         position: absolute;
-        height: 70px;
-        width: 70px;
+        height: auto;
         border-radius: 38px;
-        top: 10px;
-        left: 40%;
+        left: 37%;
         /* background-color: #0f0f0f; */
         /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); */
         border: 1px solid #fff;
@@ -197,11 +211,11 @@
     }
 
     .drawer-items h2 {
-        font-size: 18px;
+        font-size: 5rem;
     }
 
     .drawer-banner {
-        margin-top: 80px;
+        margin-top: 10px !important;
         background-color: #fff;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
         padding: 15px 2px 2px;
@@ -221,8 +235,8 @@
 
     .logo-y {
         background: #FFF;
-        height: 100px;
-        width: 100px;
+        width: 18rem;
+        height: auto;
         margin: 40px 0px 8px;
         padding: 4px;
     }
@@ -715,8 +729,8 @@ div.desc {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid #408EA4;
-    margin: 1px 10px 23px;
+    box-shadow: 0 4px 12px rgba(64, 142, 164, 0.4);
+    margin: 1px 4px 23px;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -780,6 +794,7 @@ div.desc {
 
 .c-card {
     display: flex;
+    flex-flow: row wrap;
 }
 
 .card-deck1 {
@@ -819,7 +834,7 @@ div.desc {
 .app-layout {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 2fr;
-    grid-template-rows: 37vh;
+    grid-template-rows: 100%;
 }
 
 #block_III {

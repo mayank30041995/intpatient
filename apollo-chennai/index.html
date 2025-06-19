@@ -235,17 +235,17 @@
     <!-- tabs-->
     <div class="tab mx-auto">
 
-      <button id="cvb" class="tablinks" onclick="openCity(event, 'apx')">Cardiology </button>
-      <button class="tablinks" onclick="openCity(event, 'sumit')">Neuro Surgery </button>
-      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Orthopedics </button>
-      <button class="tablinks" onclick="openCity(event, 'London')">Spine Surgery</button>
-      <button class="tablinks" onclick="openCity(event, 'alpha')">Ent </button>
-      <button class="tablinks" onclick="openCity(event, 'surgical')"> Surgical Gatroenterolgist</button>
-      <button class="tablinks" onclick="openCity(event, 'colorectal')"> Colorectal Surgery </button><BR>
-      <button class="tablinks" onclick="openCity(event, 'nephrology')"> Nephrology </button>
-      <button class="tablinks" onclick="openCity(event, 'urology')"> Urology </button>
-      <button class="tablinks" onclick="openCity(event, 'obstetrics')"> Obestetrics & Gynaecology </button>
-      <button class="tablinks" onclick="openCity(event, 'paeditric')"> Paediatric Neurology </button>
+      <button id="cvb" class="tablinks" onclick="openTab(event, 'apx')">Cardiology </button>
+      <button class="tablinks" onclick="openTab(event, 'sumit')">Neuro Surgery </button>
+      <button class="tablinks" onclick="openTab(event, 'Tokyo')">Orthopedics </button>
+      <button class="tablinks" onclick="openTab(event, 'London')">Spine Surgery</button>
+      <button class="tablinks" onclick="openTab(event, 'alpha')">Ent </button>
+      <button class="tablinks" onclick="openTab(event, 'surgical')"> Surgical Gatroenterolgist</button>
+      <button class="tablinks" onclick="openTab(event, 'colorectal')"> Colorectal Surgery </button><BR>
+      <button class="tablinks" onclick="openTab(event, 'nephrology')"> Nephrology </button>
+      <button class="tablinks" onclick="openTab(event, 'urology')"> Urology </button>
+      <button class="tablinks" onclick="openTab(event, 'obstetrics')"> Obestetrics & Gynaecology </button>
+      <button class="tablinks" onclick="openTab(event, 'paeditric')"> Paediatric Neurology </button>
     </div>
     <div id="paeditric" class="tabcontent">
       <div class="container text-center">
@@ -392,11 +392,6 @@
           </div>
         </div>
 
-        <br>
-
-      </div>
-      <div class="container c-card">
-
         <div class="card card-kidney">
 
           <img class="card-img-top-m" src="assets\OBSTETRICS & GYNAECOLOGY\webp\Dr. Vishnu Vandana.webp"
@@ -416,8 +411,8 @@
 
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
 
   </div>
@@ -973,9 +968,6 @@
 
         </div>
       </div>
-    </div>
-
-    <div class="container c-card">
       <div class="card card-kidney">
 
         <img class="card-img-top-m" src="assets\Neuro\webp\Dr. Panneer A.webp" alt="Card image cap">
@@ -1175,9 +1167,7 @@
 
         </div>
       </div>
-    </div>
 
-    <div class="container c-card">
       <div class="card card-kidney">
 
         <img class="card-img-top-m" src="assets\Cardio\webp\Dr. Abraham Oomman.webp" alt="Card image cap">
@@ -1198,17 +1188,8 @@
       </div>
     </div>
 
-
-
-
-
-
-
-
-
-
     <script>
-      function openCity(evt, cityName) {
+      function openTab(evt, cityName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
@@ -1231,108 +1212,6 @@
 
   </div>
 
-  <!-- What You can Expect -->
-  <section class="expect  pb-lg-40 pb-sm-20 ">
-    <div class="container  py-4">
-      <h2 class="my-4  ml-1 text-muted">What You can Expect</h2>
-      <div class="row">
-        <div class="col-lg-9">
-          <p class="text-left"></p>
-
-        </div>
-
-
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4 count-expect">
-          <div class="card card-bg">
-            <div class="d-flex align-items-center">
-              <img src="img/1.png" alt="Apollo Hospitals" class="img-fluid mr-4">
-              <h4>Dedicated Care Manager</h4>
-            </div>
-
-            <p>Apollo hosts dedicated Centres of Excellence and specialty clinics that cover end-to-end care
-              of
-              all
-              acute
-              and chronic diseases and conditions.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 count-expect">
-          <div class="card card-bg">
-            <div class="d-flex align-items-center">
-              <img src="img/2.png" alt="Apollo Hospitals" class="img-fluid mr-4">
-              <h4>Comprehensive Patient Assistance</h4>
-            </div>
-            <p>With internationally renowned doctors and surgeons, along with a team of leading specialists
-              committed to
-              providing advanced treatments, we make sure to provide the best services for your utmost
-              comfort.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 count-expect">
-          <div class="card card-bg">
-            <div class="d-flex align-items-center">
-              <img src="img/3.png" alt="Apollo Hospitals" class="img-fluid mr-4">
-              <h4>Excellent Treatment Outcome</h4>
-            </div>
-
-            <p>Apollo provides a luxury stay, with the latest technology and design, and infrastructure,
-              keeping
-              the
-              patient in mind.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 count-expect">
-          <div class="card card-bg">
-            <div class="d-flex align-items-center">
-              <img src="img/4.png" alt="Apollo Hospitals" class="img-fluid mr-4">
-              <h4>Convenience</h4>
-            </div>
-
-            <p>Apollo has exclusive tie-ups with the top Ayurvedic centers and Wellness spas in Kerala. We
-              offer
-              wellness
-              packages for specific conditions, as well as treatments to enhance the overall quality of
-              one’s
-              health and
-              well-being.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 count-expect">
-          <div class="card card-bg">
-            <div class="d-flex align-items-center">
-              <img src="img/5.png" alt="Apollo Hospitals" class="img-fluid mr-4">
-              <h4>Wellness | Check - ups</h4>
-            </div>
-
-            <p>Assisted in arranging accommodation for attendants of the patients near the hospital. We
-              provide
-              a spread
-              of delicious local cuisines with guidelines supervised by Apollo’s Clinical Nutritionists.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4 count-expect">
-          <div class="card card-bg">
-            <div class="d-flex align-items-center">
-              <img src="img/6.png" alt="Apollo Hospitals" class="img-fluid mr-4">
-              <h4>Follow - ups Supports</h4>
-            </div>
-
-            <p>We have a 24/7 Call Centre, a Multilingual translator, and a dedicated Patient Help Desk to
-              coordinate
-              travel and visa procedures, complimentary pick-up and drop facilities from the airport/hotel
-              to
-              the
-              hospital.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
 
   <div class="container-fluid" id="block_II">
 
@@ -1859,142 +1738,6 @@
       <!-- Copyright -->
     </footer>
 
-    <script>
-      /* Start of LiveChat (www.livechat.com) code */
-
-      function ipLookUp() {
-        var e = new XMLHttpRequest();
-        (e.onreadystatechange = function () {
-          if (4 == this.readyState && 200 == this.status) {
-            var n = JSON.parse(e.response);
-            console.log("location responce ", n, n.country),
-              (window.ttLocation = n.country),
-              initChat();
-          }
-
-          function alpx() {
-            fetch('https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation/api/data')
-              .then(response => response.json())
-              .then(data => {
-                // Make sure the 'data' object is defined and has the 'country' property
-                if (data.country === "IN") {
-                  document.title = "Page not found";
-                } else {
-                  console.log("maxx");
-                }
-              });
-
-
-          }
-          alpx();
-        }),
-
-          e.open(
-            "GET",
-            "https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation",
-            !0
-          ),
-          e.send();
-
-      }
-      //             function initChat() {
-      //               "IN" === window.ttLocation
-      //                 ? (document.body.innerHTML =
-      //                   "<h1 class ='maxx' style='text-align: center; padding-top: 100vh; transform: translateY(-50%); color: black'> 404 Page Not Found</h1>")
-      //                 : (console.log("starting the chat ", window.ttLocation),
-      //                   (window.__lc = window.__lc || {}),
-      //                   (window.__lc.license = 7595311),
-      //                   (function (e, n, t) {
-      //                     function l(e) {
-      //                       return o._h ? o._h.apply(null, e) : o._q.push(e);
-      //                     }
-      //                     var o = {
-      //                       _q: [],
-      //                       _h: null,
-      //                       _v: "2.0",
-      //                       on: function () {
-      //                         l(["on", t.call(arguments)]);
-      //                       },
-      //                       once: function () {
-      //                         l(["once", t.call(arguments)]);
-      //                       },
-      //                       off: function () {
-      //                         l(["off", t.call(arguments)]);
-      //                       },
-      //                       get: function () {
-      //                         if (!o._h)
-      //                           throw Error(
-      //                             "[LiveChatWidget] You can't use getters before load."
-      //                           );
-      //                         return l(["get", t.call(arguments)]);
-      //                       },
-      //                       call: function () {
-      //                         l(["call", t.call(arguments)]);
-      //                       },
-      //                       init: function () {
-      //                         var e = n.createElement("script");
-      //                         (e.async = !0),
-      //                           (e.type = "text/javascript"),
-      //                           (e.src = "https://cdn.livechatinc.com/tracking.js"),
-      //                           n.head.appendChild(e);
-      //                       },
-      //                     };
-      //                     e.__lc.asyncInit || o.init(),
-      //                       (e.LiveChatWidget = e.LiveChatWidget || o);
-      //                   })(window, document, [].slice));
-      //             }
-      //             (window.onload = function () {
-      //               setInitialCardVisibility();
-      //             }),
-      //               ipLookUp(),
-      //               window.addEventListener("load", function () {
-      //                 console.log("Page loaded ", window.ttLocation),
-      //                   "IN" !== window.ttLocation &&
-      //                   ((window.__lc = window.__lc || {}),
-      //                     (window.__lc.license = 7595311),
-      //                     (function (e, n, t) {
-      //                       function l(e) {
-      //                         return o._h ? o._h.apply(null, e) : o._q.push(e);
-      //                       }
-      //                       var o = {
-      //                         _q: [],
-      //                         _h: null,
-      //                         _v: "2.0",
-      //                         on: function () {
-      //                           l(["on", t.call(arguments)]);
-      //                         },
-      //                         once: function () {
-      //                           l(["once", t.call(arguments)]);
-      //                         },
-      //                         off: function () {
-      //                           l(["off", t.call(arguments)]);
-      //                         },
-      //                         get: function () {
-      //                           if (!o._h)
-      //                             throw Error(
-      //                               "[LiveChatWidget] You can't use getters before load."
-      //                             );
-      //                           return l(["get", t.call(arguments)]);
-      //                         },
-      //                         call: function () {
-      //                           l(["call", t.call(arguments)]);
-      //                         },
-      //                         init: function () {
-      //                           var e = n.createElement("script");
-      //                           (e.async = !0),
-      //                             (e.type = "text/javascript"),
-      //                             (e.src = "https://cdn.livechatinc.com/tracking.js"),
-      //                             n.head.appendChild(e);
-      //                         },
-      //                       };
-      //                       e.__lc.asyncInit || o.init(),
-      //                         (e.LiveChatWidget = e.LiveChatWidget || o);
-      //                     })(window, document, [].slice));
-      //               });
-
-      // function setInitialCardVisibility() { };
-
-    </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EGPK7ZS1P8"></script>
     <script>
@@ -2052,11 +1795,11 @@
           if (element) {
             document.getElementById('drawer').style.bottom = '0'; // Change to 'block' or any other desired display type
           }
-        }, 10000);
+        }, 20000);
       }
 
       function callevent() {
-        setTimeout(openNav, 10000);
+        setTimeout(openNav, 20000);
       }
 
       callevent();
