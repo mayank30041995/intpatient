@@ -172,14 +172,14 @@
 
 
     #closeBtn {
-        font-size: 14px;
+        font-size: 60px;
         background-color: red;
         color: white;
         top: 50px;
         right: 45px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         border-radius: 23px;
-        padding: 7px 10px 10px 10px;
+        padding: 10px;
     }
 
     #drawer {
@@ -693,7 +693,7 @@ div.desc {
 
 .btn-dr-wa {
     color: #fff;
-    height: 50px;
+    height: auto;
     text-transform: capitalize;
     width: 110%;
     margin-block: 3px;
@@ -877,6 +877,11 @@ div.desc {
 }
 
 @media screen and (max-width: 800px) {
+
+    .btn-dr-wa {
+        font-size: 42px;
+    }
+
     .top_bar {
         background: #047C9E;
         padding: 13px;
