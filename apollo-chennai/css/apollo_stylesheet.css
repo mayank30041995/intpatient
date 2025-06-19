@@ -721,6 +721,7 @@ div.desc {
 .card-kidney {
     position: relative;
     display: flex;
+    width: min-content;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1022,7 +1023,7 @@ div.desc {
     .carousel-item-next,
     .carousel-item-prev {
         display: block;
-        height: 559px;
+        height: 700px;
     }
 }
 
@@ -1100,7 +1101,7 @@ div.desc {
 @media screen and (max-width: 800px) {
     .card-title {
         font-size: 51px;
-        padding-block: 34px;
+        padding-block: 14px;
     }
 }
 
@@ -1121,7 +1122,7 @@ div.desc {
 @media screen and (max-width: 800px) {
     .c-card {
         display: block;
-        width: 70%;
+        width: 85%;
         text-align: center;
     }
 }
@@ -1325,8 +1326,8 @@ div.desc {
 @media screen and (max-width: 800px) {
     .card-img-top-m-res {
         display: block !important;
-        height: 628px !important;
-        width: 801px;
+        height: auto !important;
+        width: 100%;
 
     }
 }
@@ -1469,8 +1470,8 @@ div.desc {
 
 @media screen and (max-width: 800px) {
     .card-kidney {
-
         width: auto;
+        margin-top: 39px;
     }
 
 }
