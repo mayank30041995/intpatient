@@ -497,8 +497,8 @@
   }
 
   .card-img-top {
-    width: 254px !important;
-    height: 201px !important;
+    width: 100% !important;
+    height: auto !important;
   }
 
   .p-story {
