@@ -244,11 +244,11 @@
     <!-- tabs-->
     <div class="tab mx-auto">
 
-      <button id="cvb" class="tablinks" onclick="openTab(event, 'apx')">Cardiology </button>
-      <button class="tablinks" onclick="openTab(event, 'sumit')">Neuro Surgery </button>
-      <button class="tablinks" onclick="openTab(event, 'Tokyo')">Orthopedics </button>
-      <button class="tablinks" onclick="openTab(event, 'London')">Spine Surgery</button>
-      <button class="tablinks" onclick="openTab(event, 'alpha')">Ent </button>
+      <button id="cvb" class="tablinks" onclick="openTab(event, 'Cardiology')">Cardiology </button>
+      <button class="tablinks" onclick="openTab(event, 'NeuroSurgery')">Neuro Surgery </button>
+      <button class="tablinks" onclick="openTab(event, 'Orthopedics')">Orthopedics </button>
+      <button class="tablinks" onclick="openTab(event, 'Spine')">Spine Surgery</button>
+      <button class="tablinks" onclick="openTab(event, 'Ent')">Ent </button>
       <button class="tablinks" onclick="openTab(event, 'surgical')"> Surgical Gatroenterolgist</button>
       <button class="tablinks" onclick="openTab(event, 'colorectal')"> Colorectal Surgery </button><BR>
       <button class="tablinks" onclick="openTab(event, 'nephrology')"> Nephrology </button>
@@ -751,7 +751,7 @@
   </div>
 
 
-  <div id="London" class="tabcontent">
+  <div id="Spine" class="tabcontent">
     <div class="container text-center">
 
       <h1 class="tab-head2">
@@ -806,7 +806,7 @@
   </div>
 
 
-  <div id="Tokyo" class="tabcontent">
+  <div id="Orthopedics" class="tabcontent">
     <div class="container text-center">
       <h1 class="tab-head2">
 
@@ -924,7 +924,7 @@
   </div>
 
 
-  <div id="sumit" class="tabcontent">
+  <div id="NeuroSurgery" class="tabcontent">
     <div class="container text-center">
       <h1 class="tab-head2">
       </h1>
@@ -1058,7 +1058,7 @@
 
   </div>
 
-  <div id="alpha" class="tabcontent">
+  <div id="Ent" class="tabcontent">
     <div class="container text-center">
       <h1 class="tab-head2">
 
@@ -1156,7 +1156,7 @@
   </div>
 
 
-  <div id="apx" class="tabcontent">
+  <div id="Cardiology" class="tabcontent">
     <div class="container text-center">
       <h1 class="tab-head2">
 
@@ -1263,28 +1263,6 @@
         </div>
       </div>
     </div>
-
-    <script>
-      function openTab(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-      }
-
-      function myFunction() {
-        document.getElementById("cvb").click();
-      }
-      myFunction();
-
-    </script>
 
   </div>
 
@@ -1936,14 +1914,7 @@
 
     </script>
 
-
-    <script>
-      // pre load area
-      window.addEventListener('load', () => {
-        const preloader = document.getElementById('preloader')
-        preloader.style.display = 'none'
-      })
-    </script>
+    <script src="js/custom.js"></script>
 </body>
 
 </html>

@@ -492,7 +492,7 @@ p {
     margin-block: 151px;
     position: relative;
     height: 0;
-    top: -299px;
+    /* top: -299px; */
 }
 
 .card-deck {
@@ -839,7 +839,7 @@ div.desc {
 }
 
 #block_III {
-    top: -186px;
+    /* top: -186px; */
     margin-block: 76px;
     position: relative;
 }
