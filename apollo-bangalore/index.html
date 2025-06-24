@@ -176,7 +176,7 @@
       </div>
     </div>
   </div>
-  </div>
+
 
   <!--slider end -->
   <!--slilder-->
@@ -226,7 +226,6 @@
       </div>
     </div>
   </div>
-  </div>
 
   <!--slider end -->
 
@@ -238,14 +237,13 @@
       <sapn class="heading-top"> Apollo</sapn> <br><span> Departments & Specialists </span>
     </h1>
     <!-- tabs-->
-    <div class="tab">
-      <button id="cvb" class="tablinks" onclick="openCity(event, 'oncology')"> Oncology </button>
-      <button class="tablinks " onclick="openCity(event, 'kidneytransplant')">Kidney Transplant</button>
-      <button class="tablinks " onclick="openCity(event, 'Liver')">Liver Transplant</button>
-      <button class="tablinks" onclick="openCity(event, 'Orthopedics')">Orthopedics </button>
-      <button class="tablinks" onclick="openCity(event, 'neuro')">Neuro Surgery </button>
-      <button class="tablinks" onclick="openCity(event, 'cardiology')">Cardiology </button>
-
+    <div class="tab mx-auto">
+      <button id="cvb" class="tablinks" onclick="openTab(event, 'Oncology')">Oncology</button>
+      <button class="tablinks" onclick="openTab(event, 'kidneytransplant')">Kidney Transplant</button>
+      <button class="tablinks" onclick="openTab(event, 'Liver')">Liver Transplant</button>
+      <button class="tablinks" onclick="openTab(event, 'Orthopedics')">Orthopedics </button>
+      <button class="tablinks" onclick="openTab(event, 'neuro')">Neuro Surgery </button>
+      <button class="tablinks" onclick="openTab(event, 'cardiology')">Cardiology </button>
     </div>
 
     <div id="Liver" class="tabcontent">
@@ -316,9 +314,6 @@
 
       </div>
     </div>
-
-
-
 
     <!--end-tab-1-->
     <div id="kidneytransplant" class="tabcontent">
@@ -438,9 +433,6 @@
 
     </div>
 
-
-
-
     <div id="neuro" class="tabcontent">
       <div class="container c-card">
         <div class="row">
@@ -525,239 +517,206 @@
         </div>
       </div>
     </div>
-  </div>
 
-  <div id="oncology" class="tabcontent">
 
-    <div class="container c-card">
-      <div class="row">
-        <div class="col col-md-4 col-lg-3 px-1 ">
-          <!-- Card 3 -->
-          <div class="card card-kidney">
+    <div id="Oncology" class="tabcontent">
 
-            <img class="card-img-top-m" src="assets\ONCOLOGY\webp\Dr. Anil Kamath.webp" alt="Card image cap">
-            <img class="card-img-top-m-res" src="assets_mob\Dr.-Anil-Kamath.webp" alt="Card image cap">
-            <div class="card-body">
-              <h1 class="card-title">Dr. Anil Kamath</h1>
-              <button type="button" onclick="LC_API.open_chat_window() ; return false"
-                data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr">Get Free
-                Opinion</button><bR>
-              <button type="button" onclick="LC_API.open_chat_window() ; return false"
-                data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr"> <i class="fa fa-whatsapp"></i>
-                Connect
-                on WhatsApp</button>
+      <div class="container c-card">
+        <div class="row">
+          <div class="col col-md-4 col-lg-3 px-1 ">
+            <!-- Card 3 -->
+            <div class="card card-kidney">
 
+              <img class="card-img-top-m" src="assets\ONCOLOGY\webp\Dr. Anil Kamath.webp" alt="Card image cap">
+              <img class="card-img-top-m-res" src="assets_mob\Dr.-Anil-Kamath.webp" alt="Card image cap">
+              <div class="card-body">
+                <h1 class="card-title">Dr. Anil Kamath</h1>
+                <button type="button" onclick="LC_API.open_chat_window() ; return false"
+                  data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr">Get Free
+                  Opinion</button><bR>
+                <button type="button" onclick="LC_API.open_chat_window() ; return false"
+                  data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr"> <i class="fa fa-whatsapp"></i>
+                  Connect
+                  on WhatsApp</button>
+
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col col-md-4 col-lg-3 px-1 ">
-          <div class="card card-kidney">
+          <div class="col col-md-4 col-lg-3 px-1 ">
+            <div class="card card-kidney">
 
-            <img class="card-img-top-m" src="assets\ONCOLOGY\webp\Dr. Prof. Narasimhaiah Srinivasaiah.webp"
-              alt="Card image cap">
-            <img class="card-img-top-m-res" src="assets_mob\Dr.-Prof.-Narasimhaiah-Srinivasaiah.webp"
-              alt="Card image cap">
-            <div class="card-body">
-              <h1 class="card-title">Dr. Prof. Narasimhaiah </h1>
-              <button type="button" onclick="LC_API.open_chat_window() ; return false"
-                data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr">Get Free
-                Opinion</button><bR>
-              <button type="button" onclick="LC_API.open_chat_window() ; return false"
-                data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr"> <i class="fa fa-whatsapp"></i>
-                Connect
-                on WhatsApp</button>
+              <img class="card-img-top-m" src="assets\ONCOLOGY\webp\Dr. Prof. Narasimhaiah Srinivasaiah.webp"
+                alt="Card image cap">
+              <img class="card-img-top-m-res" src="assets_mob\Dr.-Prof.-Narasimhaiah-Srinivasaiah.webp"
+                alt="Card image cap">
+              <div class="card-body">
+                <h1 class="card-title">Dr. Prof. Narasimhaiah </h1>
+                <button type="button" onclick="LC_API.open_chat_window() ; return false"
+                  data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr">Get Free
+                  Opinion</button><bR>
+                <button type="button" onclick="LC_API.open_chat_window() ; return false"
+                  data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr"> <i class="fa fa-whatsapp"></i>
+                  Connect
+                  on WhatsApp</button>
 
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col col-md-4 col-lg-3 px-1 ">
-          <div class="card card-kidney">
+          <div class="col col-md-4 col-lg-3 px-1 ">
+            <div class="card card-kidney">
 
-            <img class="card-img-top-m" src="assets\ONCOLOGY\webp\Dr. Rani Bhat.webp" alt="Card image cap">
-            <img class="card-img-top-m-res" src="assets_mob\Dr.-Rani-Bhat.webp" alt="Card image cap">
-            <div class="card-body">
-              <h1 class="card-title">Dr. Rani Bhat</h1>
-              <button type="button" onclick="LC_API.open_chat_window() ; return false"
-                data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr">Get Free
-                Opinion</button><bR>
-              <button type="button" onclick="LC_API.open_chat_window() ; return false"
-                data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr"> <i class="fa fa-whatsapp"></i>
-                Connect
-                on WhatsApp</button>
+              <img class="card-img-top-m" src="assets\ONCOLOGY\webp\Dr. Rani Bhat.webp" alt="Card image cap">
+              <img class="card-img-top-m-res" src="assets_mob\Dr.-Rani-Bhat.webp" alt="Card image cap">
+              <div class="card-body">
+                <h1 class="card-title">Dr. Rani Bhat</h1>
+                <button type="button" onclick="LC_API.open_chat_window() ; return false"
+                  data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr">Get Free
+                  Opinion</button><bR>
+                <button type="button" onclick="LC_API.open_chat_window() ; return false"
+                  data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr"> <i class="fa fa-whatsapp"></i>
+                  Connect
+                  on WhatsApp</button>
 
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col col-md-4 col-lg-3 px-1 ">
-          <div class="card card-kidney">
+          <div class="col col-md-4 col-lg-3 px-1 ">
+            <div class="card card-kidney">
 
-            <img class="card-img-top-m" src="assets\ONCOLOGY\webp\Dr. Vijay Agarwal.webp" alt="Card image cap">
-            <img class="card-img-top-m-res" src="assets_mob\Dr.-Vijay-Agarwal.webp" alt="Card image cap">
-            <div class="card-body">
-              <h1 class="card-title">Dr. Vijay Agarwal</h1>
-              <button type="button" onclick="LC_API.open_chat_window() ; return false"
-                data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr">Get Free
-                Opinion</button><bR>
-              <button type="button" onclick="LC_API.open_chat_window() ; return false"
-                data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr"> <i class="fa fa-whatsapp"></i>
-                Connect
-                on WhatsApp</button>
+              <img class="card-img-top-m" src="assets\ONCOLOGY\webp\Dr. Vijay Agarwal.webp" alt="Card image cap">
+              <img class="card-img-top-m-res" src="assets_mob\Dr.-Vijay-Agarwal.webp" alt="Card image cap">
+              <div class="card-body">
+                <h1 class="card-title">Dr. Vijay Agarwal</h1>
+                <button type="button" onclick="LC_API.open_chat_window() ; return false"
+                  data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr">Get Free
+                  Opinion</button><bR>
+                <button type="button" onclick="LC_API.open_chat_window() ; return false"
+                  data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr"> <i class="fa fa-whatsapp"></i>
+                  Connect
+                  on WhatsApp</button>
 
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col col-md-4 col-lg-3 px-1 ">
-          <div class="card card-kidney">
-            <img class="card-img-top-m" src="assets\ONCOLOGY\webp\Dr. Vijay Bhaskar L.webp" alt="Card image cap">
-            <img class="card-img-top-m-res" src="assets_mob\Dr.-Vijay-Bhaskar-L.webp" alt="Card image cap">
-            <div class="card-body">
-              <h1 class="card-title">Dr. Vijay Bhaskar L</h1>
-              <button type="button" onclick="LC_API.open_chat_window() ; return false"
-                data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr">Get Free
-                Opinion</button><bR>
-              <button type="button" onclick="LC_API.open_chat_window() ; return false"
-                data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr"> <i class="fa fa-whatsapp"></i>
-                Connect
-                on WhatsApp</button>
+          <div class="col col-md-4 col-lg-3 px-1 ">
+            <div class="card card-kidney">
+              <img class="card-img-top-m" src="assets\ONCOLOGY\webp\Dr. Vijay Bhaskar L.webp" alt="Card image cap">
+              <img class="card-img-top-m-res" src="assets_mob\Dr.-Vijay-Bhaskar-L.webp" alt="Card image cap">
+              <div class="card-body">
+                <h1 class="card-title">Dr. Vijay Bhaskar L</h1>
+                <button type="button" onclick="LC_API.open_chat_window() ; return false"
+                  data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr">Get Free
+                  Opinion</button><bR>
+                <button type="button" onclick="LC_API.open_chat_window() ; return false"
+                  data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr"> <i class="fa fa-whatsapp"></i>
+                  Connect
+                  on WhatsApp</button>
 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="cardiology" class="tabcontent">
-    <div class="container c-card">
-      <div class="row">
-        <div class="col col-md-4 col-lg-3 px-1 ">
-          <div class="card card-kidney">
-
-            <img class="card-img-top-m" src="assets\Cardio\webp\Dr. Abhijit Vilas Kulkarni.webp" alt="Card image cap">
-            <img class="card-img-top-m-res" src="assets_mob\Cardio\webp\Dr. Abhijit Vilas Kulkarni.webp"
-              alt="Card image cap">
-            <div class="card-body">
-              <h1 class="card-title">Dr. Abhijit Vilas Kulkarni</h1>
-              <button type="button" onclick="LC_API.open_chat_window() ; return false"
-                data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr">Get Free
-                Opinion</button><bR>
-              <button type="button" onclick="LC_API.open_chat_window() ; return false"
-                data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr"> <i class="fa fa-whatsapp"></i>
-                Connect
-                on WhatsApp</button>
-
-            </div>
-          </div>
-        </div>
-        <div class="col col-md-4 col-lg-3 px-1 ">
-          <div class="card card-kidney">
-
-            <img class="card-img-top-m" src="assets\Cardio\webp\Dr. Arul D Furtado.webp" alt="Card image cap">
-            <img class="card-img-top-m-res" src="assets_mob\Cardio\webp\Dr. Arul D Furtado.webp" alt="Card image cap">
-            <div class="card-body">
-              <h1 class="card-title">Dr. Arul D Furtado</h1>
-              <button type="button" onclick="LC_API.open_chat_window() ; return false"
-                data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr">Get Free
-                Opinion</button><bR>
-              <button type="button" onclick="LC_API.open_chat_window() ; return false"
-                data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr"> <i class="fa fa-whatsapp"></i>
-                Connect
-                on WhatsApp</button>
-
-            </div>
-          </div>
-        </div>
-        <div class="col col-md-4 col-lg-3 px-1 ">
-          <div class="card card-kidney">
-
-            <img class="card-img-top-m" src="assets\Cardio\webp\Dr. C M Nagesh.webp" alt="Card image cap">
-            <img class="card-img-top-m-res" src="assets_mob\Cardio\webp\Dr. C M Nagesh.webp" alt="Card image cap">
-            <div class="card-body">
-              <h1 class="card-title">Dr. C M Nagesh</h1>
-              <button type="button" onclick="LC_API.open_chat_window() ; return false"
-                data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr">Get Free
-                Opinion</button><bR>
-              <button type="button" onclick="LC_API.open_chat_window() ; return false"
-                data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr"> <i class="fa fa-whatsapp"></i>
-                Connect
-                on WhatsApp</button>
-
-            </div>
-          </div>
-        </div>
-        <div class="col col-md-4 col-lg-3 px-1 ">
-          <div class="card card-kidney">
-
-            <img class="card-img-top-m" src="assets\Cardio\webp\Dr. Girish B Navasundi.webp" alt="Card image cap">
-            <img class="card-img-top-m-res" src="assets_mob\Cardio\webp\Dr. Girish B Navasundi.webp"
-              alt="Card image cap">
-            <div class="card-body">
-              <h1 class="card-title">Dr. Girish B Navasundi</h1>
-              <button type="button" onclick="LC_API.open_chat_window() ; return false"
-                data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr">Get Free
-                Opinion</button><bR>
-              <button type="button" onclick="LC_API.open_chat_window() ; return false"
-                data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr"> <i class="fa fa-whatsapp"></i>
-                Connect
-                on WhatsApp</button>
-
-            </div>
-          </div>
-        </div>
-        <div class="col col-md-4 col-lg-3 px-1 ">
-          <div class="card card-kidney">
-
-            <img class="card-img-top-m" src="assets\Cardio\webp\Dr. Ramesh B.webp" alt="Card image cap">
-            <img class="card-img-top-m-res" src="assets\Cardio\webp\Dr. Ramesh B.webp" alt="Card image cap">
-            <div class="card-body">
-              <h1 class="card-title">Dr. Ramesh B</h1>
-              <button type="button" onclick="LC_API.open_chat_window() ; return false"
-                data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr">Get Free
-                Opinion</button><bR>
-              <button type="button" onclick="LC_API.open_chat_window() ; return false"
-                data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr"> <i class="fa fa-whatsapp"></i>
-                Connect
-                on WhatsApp</button>
-
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+    <div id="cardiology" class="tabcontent">
+      <div class="container c-card">
+        <div class="row">
+          <div class="col col-md-4 col-lg-3 px-1 ">
+            <div class="card card-kidney">
 
+              <img class="card-img-top-m" src="assets\Cardio\webp\Dr. Abhijit Vilas Kulkarni.webp" alt="Card image cap">
+              <img class="card-img-top-m-res" src="assets_mob\Cardio\webp\Dr. Abhijit Vilas Kulkarni.webp"
+                alt="Card image cap">
+              <div class="card-body">
+                <h1 class="card-title">Dr. Abhijit Vilas Kulkarni</h1>
+                <button type="button" onclick="LC_API.open_chat_window() ; return false"
+                  data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr">Get Free
+                  Opinion</button><bR>
+                <button type="button" onclick="LC_API.open_chat_window() ; return false"
+                  data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr"> <i class="fa fa-whatsapp"></i>
+                  Connect
+                  on WhatsApp</button>
 
+              </div>
+            </div>
+          </div>
+          <div class="col col-md-4 col-lg-3 px-1 ">
+            <div class="card card-kidney">
 
+              <img class="card-img-top-m" src="assets\Cardio\webp\Dr. Arul D Furtado.webp" alt="Card image cap">
+              <img class="card-img-top-m-res" src="assets_mob\Cardio\webp\Dr. Arul D Furtado.webp" alt="Card image cap">
+              <div class="card-body">
+                <h1 class="card-title">Dr. Arul D Furtado</h1>
+                <button type="button" onclick="LC_API.open_chat_window() ; return false"
+                  data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr">Get Free
+                  Opinion</button><bR>
+                <button type="button" onclick="LC_API.open_chat_window() ; return false"
+                  data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr"> <i class="fa fa-whatsapp"></i>
+                  Connect
+                  on WhatsApp</button>
 
+              </div>
+            </div>
+          </div>
+          <div class="col col-md-4 col-lg-3 px-1 ">
+            <div class="card card-kidney">
 
+              <img class="card-img-top-m" src="assets\Cardio\webp\Dr. C M Nagesh.webp" alt="Card image cap">
+              <img class="card-img-top-m-res" src="assets_mob\Cardio\webp\Dr. C M Nagesh.webp" alt="Card image cap">
+              <div class="card-body">
+                <h1 class="card-title">Dr. C M Nagesh</h1>
+                <button type="button" onclick="LC_API.open_chat_window() ; return false"
+                  data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr">Get Free
+                  Opinion</button><bR>
+                <button type="button" onclick="LC_API.open_chat_window() ; return false"
+                  data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr"> <i class="fa fa-whatsapp"></i>
+                  Connect
+                  on WhatsApp</button>
 
-  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-md-4 col-lg-3 px-1 ">
+            <div class="card card-kidney">
 
+              <img class="card-img-top-m" src="assets\Cardio\webp\Dr. Girish B Navasundi.webp" alt="Card image cap">
+              <img class="card-img-top-m-res" src="assets_mob\Cardio\webp\Dr. Girish B Navasundi.webp"
+                alt="Card image cap">
+              <div class="card-body">
+                <h1 class="card-title">Dr. Girish B Navasundi</h1>
+                <button type="button" onclick="LC_API.open_chat_window() ; return false"
+                  data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr">Get Free
+                  Opinion</button><bR>
+                <button type="button" onclick="LC_API.open_chat_window() ; return false"
+                  data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr"> <i class="fa fa-whatsapp"></i>
+                  Connect
+                  on WhatsApp</button>
 
+              </div>
+            </div>
+          </div>
+          <div class="col col-md-4 col-lg-3 px-1 ">
+            <div class="card card-kidney">
 
+              <img class="card-img-top-m" src="assets\Cardio\webp\Dr. Ramesh B.webp" alt="Card image cap">
+              <img class="card-img-top-m-res" src="assets\Cardio\webp\Dr. Ramesh B.webp" alt="Card image cap">
+              <div class="card-body">
+                <h1 class="card-title">Dr. Ramesh B</h1>
+                <button type="button" onclick="LC_API.open_chat_window() ; return false"
+                  data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr">Get Free
+                  Opinion</button><bR>
+                <button type="button" onclick="LC_API.open_chat_window() ; return false"
+                  data-url="https://what.sapp.link/apollo-india" class=" btn btn-dr"> <i class="fa fa-whatsapp"></i>
+                  Connect
+                  on WhatsApp</button>
 
-
-  <script defer>
-    function openCity(evt, cityName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-
-    function myFunction() {
-      document.getElementById("cvb").click();
-    }
-    myFunction();
-  </script>
-
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 
@@ -1304,16 +1263,6 @@
               <img class="footer_logo" src="assets\Icons & Logos\webp\TT logo.webp" alt="Loding..." width="100"
                 height="50">
             </div>
-
-
-
-
-
-
-
-
-
-
           </div>
           <!--Grid column-->
 
@@ -1376,145 +1325,6 @@
       <!-- Copyright -->
     </footer>
 
-
-
-
-    <!-- <script defer>
-      /* Start of LiveChat (www.livechat.com) code */
-
-      function ipLookUp() {
-        var e = new XMLHttpRequest();
-        (e.onreadystatechange = function () {
-          if (4 == this.readyState && 200 == this.status) {
-            var n = JSON.parse(e.response);
-            console.log("location responce ", n, n.country),
-              (window.ttLocation = n.country),
-              initChat();
-          }
-
-          function alpx() {
-            fetch('https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation/api/data')
-              .then(response => response.json())
-              .then(data => {
-                // Make sure the 'data' object is defined and has the 'country' property
-                if (data.country === "IN") {
-                  document.title = "Page not found";
-                } else {
-                  console.log("maxx");
-                }
-              });
-
-
-          }
-          alpx();
-        }),
-
-          e.open(
-            "GET",
-            "https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation",
-            !0
-          ),
-          e.send();
-
-      }
-      function initChat() {
-        "IN" === window.ttLocation
-          ? (document.body.innerHTML =
-            "<h1 class ='maxx' style='text-align: center; padding-top: 100vh; transform: translateY(-50%); color: black'> 404 Page Not Found</h1>")
-          : (console.log("starting the chat ", window.ttLocation),
-            (window.__lc = window.__lc || {}),
-            (window.__lc.license = 7595311),
-            (function (e, n, t) {
-              function l(e) {
-                return o._h ? o._h.apply(null, e) : o._q.push(e);
-              }
-              var o = {
-                _q: [],
-                _h: null,
-                _v: "2.0",
-                on: function () {
-                  l(["on", t.call(arguments)]);
-                },
-                once: function () {
-                  l(["once", t.call(arguments)]);
-                },
-                off: function () {
-                  l(["off", t.call(arguments)]);
-                },
-                get: function () {
-                  if (!o._h)
-                    throw Error(
-                      "[LiveChatWidget] You can't use getters before load."
-                    );
-                  return l(["get", t.call(arguments)]);
-                },
-                call: function () {
-                  l(["call", t.call(arguments)]);
-                },
-                init: function () {
-                  var e = n.createElement("script");
-                  (e.async = !0),
-                    (e.type = "text/javascript"),
-                    (e.src = "https://cdn.livechatinc.com/tracking.js"),
-                    n.head.appendChild(e);
-                },
-              };
-              e.__lc.asyncInit || o.init(),
-                (e.LiveChatWidget = e.LiveChatWidget || o);
-            })(window, document, [].slice));
-      }
-      (window.onload = function () {
-        setInitialCardVisibility();
-      }),
-        ipLookUp(),
-        window.addEventListener("load", function () {
-          console.log("Page loaded ", window.ttLocation),
-            "IN" !== window.ttLocation &&
-            ((window.__lc = window.__lc || {}),
-              (window.__lc.license = 7595311),
-              (function (e, n, t) {
-                function l(e) {
-                  return o._h ? o._h.apply(null, e) : o._q.push(e);
-                }
-                var o = {
-                  _q: [],
-                  _h: null,
-                  _v: "2.0",
-                  on: function () {
-                    l(["on", t.call(arguments)]);
-                  },
-                  once: function () {
-                    l(["once", t.call(arguments)]);
-                  },
-                  off: function () {
-                    l(["off", t.call(arguments)]);
-                  },
-                  get: function () {
-                    if (!o._h)
-                      throw Error(
-                        "[LiveChatWidget] You can't use getters before load."
-                      );
-                    return l(["get", t.call(arguments)]);
-                  },
-                  call: function () {
-                    l(["call", t.call(arguments)]);
-                  },
-                  init: function () {
-                    var e = n.createElement("script");
-                    (e.async = !0),
-                      (e.type = "text/javascript"),
-                      (e.src = "https://cdn.livechatinc.com/tracking.js"),
-                      n.head.appendChild(e);
-                  },
-                };
-                e.__lc.asyncInit || o.init(),
-                  (e.LiveChatWidget = e.LiveChatWidget || o);
-              })(window, document, [].slice));
-        });
-
-      function setInitialCardVisibility() { };
-
-    </script> -->
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EGPK7ZS1P8"></script>
     <script>
@@ -1601,28 +1411,6 @@
       function closeNav() {
         document.getElementById("sidebar").style.width = "0";
       }
-
-
-
-
-      // function changeTab(event, tabId) {
-      //   // Get all the tabs and tab content elements
-
-      //   const tabs = document.querySelectorAll('.tab');
-      //   const tabContents = document.querySelectorAll('.tab-pane');
-      //   console.log('changeTab', tabs, tabContents, event.target, tabId);
-      //   // Remove 'active' class from all tabs and content
-      //   tabs.forEach(tab => tab.classList.remove('active'));
-      //   tabContents.forEach(content => content.classList.remove('active'));
-
-      //   // Add 'active' class to the clicked tab and corresponding content
-
-      //   event.target.classList.add('active');
-      //   event.stopPropagation();
-      //   document.getElementById(tabId).classList.add('active');
-      // }
-
-
     </script>
 
     <script>
@@ -1678,6 +1466,27 @@
         event.stopPropagation(); // Prevent click inside drawer from closing it
       });
 
+    </script>
+    <script>
+
+      function openTab(evt, tabLinks) {
+        var i, tabcontent, tablinks
+        tabcontent = document.getElementsByClassName('tabcontent')
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = 'none'
+        }
+        tablinks = document.getElementsByClassName('tablinks')
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(' active', '')
+        }
+        document.getElementById(tabLinks).style.display = 'block'
+        evt.currentTarget.className += ' active'
+      }
+
+      function myFunction() {
+        document.getElementById('cvb').click()
+      }
+      myFunction()
     </script>
 </body>
 
