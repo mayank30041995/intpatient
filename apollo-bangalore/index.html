@@ -2,7 +2,12 @@
 <html lang="en">
 
 <head>
-  <title>Apollo-(Bangalore)</title>
+  <title>Apollo Hospitals Bangalore | World-Class Healthcare for Indian & International Patients</title>
+  <meta name="description"
+    content="Apollo Hospitals Bangalore offers advanced multi-speciality care in cardiology, oncology, neurology, orthopaedics, and more. JCI and NABH accredited, Apollo is one of the best hospitals in Bangalore for Indian and international patients.">
+  <meta name="keywords"
+    content="Apollo Hospitals Bangalore, best hospital in Bangalore, multi-speciality hospital Bangalore, Apollo Bannerghatta, Apollo Jayanagar, Apollo Seshadripuram, cardiac care Bangalore, cancer treatment Bangalore, neurology hospital Bangalore, orthopaedic hospital Bangalore, NABH hospital Bangalore, JCI accredited hospital India">
+
   <meta charset="UTF-8">
   <meta name="theme-color" content="#047C9E" />
   <meta name="robots" content="noindex, nofollow">
@@ -42,6 +47,15 @@
 </head>
 
 <body>
+
+  <!-- Pre loader -->
+  <div id="preloader">
+    <div class="spinner-wrapper">
+      <img src="assets_mob\Icons & Logos\webp\apollo logo.webp" alt="Loading..." class="preloader-logo">
+
+    </div>
+  </div>
+
   <button id="openBtn"><img src="assets_mob\Icons & Logos\webp\apollo logo.webp" class="logo-y" alt="HTML5 Icon"
       width="60px" height="40px">
     Instant Support</button>
@@ -1334,7 +1348,7 @@
 
       gtag('config', 'G-EGPK7ZS1P8');
     </script>
-    <script>
+    <!-- <script>
       document.addEventListener('DOMContentLoaded', function () {
         // Function to set active tab based on the hash in the URL
         function setActiveTabFromHash() {
@@ -1373,7 +1387,7 @@
         // Update active tab when the URL hash changes (for browser navigation)
         window.addEventListener('hashchange', setActiveTabFromHash)
       })
-    </script>
+    </script> -->
 
     <script>
       document.addEventListener('DOMContentLoaded', function () {
@@ -1467,27 +1481,7 @@
       });
 
     </script>
-    <script>
-
-      function openTab(evt, tabLinks) {
-        var i, tabcontent, tablinks
-        tabcontent = document.getElementsByClassName('tabcontent')
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = 'none'
-        }
-        tablinks = document.getElementsByClassName('tablinks')
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(' active', '')
-        }
-        document.getElementById(tabLinks).style.display = 'block'
-        evt.currentTarget.className += ' active'
-      }
-
-      function myFunction() {
-        document.getElementById('cvb').click()
-      }
-      myFunction()
-    </script>
+    <script src="js/custom.js" defer></script>
 </body>
 
 </html>

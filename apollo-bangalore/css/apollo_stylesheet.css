@@ -849,7 +849,7 @@ div.desc {
 .app-layout {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr 2fr;
-  grid-template-rows: 37vh;
+  grid-template-rows: auto;
 }
 
 #block_III {
@@ -1764,4 +1764,31 @@ div.desc {
     margin-top: 0px;
     display: none;
   }
+}
+
+
+/* pre load page */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner-wrapper {
+  text-align: center;
+}
+
+.preloader-logo {
+  width: 8rem;
+  height: auto;
+  /* adjust size as needed */
+  margin-bottom: 20px;
 }
