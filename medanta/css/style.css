@@ -913,6 +913,8 @@ img {
 }
 
 .spinner-wrapper {
+    display: grid;
+    justify-items: center;
     text-align: center
 }
 
