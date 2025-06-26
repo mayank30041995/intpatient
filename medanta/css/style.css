@@ -293,8 +293,11 @@ p.p-header a {
 
 #banner-image {
     background-image: url(../images/bckgrnd-medanta-_1_-1.webp);
+    min-height: 26rem;
+    background-size: cover;
+    background-position: center center;
+    /* center the image */
     background-repeat: no-repeat;
-    background-size: cover
 }
 
 #banner-image h1.h1 {
