@@ -3,52 +3,50 @@
     --border-radius: 8px;
     --main-bg: #f5f5f5;
     --bg-background: #F04E30;
-    --bg-dark: #000;
+    --bg-dark: #000
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden
 }
 
 .banner-hero-img {
     width: 211px;
-    height: 67px;
+    height: 67px
 }
 
 .btn {
-    font-size: 14px !important;
+    font-size: 14px !important
 }
 
 .bg-app {
     background: var(--bg-background);
-    color: #FFF;
+    color: #fff
 }
 
 .bg-app-btn {
     background: var(--bg-background) !important;
-    color: #FFF;
+    color: #fff
 }
 
 .bg-app-btn:hover {
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, .5);
     color: var(--bg-background) !important;
-    background-color: #fdfdfd !important;
+    background-color: #fdfdfd !important
 }
 
 .bg-btn {
     font-size: 16px !important;
     font-weight: 600;
-    color: var(--bg-background);
+    color: var(--bg-background)
 }
 
 .bg-btn:hover {
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
-    color: rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, .5)
 }
-
-
 
 #openBtn {
     display: grid;
@@ -57,17 +55,17 @@ body {
     right: 20px;
     padding: 10px 20px;
     background-color: var(--bg-background);
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
-    color: white;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, .5);
+    color: #fff;
     border: none;
     cursor: pointer;
     font-size: 22px;
-    letter-spacing: 0.83px;
+    letter-spacing: .83px;
     font-weight: 600;
     z-index: 100;
     border-radius: 8px;
     width: 15rem;
-    justify-items: center;
+    justify-items: center
 }
 
 #drawer {
@@ -78,26 +76,24 @@ body {
     width: 35%;
     background: linear-gradient(var(--bg-background), #e65e46);
     color: #fff;
-    /* Text color for contrast */
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
-    transition: bottom 0.3s ease-in-out;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, .5);
+    transition: bottom .3s ease-in-out;
     z-index: 100;
     border-top-left-radius: 20px;
-    /* Rounded top-left corner */
-    border-top-right-radius: 20px;
+    border-top-right-radius: 20px
 }
 
 .drawer-content {
     padding: 20px;
     height: 100%;
-    overflow-y: auto;
+    overflow-y: auto
 }
 
 .logo-yx {
-    background: #FFF;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    background: #fff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, .5);
     border-radius: 8px;
-    object-fit: contain;
+    object-fit: contain
 }
 
 .drawer-items {
@@ -106,16 +102,16 @@ body {
     text-align: center;
     display: grid;
     justify-items: center;
-    gap: 5px;
+    gap: 5px
 }
 
 .drawer-items>h2 {
-    color: #FFF;
-    font-size: 28px;
+    color: #fff;
+    font-size: 28px
 }
 
 .drawer-items button {
-    background: #FFF;
+    background: #fff;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -123,44 +119,44 @@ body {
     border-radius: 2px;
     color: var(--bg-background);
     font-weight: 600;
-    border-radius: 8px;
+    border-radius: 8px
 }
 
 .drawer-items button:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(0.99);
-    color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    transform: scale(.99);
+    color: rgba(0, 0, 0, .5)
 }
 
 .drawer-items button:active {
-    transform: scale(0.99);
+    transform: scale(.99)
 }
 
 .drawer-banner {
     margin-top: 100px;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1), 0 6px 20px rgba(0, 0, 0, .1);
     padding: 15px 2px 2px;
     color: #000;
     border-radius: 8px;
-    text-align: center;
+    text-align: center
 }
 
 .drawer-banner h2 {
     font-size: 32px;
-    letter-spacing: 0.83px;
+    letter-spacing: .83px
 }
 
 #closeBtn {
     background-color: var(--bg-background);
-    color: white;
+    color: #fff;
     border: none;
     padding: 2px 5px 7px;
     cursor: pointer;
     position: absolute;
     right: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    border-radius: 8px
 }
 
 #imasCircle {
@@ -169,44 +165,36 @@ body {
     height: 85px;
     width: 100%;
     border-radius: 38px;
-    /* top: -35px; */
-    /* left: 41%; */
-    /* background-color: #0f0f0f; */
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); */
-    /* border: 1px solid #fff; */
     text-align: center;
     padding: 21px 14px;
-    justify-content: center;
-    /* border: 2px solid #e924cb; */
+    justify-content: center
 }
 
 .drawer-items {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
-
+@media (max-width:768px) {
     .banner-hero-img {
         width: 180px;
-        height: 55px;
+        height: 55px
     }
 
     .logo-yx {
         height: 50px;
         width: 50%;
-        padding: 8px 15px;
+        padding: 8px 15px
     }
 
     .tabIcons {
         width: 18px !important;
-        height: 16px !important;
+        height: 16px !important
     }
 
     .tabIcons2 {
         width: 100px !important;
-        height: 70px !important;
+        height: 70px !important
     }
 
     #openBtn {
@@ -215,86 +203,81 @@ body {
         left: 10px;
         font-size: 28px;
         height: 8rem;
-        border-radius: 12px;
+        border-radius: 12px
     }
 
     #closeBtn {
         font-size: 14px;
         background-color: var(--bg-background);
-        color: white;
+        color: #fff;
         top: -100%;
         right: 5px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
         border-radius: 50px;
-        padding: 4px 9px;
+        padding: 4px 9px
     }
 
     #drawer {
         height: 45%;
         width: 100%;
         border-top-left-radius: 100px;
-        /* Rounded top-left corner */
         border-top-right-radius: 100px;
-        border: 5px solid #8fbfd1;
+        border: 5px solid #8fbfd1
     }
-
 
     .drawer-items {
         margin-top: 20px;
-        text-align: center;
+        text-align: center
     }
 
     .drawer-items h2 {
-        font-size: 18px;
+        font-size: 18px
     }
 
     .drawer-banner {
         margin-top: 80px;
         background-color: #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .1), 0 6px 20px rgba(0, 0, 0, .1);
         padding: 15px 2px 2px;
         color: #000;
         border-radius: 8px;
-        text-align: center;
+        text-align: center
     }
 
     .drawer-banner h2 {
         font-size: 18px;
-        font-weight: 700;
+        font-weight: 700
     }
 
     .drawer-banner p {
-        font-size: 14px;
+        font-size: 14px
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width:1200px) {
 
     .container,
     .container-lg,
     .container-md,
     .container-sm,
     .container-xl {
-        max-width: 1225px !important;
+        max-width: 1225px !important
     }
 }
 
-
-.navbar-light .navbar-nav .nav-link,
-.navbar-light .navbar-nav .show>.nav-link {
+.navbar-light .navbar-nav .nav-link {
     color: #213360;
     font-family: var(--primary-font);
-    font-size: 16px;
+    font-size: 16px
 }
 
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .show>.nav-link {
+.navbar-light .navbar-nav .nav-link:hover {
     color: var(--bg-background);
     font-family: var(--primary-font);
     font-size: 16px;
     text-decoration: underline;
     text-decoration-color: var(--bg-background);
-    text-underline-offset: 10px;
+    text-underline-offset: 10px
 }
 
 ul.navbar-nav {
@@ -305,35 +288,33 @@ p.p-header a {
     font-family: var(--primary-font);
     font-size: 16px;
     color: #213360;
-    text-decoration: none;
+    text-decoration: none
 }
 
 #banner-image {
     background-image: url(../images/bckgrnd-medanta-_1_-1.webp);
     background-repeat: no-repeat;
-    background-size: cover;
-    /* height: 40rem; */
+    background-size: cover
 }
 
 #banner-image h1.h1 {
     font-family: var(--bg-dark);
-    font-size: 61px;
+    font-size: 61px
 }
 
 #banner-image h2 {
     font-family: var(--primary-font);
-    font-size: 60px;
-
+    font-size: 60px
 }
 
 #banner-image h1.h11 {
     font-family: var(--primary-font);
-    font-size: 61px;
+    font-size: 61px
 }
 
 #banner-image p {
     font-family: var(--primary-font);
-    line-height: 30.565px;
+    line-height: 30.565px
 }
 
 #banner-image a.banner-btn {
@@ -341,14 +322,14 @@ p.p-header a {
     border-radius: 6px;
     font-family: var(--primary-font);
     font-size: 18px;
-    border: 0;
+    border: 0
 }
 
 #banner-image p.banner-p {
     font-family: 'Open Sans', sans-serif;
     color: var(--bg-background) !important;
     font-weight: 700;
-    font-size: 24px !important;
+    font-size: 24px !important
 }
 
 h1.recentblog-h1 {
@@ -357,7 +338,7 @@ h1.recentblog-h1 {
     font-size: 30px;
     color: #232323;
     text-transform: uppercase;
-    text-align: center;
+    text-align: center
 }
 
 h1.card-title {
@@ -365,77 +346,77 @@ h1.card-title {
     font-family: var(--primary-font);
     font-weight: 400;
     font-size: 14px;
-    text-transform: uppercase;
+    text-transform: uppercase
 }
 
 h1.card-title1 {
     color: #666;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 14px
 }
 
 p.card-text {
     font-family: var(--primary-font);
     color: #232323;
-    font-size: 16px;
+    font-size: 16px
 }
 
 h2 {
     color: var(--bg-background);
     font-size: 24px;
     font-weight: 700;
-    font-family: 'Raleway', sans-serif;
+    font-family: Raleway, sans-serif
 }
 
 p.offer-p {
-    font-family: 'Raleway', sans-serif;
+    font-family: Raleway, sans-serif;
     color: #727272;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 400
 }
 
 #footer {
-    background-color: #000;
+    background-color: #000
 }
 
 h1.foot-h1 {
     font-family: var(--primary-font);
     font-size: 24px;
     text-transform: uppercase;
-    padding-top: 3em;
+    padding-top: 3em
 }
 
 p.footer-p {
     font-family: var(--primary-font);
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 400
 }
 
 ul.footer-ul {
-    line-height: 3;
+    line-height: 3
 }
 
 ul.footer-ul a {
     text-decoration: none;
-    color: #fff;
+    color: #fff
 }
 
 #testimonial {
-    background-color: #F7F7F7;
+    background-color: #f7f7f7
 }
 
 .testimonials {
-    padding: 100px 0;
+    padding: 100px 0
 }
 
 .testimonials h3 {
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
 .testimonials .card {
     transition: .5s;
-    margin-top: 60px;
+    margin-top: 60px
 }
 
 .testimonials .card i {
@@ -443,7 +424,7 @@ ul.footer-ul a {
     width: 75px;
     height: 75px;
     line-height: 75px;
-    margin: -40px 0 auto;
+    margin: -40px 0 auto
 }
 
 p.card-text1 {
@@ -451,15 +432,15 @@ p.card-text1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    text-align: left;
+    text-align: left
 }
 
 .tablinks.ps-5 {
-    padding-left: 6rem !important;
+    padding-left: 6rem !important
 }
 
 .tabIcons {
-    background: #FFF !important;
+    background: #fff !important
 }
 
 .tab {
@@ -472,17 +453,14 @@ p.card-text1 {
     width: auto;
     position: sticky;
     z-index: 99;
-    top: 5px;
-
+    top: 5px
 }
 
 .tab button {
-    /* flex: none; */
     background-color: transparent;
     color: var(--bg-background);
-    /* float: left; */
     border: none;
-    outline: none;
+    outline: 0;
     cursor: pointer;
     padding: 14px 24px;
     transition: .3s;
@@ -491,25 +469,25 @@ p.card-text1 {
     text-wrap: nowrap;
     font-family: var(--primary-font);
     align-items: center;
-    flex: 1 1 50px;
+    flex: 1 1 50px
 }
 
 .tab button.active {
     color: #fff;
     background: var(--bg-background);
-    border-bottom: 3px solid var(--bg-background);
+    border-bottom: 3px solid var(--bg-background)
 }
 
 .tab button:hover {
     color: #fff;
     background: var(--bg-background);
-    border-bottom: 3px solid var(--bg-background);
+    border-bottom: 3px solid var(--bg-background)
 }
 
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border-top: none;
+    border-top: none
 }
 
 a.btn {
@@ -519,13 +497,13 @@ a.btn {
     font-size: 13px;
     padding: 8px 3px;
     border-radius: 0;
-    border-color: #CBCBCB;
+    border-color: #cbcbcb
 }
 
 a.btn:hover {
     background-color: var(--bg-background);
     color: #fff;
-    border-color: var(--bg-background);
+    border-color: var(--bg-background)
 }
 
 h1.card-title-h1 {
@@ -533,7 +511,7 @@ h1.card-title-h1 {
     text-align: center;
     font-family: var(--primary-font);
     font-size: 20.11px;
-    font-weight: 600;
+    font-weight: 600
 }
 
 .Surgeries-p {
@@ -541,7 +519,7 @@ h1.card-title-h1 {
     font-family: var(--primary-font);
     font-weight: 400;
     font-size: 20px;
-    text-align: center;
+    text-align: center
 }
 
 .anal-p {
@@ -549,23 +527,22 @@ h1.card-title-h1 {
     font-family: var(--primary-font);
     font-weight: 400;
     font-size: 15px;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .anal-p1 {
     color: #242424;
     font-family: var(--primary-font);
     font-weight: 400;
-    font-size: 15px;
-
+    font-size: 15px
 }
 
 .gap1:hover {
-    background-color: #F9F2F2;
+    background-color: #f9f2f2
 }
 
 #hotels-list {
-    background-color: #F5FDFF;
+    background-color: #f5fdff
 }
 
 #hotels-list h1 {
@@ -574,12 +551,11 @@ h1.card-title-h1 {
     font-size: 21.881px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: normal
 }
 
 #hotels-list .fa.checked {
-    color: #FFD600;
-
+    color: #ffd600
 }
 
 #hotels-list p {
@@ -588,28 +564,26 @@ h1.card-title-h1 {
     font-size: 15.044px;
     font-style: normal;
     font-weight: 500;
-    line-height: 149.023%;
+    line-height: 149.023%
 }
 
 #hotels-list .btn.btn-primary {
     background-color: var(--bg-background) !important;
-    border: 0px;
+    border: 0;
     font-family: var(--primary-font);
-    font-size: 16px !important;
+    font-size: 16px !important
 }
 
 #hotels-list .btn.btn-primary:hover {
-    background: #FFF !important;
+    background: #fff !important;
     color: var(--bg-background) !important;
-    border: 1px solid var(--bg-background);
+    border: 1px solid var(--bg-background)
 }
 
 .hotels-p1 {
     color: #595959 !important;
     font-family: var(--primary-font);
-    font-size: 25px !important;
-
-
+    font-size: 25px !important
 }
 
 .hotels-p2 {
@@ -617,8 +591,7 @@ h1.card-title-h1 {
     font-family: var(--primary-font) !important;
     font-size: 25px !important;
     font-style: normal !important;
-    font-weight: 400 !important;
-
+    font-weight: 400 !important
 }
 
 .hotels-p3 {
@@ -627,8 +600,7 @@ h1.card-title-h1 {
     font-size: 20px !important;
     font-style: normal !important;
     font-weight: 500 !important;
-    margin-top: -42px;
-
+    margin-top: -42px
 }
 
 .hotels-p4 {
@@ -637,23 +609,21 @@ h1.card-title-h1 {
     font-size: 25px !important;
     font-style: normal !important;
     font-weight: 600 !important;
-    margin-top: -26px;
-
+    margin-top: -26px
 }
 
 @media (max-width:600px) {
     #banner-image {
         background-image: url(../images/medanta-mobile.webp);
         background-repeat: no-repeat;
-        background-size: cover;
-        /* height: 869px; */
+        background-size: cover
     }
 
     #banner-image p.banner-p {
         font-family: 'Open Sans', sans-serif;
-        color: #FFF !important;
+        color: #fff !important;
         font-weight: 700;
-        font-size: 24px !important;
+        font-size: 24px !important
     }
 
     .tab {
@@ -661,118 +631,104 @@ h1.card-title-h1 {
         justify-content: center;
         flex-wrap: wrap;
         position: relative;
-        /* overflow: scroll; */
         padding: 8px 10px;
-        background: linear-gradient(to right, #f2eeee 0%, rgba(226, 226, 226, 0%) 50%),
-            linear-gradient(to left, #f2eeee 0%, rgba(226, 226, 226, 0%) 50%);
+        background: linear-gradient(to right, #f2eeee 0, rgba(226, 226, 226, 0) 50%), linear-gradient(to left, #f2eeee 0, rgba(226, 226, 226, 0) 50%)
     }
 
     .tab a {
         width: 10rem;
         text-align: center;
-        background: #FFF;
-        /* background: linear-gradient(to left, #f3f3f3, rgba(240, 240, 240, 0)) !important; */
+        background: #fff
     }
 
     .tab button {
-        /* width: 10.5rem; */
         padding: 10px 5px;
-        font-size: 15px;
+        font-size: 15px
     }
-
-
 
     .tab a.active {
         color: #fff;
         background: var(--bg-background) !important;
-        border-bottom: 3px solid var(--bg-background);
+        border-bottom: 3px solid var(--bg-background)
     }
 
     .tab a:hover {
         color: #fff;
         background: var(--bg-background) !important;
-        border-bottom: 3px solid var(--bg-background);
+        border-bottom: 3px solid var(--bg-background)
     }
 
-
-
     #banner-image h1.h1 {
-
-        font-size: 33px;
+        font-size: 33px
     }
 
     #banner-image h1.h11 {
-
-        font-size: 33px;
+        font-size: 33px
     }
 
     #banner-image p {
-
-        line-height: 24.565px;
+        line-height: 24.565px
     }
 
     #banner-image h2 {
         font-family: var(--primary-font);
-        font-size: 31px;
-
+        font-size: 31px
     }
 
     .opinion {
-        padding: 9px 2px !important;
+        padding: 9px 2px !important
     }
 
     a.btn {
         font-size: 17px;
-        width: 49%;
+        width: 49%
     }
 
     .get-free-opinin {
-        padding-left: 0rem !important;
+        padding-left: 0 !important
     }
 
     .spec-button-1 {
-        margin-bottom: 30px;
+        margin-bottom: 30px
     }
-
 }
 
 @media (max-width:375px) {
     a.btn {
         font-size: 17px;
-        width: auto;
+        width: auto
     }
 }
 
 @media (min-width:1600px) {
     .tabcontent.card-body {
-        padding: 2em 1em;
+        padding: 2em 1em
     }
 
     a.btn {
-        font-size: 17px;
+        font-size: 17px
     }
 }
 
 @media (max-width:1900px) {
     .tabcontent.card-body {
-        padding: 2em 1em;
+        padding: 2em 1em
     }
 
     a.btn {
         font-size: 17px;
-        width: 49%;
+        width: 49%
     }
 
     .banner-link {
         font-size: 17px;
         width: 49%;
-        margin-top: 6rem !important;
+        margin-top: 6rem !important
     }
 }
 
 img {
-    object-fit: contain;
-    /* width: 100%; */
+    object-fit: contain
 }
 
 .h6-checkup {
@@ -782,7 +738,7 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-transform: capitalize;
+    text-transform: capitalize
 }
 
 .p-checkup {
@@ -791,7 +747,7 @@ img {
     font-size: 44.688px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: normal
 }
 
 .p1-checkup {
@@ -800,7 +756,7 @@ img {
     font-size: 17.313px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: normal
 }
 
 .p2-checkup {
@@ -809,7 +765,7 @@ img {
     font-size: 16.313px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: normal
 }
 
 .ul-checkup {
@@ -819,7 +775,7 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
-    padding: 0px 10px;
+    padding: 0 10px
 }
 
 .spec-h1 {
@@ -828,7 +784,7 @@ img {
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
-    line-height: 178.5%;
+    line-height: 178.5%
 }
 
 .spec-p {
@@ -837,7 +793,7 @@ img {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 178.5%;
+    line-height: 178.5%
 }
 
 .spec-button {
@@ -853,200 +809,34 @@ img {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    border: 0px;
+    border: 0
 }
 
 .spec-button:focus {
     background-color: #fff;
     color: var(--bg-background);
-    border: 1px solid var(--bg-background);
+    border: 1px solid var(--bg-background)
 }
 
 .spec-button:hover {
     background: #fff;
     color: var(--bg-background);
-    border: 1px solid var(--bg-background);
+    border: 1px solid var(--bg-background)
 }
 
 .fa-check-circle {
-    color: #0CA854;
+    color: #0ca854
 }
-
-.foot-fa-phone {
-    color: var(--bg-background);
-    font-size: 31px !important;
-}
-
-
-
-/* wire frames */
-.reverse {
-    transform: scaleX(-1);
-}
-
-.flowchart {
-    /* display: flex;
-  justify-content: center;
-  align-items: center; */
-    /* gap: 80px; */
-    /* flex-wrap: nowrap;
-  position: relative; */
-    min-width: 100%;
-    padding: 9px 10%;
-    height: 24rem;
-}
-
-.step {
-    text-align: center;
-    position: relative;
-    width: 155px;
-    height: 95px;
-    padding: 6px;
-    /* max-width: 15%; */
-    /* border: 6px solid var(--bg-background); */
-    /* border-radius: 18px; */
-    display: grid;
-    align-content: center;
-}
-
-/* .step:nth-child(even) {
-    background: #FFF1EE;
-}
-
-.step:nth-child(odd) {
-    background: #efcbc2;
-} */
-
-.step-1 {
-    right: 60px;
-}
-
-.step-2 {
-    top: 160px;
-    left: 72px;
-}
-
-.step-3 {
-    bottom: 55px;
-    left: 206px;
-}
-
-.step-4 {
-    top: -190px;
-    left: 206px;
-}
-
-.step-5 {
-    top: -30px;
-    left: 336px;
-}
-
-.step-6 {
-    bottom: 380px;
-    left: 468px;
-}
-
-.step-7 {
-    top: -220px;
-    left: 600px;
-}
-
-.step-8 {
-    top: -570px;
-    left: 730px;
-}
-
-.step-9 {
-    top: -410px;
-    left: 860px;
-}
-
 
 .icon {
     font-size: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 5px
 }
 
 .label {
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 700
 }
-
-.curve {
-    position: absolute;
-    width: 40%;
-    border: 2px solid #6c757d;
-    transform: translateX(-100%) rotate(180deg);
-}
-
-.curve.down {
-    border-top: none;
-    border-right: none;
-    border-bottom-left-radius: 50px;
-    height: 100px;
-    left: 103%;
-    top: 50px;
-}
-
-.curve.down.long {
-    border-top: none;
-    border-right: none;
-    border-bottom-left-radius: 50px;
-    height: 195px;
-    left: 108%;
-    top: 48px;
-}
-
-.curve.up.long {
-    height: 205px;
-    border-top: none;
-    border-left: none;
-    border-bottom-right-radius: 50px;
-    left: 142%;
-    bottom: 25%;
-    transform: translateX(-100%) rotate(0deg);
-}
-
-.curve.up.half {
-    height: 70px;
-    border-top: none;
-    border-left: none;
-    border-bottom-right-radius: 50px;
-    left: 144%;
-    bottom: 52%;
-    transform: translateX(-100%) rotate(0deg);
-}
-
-.curve.up.straight {
-    left: 52%;
-    border-radius: 0px;
-    border-bottom: none;
-    height: 50px;
-    bottom: 85px;
-    border-right: none;
-    border-top: none;
-}
-
-.curve.up.long-divider {
-    left: 52%;
-    border-radius: 0px;
-    border-bottom: none;
-    height: 110px;
-    bottom: -136px;
-    border-right: none;
-    border-top: none;
-}
-
-.curve.right {
-    height: 210px;
-    transform: translateX(-30%) rotate(180deg);
-}
-
-.curve.left {
-    height: 210px;
-    transform: translateX(-30%) rotate(180deg);
-}
-
 
 .arrow {
     position: absolute;
@@ -1056,47 +846,13 @@ img {
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 15px solid #6c757d;
+    border-top: 15px solid #6c757d
 }
 
 .arrow.up {
     bottom: -20px;
-    transform: translateX(-50%) rotate(180deg);
+    transform: translateX(-50%) rotate(180deg)
 }
-
-.arrow.down {
-    bottom: -20px;
-    transform: translateX(-50%) rotate(180deg);
-}
-
-.ar-1 {
-    left: 130%;
-}
-
-.ar-2 {
-    top: -30px;
-    left: 141%;
-}
-
-.ar-3 {
-    top: -30px;
-    left: 52%;
-}
-
-.ar-4 {
-    left: 135%;
-}
-
-.ar-5 {
-    left: 141%;
-    top: -30px;
-}
-
-.ar-6 {
-    top: 140px;
-    left: 52%;
-}
-
 
 .card-bg {
     padding: 30px 20px;
@@ -1104,41 +860,33 @@ img {
     min-height: 350px;
     color: #000;
     background: #e6e7d9;
-    border: 2px solid #f6e9e9;
+    border: 2px solid #f6e9e9
 }
 
 .expect .count-expect:nth-child(even) .card-bg {
-    background: #fff;
+    background: #fff
 }
 
 .expect .count-expect .card img {
     max-width: 75px;
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
-
-@media screen and (max-width: 800px) {
-
+@media screen and (max-width:800px) {
     .health-area {
-        justify-content: normal !important;
+        justify-content: normal !important
     }
 
     .spec-button {
         width: 100%;
-        padding: 18px 0;
+        padding: 18px 0
     }
 
     .preloader-logo {
         width: 120px;
-        margin-bottom: 20px;
-    }
-
-    .wireframes {
-        margin-top: 0px;
-        display: none;
+        margin-bottom: 20px
     }
 }
-
 
 #preloader {
     position: fixed;
@@ -1146,39 +894,33 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: #fff;
     z-index: 9999;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center
 }
 
 .spinner-wrapper {
-    text-align: center;
+    text-align: center
 }
 
 .preloader-logo {
     width: 180px;
-    /* adjust size as needed */
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
-
-/* Card carousel Slides  */
-
-
 .card-carousel-wrapper {
-    overflow: hidden;
+    overflow: hidden
 }
 
 .card-carousel {
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch
 }
 
 .card-carousel::-webkit-scrollbar {
-    display: none;
-    /* Hide scroll bar */
+    display: none
 }
 
 .btn-scroll {
@@ -1190,13 +932,13 @@ img {
     border: none;
     font-size: 24px;
     padding: 10px;
-    z-index: 10;
+    z-index: 10
 }
 
 .btn-left {
-    left: 0;
+    left: 0
 }
 
 .btn-right {
-    right: 0;
+    right: 0
 }
