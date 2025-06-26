@@ -540,12 +540,16 @@ a:hover {
 
 .banner-hero-title {
   position: relative;
-  top: 20vh;
+  top: 30vh;
   color: #0ca854;
-  box-shadow: 0 0 1px 1px #2197217a
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
 
 @media screen and (max-width:800px) {
+  .banner-hero-title {
+    top: 20vh;
+  }
+
   .tab {
     position: relative
   }
@@ -612,8 +616,11 @@ a:hover {
 
 .slider {
   background-image: url(fortis-gurugram.webp) !important;
-  height: 350px;
-  background-size: cover
+  min-height: 30rem;
+  background-size: cover;
+  background-position: center center;
+  /* center the image */
+  background-repeat: no-repeat;
 }
 
 .font_slider {
@@ -902,7 +909,7 @@ a:hover {
 }
 
 h1 {
-  font-size: 27px !important
+  font-size: 32px !important;
 }
 
 .font-slider2 {
