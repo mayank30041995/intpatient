@@ -232,6 +232,7 @@ body {
 
 .topbar-text {
   font-size: 17px;
+  line-height: 15px;
   /* padding: 3px; */
 }
 
@@ -1411,7 +1412,7 @@ table {
   }
 
   .tab {
-    margin: 0px 16px;
+    margin: 0px 25px;
   }
 
   .new_mr {
@@ -1453,7 +1454,7 @@ table {
     font-weight: 500;
     font-size: 14px;
     height: 48px;
-    width: 198px;
+    width: 225px;
     margin-left: 40%;
     margin-top: 0px;
   }
@@ -1792,7 +1793,7 @@ table {
   }
 
   .topbar-text {
-    margin-left: 35px;
+    margin-left: 0px;
     text-align: center;
     margin-top: 5px !important;
   }
@@ -1807,7 +1808,7 @@ table {
 
   .topbar-icons {
     /* margin-left: 5px; */
-    height: 1rem !important;
+    height: auto !important;
   }
 
   .tb_text {
