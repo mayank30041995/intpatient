@@ -159,18 +159,18 @@
     }
 
     .drawer-items i {
-        font-size: 75px !important;
+        font-size: 65px !important;
         height: auto !important;
     }
 
     .drawer-items button {
-        font-size: 75px;
+        font-size: 65px;
         align-items: baseline;
         height: auto !important;
     }
 
     .logo-yx {
-        width: 18rem;
+        width: 15rem;
         height: auto;
     }
 
@@ -229,7 +229,7 @@
     }
 
     .drawer-banner h2 {
-        font-size: 85px;
+        font-size: 75px;
         font-weight: 700;
     }
 
@@ -265,7 +265,7 @@ body {
 }
 
 .navbar-nav {
-    flex: none !important;
+    /* flex: none !important; */
     gap: 12px;
 }
 
@@ -302,7 +302,7 @@ p {
 }
 
 #navbarSupportedContent {
-    font-size: 16px;
+    font-size: 1rem;
     /* text-align: center; */
     /* width: 164px; */
     /* justify-content: center;
@@ -486,10 +486,10 @@ p {
 
 #contant_box {
     position: relative;
-    top: -400px;
+    bottom: 425px;
     width: 100%;
     height: 311px;
-    padding-left: 284px;
+    text-align: center;
 }
 
 #block_IV {
@@ -787,9 +787,8 @@ div.desc {
 #slider-btn2 {
     margin-top: 20px;
     background: #015E79;
-    width: 390px;
     height: 99px;
-    font-size: 36px;
+    font-size: 45px;
 }
 
 .heading-top {
@@ -935,8 +934,9 @@ div.desc {
 
         border: 2.1pt solid #183b5d59 !important;
         font-size: 55px !important;
-        padding-block: 57px;
+        padding-block: 15px;
         color: white;
+        text-align: center;
     }
 }
 
@@ -979,7 +979,7 @@ div.desc {
     .navbar-toggler:not(:disabled):not(.disabled) {
         cursor: pointer;
         position: relative;
-        left: 548px;
+        left: 350px;
     }
 }
 
@@ -1276,8 +1276,7 @@ div.desc {
 
 @media screen and (max-width: 800px) {
     #contant_box {
-        top: -394px;
-        padding-left: 162px;
+        padding-left: 40px;
     }
 }
 
@@ -1311,6 +1310,7 @@ div.desc {
 @media screen and (max-width: 800px) {
     .navbar {
         padding: 0.5rem -1rem;
+        display: block;
     }
 }
 
@@ -1436,9 +1436,7 @@ div.desc {
 @media screen and (max-width: 800px) {
     .card-img-top-res-mob {
         display: block !important;
-        margin-left: 137px;
-
-
+        margin-left: 40px;
     }
 }
 
@@ -1446,10 +1444,9 @@ div.desc {
 @media screen and (max-width: 800px) {
     .card-img-top-stories-ress-mob {
         display: block !important;
-
         width: 882px;
         height: 665px;
-        margin-left: 137px !important;
+        margin-left: 40px !important;
     }
 }
 
@@ -1458,7 +1455,7 @@ div.desc {
 }
 
 .post-new {
-    max-width: 27%;
+    /* max-width: 27%; */
     padding-block: 12px;
 }
 

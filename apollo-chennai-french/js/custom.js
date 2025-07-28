@@ -3,7 +3,7 @@ document.getElementById('cvb').classList.add('active')
 
 function openTab(evt, tabLink) {
   var i, tabcontent, tablinks
-  console.log('tabLink', tabLink)
+  // console.log('tabLink', tabLink)
   // Hide all tab contents
   tabcontent = document.getElementsByClassName('tabcontent')
   for (i = 0; i < tabcontent.length; i++) {
