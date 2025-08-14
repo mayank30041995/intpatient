@@ -134,7 +134,7 @@ html {
   }
 
   #drawer {
-    height: 45%;
+    height: auto;
     width: 100%;
     border-top-left-radius: 30px;
     /* Rounded top-left corner */
@@ -265,6 +265,7 @@ html {
 }
 
 .inner_button {
+  width: fit-content !important;
   border: none;
   background: #f0a815;
   width: 183px;
@@ -623,22 +624,13 @@ h1 {
 }
 
 
-
-
-
-
-
-
-
-
-
 .whats-app {
   background-image: url(../assets/img/whtas-app.svg);
   height: 49px;
   background-position: 100% 100%;
   width: 48px;
   background-repeat: no-repeat;
-  margin-left: 173px;
+  margin-left: 190px;
   margin-top: -61px;
 }
 
@@ -669,7 +661,7 @@ button {
   margin-inline: 12px;
   align-items: center;
   margin-top: 36px;
-  padding-top: 37px;
+  padding-top: 22px;
 }
 
 .banner-bn {

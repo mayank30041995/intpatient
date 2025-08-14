@@ -203,8 +203,8 @@ body {
     }
 
     .tabIcons {
-        width: 18px !important;
-        height: 16px !important
+        width: 28px !important;
+        height: 22px !important
     }
 
     .tabIcons2 {
@@ -213,9 +213,8 @@ body {
     }
 
     #openBtn {
-        width: 95%;
+        width: 90%;
         bottom: 10px;
-        left: 10px;
         font-size: 28px;
         height: 8rem;
         border-radius: 12px
@@ -654,14 +653,15 @@ h1.card-title-h1 {
     }
 
     .tab a {
-        width: 10rem;
+        width: 100%;
         text-align: center;
         background: #fff
     }
 
     .tab button {
         padding: 10px 5px;
-        font-size: 15px
+        font-size: 15px;
+        width: 100%;
     }
 
     .tab a.active {
@@ -735,7 +735,7 @@ h1.card-title-h1 {
 
     a.btn {
         font-size: 17px;
-        width: 49%
+        width: fit-content !important;
     }
 
     .banner-link {

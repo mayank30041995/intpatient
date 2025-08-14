@@ -308,7 +308,7 @@ a:hover {
 
 .cost_box {
   border: 2px solid #000;
-  height: 111px;
+  height: auto;
   text-align: left;
   padding: 16px;
   margin: 1px;

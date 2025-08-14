@@ -44,7 +44,7 @@ function scrollCarousel(direction) {
 }
 
 function appRun() {
-  document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('click', function () {
     // Get all button elements on the page
     const buttons = document.querySelectorAll('button,a,p')
 

@@ -1632,13 +1632,13 @@ div.desc {
 }
 
 .logo-yx {
-    border-radius: 8px;
+    border-radius: 16px;
 }
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .logo-yx {
-        width: 45vw;
+        width: 25%;
         height: auto;
     }
 
@@ -1667,7 +1667,7 @@ div.desc {
     }
 
     #drawer {
-        height: 45%;
+        height: auto;
         width: 100%;
         border-top-left-radius: 100px;
         /* Rounded top-left corner */
@@ -1703,7 +1703,7 @@ div.desc {
     }
 
     .drawer-banner {
-        margin-top: 160px;
+        margin-top: 16rem;
         background-color: #fff;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
         padding: 15px 2px 2px;
@@ -1713,7 +1713,7 @@ div.desc {
     }
 
     .drawer-banner h2 {
-        font-size: 7rem;
+        font-size: 6rem;
         font-weight: 700;
     }
 
