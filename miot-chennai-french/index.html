@@ -28,6 +28,16 @@
 </head>
 
 <body>
+  <!-- Pre loader -->
+  <div id="preloader">
+    <div class="spinner-wrapper">
+      <div class="spinner-border primary_color" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <img src="assets/logo/favicon.webp" alt="Loading..." class="preloader-logo">
+    </div>
+  </div>
+  <!-- End of Pre loader -->
   <!--top bar-->
   <div class="container-fluid top-bar ">
     <div class="row">
@@ -1476,6 +1486,14 @@
       event.stopPropagation(); // Prevent click inside drawer from closing it
     });
 
+  </script>
+
+  <script>
+    // pre load area
+    window.addEventListener('load', () => {
+      const preloader = document.getElementById('preloader')
+      preloader.style.display = 'none'
+    })
   </script>
 </body>
 
