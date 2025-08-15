@@ -12,6 +12,14 @@ html {
   }
 }
 
+a {
+  color: #FFF;
+}
+
+a:hover {
+  color: #e2e0e0;
+}
+
 #openBtn {
   display: grid;
   justify-items: center;
@@ -49,7 +57,7 @@ html {
 }
 
 .drawer-content {
-  padding: 10px 20px;
+  padding: 20px 20px;
   height: 100%;
   overflow-y: auto;
 }
@@ -1085,8 +1093,8 @@ a {
   }
 
   .dr-card {
-    height: 311px !important;
-    width: 186px;
+    height: 390px !important;
+    width: 180px;
     position: relative;
     margin-bottom: -8px;
     border: 2px solid #58595B !important;
