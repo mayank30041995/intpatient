@@ -1307,26 +1307,23 @@
 
     </script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Get all button elements on the page
-            const buttons = document.querySelectorAll('button,p, a');
+        // Get all button elements on the page
+        const buttons = document.querySelectorAll('button,p, a');
 
-            // Loop through each button
-            buttons.forEach(function (button) {
-                // Attach a click event listener to each button
-                button.addEventListener('click', function () {
-                    // Get the URL from the button's data-url attribute
-                    const url = button.getAttribute('data-url');
+        // Loop through each button
+        buttons.forEach(function (button) {
+            // Attach a click event listener to each button
+            button.addEventListener('click', function () {
+                // Get the URL from the button's data-url attribute
+                const url = button.getAttribute('data-url');
 
-                    // Check if a URL is defined for the button
-                    if (url) {
-                        // Open the URL in a new tab
-                        window.open(url, '_blank');
-                    }
-                });
+                // Check if a URL is defined for the button
+                if (url) {
+                    // Open the URL in a new tab
+                    window.open(url, '_blank');
+                }
             });
         });
-
     </script>
     <script>
         function openNav() {
