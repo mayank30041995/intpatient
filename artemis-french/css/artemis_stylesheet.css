@@ -2,6 +2,236 @@ body {
     overflow-x: hidden;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
+#openBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #a69837 !important;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 0.83px;
+    font-weight: 600;
+    z-index: 10;
+    border-radius: 8px;
+    display: grid;
+    justify-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#drawer {
+    position: fixed;
+    bottom: -100%;
+    right: 0;
+    height: 75%;
+    width: 35%;
+    background: linear-gradient(#a69837, #d2c047);
+    color: #fff;
+    /* Text color for contrast */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    transition: bottom 0.3s ease-in-out;
+    z-index: 15;
+    border-top-left-radius: 20px;
+    /* Rounded top-left corner */
+    border-top-right-radius: 20px;
+}
+
+.drawer-content {
+    padding: 20px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.drawer-items {
+    margin-top: 20px;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    gap: 5px;
+}
+
+.drawer-items button {
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 2.8rem;
+    border-radius: 2px;
+    color: #2d9f28;
+    font-weight: 600;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.drawer-items button:active {
+    transform: scale(0.99);
+}
+
+.drawer-banner {
+    margin-top: 100px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px 2px 2px;
+    color: #000;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.drawer-banner h2 {
+    letter-spacing: 0.83px;
+}
+
+#closeBtn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 2px 5px 7px;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.logo-y {
+    background: #FFF;
+    height: 30px;
+    width: 28px;
+    margin-bottom: 8px;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+#imasCircle {
+    display: grid;
+    justify-items: center;
+}
+
+.drawer-items {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none !important;
+    border: none;
+}
+
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: transparent !important;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .logo-y {
+        background: #FFF;
+        height: 30px;
+        width: 28px;
+        margin-bottom: 8px;
+        padding: 4px;
+    }
+
+    #openBtn {
+        bottom: 10px;
+        left: 10px;
+        font-size: 23px;
+        display: grid;
+        justify-items: center;
+        border-radius: 12px;
+        padding: 26px 0;
+    }
+
+    #closeBtn {
+        font-size: 14px;
+        background-color: red;
+        color: white;
+        top: -100%;
+        right: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 23px;
+        padding: 7px 10px 10px 10px;
+    }
+
+    #drawer {
+        height: 45%;
+        width: 100%;
+        border-top-left-radius: 100px;
+        /* Rounded top-left corner */
+        border-top-right-radius: 100px;
+        border: 5px solid #8fbfd1;
+    }
+
+    #imasCircle {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        border-radius: 38px;
+        top: 10px;
+        left: 40%;
+        /* background-color: #0f0f0f; */
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); */
+        border: 1px solid #fff;
+        text-align: center;
+        padding: 21px 14px;
+        border: none;
+    }
+
+    .drawer-items {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .drawer-items h2 {
+        font-size: 18px;
+    }
+
+    .drawer-banner {
+        margin-top: 80px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+        padding: 15px 2px 2px;
+        color: #000;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .drawer-banner h2 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .drawer-banner p {
+        font-size: 14px;
+    }
+}
+
+.xmx {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+
+
+.helth-check {
+    border: 3px dotted #d5d5d5;
+    margin-block: 65px;
+    padding: 35px;
+    text-align: center;
+}
+
 .xmx {
     position: fixed;
     right: 0px;
@@ -20,7 +250,7 @@ body {
     width: 0;
     position: fixed;
     height: 100%;
-    background-color: #047C9E;
+    background-color: #a69837;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -59,7 +289,7 @@ body {
 
 .topbar {
     z-index: 99;
-    background-color: #237d9e;
+    background: #a69837;
     color: white;
     font-size: 16px;
     position: fixed;
@@ -71,7 +301,7 @@ body {
 }
 
 .fa {
-    font-size: 29px !important;
+    font-size: 19px !important;
     margin-block: 5px;
 }
 
@@ -103,14 +333,14 @@ body {
 }
 
 .slider {
-    background-image: url(../img/apollo_bang.webp);
+    background-image: url(../img/artmis-hos.jpg);
     height: 438px;
     background-size: 100% 121%;
 }
 
 /* cardio dr */
 .card-img-top1 {
-    background-image: url(../assets/Cardiology/Dr.\ Abhijit\ Vilas\ Kulkarni.png);
+    background-image: url(../assets/Cardiology/Dr.\ Akhil\ Govil.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 13px;
@@ -122,9 +352,9 @@ body {
 }
 
 .card-img-top2 {
-    background-image: url(../assets/Cardiology/Dr.\ Arul\ D\ Furtado.png);
+    background-image: url(../assets/Cardiology/Dr.\ Balbir\ Kalra.png);
     height: 207.53px;
-    background-size: cover;
+    background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
     margin-inline: 11px;
     margin-top: 11px;
@@ -132,7 +362,7 @@ body {
 }
 
 .card-img-top3 {
-    background-image: url(../assets/Cardiology/Dr.\ C\ M\ Nagesh.png);
+    background-image: url(../assets/Cardiology/Dr.\ Kuldeep\ Arora.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -142,7 +372,7 @@ body {
 }
 
 .card-img-top4 {
-    background-image: url(../assets/Cardiology/Dr.\ Girish\ B\ Navasundi.png);
+    background-image: url(../assets/Cardiology/Dr.\ Sushant\ Srivastava.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -156,7 +386,7 @@ body {
 /* end cardio dr */
 /*neuro*/
 .card-img-top8 {
-    background-image: url(../assets/Neurology/Dr.\ Abhilash\ Bansal.png);
+    background-image: url(../assets/Neurology/Dr.\ Aditya\ Gupta.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -165,7 +395,7 @@ body {
 }
 
 .card-img-top9 {
-    background-image: url(../assets/Neurology/Dr.\ Arun\ L\ Naik.png);
+    background-image: url(../assets/Neurology/Dr.\ Pawan\ Goyal.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -174,7 +404,7 @@ body {
 }
 
 .card-img-top10 {
-    background-image: url(../assets/Neurology/Dr.\ K\ Kartik\ Revanappa.png);
+    background-image: url(../assets/Neurology/Dr.\ SK\ Rajan.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -183,7 +413,16 @@ body {
 }
 
 .card-img-top11 {
-    background-image: url(../assets/Neurology/Dr.\ Satishchandra\ P.png);
+    background-image: url(../assets/Neurology/Dr.\ Vipul\ Gupta.png);
+    height: 207.53px;
+    background-size: 100% 100%;
+    border-radius: 6px 6px 0px 0px;
+    margin-inline: 11px;
+    margin-top: 11px;
+}
+
+.card-img-top12 {
+    background-image: url(../assets/Neurology/Sumit\ Singh.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -196,7 +435,7 @@ body {
 /*neuro*/
 /*Orthopedic*/
 .card-img-top13 {
-    background-image: url(../assets/ORTHOPAEDIC/Dr.\ Ajith\ Prabhu.png);
+    background-image: url(../assets/ORTHOPAEDIC/Dr.\ Hitesh\ Garg.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -205,7 +444,7 @@ body {
 }
 
 .card-img-top14 {
-    background-image: url(../assets/ORTHOPAEDIC/Dr.\ Manish\ Samson.png);
+    background-image: url(../assets/ORTHOPAEDIC/Dr.\ Ramkinkar\ Jha.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -214,7 +453,7 @@ body {
 }
 
 .card-img-top15 {
-    background-image: url(../assets/ORTHOPAEDIC/Dr.\ Pradeep\ Kocheeppan.png);
+    background-image: url(../assets/ORTHOPAEDIC/Dr.\ Ravi\ Sahota.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -223,7 +462,7 @@ body {
 }
 
 .card-img-top16 {
-    background-image: url(../assets/ORTHOPAEDIC/Dr.\ Vidya\ Sagar\ M.png);
+    background-image: url(../assets/ORTHOPAEDIC/Dr.\ Sanjay\ Sarup.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -239,7 +478,7 @@ body {
 
 /*end ortho */
 .card-img-top23 {
-    background-image: url(../assets/ONCOLOGY/Dr.\ Anil\ Kamath.png);
+    background-image: url(../assets/ONCOLOGY/Dr.\Hari\ Goyal.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -248,7 +487,7 @@ body {
 }
 
 .card-img-top24 {
-    background-image: url(../assets/ONCOLOGY/Dr.\ N.\ Aditya\ Murali.png);
+    background-image: url(../assets/ONCOLOGY/Dr.\Lalit\ Kumar.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -257,7 +496,7 @@ body {
 }
 
 .card-img-top25 {
-    background-image: url(../assets/ONCOLOGY/Dr.\ Prof.\ Narasimhaiah\ Srinivasaiah.png);
+    background-image: url(../assets/ONCOLOGY/Dr.\Parveen\ Yadav.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -266,25 +505,7 @@ body {
 }
 
 .card-img-top26 {
-    background-image: url(../assets/ONCOLOGY/Dr.\ Rani\ Bhat.png);
-    height: 207.53px;
-    background-size: 100% 100%;
-    border-radius: 6px 6px 0px 0px;
-    margin-inline: 11px;
-    margin-top: 11px;
-}
-
-.card-img-top27 {
-    background-image: url(../assets/ONCOLOGY/Dr.\ Vijay\ Agarwal.png);
-    height: 207.53px;
-    background-size: 100% 100%;
-    border-radius: 6px 6px 0px 0px;
-    margin-inline: 11px;
-    margin-top: 11px;
-}
-
-.card-img-top28 {
-    background-image: url(../assets/ONCOLOGY/Dr.\ Vijay\ Bhaskar\ L.png);
+    background-image: url(../assets/ONCOLOGY/Dr.\Subodh\ Chandra\ Pande.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -297,7 +518,7 @@ body {
 
 
 .card-img-top39 {
-    background-image: url(../assets/Kidney/Dr.\ Jayanth\ Reddy.png);
+    background-image: url(../assets/Kidney/Dr.\ Giriraj\ Bora.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -308,7 +529,7 @@ body {
 
 
 .card-img-top40 {
-    background-image: url(../assets/Kidney/Dr.\ Ravishankar\ Bhat\ B.png);
+    background-image: url(../assets/Kidney/Dr.\ Harsha\ Jauhari.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -318,7 +539,7 @@ body {
 
 
 .card-img-top41 {
-    background-image: url(../assets/Kidney/Dr.\ Sandeep\ Satsangi.png);
+    background-image: url(../assets/Kidney/Dr.\ Sandeep\ Harkar.png);
     height: 207.53px;
     background-size: 100% 100%;
     border-radius: 6px 6px 0px 0px;
@@ -378,31 +599,31 @@ body {
 }
 
 .hotel-img {
-    background-image: url(../assets/Hotels/h1.jpeg);
+    background-image: url(../assets/Hotels/h1.webp);
     height: 207.53px;
     background-size: 100% 100%;
 }
 
 .hotel-img2 {
-    background-image: url(../assets/Hotels/h2.jpg);
+    background-image: url(../assets/Hotels/h2.webp);
     height: 207.53px;
     background-size: 100% 100%;
 }
 
 .hotel-img3 {
-    background-image: url(../assets/Hotels/h3.jpg);
+    background-image: url(../assets/Hotels/h3.webp);
     height: 207.53px;
     background-size: 100% 100%;
 }
 
 .hotel-img4 {
-    background-image: url(../assets/Hotels/h4.jpg);
+    background-image: url(../assets/Hotels/h4.webp);
     height: 207.53px;
     background-size: 100% 100%;
 }
 
 .hotel-img5 {
-    background-image: url(../assets/Hotels/h5.jpg);
+    background-image: url(../assets/Hotels/h5.webp);
     height: 207.53px;
     background-size: 100% 100%;
 }
@@ -425,6 +646,7 @@ body {
 .text-bnnr {
     color: white;
     padding-top: 137px;
+    font-size: 28px;
 }
 
 .text-bnnr-dis {
@@ -451,18 +673,22 @@ body {
 .dr_btn {
     height: 43px;
     border-radius: 10px;
-    background: #237d9e;
+    background: #a69837;
     border: none;
     color: white;
     padding: 8px 26px 8px 26px;
     margin-top: 4px;
     width: 100%;
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
 }
 
 .banner-bn {
-    background: #2582A1;
+    background: #a69837;
     height: 163px;
     color: white;
     font-size: 25px;
@@ -471,27 +697,32 @@ body {
 
 .btn-bnnr {
     border-radius: 15px;
-    background: #FDB931;
-    color: #ffffff;
+    background: #fff;
+    color: #a69837;
     padding: 12px 24px 12px 24px;
     cursor: pointer;
     border: none;
     font-weight: 500;
     margin-top: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: end;
 }
 
 .dr_btn2 {
     cursor: pointer;
     height: 43px;
     border-radius: 10px;
-    background: #0C6434;
+    background: #ffffff;
     border: none;
-    color: white;
+    color: #a69837;
     padding: 8px 26px 8px 26px;
     margin-top: 4px;
     width: 100%;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: -11px;
+    border: 1px solid;
 }
 
 .card-title {
@@ -530,8 +761,8 @@ ul {
 
 .btn-primary2 {
     color: #fff !important;
-    background-color: #237d9e !important;
-    border-color: #6994c3 !important;
+    background-color: #a69837 !important;
+    border-color: #a69837 !important;
     font-size: 14px;
     height: 55px;
     margin-bottom: 10px;
@@ -545,8 +776,8 @@ ul {
 
 .btn-primary {
     color: #fff !important;
-    background-color: #237d9e !important;
-    border-color: #6994c3 !important;
+    background-color: #a69837 !important;
+    border-color: #a69837 !important;
     font-size: 9px;
     height: 51px;
     margin-bottom: 10px;
@@ -556,9 +787,29 @@ ul {
     font-size: 15px;
 }
 
+.tab:hover {
+    border-bottom: 3px solid #FFF !important;
+}
+
+.tab.active {
+    border-radius: 0px;
+    color: #FFF;
+    background-color: transparent;
+    border-bottom: 3px solid #FFF !important;
+    text-decoration: none;
+}
+
+.btn:hover {
+    text-decoration: none !important;
+}
+
+.btn-primary:hover {
+    text-decoration: none !important;
+}
+
 .btn-info {
     color: #fff;
-    background-color: #195E76;
+    background-color: #a69837;
     left: 0px;
     position: relative;
     height: 89px;
@@ -571,6 +822,12 @@ ul {
     border: 1px solid white;
     padding-left: 4px;
     font-weight: 700;
+}
+
+.btn-info:hover {
+    background-color: #a69837 !important;
+    border-color: #a69837 !important;
+
 }
 
 .Patient_Services {
@@ -595,7 +852,7 @@ ul {
     font-size: 19px;
     border: none;
     outline: none;
-    background-color: #237d9e;
+    background-color: #a69837;
     color: white;
     cursor: pointer;
     padding: 6px;
@@ -610,7 +867,7 @@ ul {
 
 .heading {
     font-size: 32px;
-    color: #047C9E;
+    color: #a69837;
     text-align: center;
     padding-bottom: 18px;
     font-weight: 500;
@@ -640,7 +897,7 @@ body {
 }
 
 .footer {
-    background-color: #000000;
+    background-color: #706722;
     padding: 50px 0px 41px;
     margin-top: 0px;
     color: white;
@@ -713,7 +970,7 @@ table {
     font-size: 9px;
     border-radius: 4px;
     border: none;
-    background: #237d9e;
+    background: #a69837;
     color: white;
     text-align: left;
     padding-left: 23px;
@@ -733,7 +990,7 @@ table {
     position: relative;
     top: 40px;
     left: 31px;
-    color: #237d9e;
+    color: #a69837;
     font-size: 31px;
 }
 
@@ -753,12 +1010,13 @@ table {
 .sticky-element {
     position: sticky;
     top: 61px;
-    background-color: #ffffff;
-    padding: 10px;
+    background-color: #a69837;
+    padding: 2px;
     width: 100%;
     text-align: center;
     z-index: 2;
     padding-inline: 75px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 10px -12px;
 }
 
 .about-us-cont {
@@ -769,7 +1027,7 @@ table {
 }
 
 .sidebar-top {
-    background-color: #047C9E;
+    background-color: #a69837;
     padding: 8px;
     position: relative;
     top: -60px;
@@ -783,7 +1041,7 @@ table {
 }
 
 .sidebar_end_span {
-    color: #047c9e;
+    color: #a69837;
 
 }
 
@@ -794,18 +1052,19 @@ table {
 .new_mr {
     margin-left: 12px;
     margin-right: 16px;
-
+    background: #a69837;
 
 }
 
 .sidebar-h1 {
     font-size: 52px;
     margin-top: 16px;
-    color: #047c9e;
+    color: #a69837;
 }
 
 .footer-links2 {
     line-height: 30px;
+    color: white !important;
 }
 
 .footer-ph {
@@ -824,23 +1083,23 @@ table {
 
 .sidebar-button {
     border-radius: 50px;
-    background: #FDB931;
+    background: #fff;
     width: 72%;
     height: 64px;
     margin-top: 19px;
     font-size: 34px;
     font-weight: 600;
     margin-bottom: 14px;
-    color: white;
+    color: #a69837;
     cursor: pointer;
-    border: none;
+    border: 1px solid;
 }
 
 .navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show>.nav-link {
-    color: #237d9e;
+    color: #a69837;
 }
 
 .footer-links {
@@ -850,13 +1109,13 @@ table {
 .sidebar-span {
     font-size: 23px;
     font-weight: 600;
-    color: #047c9e;
+    color: #a69837;
 }
 
 #lst_lg_box {
     display: flex;
     margin-block: -3px;
-    background: #248caa1f;
+    background: #b3b3b31f;
     overflow: none;
     padding-block: 27px;
 }
@@ -940,13 +1199,13 @@ table {
 }
 
 .card-title-new {
-    color: #047C9E;
+    color: #a69837;
     margin-block: 20px;
     font-size: 23px;
 }
 
 .text-muted {
-    color: #0f6d9f !important;
+    color: #a69837 !important;
 }
 
 .card-blog {
@@ -955,11 +1214,96 @@ table {
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #237d9e;
+    color: #a69837;
 }
 
+.style-helth {
+    padding: 36px;
+    box-shadow: 0px 0px 2px 0px #d1d1d1;
+    border-radius: 7px;
+    background: #ffffff;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 32px;
+    border: 1px solid #897d2c;
+    position: relative;
+    left: -47px;
+    padding-left: 139px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    padding-block: 6px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #454545;
+    padding-inline: 11px;
+    text-align: left;
+    color: #7f7429 !important;
+    list-style-type: disc;
+
+}
+
+.h1,
+h1 {
+    color: #706621;
+    font-size: 21px;
+}
+
+.nav-item {
+    padding: 0px !important;
+    list-style-type: none !important;
+
+}
+
+.font_set {
+    font-size: 32px;
+    color: #706621;
+    text-align: left;
+}
+
+.logo-x {
+    position: absolute;
+    top: 20px;
+    height: 35px;
+    width: 30px;
+    border-radius: 4px;
+    padding: 4px;
+    background: #FFF;
+}
 
 @media screen and (max-width: 800px) {
+    li {
+
+        font-size: 12px !important;
+
+    }
+
+    .h1,
+    h1 {
+        font-size: 21px !important;
+    }
+
+    .style-helth {
+        padding: 35px;
+        box-shadow: 0px 0px 2px 0px #d1d1d1;
+        border-radius: 7px;
+        font-weight: 500;
+        margin-bottom: 14px;
+        position: relative;
+        left: -23px;
+        overflow: hidden;
+    }
+
+    .helth-check {
+        margin-block: 65px;
+        text-align: center;
+        padding: 0px !important;
+        border: none !important;
+        width: 85%;
+    }
+
     .footer_col2_font {
         display: none;
     }
@@ -1066,8 +1410,9 @@ table {
         font-size: 13px;
         font-weight: 600;
         margin-bottom: 14px;
-        color: white;
+        color: #a69837;
         border: none;
+        border: 1px solid;
     }
 
     .sidebar-middle {
@@ -1113,8 +1458,8 @@ table {
 
     .footer-links2 {
         margin-left: 163px;
-        margin-top: -136px;
-        font-size: 16px;
+        margin-top: -190px;
+        font-size: 26px !important;
     }
 
     .footer-links {
@@ -1142,9 +1487,11 @@ table {
     }
 
     .background-div {
-        height: 108px;
+        height: 106px;
         margin-top: 7px;
         margin-bottom: 46px;
+        width: 187px;
+        margin-left: -44px;
     }
 
     .navbar-toggler {
@@ -1159,10 +1506,13 @@ table {
     }
 
     .logo-x {
-        height: 61px;
+        height: 30px;
         position: relative;
-        top: -13px;
-        width: 64px;
+        top: -10px;
+        width: 48px;
+        object-fit: contain;
+        background: #fff;
+        border-radius: 8px;
     }
 
     .sidebar-logo {
@@ -1174,8 +1524,7 @@ table {
 
     .btn-primary2 {
         color: #fff !important;
-        background-color: #237d9e !important;
-        border-color: #6994c3 !important;
+        background-color: #a69837 !important;
         font-size: 16px;
         height: 48px !important;
         margin-bottom: 10px;
@@ -1184,8 +1533,7 @@ table {
 
     .btn-primary {
         color: #fff !important;
-        background-color: #237d9e !important;
-        border-color: #6994c3 !important;
+        background-color: #a69837 !important;
         font-size: 9px;
         height: 34px;
         margin-bottom: 10px;
@@ -1194,9 +1542,11 @@ table {
         font-weight: 600;
     }
 
+
+
     .text-bnnr {
         color: white;
-        padding-top: 83px;
+        padding-top: 117px;
         font-size: 31px;
     }
 
@@ -1273,7 +1623,7 @@ table {
     .price {
         top: 17px;
         font-size: 34px;
-        left: 108px;
+        left: 135px;
     }
 
     .km-dis {
@@ -1377,7 +1727,7 @@ table {
     .slider {
         height: 389px;
         background-size: 120% 100% !important;
-        margin-top: 42px;
+        margin-top: 30px;
         z-index: 0;
     }
 
@@ -1397,7 +1747,7 @@ table {
     .navbar-light .navbar-nav .nav-link.show,
     .navbar-light .navbar-nav .show>.nav-link {
         color: rgb(255 255 255 / 90%);
-        background: #21b2e7;
+        background: #a69837;
         width: 100% !important;
     }
 
@@ -1421,5 +1771,257 @@ table {
         border-radius: 4px;
         bottom: 21px;
 
+    }
+}
+
+
+
+
+
+/* wire frames */
+.reverse {
+    transform: scaleX(-1);
+}
+
+.flowchart {
+    /* display: flex;
+  justify-content: center;
+  align-items: center; */
+    /* gap: 80px; */
+    /* flex-wrap: nowrap;
+  position: relative; */
+    min-width: 100%;
+    padding: 12px 8%;
+    height: 23rem;
+}
+
+.step {
+    text-align: center;
+    position: relative;
+    width: 155px;
+    height: 95px;
+    padding: 6px;
+    /* max-width: 15%; */
+    border: 6px solid #d3d3d3;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 18px;
+    display: grid;
+    align-content: center;
+    color: #d9d1d1bd;
+}
+
+.step:nth-child(even) {
+    background: #b8ab58;
+}
+
+.step:nth-child(odd) {
+    background: #d1c576;
+}
+
+.step-1 {
+    right: 60px;
+}
+
+.step-2 {
+    top: 160px;
+    left: 72px;
+}
+
+.step-3 {
+    bottom: 55px;
+    left: 206px;
+}
+
+.step-4 {
+    top: -288px;
+    left: 206px;
+}
+
+.step-5 {
+    top: -122px;
+    left: 336px;
+}
+
+.step-6 {
+    bottom: 476px;
+    left: 468px;
+}
+
+.step-7 {
+    top: -315px;
+    left: 600px;
+}
+
+.step-8 {
+    top: -665px;
+    left: 730px;
+}
+
+.step-9 {
+    top: -505px;
+    left: 860px;
+}
+
+
+.icon {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.curve {
+    position: absolute;
+    width: 40%;
+    border: 2px solid #6c757d;
+    transform: translateX(-100%) rotate(180deg);
+}
+
+.curve.down {
+    border-top: none;
+    border-right: none;
+    border-bottom-left-radius: 50px;
+    height: 100px;
+    left: 61%;
+    top: 85px;
+}
+
+.curve.down.long {
+    border-top: none;
+    border-right: none;
+    border-bottom-left-radius: 50px;
+    height: 225px;
+    left: 115%;
+    top: 30px;
+}
+
+.curve.up.long {
+    height: 214px;
+    border-top: none;
+    border-left: none;
+    border-bottom-right-radius: 50px;
+    left: 142%;
+    bottom: 52%;
+    transform: translateX(-100%) rotate(0deg);
+}
+
+.curve.up.half {
+    height: 70px;
+    border-top: none;
+    border-left: none;
+    border-bottom-right-radius: 50px;
+    left: 144%;
+    bottom: 52%;
+    transform: translateX(-100%) rotate(0deg);
+}
+
+.curve.up.straight {
+    left: 52%;
+    border-radius: 0px;
+    border-bottom: none;
+    height: 50px;
+    bottom: 85px;
+    border-right: none;
+    border-top: none;
+}
+
+.curve.up.long-divider {
+    left: 52%;
+    border-radius: 0px;
+    border-bottom: none;
+    height: 135px;
+    bottom: -136px;
+    border-right: none;
+    border-top: none;
+}
+
+.curve.right {
+    height: 210px;
+    transform: translateX(-30%) rotate(0deg);
+}
+
+.curve.left {
+    height: 210px;
+    transform: translateX(-30%) rotate(180deg);
+}
+
+
+.arrow {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 140px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid #6c757d;
+}
+
+.arrow.up {
+    bottom: -20px;
+    transform: translateX(-50%) rotate(180deg);
+}
+
+.arrow.down {
+    bottom: -20px;
+    transform: translateX(-50%) rotate(180deg);
+}
+
+.ar-1 {
+    left: 50%;
+}
+
+.ar-2 {
+    top: -30px;
+    left: 143%;
+}
+
+.ar-3 {
+    top: -30px;
+    left: 52%;
+}
+
+.ar-4 {
+    left: 142%;
+}
+
+.ar-5 {
+    left: 141%;
+    top: -115px;
+}
+
+.ar-6 {
+    top: 120px;
+    left: 52%;
+}
+
+
+.card-bg {
+    padding: 30px 20px;
+    min-height: 350px;
+    color: #000;
+    background: #b8ab58;
+    border: 2px solid #f6e9e9;
+    font-weight: 600;
+}
+
+.expect .count-expect:nth-child(even) .card-bg {
+    background: #fff;
+}
+
+.expect .count-expect .card img {
+    max-width: 75px;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .wireframes {
+        margin-top: 0px;
+        display: none;
     }
 }
