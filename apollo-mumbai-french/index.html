@@ -97,6 +97,14 @@
                     height="74px">
                 <img class="logo-mob-res" src="assets_mob\Icons & Logos\webp\apollo logo.webp" alt="Apollo">
             </a>
+
+            <a class="text-muted  d-inline d-md-none" onclick="gtag_report_conversion();"
+                data-url="https://what.sapp.link/frenchapmumbai">
+                <i class="fa fa-whatsapp"></i> &nbsp;</a>
+            <a class="text-muted  d-inline d-md-none" onclick="gtag_report_conversion();"
+                data-url="https://what.sapp.link/frenchapmumbai">
+                (+91) 92669 70900</a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -173,7 +181,8 @@
                     <span class="text_color" style="">PATIENTS INTERNATIONAUX​</span><br>
 
                     <button onclick="gtag_report_conversion(); return false" id="slider-btn2" type="button"
-                        class="btn btn-primary btn-lg">Contacter sur WhatsApp</button>
+                        class="btn btn-primary btn-lg" data-url="https://what.sapp.link/frenchapmumbai">Contacter sur
+                        WhatsApp</button>
                 </div>
 
                 <div class="container-flud  text-center " id="slider-end-text">
@@ -1045,8 +1054,7 @@
                                 CBD Belapur, Navi Mumbai, Maharashtra 400614, Inde</p>
                         </div>
                         <div class="add">
-                            <p><i class="fa fa-phone" aria-hidden="true"></i>(+91) 98991
-                                87773</p>
+                            <p><i class="fa fa-phone" aria-hidden="true"></i>(+91) 92669 70900</p>
                         </div>
 
                         <img class="footer_logo" src="assets\Icons & Logos\webp\TT logo.webp" alt="Loding..."
@@ -1132,25 +1140,25 @@
 
     </script>
     <script>
-        document.addEventListener('click', function () {
-            // Get all button elements on the page
-            const buttons = document.querySelectorAll('button,p,a');
 
-            // Loop through each button
-            buttons.forEach(function (button) {
-                // Attach a click event listener to each button
-                button.addEventListener('click', function () {
-                    // Get the URL from the button's data-url attribute
-                    const url = button.getAttribute('data-url');
+        // Get all button elements on the page
+        const buttons = document.querySelectorAll('button,p,a');
 
-                    // Check if a URL is defined for the button
-                    if (url) {
-                        // Open the URL in a new tab
-                        window.open(url, '_blank');
-                    }
-                });
+        // Loop through each button
+        buttons.forEach(function (button) {
+            // Attach a click event listener to each button
+            button.addEventListener('click', function () {
+                // Get the URL from the button's data-url attribute
+                const url = button.getAttribute('data-url');
+
+                // Check if a URL is defined for the button
+                if (url) {
+                    // Open the URL in a new tab
+                    window.open(url, '_blank');
+                }
             });
         });
+
 
     </script>
     <script>
