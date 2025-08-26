@@ -528,7 +528,8 @@ a:hover {
 
 .icon-box {
   border-right: 2px solid #b7b2b280;
-  height: 141px
+  height: 141px;
+  padding: 21px;
 }
 
 .icon-box:hover {
