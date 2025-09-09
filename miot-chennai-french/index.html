@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>MIOT Chennai</title>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content=" #d93537;" />
+  <meta name="robots" content="noindex, nofollow">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script> -->
+
+  <link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </noscript>
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </noscript>
+
+  <link rel="preload" as="image" href="./assets/img/hero.webp" type="image/webp" media="(min-width: 768px)" />
+  <link rel="preload" as="image" href="./assets/img/MIOT.webp" type="image/webp" media="(max-width: 767px)" />
+  <link rel="preload" as="font">
+  <meta name="description" content="Aster Hospital ">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/miot_stylesheet.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="icon" type="x-icon" href="assets/logo/favicon.ico">
+</head>
+
+<body>
+  <!-- Pre loader -->
+  <div id="preloader">
+    <div class="spinner-wrapper">
+      <div class="spinner-border primary_color" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <img src="assets/logo/favicon.webp" alt="Loading..." class="preloader-logo">
+    </div>
+  </div>
+  <!-- End of Pre loader -->
+  <!--top bar-->
+  <div class="container-fluid top-bar ">
+    <div class="row">
+      <div class="col-12 col-md-12 top-bar-text">
+
+        <span class="location"> <i class="fa fa-map-marker"></i> MIOT International
+          4/112, Mount Poonamalle Road,
+          Manapakkam, Chennai - 600 089</span> <span id="mobileNo">
+        </span>&nbsp;&nbsp;&nbsp;
+        <br class="br_mobi">
+
+        <span id="mobileNo"><i class="fa fa-phone"></i> Whatsapp :
+          (+91) 92669 70900</span>&nbsp;
+        <button class="btn Emergency-btn">
+          <a href="https://what.sapp.link/chennaimiot" target="_blank" class="emn" style="color: rgb(32, 32, 32); ">
+            <span class="text-Emergency">
+              Urgences 24h/24 et 7j/7</span><img class="con-victor" src="assets/logo/favicon.ico">
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!--top bar for mobile -->
+  <!-- top bar for mobile -->
+  <div class="container mobile-navbar">
+    <div class="row ">
+      <div class="col-sm-8 col-8 p-col-1 ">
+        <span class="location"><i class="fa fa-map-marker"></i> Lieu : Chennai, Inde </span>
+        <br>
+        <span id="mobileNo"><i class="fa fa-phone"></i> Whatsapp : (+91) 92669 70900</span>
+      </div>
+      <div class="col-sm-4 col-4">
+        <button class="Emergency-btn">
+          <img class="con-victor" src="assets/logo/Vector-y.svg">
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!--end -->
+
+  <!--end-->
+
+  <!--navbar-->
+  <!-- <div class="container-fluid logo ">
+    <a class="navbar-brand" aria-label="alpha">
+      <img src="assets/logo/favicon.webp" class="logo-x" alt="HTML5 Icon" width="140px" height="100%">
+
+    </a>
+  </div> -->
+  <!--logo mobile-->
+  <div class="container-fluid logo-mobi text-center">
+    <a class="navbar-brand" aria-label="alpha">
+      <img src="assets/logo/favicon.webp" class="logo-x-mobi" alt="HTML5 Icon" width="120" height="50">
+
+    </a>
+  </div>
+  <!--end-->
+  <!-- ... -->
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="center-container" id="navbarNav">
+      <ul class="navbar-nav d-lg-flex ">
+        <li class="nav-item">
+          <a class="navbar-brand" aria-label="alpha">
+            <img src="assets/logo/favicon.webp" class="logo-x-mobi" alt="HTML5 Icon" width="160" height="50">
+          </a>
+        </li>
+        <li class="nav-item active ">
+          <a role="link" class="nav-link" aria-label="Overview" href="#overview">Aperçu</a>
+          <span class="sr-only">(actuel)</span>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-label="Doctors" href="#menu">Médecins</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-label="Healthcare Packages" href="#HealthPackages">Bilans de santé préventifs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://what.sapp.link/chennaimiot" target="_blank">Discuter avec un médecin via
+            Whatsapp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://what.sapp.link/chennaimiot" target="_blank">Patients internationaux</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#hotels">Hôtels</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--mobile navbar-->
+  <div class="navbar-mobile">
+    <div style="overflow-x: auto;">
+      <ul style="list-style-type: none; white-space: nowrap;">
+        <li class="nav-li-mobi active-mobi" style="display: inline;">Aperçu</li>
+        <li class="nav-li-mobi" style="display: inline;">Médecins</li>
+        <li class="nav-li-mobi" style="display: inline;">Bilans de santé préventifs</li>
+        <li class="nav-li-mobi" style="display: inline;">Discuter avec un médecin via Whatsapp</li>
+        <li class="nav-li-mobi" style="display: inline;">Patients internationaux</li>
+        <li class="nav-li-mobi" style="display: inline;">Hôtels</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!--end-->
+
+
+
+
+  <!-- ... -->
+
+  <!--navbar end -->
+
+  <!--slider-->
+  <section class="slider-banner">
+    <div class="container-fluid slider ">
+
+      <div class="inner_text">
+        <span class="text_inner font-weight-bold text-uppercase">Hôpital MIOT<br>Chennai</span><br>
+        <button class="inner_button" data-url="https://what.sapp.link/chennaimiot">Contacter via
+          WhatsApp</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!--end-->
+
+
+  <!--about us-->
+  <div class="container-fluid about-us">
+    <span class="head_about_us font-weight-bold my-5">À propos de MIOT Hospitals Chennai</span><br>
+    MIOT International est reconnu comme l’un des meilleurs hôpitaux en Inde, offrant des soins de santé d’exception
+    auxquels les patients font confiance. Avec une capacité de 1 000 lits et une expertise couvrant 63 spécialités
+    médicales, l’hôpital réunit une équipe de professionnels formés à l’international. Ces experts utilisent des
+    technologies avancées et une infrastructure de classe mondiale pour soigner, guérir et redonner espoir.
+    Régulièrement
+    classé parmi les leaders du secteur, MIOT International accueille des patients venus de plus de 130 pays, à la
+    recherche de soins de qualité et d’un chemin vers la guérison.
+  </div>
+
+
+  <a href="#menu">
+    <div class="container-fluid   scrool">
+      <div class="about-us-scrool">
+
+      </div>
+    </div>
+  </a>
+
+
+  <!--end-->
+
+
+  <br><br><br>
+
+  <div class="container heading text-center">
+    <span>
+      Nos services
+    </span><br>
+    <h1 class="font-weight-bold">Départements & Spécialistes</h1><br>
+    <div class=" container row-desgn text-center"></div>
+  </div>
+
+
+  <br><br>
+
+  <!--dr button-->
+  <div class="container dr_button" id="menu">
+    <div class="row justify-content-center">
+      <div class="col-md-4 col-sm-6 col-6">
+        <a href="#Cardiology" style="color: rgba(255, 222, 173, 0);">
+          <button class="btn btn-block sticky-btn">Cardiologie</button>
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-6">
+        <a href="#onco" style="color: rgba(255, 222, 173, 0);">
+          <button class="btn btn-block sticky-btn">Oncologie</button>
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-6">
+        <a href="#Transplant" style="color: rgba(255, 222, 173, 0);">
+          <button class="btn btn-block sticky-btn">Transplantation</button>
+        </a>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-sm-6 col-6">
+        <a href="#Urology" style="color: rgba(255, 222, 173, 0);">
+          <button class="btn btn-block sticky-btn">Urologie</button>
+        </a>
+      </div>
+      <div class="col-md-6 col-sm-6 col-6">
+        <a href="#Orthopedics" style="color: rgba(255, 222, 173, 0);">
+          <button class="btn btn-block sticky-btn">Orthopédie</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!--mobile dr button-->
+  <div class="container dr_button_mobile" id="menu">
+    <div class="row justify-content-center">
+      <div class="col-sm-6 col-6">
+        <a href="#Cardiology" style="color: rgba(255, 222, 173, 0);">
+          <button class="btn btn-block sticky-btn">Cardiologie</button></a>
+      </div>
+      <div class="col-sm-6 col-6">
+        <a href="#onco" style="color: rgba(255, 222, 173, 0);">
+          <button class="btn btn-block sticky-btn">Oncologie</button></a>
+      </div>
+      <div class="col-sm-6 col-6">
+        <a href="#Transplant" style="color: rgba(255, 222, 173, 0);">
+          <button class="btn btn-block sticky-btn">Transplantation</button>
+        </a>
+      </div>
+      <div class="col-sm-6 col-6">
+        <a href="#Urology" style="color: rgba(255, 222, 173, 0);">
+          <button class="btn btn-block sticky-btn">Urologie</button>
+        </a>
+      </div>
+      <div class="col-sm-6 col-6">
+        <a href="#Orthopedics" style="color: rgba(255, 222, 173, 0);">
+          <button class="btn btn-block sticky-btn">Orthopédie</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!---end -->
+
+
+  <!--end-->
+
+  <br><br>
+  <div class="container">
+    <span class="text-left meet_dr">
+      Rencontrez nos médecins<br>
+      expérimentés
+    </span>
+    <button class="btn-after-dr">Prendre un rendez-vous</button>
+  </div>
+  <br><br><br>
+  <!--dr card-->
+  <div class="container" id="onco">
+    <span class="de-heading font-weight-bold">Oncologie</span>
+  </div>
+
+  <div class="container text-center mt-4">
+    <div class="row">
+
+      <!-- Carte 1 -->
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card2" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr Senthil Kumar Ravichander</span><br>
+            <span class="dr-name-span">Oncologue chirurgical</span><br>
+            <a class="b-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Prendre un rendez-vous</a><br>
+            <a class="l-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Contacter sur WhatsApp</a>
+          </div>
+          <div class="card-links2 col-12">
+            <a href="https://what.sapp.link/chennaimiot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte 2 -->
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card3" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr Kishore S.</span><br>
+            <span class="dr-name-span">Oncologue hématologue</span><br>
+            <a class="b-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Prendre un rendez-vous</a><br>
+            <a class="l-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Contacter sur WhatsApp</a>
+          </div>
+          <div class="card-links2 col-12">
+            <a href="https://what.sapp.link/chennaimiot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte 3 -->
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card4" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr Prasad E</span><br>
+            <span class="dr-name-span">Oncologue médical</span><br>
+            <a class="b-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Prendre un rendez-vous</a><br>
+            <a class="l-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Contacter sur WhatsApp</a>
+          </div>
+          <div class="card-links2 col-12">
+            <a href="https://what.sapp.link/chennaimiot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte 4 -->
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card5" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr Suman Kalyan</span><br>
+            <span class="dr-name-span">Oncologue</span><br>
+            <a class="b-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Prendre un rendez-vous</a><br>
+            <a class="l-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Contacter sur WhatsApp</a>
+          </div>
+          <div class="card-links2 col-12">
+            <a href="https://what.sapp.link/chennaimiot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte 5 -->
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card6" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr Chezhian Subash</span><br>
+            <span class="dr-name-span">Hématologue, oncologue hématologue</span><br>
+            <a class="b-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Prendre un rendez-vous</a><br>
+            <a class="l-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Contacter sur WhatsApp</a>
+          </div>
+          <div class="card-links2 col-12">
+            <a href="https://what.sapp.link/chennaimiot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte 6 -->
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card1" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr V. Srinivasan</span><br>
+            <span class="dr-name-span">Oncologie</span><br>
+            <a class="b-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Prendre un rendez-vous</a><br>
+            <a class="l-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Contacter sur WhatsApp</a>
+          </div>
+          <div class="card-links2 col-12">
+            <a href="https://what.sapp.link/chennaimiot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <br>
+  <!--banner-->
+  <div class="container-fluid no-padding-container   banner-bn" id="">
+    <div class="container ">
+      <div class="row bnnr-row">
+        <div class="col-6 bnnr-mobi">
+          <p>CONTACTEZ UN EXPERT POUR UN ACCOMPAGNEMENT PERSONNALISÉ</p>
+        </div>
+        <div class="col-6 text-right chat_col">
+          <button class="btn-bnnr" data-url="https://what.sapp.link/chennaimiot" target="_blank">
+            Contacter via WhatsApp</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--end-->
+  <br>
+  <div class="container">
+    <span class="de-heading font-weight-bold" id="Transplant">Transplantation</span>
+  </div>
+
+  <div class="container text-center mt-4">
+    <div class="row">
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card9" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr Prof. Surendran R.</span><br>
+            <span class="dr-name-span">Transplantation hépatique</span><br>
+            <a class="b-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Prendre un rendez-vous</a><br>
+            <a class="l-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Contacter via WhatsApp</a>
+          </div>
+          <div class="card-links2 col-12">
+            <a href="https://what.sapp.link/chennaimiot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bloc suivant -->
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card10" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr Visakan Jagadeesan</span><br>
+            <span class="dr-name-span">Chirurgien-dentiste</span><br>
+            <a class="b-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Prendre un rendez-vous</a><br>
+            <a class="l-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Contacter via WhatsApp</a>
+          </div>
+          <div class="card-links2 col-12">
+            <a href="https://what.sapp.link/chennaimiot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--banner-->
+  <div class="container-fluid no-padding-container   banner-bn" id="">
+    <div class="container">
+      <div class="row bnnr-row">
+        <div class="col-6 bnnr-mobi ">
+          <p>CONTACTEZ UN EXPERT POUR UN ACCOMPAGNEMENT ET UN SOUTIEN PERSONNALISÉS</p>
+        </div>
+        <div class="col-6 text-right chat_col">
+          <button class="btn-bnnr " data-url="https://what.sapp.link/chennaimiot">Contacter via WhatsApp</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+
+  <br>
+  <div class="container">
+    <span class="de-heading font-weight-bold" id="Orthopedics">Orthopédie</span>
+  </div>
+
+  <div class="container text-center mt-4">
+    <div class="row">
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card13" alt="Image de la carte"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr Ashok Selvaraj</span><br>
+            <span class="dr-name-span">Chirurgien orthopédiste</span><br>
+            <a class="b-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Prendre un rendez-vous</a><br>
+            <a class="l-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Contacter via WhatsApp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href="https://what.sapp.link/chennaimiot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card14" alt="Image de la carte"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr Sowndhariya A</span><br>
+            <span class="dr-name-span">Chirurgienne orthopédiste</span><br>
+            <a class="b-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Prendre un rendez-vous</a><br>
+            <a class="l-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Contacter via WhatsApp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href="https://what.sapp.link/chennaimiot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card13-b" alt="Image de la carte"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr Billy Wilson</span><br>
+            <span class="dr-name-span">Chirurgien orthopédiste</span><br>
+            <a class="b-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Prendre un rendez-vous</a><br>
+            <a class="l-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Contacter via WhatsApp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href="https://what.sapp.link/chennaimiot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card13-c" alt="Image de la carte"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr Charanjit Singh Dhillon</span><br>
+            <span class="dr-name-span">Chirurgien orthopédiste</span><br>
+            <a class="b-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Prendre un rendez-vous</a><br>
+            <a class="l-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Contacter via WhatsApp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href="https://what.sapp.link/chennaimiot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card13-d" alt="Image de la carte"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr M Hema</span><br>
+            <span class="dr-name-span">Chirurgienne orthopédiste</span><br>
+            <a class="b-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Prendre un rendez-vous</a><br>
+            <a class="l-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Contacter via WhatsApp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href="https://what.sapp.link/chennaimiot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!--banner-->
+  <div class="container-fluid no-padding-container   banner-bn" id="">
+    <div class="container ">
+      <div class="row bnnr-row">
+        <div class="col-6 bnnr-mobi ">
+          <p>CONTACTEZ UN EXPERT POUR UN ACCOMPAGNEMENT ET DES CONSEILS PERSONNALISÉS</p>
+        </div>
+        <div class="col-6 text-right chat_col">
+          <button class="btn-bnnr" data-url="https://what.sapp.link/chennaimiot" target="_blank">Contacter via
+            WhatsApp</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+
+  <br>
+  <div class="container">
+    <span class="de-heading font-weight-bold" id="Urology">Urologie</span>
+  </div>
+
+  <div class="container text-center mt-4">
+    <div class="row">
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card15" alt="Image de la carte"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr Karrthik Krishnamurthy</span><br>
+            <span class="dr-name-span">Urologie</span><br>
+            <a class="b-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Prendre un rendez-vous</a><br>
+            <a class="l-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Contacter via WhatsApp</a>
+          </div>
+          <div class="card-links2 col-12">
+            <a href="https://what.sapp.link/chennaimiot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Bloc de carte supplémentaire désactivé -->
+    </div>
+  </div>
+
+
+  <!--banner-->
+  <div class="container-fluid no-padding-container banner-bn" id="">
+    <div class="container">
+      <div class="row bnnr-row">
+        <div class="col-6 bnnr-mobi">
+          <p>CONTACTEZ UN EXPERT POUR UN ACCOMPAGNEMENT PERSONNALISÉ ET DES CONSEILS ADAPTÉS</p>
+        </div>
+        <div class="col-6 text-right chat_col">
+          <button class="btn-bnnr" data-url="https://what.sapp.link/chennaimiot" target="_blank">Contacter via
+            WhatsApp</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--end-->
+
+  <br>
+  <div class="container">
+    <span class="de-heading font-weight-bold" id="Cardiology">Cardiologie</span>
+  </div>
+
+  <div class="container text-center mt-4">
+    <div class="row">
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card17" alt="Image de la carte"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr Gopal Murugesaan</span><br>
+            <span class="dr-name-span">Consultant Senior & Chef de Service</span><br>
+            <a class="b-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Prendre un rendez-vous</a><br>
+            <a class="l-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Contacter via WhatsApp</a>
+          </div>
+          <div class="card-links2 col-12">
+            <a href="https://what.sapp.link/chennaimiot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card18" alt="Image de la carte"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr K. Jaishankar</span><br>
+            <span class="dr-name-span">Consultant Principal – Cardiologie Interventionnelle</span><br>
+            <a class="b-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Prendre un rendez-vous</a><br>
+            <a class="l-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Contacter via WhatsApp</a>
+          </div>
+          <div class="card-links2 col-12">
+            <a href="https://what.sapp.link/chennaimiot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card19" alt="Image de la carte"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr Vijit K. Cherian</span><br>
+            <span class="dr-name-span">Consultant Principal – Cardiologie</span><br>
+            <a class="b-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Prendre un rendez-vous</a><br>
+            <a class="l-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Contacter via WhatsApp</a>
+          </div>
+          <div class="card-links2 col-12">
+            <a href="https://what.sapp.link/chennaimiot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card20" alt="Image de la carte"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr Viginesh Thanikgaivasan</span><br>
+            <span class="dr-name-span">Consultant Principal – Cardiologie</span><br>
+            <a class="b-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Prendre un rendez-vous</a><br>
+            <a class="l-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Contacter via WhatsApp</a>
+          </div>
+          <div class="card-links2 col-12">
+            <a href="https://what.sapp.link/chennaimiot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card21" alt="Image de la carte"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr Epari Kumar</span><br>
+            <span class="dr-name-span">Consultant Principal – Cardiologie</span><br>
+            <a class="b-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Prendre un rendez-vous</a><br>
+            <a class="l-chat" href="https://what.sapp.link/chennaimiot" target="_blank">Contacter via WhatsApp</a>
+          </div>
+          <div class="card-links2 col-12">
+            <a href="https://what.sapp.link/chennaimiot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br><br>
+  <div class="container main_all ">
+    <h1 style="color: white;" class="text-center pt-5">Forfaits de bilans de santé préventifs de l’hôpital MIOT</h1>
+    <div class="container inner_data_health">
+      <div class="row row-style">
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Détails du forfait</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>MIOT Cœur Sain – 110 USD</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>MIOT Cœur Sain – 110 USD</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>MIOT Cœur Sain – 110 USD</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>MIOT Cœur Sain – 110 USD</p>
+        </div>
+      </div>
+
+      <!-- BLOOD - Repeated Rows -->
+      <div class="row row-style">
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>SANG</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+      </div>
+
+      <div class="row row-style">
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>SANG</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+      </div>
+
+      <div class="row row-style">
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>SANG</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+      </div>
+
+      <div class="row row-style">
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>SANG</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+      </div>
+
+      <div class="row row-style">
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>SANG</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+      </div>
+
+      <div class="row row-style">
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>SANG</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+      </div>
+
+      <div class="row row-style">
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>SANG</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Hémogramme complet, Groupe sanguin & Dépistage ABO</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <br>
+  <div class="container text-center">
+    <h1 class="text-capitalize">LISTE DE CONTRÔLE POUR LES PATIENTS INTERNATIONAUX</h1><br>
+    <span class="mt-contant">Pour rendre votre expérience fluide et sans stress, nous avons décrit <br>
+      les étapes essentielles de la planification de votre voyage</span>
+  </div>
+  <br>
+  <!--patient checklist-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- First Box -->
+        <div class="box">
+          <button class="btn  checklist-btn">AVANT LE VOYAGE</button>
+          <ul class="mobi-ul">
+            <li>Assurez-vous que votre passeport est valide et obtenez les visas nécessaires.</li>
+            <li>Préparez vos dossiers médicaux, vos ordonnances et la liste de vos traitements en cours.</li>
+            <li>Commencez votre parcours de soins en toute sérénité à l'hôpital MIOT.</li>
+          </ul><br class="mobi-br"><br class="mobi-br">
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <!-- Second Box -->
+        <div class="box">
+          <!-- Button at the top -->
+          <button class="btn  checklist-btn">HÔTEL & SÉJOUR</button>
+          <!-- List items below the button -->
+          <ul class="mobi-ul">
+            <li>Hébergements situés à proximité pour répondre à vos préférences.</li>
+            <li>Assistance de l’équipe des services aux patients pour choisir la meilleure option d’hébergement.</li>
+            <li>Un séjour confortable et pratique pour vous concentrer sur votre santé.</li><br class="mobi-br">
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <!-- Third Box -->
+        <div class="box">
+          <!-- Button at the top -->
+          <button class="btn  checklist-btn">NOURRITURE & CUISINE</button>
+          <!-- List items below the button -->
+          <ul class="mobi-ul">
+            <li>Dégustez des plats locaux et internationaux adaptés à vos besoins diététiques.</li>
+            <li>Assistance des services aux patients pour des options de restauration sur mesure.</li>
+            <li>Profitez de plaisirs culinaires tout en priorisant une alimentation saine durant votre séjour.</li>
+          </ul><br class="mobi-br">
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <!-- Fourth Box -->
+        <div class="box">
+          <!-- Button at the top -->
+          <button class="btn  checklist-btn">LANGUE & INTERPRÉTATION</button>
+          <!-- List items below the button -->
+          <ul>
+            <li>Une équipe multilingue pour faciliter la communication avec les patients.</li>
+            <li>Services d’interprétation disponibles pour surmonter les barrières linguistiques.</li>
+            <li>Adaptez-vous facilement à une nouvelle langue pour une expérience médicale fluide.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <!-- Empty column -->
+      </div>
+    </div>
+  </div>
+
+  <!--end-->
+  <div class="container">
+    <h1>Pourquoi choisir<br>MIOT Healthcare ?</h1>
+  </div>
+  <br>
+  <!--Pourquoi choisir-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Boîte gauche -->
+        <div class="box">
+          <!-- Paragraphe en haut -->
+          <span class="coma">“</span><br>
+          <p class="testi-text">
+            Je tiens à remercier toute l'équipe de cet établissement pour la qualité des soins et la compassion dont ils
+            ont fait preuve durant mon séjour.
+          </p>
+          <!-- Image circulaire -->
+          <img src="assets/img/Oval.svg" class="img-circle" alt="Image circulaire">
+          <p class="text-left name_testi">Neel Desai</p>
+          <span class="text-left name_testi2">Patient</span>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <!-- Boîte droite -->
+        <div class="box">
+          <span class="coma">“</span> <br>
+          <p class="testi-text mobi-tx">
+            J'ai reçu des soins exceptionnels à l'hôpital. Les installations étaient excellentes et tout le personnel
+            était très coopératif. Les infirmières répondaient rapidement aux appels, quelle que soit l'heure.
+          </p>
+          <!-- Image circulaire -->
+          <img src="assets/img/Oval.svg" class="img-circle mobi-circle" alt="Image circulaire">
+          <p class="text-left name_testi mobi-testi">Yogesh Nath</p>
+          <span class="text-left name_testi2">Patient</span>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <!-- Boîte gauche -->
+        <div class="box">
+          <span class="coma">“</span>
+          <p class="testi-text mobi-tx2">
+            Des installations médicales remarquables situées dans un quartier prestigieux de la ville. Tous les services
+            sont disponibles au sein d’un même établissement.
+          </p>
+          <!-- Image circulaire -->
+          <img src="assets/img/Oval.svg" class="img-circle" alt="Image circulaire">
+          <p class="text-left name_testi">Deepa P</p>
+          <span class="text-left name_testi2">Patient</span>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <!-- Boîte droite -->
+        <div class="box">
+          <span class="coma">“</span>
+          <p class="testi-text">
+            L'hôpital Jaslok a fourni un traitement exceptionnel. Le personnel a fait preuve de professionnalisme et de
+            compassion dès le départ.
+          </p>
+          <!-- Image circulaire -->
+          <img src="assets/img/Oval.svg" class="img-circle" alt="Image circulaire">
+          <p class="text-left name_testi">Abbas Ali</p>
+          <span class="text-left name_testi2">Patient</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--fin-->
+  <br><br>
+  <div class="container text-center">
+    <h1>Hôtels et maisons d’hôtes pour tous les budgets<br>à proximité de l’hôpital MIOT Chennai</h1>
+  </div>
+
+  <br><br>
+  <!--hotal-->
+  <div class="container" id="hotels">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-sm-12 col-md-3">
+              <div class="card card-hotel">
+                <div class="price">₹3043</div>
+                <div class="distance">
+                  <i class="fa fa-map-marker"></i> 2,4 km
+                </div>
+
+                <div class="card-img-top-I"></div>
+                <div class="card-body">
+                  <h5 class="card-title-hotel">Naksha Tree Hotels - Ramapuram</h5>
+                  <p class="card-text-hotel">Restaurant, petit-déjeuner</p>
+                  <a class="btn btn-hotel" href="https://what.sapp.link/chennaimiot" target="_blank">DISCUTEZ
+                    AVEC NOUS
+                    POUR LES MEILLEURS TARIFS</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hôtel suivant -->
+            <div class="col-sm-12 col-md-3">
+              <div class="card card-hotel">
+                <div class="price">₹3251</div>
+                <div class="distance">
+                  <i class="fa fa-map-marker"></i> 2,7 km
+                </div>
+
+                <div class="card-img-top-2"></div>
+                <div class="card-body">
+                  <h5 class="card-title-hotel">Dreams Luxury Stays</h5>
+                  <p class="card-text-hotel">Piscine, proche des transports publics</p>
+                  <a class="btn btn-hotel" href="https://what.sapp.link/chennaimiot" target="_blank">DISCUTEZ
+                    AVEC NOUS
+                    POUR LES MEILLEURS TARIFS</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-3">
+              <div class="card card-hotel">
+                <div class="price">₹3607</div>
+                <div class="distance">
+                  <i class="fa fa-map-marker"></i> 3,1 km
+                </div>
+
+                <div class="card-img-top-3"></div>
+                <div class="card-body">
+                  <h5 class="card-title-hotel">Hotel Bluesky Ramapuram</h5>
+                  <p class="card-text-hotel">Piscine, proche des transports publics</p>
+                  <a class="btn btn-hotel" href="https://what.sapp.link/chennaimiot" target="_blank">DISCUTEZ
+                    AVEC NOUS
+                    POUR LES MEILLEURS TARIFS</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-3">
+              <div class="card card-hotel">
+                <div class="price">₹5040</div>
+                <div class="distance">
+                  <i class="fa fa-map-marker"></i> 200 m
+                </div>
+
+                <div class="card-img-top-4"></div>
+                <div class="card-body">
+                  <h5 class="card-title-hotel">Kuber Inn Elite</h5>
+                  <p class="card-text-hotel">Piscine, proche des transports publics</p>
+                  <a class="btn btn-hotel" href="https://what.sapp.link/chennaimiot" target="_blank">DISCUTEZ
+                    AVEC NOUS
+                    POUR LES MEILLEURS TARIFS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deuxième série d'hôtels -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-sm-12 col-md-3">
+              <div class="card card-hotel">
+                <div class="price">₹3416</div>
+                <div class="distance">
+                  <i class="fa fa-map-marker"></i> 2,7 km
+                </div>
+
+                <div class="card-img-top-5"></div>
+                <div class="card-body">
+                  <h5 class="card-title-hotel">KBS Home</h5>
+                  <p class="card-text-hotel">Excellent petit-déjeuner, emplacement idéal</p>
+                  <a class="btn btn-hotel" href="https://what.sapp.link/chennaimiot" target="_blank">DISCUTEZ
+                    AVEC NOUS
+                    POUR LES MEILLEURS TARIFS</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-3">
+              <div class="card card-hotel">
+                <div class="price">₹2701</div>
+                <div class="distance">
+                  <i class="fa fa-map-marker"></i> 2,5 km
+                </div>
+
+                <div class="card-img-top-6"></div>
+                <div class="card-body">
+                  <h5 class="card-title-hotel">Hotel Heminn Stay Ramapuram</h5>
+                  <p class="card-text-hotel">Restaurant, petit-déjeuner offert</p>
+                  <a class="btn btn-hotel" href="https://what.sapp.link/chennaimiot" target="_blank">DISCUTEZ
+                    AVEC NOUS
+                    POUR LES MEILLEURS TARIFS</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-3">
+              <div class="card card-hotel">
+                <div class="price">₹2184</div>
+                <div class="distance">
+                  <i class="fa fa-map-marker"></i> 2,7 km
+                </div>
+
+                <div class="card-img-top-7"></div>
+                <div class="card-body">
+                  <h5 class="card-title-hotel">Samrat Guest House</h5>
+                  <p class="card-text-hotel">Piscine, emplacement idéal</p>
+                  <a class="btn btn-hotel" href="https://what.sapp.link/chennaimiot" target="_blank">DISCUTEZ
+                    AVEC NOUS
+                    POUR LES MEILLEURS TARIFS</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-3">
+              <div class="card card-hotel">
+                <div class="price">₹3407</div>
+                <div class="distance">
+                  <i class="fa fa-map-marker"></i> 3,2 km
+                </div>
+
+                <div class="card-img-top-8"></div>
+                <div class="card-body">
+                  <h5 class="card-title-hotel">MIOT Grande</h5>
+                  <p class="card-text-hotel">Wi-Fi gratuit, petit-déjeuner offert</p>
+                  <a class="btn btn-hotel" href="https://what.sapp.link/chennaimiot" target="_blank">DISCUTEZ
+                    AVEC NOUS
+                    POUR LES MEILLEURS TARIFS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contrôles du carrousel -->
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Précédent</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Suivant</span>
+        </a>
+      </div>
+    </div>
+
+    <br>
+    <div class="container text-center">
+      <span style="color: #2F3236; font-size: 12px;">*Les tarifs peuvent varier en fonction du type de chambre, des
+        prestations souhaitées et du niveau de personnalisation</span>
+    </div>
+  </div>
+
+
+  <script>
+    // Function to check if the screen width is less than 768px (mobile devices)
+    function isMobile() {
+      return window.innerWidth < 768;
+    }
+
+    // Disable carousel auto slide for mobile devices
+    $(document).ready(function () {
+      if (isMobile()) {
+        $('#carouselExampleControls').carousel({ interval: false });
+      }
+    });
+  </script>
+  <br>
+  <!--banner-->
+  <div class="container-fluid no-padding-container   banner-bn" id="">
+    <div class="container ">
+      <div class="row bnnr-row  ">
+        <div class="col-6 bnnr-mobi ">
+          <p>CONTACTEZ UN EXPERT POUR UN ACCOMPAGNEMENT PERSONNALISÉ ET DES CONSEILS SUR MESURE</p>
+        </div>
+        <div class="col-6 text-right chat_col">
+          <button class="btn-bnnr " data-url="https://what.sapp.link/chennaimiot">Discuter sur WhatsApp</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--end-->
+
+  <br>
+  <div class="container text-center">
+    <h1>
+      Services aux Patients Internationaux <br>
+      Hôpital MIOT
+    </h1>
+  </div>
+
+  <br>
+  <!--Patient Services -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card card-pnt">
+          <img src="assets/img/i-con-2.svg" class=" rounded-circle" alt="Image Cercle">
+          <div class="card-body">
+            <h1 class="card-title-1 text-center">Expérience personnalisée</h1>
+            <p class="card-text">
+              Nos équipes sont composées de professionnels du voyage et de médecins. Chacun offre un accompagnement
+              personnalisé à nos patients. Cela garantit des soins de haute qualité à un rythme adapté au patient,
+              améliorant ainsi l’ensemble de l’expérience médicale.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-pnt">
+          <img src="assets/img/i-con-1.svg" class=" rounded-circle" alt="Image Cercle">
+          <div class="card-body">
+            <h1 class="card-title-1">Économie de temps et d’argent</h1>
+            <p class="card-text">
+              Nous comprenons l'importance du temps en matière de santé. Nos protocoles et équipes sont bien organisés
+              pour gérer les urgences comme les traitements planifiés. Nous faisons gagner un temps précieux et de
+              l’argent à nos patients à chaque étape du voyage et du traitement.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-pnt">
+          <img src="assets/img/i-con-3.svg" class=" rounded-circle" alt="Image Cercle">
+          <div class="card-body">
+            <h1 class="card-title-1">Prise en charge complète</h1>
+            <p class="card-text">
+              Un accompagnement de bout en bout : demande d’avis médical, estimation des coûts dans les 5 meilleurs
+              hôpitaux, assistance pour le visa, vols, accueil à l’aéroport, hébergement, restauration, cuisine,
+              transport
+              local, carte SIM, wifi, rendez-vous médicaux, admission et sortie d’hôpital, suivi post-traitement et
+              transfert retour à l’aéroport.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--end-->
+  <br>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5><b>Coordonnées</b></h5>
+          <p>Adresse : MIOT International, 4/112, Mount Poonamalle Road, Manapakkam, Chennai - 600 089</p>
+          <button class="footer-btn" data-url="https://what.sapp.link/chennaimiot"> <i class="fa fa-phone"></i>
+            (+91) 92669 70900</button><br><br>
+          <span class="text-center">Services aux patients assurés par</span><br>
+          <img src="assets/logo/Layer 1.svg" alt="footer-logo">
+        </div><br><br>
+        <div class="col-md-4 lin-as">
+          <h5 class="q-l"><b>Liens rapides</b></h5>
+          <p>Avertissement</p>
+          <p>Conditions générales</p>
+          <p>Politique de confidentialité</p>
+          <p>Discussion sur Whatsapp</p>
+        </div>
+        <div class="col-md-4 lin-as">
+          <h5><b>Départements & Spécialistes</b></h5>
+          <p>Transplantation rénale</p>
+          <p>Transplantation hépatique</p>
+          <p>Orthopédie</p>
+          <p>Cardiologie</p>
+          <p>Oncologie</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="openBtn" data-url="https://what.sapp.link/chennaimiot">
+    <img src="assets/logo/favicon.webp" class="logo_mob my-2" alt="logo-drawer" width="65%" height="55px">
+    Soins aux patients internationaux
+  </button>
+
+  <!-- Drawer -->
+
+  <div id="drawer" class="drawer">
+    <div class="drawer-content">
+      <button id="closeBtn" type="button" class="close" aria-label="Fermer">
+        <span aria-hidden="true">&times;</span>
+      </button>
+
+      <div class="drawer-banner">
+        <img src="assets/logo/favicon.webp" class="logo_mob my-2" alt="logo-drawer" width="50%" height="50px">
+        <h2 class="font-weight-bold">Soins aux patients internationaux</h2>
+        <p>Assistance internationale sur WhatsApp</p>
+      </div>
+      <div class="drawer-items">
+        <h2 class="font-weight-bold">Assistance internationale sur WhatsApp</h2>
+        <button class="btn" data-url="https://what.sapp.link/chennaimiot">
+          <i class="fa fa-whatsapp fa-btn" style="font-size:20px;"></i>
+          Se connecter sur WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!--sticky element-->
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-md-6"> -->
+  <!-- Your content here -->
+  <!-- </div>
+      <div class="col-md-6">
+        <div class="sticky-text text-center"> -->
+  <!-- Sticky text here -->
+  <!-- <span class="get_text">Get’s Doctor Opinion</span>
+          <br>
+          <div class="icon-container"> -->
+  <!-- Three icons inline here -->
+  <!-- <a href=" https://what.sapp.link/chennaimiot  " style="color: white;"> <i class="fa fa-whatsapp"></i></a>
+            <i class="fa fa-envelope"></i>
+            <a href="tel:9899187773" style="color: white;">
+              <i class="fa fa-phone"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div> -->
+  <script>
+
+
+    // Get all button elements on the page
+    const buttons = document.querySelectorAll('button,a,p')
+
+    // Loop through each button
+    buttons.forEach(function (button) {
+      // Attach a click event listener to each button
+      button.addEventListener('click', function () {
+        // Get the URL from the button's data-url attribute
+        const url = button.getAttribute('data-url')
+
+        // Check if a URL is defined for the button
+        if (url) {
+          // Open the URL in a new tab
+          window.open(url, '_blank')
+        }
+      })
+    })
+
+  </script>
+
+  <script>
+
+    function openNav() {
+      document.getElementById("sidebar").style.width = "40%";
+
+    }
+
+    function closeNav() {
+      document.getElementById("sidebar").style.width = "0";
+    }
+
+    function openDrawer() {
+      setInterval(function () {
+        // Get the element by its ID
+        const element = document.getElementById("drawer");
+
+        // Check if the element exists
+        if (element) {
+          document.getElementById('drawer').style.bottom = '0'; // Change to 'block' or any other desired display type
+        }
+      }, 10000);
+    }
+    function callevent() {
+      setTimeout(openNav, 10000);
+    }
+
+    callevent();
+    openDrawer();
+
+    let clickCount = 0;
+
+    // Function to be executed on the first click
+    function onFirstClick() {
+      setTimeout(openNav, 15000); // Execute openNav after 10 seconds
+    }
+
+    // Function to be executed on the second click
+    function onSecondClick() {
+      setTimeout(openNav, 30000); // Execute openNav after 150 seconds (2.5 minutes)
+    }
+
+    // Function to be executed on the third click
+    function onThirdClick() {
+      setTimeout(openNav, 60000); // Execute openNav after 150 seconds (2.5 minutes)
+
+    }
+  </script>
+  <script>
+    const drawer = document.getElementById('drawer');
+
+    const openButton = document.getElementById('openBtn');
+
+    document.getElementById('openBtn').addEventListener('click', function () {
+      event.stopPropagation();
+      document.getElementById('drawer').style.bottom = '0';
+    });
+
+    document.getElementById('closeBtn').addEventListener('click', function () {
+      event.stopPropagation();
+      document.getElementById('drawer').style.bottom = '-100%';
+    });
+
+
+    document.body.addEventListener('click', (event) => {
+      const mobileBreakpoint = 768;
+
+      if (window.innerWidth >= mobileBreakpoint) {
+        // Close drawer if the click is outside the drawer or open button
+        if (!drawer.contains(event.target) && !openBtn.contains(event.target)) {
+          document.getElementById('drawer').style.bottom = '-100%';
+        }
+      }
+    });
+
+    // Prevent clicks inside the drawer or open button from triggering body click listener
+    drawer.addEventListener('click', event => {
+      event.stopPropagation(); // Prevent click inside drawer from closing it
+    });
+
+  </script>
+
+  <script>
+    // pre load area
+    window.addEventListener('load', () => {
+      const preloader = document.getElementById('preloader')
+      preloader.style.display = 'none'
+    })
+  </script>
+</body>
+
+</html>

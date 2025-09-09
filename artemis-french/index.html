@@ -1,0 +1,1791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Hôpital Artemis</title>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#a69837" />
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="img/fav-icon.webp">
+  <link rel="preload" as="font">
+  <meta name="description" content="Hôpital Artemis">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/artemis_stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-922729084">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-922729084');
+  </script>
+</head>
+
+<body>
+
+  <div id="swipeArea">Swipe here</div>
+  <!--topbar-->
+
+  <div class="container topbar col-md-12 d-flex align-items-center">
+    <div class="row w-100 justify-content-center align-items-center">
+      <div class=" d-flex align-items-center ">
+        <!-- Content with vertically centered text -->
+        <h2 class="text-center topbar-text">Obtenez l’avis d’un médecin et une estimation des coûts
+          &nbsp; &nbsp; <span class="bar">| </span>&nbsp;
+          &nbsp;</h2>
+
+      </div>
+      &nbsp;
+      <div class="  d-flex align-items-center topbar_i-cons ">
+        <!-- Other content in the second column -->
+        <a data-url="https://what.sapp.link/frenchartemisind" aria-label="Whatsapp"> <i class="fa fa-whatsapp "
+            style="color: white" aria-hidden="true"></i></a>&nbsp;
+        <a href="tel: +9" aria-label="Whatsapp"> <i class="fa fa-phone " style="padding-left: 9px; color: white"
+            aria-hidden="true"><span class="tb_text"></span></i></a>&nbsp;
+        <a data-url="https://what.sapp.link/frenchartemisind" style="color: white;" aria-label="Whatsapp"> <i
+            class="fa fa-comments " style="padding-left: 23%; color: white;" aria-hidden="true"><span
+              class="tb_text"></span></i> </a>
+        <a data-url="https://what.sapp.link/frenchartemisind" style="color: white;" aria-label="Whatsapp"> &ensp;(+91)
+          92669 70900 </a>
+
+      </div>
+    </div>
+  </div>
+
+  <button id="openBtn" data-url="https://what.sapp.link/frenchartemisind"><img src="img/fav-icon.webp" class="logo-y"
+      alt="HTML5 Icon" width="20px" height="30%">Se connecter sur WhatsApp</button>
+
+
+  <!-- Drawer -->
+
+  <div id="drawer" class="drawer">
+    <div id="imasCircle"> <img src="img/fav-icon.webp" class="logo-x" alt="HTML5 Icon" width="20px" height="30%"></div>
+    <div class="drawer-content">
+      <button id="closeBtn" type="button" class="close" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+
+      <div class="drawer-banner">
+        <h2>Soins aux patients internationaux</h2>
+        <p>Assistance internationale sur WhatsApp</p>
+      </div>
+      <div class="drawer-items">
+        <h2>Assistance internationale sur WhatsApp</h2>
+        <button class="btn" data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp fa-btn"
+            style="font-size:20px;"></i>
+          Se connecter sur WhatsApp</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!--topbar-->
+  <!--navbar-->
+  <!-- ... -->
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand" href="#" aria-label="alpha">
+      <img src="img/artimis-logo.png" alt="HTML5 Icon" width="140px" height="100%">
+
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse center-container " id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a role="link" class="nav-link" aria-label="Overview" href="#overview">Aperçu</a>
+          <span class="sr-only">(actuel)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-label="Doctors" href="#cardio">Médecins</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-label="Healthcare Packages" href="#HealthPackages">Examens préventifs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-url="https://what.sapp.link/frenchartemisind"="#"> Discussion
+            en direct avec un médecin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-url="https://what.sapp.link/frenchartemisind" target="_blank">Patient
+            international</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#hotel">Hôtels</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <!-- ... -->
+
+  <!-- preloader -->
+  <div id="preloader">
+    <div class="spinner-wrapper">
+      <img src="img/artimis-logo.png" alt="pre load..." class="preloader-logo">
+      <!-- <div class="spinner-border text-primary" role="status">
+                      <span class="sr-only">Loading...</span>
+                  </div> -->
+    </div>
+  </div>
+  <!-- end of preloader -->
+
+  <!--navbar end -->
+  <!--slider-->
+  <div class="container-fluid  slider">
+    <div class="text-center">
+      <h1 class="text-bnnr"><b>Hôpitaux Artemis</b>, Gurugram
+      </h1><br><span class="text-bnnr-dis">PATIENTS INTERNATIONAUX</span><br>
+      <button type="button" data-url="https://what.sapp.link/frenchartemisind" class="btn btn-primary2">OBTENIR UN AVIS
+        GRATUIT</button><br>
+      <a href="#scrool_about" aria-label="Whatsapp">
+        <div class="container-fluid  scrol-gif text-center"></div>
+    </div></a>
+  </div>
+
+  <h2 class="heading" id="scrool_about">
+    <span class="heading-top"> </span> <br><span> <b> À propos des Hôpitaux Artemis
+      </b></span><br>
+    <p class="container about-us-cont"><b>Artemis Health Institute </b>a été
+      fondé en 2007 et est une entreprise de soins de santé lancée par les promoteurs du
+      groupe Apollo Tyres. Artemis a été le premier hôpital de Gurgaon à obtenir
+      l’accréditation Joint Commission International (J.C.I.) en 2013 et également
+      le premier hôpital de l’Haryana à obtenir l’accréditation NABH dans les 3 ans
+      suivant son lancement.
+      Il est conçu comme l’un des hôpitaux d’exception en Inde, offrant une expertise
+      en interventions médicales et chirurgicales avancées dans les services
+      hospitaliers et ambulatoires. Artemis a mis la technologie moderne entre les mains
+      de médecins réputés venus de tout le pays et de l’étranger pour établir une nouvelle
+      référence en matière de soins de santé. Les pratiques et procédures médicales
+      auxquelles l’hôpital adhère comptent parmi les meilleures au monde.
+      Des services remarquables, un environnement chaleureux et centré sur le patient,
+      ainsi que l’accessibilité ont fait d’Artemis l’un des hôpitaux les plus respectés
+      du pays. Il compte 400 médecins à plein temps, 12 centres d’excellence et 40 spécialités.
+      <br><br>
+      <b>FONDATEUR</b>
+
+      L’hôpital ARTEMIS, situé à Gurgaon, Delhi NCR, Inde, a été fondé par le
+      Dr Devi Shetty, un chirurgien cardiaque renommé et fondateur de Narayana Health,
+      l’un des plus grands groupes de soins de santé en Inde.
+      L’hôpital ARTEMIS a été créé avec la vision de fournir des soins et des installations
+      médicales de classe mondiale aux patients en Inde et dans le monde entier.
+      Il offre une large gamme de services et de spécialités médicales, notamment la
+      cardiologie, l’oncologie, l’orthopédie, la neurologie, et plus encore.
+      L’hôpital est connu pour son infrastructure ultramoderne, sa technologie médicale
+      avancée et son équipe de médecins et de professionnels de santé hautement qualifiés.
+
+      L’hôpital ARTEMIS à Delhi dispose d’une Unité de Soins aux Patients Internationaux (IPCU)
+      dédiée à répondre aux besoins des patients venant de l’étranger.
+      Cette unité est spécialement conçue pour garantir que les patients internationaux
+      reçoivent des soins et une assistance personnalisés tout au long de leur parcours
+      médical à ARTEMIS.
+    </p>
+  </h2>
+
+  <!--siderend -->
+  <h1 class="heading">
+    <span class="heading-top" id="Oncology"> </span> <br><span> <b>
+        Départements &amp; Spécialistes</b></span>
+  </h1>
+  <!--doctors button-->
+  <div class="container mt-3 text-center sticky-element d-flex align-items-center">
+    <div class="tabs row new_mr">
+      <div class="col-4 col-md-4 col-lg-auto">
+        <a href="#Oncology"> <button type="button" class="tab btn btn-primary btn-block" data-target="#Oncology">
+            Oncologie </button></a>
+      </div>
+      <div class="col-4 col-md-4 col-lg-auto">
+        <a href="#cardio"> <button type="button" class="tab btn btn-primary btn-block" data-target="#cardio">Cardiologie
+          </button></a>
+      </div>
+
+      <div class="col-4 col-md-4 col-lg-auto">
+        <a href="#kidney"> <button type="button" class="tab btn btn-primary btn-block" data-target="#kidney">
+            Transplantation</button></a>
+      </div>
+
+      <div class="col-4 col-md-4 col-lg-auto">
+        <a href="#neuro"> <button type="button" class="tab btn btn-primary btn-block"
+            data-target="#neuro">Neurologie</button></a>
+      </div>
+
+      <div class="col-4 col-md-4 col-lg-auto">
+        <a href="#Orthopedic"> <button type="button" class="tab btn btn-primary btn-block"
+            data-target="#Orthopedic">Orthopédie </button></a>
+      </div>
+    </div>
+  </div>
+
+
+  <!--doctors botton end-->
+  <!--doctor card-->
+  <!--ONCOLOGY-->
+  <br />
+  <p class="Patient_Services2 text-center"> <span><b> ONCOLOGIE</b></span></p>
+  <br />
+  <!-- card  -->
+  <div class="container mt-3 text-center">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-top23  commn_id" alt="Card Image"></div>
+          <div class="card-body">
+            <h1 class="card-title">Dr. Hari Goyal</h1>
+            <p class="card-text"> ONCOLOGIE</p>
+            <button class="dr_btn" data-url="https://what.sapp.link/frenchartemisind">Prendre un rendez-vous</button>
+            <button class="dr_btn2" data-url="https://what.sapp.link/frenchartemisind"
+              data-url="https://what.sapp.link/frenchartemisind">
+              <i class="fa fa-whatsapp" style="font-size:8px;color:rgb(107, 178, 20)"></i> Se connecter sur
+              WhatsApp</button>
+            <!--call btn dr-->
+            <!-- <br><br>
+        <a href="https://wa.me/+918800844573" aria-label="Whatsapp">
+          <i class="fa fa-whatsapp"
+            style="font-size:48px;color:rgb(107, 178, 20)"></i>
+          <br>
+        </a> -->
+            <!--end here-->
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-top24  commn_id" alt="Card Image"></div>
+          <div class="card-body">
+            <h1 class="card-title">Dr. Lalit Kumar
+            </h1>
+            <p class="card-text"> ONCOLOGIE</p>
+            <button class="dr_btn" data-url="https://what.sapp.link/frenchartemisind">Prendre un rendez-vous</button>
+            <button class="dr_btn2" data-url="https://what.sapp.link/frenchartemisind"
+              data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+                style="font-size:8px;color:rgb(107, 178, 20)"></i> Se connecter sur WhatsApp</button>
+            <!--call btn dr-->
+            <!-- <br><br>
+              <a href="https://wa.me/+918800844573" aria-label="alpx">
+                <i class="fa fa-whatsapp"
+                  style="font-size:48px;color:rgb(107, 178, 20)"></i>
+                <br>
+              </a> -->
+            <!--end here-->
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-top25  commn_id" alt="Card Image"></div>
+          <div class="card-body">
+            <h1 class="card-title">Dr. Parveen Yadav
+            </h1>
+            <p class="card-text">ONCOLOGIE</p>
+            <button class="dr_btn" data-url="https://what.sapp.link/frenchartemisind">Prendre un rendez-vous</button>
+            <button class="dr_btn2" data-url="https://what.sapp.link/frenchartemisind"
+              data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+                style="font-size:8px;color:rgb(107, 178, 20)"></i> Se connecter sur WhatsApp</button>
+            <!--call btn dr-->
+            <!-- <br><br>
+              <a href="https://wa.me/+918800844573" aria-label="alpx">
+                <i class="fa fa-whatsapp"
+                  style="font-size:48px;color:rgb(107, 178, 20)"></i>
+                <br>
+              </a> -->
+            <!--end here-->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-top26  commn_id" alt="Card Image"></div>
+          <div class="card-body">
+            <h1 class="card-title">Dr. Subodh Chandra Pande
+            </h1>
+            <p class="card-text">ONCOLOGIE</p>
+            <button class="dr_btn" data-url="https://what.sapp.link/frenchartemisind">Prendre un rendez-vous</button>
+            <button class="dr_btn2" data-url="https://what.sapp.link/frenchartemisind"
+              data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+                style="font-size:8px;color:rgb(107, 178, 20)"></i> Se connecter sur WhatsApp</button>
+            <!--call btn dr-->
+            <!-- <br><br>
+              <a href="https://wa.me/+918800844573" aria-label="alpx">
+                <i class="fa fa-whatsapp"
+                  style="font-size:48px;color:rgb(107, 178, 20)"></i>
+                <br>
+              </a> -->
+            <!--end here-->
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!--end ONCOLOGY-->
+  <div class="container-fluid no-padding-container   banner-bn" id="cardio">
+    <div class="container ">
+      <div class="row bnnr-row  ">
+        <div class="col-6 bnnr-mobi ">
+          <p>Contactez un expert pour des conseils et un accompagnement personnalisés.</p>
+        </div>
+        <div class="col-6 text-right chat_col">
+          <button class="btn-bnnr " data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+              style="font-size:18px;color:rgb(107, 178, 20)"></i> Se connecter sur WhatsApp</button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <br>
+  <p class="Patient_Services2 text-center"> <span><b>
+        CARDIOLOGIE</b></span></p>
+  <br>
+  <!--cardio-->
+  <div class="container mt-3 text-center ">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-top1  commn_id" alt="Card Image"></div>
+          <div class="card-body">
+            <h1 class="card-title">Dr. Akhil Govil</h1>
+            <p class="card-text">CARDIOLOGIE</p>
+            <button class="dr_btn" data-url="https://what.sapp.link/frenchartemisind">Prendre un rendez-vous</button>
+            <button class="dr_btn2" data-url="https://what.sapp.link/frenchartemisind"
+              data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+                style="font-size:8px;color:rgb(107, 178, 20)"></i> Se connecter sur WhatsApp</button>
+            <!--call btn dr-->
+            <!-- <br><br>
+              <a href="https://wa.me/+918800844573" aria-label="alpx">
+                <i class="fa fa-whatsapp "
+                  style="font-size:48px;color:rgb(107, 178, 20)"></i>
+                <br>
+              </a> -->
+            <!--end here-->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-top2  commn_id" alt="Card Image"></div>
+          <div class="card-body">
+            <h1 class="card-title">Dr. Balbir Kalra</h1>
+            <p class="card-text">CARDIOLOGIE</p>
+            <button class="dr_btn" data-url="https://what.sapp.link/frenchartemisind">Prendre un rendez-vous</button>
+            <button class="dr_btn2" data-url="https://what.sapp.link/frenchartemisind"
+              data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+                style="font-size:8px;color:rgb(107, 178, 20)"></i> Se connecter sur WhatsApp</button>
+            <!--call btn dr-->
+            <!-- <br><br>
+              <a href="https://wa.me/+918800844573" aria-label="alpx">
+                <i class="fa fa-whatsapp"
+                  style="font-size:48px;color:rgb(107, 178, 20)"></i>
+                <br>
+              </a> -->
+            <!--end here-->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-top3  commn_id" alt="Card Image"></div>
+          <div class="card-body">
+            <h1 class="card-title">Dr. Kuldeep Arora</h1>
+            <p class="card-text">CARDIOLOGIE</p>
+            <button class="dr_btn" data-url="https://what.sapp.link/frenchartemisind">Prendre un rendez-vous</button>
+            <button class="dr_btn2" data-url="https://what.sapp.link/frenchartemisind"
+              data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+                style="font-size:8px;color:rgb(107, 178, 20)"></i> Se connecter sur WhatsApp</button>
+            <!--call btn dr-->
+            <!-- <br><br>
+              <a href="https://wa.me/+918800844573" aria-label="alpx">
+                <i class="fa fa-whatsapp"
+                  style="font-size:48px;color:rgb(107, 178, 20)"></i>
+                <br>
+              </a> -->
+            <!--end here-->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-top4  commn_id" alt="Card Image"></div>
+          <div class="card-body">
+            <h1 class="card-title">Dr. Sushant Srivastava</h1>
+            <p class="card-text">CARDIOLOGIE</p>
+            <button class="dr_btn" data-url="https://what.sapp.link/frenchartemisind">Prendre un rendez-vous</button>
+            <button class="dr_btn2" data-url="https://what.sapp.link/frenchartemisind"
+              data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+                style="font-size:8px;color:rgb(107, 178, 20)"></i> Se connecter sur WhatsApp</button>
+            <!--call btn dr-->
+            <!-- <br><br>
+              <a href="https://wa.me/+918800844573" aria-label="alpx">
+                <i class="fa fa-whatsapp"
+                  style="font-size:48px;color:rgb(107, 178, 20)"></i>
+                <br>
+              </a> -->
+            <!--end here-->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container-fluid no-padding-container   banner-bn " id="neuro">
+    <div class="container ">
+      <div class="row bnnr-row  ">
+        <div class="col-6 bnnr-mobi ">
+          <p>Connectez-vous avec un expert pour obtenir des conseils et un soutien personnalisés.</p>
+        </div>
+        <div class="col-6 text-right chat_col">
+          <button class="btn-bnnr " data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+              style="font-size:18px;color:rgb(107, 178, 20)"></i> Discuter sur WhatsApp</button>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+  <br>
+
+  <p class="Patient_Services2 text-center"> <span><b> NEUROLOGIE</b></span></p>
+  <br>
+  <!--neuro-->
+  <div class="container mt-3 text-center">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-top8  commn_id" alt="Card Image"></div>
+          <div class="card-body">
+            <h1 class="card-title">Dr. Aditya Gupta</h1>
+            <p class="card-text">NEUROLOGIE</p>
+            <button class="dr_btn" data-url="https://what.sapp.link/frenchartemisind">Prendre un rendez-vous</button>
+            <button class="dr_btn2" data-url="https://what.sapp.link/frenchartemisind"
+              data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+                style="font-size:8px;color:rgb(107, 178, 20)"></i> Se connecter sur WhatsApp</button>
+            <!--call btn dr-->
+            <!-- <br><br>
+              <a href="https://wa.me/+918800844573" aria-label="alpx">
+                <i class="fa fa-whatsapp"
+                  style="font-size:48px;color:rgb(107, 178, 20)"></i>
+                <br>
+              </a> -->
+            <!--end here-->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-top9  commn_id" alt="Card Image"></div>
+          <div class="card-body">
+            <h1 class="card-title">Dr. Pawan Goyal</h1>
+            <p class="card-text">NEUROLOGIE</p>
+            <button class="dr_btn" data-url="https://what.sapp.link/frenchartemisind">Prendre un rendez-vous</button>
+            <button class="dr_btn2" data-url="https://what.sapp.link/frenchartemisind"
+              data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+                style="font-size:8px;color:rgb(107, 178, 20)"></i> Se connecter sur WhatsApp</button>
+            <!--call btn dr-->
+            <!-- <br><br>
+              <a href="https://wa.me/+918800844573" aria-label="alpx">
+                <i class="fa fa-whatsapp"
+                  style="font-size:48px;color:rgb(107, 178, 20)"></i>
+                <br>
+              </a> -->
+            <!--end here-->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-top10  commn_id" alt="Card Image"></div>
+          <div class="card-body">
+            <h1 class="card-title">Dr. SK Rajan</h1>
+            <p class="card-text">NEUROLOGIE</p>
+            <button class="dr_btn" data-url="https://what.sapp.link/frenchartemisind">Prendre un rendez-vous</button>
+            <button class="dr_btn2" data-url="https://what.sapp.link/frenchartemisind"
+              data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+                style="font-size:8px;color:rgb(107, 178, 20)"></i> Se connecter sur WhatsApp</button>
+            <!--call btn dr-->
+            <!-- <br><br>
+              <a href="https://wa.me/+918800844573" aria-label="alpx">
+                <i class="fa fa-whatsapp"
+                  style="font-size:48px;color:rgb(107, 178, 20)"></i>
+                <br>
+              </a> -->
+            <!--end here-->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-top11  commn_id" alt="Card Image"></div>
+          <div class="card-body">
+            <h1 class="card-title">Dr. Vipul Gupta</h1>
+            <p class="card-text">NEUROLOGIE</p>
+            <button class="dr_btn" data-url="https://what.sapp.link/frenchartemisind">Prendre un rendez-vous</button>
+            <button class="dr_btn2" data-url="https://what.sapp.link/frenchartemisind"
+              data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+                style="font-size:8px;color:rgb(107, 178, 20)"></i> Se connecter sur WhatsApp</button>
+            <!--call btn dr-->
+            <!-- <br><br>
+              <a href="https://wa.me/+918800844573" aria-label="alpx">
+                <i class="fa fa-whatsapp"
+                  style="font-size:48px;color:rgb(107, 178, 20)"></i>
+                <br>
+              </a> -->
+            <!--end here-->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-top12  commn_id" alt="Card Image"></div>
+          <div class="card-body">
+            <h1 class="card-title">Sumit Singh</h1>
+            <p class="card-text">NEUROLOGIE</p>
+            <button class="dr_btn" data-url="https://what.sapp.link/frenchartemisind">Prendre un rendez-vous</button>
+            <button class="dr_btn2" data-url="https://what.sapp.link/frenchartemisind"
+              data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+                style="font-size:8px;color:rgb(107, 178, 20)"></i> Se connecter sur WhatsApp</button>
+            <!--call btn dr-->
+            <!-- <br><br>
+              <a href="https://wa.me/+918800844573" aria-label="alpx">
+                <i class="fa fa-whatsapp"
+                  style="font-size:48px;color:rgb(107, 178, 20)"></i>
+                <br>
+              </a> -->
+            <!--end here-->
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+
+    </div>
+  </div>
+
+  <div class="container-fluid no-padding-container   banner-bn" id="Orthopedic">
+    <div class="container ">
+      <div class="row bnnr-row  ">
+        <div class="col-6 bnnr-mobi ">
+          <p>Connectez-vous avec un expert pour obtenir des conseils et un soutien personnalisés.</p>
+        </div>
+        <div class="col-6 text-right chat_col">
+          <button class="btn-bnnr" data-url="https://what.sapp.link/frenchartemisind"
+            data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+              style="font-size:18px;color:rgb(107, 178, 20)"></i> Se connecter sur WhatsApp</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--neuro end-->
+  <br>
+  <p class="Patient_Services2 text-center"> <span><b>
+        ORTHOPÉDIE</b></span></p>
+
+  <br>
+  <!--ortho-->
+  <div class="container mt-3 text-center">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-top13  commn_id" alt="Card Image"></div>
+          <div class="card-body">
+            <h1 class="card-title">Dr. Hitesh Garg</h1>
+            <p class="card-text">ORTHOPÉDIE </p>
+            <button class="dr_btn" data-url="https://what.sapp.link/frenchartemisind">Prendre un rendez-vous</button>
+            <button class="dr_btn2" data-url="https://what.sapp.link/frenchartemisind"
+              data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+                style="font-size:8px;color:rgb(107, 178, 20)"></i> Se connecter sur WhatsApp</button>
+            <!--call btn dr-->
+            <!-- <br><br>
+              <a href="https://wa.me/+918800844573" aria-label="alpx">
+                <i class="fa fa-whatsapp"
+                  style="font-size:48px;color:rgb(107, 178, 20)"></i>
+                <br>
+              </a> -->
+            <!--end here-->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-top14  commn_id" alt="Card Image"></div>
+          <div class="card-body">
+            <h1 class="card-title">Dr. Ramkinkar Jha</h1>
+            <p class="card-text">ORTHOPÉDIE</p>
+            <button class="dr_btn" data-url="https://what.sapp.link/frenchartemisind">Prendre un rendez-vous</button>
+            <button class="dr_btn2" data-url="https://what.sapp.link/frenchartemisind"
+              data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+                style="font-size:8px;color:rgb(107, 178, 20)"></i> Se connecter sur WhatsApp</button>
+            <!--call btn dr-->
+            <!-- <br><br>
+              <a href="https://wa.me/+918800844573" aria-label="alpx">
+                <i class="fa fa-whatsapp"
+                  style="font-size:48px;color:rgb(107, 178, 20)"></i>
+                <br>
+              </a> -->
+            <!--end here-->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-top15  commn_id" alt="Card Image"></div>
+          <div class="card-body">
+            <h1 class="card-title">Dr. Ravi Sahota
+            </h1>
+            <p class="card-text">ORTHOPÉDIE</p>
+            <button class="dr_btn" data-url="https://what.sapp.link/frenchartemisind">Prendre un rendez-vous</button>
+            <button class="dr_btn2" data-url="https://what.sapp.link/frenchartemisind"
+              data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+                style="font-size:8px;color:rgb(107, 178, 20)"></i> Se connecter sur WhatsApp</button>
+            <!--call btn dr-->
+            <!-- <br><br>
+              <a href="https://wa.me/+918800844573" aria-label="alpx">
+                <i class="fa fa-whatsapp"
+                  style="font-size:48px;color:rgb(107, 178, 20)"></i>
+                <br>
+              </a> -->
+            <!--end here-->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-top16  commn_id" alt="Card Image"></div>
+          <div class="card-body">
+            <h1 class="card-title">Dr. Sanjay Sarup
+            </h1>
+            <p class="card-text">ORTHOPÉDIE</p>
+            <button class="dr_btn" data-url="https://what.sapp.link/frenchartemisind">Prendre un rendez-vous</button>
+            <button class="dr_btn2" data-url="https://what.sapp.link/frenchartemisind"
+              data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+                style="font-size:8px;color:rgb(107, 178, 20)"></i> Se connecter sur WhatsApp</button>
+            <!--call btn dr-->
+            <!-- <br><br>
+              <a href="https://wa.me/+918800844573" aria-label="alpx">
+                <i class="fa fa-whatsapp"
+                  style="font-size:48px;color:rgb(107, 178, 20)"></i>
+                <br>
+              </a> -->
+            <!--end here-->
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--end orhtho-->
+
+  <div class="container-fluid no-padding-container   banner-bn" id="kidney">
+    <div class="container ">
+      <div class="row bnnr-row  ">
+        <div class="col-6 bnnr-mobi ">
+          <p>Connectez-vous avec un expert pour obtenir des conseils et un soutien personnalisés.</p>
+        </div>
+        <div class="col-6 text-right chat_col">
+          <button class="btn-bnnr " data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+              style="font-size:18px;color:rgb(107, 178, 20)"></i> Se connecter sur WhatsApp</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <br>
+  <p class="Patient_Services2 text-center"> <span><b>
+        TRANSPLANTATION</b></span></p>
+
+  <br>
+  <!--Kidney Transplant-->
+  <div class="container mt-3 text-center ">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-top39  commn_id" alt="Card Image"></div>
+          <div class="card-body">
+            <h1 class="card-title">Dr. Giriraj Bora
+            </h1>
+            <p class="card-text">TRANSPLANTATION</p>
+            <button class="dr_btn" data-url="https://what.sapp.link/frenchartemisind">Prendre un rendez-vous</button>
+            <button class="dr_btn2" data-url="https://what.sapp.link/frenchartemisind"
+              data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+                style="font-size:8px;color:rgb(107, 178, 20)"></i> Se connecter sur WhatsApp</button>
+            <!--call btn dr-->
+            <!-- <br><br>
+              <a href="https://wa.me/+918800844573" aria-label="alpx">
+                <i class="fa fa-whatsapp"
+                  style="font-size:48px;color:rgb(107, 178, 20)"></i>
+                <br>
+              </a> -->
+            <!--end here-->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-top40  commn_id" alt="Card Image"></div>
+          <div class="card-body">
+            <h1 class="card-title">Dr. Harsha Jauhari
+            </h1>
+            <p class="card-text">TRANSPLANTATION</p>
+            <button class="dr_btn" data-url="https://what.sapp.link/frenchartemisind">Prendre un rendez-vous</button>
+            <button class="dr_btn2" data-url="https://what.sapp.link/frenchartemisind"
+              data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+                style="font-size:8px;color:rgb(107, 178, 20)"></i> Se connecter sur WhatsApp</button>
+            <!--call btn dr-->
+            <!-- <br><br>
+              <a href="https://wa.me/+918800844573" aria-label="alpx">
+                <i class="fa fa-whatsapp"
+                  style="font-size:48px;color:rgb(107, 178, 20)"></i>
+                <br>
+              </a> -->
+            <!--end here-->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img-top41  commn_id" alt="Card Image"></div>
+          <div class="card-body">
+            <h1 class="card-title">Dr. Sandeep Harkar
+            </h1>
+            <p class="card-text"> TRANSPLANTATION</p>
+            <button class="dr_btn" data-url="https://what.sapp.link/frenchartemisind">Prendre un rendez-vous</button>
+            <button class="dr_btn2" data-url="https://what.sapp.link/frenchartemisind"
+              data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+                style="font-size:8px;color:rgb(107, 178, 20)"></i> Se connecter sur WhatsApp</button>
+            <!--call btn dr-->
+            <!-- <br><br>
+              <a href="https://wa.me/+918800844573" aria-label="alpx">
+                <i class="fa fa-whatsapp"
+                  style="font-size:48px;color:rgb(107, 178, 20)"></i>
+                <br>
+              </a> -->
+            <!--end here-->
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- End Kidney Transplant-->
+
+  <!--doctor card end-->
+  <div class="container-fluid no-padding-container   banner-bn" id="HealthPackages">
+    <div class="container ">
+      <div class="row bnnr-row  ">
+        <div class="col-6 bnnr-mobi ">
+          <p>Connectez-vous avec un expert pour obtenir des conseils et un soutien personnalisés.</p>
+        </div>
+        <div class="col-6 text-right chat_col">
+          <button class="btn-bnnr " data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+              style="font-size:18px;color:rgb(107, 178, 20)"></i> Se connecter sur WhatsApp</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div><br><br>
+  <h2 class="heading">
+    <span class> Plans de contrôle de santé préventive Artemis</span>
+
+  </h2>
+
+  <!--table helth care-->
+  <div class="container helth-check" id="HealthPackages"> <br>
+    <h1 class="text-center" style="color: #706621; ">HealthPackages with Costs
+      (in USD)</h1><br><br><br>
+
+    <!--BOX1-->
+    <div class="row">
+      <div class="col-sm-12 ml-5   style-helth" data-url="https://what.sapp.link/frenchartemisind">
+        <!-- Content for the first column -->
+        <h1 style="
+             text-align: left;
+         "> Forfait de contrôle de santé de base (homme)</h1>
+        <br>
+        <h2 class="font_set">122,59 $</h2><br>
+        <div class="row">
+          <ul class="col-6">
+            <li>Consultation du médecin (avant et après)</li>
+            <li>Consultation du chirurgien</li>
+            <li>Consultation du dentiste</li>
+            <li>Consultation du diététicien + groupe sanguin et type Rh</li>
+            <li>Numération formule sanguine complète</li>
+            <li>Différentiel</li>
+            <li>Glycémie à jeun et postprandiale</li>
+            <li>(heures après le jeûne)</li>
+            <li>SGOT (test sanguin hépatique)</li>
+            <li>SGPT (test sanguin hépatique)</li>
+            <li>TSH sérique (test sanguin thyroïdien)</li>
+            <li>Urée sanguine</li>
+            <li>Créatinine sérique</li>
+            <li>Acide urique sérique</li>
+          </ul>
+          <ul class="col-6">
+            <li>Profil lipidique</li>
+            <li>Test des selles JE</li>
+            <li>Analyse d'urine de routine</li>
+            <li>Radiographie thoracique</li>
+            <li>Test d’effort sur tapis roulant</li>
+            <li>Échocardiographie transthoracique</li>
+            <li>HbA1c (hémoglobine glycosylée)</li>
+            <li>Niveaux de vitamine B12</li>
+            <li>Niveaux de vitamine D 25-hydroxy</li>
+          </ul>
+        </div>
+
+
+      </div>&nbsp;
+
+    </div>
+    <!--BOX1-->
+    <div class="row">
+      <div class="col-sm-12 ml-5   style-helth" data-url="https://what.sapp.link/frenchartemisind">
+        <!-- Content for the first column -->
+        <h1 style="
+           text-align: left;
+       "> Forfait de contrôle de santé de base (femme)</h1>
+        <br>
+        <h2 class="font_set">122,59 $</h2><br>
+        <div class="row">
+          <ul class="col-6">
+            <li>Consultation du médecin (avant et après)</li>
+            <li>Consultation du chirurgien</li>
+            <li>Consultation du dentiste</li>
+            <li>Consultation du diététicien + groupe sanguin et type Rh</li>
+            <li>Numération formule sanguine complète</li>
+            <li>Différentiel</li>
+            <li>Glycémie à jeun et postprandiale</li>
+            <li>(heures après le jeûne)</li>
+            <li>SGOT (test sanguin hépatique)</li>
+            <li>SGPT (test sanguin hépatique)</li>
+            <li>TSH sérique (test sanguin thyroïdien)</li>
+            <li>Urée sanguine</li>
+            <li>Créatinine sérique</li>
+            <li>Acide urique sérique</li>
+          </ul>
+          <ul class="col-6">
+            <li>Profil lipidique</li>
+            <li>Analyse de selles R/E</li>
+            <li>Analyse d'urine de routine</li>
+            <li>Radiographie thoracique (vue PA)</li>
+            <li>Échographie abdominale complète + HbA1c (hémoglobine glycosylée)</li>
+            <li>Niveaux de vitamine B12</li>
+            <li>Niveaux de vitamine D 25-hydroxy</li>
+          </ul>
+        </div>
+
+      </div>&nbsp;
+
+    </div>
+
+    <!--BOX1-->
+    <div class="row">
+      <div class="col-sm-12 ml-5   style-helth" data-url="https://what.sapp.link/frenchartemisind">
+        <!-- Content for the first column -->
+        <h1 style="
+         text-align: left;
+     "> Forfait de contrôle de santé Argent (Homme &lt; 40 ans)</h1>
+        <br>
+        <h2 class="font_set">122,59 $</h2><br>
+        <div class="row">
+          <ul class="col-6">
+            <li>Consultation du médecin (avant et après)</li>
+            <li>Consultation du chirurgien</li>
+            <li>Consultation du dentiste</li>
+            <li>Consultation du diététicien</li>
+            <li>Numération sanguine complète avec ESR &amp;</li>
+            <li>Frottis périphérique</li>
+            <li>Groupe sanguin &amp; Rh</li>
+            <li>Glycémie à jeun</li>
+            <li>Glycémie postprandiale (2 h après le jeûne)</li>
+            <li>SGOT &amp; SGPT (test sanguin hépatique)</li>
+            <li>TSH sérique (test sanguin thyroïdien),</li>
+            <li>Urée sanguine</li>
+            <li>Créatinine sérique</li>
+            <li>Acide urique sérique</li>
+            <li>Profil lipidique</li>
+          </ul>
+          <ul class="col-6">
+            <li>Consultation du médecin (avant et après)</li>
+            <li>Consultation du chirurgien</li>
+            <li>Consultation du dentiste</li>
+            <li>Consultation du diététicien + groupe sanguin &amp; type Rh</li>
+            <li>Numération formule sanguine complète</li>
+            <li>Différentiel</li>
+            <li>Glycémie à jeun &amp; postprandiale</li>
+            <li>(heures après le jeûne)</li>
+            <li>SGOT (test sanguin hépatique)</li>
+            <li>SGPT (test sanguin hépatique)</li>
+            <li>TSH sérique (test sanguin thyroïdien)</li>
+            <li>Urée sanguine</li>
+            <li>Créatinine sérique</li>
+            <li>Acide urique sérique</li>
+          </ul>
+        </div>
+
+      </div>&nbsp;
+
+    </div>
+
+    <!--BOX1-->
+    <div class="row">
+      <div class="col-sm-12 ml-5   style-helth" data-url="https://what.sapp.link/frenchartemisind">
+        <!-- Content for the first column -->
+        <h1 style="
+           text-align: left;
+       "> Forfait de contrôle de santé Argent (Femme &lt; 40 ans)</h1>
+        <br>
+        <h2 class="font_set">129,80 $</h2><br>
+        <div class="row">
+          <ul class="col-6">
+            <li>Consultation du médecin (avant et après)</li>
+            <li>Consultation gynécologique avec frottis</li>
+            <li>Consultation du dentiste</li>
+            <li>Consultation du diététicien</li>
+            <li>Numération sanguine avec E58 &amp;</li>
+            <li>Frottis périphérique</li>
+            <li>Groupe sanguin &amp; Ah</li>
+            <li>Glycémie à jeun</li>
+            <li>Glycémie postprandiale (2 h après le jeûne)</li>
+            <li>SGOT &amp; SGPT (test sanguin hépatique)</li>
+            <li>TSH sérique (test sanguin thyroïdien)</li>
+            <li>Sodium sérique</li>
+            <li>Potassium sérique</li>
+            <li>Urée sanguine</li>
+            <li>Créatinine sérique</li>
+          </ul>
+          <ul class="col-6">
+            <li>Acide urique sérique ¢ Profil lipidique</li>
+            <li>Analyse d’urine de routine</li>
+            <li>Radiographie thoracique (vue PA)</li>
+            <li>Échographie abdominale complète avec TVS</li>
+            <li>Test de fonction pulmonaire</li>
+            <li>HbAIC (hémoglobine glycosylée) Niveaux de Vit B12 sérique</li>
+            <li>Niveaux de Vit D 25 Hydroxy sérique</li>
+
+          </ul>
+        </div>
+
+      </div>&nbsp;
+
+    </div>
+
+
+  </div>
+  <!--end-->
+  <br>
+
+  <!--sidebar-->
+  <!-- <div id="sidebar" data-url="https://what.sapp.link/frenchartemisind">
+
+  slider inner contant -->
+  <!-- <div class="container text-center sidebar-top"> -->
+  <!-- <a    aria-label="alpx" class="text-left" style="cursor:pointer;" onclick="closeNav()"  href="#stop"  ><i class="fa fa-close " style="color:#ffffff"></i> -->
+  <!-- </a> -->
+  <!-- <div class="container"> -->
+  <!-- <div class="row"> -->
+  <!-- <div class="col"> -->
+  <!-- <div class="background-div text-center text-white"> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+
+  <!-- <div class="content">
+      <p class="sidebar_top_font" >ARTEMIS Hospital
+        Sector 51, Gurugram,
+        Haryana 122001
+        India
+        
+        ​</p>
+    </div>
+  </div> -->
+  <!-- <div class="container text-center sidebar-middle">
+    <span class="sidebar-span">International Patient Services</span><br>
+    <h1 class="sidebar-h1">24 x 7
+      Live 
+      Support</h1><br>
+      <span class="sidebar_end_span ">Get appointments, Tele-consultation, Visa Support and all International Patient Services </span><br>
+      <button class="sidebar-button" data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+                  style="font-size:8px;color:rgb(107, 178, 20)"></i>LIVE CHAT</button>
+  </div>
+  </div>  -->
+  <!-- 
+</div>
+
+</div>
+
+<div id="main-content text-center" class="xmx">
+  <div class="btn btn-info" onclick="openNav()"  > Sidebar</div>
+</div> -->
+
+
+  <h2 class="heading" id="hotel">
+    <span class>
+      Hôtels et maisons d’hôtes pour tous les budgets
+    </span> <br><span> <b>Près d’Artemis Medcity, Gurugram
+      </b></span>
+  </h2>
+  <!--hotel-->
+  <div class="container ">
+    <div class="row hotel-row ">
+      <!-- First Column - Image -->
+      <div class="col-md-3 col-sm-6 mb-3 d-flex align-items-center justify-content-center hotel-img">
+      </div>
+
+      <!-- Second Column - Heading, Subheading, Paragraph -->
+      <div class="col-md-5 col-sm-6 mb-3 d-flex flex-column align-items-left justify-content-center add-bar">
+        <h1 class="hotel-name">FabHotel Kiara Les Suites Privées
+        </h1>
+
+        <h1 class="hotel-star">4.6 star hotel</h1>
+        <div style="display: inline;">
+          <span class="fa fa-star checked "></span>
+          <span class="fa fa-star checked "></span>
+          <span class="fa fa-star checked "></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star all_star"></span>
+        </div>
+
+        <p class="hotel-add">Adresse : Numéro de parcelle 682, Koyal Vihar, Secteur 52,
+          Gurugram, Haryana 122003
+        </p>
+
+      </div>
+
+      <!-- Third Column - Map Icon -->
+      <div class="col-md-2 col-sm-6 mb-3 d-flex  justify-content-center map">
+        <i class="fa fa-map-marker fa-style "></i>
+        <div>
+          <p class="km-dis ">900m</p>
+
+        </div>
+      </div>
+
+      <!-- Fourth Column - Price -->
+      <div class="col-md-2 col-sm-6 mb-3  ">
+        <h1 class="price">₹1456</h1><br>
+
+        <button onclick="LC_API.open_chat_window() ; return false " class="btn-hotel">Discutez avec nous pour les
+          meilleures
+          offres</button>
+        <p class="hotel_tc">*les tarifs peuvent varier en fonction du type de chambre, des caractéristiques souhaitées
+          et du
+          niveau de personnalisation
+        </p>
+
+      </div>
+    </div>
+  </div>
+  <!--end hotel--><br>
+
+  <!--hotel-->
+  <div class="container ">
+    <div class="row hotel-row ">
+      <!-- First Column - Image -->
+      <div class="col-md-3 col-sm-6 mb-3 d-flex align-items-center justify-content-center hotel-img2">
+      </div>
+
+      <!-- Second Column - Heading, Subheading, Paragraph -->
+      <div class="col-md-5 col-sm-6 mb-3 d-flex flex-column align-items-left justify-content-center add-bar">
+        <h1 class="hotel-name">Hôtel Starex Inn & appartement de service
+        </h1>
+        <h1 class="hotel-star">Hôtel 3,8 étoiles</h1>
+        <div style="display: inline;">
+          <span class="fa fa-star checked "></span>
+          <span class="fa fa-star checked "></span>
+          <span class="fa fa-star checked "></span>
+          <span class="fa fa-star all_star"></span>
+          <span class="fa fa-star all_star"></span>
+        </div>
+        <p class="hotel-add">Adresse : 563, Koyal Vihar, Secteur 52, Gurugram, Bindapur, Haryana 122001
+        </p>
+
+      </div>
+
+      <!-- Third Column - Map Icon -->
+      <div class="col-md-2 col-sm-6 mb-3 d-flex  justify-content-center map">
+        <i class="fa fa-map-marker fa-style "></i>
+        <div>
+          <p class="km-dis ">400m</p>
+
+        </div>
+      </div>
+
+      <!-- Fourth Column - Price -->
+      <div class="col-md-2 col-sm-6 mb-3  ">
+        <h1 class="price">₹2118</h1><br>
+
+        <button onclick="LC_API.open_chat_window() ; return false " class="btn-hotel">Discutez avec nous pour les
+          meilleures
+          offres</button>
+        <p class="hotel_tc">*les tarifs peuvent varier selon le type de chambre, les caractéristiques souhaitées et le
+          niveau
+          de personnalisation
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <!--end hotel--><br>
+  <!--hotel-->
+  <div class="container ">
+    <div class="row hotel-row ">
+      <!-- First Column - Image -->
+      <div class="col-md-3 col-sm-6 mb-3 d-flex align-items-center justify-content-center hotel-img3">
+      </div>
+
+      <!-- Second Column - Heading, Subheading, Paragraph -->
+      <div class="col-md-5 col-sm-6 mb-3 d-flex flex-column align-items-left justify-content-center add-bar">
+        <h1 class="hotel-name">
+          Lime Tree Appartement de service deux chambres, Apollo Gurgaon
+        </h1>
+        <h1 class="hotel-star">Hôtel 4,0 étoiles</h1>
+        <div style="display: inline;">
+          <span class="fa fa-star checked "></span>
+          <span class="fa fa-star checked "></span>
+          <span class="fa fa-star checked "></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star all_star"></span>
+        </div>
+        <p class="hotel-add">Adresse : Parcelle n° 504, Koyal Vihar, Secteur 52,
+          Gurugram, Bindapur, Haryana 122003
+        </p>
+
+      </div>
+
+      <!-- Third Column - Map Icon -->
+      <div class="col-md-2 col-sm-6 mb-3 d-flex  justify-content-center map">
+        <i class="fa fa-map-marker fa-style"></i>
+        <div>
+          <p class="km-dis ">1.1km</p>
+
+        </div>
+      </div>
+
+      <!-- Fourth Column - Price -->
+      <div class="col-md-2 col-sm-6 mb-3">
+        <h1 class="price">₹3969</h1><br>
+
+        <button data-url="https://what.sapp.link/frenchartemisind" class="btn-hotel">Discutez avec nous pour les
+          meilleures
+          offres</button>
+        <p class="hotel_tc">*les tarifs peuvent varier en fonction du type de chambre, des caractéristiques souhaitées
+          et du
+          niveau de personnalisation
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <!--end hotel--><br>
+  <!--hotel-->
+  <div class="container ">
+    <div class="row hotel-row ">
+      <!-- First Column - Image -->
+      <div class="col-md-3 col-sm-6 mb-3 d-flex align-items-center justify-content-center hotel-img4">
+      </div>
+
+      <!-- Second Column - Heading, Subheading, Paragraph -->
+      <div class="col-md-5 col-sm-6 mb-3 d-flex flex-column align-items-left justify-content-center add-bar">
+        <h1 class="hotel-name">Mavens White - Hôtel près de l'hôpital Artemis
+        </h1>
+        <h1 class="hotel-star">Hôtel 4,2 étoiles</h1>
+        <div style="display: inline;">
+          <span class="fa fa-star checked "></span>
+          <span class="fa fa-star checked "></span>
+          <span class="fa fa-star checked "></span>
+          <span class="fa fa-star all_star"></span>
+          <span class="fa fa-star all_star"></span>
+        </div>
+
+        <p class="hotel-add">Adresse : 261 SP, Artemis Hospital Rd, Koyal
+          Vihar, Secteur 52, Gurugram, Bindapur, Haryana 122003
+        </p>
+
+      </div>
+
+      <!-- Third Column - Map Icon -->
+      <div class="col-md-2 col-sm-6 mb-3 d-flex  justify-content-center map">
+        <i class="fa fa-map-marker fa-style"></i>
+        <div>
+          <p class="km-dis ">650m</p>
+
+        </div>
+      </div>
+
+      <!-- Fourth Column - Price -->
+      <div class="col-md-2 col-sm-6 mb-3  ">
+        <h1 class="price">₹1833</h1><br>
+
+        <button onclick="LC_API.open_chat_window() ; return false " class="btn-hotel">Discutez avec nous pour les
+          meilleures
+          offres</button>
+        <p class="hotel_tc">*les tarifs peuvent varier en fonction du type de chambre, des caractéristiques souhaitées
+          et du
+          niveau de personnalisation
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <!--end hotel-->
+  <!--hotel--><br>
+  <div class="container ">
+    <div class="row hotel-row ">
+      <!-- First Column - Image -->
+      <div class="col-md-3 col-sm-6 mb-3 d-flex align-items-center justify-content-center hotel-img5">
+      </div>
+
+      <!-- Second Column - Heading, Subheading, Paragraph -->
+      <div class="col-md-5 col-sm-6 mb-3 d-flex flex-column align-items-left justify-content-center add-bar">
+        <h1 class="hotel-name">Hôtel Lime Tree Pulkit Gurgaon - Hôpital Artemis, Métro le plus proche : Huda City Centre
+        </h1>
+        <h1 class="hotel-star">Hôtel 4,9 étoiles</h1>
+        <div style="display: inline;">
+          <span class="fa fa-star checked "></span>
+          <span class="fa fa-star checked "></span>
+          <span class="fa fa-star checked "></span>
+          <span class="fa fa-star all_star"></span>
+          <span class="fa fa-star all_star"></span>
+        </div>
+        <p class="hotel-add">Adresse : PLOT NO, 437, Koyal Vihar, Secteur 52,
+          Gurugram, Bindapur, Haryana 122003
+        </p>
+
+      </div>
+
+      <!-- Third Column - Map Icon -->
+      <div class="col-md-2 col-sm-6 mb-3 d-flex  justify-content-center map">
+
+        <i class="fa fa-map-marker fa-style "></i>
+        <div>
+          <p class="km-dis ">500m</p>
+
+        </div>
+      </div>
+
+      <!-- Fourth Column - Price -->
+      <div class="col-md-2 col-sm-6 mb-3">
+        <h1 class="price">₹1458</h1><br>
+
+        <button data-url="https://what.sapp.link/frenchartemisind" class="btn-hotel">
+          Discutez avec nous pour les meilleures offres
+        </button>
+        <p class="hotel_tc">
+          *les tarifs peuvent varier en fonction du type de chambre, des caractéristiques souhaitées et du niveau de
+          personnalisation
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <!--end hotel-->
+
+  <br>
+
+  <!--Patient Services tag-->
+  <p style="color: #a69837;" class="Patient_Services text-center"><span><b>Services aux patients internationaux
+        Artemis Medcity, Gurugram</b></span></p>
+
+  <!-- End Patient Services tag-->
+
+  <br>
+
+  <!---->
+  <div class="container-fluid" id="lst_lg_box">
+    <div class="container">
+
+      <div class="row marz">
+
+        <div class="cardnew">
+          <img class="service-bottom" src="img/icon2.svg" width="16%" height="63px" alt="loding..">
+          <div class="container style_box ">
+            <h1 class="font-lst-box" style="color: #a69837;"><b>Expérience personnalisée</b></h1>
+            <p class="font-lst-box-s" style="color: #686868;">Nos équipes
+              sont composées de professionnels du voyage et de médecins.
+              Chacun offre des soins personnalisés à nos patients.
+              Cela garantit la plus haute qualité de soins à un rythme
+              confortable pour le patient et améliore l'expérience globale
+              en matière de santé.</p>
+          </div>
+        </div>
+
+
+        <div class="cardnew2">
+          <img class="service-bottom" src="img/icon1.svg" width="16%" height="63px" alt="loding..">
+          <div class="container style_box">
+            <h1 class="font-lst-box" style="color: #a69837;"><b>Gagner du temps et de l'argent</b></h1>
+            <p class="font-lst-box-s" style="color: #686868;">Nous comprenons
+              l'importance du temps dans les soins de santé.
+              Nos protocoles et nos équipes sont bien conçus pour gérer
+              les urgences et les traitements planifiés. Nous faisons gagner
+              à nos patients un temps précieux et de l'argent à toutes les étapes
+              du voyage et du traitement.</p>
+          </div>
+        </div>
+
+
+        <div class="cardnew3">
+          <img class="service-bottom" src="img/icon3.svg" width="16%" height="63px" alt="loding..">
+          <div class="container style_box">
+            <h1 class="font-lst-box" style="color: #a69837;"><b>Soins complets</b></h1>
+            <p class="font-lst-box-s" style="color: #686868;">
+              Prise en charge de bout en bout, depuis l’avis initial et l’estimation des coûts auprès des 5 meilleurs
+              hôpitaux,
+              jusqu’aux démarches liées au visa, vols, accueil à l’aéroport, maison d’hôtes, repas, cuisine,
+              transport local, carte SIM, wi-fi, rendez-vous médicaux,
+              admission à l’hôpital, sortie, suivi et retour à l’aéroport.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---->
+
+  <div class="container-fluid no-padding-container   banner-bn">
+    <div class="container ">
+      <div class="row bnnr-row">
+        <div class="col-6 bnnr-mobi">
+          <p>Contactez un expert pour des conseils et un accompagnement personnalisés.</p>
+        </div>
+        <div class="col-6 text-right chat_col">
+          <button class="btn-bnnr" data-url="https://what.sapp.link/frenchartemisind"><i class="fa fa-whatsapp"
+              style="font-size:18px;color:rgb(107, 178, 20)"></i> Se connecter sur
+            WhatsApp</button>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("sidebar").style.width = "40%";
+      /*   setTimeout(function() {
+           document.getElementById("sidebar").style.width = "0";
+         }, 15000); // Close sidebar after 15 seconds
+        */
+    }
+
+    function closeNav() {
+      document.getElementById("sidebar").style.width = "0";
+    }
+  </script>
+  <!--sidebar end-->
+  <!-- 
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i
+        class="fa fa-arrow-circle-up"></i> Top</button> -->
+
+  <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- <script>
+
+function callevent(){
+  setTimeout(openNav,10000);
+
+}
+callevent();
+
+/*
+function handleClick() {
+  callevent();
+}
+callevent();
+myButton.addEventListener('click', handleClick); */
+
+// Call the function initially
+
+// Set up the interval to call the function every 30 seconds (30000 milliseconds)
+
+
+
+
+
+ // Counter to keep track of the number of clicks
+ let clickCount = 0;
+
+// Function to be executed on the first click
+function onFirstClick() {
+  setTimeout(openNav, 15000); // Execute openNav after 10 seconds
+}
+
+// Function to be executed on the second click
+function onSecondClick() {
+  setTimeout(openNav, 30000); // Execute openNav after 150 seconds (2.5 minutes)
+}
+
+// Function to be executed on the third click
+function onThirdClick() {
+  setTimeout(openNav, 60000); // Execute openNav after 150 seconds (2.5 minutes)
+
+}
+
+// Function to handle button clicks
+function handleButtonClick() {
+  clickCount++;
+
+  if (clickCount === 1) {
+    onFirstClick();
+  } else if (clickCount === 2) {
+    onSecondClick();
+  } else if (clickCount === 3) {
+    onThirdClick();
+    // Reset the click count after the third click
+    clickCount = 0;
+  }
+}
+
+// Attach the click event listener to the button
+document.getElementById('sidebar').addEventListener('click', handleButtonClick);
+
+
+
+
+
+  </script> -->
+  <script>
+    window.onscroll = function () {
+      stickyFunction();
+    };
+
+    const stickyElement = document.querySelector('.sticky-element');
+    const stickyPosition = stickyElement.offsetTop;
+
+    function stickyFunction() {
+      if (window.pageYOffset > stickyPosition) {
+        stickyElement.classList.add('sticky');
+      } else {
+        stickyElement.classList.remove('sticky');
+      }
+    }
+
+  </script>
+
+  <script>
+
+
+    $(document).ready(function () {
+      // Close navbar when clicking outside of it
+      $(document).on('click', function (e) {
+        if ($(e.target).closest('.navbar').length === 0) {
+          $('.navbar-collapse').collapse('hide');
+        }
+      });
+    });
+  </script>
+  <footer class="footer">
+    <div class="container footer-width">
+      <div class="row">
+        <div class="col-md-4 mob-footercol1 ">
+          <!-- Colonne 1 -->
+          <p style="font-size: 21px;"><b>INFORMATIONS DE CONTACT</b></p>
+
+          <p><b>Adresse</b> Hôpital ARTEMIS
+            Secteur 51, Gurugram,
+            Haryana 122001
+            Inde
+          </p>
+          <p class="footer-ph"><i class="fa fa-phone"> ​</i> (+91)
+            92669 70900</p>
+          <img class="footer_logo" src="assets\logo\tt%20logo.png" alt="Chargement...">
+        </div>
+        <div class="col-md-4 footer-column">
+          <!-- Colonne 2 -->
+          <p class="mobi-head2" style="font-size: 21px;text-align: left;margin-left: 38px;"><b>Liens rapides</b></p>
+          <ul class="footer-links">
+            <p style="color: white;">Avertissement</p>
+            <p style="color: white;">Termes et conditions</p>
+            <p style="color: white;">Politique de confidentialité</p>
+            <a style="color: white;" data-url="https://what.sapp.link/frenchartemisind">Discuter sur WhatsApp</a>
+          </ul>
+        </div>
+        <div class="col-md-4 footer-column ">
+          <!-- Colonne 3 -->
+          <p style="font-size: 21px;text-align: left;margin-left: 38px;" class="footer_col2_font"><b>Départements &
+              Spécialistes</b></p>
+          <ul class="text-left footer-links2">
+            <li><a href="#kidney" style="color: white;">Transplantation rénale</a></li>
+            <li><a href="#Liver Transplant" style="color: white;">Transplantation hépatique</a></li>
+            <li><a href="#Orthopedic" style="color: white;">Orthopédie</a></li>
+            <li><a href="#cardio" style="color: white;">Cardiologie</a></li>
+            <li><a href="#Oncology" style="color: white;">Oncologie</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container text-center " style="
+            margin-bottom: -21px;
+            border-top: 1px solid #ffffff2b;
+            padding-top: 12px;
+        ">
+        <p>© 2025 Copyright :</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script>
+
+
+    // Get all button elements on the page
+    const buttons = document.querySelectorAll('button,a,p');
+
+    // Loop through each button
+    buttons.forEach(function (button) {
+      // Attach a click event listener to each button
+      button.addEventListener('click', function () {
+        // Get the URL from the button's data-url attribute
+        const url = button.getAttribute('data-url');
+
+        // Check if a URL is defined for the button
+        if (url) {
+          // Open the URL in a new tab
+          window.open(url, '_blank');
+        }
+      });
+    });
+
+
+  </script>
+
+
+  <script>
+    // pre load area
+    window.addEventListener('load', () => {
+      const preloader = document.getElementById('preloader')
+      preloader.style.display = 'none'
+    })
+  </script>
+
+
+  <script>
+    function openNav() {
+      document.getElementById("sidebar").style.width = "40%";
+      /*   setTimeout(function() {
+           document.getElementById("sidebar").style.width = "0";
+         }, 15000); // Close sidebar after 15 seconds
+        */
+    }
+
+    function closeNav() {
+      document.getElementById("sidebar").style.width = "0";
+    }
+  </script>
+  <!--sidebar end-->
+
+  <!-- <button onclick="topFunction()" id="myBtn" title="Go to top"><i
+          class="fa fa-arrow-circle-up"></i> Top</button> -->
+
+  <script>
+    const drawer = document.getElementById('drawer');
+
+    const openButton = document.getElementById('openBtn');
+
+
+    document.getElementById('openBtn').addEventListener('click', function (event) {
+      event.stopPropagation();
+      document.getElementById('drawer').style.bottom = '0';
+    });
+
+    document.getElementById('closeBtn').addEventListener('click', function () {
+      event.stopPropagation();
+      document.getElementById('drawer').style.bottom = '-100%';
+    });
+
+
+    document.body.addEventListener('click', (event) => {
+      const mobileBreakpoint = 768;
+
+      if (window.innerWidth >= mobileBreakpoint) {
+        if (!drawer.contains(event.target) && !openBtn.contains(event.target)) {
+          document.getElementById('drawer').style.bottom = '-100%';
+        }
+      }
+    });
+
+    // Prevent clicks inside the drawer or open button from triggering body click listener
+    drawer.addEventListener('click', (event) => {
+      event.stopPropagation(); // Prevent click inside drawer from closing it
+    });
+  </script>
+
+  <script>
+
+    function openDrawer() {
+      setTimeout(function () {
+        // Get the element by its ID
+        const element = document.getElementById("drawer");
+
+        // Check if the element exists
+        if (element) {
+          document.getElementById('drawer').style.bottom = '0'; // Change to 'block' or any other desired display type
+        }
+      }, 10000);
+    }
+    function callevent() {
+      setTimeout(openNav, 10000);
+
+    }
+    callevent();
+    openDrawer()
+
+    /*
+    function handleClick() {
+      callevent();
+    }
+    callevent();
+    myButton.addEventListener('click', handleClick); */
+
+    // Call the function initially
+
+    // Set up the interval to call the function every 30 seconds (30000 milliseconds)
+
+
+
+
+
+    // Counter to keep track of the number of clicks
+    let clickCount = 0;
+
+    // Function to be executed on the first click
+    function onFirstClick() {
+      setTimeout(openNav, 15000); // Execute openNav after 10 seconds
+    }
+
+    // Function to be executed on the second click
+    function onSecondClick() {
+      setTimeout(openNav, 30000); // Execute openNav after 150 seconds (2.5 minutes)
+    }
+
+    // Function to be executed on the third click
+    function onThirdClick() {
+      setTimeout(openNav, 60000); // Execute openNav after 150 seconds (2.5 minutes)
+
+    }
+
+    // Function to handle button clicks
+    function handleButtonClick() {
+      clickCount++;
+
+      if (clickCount === 1) {
+        onFirstClick();
+      } else if (clickCount === 2) {
+        onSecondClick();
+      } else if (clickCount === 3) {
+        onThirdClick();
+        // Reset the click count after the third click
+        clickCount = 0;
+      }
+    }
+
+    // Attach the click event listener to the button
+    document.getElementById('sidebar').addEventListener('click', handleButtonClick);
+
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Function to set active tab based on the hash in the URL
+      function setActiveTabFromHash() {
+        // const hash = window.location.hash || '#tab1' // Default to tab1 if no hash
+        const hash = window.location.hash
+        const activeTab = document.querySelector(`.tab[data-target="${hash}"]`)
+        const activeContent = document.querySelector(hash)
+
+        if (activeTab && activeContent) {
+          // Remove active class from all tabs and content
+          document
+            .querySelectorAll('.tab')
+            .forEach((tab) => tab.classList.remove('active'))
+          document
+            .querySelectorAll('.content')
+            .forEach((content) => content.classList.remove('active'))
+
+          // Add active class to the clicked tab and corresponding content
+          activeTab.classList.add('active')
+          activeContent.classList.add('active')
+        }
+      }
+
+      // Event listener for tab clicks to change hash and active state
+      document.querySelectorAll('.tab').forEach((tab) => {
+        tab.addEventListener('click', function () {
+          const target = tab.getAttribute('data-target')
+          window.location.hash = target // Change the hash in the URL
+          setActiveTabFromHash() // Update the active tab and content
+        })
+      })
+
+      // Handle initial state when the page loads (in case of a hash in the URL)
+      setActiveTabFromHash()
+
+      // Update active tab when the URL hash changes (for browser navigation)
+      window.addEventListener('hashchange', setActiveTabFromHash)
+    })
+  </script>
+
+</body>
+
+</html>

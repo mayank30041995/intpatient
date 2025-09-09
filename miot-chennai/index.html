@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>MIOT Chennai</title>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content=" #d93537;" />
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- <link rel="icon" type="image/x-icon" href="img/fav-icon.webp"> -->
+  <link rel="preload" as="font">
+  <meta name="description" content="Aster Hospital ">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/miot_stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+  <link rel="icon" type="x-icon" href="assets/logo/favicon.ico">
+</head>
+
+<body>
+  <!--top bar-->
+  <div class="container-fluid top-bar ">
+    <div class="row">
+      <div class="col-12 col-md-12 top-bar-text  ">
+
+        <span class="location"> <i class="fa fa-map-marker"></i> MIOT International
+          4/112, Mount Poonamalle Road,
+          Manapakkam, Chennai - 600 089</span> <span id="mobileNo">
+        </span>&nbsp;&nbsp;&nbsp;
+        <br class="br_mobi">
+        <a href="https://what.sapp.link/miot" target="_blank" class="emn" style="color: #FFF">
+          <span id="mobileNo"><i class="fa fa-phone"></i> Whatsapp:
+            (+91) 92669 70900</span>&nbsp;</a>
+        <button class="btn Emergency-btn">
+          <a href="https://what.sapp.link/miot" target="_blank" class="emn" style="color: rgb(32, 32, 32); "> <span
+              class="text-Emergency"> 24/7 Emergency</span><img class="con-victor" src="assets/logo/favicon.ico"></a>
+        </button>
+
+      </div>
+
+
+
+    </div>
+  </div>
+  <!--top bar for mobile -->
+  <!-- top bar for mobile -->
+  <div class="container mobile-navbar">
+    <div class="row ">
+      <div class="col-sm-8 col-8 p-col-1 ">
+        <span class="location"><i class="fa fa-map-marker"></i> Location: Chennai, India </span>
+        <br>
+        <span id="mobileNo"><i class="fa fa-phone"></i> Whatsapp: (+91) 92669 70900</span>
+      </div>
+      <div class="col-sm-4 col-4">
+        <button class="Emergency-btn">
+          <img class="con-victor" src="assets/logo/Vector-y.svg">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!--end -->
+
+  <!--end-->
+
+  <!--navbar-->
+  <div class="container-fluid logo ">
+    <a class="navbar-brand" href="#" aria-label="alpha">
+      <img src="assets/logo/favicon.webp" class="logo-x" alt="HTML5 Icon" width="140px" height="100%">
+
+    </a>
+  </div>
+  <!--logo mobile-->
+  <div class="container-fluid logo-mobi text-center">
+    <a class="navbar-brand" href="#" aria-label="alpha">
+      <img src="assets/logo/favicon.webp" class="logo-x-mobi" alt="HTML5 Icon" width="140px" height="100%">
+
+    </a>
+  </div>
+  <!--end-->
+  <!-- ... -->
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="center-container" id="navbarNav">
+      <ul class="navbar-nav d-lg-flex ">
+        <li class="nav-item active ">
+          <a role="link" class="nav-link" aria-label="Overview" href="#overview">Overview</a>
+          <span class="sr-only">(current)</span>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-label="Doctors" href="#menu">Doctors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-label="Healthcare Packages" href="#HealthPackages">Preventive checkups</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="LC_API.open_chat_window(); return false" href="#">Connect on Whatsapp with
+            Doctor</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://what.sapp.link/miot" target="_blank">International Patient</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#hotels">Hotels</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--mobile navbar-->
+  <div class="navbar-mobile">
+    <div style="overflow-x: auto;">
+      <ul style="list-style-type: none; white-space: nowrap;">
+        <li class="nav-li-mobi active-mobi" style="display: inline;">Overview</li>
+        <li class="nav-li-mobi" style="display: inline;">Doctors</li>
+        <li class="nav-li-mobi" style="display: inline;">Preventive checkups</li>
+        <li class="nav-li-mobi" style="display: inline;">Connect on Whatsapp with Doctor</li>
+        <li class="nav-li-mobi" style="display: inline;">International Patient</li>
+        <li class="nav-li-mobi" style="display: inline;">Hotels</li>
+      </ul>
+    </div>
+  </div>
+
+  <!--end-->
+
+
+
+
+  <!-- ... -->
+
+  <!--navbar end -->
+
+  <!--slider-->
+  <section class="slider-banner">
+    <div class="container-fluid slider ">
+
+      <div class="inner_text">
+        <span class="text_inner font-weight-bold text-uppercase">MIOT Hospital<br>Chennai</span><br>
+        <button class=" inner_button" data-url="https://what.sapp.link/miot">Connect on Whatsapp</button>
+      </div>
+    </div>
+  </section>
+  <!--end-->
+
+
+  <!--about us-->
+  <div class="container-fluid about-us">
+    <span class="head_about_us font-weight-bold my-5">About MIOT
+      Hospitals Chennai</span><br>
+    MIOT International is recognized among India’s top hospitals, delivering exceptional healthcare that patients have
+    come
+    to rely on. With 1,000 beds and expertise spanning 63 medical specialties, the hospital is home to a team of
+    globally
+    trained professionals. These experts leverage advanced technology and world-class infrastructure to treat, heal, and
+    inspire hope. Consistently ranked as a healthcare leader, MIOT International welcomes patients from over 130
+    countries
+    who come in search of quality care and a path to recovery.
+  </div>
+
+  <a href="#menu">
+    <div class="container-fluid   scrool">
+      <div class="about-us-scrool">
+
+      </div>
+    </div>
+  </a>
+
+
+  <!--end-->
+
+
+  <br><br><br>
+
+
+  <div class="container heading text-center">
+    <span>
+      Our services
+    </span><br>
+    <h1 class="font-weight-bold">Departments & Specialists</h1><br>
+    <div class=" container row-desgn text-center"></div>
+  </div>
+
+  <br><br>
+
+  <!--dr button-->
+  <div class="container dr_button" id="menu">
+    <div class="row justify-content-center">
+      <div class="col-md-4 col-sm-6 col-6">
+        <a href="#Cardiology" style="color: rgba(255, 222, 173, 0);"> <!-- Adjusted column classes -->
+          <button class="btn  btn-block sticky-btn">Cardiology</button>></a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-6"> <!-- Adjusted column classes -->
+        <a href="#onco" style="color: rgba(255, 222, 173, 0);"> <button
+            class="btn  btn-block sticky-btn">Onocolgy</button></a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-6"> <!-- Adjusted column classes -->
+        <a href="#Transplant" style="color: rgba(255, 222, 173, 0);">
+          <button class="btn  btn-block sticky-btn">Transplant</button></a>
+      </div>
+
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-sm-6 col-6"> <!-- Adjusted column classes -->
+        <a href="#Urology" style="color: rgba(255, 222, 173, 0);">
+
+          <button class="btn  btn-block sticky-btn">Urology</button></a>
+      </div>
+      <div class="col-md-6 col-sm-6 col-6"> <!-- Adjusted column classes -->
+        <a href="#Orthopedics" style="color: rgba(255, 222, 173, 0);">
+
+          <button class="btn  btn-block sticky-btn">Orthopedics</button></a>
+      </div>
+    </div>
+  </div>
+
+  <!--mobile dr button-->
+  <div class="container dr_button_mobile" id="menu">
+    <div class="row justify-content-center">
+      <div class=" col-sm-6 col-6"> <!-- Adjusted column classes -->
+        <a href="#Cardiology" style="color: rgba(255, 222, 173, 0);">
+          <button class="btn  btn-block sticky-btn">Cardiology</button></a>
+      </div>
+
+      <div class=" col-sm-6 col-6"> <!-- Adjusted column classes -->
+        <a href="#onco" style="color: rgba(255, 222, 173, 0);">
+          <button class="btn  btn-block sticky-btn"> Onocolgy</button></a>
+      </div>
+
+      <div class="col-sm-6 col-6"> <!-- Adjusted column classes -->
+        <a href="#Transplant" style="color: rgba(255, 222, 173, 0);">
+          <button class="btn  btn-block sticky-btn">Transplant</button>
+        </a>
+      </div>
+      <div class=" col-sm-6 col-6"> <!-- Adjusted column classes -->
+        <a href="#Urology" style="color: rgba(255, 222, 173, 0);">
+
+          <button class="btn  btn-block sticky-btn">Urology</button>
+        </a>
+      </div>
+      <div class=" col-sm-6 col-6"> <!-- Adjusted column classes -->
+        <a href="#Orthopedics" style="color: rgba(255, 222, 173, 0);">
+
+          <button class="btn  btn-block sticky-btn">Orthopedics</button>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+  <!---end -->
+
+  <!--end-->
+
+  <br><br>
+  <div class="container">
+    <span class="text-left meet_dr">
+      Meet Our Experienced<br>
+      Doctors
+    </span>
+    <button class="btn-after-dr">Make An Appointment </button>
+
+
+
+  </div>
+  <br><br><br>
+  <!--dr card-->
+  <div class="container" id="onco">
+    <span class="de-heading font-weight-bold">Onocolgy</span>
+  </div>
+
+
+
+
+
+
+
+  <div class="container text-center mt-4">
+    <div class="row">
+
+      <!-- Repeat the above card block three more times -->
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card2" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr. Senthil Kumar Ravichander
+            </span><br>
+            <span class="dr-name-span">Surgical Oncologist
+            </span><br>
+            <a class="b-chat" data-url="https://what.sapp.link/miot">Book an Appoinment</a><br>
+            <a class="l-chat" data-url="https://what.sapp.link/miot">Connect on Whatsapp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href="https://what.sapp.link/miot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--end-->
+      <!-- Repeat the above card block three more times -->
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card3" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr. Kishore S.
+            </span><br>
+            <span class="dr-name-span">Hematologic Oncologist
+            </span><br>
+            <a class="b-chat" data-url="https://what.sapp.link/miot">Book an Appoinment</a><br>
+            <a class="l-chat" data-url="https://what.sapp.link/miot">Connect on Whatsapp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <div class="whats-app"></div>
+          </div>
+        </div>
+      </div>
+      <!--end-->
+      <!-- Repeat the above card block three more times -->
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card4" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr. Prasad E
+            </span><br>
+            <span class="dr-name-span">Medical Oncologist
+            </span><br>
+            <a class="b-chat" data-url="https://what.sapp.link/miot">Book an Appoinment</a><br>
+            <a class="l-chat" data-url="https://what.sapp.link/miot">Connect on Whatsapp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href="https://what.sapp.link/miot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--end-->
+      <!-- Repeat the above card block three more times -->
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card5" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr. Suman Kalyan
+            </span><br>
+            <span class="dr-name-span">Oncologist
+            </span><br>
+            <a class="b-chat" data-url="https://what.sapp.link/miot">Book an Appoinment</a><br>
+            <a class="l-chat" data-url="https://what.sapp.link/miot">Connect on Whatsapp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href="https://what.sapp.link/miot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--end-->
+      <!-- Repeat the above card block three more times -->
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card6" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr. Chezhian Subash
+            </span><br>
+            <span class="dr-name-span">Hematologist,Hematologic Oncologist
+            </span><br>
+            <a class="b-chat" data-url="https://what.sapp.link/miot">Book an Appoinment</a><br>
+            <a class="l-chat" data-url="https://what.sapp.link/miot">Connect on Whatsapp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href="https://what.sapp.link/miot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--end-->
+
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card1" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr. V. Srinivasan</span><br>
+            <span class="dr-name-span">Oncology
+            </span><br>
+            <a class="b-chat" data-url="https://what.sapp.link/miot">Book an Appoinment</a><br>
+            <a class="l-chat" data-url="https://what.sapp.link/miot">Connect on Whatsapp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href="https://what.sapp.link/miot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <br>
+  <!--banner-->
+  <div class="container-fluid no-padding-container   banner-bn" id="">
+    <div class="container ">
+      <div class="row bnnr-row  ">
+        <div class="col-6 bnnr-mobi ">
+          <p>CONNECT WITH AN EXPERT FOR
+            PERSONALISED GUIDANCE & SUPPORT</p>
+        </div>
+        <div class="col-6 text-right chat_col">
+          <button class="btn-bnnr " data-url="https://what.sapp.link/miot">Connect on Whatsapp</button>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+  <!--end-->
+  <br>
+  <div class="container">
+    <span class="de-heading font-weight-bold" id="Transplant">Transplant</span>
+  </div>
+
+
+  <div class="container text-center mt-4">
+    <div class="row">
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card9" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr. Prof. Surendran R.
+            </span><br>
+            <span class="dr-name-span">Liver Transplant
+
+            </span><br>
+            <a class="b-chat" data-url="https://what.sapp.link/miot">Book an Appoinment</a><br>
+            <a class="l-chat" data-url="https://what.sapp.link/miot">Connect on Whatsapp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href="https://what.sapp.link/miot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the above card block three more times -->
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card10" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr Visakan Jagadeesan
+            </span><br>
+            <span class="dr-name-span">Dentist
+            </span><br>
+            <a class="b-chat" data-url="https://what.sapp.link/miot">Book an Appoinment</a><br>
+            <a class="l-chat" data-url="https://what.sapp.link/miot">Connect on Whatsapp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href="https://what.sapp.link/miot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--end-->
+      <!-- Repeat the above card block three more times -->
+      <!-- <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card11" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr. Nilesh Doctor</span><br>
+            <a class="b-chat" data-url="https://what.sapp.link/miot">Book an Appoinment</a><br>
+            <a class="l-chat" data-url="https://what.sapp.link/miot">Connect on Whatsapp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href=" https://what.sapp.link/miot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div> -->
+      <!--end-->
+      <!-- Repeat the above card block three more times -->
+      <!-- <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card12" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr. Vivek Shetty</span><br>
+            <a class="b-chat" data-url="https://what.sapp.link/miot">Book an Appoinment</a><br>
+            <a class="l-chat" data-url="https://what.sapp.link/miot">Connect on Whatsapp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href=" https://what.sapp.link/miot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div> -->
+      <!--end-->
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!--banner-->
+  <div class="container-fluid no-padding-container   banner-bn" id="">
+    <div class="container ">
+      <div class="row bnnr-row  ">
+        <div class="col-6 bnnr-mobi ">
+          <p>CONNECT WITH AN EXPERT FOR
+            PERSONALISED GUIDANCE & SUPPORT</p>
+        </div>
+        <div class="col-6 text-right chat_col">
+          <button class="btn-bnnr " data-url="https://what.sapp.link/miot">Connect on Whatsapp</button>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+  <!--end-->
+
+  <br>
+  <div class="container">
+    <span class="de-heading font-weight-bold" id="Orthopedics">Orthopedics</span>
+  </div>
+
+
+  <div class="container text-center mt-4">
+    <div class="row">
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card13" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr. Ashok Selvaraj
+            </span><br>
+            <span class="dr-name-span">Orthopedic surgeon
+            </span><br>
+            <a class="b-chat" data-url="https://what.sapp.link/miot">Book an Appoinment</a><br>
+            <a class="l-chat" data-url="https://what.sapp.link/miot">Connect on Whatsapp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href="https://what.sapp.link/miot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the above card block three more times -->
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card14" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr. Sowndhariya A
+            </span><br>
+            <span class="dr-name-span">Orthopedic surgeonA
+            </span><br>
+            <a class="b-chat" data-url="https://what.sapp.link/miot">Book an Appoinment</a><br>
+            <a class="l-chat" data-url="https://what.sapp.link/miot">Connect on Whatsapp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href=" https://what.sapp.link/miot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--end-->
+      <!-- Repeat the above card block three more times -->
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card13-b" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr. Billy Wilson
+            </span><br>
+            <span class="dr-name-span">Orthopedic surgeon
+            </span><br>
+            <a class="b-chat" data-url="https://what.sapp.link/miot">Book an Appoinment</a><br>
+            <a class="l-chat" data-url="https://what.sapp.link/miot">Connect on Whatsapp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href="https://what.sapp.link/miot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--end-->
+      <!-- Repeat the above card block three more times -->
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card13-c" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr. Charanjit Singh Dhillon
+            </span><br>
+            <span class="dr-name-span">Orthopedic surgeon
+            </span><br>
+            <a class="b-chat" data-url="https://what.sapp.link/miot">Book an Appoinment</a><br>
+            <a class="l-chat" data-url="https://what.sapp.link/miot">Connect on Whatsapp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href="https://what.sapp.link/miot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--end-->
+      <!-- Repeat the above card block three more times -->
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card13-d" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr. M Hema
+            </span><br>
+            <span class="dr-name-span">Orthopedic surgeon
+            </span><br>
+            <a class="b-chat" data-url="https://what.sapp.link/miot">Book an Appoinment</a><br>
+            <a class="l-chat" data-url="https://what.sapp.link/miot">Connect on Whatsapp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href="https://what.sapp.link/miot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--end-->
+
+
+
+    </div>
+  </div>
+
+  <!--banner-->
+  <div class="container-fluid no-padding-container   banner-bn" id="">
+    <div class="container ">
+      <div class="row bnnr-row  ">
+        <div class="col-6 bnnr-mobi ">
+          <p>CONNECT WITH AN EXPERT FOR
+            PERSONALISED GUIDANCE & SUPPORT</p>
+        </div>
+        <div class="col-6 text-right chat_col">
+          <button class="btn-bnnr " data-url="https://what.sapp.link/miot">Connect on Whatsapp</button>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+  <!--end-->
+
+  <br>
+  <div class="container">
+    <span class="de-heading font-weight-bold" id="Urology">Urology</span>
+  </div>
+
+
+  <div class="container text-center mt-4">
+    <div class="row">
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card15" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr. Karrthik Krishnamurthy</span><br>
+            <span class="dr-name-span">Urology
+            </span><br>
+            <a class="b-chat" data-url="https://what.sapp.link/miot">Book an Appoinment</a><br>
+            <a class="l-chat" data-url="https://what.sapp.link/miot">Connect on Whatsapp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href="https://what.sapp.link/miot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the above card block three more times -->
+      <!-- <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card16" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr.Vidya M.V
+            </span><br>
+            <span class="dr-name">Senior Consultant
+            </span><br>
+            <a class="b-chat" data-url="https://what.sapp.link/miot">Book an Appoinment</a><br>
+            <a class="l-chat" data-url="https://what.sapp.link/miot">Connect on Whatsapp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href=" https://what.sapp.link/miot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div> -->
+      <!--end-->
+
+
+
+    </div>
+  </div>
+
+
+  <!--banner-->
+  <div class="container-fluid no-padding-container   banner-bn" id="">
+    <div class="container ">
+      <div class="row bnnr-row  ">
+        <div class="col-6 bnnr-mobi ">
+          <p>CONNECT WITH AN EXPERT FOR
+            PERSONALISED GUIDANCE & SUPPORT</p>
+        </div>
+        <div class="col-6 text-right chat_col">
+          <button class="btn-bnnr " data-url="https://what.sapp.link/miot">Connect on Whatsapp</button>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+  <!--end-->
+
+  <br>
+  <div class="container">
+    <span class="de-heading font-weight-bold" id="Cardiology">Cardiology</span>
+  </div>
+
+
+  <div class="container text-center mt-4">
+    <div class="row">
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card17" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr. Gopal Murugesaan</span><br>
+            <span class="dr-name-span">Senior Consultant & HOD</span><br>
+            <a class="b-chat" data-url="https://what.sapp.link/miot">Book an Appoinment</a><br>
+            <a class="l-chat" data-url="https://what.sapp.link/miot">Connect on Whatsapp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href="https://what.sapp.link/miot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card18" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr. K.jaishankar</span><br>
+            <span class="dr-name-span">Sr. Consultant - Interventional Cardiology</span><br>
+            <a class="b-chat" data-url="https://what.sapp.link/miot">Book an Appoinment</a><br>
+            <a class="l-chat" data-url="https://what.sapp.link/miot">Connect on Whatsapp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href="https://what.sapp.link/miot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card19" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr. Vijit K.cherian
+            </span><br>
+            <span class="dr-name-span">Senior Consultant - Cardiology
+            </span><br>
+            <a class="b-chat" data-url="https://what.sapp.link/miot">Book an Appoinment</a><br>
+            <a class="l-chat" data-url="https://what.sapp.link/miot">Connect on Whatsapp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href="https://what.sapp.link/miot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card20" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr. Viginesh Thanikgaivasan
+            </span><br>
+            <span class="dr-name-span">Senior Consultant - Cardiology
+            </span><br>
+            <a class="b-chat" data-url="https://what.sapp.link/miot">Book an Appoinment</a><br>
+            <a class="l-chat" data-url="https://what.sapp.link/miot">Connect on Whatsapp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href=" https://what.sapp.link/miot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3 col-sm-6 col-6">
+        <div class="card dr-card">
+          <div class="card-img-top card21" alt="Card Image"></div><br>
+          <div class="card-links col-12">
+            <span class="dr-name">Dr. Epari Kumar
+            </span><br>
+            <span class="dr-name-span">Senior Consultant - Cardiology
+            </span><br>
+            <a class="b-chat" data-url="https://what.sapp.link/miot">Book an Appoinment</a><br>
+            <a class="l-chat" data-url="https://what.sapp.link/miot">Connect on Whatsapp</a>
+          </div>
+          <div class="card-links2 col-12 ">
+            <a href=" https://what.sapp.link/miot" target="_blank">
+              <div class="whats-app"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <br>
+  <br><br>
+  <div class="container main_all ">
+    <h1 style="color: white;" class="text-center pt-5">MIOT Hospital Preventive Health Check up Plans </h1>
+    <div class="container inner_data_health">
+      <div class="row row-style">
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Package Details</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>MIOT Healthy Heart US $110</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>MIOT Healthy Heart US $110</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>MIOT Healthy Heart US $110</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>MIOT Healthy Heart US $110</p>
+        </div>
+      </div>
+
+      <div class="row row-style">
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>BLOOD</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+      </div>
+
+      <div class="row row-style">
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>BLOOD</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+      </div>
+
+      <div class="row row-style">
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>BLOOD</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+      </div>
+
+      <div class="row row-style">
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>BLOOD</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+      </div>
+
+      <div class="row row-style">
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>BLOOD</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+      </div>
+
+      <div class="row row-style">
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>BLOOD</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+      </div>
+
+      <div class="row row-style">
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>BLOOD</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <p>Complete Haemogram Blood Group & ABO Screening</p>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+  <br>
+  <div class="container text-center">
+    <h1 class="text-capitalize"> INTERNATIONAL PATIENT CHECKLIST</h1><br>
+    <span class="mt-contant">To make your experience seamless and stress-free, we've outlined <br>
+      essential steps in the trip planning process</span>
+  </div>
+  <br>
+  <!--patient checklist-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- First Box -->
+        <div class="box">
+          <button class="btn  checklist-btn ">PRE TRAVEL PROCESS</button>
+          <ul class="mobi-ul">
+            <li>Ensure passport validity and obtain necessary travel visas.</li>
+            <li>Compile medical records, prescription, and a list of ongoing treatments.</li>
+            <li>Smoothly transitions into your healthcare journey at MIOT Hospitals.</li>
+          </ul><br class="mobi-br"><br class="mobi-br">
+        </div>
+      </div>
+      <!-- <div class="col-md-6"> -->
+      <!-- Second Box -->
+      <!-- <div class="box"> -->
+      <!-- Button at the top -->
+      <!-- <button class="btn  checklist-btn">INT. INSURANCE</button> -->
+      <!-- List items below the button -->
+      <!-- <ul class="mobi-ul">
+            <li>LVerify coverage for medical services at MIOT Hospitals.</li>
+            <li>Patient services assistance available for understanding insurance specifics.</li>
+            <li>Facilities a seamless claims process for your peace of mind.</li><br class="mobi-br">
+          </ul>
+        </div>
+      </div> -->
+
+      <div class="col-md-6">
+        <!-- Second Box -->
+        <div class="box">
+          <!-- Button at the top -->
+          <button class="btn  checklist-btn">HOTEL & STAY</button>
+          <!-- List items below the button -->
+          <ul class="mobi-ul">
+            <li>Strategically located accommodations to suit preferences.</li>
+            <li>Guidance from patient services for the right stay options.</li>
+            <li>Make your stay comfortable and convenient for a focus on health. </li><br class="mobi-br">
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <!-- Second Box -->
+        <div class="box">
+          <!-- Button at the top -->
+          <button class="btn  checklist-btn">FOOD & CUISINE</button>
+          <!-- List items below the button -->
+          <ul class="mobi-ul">
+            <li>Explore local and international cuisines with dietary considerations.</li>
+            <li>Patient services guidance on dining options tailored to your needs.</li>
+            <li>Savour culinary delights while prioritising nourshiments during your stay. </li>
+          </ul><br class="mobi-br">
+        </div>
+      </div>
+
+      <!-- <div class="col-md-3"> -->
+      <!-- Second Box -->
+
+      <!-- </div> -->
+
+      <div class="col-md-6">
+        <!-- Second Box -->
+        <div class="box">
+          <!-- Button at the top -->
+          <button class="btn  checklist-btn">LANGUAGE CHANGE</button>
+          <!-- List items below the button -->
+          <ul>
+            <li>Multilingual Patient Services team for effective communication.</li>
+            <li>Language interpretations services to bridge communication gaps.</li>
+            <li>Adapt seamlessly to a new language, ensuring a smooth healthcare experience. </li>
+          </ul>
+        </div>
+      </div>
+      <br>
+
+      <div class="col-md-3">
+        <!-- Second Box -->
+
+      </div>
+    </div>
+  </div>
+
+  <!--end-->
+  <div class="container">
+    <h1>Why Choose<br>MIOT Healthcare ?</h1>
+  </div>
+  <br>
+  <!--Why Choose-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Left Box -->
+        <div class="box">
+          <!-- Top paragraph element -->
+          <span class="coma">“</span><br>
+          <p class="testi-text">
+            I wanted to thanks everyone at this facility for the quality of care and compassion they showed during my
+            stay. </p> <!-- Circular image -->
+          <img src="assets/img/Oval.svg" class="img-circle" alt="Circle Image">
+          <p class="text-left name_testi">Neel Desai</p>
+          <span class="text-left name_testi2">Patient</span>
+
+
+        </div>
+      </div>
+      <div class="col-md-6">
+        <!-- Left Box -->
+        <div class="box">
+          <!-- Top paragraph element -->
+          <span class="coma">“</span> <br>
+          <p class="testi-text mobi-tx">
+            Received exceptional care at the hospital. The facilities were excellent, and all the staff were highly
+            cooperative.Nurses were consistently prompt in responding to call bells, regardless of the time.
+            <!-- Circular image -->
+          </p> <img src="assets/img/Oval.svg" class="img-circle mobi-circle" alt="Circle Image">
+          <p class="text-left name_testi mobi-testi">Yogesh Nath</p>
+          <span class="text-left name_testi2">Patient</span>
+
+        </div>
+      </div>
+      <div class="col-md-6">
+        <!-- Left Box -->
+        <div class="box">
+          <!-- Top paragraph element -->
+          <span class="coma">“</span>
+          <p class="testi-text mobi-tx2">
+            Outstanding medical facilities situated in the most upscale area of the city. Comprehensive services offered
+            within a single establishment. <!-- Circular image -->
+          </p>
+          <img src="assets/img/Oval.svg" class="img-circle" alt="Circle Image">
+          <p class="text-left name_testi">Deepa P</p>
+          <span class="text-left name_testi2">Patient</span>
+
+
+        </div>
+      </div>
+      <div class="col-md-6">
+        <!-- Left Box -->
+        <div class="box">
+          <!-- Top paragraph element -->
+          <span class="coma">“</span>
+          <p class="testi-text">
+            Jaslok Hospital offered outstanding treatment. The staff demonstrated professionalism and compassion from
+            the start. <!-- Circular image -->
+          </p>
+          <img src="assets/img/Oval.svg" class="img-circle" alt="Circle Image">
+          <p class="text-left name_testi"> Abbas Ali</p>
+          <span class="text-left name_testi2">Patient</span>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--end-->
+  <br><br>
+  <div class="container text-center">
+    <h1>Hotels and Guest Houses at all budget<br>Near MIOT HOSPITAL
+      Chennai</h1>
+  </div>
+  <br><br>
+  <!--hotal-->
+  <div class="container" id="hotels">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row ">
+            <div class="col-sm-12 col-md-3">
+              <div class="card card-hotel">
+                <div class="price">₹3043</div>
+                <div class="distance">
+                  <i class="fa fa-map-marker"></i> 2.4km
+                </div>
+
+                <div class="card-img-top-I"></div>
+                <div class="card-body">
+                  <h5 class="card-title-hotel">
+                    Naksha Tree Hotels - Ramapuram
+                  </h5>
+                  <p class="card-text-hotel">Restaurant,
+                    breakfast
+                  </p>
+                  <a href="#" class="btn btn-hotel" data-url="https://what.sapp.link/miot">CHAT WITH US FOR
+                    BEST DEALS</a>
+                </div>
+              </div>
+
+            </div>
+            <!--new hotel-->
+            <div class="col-sm-12 col-md-3">
+              <div class="card card-hotel">
+                <div class="price">₹3251</div>
+                <div class="distance">
+                  <i class="fa fa-map-marker"></i>2.7km
+                </div>
+
+                <div class="card-img-top-2"></div>
+                <div class="card-body">
+                  <h5 class="card-title-hotel">Dreams Luxury Stays
+                  </h5>
+                  <p class="card-text-hotel">Pool,
+                    Near public transit</p>
+                  <a href="#" class="btn btn-hotel" data-url="https://what.sapp.link/miot">CHAT WITH US FOR
+                    BEST DEALS</a>
+                </div>
+              </div>
+
+
+            </div><!--new hotel-->
+            <div class="col-sm-12 col-md-3">
+              <div class="card card-hotel">
+                <div class="price">₹3607</div>
+                <div class="distance">
+                  <i class="fa fa-map-marker"></i>3.1km
+                </div>
+
+                <div class="card-img-top-3"></div>
+                <div class="card-body">
+                  <h5 class="card-title-hotel">Hotel Bluesky Ramapuram
+                  </h5>
+                  <p class="card-text-hotel">Pool,
+                    Near public transit</p>
+                  <a href="#" class="btn btn-hotel" data-url="https://what.sapp.link/miot">CHAT WITH US FOR
+                    BEST DEALS</a>
+                </div>
+              </div>
+
+
+            </div><!--new hotel-->
+            <div class="col-sm-12 col-md-3">
+              <div class="card card-hotel">
+                <div class="price">₹5040</div>
+                <div class="distance">
+                  <i class="fa fa-map-marker"></i> 200m
+                </div>
+
+                <div class="card-img-top-4"></div>
+                <div class="card-body">
+                  <h5 class="card-title-hotel">Kuber Inn Elite
+                  </h5>
+                  <p class="card-text-hotel">Pool,
+                    Near public transit</p>
+                  <a href="#" class="btn btn-hotel" data-url="https://what.sapp.link/miot">CHAT WITH US FOR
+                    BEST DEALS</a>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <div class="row ">
+            <!--new hotel-->
+            <div class="col-sm-12 col-md-3">
+              <div class="card card-hotel">
+                <div class="price">₹3416</div>
+                <div class="distance">
+                  <i class="fa fa-map-marker"></i> 2.7km
+                </div>
+
+                <div class="card-img-top-5"></div>
+                <div class="card-body">
+                  <h5 class="card-title-hotel">KBS Home</h5>
+                  <p class="card-text-hotel">Great breakfast,
+                    Great location</p>
+                  <a href="#" class="btn btn-hotel" data-url="https://what.sapp.link/miot">CHAT WITH US FOR
+                    BEST DEALS</a>
+                </div>
+              </div>
+
+
+            </div>
+            <!--new hotel-->
+            <div class="col-sm-12 col-md-3">
+              <div class="card card-hotel">
+                <div class="price">₹2701</div>
+                <div class="distance">
+                  <i class="fa fa-map-marker"></i>2.5km
+                </div>
+
+                <div class="card-img-top-6"></div>
+                <div class="card-body">
+                  <h5 class="card-title-hotel">Hotel Heminn Stay Ramapuram</h5>
+                  <p class="card-text-hotel">Restaurant,
+                    Free breakfast</p>
+                  <a href="#" class="btn btn-hotel" data-url="https://what.sapp.link/miot">CHAT WITH US FOR
+                    BEST DEALS</a>
+                </div>
+              </div>
+
+
+            </div>
+            <!--new hotel-->
+            <div class="col-sm-12 col-md-3">
+              <div class="card card-hotel">
+                <div class="price">₹2184</div>
+                <div class="distance">
+                  <i class="fa fa-map-marker"></i> 2.7km
+                </div>
+
+                <div class="card-img-top-7"></div>
+                <div class="card-body">
+                  <h5 class="card-title-hotel">Samrat Guest House</h5>
+                  <p class="card-text-hotel">Pool,
+                    Great location</p>
+                  <a href="#" class="btn btn-hotel" data-url="https://what.sapp.link/miot">CHAT WITH US FOR
+                    BEST DEALS</a>
+                </div>
+              </div>
+
+
+            </div>
+            <!--new hotel-->
+            <div class="col-sm-12 col-md-3">
+              <div class="card card-hotel">
+                <div class="price">₹3407</div>
+                <div class="distance">
+                  <i class="fa fa-map-marker"></i>3.2km
+                </div>
+
+                <div class="card-img-top-8"></div>
+                <div class="card-body">
+                  <h5 class="card-title-hotel">MIOT Grande</h5>
+                  <p class="card-text-hotel">Free Wi-Fi ,Free breakfast</p>
+                  <a href="#" class="btn btn-hotel" data-url="https://what.sapp.link/miot">CHAT WITH US FOR
+                    BEST DEALS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add more carousel items for each card -->
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    </div>
+    <!--end-->
+    <br>
+    <div class="container text-center">
+      <span style="color: #2F3236; font-size: 12px;">*rates may vary depending on type of room, desired features and
+        level of customization</span>
+    </div>
+  </div>
+
+  <script>
+    // Function to check if the screen width is less than 768px (mobile devices)
+    function isMobile() {
+      return window.innerWidth < 768;
+    }
+
+    // Disable carousel auto slide for mobile devices
+    $(document).ready(function () {
+      if (isMobile()) {
+        $('#carouselExampleControls').carousel({ interval: false });
+      }
+    });
+  </script>
+  <br>
+  <!--banner-->
+  <div class="container-fluid no-padding-container   banner-bn" id="">
+    <div class="container ">
+      <div class="row bnnr-row  ">
+        <div class="col-6 bnnr-mobi ">
+          <p>CONNECT WITH AN EXPERT FOR
+            PERSONALISED GUIDANCE & SUPPORT</p>
+        </div>
+        <div class="col-6 text-right chat_col">
+          <button class="btn-bnnr " data-url="https://what.sapp.link/miot">Connect on Whatsapp</button>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+  <!--end-->
+
+  <br>
+  <div class="container text-center">
+    <h1>
+      International Patient Services <br>
+      MIOT Hospital
+    </h1>
+  </div>
+  <br>
+  <!--Patient Services -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card card-pnt">
+          <img src="assets/img/i-con-2.svg" class=" rounded-circle" alt="Circle Image">
+          <div class="card-body">
+            <h1 class="card-title-1 text-center">Personalised Experience</h1>
+            <p class="card-text">Our teams comprise of travel professionals & doctors. Each provides a personalized care
+              to our patients. This ensures the highest quality of care is given at a pace the patient is comfortable
+              with & improves overall healthcare experience.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-pnt">
+          <img src="assets/img/i-con-1.svg" class=" rounded-circle" alt="Circle Image">
+          <div class="card-body">
+            <h1 class="card-title-1">Save Time & Money</h1>
+            <p class="card-text">We understand the criticality of time in healthcare. Our protocols & teams are well
+              designed to handle emergencies & planned treatments. We save our patient's precious time & money at all
+              steps of travel & treatment.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-pnt">
+          <img src="assets/img/i-con-3.svg" class=" rounded-circle" alt="Circle Image">
+          <div class="card-body">
+            <h1 class="card-title-1">Comprehensive Care</h1>
+            <p class="card-text">End-to-End care from initial Opinion & Cost Estimates form best 5 hospitals,
+              visa-related, flights, airport pick-up, guest house, food, kitchen, local transport, SIM card, wi-fi,
+              doctors meetings, hospital admission, discharge, follow up, drop back to airport.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--end-->
+  <br>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5><b>Contact Info</b></h5>
+          <p>Address :MIOT International 4/112, Mount Poonamalle Road, Manapakkam, Chennai - 600 089
+          </p>
+          <button class="footer-btn" data-url="https://what.sapp.link/miot"> <i class="fa fa-phone"></i>
+            (+91) 92669 70900</button><br><br>
+          <span class="text-center">Patient Services by</span><br>
+          <img src="assets/logo/Layer 1.svg" alt="footer-logo">
+        </div><br><br>
+        <div class="col-md-4 lin-as">
+          <h5 class="q-l"><b>Quick links</b></h5>
+          <p>Disclaimer</p>
+          <p>Term & Conditions</p>
+          <p>Privacy Policy</p>
+          <p>Chat on Whatsapp</p>
+
+        </div>
+        <div class="col-md-4 lin-as">
+          <h5><b>Departments & Specialists</b></h5>
+          <p>Kidney Transplant</p>
+          <p>Liver Transplant</p>
+          <p>Orthopedics</p>
+          <p>Cardiology</p>
+          <p>Oncology</p>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <button id="openBtn" data-url="https://what.sapp.link/miot"><img src="assets/logo/favicon.webp" class="logo_mob my-2"
+      alt="logo-drawer" width="65%" height="55px">International Patient Care</button>
+
+  <!-- Drawer -->
+
+  <div id="drawer" class="drawer">
+    <!-- <div id="imasCircle">IMAS</div> -->
+    <div class="drawer-content">
+      <button id="closeBtn" type="button" class="close" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+
+      <div class="drawer-banner">
+        <img src="assets/logo/favicon.webp" class="logo_mob my-2" alt="logo-drawer" width="50%" height="50px">
+        <h2 class="font-weight-bold">International Patient Care</h2>
+        <p>International Support On Whatsapp</p>
+      </div>
+      <div class="drawer-items">
+        <h2 class="font-weight-bold">International Support On Whatsapp</h2>
+        <button class="btn" data-url="https://what.sapp.link/miot"><i class="fa fa-whatsapp fa-btn"
+            style="font-size:20px;"></i>
+          Connect on Whatsapp</button>
+      </div>
+    </div>
+  </div>
+
+  <!--sticky element-->
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-md-6"> -->
+  <!-- Your content here -->
+  <!-- </div>
+      <div class="col-md-6">
+        <div class="sticky-text text-center"> -->
+  <!-- Sticky text here -->
+  <!-- <span class="get_text">Get’s Doctor Opinion</span>
+          <br>
+          <div class="icon-container"> -->
+  <!-- Three icons inline here -->
+  <!-- <a href=" https://what.sapp.link/miot" target="_blank" style="color: white;"> <i class="fa fa-whatsapp"></i></a>
+            <i class="fa fa-envelope"></i>
+            <a href="tel:9899187773" style="color: white;">
+              <i class="fa fa-phone"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div> -->
+
+  <!---->
+
+  <script>
+
+
+    // Get all button elements on the page
+    const buttons = document.querySelectorAll('button,a,p')
+
+    // Loop through each button
+    buttons.forEach(function (button) {
+      // Attach a click event listener to each button
+      button.addEventListener('click', function () {
+        // Get the URL from the button's data-url attribute
+        const url = button.getAttribute('data-url')
+
+        // Check if a URL is defined for the button
+        if (url) {
+          // Open the URL in a new tab
+          window.open(url, '_blank')
+        }
+      })
+    })
+
+  </script>
+
+  <script>
+
+    function openNav() {
+      document.getElementById("sidebar").style.width = "40%";
+
+    }
+
+    function closeNav() {
+      document.getElementById("sidebar").style.width = "0";
+    }
+
+    function openDrawer() {
+      setInterval(function () {
+        // Get the element by its ID
+        const element = document.getElementById("drawer");
+
+        // Check if the element exists
+        if (element) {
+          document.getElementById('drawer').style.bottom = '0'; // Change to 'block' or any other desired display type
+        }
+      }, 10000);
+    }
+    function callevent() {
+      setTimeout(openNav, 10000);
+    }
+
+    callevent();
+    openDrawer();
+
+    let clickCount = 0;
+
+    // Function to be executed on the first click
+    function onFirstClick() {
+      setTimeout(openNav, 15000); // Execute openNav after 10 seconds
+    }
+
+    // Function to be executed on the second click
+    function onSecondClick() {
+      setTimeout(openNav, 30000); // Execute openNav after 150 seconds (2.5 minutes)
+    }
+
+    // Function to be executed on the third click
+    function onThirdClick() {
+      setTimeout(openNav, 60000); // Execute openNav after 150 seconds (2.5 minutes)
+
+    }
+  </script>
+  <script>
+    const drawer = document.getElementById('drawer');
+
+    const openButton = document.getElementById('openBtn');
+
+    document.getElementById('openBtn').addEventListener('click', function () {
+      event.stopPropagation();
+      document.getElementById('drawer').style.bottom = '0';
+    });
+
+    document.getElementById('closeBtn').addEventListener('click', function () {
+      event.stopPropagation();
+      document.getElementById('drawer').style.bottom = '-100%';
+    });
+
+
+    document.body.addEventListener('click', (event) => {
+      const mobileBreakpoint = 768;
+
+      if (window.innerWidth >= mobileBreakpoint) {
+        // Close drawer if the click is outside the drawer or open button
+        if (!drawer.contains(event.target) && !openBtn.contains(event.target)) {
+          document.getElementById('drawer').style.bottom = '-100%';
+        }
+      }
+    });
+
+    // Prevent clicks inside the drawer or open button from triggering body click listener
+    drawer.addEventListener('click', event => {
+      event.stopPropagation(); // Prevent click inside drawer from closing it
+    });
+
+  </script>
+</body>
+
+</html>

@@ -2,7 +2,13 @@
 <html lang="en">
 
 <head>
-  <title>Apollo-(Chennai)</title>
+  <title>Apollo Hospitals Greams Road, Chennai | Best Multi-Speciality Hospital in Tamil Nadu</title>
+  <meta name="description"
+    content="Apollo Hospitals Chennai is a premier multi-speciality hospital offering advanced care in cardiology, oncology, neurology, organ transplants, and more. Accredited by JCI and NABH, it is a top destination for patients from India and abroad.">
+
+  <meta name="keywords"
+    content="Apollo Hospitals Chennai, multi-speciality hospital Chennai, best hospital in Chennai, Apollo Greams Road, cardiac care Chennai, cancer treatment Chennai, neurology hospital Chennai, organ transplant Chennai, Apollo Chennai doctors, NABH hospital Chennai, JCI accredited hospital India">
+
   <meta charset="UTF-8">
   <meta name="theme-color" content="#015E79" />
   <meta name="robots" content="noindex, nofollow">
@@ -21,7 +27,7 @@
     crossorigin="anonymous"></script>
   <link rel="icon" type="image/x-icon" href="assets\Icons & Logos\webp\apollo logo.webp">
   <link rel="preload" as="font">
-  <meta name="description" content="Apollo-(Chennai)">
+  <meta name="description" content="Apollo Hospital Greams Road-(Chennai)">
   <meta name="viewport" content="width=device-width">
 
 </head>
@@ -87,19 +93,18 @@
 
       </div>
 
-
-
-
-  </div>
+    </nav>
   </div>
 
-  <div>
+  <!-- Pre loader -->
+  <div id="preloader">
+    <div class="spinner-wrapper">
+      <img src="assets_mob\Icons & Logos\webp\apollo logo.webp" alt="Loading..." class="preloader-logo">
+
+    </div>
   </div>
-
-  </nav>
-  </div>
-
-
+  <!-- End of Pre loader -->
+  <!-- Right Side Drader -->
   <button id="openBtn"><img src="assets_mob\Icons & Logos\webp\apollo logo.webp" class="logo-y" alt="HTML5 Icon"
       width="20px" height="30px">
     Instant Support</button>
@@ -128,7 +133,7 @@
   </div>
 
 
-
+  <!--End of Right Side Drader -->
 
   <!--slilder-->
   <div id="mob-org-slider" class="carousel slide sliderdesk" data-ride="carousel">
@@ -137,7 +142,7 @@
         <div class="d-block-mob " src="" alt="First slide" width="100%"></div>
 
         <div class="container col-sm col-lg" id="contant_box">
-          <span class="font-dec">Apollo Hospitals,</span><span class="font-dec">Chennai</span> <br>
+          <span class="font-dec">Apollo Hospital Greams Road,</span><span class="font-dec">Chennai</span> <br>
           <span class="text_color" style="">INTERNATIONAL PATIENTS​</span><br>
 
           <button data-url="https://what.sapp.link/apollo-india" onclick="LC_API.open_chat_window() ; return false"
@@ -174,7 +179,6 @@
       </div>
     </div>
   </div>
-  </div>
 
   <!--slider end -->
   <!--slilder-->
@@ -185,17 +189,16 @@
 
 
         <div class="container col-sm col-lg" id="contant_box">
-          <span class="font-dec" style="color: #2bebe6;">Apollo Hospitals,</span><span class="font-dec">Chennai</span>
+          <span class="font-dec" style="color: #2bebe6;">Apollo Hospital Greams Road,</span><span
+            class="font-dec">Chennai</span>
           <br>
           <span class="text_color">INTERNATIONAL PATIENTS​</span><br>
 
-          <button data-url="https://what.sapp.link/apollo-india" onclick="LC_API.open_chat_window() ; return false"
-            id="slider-btn" type="button" class="btn btn-primary btn-lg">Connect On WhatsApp</button>
-
-
-
-
-
+          <button class="btn btn-lg text-white btn-primary rounded-4" data-url="https://what.sapp.link/apollo-india"
+            onclick="LC_API.open_chat_window() ; return false" id="slider-btn" type="button"><i
+              class="fa fa-whatsapp fa-btn" style="font-size:20px;"></i>
+            Connect On
+            WhatsApp</button>
 
         </div>
 
@@ -223,31 +226,30 @@
       </div>
     </div>
   </div>
-  </div>
 
   <!--slider end -->
 
 
 
-  <div class="container-fluid" id="block_I">
+  <div class="container" id="block_I">
 
     <h1 class="heading">
       <sapn class="heading-top"> Apollo</sapn> <br><span> <b> Departments & Specialists</b></span>
     </h1>
     <!-- tabs-->
-    <div class="tab">
+    <div class="tab mx-auto">
 
-      <button id="cvb" class="tablinks" onclick="openCity(event, 'apx')">Cardiology </button>
-      <button class="tablinks" onclick="openCity(event, 'sumit')">Neuro Surgery </button>
-      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Orthopedics </button>
-      <button class="tablinks" onclick="openCity(event, 'London')">Spine Surgery</button>
-      <button class="tablinks" onclick="openCity(event, 'alpha')">Ent </button>
-      <button class="tablinks" onclick="openCity(event, 'surgical')"> Surgical Gatroenterolgist</button>
-      <button class="tablinks" onclick="openCity(event, 'colorectal')"> Colorectal Surgery </button><BR>
-      <button class="tablinks" onclick="openCity(event, 'nephrology')"> Nephrology </button>
-      <button class="tablinks" onclick="openCity(event, 'urology')"> Urology </button>
-      <button class="tablinks" onclick="openCity(event, 'obstetrics')"> Obestetrics & Gynaecology </button>
-      <button class="tablinks" onclick="openCity(event, 'paeditric')"> Paediatric Neurology </button>
+      <button class="tablinks" onclick="openTab(event, 'Spine')">Spine Surgery</button>
+      <button id="cvb" class="tablinks" onclick="openTab(event, 'Cardiology')">Cardiology </button>
+      <button class="tablinks" onclick="openTab(event, 'NeuroSurgery')">Neuro Surgery </button>
+      <button class="tablinks" onclick="openTab(event, 'Orthopedics')">Orthopedics </button>
+      <button class="tablinks" onclick="openTab(event, 'Ent')">Ent </button>
+      <button class="tablinks" onclick="openTab(event, 'surgical')"> Surgical Gatroenterolgist</button>
+      <button class="tablinks" onclick="openTab(event, 'colorectal')"> Colorectal Surgery </button><BR>
+      <button class="tablinks" onclick="openTab(event, 'nephrology')"> Nephrology </button>
+      <button class="tablinks" onclick="openTab(event, 'urology')"> Urology </button>
+      <button class="tablinks" onclick="openTab(event, 'obstetrics')"> Obestetrics & Gynaecology </button>
+      <button class="tablinks" onclick="openTab(event, 'paeditric')"> Paediatric Neurology </button>
     </div>
     <div id="paeditric" class="tabcontent">
       <div class="container text-center">
@@ -267,14 +269,16 @@
             alt="Card image cap">
           <div class="card-body">
             <h1 class="card-title">Dr. Mahesh Narayanan</h1>
+            <h2 class="card-title">Paediatric Neurology</h2>
+
             <button type="button" data-url="https://what.sapp.link/apollo-india"
               onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
               Opinion</button><bR>
             <button type="button" data-url="https://what.sapp.link/apollo-india"
               onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
                 class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-              WhatsApp</button>
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
           </div>
         </div>
 
@@ -285,14 +289,15 @@
             alt="Card image cap">
           <div class="card-body">
             <h1 class="card-title">Dr. Sivaji Vani</h1>
+            <h2 class="card-title">Paediatric Neurology</h2>
             <button type="button" data-url="https://what.sapp.link/apollo-india"
               onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
               Opinion</button><bR>
             <button type="button" data-url="https://what.sapp.link/apollo-india"
               onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
                 class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-              WhatsApp</button>
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
 
 
           </div>
@@ -322,14 +327,15 @@
             alt="Card image cap">
           <div class="card-body">
             <h1 class="card-title">Dr. Meenakshi Sundaram</h1>
+            <h2 class="card-title">Obestetrics & Gynaecology</h2>
             <button type="button" data-url="https://what.sapp.link/apollo-india"
               onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
               Opinion</button><bR>
             <button type="button" data-url="https://what.sapp.link/apollo-india"
               onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
                 class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-              WhatsApp</button>
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
 
           </div>
         </div>
@@ -342,14 +348,15 @@
             alt="Card image cap">
           <div class="card-body">
             <h1 class="card-title">Dr. Meera Raghavan</h1>
+            <h2 class="card-title">Obestetrics & Gynaecology</h2>
             <button type="button" data-url="https://what.sapp.link/apollo-india"
               onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
               Opinion</button><bR>
             <button type="button" data-url="https://what.sapp.link/apollo-india"
               onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
                 class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-              WhatsApp</button>
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
 
 
           </div>
@@ -363,14 +370,15 @@
             alt="Card image cap">
           <div class="card-body">
             <h1 class="card-title">Dr. Sumana Manohar</h1>
+            <h2 class="card-title">Obestetrics & Gynaecology</h2>
             <button type="button" data-url="https://what.sapp.link/apollo-india"
               onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
               Opinion</button><bR>
             <button type="button" data-url="https://what.sapp.link/apollo-india"
               onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
                 class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-              WhatsApp</button>
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
           </div>
         </div>
 
@@ -382,14 +390,130 @@
             alt="Card image cap">
           <div class="card-body">
             <h1 class="card-title">Dr. Vinutha Arunachalam</h1>
+            <h2 class="card-title">Obestetrics & Gynaecology</h2>
             <button type="button" data-url="https://what.sapp.link/apollo-india"
               onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
               Opinion</button><bR>
             <button type="button" data-url="https://what.sapp.link/apollo-india"
               onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
                 class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-              WhatsApp</button>
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+          </div>
+        </div>
+
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\OBSTETRICS & GYNAECOLOGY\webp\Dr. Vishnu Vandana.webp"
+            alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\OBSTETRICS & GYNAECOLOGY\webp\Dr. Vishnu Vandana.webp"
+            alt="Card image cap">
+          <div class="card-body">
+            <h1 class="card-title">Dr. Vishnu Vandana</h1>
+            <h2 class="card-title">Obestetrics & Gynaecology</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="urology" class="tabcontent">
+      <div class="container text-center">
+
+        <h1 class="tab-head2">
+
+        </h1>
+      </div>
+      <div class="container c-card">
+
+        <!-- Card 1 -->
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\UROLOGY\webp\Dr. Deepak Raghavan.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\UROLOGY\webp\Dr. Deepak Raghavan.webp" alt="Card image cap">
+          <div class="card-body">
+            <h1 class="card-title">Dr. Deepak Raghavan</h1>
+            <h2 class="card-title">Urology</h2>
+
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+
+          </div>
+        </div>
+
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\UROLOGY\webp\Dr. K Ramesh.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\UROLOGY\webp\Dr. K Ramesh.webp" alt="Card image cap">
+          <div class="card-body">
+            <h1 class="card-title">Dr. K Ramesh</h1>
+            <h2 class="card-title">Urology</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+
+          </div>
+        </div>
+
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\UROLOGY\webp\Dr. Nitesh Jain.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\UROLOGY\webp\Dr. Nitesh Jain.webp" alt="Card image cap">
+          <div class="card-body">
+            <h1 class="card-title">Dr. Nitesh Jain</h1>
+            <h2 class="card-title">Urology</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+
+          </div>
+        </div>
+
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\UROLOGY\webp\Dr. Ragavan N.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\UROLOGY\webp\Dr. Ragavan N.webp" alt="Card image cap">
+          <div class="card-body">
+            <h1 class="card-title">Dr. Ragavan N</h1>
+            <h2 class="card-title">Urology</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
 
           </div>
         </div>
@@ -401,20 +525,20 @@
 
         <div class="card card-kidney">
 
-          <img class="card-img-top-m" src="assets\OBSTETRICS & GYNAECOLOGY\webp\Dr. Vishnu Vandana.webp"
-            alt="Card image cap">
-          <img class="card-img-top-m-res" src="assets_mob\OBSTETRICS & GYNAECOLOGY\webp\Dr. Vishnu Vandana.webp"
+          <img class="card-img-top-m" src="assets\UROLOGY\webp\Dr. Thirumalai Ganesan.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\UROLOGY\webp\Dr. Thirumalai Ganesan.webp"
             alt="Card image cap">
           <div class="card-body">
-            <h1 class="card-title">Dr. Vishnu Vandana</h1>
+            <h1 class="card-title">Dr. Thirumalai Ganesan</h1>
+            <h2 class="card-title">Urology</h2>
             <button type="button" data-url="https://what.sapp.link/apollo-india"
               onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
               Opinion</button><bR>
             <button type="button" data-url="https://what.sapp.link/apollo-india"
               onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
                 class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-              WhatsApp</button>
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
 
           </div>
         </div>
@@ -422,1079 +546,712 @@
 
     </div>
 
-  </div>
+    <div id="nephrology" class="tabcontent">
+      <div class="container text-center">
 
+        <h1 class="tab-head2">
 
-  <div id="urology" class="tabcontent">
-    <div class="container text-center">
-
-      <h1 class="tab-head2">
-
-      </h1>
-    </div>
-    <div class="container c-card">
-
-      <!-- Card 1 -->
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\UROLOGY\webp\Dr. Deepak Raghavan.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\UROLOGY\webp\Dr. Deepak Raghavan.webp" alt="Card image cap">
-        <div class="card-body">
-          <h1 class="card-title">Dr. Deepak Raghavan</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-
-        </div>
+        </h1>
       </div>
+      <div class="container c-card">
+
+        <!-- Card 1 -->
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\NEPHROLOGY\webp\Dr. Balasubramanian S.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\NEPHROLOGY\webp\Dr. Balasubramanian S.webp"
+            alt="Card image cap">
+          <div class="card-body">
+            <h1 class="card-title">Dr. Balasubramanian S</h1>
+            <h2 class="card-title">Nephrology</h2>
+
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
 
-      <div class="card card-kidney">
 
-        <img class="card-img-top-m" src="assets\UROLOGY\webp\Dr. K Ramesh.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\UROLOGY\webp\Dr. K Ramesh.webp" alt="Card image cap">
-        <div class="card-body">
-          <h1 class="card-title">Dr. K Ramesh</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-
-        </div>
-      </div>
-
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\UROLOGY\webp\Dr. Nitesh Jain.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\UROLOGY\webp\Dr. Nitesh Jain.webp" alt="Card image cap">
-        <div class="card-body">
-          <h1 class="card-title">Dr. Nitesh Jain</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-
-        </div>
-      </div>
-
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\UROLOGY\webp\Dr. Ragavan N.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\UROLOGY\webp\Dr. Ragavan N.webp" alt="Card image cap">
-        <div class="card-body">
-          <h1 class="card-title">Dr. Ragavan N</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-
-        </div>
-      </div>
-
-      <br>
-
-    </div>
-    <div class="container c-card">
-
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\UROLOGY\webp\Dr. Thirumalai Ganesan.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\UROLOGY\webp\Dr. Thirumalai Ganesan.webp" alt="Card image cap">
-        <div class="card-body">
-          <h1 class="card-title">Dr. Thirumalai Ganesan</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  </div>
-
-
-  <div id="nephrology" class="tabcontent">
-    <div class="container text-center">
-
-      <h1 class="tab-head2">
-
-      </h1>
-    </div>
-    <div class="container c-card">
-
-      <!-- Card 1 -->
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\NEPHROLOGY\webp\Dr. Balasubramanian S.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\NEPHROLOGY\webp\Dr. Balasubramanian S.webp"
-          alt="Card image cap">
-        <div class="card-body">
-          <h1 class="card-title">Dr. Balasubramanian S</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-
-        </div>
-      </div>
-
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\NEPHROLOGY\webp\Dr. Prakash K C.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\NEPHROLOGY\webp\Dr. Prakash K C.webp" alt="Card image cap">
-        <div class="card-body">
-          <h1 class="card-title">Dr. Prakash K C</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-
-        </div>
-      </div>
-
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\NEPHROLOGY\webp\Dr. Rajeev Annigeri.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\NEPHROLOGY\webp\Dr. Rajeev Annigeri.webp" alt="Card image cap">
-        <div class="card-body">
-          <h1 class="card-title">Dr. Rajeev Annigeri</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-
-        </div>
-      </div>
-
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\NEPHROLOGY\webp\Dr. Subba Rao B.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\NEPHROLOGY\webp\Dr. Subba Rao B.webp" alt="Card image cap">
-
-        <div class="card-body">
-          <h1 class="card-title">Dr. Subba Rao B</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-
-
-  <div id="colorectal" class="tabcontent">
-    <div class="container text-center">
-
-      <h1 class="tab-head2">
-
-      </h1>
-    </div>
-    <div class="container c-card">
-
-      <!-- Card 1 -->
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\COLORECTAL SURGERY\webp\Dr. Venkatesh Munikrishnan.webp"
-          alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\COLORECTAL SURGERY\webp\Dr. Venkatesh Munikrishnan.webp"
-          alt="Card image cap">
-        <div class="card-body">
-          <h1 class="card-title">Dr. Venkatesh Munikrishnan</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-
-        </div>
-      </div>
-
-
-
-    </div>
-  </div>
-
-
-  <div id="surgical" class="tabcontent">
-    <div class="container text-center">
-
-      <h1 class="tab-head2">
-
-      </h1>
-    </div>
-    <div class="container c-card">
-
-      <!-- Card 1 -->
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\SURGICAL GASTROENTEROLOGIST\webp\Dr. Balachandar T G.webp"
-          alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\SURGICAL GASTROENTEROLOGIST\webp\Dr. Balachandar T G.webp"
-          alt="Card image cap">
-        <div class="card-body">
-          <h1 class="card-title">Dr. Balachandar T G</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-
-        </div>
-      </div>
-
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\SURGICAL GASTROENTEROLOGIST\webp\Dr. J K A Jameel.webp"
-          alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\SURGICAL GASTROENTEROLOGIST\webp\Dr. J K A Jameel.webp"
-          alt="Card image cap">
-        <div class="card-body">
-          <h1 class="card-title">Dr. J K A Jameel</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-
-  <div id="London" class="tabcontent">
-    <div class="container text-center">
-
-      <h1 class="tab-head2">
-
-      </h1>
-    </div>
-    <div class="container c-card">
-
-      <!-- Card 1 -->
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\SPINE SURGERY\webp\Dr. Imtiaz Ghani.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\SPINE SURGERY\webp\Dr. Imtiaz Ghani.webp" alt="Card image cap">
-        <div class="card-body">
-          <h1 class="card-title">Dr. Imtiaz Ghani</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-
-        </div>
-      </div>
-
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\SPINE SURGERY\webp\Dr. Sajan K Hegde.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\SPINE SURGERY\webp\Dr. Sajan K Hegde.webp" alt="Card image cap">
-
-        <div class="card-body">
-          <h1 class="card-title">Dr. Sajan K Hegde</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-
-  <div id="Tokyo" class="tabcontent">
-    <div class="container text-center">
-      <h1 class="tab-head2">
-
-      </h1>
-    </div>
-
-    <div class="container c-card">
-
-      <!-- Card 3 -->
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\ORTHOPAEDIC\webp\Dr. A Navaladi Shankar.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\ORTHOPAEDIC\webp\Dr. A Navaladi Shankar.webp"
-          alt="Card image cap">
-        <div class="card-body">
-          <h1 class="card-title">Dr. A Navaladi Shankar</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-        </div>
-      </div>
-
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\ORTHOPAEDIC\webp\Dr. Arun Kannan.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\ORTHOPAEDIC\webp\Dr. Arun Kannan.webp" alt="Card image cap">
-        <div class="card-body">
-          <h1 class="card-title">Dr. Arun Kannan</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-        </div>
-
-
-      </div>
-
-
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\ORTHOPAEDIC\webp\Dr. Kosygan K P.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\ORTHOPAEDIC\webp\Dr. Kosygan K P.webp" alt="Card image cap">
-        <div class="card-body">
-          <h1 class="card-title">Dr. Kosygan K P</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-        </div>
-      </div>
-
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\ORTHOPAEDIC\webp\Dr. Madan Mohan Reddy.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\ORTHOPAEDIC\webp\Dr. Madan Mohan Reddy.webp"
-          alt="Card image cap">
-        <div class="card-body">
-          <h1 class="card-title">Dr. Madan Mohan Reddy</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-        </div>
-      </div>
-    </div>
-    <div class="container c-card">
-
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\ORTHOPAEDIC\webp\Dr. Vijay Kishore Kondreddy.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\ORTHOPAEDIC\webp\Dr. Vijay Kishore Kondreddy.webp"
-          alt="Card image cap">
-        <div class="card-body">
-          <h1 class="card-title">Dr. Vijay Kishore Kondreddy</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-
-  <div id="sumit" class="tabcontent">
-    <div class="container text-center">
-      <h1 class="tab-head2">
-      </h1>
-    </div>
-    <div class="container c-card">
-
-      <!-- Card 4 -->
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\Neuro\webp\Dr. Arul Selvan V L.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\Neuro\webp\Dr. Arul Selvan V L.webp" alt="Card image cap">
-
-        <div class="card-body">
-          <h1 class="card-title">Dr. Arul Selvan V L</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-        </div>
-      </div>
-
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\Neuro\webp\Dr. Dhanaraj M.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\Neuro\webp\Dr. Dhanaraj M.webp" alt="Card image cap">
-
-        <div class="card-body">
-          <h1 class="card-title">Dr. Dhanaraj M</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-        </div>
-
-
-      </div>
-
-
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\Neuro\webp\Dr. Geetha Lakshmipathy.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\Neuro\webp\Dr. Geetha Lakshmipathy.webp" alt="Card image cap">
-
-        <div class="card-body">
-          <h1 class="card-title">Dr. Geetha Lakshmipathy</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-        </div>
-      </div>
-
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\Neuro\webp\Dr. Joy Verghese.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\Neuro\webp\Dr. Joy Verghese.webp" alt="Card image cap">
-
-        <div class="card-body">
-          <h1 class="card-title">Dr. Joy Verghese</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container c-card">
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\Neuro\webp\Dr. Panneer A.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\Neuro\webp\Dr. Panneer A.webp" alt="Card image cap">
-
-        <div class="card-body">
-          <h1 class="card-title">Dr. Panneer A</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  </div>
-
-  <div id="alpha" class="tabcontent">
-    <div class="container text-center">
-      <h1 class="tab-head2">
-
-      </h1>
-    </div>
-
-    <div class="container c-card">
-
-      <!-- Card 3 -->
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\ENT\webp\Dr. Babu Manohar.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\ENT\webp\Dr. Babu Manohar.webp" alt="Card image cap">
-
-        <div class="card-body">
-          <h1 class="card-title">Dr. Babu Manohar</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-        </div>
-      </div>
-
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\ENT\webp\Dr. Ganapathy H.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\ENT\webp\Dr. Ganapathy H.webp" alt="Card image cap">
-
-        <div class="card-body">
-          <h1 class="card-title">Dr. Ganapathy H</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-        </div>
-
-
-      </div>
-
-
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\ENT\webp\Dr. Shyam Kumar S.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\ENT\webp\Dr.Shyam Kumar S.webp" alt="Card image cap">
-
-        <div class="card-body">
-          <h1 class="card-title">Dr.Shyam Kumar S</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-        </div>
-      </div>
-
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\ENT\webp\Dr. Venkatakarthikeyan C.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\ENT\webp\Dr.Venkatakarthikeyan C.webp" alt="Card image cap">
-
-        <div class="card-body">
-          <h1 class="card-title">Dr. Venkatakarthikeyan C</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-
-  <div id="apx" class="tabcontent">
-    <div class="container text-center">
-      <h1 class="tab-head2">
-
-      </h1>
-    </div>
-    <div class="container c-card">
-      <div class="card card-kidney">
-        <img class="card-img-top-m" src="assets\Cardio\webp\Dr. Karthigesan A M.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\Cardio\webp\Dr.-Karthigesan-A-M.webp" alt="Card image cap">
-
-        <div class="card-body">
-          <h1 class="card-title">Dr. Karthigesan A M</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-        </div>
-      </div>
-
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\Cardio\webp\Dr. Robert Mao.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\Cardio\webp\Dr. Robert Mao.webp" alt="Card image cap">
-
-        <div class="card-body">
-          <h1 class="card-title">Dr. Robert Mao</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-        </div>
-      </div>
-
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\Cardio\webp\Dr. Srinivasan K N.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\Cardio\webp\Dr. Srinivasan K N.webp" alt="Card image cap">
-
-        <div class="card-body">
-          <h1 class="card-title">Dr. Srinivasan K N</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-        </div>
-      </div>
-
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\Cardio\webp\Dr. Vijayachandra Reddy Y.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\Cardio\webp\Dr. Vijayachandra Reddy Y.webp"
-          alt="Card image cap">
-
-        <div class="card-body">
-          <h1 class="card-title">Dr. Vijayachandra Reddy Y</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container c-card">
-      <div class="card card-kidney">
-
-        <img class="card-img-top-m" src="assets\Cardio\webp\Dr. Abraham Oomman.webp" alt="Card image cap">
-        <img class="card-img-top-m-res" src="assets_mob\Cardio\webp\Dr. Abraham Oomman.webp" alt="Card image cap">
-
-        <div class="card-body">
-          <h1 class="card-title">Dr. Abraham Oomman</h1>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-            Opinion</button><bR>
-          <button type="button" data-url="https://what.sapp.link/apollo-india"
-            onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
-              class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
-                class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>Connect On
-            WhatsApp</button>
-
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-    <script>
-      function openCity(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-      }
-
-      function myFunction() {
-        document.getElementById("cvb").click();
-      }
-      myFunction();
-
-    </script>
-
-  </div>
-
-
-
-  <!-- wireframes -->
-
-  <div class="container wireframes">
-
-    <div class="row all_services">
-
-      <!-- wire frames -->
-
-      <div class="col col-md-6 col-lg-12 col-sm-4">
-        <h2 class="text-dark my-4 text-capitalize text-center w-50  bg-white mx-auto ">
-          pre-arrival (in india) query
-          process
-        </h2>
-        <div class="flowchart">
-
-          <div class="step step-1">
-            <div class="icon">✈️</div>
-            <div class="label text-capitalize">patient query</div>
-            <div class="curve down right"></div>
-            <div class="arrow ar-1"></div>
-          </div>
-          <div class="step step-2">
-            <div class="icon">🏥</div>
-            <div class="label text-capitalize">medical reports</div>
-            <div class="curve up half"></div>
-            <div class="arrow up ar-2"></div>
-          </div>
-          <div class="step step-3">
-            <div class="icon">🛋️</div>
-            <div class="label text-capitalize">case history</div>
-            <div class="curve up straight"></div>
-            <div class="arrow up ar-3"></div>
-          </div>
-          <div class="step step-4">
-            <div class="icon">👨‍⚕️</div>
-            <div class="label text-capitalize">initial opinion</div>
-            <div class="curve down long left"></div>
-            <div class="arrow ar-4"></div>
-          </div>
-          <!-- <div class="step step-2">
-                            <div class="icon">👨‍⚕️</div>
-                            <div class="label">senier consultant people</div>
-                          <div class="curve right"></div>
-                            <div class="arrow up"></div> 
-                          </div> -->
-
-          <div class="step step-5">
-            <div class="icon">👨‍⚕️</div>
-            <div class="label text-capitalize">senier consultant people</div>
-            <div class="curve up long"></div>
-            <div class="arrow up ar-5"></div>
-          </div>
-
-          <div class="step step-6">
-            <div class="icon">👨‍⚕️</div>
-            <div class="label text-capitalize">opinion & cost estimate</div>
-            <div class="curve down long left"></div>
-            <div class="arrow ar-4"></div>
-          </div>
-          <div class="step step-7">
-            <div class="icon">👨‍⚕️</div>
-            <div class="label text-capitalize">patient counselling q & a</div>
-            <div class="curve up long"></div>
-            <div class="arrow up ar-5"></div>
-          </div>
-
-
-          <div class="step step-8">
-            <div class="icon">👨‍⚕️</div>
-            <div class="label text-capitalize">Doctor Consultation</div>
-            <div class="curve down long left"></div>
-            <div class="arrow ar-4"></div>
-          </div>
-
-          <div class="step step-9">
-            <div class="icon">👨‍⚕️</div>
-            <div class="label text-capitalize">arrival pickup at airport</div>
-            <div class="curve up long-divider"></div>
-            <div class="arrow ar-6"></div>
           </div>
         </div>
-        <h2 class="text-dark my-4 text-capitalize text-center w-50  bg-white mx-auto">post-arrival
-          comprehensive support</h2>
-        <div class="flowchart reverse">
-          <div class="step step-1 ">
-            <div class="icon">✈️</div>
-            <div class="label text-capitalize reverse">hospital registration</div>
-            <div class="curve down right"></div>
-            <div class="arrow  ar-1"></div>
-          </div>
-          <div class="step step-2">
-            <div class="icon">🏥</div>
-            <div class="label text-capitalize reverse">hospital check-in</div>
 
-            <div class="curve up half"></div>
-            <div class="arrow up ar-2"></div>
-          </div>
-          <div class="step step-3">
-            <div class="icon">🛋️</div>
-            <div class="label text-capitalize reverse">doctor consultation</div>
-            <div class="curve up straight"></div>
-            <div class="arrow up ar-3"></div>
-          </div>
-          <div class="step step-4">
-            <div class="icon">👨‍⚕️</div>
-            <div class="label text-capitalize reverse ">medical investigation</div>
+        <div class="card card-kidney">
 
-            <div class="curve down long left"></div>
-            <div class="arrow  ar-4"></div>
-          </div>
-          <!-- <div class="step step-2">
-                              <div class="icon">👨‍⚕️</div>
-                              <div class="label">senier consultant people</div>
-                            <div class="curve right"></div>
-                              <div class="arrow up"></div> 
-                            </div> -->
-
-          <div class="step step-5">
-            <div class="icon">👨‍⚕️</div>
-            <div class="label text-capitalize reverse">final treatment plan</div>
-            <div class="curve up long"></div>
-            <div class="arrow up ar-5"></div>
-          </div>
-
-          <div class="step step-6">
-            <div class="icon">👨‍⚕️</div>
-            <div class="label text-capitalize reverse">admission & treatment</div>
-            <div class="curve down long left"></div>
-            <div class="arrow ar-4"></div>
-          </div>
-          <div class="step step-7">
-            <div class="icon">👨‍⚕️</div>
-            <div class="label text-capitalize reverse">discharge</div>
-            <div class="curve up long"></div>
-            <div class="arrow up ar-5"></div>
-          </div>
+          <img class="card-img-top-m" src="assets\NEPHROLOGY\webp\Dr. Prakash K C.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\NEPHROLOGY\webp\Dr. Prakash K C.webp" alt="Card image cap">
+          <div class="card-body">
+            <h1 class="card-title">Dr. Prakash K C</h1>
+            <h2 class="card-title">Nephrology</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
 
 
-          <div class="step step-8">
-            <div class="icon">👨‍⚕️</div>
-            <div class="label text-capitalize reverse">follow up</div>
-            <div class="curve down long left"></div>
-            <div class="arrow  ar-4"></div>
           </div>
+        </div>
 
-          <div class="step step-9">
-            <div class="icon">👨‍⚕️</div>
-            <div class="label text-capitalize reverse">airport dropoff</div>
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\NEPHROLOGY\webp\Dr. Rajeev Annigeri.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\NEPHROLOGY\webp\Dr. Rajeev Annigeri.webp"
+            alt="Card image cap">
+          <div class="card-body">
+            <h1 class="card-title">Dr. Rajeev Annigeri</h1>
+            <h2 class="card-title">Nephrology</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+
+          </div>
+        </div>
+
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\NEPHROLOGY\webp\Dr. Subba Rao B.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\NEPHROLOGY\webp\Dr. Subba Rao B.webp" alt="Card image cap">
+
+          <div class="card-body">
+            <h1 class="card-title">Dr. Subba Rao B</h1>
+            <h2 class="card-title">Nephrology</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div id="colorectal" class="tabcontent">
+      <div class="container text-center">
+
+        <h1 class="tab-head2">
+
+        </h1>
+      </div>
+      <div class="container c-card">
+
+        <!-- Card 1 -->
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\COLORECTAL SURGERY\webp\Dr. Venkatesh Munikrishnan.webp"
+            alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\COLORECTAL SURGERY\webp\Dr. Venkatesh Munikrishnan.webp"
+            alt="Card image cap">
+          <div class="card-body">
+            <h1 class="card-title">Dr. Venkatesh Munikrishnan</h1>
+            <h2 class="card-title">Colorectal Surgery</h2>
+
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <div id="surgical" class="tabcontent">
+      <div class="container text-center">
+
+        <h1 class="tab-head2">
+
+        </h1>
+      </div>
+      <div class="container c-card">
+
+        <!-- Card 1 -->
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\SURGICAL GASTROENTEROLOGIST\webp\Dr. Balachandar T G.webp"
+            alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\SURGICAL GASTROENTEROLOGIST\webp\Dr. Balachandar T G.webp"
+            alt="Card image cap">
+          <div class="card-body">
+            <h1 class="card-title">Dr. Balachandar T G</h1>
+            <h2 class="card-title">Surgical Gastroenterologist</h2>
+
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+
+          </div>
+        </div>
+
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\SURGICAL GASTROENTEROLOGIST\webp\Dr. J K A Jameel.webp"
+            alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\SURGICAL GASTROENTEROLOGIST\webp\Dr. J K A Jameel.webp"
+            alt="Card image cap">
+          <div class="card-body">
+            <h1 class="card-title">Dr. J K A Jameel</h1>
+            <h2 class="card-title">Surgical Gastroenterologist</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="Spine" class="tabcontent">
+      <div class="container text-center">
+
+        <h1 class="tab-head2">
+
+        </h1>
+      </div>
+      <div class="container c-card">
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\Neuro\webp\dr-sajan-hagde.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\Neuro\webp\dr-sajan-hagde.webp" alt="Card image cap">
+
+          <div class="card-body">
+            <h1 class="card-title">Dr. Sajan K Hegde</h1>
+            <h2 class="card-title">Spine Surgeon</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+          </div>
+        </div>
+        <!-- Card 1 -->
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\SPINE SURGERY\webp\Dr. Imtiaz Ghani.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\SPINE SURGERY\webp\Dr. Imtiaz Ghani.webp"
+            alt="Card image cap">
+          <div class="card-body">
+            <h1 class="card-title">Dr. Imtiaz Ghani</h1>
+            <h2 class="card-title">Spine Surgery</h2>
+
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+
+          </div>
+        </div>
+
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\SPINE SURGERY\webp\Dr. Sajan K Hegde.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\SPINE SURGERY\webp\Dr. Sajan K Hegde.webp"
+            alt="Card image cap">
+
+          <div class="card-body">
+            <h1 class="card-title">Dr. Sajan K Hegde</h1>
+            <h2 class="card-title">Spine Surgery</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="Orthopedics" class="tabcontent">
+      <div class="container text-center">
+        <h1 class="tab-head2">
+
+        </h1>
+      </div>
+
+      <div class="container c-card">
+
+        <!-- Card 3 -->
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\ORTHOPAEDIC\webp\Dr. A Navaladi Shankar.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\ORTHOPAEDIC\webp\Dr. A Navaladi Shankar.webp"
+            alt="Card image cap">
+          <div class="card-body">
+            <h1 class="card-title">Dr. A Navaladi Shankar</h1>
+            <h2 class="card-title">Spine Surgeon</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+          </div>
+        </div>
+
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\ORTHOPAEDIC\webp\Dr. Arun Kannan.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\ORTHOPAEDIC\webp\Dr. Arun Kannan.webp" alt="Card image cap">
+          <div class="card-body">
+            <h1 class="card-title">Dr. Arun Kannan</h1>
+            <h2 class="card-title">Orthopaedic Surgeon</h2>
+
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
           </div>
 
 
         </div>
+
+
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\ORTHOPAEDIC\webp\Dr. Kosygan K P.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\ORTHOPAEDIC\webp\Dr. Kosygan K P.webp" alt="Card image cap">
+          <div class="card-body">
+            <h1 class="card-title">Dr. Kosygan K P</h1>
+            <h2 class="card-title">Orthopaedic Surgeon</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+          </div>
+        </div>
+
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\ORTHOPAEDIC\webp\Dr. Madan Mohan Reddy.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\ORTHOPAEDIC\webp\Dr. Madan Mohan Reddy.webp"
+            alt="Card image cap">
+          <div class="card-body">
+            <h1 class="card-title">Dr. Madan Mohan Reddy</h1>
+            <h2 class="card-title">Orthopaedic Surgeon</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+          </div>
+        </div>
+      </div>
+      <div class="container c-card">
+
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\ORTHOPAEDIC\webp\Dr. Vijay Kishore Kondreddy.webp"
+            alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\ORTHOPAEDIC\webp\Dr. Vijay Kishore Kondreddy.webp"
+            alt="Card image cap">
+          <div class="card-body">
+            <h1 class="card-title">Dr. Vijay Kishore Kondreddy</h1>
+            <h2 class="card-title">Orthopaedic Surgeon</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+          </div>
+        </div>
       </div>
 
+    </div>
+
+    <div id="NeuroSurgery" class="tabcontent">
+      <div class="container text-center">
+        <h1 class="tab-head2">
+        </h1>
+      </div>
+      <div class="container c-card">
+        <!-- Card 4 -->
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\Neuro\webp\Dr. Arul Selvan V L.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\Neuro\webp\Dr. Arul Selvan V L.webp" alt="Card image cap">
+
+          <div class="card-body">
+            <h1 class="card-title">Dr. Arul Selvan V L</h1>
+            <h2 class="card-title">Neurosciences</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+          </div>
+        </div>
+
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\Neuro\webp\Dr. Dhanaraj M.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\Neuro\webp\Dr. Dhanaraj M.webp" alt="Card image cap">
+
+          <div class="card-body">
+            <h1 class="card-title">Dr. Dhanaraj M</h1>
+            <h2 class="card-title">Neurosciences</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+          </div>
+
+
+        </div>
+
+
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\Neuro\webp\Dr. Geetha Lakshmipathy.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\Neuro\webp\Dr. Geetha Lakshmipathy.webp" alt="Card image cap">
+
+          <div class="card-body">
+            <h1 class="card-title">Dr. Geetha Lakshmipathy</h1>
+            <h2 class="card-title">Neurosciences</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+          </div>
+        </div>
+
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\Neuro\webp\Dr. Joy Verghese.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\Neuro\webp\Dr. Joy Verghese.webp" alt="Card image cap">
+
+          <div class="card-body">
+            <h1 class="card-title">Dr. Joy Verghese</h1>
+            <h2 class="card-title">Neurosciences</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+          </div>
+        </div>
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\Neuro\webp\Dr. Panneer A.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\Neuro\webp\Dr. Panneer A.webp" alt="Card image cap">
+
+          <div class="card-body">
+            <h1 class="card-title">Dr. Panneer A</h1>
+            <h2 class="card-title">Neurosciences</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="Ent" class="tabcontent">
+      <div class="container text-center">
+        <h1 class="tab-head2">
+
+        </h1>
+      </div>
+
+      <div class="container c-card">
+
+        <!-- Card 3 -->
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\ENT\webp\Dr. Babu Manohar.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\ENT\webp\Dr. Babu Manohar.webp" alt="Card image cap">
+
+          <div class="card-body">
+            <h1 class="card-title">Dr. Babu Manohar</h1>
+            <h2 class="card-title">Ent Specialist</h2>
+
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+          </div>
+        </div>
+
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\ENT\webp\Dr. Ganapathy H.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\ENT\webp\Dr. Ganapathy H.webp" alt="Card image cap">
+
+          <div class="card-body">
+            <h1 class="card-title">Dr. Ganapathy H</h1>
+            <h2 class="card-title">Ent Specialist</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+          </div>
+
+
+        </div>
+
+
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\ENT\webp\Dr. Shyam Kumar S.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\ENT\webp\Dr.Shyam Kumar S.webp" alt="Card image cap">
+
+          <div class="card-body">
+            <h1 class="card-title">Dr.Shyam Kumar S</h1>
+            <h2 class="card-title">Ent Specialist</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+          </div>
+        </div>
+
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\ENT\webp\Dr. Venkatakarthikeyan C.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\ENT\webp\Dr.Venkatakarthikeyan C.webp" alt="Card image cap">
+
+          <div class="card-body">
+            <h1 class="card-title">Dr. Venkatakarthikeyan C</h1>
+            <h2 class="card-title">Ent Specialist</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div id="Cardiology" class="tabcontent">
+      <div class="container text-center">
+        <h1 class="tab-head2">
+
+        </h1>
+      </div>
+      <div class="container c-card">
+        <div class="card card-kidney">
+          <img class="card-img-top-m" src="assets\Cardio\webp\Dr. Karthigesan A M.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\Cardio\webp\Dr. Karthigesan A M.webp" alt="Card image cap">
+
+          <div class="card-body">
+            <h1 class="card-title">Dr. Karthigesan A M</h1>
+            <h2 class="card-title">Cardiac Science</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+          </div>
+        </div>
+
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\Cardio\webp\Dr. Robert Mao.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\Cardio\webp\Dr. Robert Mao.webp" alt="Card image cap">
+
+          <div class="card-body">
+            <h1 class="card-title">Dr. Robert Mao</h1>
+            <h2 class="card-title">Cardiac Science</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+          </div>
+        </div>
+
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\Cardio\webp\Dr. Srinivasan K N.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\Cardio\webp\Dr. Srinivasan K N.webp" alt="Card image cap">
+
+          <div class="card-body">
+            <h1 class="card-title">Dr. Srinivasan K N</h1>
+            <h2 class="card-title">Cardiac Science</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+          </div>
+        </div>
+
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\Cardio\webp\Dr. Vijayachandra Reddy Y.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\Cardio\webp\Dr. Vijayachandra Reddy Y.webp"
+            alt="Card image cap">
+
+          <div class="card-body">
+            <h1 class="card-title">Dr. Vijayachandra Reddy Y</h1>
+            <h2 class="card-title">Cardiac Science</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+          </div>
+        </div>
+
+        <div class="card card-kidney">
+
+          <img class="card-img-top-m" src="assets\Cardio\webp\Dr. Abraham Oomman.webp" alt="Card image cap">
+          <img class="card-img-top-m-res" src="assets_mob\Cardio\webp\Dr. Abraham Oomman.webp" alt="Card image cap">
+
+          <div class="card-body">
+            <h1 class="card-title">Dr. Abraham Oomman</h1>
+            <h2 class="card-title">Cardiac Science</h2>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
+              Opinion</button><bR>
+            <button type="button" data-url="https://what.sapp.link/apollo-india"
+              onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr-wa"> <a aria-label="apollo"
+                class="nav-link" data-url="https://what.sapp.link/apollo-india"> <i style="color:#FFF"
+                  class="fa fa-whatsapp" aria-hidden="true"></i> Connect On WhatsApp</a>
+            </button>
+
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>
 
-  <!-- What You can Expect -->
-  <section class="expect  pb-lg-40 pb-sm-20 ">
-    <div class="container  mt-4 py-4">
-      <h2 class="mt-4  ml-2">What You can Expect</h2>
-      <div class="row">
-        <div class="col-lg-9">
-          <p class="text-left"></p>
-
-        </div>
-
-
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4 count-expect">
-          <div class="card card-bg">
-            <div class="d-flex align-items-center">
-              <img src="img/1.png" alt="Apollo Hospitals" class="img-fluid mr-4">
-              <h4>Dedicated Care Manager</h4>
-            </div>
-
-            <p>Apollo hosts dedicated Centres of Excellence and specialty clinics that cover end-to-end care
-              of
-              all
-              acute
-              and chronic diseases and conditions.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 count-expect">
-          <div class="card card-bg">
-            <div class="d-flex align-items-center">
-              <img src="img/2.png" alt="Apollo Hospitals" class="img-fluid mr-4">
-              <h4>Comprehensive Patient Assistance</h4>
-            </div>
-            <p>With internationally renowned doctors and surgeons, along with a team of leading specialists
-              committed to
-              providing advanced treatments, we make sure to provide the best services for your utmost
-              comfort.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 count-expect">
-          <div class="card card-bg">
-            <div class="d-flex align-items-center">
-              <img src="img/3.png" alt="Apollo Hospitals" class="img-fluid mr-4">
-              <h4>Excellent Treatment Outcome</h4>
-            </div>
-
-            <p>Apollo provides a luxury stay, with the latest technology and design, and infrastructure,
-              keeping
-              the
-              patient in mind.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 count-expect">
-          <div class="card card-bg">
-            <div class="d-flex align-items-center">
-              <img src="img/4.png" alt="Apollo Hospitals" class="img-fluid mr-4">
-              <h4>Convenience</h4>
-            </div>
-
-            <p>Apollo has exclusive tie-ups with the top Ayurvedic centers and Wellness spas in Kerala. We
-              offer
-              wellness
-              packages for specific conditions, as well as treatments to enhance the overall quality of
-              one’s
-              health and
-              well-being.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 count-expect">
-          <div class="card card-bg">
-            <div class="d-flex align-items-center">
-              <img src="img/5.png" alt="Apollo Hospitals" class="img-fluid mr-4">
-              <h4>Wellness | Check - ups</h4>
-            </div>
-
-            <p>Assisted in arranging accommodation for attendants of the patients near the hospital. We
-              provide
-              a spread
-              of delicious local cuisines with guidelines supervised by Apollo’s Clinical Nutritionists.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4 count-expect">
-          <div class="card card-bg">
-            <div class="d-flex align-items-center">
-              <img src="img/6.png" alt="Apollo Hospitals" class="img-fluid mr-4">
-              <h4>Follow - ups Supports</h4>
-            </div>
-
-            <p>We have a 24/7 Call Centre, a Multilingual translator, and a dedicated Patient Help Desk to
-              coordinate
-              travel and visa procedures, complimentary pick-up and drop facilities from the airport/hotel
-              to
-              the
-              hospital.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
 
   <div class="container-fluid" id="block_II">
 
@@ -1601,7 +1358,8 @@
             <h1 class="card-title ">Apollo Hospitals launches Apollo Genomics Institute in Chennai.</h1>
             <p style="color: #484848;" class="card-text">Apollo Hospitals has announced the expansion ofthe Apollo
               Genomics Institute with the launch of the.............. Chennai. Doubling its investments in genomics,
-              Apollo Genomic Institute was earlier launched in Mumbai and Delhi. By the end of 2023, Apollo aims to open
+              Apollo Genomic Institute was earlier launched in Mumbai and Delhi. By the end of 2023, Apollo aims to
+              open
               three more genomics facilities in Hyderabad, Bangalore and Ahmedabad respectively.</p>
           </div>
         </div>
@@ -1612,11 +1370,14 @@
           <div class="card-body" style="border-radius: 0px 0px 13px 13px; text-align: left;">
             <p class="card-text"><small class="text-muted">POSTED BY APOLLO HOSPITALS | 09 APR, 2023</small></p>
             <h1 class="card-title">Apollo Cancer Centres, Navi Mumbai has launched the advanced Isotope Radionuclide
+
               Therapy at the Thyroid Cancer Symposium.</h1>
             <p style="color: #484848;" class="card-text">Apollo Cancer Centres, Navi Mumbai has launched the advanced
               radionuclide therapy for treatment of thyroid cancer at a symposium held on Saturday, 8th April. The
-              symposium, addressed by various national and international experts, highlighted the latest advancements in
-              the field of thyroid surgery and the role of therapy in offering a precise and targeted approach to cancer
+              symposium, addressed by various national and international experts, highlighted the latest advancements
+              in
+              the field of thyroid surgery and the role of therapy in offering a precise and targeted approach to
+              cancer
               treatment for an improved quality of life for cancer patients</p>
           </div>
         </div>
@@ -1627,10 +1388,12 @@
           <div class="card-body" style="border-radius: 0px 0px 13px 13px; text-align: left;">
             <p class="card-text"><small class="text-muted">POSTED BY APOLLO HOSPITALS | 03 APR, 2023</small></p>
             <h1 class="card-title">Apollo Hospitals goes beyond treatment by sponsoring two-time transplant survivor’s
+
               sporting event in Australia.</h1>
             <p style="color: #484848;" class="card-text">In a special effort to celebrate the heroism of transplant
               recipients and showcase sustained support to patients beyond the treatment cycle, Apollo Hospitals is
-              sponsoring the journey of former patient and star sportsperson, Mr. Sumeer Kumar, to the World Transplant
+              sponsoring the journey of former patient and star sportsperson, Mr. Sumeer Kumar, to the World
+              Transplant
               Games in Australia this month. The World Transplant Games is the world’s largest awareness event and
               sporting platform for transplant communities.</p>
           </div>
@@ -1651,7 +1414,8 @@
     <div class="font-hos">
       <span class="font_apollo">Apollo Hospitals was established in 1983 by Dr. Prathap C Reddy, renowned as the
         architect of modern healthcare in India.
-        As the nation's first corporate hospital, we have acclaimed for pioneering the private healthcare revolution in
+        As the nation's first corporate hospital, we have acclaimed for pioneering the private healthcare revolution
+        in
         the country. Apollo Hospitals has emerged
         as Asia's foremost integrated healthcare services provider and has a robust presence across the healthcare
         ecosystem, including Hospitals, Pharmacies, Primary Care
@@ -1754,12 +1518,13 @@
               <div class="container">
                 <img class="card-img-top-stories" src="assets\news\webp\t1.webp" alt="Card image cap" width="370px" ;
                   height="270px;">
-                <img class="card-img-top-stories-ress-mob" src="assets_mob\news\webp\t1-m.webp" alt="Card image cap"
+                <img class="card-img-top-stories-ress-mob" src="assets_mob\news\webp\t1.webp" alt="Card image cap"
                   width="882px" ; height="665px; "><br><br>
                 <div class=" ">
                   <sapn class="font-mobx" style="color: #047C9E; line-height: 42px;">POSTED BY APOLLO HOSPITALS |
                      12th May 2022</sapn>
-                  <h1 class="font-mobx2" style="color: #047C9E;font-size: 21px;line-height: 39px;">SUMAYA ISHRAT MOYEEN
+                  <h1 class="font-mobx2" style="color: #047C9E;font-size: 21px;line-height: 39px;">SUMAYA ISHRAT
+                    MOYEEN
                   </h1>
                   <p class="font-mobx3" style="color: #047C9E;font-size: 18px; line-height: 33px;">Successful
                     Pyeloplasty delivery was done on 18th April 2022. At her 33/34 weeks of pregnancy; fetal
@@ -1775,7 +1540,7 @@
               <div class="container">
                 <img class="card-img-top-stories" src="assets\news\webp\t2.webp" alt="Card image cap" width="370px" ;
                   height="270px;">
-                <img class="card-img-top-stories-ress-mob" src="assets_mob\news\webp\t2-m.webp" alt="Card image cap"
+                <img class="card-img-top-stories-ress-mob" src="assets_mob\news\webp\t2.webp" alt="Card image cap"
                   width="882px" ; height="665px; "><br><br>
                 <div class=" ">
                   <sapn class="font-mobx" style="color: #047C9E; line-height: 42px;">POSTED BY APOLLO HOSPITALS |
@@ -1783,7 +1548,8 @@
                   <h1 class="font-mobx2" style="color: #047C9E;font-size: 21px;line-height: 39px;">MD TANVIR RAHMAN
                     MASUM</h1>
                   <p class="font-mobx3" style="color: #047C9E;font-size: 18px; line-height: 33px;">Succussfully
-                    undergone Arthroscopic ACL Reconstruction Surgery for ACL TEAR under the supervision of Apollo Delhi
+                    undergone Arthroscopic ACL Reconstruction Surgery for ACL TEAR under the supervision of Apollo
+                    Delhi
                     Doctors</p>
                 </div>
 
@@ -1796,7 +1562,7 @@
               <div class="container">
                 <img class="card-img-top-stories" src="assets\news\webp\t3.webp" alt="Card image cap" width="370px" ;
                   height="270px;">
-                <img class="card-img-top-stories-ress-mob" src="assets_mob\news\webp\t3-m.webp" alt="Card image cap"
+                <img class="card-img-top-stories-ress-mob" src="assets_mob\news\webp\t3.webp" alt="Card image cap"
                   width="882px" ; height="665px; "><br><br>
                 <div class=" ">
                   <sapn class="font-mobx" style="color: #047C9E; line-height: 42px;">POSTED BY APOLLO HOSPITALS |  26
@@ -2021,142 +1787,6 @@
       <!-- Copyright -->
     </footer>
 
-    <script>
-      /* Start of LiveChat (www.livechat.com) code */
-
-      function ipLookUp() {
-        var e = new XMLHttpRequest();
-        (e.onreadystatechange = function () {
-          if (4 == this.readyState && 200 == this.status) {
-            var n = JSON.parse(e.response);
-            console.log("location responce ", n, n.country),
-              (window.ttLocation = n.country),
-              initChat();
-          }
-
-          function alpx() {
-            fetch('https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation/api/data')
-              .then(response => response.json())
-              .then(data => {
-                // Make sure the 'data' object is defined and has the 'country' property
-                if (data.country === "IN") {
-                  document.title = "Page not found";
-                } else {
-                  console.log("maxx");
-                }
-              });
-
-
-          }
-          alpx();
-        }),
-
-          e.open(
-            "GET",
-            "https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation",
-            !0
-          ),
-          e.send();
-
-      }
-      //             function initChat() {
-      //               "IN" === window.ttLocation
-      //                 ? (document.body.innerHTML =
-      //                   "<h1 class ='maxx' style='text-align: center; padding-top: 100vh; transform: translateY(-50%); color: black'> 404 Page Not Found</h1>")
-      //                 : (console.log("starting the chat ", window.ttLocation),
-      //                   (window.__lc = window.__lc || {}),
-      //                   (window.__lc.license = 7595311),
-      //                   (function (e, n, t) {
-      //                     function l(e) {
-      //                       return o._h ? o._h.apply(null, e) : o._q.push(e);
-      //                     }
-      //                     var o = {
-      //                       _q: [],
-      //                       _h: null,
-      //                       _v: "2.0",
-      //                       on: function () {
-      //                         l(["on", t.call(arguments)]);
-      //                       },
-      //                       once: function () {
-      //                         l(["once", t.call(arguments)]);
-      //                       },
-      //                       off: function () {
-      //                         l(["off", t.call(arguments)]);
-      //                       },
-      //                       get: function () {
-      //                         if (!o._h)
-      //                           throw Error(
-      //                             "[LiveChatWidget] You can't use getters before load."
-      //                           );
-      //                         return l(["get", t.call(arguments)]);
-      //                       },
-      //                       call: function () {
-      //                         l(["call", t.call(arguments)]);
-      //                       },
-      //                       init: function () {
-      //                         var e = n.createElement("script");
-      //                         (e.async = !0),
-      //                           (e.type = "text/javascript"),
-      //                           (e.src = "https://cdn.livechatinc.com/tracking.js"),
-      //                           n.head.appendChild(e);
-      //                       },
-      //                     };
-      //                     e.__lc.asyncInit || o.init(),
-      //                       (e.LiveChatWidget = e.LiveChatWidget || o);
-      //                   })(window, document, [].slice));
-      //             }
-      //             (window.onload = function () {
-      //               setInitialCardVisibility();
-      //             }),
-      //               ipLookUp(),
-      //               window.addEventListener("load", function () {
-      //                 console.log("Page loaded ", window.ttLocation),
-      //                   "IN" !== window.ttLocation &&
-      //                   ((window.__lc = window.__lc || {}),
-      //                     (window.__lc.license = 7595311),
-      //                     (function (e, n, t) {
-      //                       function l(e) {
-      //                         return o._h ? o._h.apply(null, e) : o._q.push(e);
-      //                       }
-      //                       var o = {
-      //                         _q: [],
-      //                         _h: null,
-      //                         _v: "2.0",
-      //                         on: function () {
-      //                           l(["on", t.call(arguments)]);
-      //                         },
-      //                         once: function () {
-      //                           l(["once", t.call(arguments)]);
-      //                         },
-      //                         off: function () {
-      //                           l(["off", t.call(arguments)]);
-      //                         },
-      //                         get: function () {
-      //                           if (!o._h)
-      //                             throw Error(
-      //                               "[LiveChatWidget] You can't use getters before load."
-      //                             );
-      //                           return l(["get", t.call(arguments)]);
-      //                         },
-      //                         call: function () {
-      //                           l(["call", t.call(arguments)]);
-      //                         },
-      //                         init: function () {
-      //                           var e = n.createElement("script");
-      //                           (e.async = !0),
-      //                             (e.type = "text/javascript"),
-      //                             (e.src = "https://cdn.livechatinc.com/tracking.js"),
-      //                             n.head.appendChild(e);
-      //                         },
-      //                       };
-      //                       e.__lc.asyncInit || o.init(),
-      //                         (e.LiveChatWidget = e.LiveChatWidget || o);
-      //                     })(window, document, [].slice));
-      //               });
-
-      // function setInitialCardVisibility() { };
-
-    </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EGPK7ZS1P8"></script>
     <script>
@@ -2214,11 +1844,11 @@
           if (element) {
             document.getElementById('drawer').style.bottom = '0'; // Change to 'block' or any other desired display type
           }
-        }, 10000);
+        }, 20000);
       }
 
       function callevent() {
-        setTimeout(openNav, 10000);
+        setTimeout(openNav, 20000);
       }
 
       callevent();
@@ -2276,6 +1906,8 @@
       });
 
     </script>
+
+    <script src="js/custom.js"></script>
 </body>
 
 </html>
