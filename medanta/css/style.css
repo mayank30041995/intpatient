@@ -676,9 +676,16 @@ h1.card-title-h1 {
         background-image: url(../images/medanta-mobile.webp);
         background-repeat: no-repeat;
         background-size: cover;
-        aspect-ratio: auto 375 / 375;
-        height: 414px;
+        background-position: center;
+
+        /* CLS prevention */
+        aspect-ratio: 375 / 414;
+        /* maintains proportion across screen sizes */
         width: 100%;
+
+        /* remove fixed height */
+        height: auto;
+        min-height: auto;
     }
 
     .banner-img {
