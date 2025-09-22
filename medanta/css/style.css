@@ -325,7 +325,8 @@ p.p-header a {
     width: 100%;
     aspect-ratio: 16/9;
     /* reserves section height */
-    min-height: 26rem;
+    min-height: 637.5px;
+
     /* fallback for older browsers */
 }
 

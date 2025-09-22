@@ -32,7 +32,12 @@
     <noscript>
         <link rel="stylesheet" href="css/bootstrap.min.css">
     </noscript>
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/style.css">
+    </noscript>
+
     <link rel="preload" as="image" href="images/bckgrnd-medanta-_1_-1.webp" type="image/webp" fetchpriority="high"
         media="(min-width: 768px)" importance="high" />
     <link rel="preload" as="image" href="images/medanta-mobile.webp" type="image/webp" fetchpriority="high"
