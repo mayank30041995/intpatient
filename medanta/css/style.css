@@ -319,6 +319,9 @@ p.p-header a {
 /* background-repeat: no-repeat;
 } */
 
+.banner-img-mob {
+    display: none;
+}
 
 /* CLS-safe image styling */
 #banner-image {
@@ -672,20 +675,32 @@ h1.card-title-h1 {
 }
 
 @media (max-width:600px) {
-    #banner-image {
+    /* #banner-image {
         background-image: url(../images/medanta-mobile.webp);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
 
         /* CLS prevention */
-        aspect-ratio: 375 / 414;
+    /*    aspect-ratio: 375 / 414;
         /* maintains proportion across screen sizes */
-        width: 100%;
+    /*     width: 100%;
 
         /* remove fixed height */
-        height: auto;
+    /*     height: auto;
         min-height: auto;
+    } */
+
+    #banner-image {
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .banner-img-mob {
+        width: 100%;
+        height: auto;
+        display: block;
     }
 
     .banner-img {
