@@ -319,27 +319,22 @@ p.p-header a {
 /* background-repeat: no-repeat;
 } */
 
-.banner-img-mob {
-    display: none;
-}
-
 /* CLS-safe image styling */
 #banner-image {
     position: relative;
-    overflow: hidden;
     width: 100%;
-    aspect-ratio: 1035/364;
-    /* match image dimensions */
-    min-height: 361px;
+    display: block;
+    aspect-ratio: 1035 / 364;
+    /* Desktop ratio */
+    overflow: hidden;
     /* fallback */
 }
 
 .banner-img {
-    display: block;
     width: 100%;
-    height: revert-layer;
-    /* keeps ratio */
+    height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .overlay-container {
@@ -691,21 +686,17 @@ h1.card-title-h1 {
         min-height: auto;
     } */
 
-    #banner-image {
+    /* #banner-image {
         position: relative;
         width: 100%;
         max-width: 1200px;
+    } */
+
+    #banner-image {
+        aspect-ratio: 375 / 414;
+        /* Mobile ratio */
     }
 
-    .banner-img-mob {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .banner-img {
-        display: none;
-    }
 
     #banner-image p.banner-p {
         font-family: 'Open Sans', sans-serif;
