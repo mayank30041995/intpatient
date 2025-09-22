@@ -16,7 +16,9 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden
+    /* Let height be auto, do NOT fix it */
+    min-height: 100vh;
+    /* optional, just ensures minimum viewport fill */
 }
 
 .primary_color {
