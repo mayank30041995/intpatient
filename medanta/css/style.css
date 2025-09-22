@@ -341,15 +341,18 @@ p.p-header a {
 
 .overlay-container {
     position: absolute;
-    top: 5%;
-    left: 52%;
+    top: 1rem;
+    /* fixed pixel distance from top instead of percentage */
+    left: 50%;
+    /* always center horizontally */
     transform: translateX(-50%);
-    width: 90%;
-    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-height: 22rem;
+    width: 90%;
+    /* responsive width */
+    max-width: 1200px;
+    display: none;
 }
 
 /* Typography */
