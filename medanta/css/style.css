@@ -823,7 +823,7 @@ h1.card-title-h1 {
 }
 
 img {
-    object-fit: contain
+    object-fit: cover;
 }
 
 .h6-checkup {
