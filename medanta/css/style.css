@@ -323,10 +323,8 @@ p.p-header a {
     position: relative;
     overflow: hidden;
     width: 100%;
-    aspect-ratio: 16/9;
-    /* reserves section height */
     height: 637.5px;
-    /* fallback for older browsers */
+    /* fixed height */
 }
 
 .banner-img {
