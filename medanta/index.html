@@ -33,9 +33,11 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
     </noscript>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preload" as="image" href="images/bckgrnd-medanta-_1_-1.webp" type="image/webp"
-        media="(min-width: 768px)" />
-    <link rel="preload" as="image" href="images/medanta-mobile.webp" type="image/webp" media="(max-width: 767px)" />
+    <link rel="preload" as="image" href="images/bckgrnd-medanta-_1_-1.webp" type="image/webp" fetchpriority="high"
+        media="(min-width: 768px)" importance="high" />
+    <link rel="preload" as="image" href="images/medanta-mobile.webp" type="image/webp" fetchpriority="high"
+        media="(max-width: 767px)" importance="high" />
+
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <!-- new Hero image -->
 </head>
@@ -1502,16 +1504,17 @@
 
 
 
-    <section class="expect  pb-lg-50 pb-sm-20 mt-3">
-        <div class="container-fluid bg-app py-5">
+    <section class="expect pb-lg-50 pb-sm-20 mt-3">
+        <div class="container-fluid bg-app py-5" style="min-height:200px;">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6 col-lg-4 text-center">
-                    <h1 class="text-light">Talk to Us</h1>
+                    <h1 class="text-light" style="min-height:60px;">Talk to Us</h1>
                     <button type="button" data-url="https://what.sapp.link/medanta"
-                        class="btn bg-btn bg-light py-3 my-2 w-75" onclick="gtag_report_conversion(); "><i
-                            class="fa fa-whatsapp ps-2" aria-hidden="true"></i>
-                        Contact On
-                        WhatsApp</button>
+                        class="btn bg-btn bg-light py-3 my-2 w-100 d-flex justify-content-center align-items-center"
+                        style="min-height:60px; min-width:220px;" onclick="gtag_report_conversion();">
+                        <i class="fa fa-whatsapp me-2" aria-hidden="true"></i>
+                        Contact On WhatsApp
+                    </button>
                 </div>
             </div>
         </div>
@@ -1820,20 +1823,23 @@
     </section>
     <!--End Of Pre Or Post Arival Steps Slides -->
 
-    <section class="expect  pb-lg-50 pb-sm-20 ">
-        <div class="container-fluid bg-app py-5">
+    <section class="expect pb-lg-50 pb-sm-20 mt-3">
+        <div class="container-fluid bg-app py-5" style="min-height:200px;">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6 col-lg-4 text-center">
-                    <h1 class="text-light">Talk to Us</h1>
+                    <h1 class="text-light" style="min-height:60px;">Talk to Us</h1>
                     <button type="button" data-url="https://what.sapp.link/medanta"
-                        class="btn bg-btn bg-light py-3 w-75" onclick="gtag_report_conversion(); "><i
-                            class="fa fa-whatsapp ps-2" aria-hidden="true"></i>
-                        Contact On
-                        WhatsApp</button>
+                        class="btn bg-btn bg-light py-3 my-2 w-100 d-flex justify-content-center align-items-center"
+                        style="min-height:60px; min-width:220px;" onclick="gtag_report_conversion();">
+                        <i class="fa fa-whatsapp me-2" aria-hidden="true"></i>
+                        Contact On WhatsApp
+                    </button>
                 </div>
             </div>
         </div>
     </section>
+
+
     <!--Specialized services section start-->
     <section class="specialized-services mt-5 pt-3">
         <h1 class="recentblog-h1">Specialized Services for Your <span
