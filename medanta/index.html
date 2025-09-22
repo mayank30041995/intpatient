@@ -20,6 +20,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;family=Poppins&amp;family=Raleway&amp;display=swap">
     <!-- Preload the CSS -->
+
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
@@ -4132,34 +4133,31 @@
                 </div>
             </div>
     </section>
-    <script async src="js/custom.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-922729084">
-    </script>
+    <!-- Event snippet for Lead conversion page
+                In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+
+
+
+    <!-- Custom JS (modular, non-blocking) -->
+    <script src="js/custom.js" defer></script>
+
+    <!-- Google Tag (delayed for performance) -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+        setTimeout(function () {
+            var gtagScript = document.createElement("script");
+            gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=AW-922729084";
+            gtagScript.async = true;
+            document.head.appendChild(gtagScript);
 
-        gtag('config', 'AW-922729084');
+            gtag('js', new Date());
+            gtag('config', 'AW-922729084');
+        }, 3000);
     </script>
 
-    <!-- Event snippet for Lead conversion page
-                In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-    <script>
-        function gtag_report_conversion(url) {
-            var callback = function () {
-                if (typeof (url) != 'undefined') {
-                    window.location = url;
-                }
-            };
-            gtag('event', 'conversion', {
-                'send_to': 'AW-922729084/zVS5CMT9j2YQ_PT-twM',
-                'event_callback': callback
-            });
-            return false;
-        }
-    </script>
+
+
 </body>
 
 </html>
