@@ -323,15 +323,17 @@ p.p-header a {
     position: relative;
     overflow: hidden;
     width: 100%;
-    aspect-ratio: 16 / 9;
+    /* Use aspect-ratio OR height, not both */
+    aspect-ratio: 16/9;
     min-height: 26rem;
-    /* fallback for browsers without aspect-ratio support */
+    /* fallback */
 }
 
 .banner-img {
-    width: 100%;
-    height: 100%;
     display: block;
+    width: 100%;
+    height: auto;
+    /* keeps ratio */
     object-fit: cover;
 }
 
