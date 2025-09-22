@@ -673,6 +673,10 @@ h1.card-title-h1 {
         background-size: cover
     }
 
+    .banner-img {
+        display: none;
+    }
+
     #banner-image p.banner-p {
         font-family: 'Open Sans', sans-serif;
         color: #fff !important;
