@@ -675,7 +675,7 @@ h1.card-title-h1 {
         background-size: cover;
         aspect-ratio: auto 375 / 375;
         height: 375px;
-        width: 375px;
+        width: 100%;
     }
 
     .banner-img {
