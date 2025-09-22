@@ -68,6 +68,8 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    width: 240px;
+    height: 106.75px;
     padding: 10px 20px;
     background-color: var(--bg-background);
     box-shadow: 2px 0 10px rgba(0, 0, 0, .5);
@@ -318,11 +320,13 @@ p.p-header a {
 
 /* CLS-safe image styling */
 #banner-image {
+    position: relative;
+    overflow: hidden;
     width: 100%;
     aspect-ratio: 16/9;
     /* reserves section height */
     min-height: 26rem;
-    /* fallback for browsers without aspect-ratio */
+    /* fallback for older browsers */
 }
 
 .banner-img {
@@ -332,33 +336,39 @@ p.p-header a {
     object-fit: cover;
 }
 
-/* Optional: prevent font shifts */
+/* Overlay container */
+.overlay-container {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Typography */
 .banner-txt,
 .banner-p,
 .btn {
     font-display: swap;
 }
 
-
-
 #banner-image h1.h1 {
     font-family: var(--bg-dark);
-    font-size: 61px
-}
-
-#banner-image h2 {
-    font-family: var(--primary-font);
-    font-size: 60px
+    font-size: 61px;
 }
 
 #banner-image h1.h11 {
     font-family: var(--primary-font);
-    font-size: 61px
+    font-size: 61px;
 }
 
 #banner-image p {
     font-family: var(--primary-font);
-    line-height: 30.565px
+    line-height: 30.565px;
 }
 
 #banner-image a.banner-btn {
@@ -366,14 +376,14 @@ p.p-header a {
     border-radius: 6px;
     font-family: var(--primary-font);
     font-size: 18px;
-    border: 0
+    border: 0;
 }
 
 #banner-image p.banner-p {
     font-family: 'Open Sans', sans-serif;
     color: var(--bg-background) !important;
     font-weight: 700;
-    font-size: 24px !important
+    font-size: 24px !important;
 }
 
 h1.recentblog-h1 {
