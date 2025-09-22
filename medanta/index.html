@@ -122,10 +122,14 @@
     <section id="banner-image">
         <!-- Banner Image -->
         <picture>
+            <!-- mobile -->
             <source srcset="./images/medanta-mobile.webp" media="(max-width: 767px)" width="375" height="414">
-            <img class="banner-img" src="./images/bckgrnd-medanta-_1_-1.webp" alt="Banner" width="1035" height="364"
-                decoding="async" fetchpriority="high">
+            <!-- desktop fallback -->
+            <img src="./images/bckgrnd-medanta-_1_-1.webp" alt="Banner" width="1035" height="364" decoding="async"
+                fetchpriority="high">
         </picture>
+
+
         <!-- Overlay Container -->
         <div class="container overlay-container">
             <!-- Heading -->
@@ -137,7 +141,7 @@
             <!-- WhatsApp Button -->
             <a class="btn banner-link d-inline-flex justify-content-center align-items-center rounded-2 bg-app-btn text-light py-2 mb-4"
                 href="https://what.sapp.link/medanta" target="_blank">
-                <img src="images/whatsapp.svg.webp" alt="whatsapp_logo" width="30" height="30" style="flex-shrink:0;">
+                <!-- <img src="images/whatsapp.svg.webp" alt="whatsapp_logo" width="30" height="30" style="flex-shrink:0;"> -->
                 <strong class="mx-2 fs-6">Contact On WhatsApp</strong>
             </a>
 
@@ -154,7 +158,34 @@
             </div>
         </div>
     </section>
+    <style>
+        #banner-image {
+            position: relative;
+            /* allow overlay to position inside */
+            width: 100%;
+            aspect-ratio: 1035 / 364;
+            /* reserve desktop height */
+            overflow: hidden;
+        }
 
+        #banner-image picture,
+        #banner-image img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        #banner-image img {
+            object-fit: cover;
+        }
+
+        @media (max-width: 767px) {
+            #banner-image {
+                aspect-ratio: 375 / 414;
+                /* reserve mobile height */
+            }
+        }
+    </style>
 
 
     <!--banner section end-->
