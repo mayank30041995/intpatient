@@ -1,3 +1,7 @@
+const box = document.getElementById('banner')
+box.style.width = '200px' // 1. DOM change
+console.log(box.offsetWidth) // 2. Force reflow!
+
 document.getElementById('Cardiology').style.display = 'block'
 
 function changeTab(evt, tabLink) {
