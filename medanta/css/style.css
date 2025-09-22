@@ -715,9 +715,9 @@ h1.card-title-h1 {
         display: block;
     }
 
-    .banner-img {
+    /* .banner-img {
         display: none;
-    }
+    } */
 
     #banner-image p.banner-p {
         font-family: 'Open Sans', sans-serif;
