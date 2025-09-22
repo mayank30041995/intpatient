@@ -1051,3 +1051,30 @@ img {
 .btn-right {
     right: 0
 }
+
+
+
+/* pre load page */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner-wrapper {
+    text-align: center;
+}
+
+.preloader-logo {
+    width: 120px;
+    /* adjust size as needed */
+    margin-bottom: 20px;
+}
