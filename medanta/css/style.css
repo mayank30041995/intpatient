@@ -215,7 +215,7 @@ body {
     }
 
     #openBtn {
-        width: 95%;
+        width: auto;
         bottom: 10px;
         left: 10px;
         font-size: 28px;
@@ -326,7 +326,6 @@ p.p-header a {
     aspect-ratio: 16/9;
     /* reserves section height */
     min-height: 637.5px;
-
     /* fallback for older browsers */
 }
 
@@ -751,7 +750,14 @@ h1.card-title-h1 {
 @media (max-width:375px) {
     a.btn {
         font-size: 17px;
-        width: auto
+        width: auto !important;
+    }
+}
+
+@media (max-width:780px) {
+    a.btn {
+        font-size: 17px;
+        width: auto !important;
     }
 }
 
