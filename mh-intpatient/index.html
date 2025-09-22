@@ -18,12 +18,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- bootstrap css -->
-  <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Roboto">
+  </noscript>
+
+  <link rel="preload" href="bootstrap/dist/css/bootstrap.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+  </noscript>
+
   <!-- custom css -->
-  <link rel="stylesheet" type="text/css" href="css/style-1.css" />
+  <link rel="preload" href="css/style-1.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="css/style-1.css">
+  </noscript>
   <link rel="icon" type="image/x-icon" href="image/favicon.webp">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </noscript>
+
+  <link rel="preload" as="image" href="./image/manipalhospital.jpg" type="image/webp" fetchpriority="high"
+    media="(min-width: 768px)" importance="high" />
+
   <style>
     #main,
     .err {
@@ -134,7 +157,7 @@
           else {
             setVisible('#main', true);
             setVisible('#loader', false);
-            initChat();
+            // initChat();
           }
         }
       };
@@ -1090,80 +1113,13 @@
     });
 
   </script>
-  <script>
 
-    function openNav() {
-      document.getElementById("sidebar").style.width = "40%";
-
-    }
-
-    function closeNav() {
-      document.getElementById("sidebar").style.width = "0";
-    }
-
-
-    function openDrawer() {
-      setTimeout(function () {
-        // Get the element by its ID
-        const element = document.getElementById("drawer");
-
-        // Check if the element exists
-        if (element) {
-          document.getElementById('drawer').style.bottom = '0'; // Change to 'block' or any other desired display type
-        }
-      }, 5000);
-    }
-    function callevent() {
-      setTimeout(openNav, 10000);
-
-    }
-    callevent();
-    openDrawer()
-
-
-    let clickCount = 0;
-
-    // Function to be executed on the first click
-    function onFirstClick() {
-      setTimeout(openNav, 15000); // Execute openNav after 10 seconds
-    }
-
-    // Function to be executed on the second click
-    function onSecondClick() {
-      setTimeout(openNav, 30000); // Execute openNav after 150 seconds (2.5 minutes)
-    }
-
-    // Function to be executed on the third click
-    function onThirdClick() {
-      setTimeout(openNav, 60000); // Execute openNav after 150 seconds (2.5 minutes)
-
-    }
-
-    // Function to handle button clicks
-    function handleButtonClick() {
-      clickCount++;
-
-      if (clickCount === 1) {
-        onFirstClick();
-      } else if (clickCount === 2) {
-        onSecondClick();
-      } else if (clickCount === 3) {
-        onThirdClick();
-        // Reset the click count after the third click
-        clickCount = 0;
-      }
-    }
-
-    // Attach the click event listener to the button
-    document.getElementById('sidebar').addEventListener('click', handleButtonClick);
-
-  </script>
 
   <!-- bootstrap js -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="bootstrap/dist/js/src/bootstrap.min.js"></script>
+  <script type="text/javascript" src="bootstrap/dist/js/src/bootstrap.bundle.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
       $(window).scroll(function () {
@@ -1239,6 +1195,78 @@
 
     gtag('config', 'G-EGPK7ZS1P8');
   </script> -->
+
+
+
+
+
+
+
+
+  <script defer>
+    function ipLookUp() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          var response = JSON.parse(xhttp.response);
+          console.log("location responce ", response, response.country);
+          window.ttLocation = response.country;
+          if (response.country === 'IN') {
+            // console.log("please redirect my page is https://devtest.intpatient.com/ip.html");
+            //window.location.href = "https://www.treatmenttraveller.com/";
+            document.title = "Page not found";
+            setVisible('.err', true);
+            setVisible('#loader', false);
+          }
+          else {
+            setVisible('#main', true);
+            setVisible('#loader', false);
+            // initChat();
+          }
+        }
+      };
+      xhttp.open("GET", "https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation", true);
+      xhttp.send();
+    }
+    ipLookUp();
+    function onReady(callback) {
+      var intervalId = window.setInterval(function () {
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+          window.clearInterval(intervalId);
+          callback.call(this);
+        }
+      }, 1000);
+    }
+
+    function setVisible(selector, visible) {
+      document.querySelector(selector).style.display = visible ? 'block' : 'none';
+    }
+
+    // function initChat() {
+    //   if (window.ttLocation !== "IN") {
+    //     console.log("starting the chat ", window.ttLocation);
+    //     window.__lc = window.__lc || {}; window.__lc.license = 7595311; (function () { var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true; lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s); })();
+    //   }
+    //   window.addEventListener('load', function () {
+    //     console.log("Page loaded ", window.ttLocation);
+    //     if (window.ttLocation !== "IN") {
+    //       LC_API.on_chat_started = function () {
+    //         gtag('event', 'conversion', { 'send_to': 'AW-922729084/D0RuCNTO4IoBEPz0_rcD' });
+    //       };
+    //     }
+    //   });
+    // }
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=AW-922729084">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-922729084');
+  </script>
 </body>
 
 <!-- Google Tag Manager (noscript) -->
