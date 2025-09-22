@@ -306,14 +306,34 @@ p.p-header a {
     text-decoration: none
 }
 
-#banner-image {
+/* #banner-image {
     background-image: url(../images/bckgrnd-medanta-_1_-1.webp);
     min-height: 26rem;
     background-size: cover;
-    background-position: center center;
-    /* center the image */
-    background-repeat: no-repeat;
+    background-position: center center; */
+/* center the image */
+/* background-repeat: no-repeat;
+} */
+
+
+/* CLS-safe image styling */
+.banner-img {
+    aspect-ratio: 16/9;
+    /* preserves space before image loads */
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
+
+/* Optional: prevent font shifts */
+.banner-txt,
+.banner-p,
+.btn {
+    font-display: swap;
+}
+
+
 
 #banner-image h1.h1 {
     font-family: var(--bg-dark);
