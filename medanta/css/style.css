@@ -323,8 +323,9 @@ p.p-header a {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 637.5px;
-    /* fixed height */
+    aspect-ratio: 16 / 9;
+    min-height: 26rem;
+    /* fallback for browsers without aspect-ratio support */
 }
 
 .banner-img {
@@ -334,11 +335,10 @@ p.p-header a {
     object-fit: cover;
 }
 
-/* Overlay container */
 .overlay-container {
     position: absolute;
-    top: 10%;
-    left: 50%;
+    top: 5%;
+    left: 52%;
     transform: translateX(-50%);
     width: 90%;
     max-width: 1200px;
@@ -782,7 +782,7 @@ h1.card-title-h1 {
     .banner-link {
         font-size: 17px;
         width: 49%;
-        margin-top: 6rem !important
+        /* margin-top: 6rem !important */
     }
 }
 
