@@ -323,8 +323,8 @@ p.p-header a {
     position: relative;
     overflow: hidden;
     width: 100%;
-    /* Use aspect-ratio OR height, not both */
-    aspect-ratio: 16/9;
+    aspect-ratio: 1035/364;
+    /* match image dimensions */
     min-height: 26rem;
     /* fallback */
 }
