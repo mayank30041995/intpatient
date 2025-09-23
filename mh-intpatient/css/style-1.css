@@ -521,9 +521,9 @@ header {
   }
 
   .overlay {
-    padding-top: 4rem;
-    padding-bottom: 8rem;
-    height: 359px;
+    /* padding-top: 4rem;
+    padding-bottom: 8rem; */
+    height: 22.43rem;
   }
 
   #hero {
