@@ -18,6 +18,7 @@ body {
     padding: 0;
     /* Let height be auto, do NOT fix it */
     min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
     /* optional, just ensures minimum viewport fill */
 }
 
