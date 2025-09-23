@@ -17,14 +17,6 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
-
-    <style>
-        * {
-            font-display: swap;
-        }
-    </style>
-
     <!-- Preconnect (faster connection to fonts.gstatic.com) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,6 +55,13 @@
 
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <!-- new Hero image -->
+
+    <style>
+        * {
+            font-display: swap;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -77,33 +76,7 @@
     </div>
     <!-- End of Pre loader -->
 
-    <button id="openBtn" data-url="https://what.sapp.link/medanta"><img src="images/medantalogo.png.webp"
-            alt="HTML5 Icon" class='logo-yx' width="100px" height="80%" style='margin-bottom: 22px;'>
-        Talk to Us</button>
 
-    <!-- Drawer -->
-
-    <div id="drawer" class="drawer">
-        <div id="imasCircle"><img src="images/medantalogo.png.webp" alt="HTML5 Icon" class='logo-yx' width="180"
-                height="80"></div>
-        <div class="drawer-content">
-            <button id="closeBtn" type="button" data-url="https://what.sapp.link/medanta" class="close"
-                aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-
-            <div class="drawer-banner">
-                <h2>Talk to Us</h2>
-                <p>on Whatsapp</p>
-            </div>
-            <div class="drawer-items">
-                <h2>Completely Confidential<h2>
-                        <button class="btn" data-url="https://what.sapp.link/medanta"><i class="fa fa-whatsapp fa-btn"
-                                style="font-size:20px;"></i>
-                            Connect on Whatsapp</button>
-            </div>
-        </div>
-    </div>
 
 
     <!--Header Section-->
@@ -225,6 +198,34 @@
             }
         }
     </style>
+
+    <button id="openBtn" data-url="https://what.sapp.link/medanta"><img src="images/medantalogo.png.webp"
+            alt="HTML5 Icon" class='logo-yx' width="100px" height="80%" style='margin-bottom: 22px;'>
+        Talk to Us</button>
+
+    <!-- Drawer -->
+
+    <div id="drawer" class="drawer">
+        <div id="imasCircle"><img src="images/medantalogo.png.webp" alt="HTML5 Icon" class='logo-yx' width="180"
+                height="80"></div>
+        <div class="drawer-content">
+            <button id="closeBtn" type="button" data-url="https://what.sapp.link/medanta" class="close"
+                aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+            <div class="drawer-banner">
+                <h2>Talk to Us</h2>
+                <p>on Whatsapp</p>
+            </div>
+            <div class="drawer-items">
+                <h2>Completely Confidential<h2>
+                        <button class="btn" data-url="https://what.sapp.link/medanta"><i class="fa fa-whatsapp fa-btn"
+                                style="font-size:20px;"></i>
+                            Connect on Whatsapp</button>
+            </div>
+        </div>
+    </div>
 
 
     <!--banner section end-->
@@ -4264,7 +4265,7 @@
     </script>
 
     <!-- Google Tag (delayed for performance) -->
-    <script>
+    <script defer>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         setTimeout(function () {
