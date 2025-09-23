@@ -523,7 +523,8 @@ p.card-text1 {
     width: auto;
     position: sticky;
     z-index: 99;
-    top: 5px
+    top: 5px;
+    min-height: 72.98px;
 }
 
 .tab button {
@@ -825,7 +826,7 @@ h1.card-title-h1 {
 
     a.btn {
         font-size: 17px;
-        width: 42%
+        width: 48%
     }
 
     .banner-link {
