@@ -60,14 +60,14 @@
 
 <body>
     <!-- Pre loader -->
-    <!-- <div id="preloader">
+    <div id="preloader">
         <div class="spinner-wrapper">
             <div class="spinner-border primary_color" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
             <img src="images/medantalogo.png.webp" alt="Loading..." class="preloader-logo">
         </div>
-    </div> -->
+    </div>
     <!-- End of Pre loader -->
 
     <button id="openBtn" data-url="https://what.sapp.link/medanta"><img src="images/medantalogo.png.webp"
@@ -4238,37 +4238,38 @@
 
                 </div>
             </div>
-            </section>
-            <!-- Event snippet for Lead conversion page
+        </div>
+    </footer>
+    <!-- Event snippet for Lead conversion page
                 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 
 
 
-            <!-- Custom JS (modular, non-blocking) -->
-            <script src="js/custom.js" defer></script>
-            <!-- <script defer>
+    <!-- Custom JS (modular, non-blocking) -->
+    <script src="js/custom.js" defer></script>
+    <script>
         // pre load area
         window.addEventListener('load', () => {
             const preloader = document.getElementById('preloader')
             preloader.style.display = 'none'
         })
 
-    </script> -->
+    </script>
 
-            <!-- Google Tag (delayed for performance) -->
-            <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag() { dataLayer.push(arguments); }
-                setTimeout(function () {
-                    var gtagScript = document.createElement("script");
-                    gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=AW-922729084";
-                    gtagScript.async = true;
-                    document.head.appendChild(gtagScript);
+    <!-- Google Tag (delayed for performance) -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        setTimeout(function () {
+            var gtagScript = document.createElement("script");
+            gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=AW-922729084";
+            gtagScript.async = true;
+            document.head.appendChild(gtagScript);
 
-                    gtag('js', new Date());
-                    gtag('config', 'AW-922729084');
-                }, 3000);
-            </script>
+            gtag('js', new Date());
+            gtag('config', 'AW-922729084');
+        }, 3000);
+    </script>
 
 
 
