@@ -143,60 +143,7 @@
     }
 
   </script> -->
-  <script defer>
-    function ipLookUp() {
-      var xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-          var response = JSON.parse(xhttp.response);
-          console.log("location responce ", response, response.country);
-          window.ttLocation = response.country;
-          if (response.country === 'IN') {
-            // console.log("please redirect my page is https://devtest.intpatient.com/ip.html");
-            //window.location.href = "https://www.treatmenttraveller.com/";
-            document.title = "Page not found";
-            setVisible('.err', true);
-            setVisible('#loader', false);
-          }
-          else {
-            setVisible('#main', true);
-            setVisible('#loader', false);
-            // initChat();
-          }
-        }
-      };
-      xhttp.open("GET", "https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation", true);
-      xhttp.send();
-    }
-    ipLookUp();
-    function onReady(callback) {
-      var intervalId = window.setInterval(function () {
-        if (document.getElementsByTagName('body')[0] !== undefined) {
-          window.clearInterval(intervalId);
-          callback.call(this);
-        }
-      }, 1000);
-    }
 
-    function setVisible(selector, visible) {
-      document.querySelector(selector).style.display = visible ? 'block' : 'none';
-    }
-
-    // function initChat() {
-    //   if (window.ttLocation !== "IN") {
-    //     console.log("starting the chat ", window.ttLocation);
-    //     window.__lc = window.__lc || {}; window.__lc.license = 7595311; (function () { var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true; lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s); })();
-    //   }
-    //   window.addEventListener('load', function () {
-    //     console.log("Page loaded ", window.ttLocation);
-    //     if (window.ttLocation !== "IN") {
-    //       LC_API.on_chat_started = function () {
-    //         gtag('event', 'conversion', { 'send_to': 'AW-922729084/D0RuCNTO4IoBEPz0_rcD' });
-    //       };
-    //     }
-    //   });
-    // }
-  </script>
 </head>
 
 <body>
