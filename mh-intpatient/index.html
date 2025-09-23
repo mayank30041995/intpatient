@@ -294,21 +294,40 @@
 
       <!-- top section -->
       <div class="jumbotron-fluid" id="hero">
+        <!-- Banner Image -->
+        <picture style="position: absolute;">
+          <!-- mobile -->
+          <source srcset="./image/manipalhospital.webp" media="(max-width: 767px)">
+
+          <!-- desktop fallback -->
+          <img src="./image/manipalhospital.webp" class="hero-image" alt="Banner" width="1035" height="364"
+            decoding="async" fetchpriority="high" style="width:100%; height:auto; object-fit:cover;">
+        </picture>
+
+        <!-- Overlay Content -->
         <div class="overlay">
           <div class="container">
             <div class="row">
               <div class="col-md-12 text-center">
                 <h1 class="text-white">Manipal Hospital</h1>
-                <p class="lead text-white">Trusted by International
-                  Patients</p>
-                <a onclick=" LC_API.open_chat_window(); return false;"
-                  data-url="https://what.sapp.link/manipalbangalore" class=chat><button
-                    class="btn btn-1 btn-inline-block"><i class="fa fa-whatsapp"></i>&nbsp;Connect On
-                    WhatsApp</button></a>
+                <p class="lead text-white">Trusted by International Patients</p>
+
+                <!-- WhatsApp Button -->
+                <a onclick="LC_API.open_chat_window(); return false;" data-url="https://what.sapp.link/manipalbangalore"
+                  class="chat">
+                  <button class="btn btn-1 btn-inline-block">
+                    <i class="fa fa-whatsapp"></i>&nbsp;Connect On WhatsApp
+                  </button>
+                </a>
+
+                <!-- Get Doctor’s Opinion Button -->
                 <a data-url="https://what.sapp.link/manipalbangalore" data-toggle="modal"
-                  data-target="#exampleModalCenter"><button class="btn btn-inline-block btn-2"><i
-                      class="fa fa-comment"></i>&nbsp;Get Doctor’s
-                    opinion</button></a>
+                  data-target="#exampleModalCenter">
+                  <button class="btn btn-inline-block btn-2">
+                    <i class="fa fa-comment"></i>&nbsp;Get Doctor’s opinion
+                  </button>
+                </a>
+
               </div>
             </div>
           </div>
@@ -1204,59 +1223,52 @@
 
 
   <script defer>
-    function ipLookUp() {
-      var xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-          var response = JSON.parse(xhttp.response);
-          console.log("location responce ", response, response.country);
-          window.ttLocation = response.country;
-          if (response.country === 'IN') {
-            // console.log("please redirect my page is https://devtest.intpatient.com/ip.html");
-            //window.location.href = "https://www.treatmenttraveller.com/";
-            document.title = "Page not found";
-            setVisible('.err', true);
-            setVisible('#loader', false);
-          }
-          else {
-            setVisible('#main', true);
-            setVisible('#loader', false);
-            // initChat();
-          }
+    async function ipLookUp() {
+      try {
+        const response = await fetch("https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation");
+        if (!response.ok) throw new Error("Network response was not ok");
+
+        const data = await response.json();
+        console.log("Location response:", data, data.country);
+        window.ttLocation = data.country;
+
+        if (data.country === 'IN') {
+          document.title = "Page not found";
+          setVisible('.err', true);
+          setVisible('#loader', false);
+        } else {
+          setVisible('#main', true);
+          setVisible('#loader', false);
+          loadHeroImage(); // load hero image only after showing main
+          // initChat(); // uncomment if you want chat to start
         }
-      };
-      xhttp.open("GET", "https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation", true);
-      xhttp.send();
-    }
-    ipLookUp();
-    function onReady(callback) {
-      var intervalId = window.setInterval(function () {
-        if (document.getElementsByTagName('body')[0] !== undefined) {
-          window.clearInterval(intervalId);
-          callback.call(this);
-        }
-      }, 1000);
+      } catch (err) {
+        console.error("Geolocation error:", err);
+        setVisible('#main', true);
+        setVisible('#loader', false);
+        loadHeroImage();
+      }
     }
 
+    // Lazy-load hero image safely
+    function loadHeroImage() {
+      const heroImg = document.querySelector('.hero-image.lazyload');
+      if (heroImg && heroImg.dataset.src) {
+        heroImg.src = heroImg.dataset.src;
+        heroImg.classList.remove('lazyload');
+      }
+    }
+
+    // Utility to show/hide elements
     function setVisible(selector, visible) {
-      document.querySelector(selector).style.display = visible ? 'block' : 'none';
+      const el = document.querySelector(selector);
+      if (el) el.style.display = visible ? 'block' : 'none';
     }
 
-    // function initChat() {
-    //   if (window.ttLocation !== "IN") {
-    //     console.log("starting the chat ", window.ttLocation);
-    //     window.__lc = window.__lc || {}; window.__lc.license = 7595311; (function () { var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true; lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s); })();
-    //   }
-    //   window.addEventListener('load', function () {
-    //     console.log("Page loaded ", window.ttLocation);
-    //     if (window.ttLocation !== "IN") {
-    //       LC_API.on_chat_started = function () {
-    //         gtag('event', 'conversion', { 'send_to': 'AW-922729084/D0RuCNTO4IoBEPz0_rcD' });
-    //       };
-    //     }
-    //   });
-    // }
+    // Initialize
+    ipLookUp();
   </script>
+
   <!-- Google tag (gtag.js) -->
   <script defer src="https://www.googletagmanager.com/gtag/js?id=AW-922729084">
   </script>

@@ -232,17 +232,29 @@ d-flex-align {
   line-height: 25px;
 }
 
-#hero {
+/* #hero {
   background-image: url('../image/manipalhospital.webp');
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
 
 
+  width: 100%; */
+/* full width */
+/* aspect-ratio: 1047 / 425.7; */
+/* preserves the image ratio */
+/* } */
+
+
+#hero {
+  display: inline;
+}
+
+.hero-image {
   width: 100%;
-  /* full width */
-  aspect-ratio: 1047 / 425.7;
-  /* preserves the image ratio */
+  height: auto;
+  object-fit: cover;
+  /* maintains background-like effect */
 }
 
 .menulinks2.active img {
@@ -509,11 +521,13 @@ header {
   }
 
   .overlay {
-    padding-top: 8rem;
+    padding-top: 4rem;
     padding-bottom: 8rem;
+    height: 369.06px;
   }
 
   #hero {
+    display: inline;
     aspect-ratio: 375 / 245.19;
     /* mobile ratio */
   }
