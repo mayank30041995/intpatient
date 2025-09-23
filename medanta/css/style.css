@@ -51,7 +51,7 @@ body {
 .bg-app-btn:hover {
     box-shadow: 2px 0 10px rgba(0, 0, 0, .5);
     color: var(--bg-background) !important;
-    background-color: #fdfdfd !important
+    background-color: #ec6850 !important
 }
 
 .bg-btn {
@@ -1051,7 +1051,6 @@ img {
 .btn-right {
     right: 0
 }
-
 
 
 /* pre load page */

@@ -1,6 +1,6 @@
-const box = document.getElementById('banner')
-box.style.width = '200px' // 1. DOM change
-console.log(box.offsetWidth) // 2. Force reflow!
+// const box = document.getElementById('banner')
+// box.style.width = '200px' // 1. DOM change
+// console.log(box.offsetWidth) // 2. Force reflow!
 
 document.getElementById('Cardiology').style.display = 'block'
 
@@ -34,11 +34,6 @@ function changeTab(evt, tabLink) {
 function myFunction() {
   document.getElementById('cvb').click()
 }
-// pre load area
-window.addEventListener('load', () => {
-  const preloader = document.getElementById('preloader')
-  preloader.style.display = 'none'
-})
 
 // slides
 function scrollCarousel(direction) {
