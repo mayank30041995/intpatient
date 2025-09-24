@@ -165,7 +165,47 @@
     <!--Header Section End-->
 
     <!--banner section start-->
+    <section id="banner-image">
+        <!-- Banner Image -->
+        <picture>
+            <!-- mobile -->
+            <source srcset="./images/medanta-mobile.webp" media="(max-width: 767px)" width="375" height="414">
+            <!-- desktop fallback -->
+            <img src="./images/bckgrnd-medanta-_1_-1.webp" alt="Banner" width="1035" height="364" decoding="async"
+                fetchpriority="high">
+        </picture>
 
+
+        <!-- Overlay Container -->
+        <div class="container overlay-container">
+            <!-- Heading -->
+            <div class="mb-4 text-start">
+                <h1 class="banner-txt primary_color fw-bold h1 mb-2">Advanced Care</h1>
+                <h1 class="banner-txt primary_shadow text-light h11 fw-bold">For Your Future</h1>
+            </div>
+
+            <!-- WhatsApp Button -->
+            <a class="btn banner-link d-inline-flex justify-content-center align-items-center rounded-2 bg-app-btn text-light py-2 mb-4 w-25"
+                href="https://what.sapp.link/medanta" target="_blank" rel="noopener noreferrer"
+                aria-label="Contact Medanta on WhatsApp">
+                <!-- <img src="images/whatsapp.svg.webp" alt="WhatsApp logo" width="30" height="30" style="flex-shrink:0;" /> -->
+                <strong class="mx-2 fs-6 text-white">Contact on WhatsApp</strong>
+            </a>
+
+
+            <!-- Stats -->
+            <div class="d-flex justify-content-start gap-5 text-start">
+                <div>
+                    <h4 class="text-white">800+</h4>
+                    <p class="banner-p text-primary">Experienced Doctors</p>
+                </div>
+                <div>
+                    <h4 class="text-white">1391</h4>
+                    <p class="banner-p text-dark">Installed Beds Facility</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <style>
         #banner-image {
             position: relative;
@@ -243,30 +283,6 @@
                 </div>
             </div>
 
-            <div class="tab d-xl-flex">
-                <a href="#Cardiology" name="cardio">
-                    <button class="tablinks" id="cvb" onclick="changeTab(event, 'Cardiology')"><img
-                            class="tabIcons rounded-1" src="images/TabsLogo/cardio.webp"
-                            alt="/assets/TabsLogo/ology.webp" width="45" height="45" />&nbsp;Cardiology</button></a>
-                <a href="#Neurology" name="neuro"> <button class="tablinks" onclick="changeTab(event, 'Neurology')"><img
-                            class="tabIcons rounded-1" src="images/TabsLogo/neurology.webp"
-                            alt="/assets/TabsLogo/ology.webp" width="45" height="45" />&nbsp;Neurology</button></a>
-                <a href="#Liver" name="liver"><button class="tablinks" onclick="changeTab(event, 'Liver')"> <img
-                            class="tabIcons rounded-1" src="images/TabsLogo/transplant.webp"
-                            alt="/assets/TabsLogo/ology.webp" width="45" height="45" />&nbsp;Liver
-                        Transplant</button></a>
-                <a href="#Orthopedics" name="ortho"><button class="tablinks"
-                        onclick="changeTab(event, 'Orthopedics')"><img class="tabIcons rounded-1"
-                            src="images/TabsLogo/orthopaedic.webp" alt="/assets/TabsLogo/ology.webp" width="45"
-                            height="45" />&nbsp;Orthopedics</button></a>
-                <a href="#Oncology" name="onco"> <button class="tablinks" onclick="changeTab(event, 'Oncology')"><img
-                            class="tabIcons rounded-1" src="images/TabsLogo/ology.webp"
-                            alt="/assets/TabsLogo/ology.webp" width="45" height="45" />&nbsp;Oncology</button></a>
-                <a href="#Urology" name="uro"><button class="tablinks" onclick="changeTab(event, 'Urology')"><img
-                            class="tabIcons rounded-1" src="images/TabsLogo/kidney.webp"
-                            alt="/assets/TabsLogo/ology.webp" width="45" height="45" />&nbsp;Urology</button></a>
-
-            </div>
 
 
             <div id="Cardiology" class="tabcontent">
