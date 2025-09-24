@@ -235,35 +235,37 @@
         }
     </style>
 
-    <button id="openBtn" data-url="https://what.sapp.link/medanta"><img src="images/medantalogo.png.webp"
-            alt="HTML5 Icon" class='logo-yx' width="100px" height="80%" style='margin-bottom: 22px;'>
-        Talk to Us</button>
+    <section id="drawer-corner">
+        <div class="container">
+            <button id="openBtn" data-url="https://what.sapp.link/medanta"><img src="images/medantalogo.png.webp"
+                    alt="HTML5 Icon" class='logo-yx' width="100px" height="80%" style='margin-bottom: 22px;'>
+                Talk to Us</button>
 
-    <!-- Drawer -->
+            <!-- Drawer -->
 
-    <div id="drawer" class="drawer">
-        <div id="imasCircle"><img src="images/medantalogo.png.webp" alt="HTML5 Icon" class='logo-yx' width="180"
-                height="80"></div>
-        <div class="drawer-content">
-            <button id="closeBtn" type="button" data-url="https://what.sapp.link/medanta" class="close"
-                aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
+            <div id="drawer" class="drawer">
+                <div id="imasCircle"><img src="images/medantalogo.png.webp" alt="HTML5 Icon" class='logo-yx' width="180"
+                        height="80"></div>
+                <div class="drawer-content">
+                    <button id="closeBtn" type="button" data-url="https://what.sapp.link/medanta" class="close"
+                        aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
 
-            <div class="drawer-banner">
-                <h2>Talk to Us</h2>
-                <p>on Whatsapp</p>
-            </div>
-            <div class="drawer-items">
-                <h2>Completely Confidential<h2>
-                        <button class="btn" data-url="https://what.sapp.link/medanta"><i class="fa fa-whatsapp fa-btn"
-                                style="font-size:20px;"></i>
-                            Connect on Whatsapp</button>
+                    <div class="drawer-banner">
+                        <h2>Talk to Us</h2>
+                        <p>on Whatsapp</p>
+                    </div>
+                    <div class="drawer-items">
+                        <h2>Completely Confidential<h2>
+                                <button class="btn" data-url="https://what.sapp.link/medanta"><i
+                                        class="fa fa-whatsapp fa-btn" style="font-size:20px;"></i>
+                                    Connect on Whatsapp</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-
-
+    </section>
     <!--banner section end-->
 
     <!--meet our specialist section start-->
@@ -283,6 +285,30 @@
                 </div>
             </div>
 
+            <div class="tab d-xl-flex">
+                <a href="#Cardiology" name="cardio">
+                    <button class="tablinks" id="cvb" onclick="changeTab(event, 'Cardiology')"><img
+                            class="tabIcons rounded-1" src="images/TabsLogo/cardio.webp"
+                            alt="/assets/TabsLogo/ology.webp" width="45" height="45" />&nbsp;Cardiology</button></a>
+                <a href="#Neurology" name="neuro"> <button class="tablinks" onclick="changeTab(event, 'Neurology')"><img
+                            class="tabIcons rounded-1" src="images/TabsLogo/neurology.webp"
+                            alt="/assets/TabsLogo/ology.webp" width="45" height="45" />&nbsp;Neurology</button></a>
+                <a href="#Liver" name="liver"><button class="tablinks" onclick="changeTab(event, 'Liver')"> <img
+                            class="tabIcons rounded-1" src="images/TabsLogo/transplant.webp"
+                            alt="/assets/TabsLogo/ology.webp" width="45" height="45" />&nbsp;Liver
+                        Transplant</button></a>
+                <a href="#Orthopedics" name="ortho"><button class="tablinks"
+                        onclick="changeTab(event, 'Orthopedics')"><img class="tabIcons rounded-1"
+                            src="images/TabsLogo/orthopaedic.webp" alt="/assets/TabsLogo/ology.webp" width="45"
+                            height="45" />&nbsp;Orthopedics</button></a>
+                <a href="#Oncology" name="onco"> <button class="tablinks" onclick="changeTab(event, 'Oncology')"><img
+                            class="tabIcons rounded-1" src="images/TabsLogo/ology.webp"
+                            alt="/assets/TabsLogo/ology.webp" width="45" height="45" />&nbsp;Oncology</button></a>
+                <a href="#Urology" name="uro"><button class="tablinks" onclick="changeTab(event, 'Urology')"><img
+                            class="tabIcons rounded-1" src="images/TabsLogo/kidney.webp"
+                            alt="/assets/TabsLogo/ology.webp" width="45" height="45" />&nbsp;Urology</button></a>
+
+            </div>
 
 
             <div id="Cardiology" class="tabcontent">
@@ -1610,7 +1636,7 @@
     </section>
 
 
-    <section class="expect pb-lg-50 pb-sm-20 mt-3">
+    <section id="talk-to-us" class="expect pb-lg-50 pb-sm-20 mt-3">
         <div class="container-fluid bg-app py-5" style="min-height:200px;">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6 col-lg-4 text-center">
@@ -2063,1152 +2089,819 @@
 
 
     <!--packages for Health checkup section start-->
+    <section id="health-check-up">
+        <div class="container my-5">
+            <h1 class="recentblog-h1 pt-4 " style="color:#F04E30!important;">MEDANTA<span
+                    style="color:#000000; text-transform: uppercase;"> HEALTH
+                    CHECK-UP</span></h1>
+            <div class="d-flex justify-content-center">
+                <span>
+                    <img src="images/pseudo.webp" alt="pseudo" width="41" height="3" loading="lazy">
+                </span>
+                <div>
+                    <img src="images/pseudo1.webp" alt="pseudo1" width="6" height="3" loading="lazy">
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-4 row-cols-md-1 g-4 mt-3 justify-content-center health-area">
 
-    <div class="container my-5">
-        <h1 class="recentblog-h1 pt-4 " style="color:#F04E30!important;">MEDANTA<span
-                style="color:#000000; text-transform: uppercase;"> HEALTH
-                CHECK-UP</span></h1>
-        <div class="d-flex justify-content-center">
-            <span>
-                <img src="images/pseudo.webp" alt="pseudo" width="41" height="3" loading="lazy">
-            </span>
-            <div>
-                <img src="images/pseudo1.webp" alt="pseudo1" width="6" height="3" loading="lazy">
+                <div class="col col-md-5 pt-3 me-5"
+                    style="background-color:#FFF7F5;border-radius: 9.75px;height: 924.893px;">
+                    <div class="text-center">
+                        <h1 class="h6-checkup pt-3">MEDANTA BASIC HEALTH <span style="color: #F04E30;"> CHECK-UP</span>
+                        </h1>
+                        <p class="p-checkup pt-3">$ 75</p>
+                    </div>
+                    <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
+                        <p class="p1-checkup py-1">Lab Tests</p>
+                    </div>
+
+                    <div class="py-3 px-3">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Complete Haemogram</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Blood Group and Antibody screening</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Blood Sugar Fasting & Post Prandial</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Serum Urea</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Serum Creatinine</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Serum Uric acid</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Urine Analysis</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Lipid Profile</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>SGPT</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
+                        <p class="p1-checkup py-1">Diagnostic Tests</p>
+                    </div>
+
+                    <div class="py-3 px-3">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>ECG</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Exercise Stress ECG ( TMT
+                                        )/Transthorasic Echo</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Chest X Ray</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Waist - Hip Circumference Ratio</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
+                        <p class="p1-checkup py-1">Consultations</p>
+                    </div>
+
+                    <div class="py-3 px-3">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Physician</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col col-md-5 pt-3" style="background-color:#FFF7F5;border-radius: 9.75px;">
+                    <div class="text-center">
+                        <h1 class="h6-checkup pt-3">MEDANTA WHOLE BODY <span style="color: #F04E30;"> CHECK-UP</span>
+                        </h1>
+                        <p class="p-checkup pt-3">$ 394</p>
+                    </div>
+                    <div class="text-center mt-2" style="background: rgba(217, 217, 217, 0.30);">
+                        <p class="p1-checkup py-1">Lab Tests</p>
+                    </div>
+
+                    <div class="py-3 px-3">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Glycosylated Hemoglobin</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Serum Sodium</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Serum Potassium</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>HBs Ag</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>HIV Test</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Anti HCV</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Stool Analysis</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>High Sensitive C-Reactive Protein</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Homocysteine</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Vitamin D 3</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Vitamin B 12</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Liver Function Test</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Thyroid Stimulatirg Hormone Test</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Testosterone (M)</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Prostate Specific Antigen</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Pap Smear (F)</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
+                        <p class="p1-checkup py-1">Diagnostic Tests</p>
+                    </div>
+
+                    <div class="py-3 px-3">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Stress ECHO / DSE / TMT + ECHO</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Body Composition Analysis</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Ultrasound Whole Abdomen</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Carotid IMT</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Mammography (F)</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Dexa Whole Body</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
+                        <p class="p1-checkup py-1">Consultations</p>
+                    </div>
+                    <div class="py-3 px-3">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Gyneacologist (F)</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Dentist and Dental Examination</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Ophthalmclogist and Eye Examination</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>ENT</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Cardiologist</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Urologist (M)</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </div>
-        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-1 g-4 mt-3 justify-content-center health-area">
-
-            <div class="col col-md-5 pt-3 me-5"
-                style="background-color:#FFF7F5;border-radius: 9.75px;height: 924.893px;">
-                <div class="text-center">
-                    <h1 class="h6-checkup pt-3">MEDANTA BASIC HEALTH <span style="color: #F04E30;"> CHECK-UP</span></h1>
-                    <p class="p-checkup pt-3">$ 75</p>
-                </div>
-                <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
-                    <p class="p1-checkup py-1">Lab Tests</p>
-                </div>
-
-                <div class="py-3 px-3">
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Complete Haemogram</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Blood Group and Antibody screening</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Blood Sugar Fasting & Post Prandial</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Serum Urea</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Serum Creatinine</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Serum Uric acid</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Urine Analysis</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Lipid Profile</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>SGPT</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-
-                </div>
-
-                <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
-                    <p class="p1-checkup py-1">Diagnostic Tests</p>
-                </div>
-
-                <div class="py-3 px-3">
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>ECG</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Exercise Stress ECG ( TMT
-                                    )/Transthorasic Echo</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Chest X Ray</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Waist - Hip Circumference Ratio</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-
-                </div>
-
-                <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
-                    <p class="p1-checkup py-1">Consultations</p>
-                </div>
-
-                <div class="py-3 px-3">
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Physician</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col col-md-5 pt-3" style="background-color:#FFF7F5;border-radius: 9.75px;">
-                <div class="text-center">
-                    <h1 class="h6-checkup pt-3">MEDANTA WHOLE BODY <span style="color: #F04E30;"> CHECK-UP</span></h1>
-                    <p class="p-checkup pt-3">$ 394</p>
-                </div>
-                <div class="text-center mt-2" style="background: rgba(217, 217, 217, 0.30);">
-                    <p class="p1-checkup py-1">Lab Tests</p>
-                </div>
-
-                <div class="py-3 px-3">
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Glycosylated Hemoglobin</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Serum Sodium</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Serum Potassium</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>HBs Ag</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>HIV Test</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Anti HCV</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Stool Analysis</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>High Sensitive C-Reactive Protein</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Homocysteine</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Vitamin D 3</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Vitamin B 12</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Liver Function Test</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Thyroid Stimulatirg Hormone Test</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Testosterone (M)</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Prostate Specific Antigen</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Pap Smear (F)</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
-                    <p class="p1-checkup py-1">Diagnostic Tests</p>
-                </div>
-
-                <div class="py-3 px-3">
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Stress ECHO / DSE / TMT + ECHO</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Body Composition Analysis</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Ultrasound Whole Abdomen</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Carotid IMT</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Mammography (F)</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Dexa Whole Body</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                </div>
-
-                <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
-                    <p class="p1-checkup py-1">Consultations</p>
-                </div>
-                <div class="py-3 px-3">
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Gyneacologist (F)</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Dentist and Dental Examination</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Ophthalmclogist and Eye Examination</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>ENT</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Cardiologist</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Urologist (M)</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
+    </section>
     <!--packages for Health checkup section end-->
 
     <!--packages for Diabetes checkup section start-->
-
-    <div class="container my-5">
-        <h1 class="recentblog-h1 " style="color:#F04E30!important;">MEDANTA<span
-                style="color:#000000; text-transform: uppercase;"> DIABETES
-                Packages</span></h1>
-        <div class="d-flex justify-content-center">
-            <span>
-                <img src="images/pseudo.webp" alt="pseudo" width="41" height="3" loading="lazy">
-            </span>
-            <div>
-                <img src="images/pseudo1.webp" alt="pseudo1" width="6" height="3" loading="lazy">
-            </div>
-        </div>
-        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-1 g-4 mt-3 justify-content-center  health-area">
-
-            <div class="col col-md-5 pt-3 me-5"
-                style="background-color:#FFF7F5;border-radius: 9.75px;height: 1096.893px;">
-                <div class="text-center">
-                    <h1 class="h6-checkup pt-3" style="color: #F04E30!important;">BASIC <span
-                            style="color: #000000;">PACKAGE</span></h1>
-                    <p class="p-checkup pt-3">$ 110</p>
-                </div>
-                <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
-                    <p class="p1-checkup py-1">Lab Tests</p>
-                </div>
-
-                <div class="py-3 px-3">
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Complete Blood count</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Glycosylated Hemoglobin</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Blood Sugar Fasting & Post Prandial</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Serum Urea</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Serum Creatinine</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Serum Uric acid</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Serum Sodium</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Serum Potassium</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Serum Chloride</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Urine Analysis</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Lipid Profile</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Serum Calcium</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Liver Function Test</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Thyroid Stimulating Hormone Test</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-
-                </div>
-
-                <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
-                    <p class="p1-checkup py-1">Diagnostic Tests</p>
-                </div>
-
-                <div class="py-3 px-3">
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>ECG</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Exercise Stress ECG ( TMT
-                                    )/Transthorasic Echo</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Chest X Ray</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Waist - Hip Circumference Ratio</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-
-                </div>
-
-                <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
-                    <p class="p1-checkup py-1">Consultations</p>
-                </div>
-
-                <div class="py-3 px-3">
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Physician</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-
+    <section id="diabetes-patient">
+        <div class="container my-5">
+            <h1 class="recentblog-h1 " style="color:#F04E30!important;">MEDANTA<span
+                    style="color:#000000; text-transform: uppercase;"> DIABETES
+                    Packages</span></h1>
+            <div class="d-flex justify-content-center">
+                <span>
+                    <img src="images/pseudo.webp" alt="pseudo" width="41" height="3" loading="lazy">
+                </span>
+                <div>
+                    <img src="images/pseudo1.webp" alt="pseudo1" width="6" height="3" loading="lazy">
                 </div>
             </div>
+            <div class="row row-cols-1 row-cols-lg-4 row-cols-md-1 g-4 mt-3 justify-content-center  health-area">
 
-            <div class="col col-md-5 pt-3" style="background-color:#FFF7F5;border-radius: 9.75px;">
-                <div class="text-center">
-                    <h1 class="h6-checkup pt-3" style="color: #F04E30!important;">Advanced <span
-                            style="color: #000000;"> PACKAGE</span>
-                    </h1>
-                    <p class="p-checkup pt-3">$ 250</p>
-                </div>
-                <div class="text-center mt-2" style="background: rgba(217, 217, 217, 0.30);">
-                    <p class="p1-checkup py-1">Lab Tests</p>
-                </div>
-
-                <div class="py-3 px-3">
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Complete Blood count</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <div class="col col-md-5 pt-3 me-5"
+                    style="background-color:#FFF7F5;border-radius: 9.75px;height: 1096.893px;">
+                    <div class="text-center">
+                        <h1 class="h6-checkup pt-3" style="color: #F04E30!important;">BASIC <span
+                                style="color: #000000;">PACKAGE</span></h1>
+                        <p class="p-checkup pt-3">$ 110</p>
                     </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Glycosylated Hemoglobin</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Serum Sodium</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Serum Potassium</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Serum Chloride</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Serum Phosphorus</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Urine Protein Creatinine Ratio</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Vitamin D 3</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
+                        <p class="p1-checkup py-1">Lab Tests</p>
                     </div>
 
-                </div>
-                <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
-                    <p class="p1-checkup py-1">Diagnostic Tests</p>
-                </div>
-
-                <div class="py-3 px-3">
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Stress ECHO / DSE / TMT + ECHO</li>
-                            </ul>
+                    <div class="py-3 px-3">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Complete Blood count</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
                         </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Body Composition Analysis</li>
-                            </ul>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Glycosylated Hemoglobin</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
                         </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Ultrasound Whole Abdomen</li>
-                            </ul>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Blood Sugar Fasting & Post Prandial</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
                         </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Versalab Auto Assesment</li>
-                            </ul>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Serum Urea</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
                         </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>MaFundus Vision Test</li>
-                            </ul>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Serum Creatinine</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
                         </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Neuropathy Assessment</li>
-                            </ul>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Serum Uric acid</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
                         </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Dexa For Fat Analysis</li>
-                            </ul>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Serum Sodium</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
                         </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                </div>
-
-                <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
-                    <p class="p1-checkup py-1">Consultations</p>
-                </div>
-                <div class="py-3 px-3">
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Dentist and Dental Examination</li>
-                            </ul>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Serum Potassium</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
                         </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Endocrinologists, Diabetes Educator &
-                                    Podiatrist</li>
-                            </ul>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Serum Chloride</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
                         </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Urine Analysis</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Lipid Profile</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Serum Calcium</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Liver Function Test</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Thyroid Stimulating Hormone Test</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+
                     </div>
 
-                </div>
+                    <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
+                        <p class="p1-checkup py-1">Diagnostic Tests</p>
+                    </div>
 
-            </div>
+                    <div class="py-3 px-3">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>ECG</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Exercise Stress ECG ( TMT
+                                        )/Transthorasic Echo</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Chest X Ray</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Waist - Hip Circumference Ratio</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
 
-        </div>
-    </div>
+                    </div>
 
-    <!--packages for Diabetes checkup section end-->
+                    <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
+                        <p class="p1-checkup py-1">Consultations</p>
+                    </div>
 
-    <!--packages for Healthy Heart Packages section start-->
+                    <div class="py-3 px-3">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Physician</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
 
-    <div class="container my-5">
-        <h1 class="recentblog-h1  " style="color:#F04E30!important;">MEDANTA<span
-                style="color:#000000; text-transform: uppercase;"> Healthy
-                Heart Packages</span></h1>
-        <div class="d-flex justify-content-center">
-            <span>
-                <img src="images/pseudo.webp" alt="pseudo" width="41" height="3" loading="lazy">
-            </span>
-            <div>
-                <img src="images/pseudo1.webp" alt="pseudo1" width="6" height="3" loading="lazy">
-            </div>
-        </div>
-        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-1 g-4 mt-3 justify-content-center  health-area">
-
-            <div class="col col-md-5 pt-3 me-5"
-                style="background-color:#FFF7F5;border-radius: 9.75px;height: 998.893px;">
-                <div class="text-center">
-                    <h1 class="h6-checkup pt-3" style="color: #F04E30!important;">MEDANTA <span
-                            style="color: #000000;">POST PTCA/
-                            CABG/VALVE
-                            FOLLOW-UP PACKAGE</span></h1>
-                    <p class="p-checkup pt-3">$ 115</p>
-                </div>
-                <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
-                    <p class="p1-checkup py-1">Lab Tests</p>
+                    </div>
                 </div>
 
-                <div class="py-3 px-3">
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Complete Haemogram</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <div class="col col-md-5 pt-3" style="background-color:#FFF7F5;border-radius: 9.75px;">
+                    <div class="text-center">
+                        <h1 class="h6-checkup pt-3" style="color: #F04E30!important;">Advanced <span
+                                style="color: #000000;"> PACKAGE</span>
+                        </h1>
+                        <p class="p-checkup pt-3">$ 250</p>
                     </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Blood Sugar Fasting & Post Prandial</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Serum Urea</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Serum Creatinine</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Serum Uric acid</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Serum Sodium</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Serum Potassium</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <div class="text-center mt-2" style="background: rgba(217, 217, 217, 0.30);">
+                        <p class="p1-checkup py-1">Lab Tests</p>
                     </div>
 
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Urine Analysis</li>
-                            </ul>
+                    <div class="py-3 px-3">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Complete Blood count</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
                         </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Glycosylated Hemoglobin</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Serum Sodium</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Serum Potassium</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Serum Chloride</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Serum Phosphorus</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Urine Protein Creatinine Ratio</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Vitamin D 3</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+
                     </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Lipid Profile</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Prothrombin Time and INR</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Creatinine Phosphokinase</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>SGPT</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
+                        <p class="p1-checkup py-1">Diagnostic Tests</p>
                     </div>
 
-                </div>
-
-                <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
-                    <p class="p1-checkup py-1">Diagnostic Tests</p>
-                </div>
-
-                <div class="py-3 px-3">
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>ECG</li>
-                            </ul>
+                    <div class="py-3 px-3">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Stress ECHO / DSE / TMT + ECHO</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
                         </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Stress ECHO / /TMT+ ECHO</li>
-                            </ul>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Body Composition Analysis</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
                         </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Chest X Ray</li>
-                            </ul>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Ultrasound Whole Abdomen</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
                         </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-
-                </div>
-
-                <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
-                    <p class="p1-checkup py-1">Consultations</p>
-                </div>
-
-                <div class="py-3 px-3">
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Cardiologist</li>
-                            </ul>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Versalab Auto Assesment</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
                         </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="col col-md-5 pt-3" style="background-color:#FFF7F5;border-radius: 9.75px;">
-                <div class="text-center">
-                    <h1 class="h6-checkup pt-3" style="color: #F04E30!important;">MEDANTA<span
-                            style="color: #000000;">&nbsp;HEALTHY
-                            HEART</span></h1>
-                    <p class="p-checkup pt-3">$ 150</p>
-                </div>
-                <div class="text-center mt-2" style="background: rgba(217, 217, 217, 0.30);">
-                    <p class="p1-checkup py-1">Lab Tests</p>
-                </div>
-
-                <div class="py-3 px-3">
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Complete Haemogram</li>
-                            </ul>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>MaFundus Vision Test</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
                         </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Blood Group and Antibody screening</li>
-                            </ul>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Neuropathy Assessment</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
                         </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Blood Sugar Fasting & Post Prandial</li>
-                            </ul>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Dexa For Fat Analysis</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
                         </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Serum Urea</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Serum Creatinine</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Serum Uric acid</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Urine Analysis</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Lipid Profile</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>SGPT</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
                     </div>
 
-                </div>
-                <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
-                    <p class="p1-checkup py-1">Diagnostic Tests</p>
-                </div>
+                    <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
+                        <p class="p1-checkup py-1">Consultations</p>
+                    </div>
+                    <div class="py-3 px-3">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Dentist and Dental Examination</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Endocrinologists, Diabetes Educator &
+                                        Podiatrist</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
 
-                <div class="py-3 px-3">
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>ECG</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Stress ECHO / DSE / TMT + ECHO</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Chest X Ray</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Carotid IMT</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Body Composition Analysis</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-
-                </div>
-
-                <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
-                    <p class="p1-checkup py-1">Consultations</p>
-                </div>
-                <div class="py-3 px-3">
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Dentist and Dental Examination</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Ophthalmologist and Eye Examination</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <ul class="list-unstyled ul-checkup">
-                                <li>Cardiologist</li>
-                            </ul>
-                        </div>
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
                     </div>
 
                 </div>
 
             </div>
-
         </div>
 
-        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-1 mt-3">
-            <div class="col">
+        <!--packages for Diabetes checkup section end-->
 
+        <!--packages for Healthy Heart Packages section start-->
+
+        <div class="container my-5">
+            <h1 class="recentblog-h1  " style="color:#F04E30!important;">MEDANTA<span
+                    style="color:#000000; text-transform: uppercase;"> Healthy
+                    Heart Packages</span></h1>
+            <div class="d-flex justify-content-center">
+                <span>
+                    <img src="images/pseudo.webp" alt="pseudo" width="41" height="3" loading="lazy">
+                </span>
+                <div>
+                    <img src="images/pseudo1.webp" alt="pseudo1" width="6" height="3" loading="lazy">
+                </div>
             </div>
-            <div class="col col-md-5 pt-3" style="background-color:#FFF7F5;border-radius: 9.75px;height: 1150.893px;">
-                <div class="text-center">
+            <div class="row row-cols-1 row-cols-lg-4 row-cols-md-1 g-4 mt-3 justify-content-center  health-area">
+
+                <div class="col col-md-5 pt-3 me-5"
+                    style="background-color:#FFF7F5;border-radius: 9.75px;height: 998.893px;">
                     <div class="text-center">
                         <h1 class="h6-checkup pt-3" style="color: #F04E30!important;">MEDANTA <span
-                                style="color: #000000;">HYPERTENSION
-                                CHECK</span></h1>
-                        <p class="p-checkup pt-3">$ 200</p>
+                                style="color: #000000;">POST PTCA/
+                                CABG/VALVE
+                                FOLLOW-UP PACKAGE</span></h1>
+                        <p class="p-checkup pt-3">$ 115</p>
                     </div>
                     <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
                         <p class="p1-checkup py-1">Lab Tests</p>
@@ -3226,8 +2919,7 @@
                         <div class="d-flex justify-content-between">
                             <div>
                                 <ul class="list-unstyled ul-checkup">
-                                    <li>Blood Sugar Fasting & Post
-                                        Prandial</li>
+                                    <li>Blood Sugar Fasting & Post Prandial</li>
                                 </ul>
                             </div>
                             <i class="fa fa-check-circle" aria-hidden="true"></i>
@@ -3313,15 +3005,6 @@
                             </div>
                             <i class="fa fa-check-circle" aria-hidden="true"></i>
                         </div>
-                        <div class="d-flex justify-content-between">
-                            <div>
-                                <ul class="list-unstyled ul-checkup">
-                                    <li>Thyroid Stimulating Hormone
-                                        Test</li>
-                                </ul>
-                            </div>
-                            <i class="fa fa-check-circle" aria-hidden="true"></i>
-                        </div>
 
                     </div>
 
@@ -3341,24 +3024,7 @@
                         <div class="d-flex justify-content-between">
                             <div>
                                 <ul class="list-unstyled ul-checkup">
-                                    <li>Exercise Stress ECG ( TMT )/
-                                        Transthorasic Echo</li>
-                                </ul>
-                            </div>
-                            <i class="fa fa-check-circle" aria-hidden="true"></i>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <div>
-                                <ul class="list-unstyled ul-checkup">
-                                    <li>Ambulatory BP Monitoring</li>
-                                </ul>
-                            </div>
-                            <i class="fa fa-check-circle" aria-hidden="true"></i>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <div>
-                                <ul class="list-unstyled ul-checkup">
-                                    <li>Pulse Wave Analysis</li>
+                                    <li>Stress ECHO / /TMT+ ECHO</li>
                                 </ul>
                             </div>
                             <i class="fa fa-check-circle" aria-hidden="true"></i>
@@ -3367,14 +3033,6 @@
                             <div>
                                 <ul class="list-unstyled ul-checkup">
                                     <li>Chest X Ray</li>
-                                </ul>
-                            </div>
-                            <i class="fa fa-check-circle" aria-hidden="true"></i>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <div>
-                                <ul class="list-unstyled ul-checkup">
-                                    <li>Ultrasound Doppler Renals</li>
                                 </ul>
                             </div>
                             <i class="fa fa-check-circle" aria-hidden="true"></i>
@@ -3390,7 +3048,165 @@
                         <div class="d-flex justify-content-between">
                             <div>
                                 <ul class="list-unstyled ul-checkup">
-                                    <li>Physician</li>
+                                    <li>Cardiologist</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col col-md-5 pt-3" style="background-color:#FFF7F5;border-radius: 9.75px;">
+                    <div class="text-center">
+                        <h1 class="h6-checkup pt-3" style="color: #F04E30!important;">MEDANTA<span
+                                style="color: #000000;">&nbsp;HEALTHY
+                                HEART</span></h1>
+                        <p class="p-checkup pt-3">$ 150</p>
+                    </div>
+                    <div class="text-center mt-2" style="background: rgba(217, 217, 217, 0.30);">
+                        <p class="p1-checkup py-1">Lab Tests</p>
+                    </div>
+
+                    <div class="py-3 px-3">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Complete Haemogram</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Blood Group and Antibody screening</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Blood Sugar Fasting & Post Prandial</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Serum Urea</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Serum Creatinine</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Serum Uric acid</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Urine Analysis</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Lipid Profile</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>SGPT</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+                    <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
+                        <p class="p1-checkup py-1">Diagnostic Tests</p>
+                    </div>
+
+                    <div class="py-3 px-3">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>ECG</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Stress ECHO / DSE / TMT + ECHO</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Chest X Ray</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Carotid IMT</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Body Composition Analysis</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
+                        <p class="p1-checkup py-1">Consultations</p>
+                    </div>
+                    <div class="py-3 px-3">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Dentist and Dental Examination</li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <ul class="list-unstyled ul-checkup">
+                                    <li>Ophthalmologist and Eye Examination</li>
                                 </ul>
                             </div>
                             <i class="fa fa-check-circle" aria-hidden="true"></i>
@@ -3403,383 +3219,602 @@
                             </div>
                             <i class="fa fa-check-circle" aria-hidden="true"></i>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-
-            </div>
-
-        </div>
-    </div>
-
-    <!--packages for Healthy Heart Packages section end-->
-
-    <!--Recent Blogs Section Start-->
-    <div class="container">
-        <h1 class="recentblog-h1 pt-5">recent <span style="color:#DB5134; text-transform: uppercase;">blog</span>
-        </h1>
-        <div class="d-flex justify-content-center">
-            <span>
-                <img src="images/pseudo.webp" alt="img_fluid" width="41" height="3" loading="lazy">
-            </span>
-            <div>
-                <img src="images/pseudo1.webp" alt="img_fluid" width="6" height="3" loading="lazy">
-            </div>
-        </div>
-
-        <div class="row mt-5">
-            <div class="col-sm-12 col-lg-3">
-
-            </div>
-            <div class="col-sm-12 col-lg-3 d-flex justify-content-center">
-                <div class="card border-0" style="width:25rem;">
-                    <img src="images/blog1image.webp" class="card-img-top" loading="lazy" alt="..." width="306px"
-                        height="348px">
-                    <div class="card-body" style="background-color:#f7f7f7;">
-                        <h1 class="card-title">THE ECONOMIC TIMES</h1>
-                        <h1 class="card-title1">Feb 18, 2023</h1>
-                        <hr>
-                        <p class="card-text pb-5">Medanta sees new hospitals
-                            & services, complex specialities
-                            boosting
-                            margins</p>
 
                     </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-lg-3 d-flex justify-content-center">
-                <div class="card border-0" style="width: 25rem;">
-                    <img src="images/blog2image.webp" class="card-img-top" loading="lazy" alt="..." width="306px"
-                        height="348px">
-                    <div class="card-body" style="background-color:#f7f7f7;">
-                        <h1 class="card-title">THE WEEK</h1>
-                        <h1 class="card-title1">March 28, 2023</h1>
-                        <hr>
-                        <p class="card-text pb-5">Medanta Gurugram
-                            recognized as the Best Private Hospital in
-                            India
-                            Fourth
-                            Time in a Row</p>
 
+                </div>
+
+            </div>
+
+            <div class="row row-cols-1 row-cols-lg-3 row-cols-md-1 mt-3">
+                <div class="col">
+
+                </div>
+                <div class="col col-md-5 pt-3"
+                    style="background-color:#FFF7F5;border-radius: 9.75px;height: 1150.893px;">
+                    <div class="text-center">
+                        <div class="text-center">
+                            <h1 class="h6-checkup pt-3" style="color: #F04E30!important;">MEDANTA <span
+                                    style="color: #000000;">HYPERTENSION
+                                    CHECK</span></h1>
+                            <p class="p-checkup pt-3">$ 200</p>
+                        </div>
+                        <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
+                            <p class="p1-checkup py-1">Lab Tests</p>
+                        </div>
+
+                        <div class="py-3 px-3">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <ul class="list-unstyled ul-checkup">
+                                        <li>Complete Haemogram</li>
+                                    </ul>
+                                </div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <ul class="list-unstyled ul-checkup">
+                                        <li>Blood Sugar Fasting & Post
+                                            Prandial</li>
+                                    </ul>
+                                </div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <ul class="list-unstyled ul-checkup">
+                                        <li>Serum Urea</li>
+                                    </ul>
+                                </div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <ul class="list-unstyled ul-checkup">
+                                        <li>Serum Creatinine</li>
+                                    </ul>
+                                </div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <ul class="list-unstyled ul-checkup">
+                                        <li>Serum Uric acid</li>
+                                    </ul>
+                                </div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <ul class="list-unstyled ul-checkup">
+                                        <li>Serum Sodium</li>
+                                    </ul>
+                                </div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <ul class="list-unstyled ul-checkup">
+                                        <li>Serum Potassium</li>
+                                    </ul>
+                                </div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <ul class="list-unstyled ul-checkup">
+                                        <li>Urine Analysis</li>
+                                    </ul>
+                                </div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <ul class="list-unstyled ul-checkup">
+                                        <li>Lipid Profile</li>
+                                    </ul>
+                                </div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <ul class="list-unstyled ul-checkup">
+                                        <li>Prothrombin Time and INR</li>
+                                    </ul>
+                                </div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <ul class="list-unstyled ul-checkup">
+                                        <li>Creatinine Phosphokinase</li>
+                                    </ul>
+                                </div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <ul class="list-unstyled ul-checkup">
+                                        <li>SGPT</li>
+                                    </ul>
+                                </div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <ul class="list-unstyled ul-checkup">
+                                        <li>Thyroid Stimulating Hormone
+                                            Test</li>
+                                    </ul>
+                                </div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </div>
+
+                        </div>
+
+                        <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
+                            <p class="p1-checkup py-1">Diagnostic Tests</p>
+                        </div>
+
+                        <div class="py-3 px-3">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <ul class="list-unstyled ul-checkup">
+                                        <li>ECG</li>
+                                    </ul>
+                                </div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <ul class="list-unstyled ul-checkup">
+                                        <li>Exercise Stress ECG ( TMT )/
+                                            Transthorasic Echo</li>
+                                    </ul>
+                                </div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <ul class="list-unstyled ul-checkup">
+                                        <li>Ambulatory BP Monitoring</li>
+                                    </ul>
+                                </div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <ul class="list-unstyled ul-checkup">
+                                        <li>Pulse Wave Analysis</li>
+                                    </ul>
+                                </div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <ul class="list-unstyled ul-checkup">
+                                        <li>Chest X Ray</li>
+                                    </ul>
+                                </div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <ul class="list-unstyled ul-checkup">
+                                        <li>Ultrasound Doppler Renals</li>
+                                    </ul>
+                                </div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </div>
+
+                        </div>
+
+                        <div class="text-center" style="background: rgba(217, 217, 217, 0.30);">
+                            <p class="p1-checkup py-1">Consultations</p>
+                        </div>
+
+                        <div class="py-3 px-3">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <ul class="list-unstyled ul-checkup">
+                                        <li>Physician</li>
+                                    </ul>
+                                </div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <ul class="list-unstyled ul-checkup">
+                                        <li>Cardiologist</li>
+                                    </ul>
+                                </div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-12 col-lg-3">
+
+                <div class="col">
+
+                </div>
 
             </div>
         </div>
 
-    </div>
+        <!--packages for Healthy Heart Packages section end-->
 
-    <!--Recent Blogs Section End-->
-
-    <div class="container">
-        <div class="row">
-            <h1 class="recentblog-h1 pt-5 mt-5">Surgeries with Costs <span
-                    style="color:#F04E30; text-transform: uppercase;"> (in
-                    USD)</span>
+        <!--Recent Blogs Section Start-->
+        <div class="container">
+            <h1 class="recentblog-h1 pt-5">recent <span style="color:#DB5134; text-transform: uppercase;">blog</span>
             </h1>
-
             <div class="d-flex justify-content-center">
                 <span>
-                    <img src="images/pseudo.webp" alt="img_fluid" width="41" height="3">
+                    <img src="images/pseudo.webp" alt="img_fluid" width="41" height="3" loading="lazy">
                 </span>
                 <div>
-                    <img src="images/pseudo1.webp" alt="img_fluid" width="6" height="3">
+                    <img src="images/pseudo1.webp" alt="img_fluid" width="6" height="3" loading="lazy">
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-sm-12 col-lg-3">
+
+                </div>
+                <div class="col-sm-12 col-lg-3 d-flex justify-content-center">
+                    <div class="card border-0" style="width:25rem;">
+                        <img src="images/blog1image.webp" class="card-img-top" loading="lazy" alt="..." width="306px"
+                            height="348px">
+                        <div class="card-body" style="background-color:#f7f7f7;">
+                            <h1 class="card-title">THE ECONOMIC TIMES</h1>
+                            <h1 class="card-title1">Feb 18, 2023</h1>
+                            <hr>
+                            <p class="card-text pb-5">Medanta sees new hospitals
+                                & services, complex specialities
+                                boosting
+                                margins</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3 d-flex justify-content-center">
+                    <div class="card border-0" style="width: 25rem;">
+                        <img src="images/blog2image.webp" class="card-img-top" loading="lazy" alt="..." width="306px"
+                            height="348px">
+                        <div class="card-body" style="background-color:#f7f7f7;">
+                            <h1 class="card-title">THE WEEK</h1>
+                            <h1 class="card-title1">March 28, 2023</h1>
+                            <hr>
+                            <p class="card-text pb-5">Medanta Gurugram
+                                recognized as the Best Private Hospital in
+                                India
+                                Fourth
+                                Time in a Row</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3">
+
+                </div>
+            </div>
+
+        </div>
+
+        <!--Recent Blogs Section End-->
+
+        <div class="container">
+            <div class="row">
+                <h1 class="recentblog-h1 pt-5 mt-5">Surgeries with Costs <span
+                        style="color:#F04E30; text-transform: uppercase;"> (in
+                        USD)</span>
+                </h1>
+
+                <div class="d-flex justify-content-center">
+                    <span>
+                        <img src="images/pseudo.webp" alt="img_fluid" width="41" height="3">
+                    </span>
+                    <div>
+                        <img src="images/pseudo1.webp" alt="img_fluid" width="6" height="3">
+                    </div>
+                </div>
+            </div>
+
+            <p class="Surgeries-p">These are the average costs of surgery which
+                are frequently performed in the hospital.
+                The cost can be
+                more or less than this average cost, depending on comorbidities
+                and other factors of the health of the
+                patient</p>
+
+            <div class="row mt-4 g-3">
+                <div class="col-sm-12 col-lg-3">
+                    <div class="d-flex justify-content-between gap1 "
+                        style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px; ">
+                        <div class="pt-3">
+                            <p class="anal-p1">Anal Fistulectomy<br><span
+                                    style="color:#524E00; font-size:19px; ">High</span>
+                            </p>
+
+                        </div>
+                        <p class="anal-p" style="padding-top:33px;">$3900</p>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-lg-3">
+                    <div class="d-flex justify-content-between gap1"
+                        style="border-radius:13px;box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
+                        <div class="pt-3">
+                            <p class="anal-p1">ASD/VSD<br><span style="color:#0D5E28; font-size:19px;">Device
+                                    Closure</span>
+                            </p>
+
+                        </div>
+                        <p class="anal-p" style="padding-top:33px;">$6500</p>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-lg-3">
+                    <div class="d-flex justify-content-between gap1"
+                        style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
+                        <div class="pt-3">
+                            <p class="anal-p1">BMT <br><span style="color:#524D00; font-size:17px;">Full
+                                    and Half
+                                    Match</span></p>
+
+                        </div>
+                        <p class="anal-p" style="padding-top:33px;">$28,500 &
+                            $32,500</p>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-lg-3">
+                    <div class="d-flex justify-content-between gap1"
+                        style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
+                        <div class="pt-3">
+                            <p class="anal-p1">CABG<br><span style="color:#005980; font-size:19px;">(Beating
+                                    Heart)</span>
+                            </p>
+
+                        </div>
+                        <p class="pt-4 anal-p" style="padding-top:33px;">$5800</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row mt-4 g-3">
+                <div class="col-sm-12 col-lg-3">
+                    <div class="d-flex justify-content-between gap1 "
+                        style=" border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
+                        <div class="pt-3">
+                            <p class="anal-p1">CHOLECYSTECTOMY <br><span
+                                    style="color:#0A5C94; font-size:19px; ">(Lap)</span>
+                            </p>
+
+                        </div>
+                        <p class="anal-p" style="padding-top:33px;">$2200</p>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-lg-3">
+                    <div class="d-flex justify-content-between gap1"
+                        style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
+                        <div class="pt-3">
+                            <p class="anal-p1"><br><span style="color:#7A4C06; font-size:19px;">Craniotomies</span></p>
+
+                        </div>
+                        <p class="anal-p" style="padding-top:33px;">$8200</p>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-lg-3">
+                    <div class="d-flex justify-content-between gap1"
+                        style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
+                        <div class="pt-3">
+                            <p class="anal-p1"> Left RIRS + DJ Stenting<br><span
+                                    style="color:#156600; font-size:19px;">(Bilateral)</span>
+                            </p>
+
+                        </div>
+                        <p class="anal-p" style="padding-top:33px;">$3500</p>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-lg-3">
+                    <div class="d-flex justify-content-between gap1"
+                        style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
+                        <div class="pt-3">
+                            <p class="anal-p1">HYDROCELE<br><span
+                                    style="color:#AD003D; font-size:19px;">(Bilateral)</span>
+                            </p>
+
+                        </div>
+                        <p class="pt-4 anal-p" style="padding-top:33px;">$2800</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row mt-4 g-3">
+                <div class="col-sm-12 col-lg-3">
+                    <div class="d-flex justify-content-between gap1 "
+                        style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
+                        <div class="pt-3">
+                            <p class="anal-p1">Hernia Repair<br><span style="color:#86460E; font-size:15px; ">Lap/
+                                    INGUINAL/VENTRAL</span></p>
+
+                        </div>
+                        <p class="anal-p" style="padding-top:33px;">$6500</p>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-lg-3">
+                    <div class="d-flex justify-content-between gap1"
+                        style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
+                        <div class="pt-3">
+                            <p class="anal-p1">Haemorrhoidectomy<br><span style="color:#AD0606; font-size:15px;">
+                                    Absorb
+                                    Stapler</span></p>
+
+                        </div>
+                        <p class="anal-p" style="padding-top:33px;">$3000</p>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-lg-3">
+                    <div class="d-flex justify-content-between gap1"
+                        style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
+                        <div class="pt-3">
+                            <p class="anal-p1"><br><span style="color:#000; font-size:16px;">Holep</span></p>
+
+                        </div>
+                        <p class="anal-p" style="padding-top:33px;">$3400</p>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-lg-3">
+                    <div class="d-flex justify-content-between gap1"
+                        style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
+                        <div class="pt-3">
+                            <p class="anal-p1">Kidney<br><span style="color:#4425FE; font-size:19px;">Transplant</span>
+                            </p>
+
+                        </div>
+                        <p class="pt-4 anal-p" style="padding-top:33px;">$14,000</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row mt-4 g-3">
+                <div class="col-sm-12 col-lg-3">
+                    <div class="d-flex justify-content-between gap1 "
+                        style=" border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
+                        <div class="pt-3">
+                            <p class="anal-p1">Liver <br><span style="color:#0042EB; font-size:19px; ">Transplant</span>
+                            </p>
+
+                        </div>
+                        <p class="anal-p" style="padding-top:33px;">$29,000</p>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-lg-3">
+                    <div class="d-flex justify-content-between gap1"
+                        style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
+                        <div class="pt-3">
+                            <p class="anal-p1">PTCA<br><span style="color:#AD0051; font-size:19px;">with
+                                    one stent</span>
+                            </p>
+
+                        </div>
+                        <p class="anal-p" style="padding-top:33px;">$4,400</p>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-lg-3">
+                    <div class="d-flex justify-content-between gap1"
+                        style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
+                        <div class="pt-3">
+                            <p class="anal-p1"> Robotc RADICAL <br><span
+                                    style="color:#3A6213; font-size:19px;">NEPHRECTOMY</span>
+                            </p>
+
+                        </div>
+                        <p class="anal-p" style="padding-top:33px;">$7000</p>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-lg-3">
+                    <div class="d-flex justify-content-between gap1"
+                        style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
+                        <div class="pt-3">
+                            <p class="anal-p1">ASD/PAPVR/GLENN/VSD/TO<br><span
+                                    style="color:#471AFF; font-size:19px;">(Unilateral)</span></p>
+
+                        </div>
+
+                        <!-- <p class="pt-4 anal-p" style="padding-top:33px;">$5500-$9063</p> -->
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row mt-4 g-3">
+                <div class="col-sm-12 col-lg-3">
+                    <div class="d-flex justify-content-between gap1 "
+                        style=" border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
+                        <div class="pt-3">
+                            <p class="anal-p1"> <br><span style="color:#003CEB; font-size:19px; ">Thyroidectomy</span>
+                            </p>
+
+                        </div>
+                        <p class="anal-p" style="padding-top:33px;">$5200</p>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-lg-3">
+                    <div class="d-flex justify-content-between gap1"
+                        style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
+                        <div class="pt-3">
+                            <p class="anal-p1">TURP<br><span style="color:#894406; font-size:19px;">(Including
+                                    Diod
+                                    Laser)</span></p>
+
+                        </div>
+                        <p class="anal-p" style="padding-top:33px;">$4300</p>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-lg-3">
+                    <div class="d-flex justify-content-between gap1"
+                        style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
+                        <div class="pt-3">
+                            <p class="anal-p1">THR<br><span style="color:#A70673; font-size:19px;">(Unilateral)</span>
+                            </p>
+
+                        </div>
+                        <p class="anal-p" style="padding-top:33px;">$6900</p>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-lg-3">
+                    <div class="d-flex justify-content-between gap1"
+                        style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
+                        <div class="pt-3">
+                            <p class="anal-p1">TKR<br><span style="color:#4B24FF; font-size:19px;">(Bilateral)</span>
+                            </p>
+
+                        </div>
+                        <p class="pt-4 anal-p" style="padding-top:33px;">$10,800</p>
+
+                    </div>
+
                 </div>
             </div>
         </div>
-
-        <p class="Surgeries-p">These are the average costs of surgery which
-            are frequently performed in the hospital.
-            The cost can be
-            more or less than this average cost, depending on comorbidities
-            and other factors of the health of the
-            patient</p>
-
-        <div class="row mt-4 g-3">
-            <div class="col-sm-12 col-lg-3">
-                <div class="d-flex justify-content-between gap1 "
-                    style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px; ">
-                    <div class="pt-3">
-                        <p class="anal-p1">Anal Fistulectomy<br><span
-                                style="color:#524E00; font-size:19px; ">High</span>
-                        </p>
-
-                    </div>
-                    <p class="anal-p" style="padding-top:33px;">$3900</p>
-
-                </div>
-
-            </div>
-            <div class="col-sm-12 col-lg-3">
-                <div class="d-flex justify-content-between gap1"
-                    style="border-radius:13px;box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
-                    <div class="pt-3">
-                        <p class="anal-p1">ASD/VSD<br><span style="color:#0D5E28; font-size:19px;">Device
-                                Closure</span>
-                        </p>
-
-                    </div>
-                    <p class="anal-p" style="padding-top:33px;">$6500</p>
-
-                </div>
-
-            </div>
-            <div class="col-sm-12 col-lg-3">
-                <div class="d-flex justify-content-between gap1"
-                    style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
-                    <div class="pt-3">
-                        <p class="anal-p1">BMT <br><span style="color:#524D00; font-size:17px;">Full
-                                and Half
-                                Match</span></p>
-
-                    </div>
-                    <p class="anal-p" style="padding-top:33px;">$28,500 &
-                        $32,500</p>
-
-                </div>
-
-            </div>
-            <div class="col-sm-12 col-lg-3">
-                <div class="d-flex justify-content-between gap1"
-                    style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
-                    <div class="pt-3">
-                        <p class="anal-p1">CABG<br><span style="color:#005980; font-size:19px;">(Beating
-                                Heart)</span>
-                        </p>
-
-                    </div>
-                    <p class="pt-4 anal-p" style="padding-top:33px;">$5800</p>
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="row mt-4 g-3">
-            <div class="col-sm-12 col-lg-3">
-                <div class="d-flex justify-content-between gap1 "
-                    style=" border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
-                    <div class="pt-3">
-                        <p class="anal-p1">CHOLECYSTECTOMY <br><span
-                                style="color:#0A5C94; font-size:19px; ">(Lap)</span>
-                        </p>
-
-                    </div>
-                    <p class="anal-p" style="padding-top:33px;">$2200</p>
-
-                </div>
-
-            </div>
-            <div class="col-sm-12 col-lg-3">
-                <div class="d-flex justify-content-between gap1"
-                    style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
-                    <div class="pt-3">
-                        <p class="anal-p1"><br><span style="color:#7A4C06; font-size:19px;">Craniotomies</span></p>
-
-                    </div>
-                    <p class="anal-p" style="padding-top:33px;">$8200</p>
-
-                </div>
-
-            </div>
-            <div class="col-sm-12 col-lg-3">
-                <div class="d-flex justify-content-between gap1"
-                    style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
-                    <div class="pt-3">
-                        <p class="anal-p1"> Left RIRS + DJ Stenting<br><span
-                                style="color:#156600; font-size:19px;">(Bilateral)</span>
-                        </p>
-
-                    </div>
-                    <p class="anal-p" style="padding-top:33px;">$3500</p>
-
-                </div>
-
-            </div>
-            <div class="col-sm-12 col-lg-3">
-                <div class="d-flex justify-content-between gap1"
-                    style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
-                    <div class="pt-3">
-                        <p class="anal-p1">HYDROCELE<br><span style="color:#AD003D; font-size:19px;">(Bilateral)</span>
-                        </p>
-
-                    </div>
-                    <p class="pt-4 anal-p" style="padding-top:33px;">$2800</p>
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="row mt-4 g-3">
-            <div class="col-sm-12 col-lg-3">
-                <div class="d-flex justify-content-between gap1 "
-                    style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
-                    <div class="pt-3">
-                        <p class="anal-p1">Hernia Repair<br><span style="color:#86460E; font-size:15px; ">Lap/
-                                INGUINAL/VENTRAL</span></p>
-
-                    </div>
-                    <p class="anal-p" style="padding-top:33px;">$6500</p>
-
-                </div>
-
-            </div>
-            <div class="col-sm-12 col-lg-3">
-                <div class="d-flex justify-content-between gap1"
-                    style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
-                    <div class="pt-3">
-                        <p class="anal-p1">Haemorrhoidectomy<br><span style="color:#AD0606; font-size:15px;">
-                                Absorb
-                                Stapler</span></p>
-
-                    </div>
-                    <p class="anal-p" style="padding-top:33px;">$3000</p>
-
-                </div>
-
-            </div>
-            <div class="col-sm-12 col-lg-3">
-                <div class="d-flex justify-content-between gap1"
-                    style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
-                    <div class="pt-3">
-                        <p class="anal-p1"><br><span style="color:#000; font-size:16px;">Holep</span></p>
-
-                    </div>
-                    <p class="anal-p" style="padding-top:33px;">$3400</p>
-
-                </div>
-
-            </div>
-            <div class="col-sm-12 col-lg-3">
-                <div class="d-flex justify-content-between gap1"
-                    style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
-                    <div class="pt-3">
-                        <p class="anal-p1">Kidney<br><span style="color:#4425FE; font-size:19px;">Transplant</span></p>
-
-                    </div>
-                    <p class="pt-4 anal-p" style="padding-top:33px;">$14,000</p>
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="row mt-4 g-3">
-            <div class="col-sm-12 col-lg-3">
-                <div class="d-flex justify-content-between gap1 "
-                    style=" border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
-                    <div class="pt-3">
-                        <p class="anal-p1">Liver <br><span style="color:#0042EB; font-size:19px; ">Transplant</span></p>
-
-                    </div>
-                    <p class="anal-p" style="padding-top:33px;">$29,000</p>
-
-                </div>
-
-            </div>
-            <div class="col-sm-12 col-lg-3">
-                <div class="d-flex justify-content-between gap1"
-                    style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
-                    <div class="pt-3">
-                        <p class="anal-p1">PTCA<br><span style="color:#AD0051; font-size:19px;">with
-                                one stent</span>
-                        </p>
-
-                    </div>
-                    <p class="anal-p" style="padding-top:33px;">$4,400</p>
-
-                </div>
-
-            </div>
-            <div class="col-sm-12 col-lg-3">
-                <div class="d-flex justify-content-between gap1"
-                    style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
-                    <div class="pt-3">
-                        <p class="anal-p1"> Robotc RADICAL <br><span
-                                style="color:#3A6213; font-size:19px;">NEPHRECTOMY</span>
-                        </p>
-
-                    </div>
-                    <p class="anal-p" style="padding-top:33px;">$7000</p>
-
-                </div>
-
-            </div>
-            <div class="col-sm-12 col-lg-3">
-                <div class="d-flex justify-content-between gap1"
-                    style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
-                    <div class="pt-3">
-                        <p class="anal-p1">ASD/PAPVR/GLENN/VSD/TO<br><span
-                                style="color:#471AFF; font-size:19px;">(Unilateral)</span></p>
-
-                    </div>
-
-                    <!-- <p class="pt-4 anal-p" style="padding-top:33px;">$5500-$9063</p> -->
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="row mt-4 g-3">
-            <div class="col-sm-12 col-lg-3">
-                <div class="d-flex justify-content-between gap1 "
-                    style=" border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
-                    <div class="pt-3">
-                        <p class="anal-p1"> <br><span style="color:#003CEB; font-size:19px; ">Thyroidectomy</span></p>
-
-                    </div>
-                    <p class="anal-p" style="padding-top:33px;">$5200</p>
-
-                </div>
-
-            </div>
-            <div class="col-sm-12 col-lg-3">
-                <div class="d-flex justify-content-between gap1"
-                    style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
-                    <div class="pt-3">
-                        <p class="anal-p1">TURP<br><span style="color:#894406; font-size:19px;">(Including
-                                Diod
-                                Laser)</span></p>
-
-                    </div>
-                    <p class="anal-p" style="padding-top:33px;">$4300</p>
-
-                </div>
-
-            </div>
-            <div class="col-sm-12 col-lg-3">
-                <div class="d-flex justify-content-between gap1"
-                    style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
-                    <div class="pt-3">
-                        <p class="anal-p1">THR<br><span style="color:#A70673; font-size:19px;">(Unilateral)</span></p>
-
-                    </div>
-                    <p class="anal-p" style="padding-top:33px;">$6900</p>
-
-                </div>
-
-            </div>
-            <div class="col-sm-12 col-lg-3">
-                <div class="d-flex justify-content-between gap1"
-                    style="border-radius:13px; box-shadow: 0px 0px 4.512819290161133px 0px rgba(0, 0, 0, 0.10); padding: 26.241px 15.665px 27.579px 15.274px;">
-                    <div class="pt-3">
-                        <p class="anal-p1">TKR<br><span style="color:#4B24FF; font-size:19px;">(Bilateral)</span></p>
-
-                    </div>
-                    <p class="pt-4 anal-p" style="padding-top:33px;">$10,800</p>
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-
+    </section>
     <section id="hotels-list" class="my-4">
         <div class="container pb-5">
             <div class="row">
@@ -4071,96 +4106,98 @@
     <!--map section end-->
 
     <!--what we offer section start-->
-    <div class="container">
-        <div class="row">
-            <h1 class="recentblog-h1 pt-5 mt-2">Patient Support Services By <span
-                    style="color:#F04E30; text-transform: uppercase;">
-                    <img class="mb-2" src="images/WhatsApp-Image-2023-02-09-at-12.09-2.webp" alt="img_fluid" width="120"
-                        height="97" loading="lazy"></span>
-            </h1>
+    <section id="patient-support">
+        <div class="container">
+            <div class="row">
+                <h1 class="recentblog-h1 pt-5 mt-2">Patient Support Services By <span
+                        style="color:#F04E30; text-transform: uppercase;">
+                        <img class="mb-2" src="images/WhatsApp-Image-2023-02-09-at-12.09-2.webp" alt="img_fluid"
+                            width="120" height="97" loading="lazy"></span>
+                </h1>
 
-            <div class="d-flex justify-content-center">
-                <span>
-                    <img src="images/pseudo.webp" alt="img_fluid" width="41" height="3" loading="lazy">
-                </span>
-                <div>
-                    <img src="images/pseudo1.webp" alt="img_fluid" width="6" height="3" loading="lazy">
+                <div class="d-flex justify-content-center">
+                    <span>
+                        <img src="images/pseudo.webp" alt="img_fluid" width="41" height="3" loading="lazy">
+                    </span>
+                    <div>
+                        <img src="images/pseudo1.webp" alt="img_fluid" width="6" height="3" loading="lazy">
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- <div class="row">
+            <!-- <div class="row">
             <div class="text-center">
                 <img src="images/WhatsApp-Image-2023-02-09-at-12.09-2.webp" alt="img_fluid" width="120px" height="97px">
             </div>
         </div> -->
 
-    </div>
-
-    <!--what we offer section end-->
-
-    <!--what we offer section2 start-->
-
-    <div class="container-fluid pt-5">
-        <div class="row">
-            <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;"
-                style="background-color:#FFF9F7;">
-                <div class="text-center px-3 py-5">
-
-                    <img src="images/Group-6.webp" alt="img_fluid" width="92px" height="92px">
-                    <h2 class="pt-2">
-                        Personalised Experience
-                    </h2>
-                    <p class="offer-p">Our teams comprise of travel
-                        professionals &
-                        doctors. Each provides a personalized care to our
-                        patients. This ensures the highest quality of care
-                        is
-                        given at a pace the patient is comfortable with &
-                        improves overall healthcare experience.</p>
-
-                </div>
-            </div>
-            <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;"
-                style="background-color:#FFF9F7;">
-                <div class="text-center px-3 py-5">
-
-                    <img src="images/save-time-1.webp" alt="img_fluid" width="92px" height="92px">
-                    <h2 class="pt-2">
-                        Save Time & Money
-                    </h2>
-                    <p class="offer-p">We understand the criticality of time
-                        in healthcare.
-                        Our protocols & teams are well designed to handle
-                        emergencies & planned treatments. We save our
-                        patient's precious time & money at all
-                        steps of
-                        travel & treatment.</p>
-
-                </div>
-            </div>
-            <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;"
-                style="background-color:#FFF9F7;">
-                <div class="text-center px-3 py-5">
-
-                    <img src="images/icons8-patient-64-1.webp" alt="img_fluid" width="92px" height="92px">
-                    <h2 class="pt-2">
-                        Comprehensive Care
-                    </h2>
-                    <p class="offer-p">End-to-End care from initial Opinion
-                        & Cost
-                        Estimates form best 5 hospitals, visa-related,
-                        flights, airport pick-up, guest house, food,
-                        kitchen,
-                        local transport, SIM card, wi-fi, doctors meetings,
-                        hospital admission, discharge, follow up, drop back
-                        to airport.</p>
-
-                </div>
-            </div>
         </div>
 
-    </div>
+        <!--what we offer section end-->
+
+        <!--what we offer section2 start-->
+
+        <div class="container-fluid pt-5">
+            <div class="row">
+                <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;"
+                    style="background-color:#FFF9F7;">
+                    <div class="text-center px-3 py-5">
+
+                        <img src="images/Group-6.webp" alt="img_fluid" width="92px" height="92px">
+                        <h2 class="pt-2">
+                            Personalised Experience
+                        </h2>
+                        <p class="offer-p">Our teams comprise of travel
+                            professionals &
+                            doctors. Each provides a personalized care to our
+                            patients. This ensures the highest quality of care
+                            is
+                            given at a pace the patient is comfortable with &
+                            improves overall healthcare experience.</p>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;"
+                    style="background-color:#FFF9F7;">
+                    <div class="text-center px-3 py-5">
+
+                        <img src="images/save-time-1.webp" alt="img_fluid" width="92px" height="92px">
+                        <h2 class="pt-2">
+                            Save Time & Money
+                        </h2>
+                        <p class="offer-p">We understand the criticality of time
+                            in healthcare.
+                            Our protocols & teams are well designed to handle
+                            emergencies & planned treatments. We save our
+                            patient's precious time & money at all
+                            steps of
+                            travel & treatment.</p>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;"
+                    style="background-color:#FFF9F7;">
+                    <div class="text-center px-3 py-5">
+
+                        <img src="images/icons8-patient-64-1.webp" alt="img_fluid" width="92px" height="92px">
+                        <h2 class="pt-2">
+                            Comprehensive Care
+                        </h2>
+                        <p class="offer-p">End-to-End care from initial Opinion
+                            & Cost
+                            Estimates form best 5 hospitals, visa-related,
+                            flights, airport pick-up, guest house, food,
+                            kitchen,
+                            local transport, SIM card, wi-fi, doctors meetings,
+                            hospital admission, discharge, follow up, drop back
+                            to airport.</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
     <!--what we offer section2 end-->
 
     <!--footer section start-->
@@ -4270,7 +4307,7 @@
 
 
 
-    <script defer>
+    <script>
         // pre load area
         window.addEventListener('load', () => {
             const preloader = document.getElementById('preloader')
