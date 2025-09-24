@@ -35,27 +35,23 @@
         media="(min-width: 768px)">
     <link rel="preload" as="image" href="images/medanta-mobile.webp" type="image/webp" fetchpriority="high"
         media="(max-width: 767px)">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <!-- new Hero image -->
 
-    <!-- Inline CSS for preloader and tabcontent -->
     <style>
-        /* Tab content styling */
         .tabcontent {
             display: none;
             padding: 6px 12px;
-            border-top: none;
-            min-height: 500px;
-            /* Reserve space to avoid CLS */
-            transition: opacity 0.3s ease;
-            opacity: 0;
+            border-top: none
         }
 
-        .tabcontent.active {
+        #Cardiology {
             display: flex;
             flex-wrap: wrap;
-            opacity: 1;
         }
 
-        /* Preloader */
+        /* pre load page */
+
         #preloader {
             position: fixed;
             top: 0;
@@ -75,14 +71,16 @@
 
         .preloader-logo {
             width: 120px;
+            /* adjust size as needed */
             margin-bottom: 20px;
         }
     </style>
 
-    <!-- Custom JS -->
+    <link rel="preload" href="js/custom.js" as="script">
     <script src="js/custom.js" defer></script>
-</head>
 
+
+</head>
 
 <body>
     <!-- Pre loader -->
