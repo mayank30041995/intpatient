@@ -325,21 +325,98 @@ p.p-header a {
 }
 
 /* CLS-safe image styling */
+/* Banner Section */
 #banner-image {
     position: relative;
     width: 100%;
-    display: block;
-    aspect-ratio: 1035 / 364;
-    /* Desktop ratio */
     overflow: hidden;
-    /* fallback */
 }
 
-.banner-img {
+/* Picture/Image styling */
+#banner-image picture,
+#banner-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Desktop aspect ratio */
+@media (min-width: 768px) {
+    #banner-image img {
+        aspect-ratio: 1035 / 364;
+        /* Desktop ratio */
+    }
+}
+
+/* Mobile aspect ratio */
+@media (max-width: 767px) {
+    #banner-image source {
+        aspect-ratio: 375 / 414;
+        /* Mobile ratio */
+    }
+}
+
+/* Overlay Container */
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    display: block;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* vertically center */
+}
+
+/* Banner Headings */
+.banner-txt {
+    margin: 0;
+}
+
+.primary_color {
+    color: #007bff;
+    /* example color */
+}
+
+.primary_shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* WhatsApp Button */
+.banner-link {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    /* WhatsApp green */
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+
+
+/* Text alignment for small screens */
+@media (max-width: 767px) {
+    .overlay-container {
+        padding: 1rem;
+    }
+
+    .banner-link {
+        width: 100%;
+        /* full width button on mobile */
+    }
+
+    #banner-image .d-flex {
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
 
 /* .banner-img {
@@ -366,7 +443,7 @@ p.p-header a {
 }
 
 /* Typography */
-.banner-txt,
+/* .banner-txt,
 .banner-p,
 .btn {
     font-display: swap;
@@ -400,7 +477,7 @@ p.p-header a {
     color: var(--bg-background) !important;
     font-weight: 700;
     font-size: 24px !important;
-}
+} */
 
 h1.recentblog-h1 {
     font-family: var(--primary-font);
