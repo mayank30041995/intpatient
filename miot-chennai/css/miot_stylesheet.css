@@ -224,7 +224,7 @@ html {
 
 .logo-x {
   position: relative;
-  left: 16px;
+  /* left: 16px; */
 }
 
 .navbar-nav {
