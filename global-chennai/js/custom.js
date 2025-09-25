@@ -47,6 +47,80 @@ window.onload = function () {
   }
 }
 
+function openNav() {
+  document.getElementById('.drawer').style.width = '100%'
+}
+
+function closeNav() {
+  document.getElementById('.drawer').style.width = '0'
+}
+
+function openDrawer() {
+  setInterval(function () {
+    // Get the element by its ID
+    const element = document.getElementById('drawer')
+
+    // Check if the element exists
+    if (element) {
+      // Change to 'block' or any other desired display type
+      document.getElementById('drawer').style.bottom = '0'
+    }
+  }, 35000)
+}
+function callevent() {
+  setTimeout(openNav, 35000)
+}
+
+callevent()
+openDrawer()
+
+let clickCount = 0
+
+// Function to be executed on the first click
+function onFirstClick() {
+  setTimeout(openNav, 15000) // Execute openNav after 10 seconds
+}
+
+// Function to be executed on the second click
+function onSecondClick() {
+  setTimeout(openNav, 30000) // Execute openNav after 150 seconds (2.5 minutes)
+}
+
+// Function to be executed on the third click
+function onThirdClick() {
+  setTimeout(openNav, 60000) // Execute openNav after 150 seconds (2.5 minutes)
+}
+
+const drawer = document.getElementById('drawer')
+
+const openButton = document.getElementById('openBtn')
+
+document.getElementById('openBtn').addEventListener('click', function () {
+  event.stopPropagation()
+  document.getElementById('drawer').style.bottom = '0'
+})
+
+document.getElementById('closeBtn').addEventListener('click', function () {
+  event.stopPropagation()
+  document.getElementById('drawer').style.bottom = '-100%'
+})
+
+document.body.addEventListener('click', (event) => {
+  const mobileBreakpoint = 768
+
+  if (window.innerWidth >= mobileBreakpoint) {
+    // Close drawer if the click is outside the drawer or open button
+    if (!drawer.contains(event.target) && !openBtn.contains(event.target)) {
+      document.getElementById('drawer').style.bottom = '-100%'
+    }
+  }
+})
+
+// Prevent clicks inside the drawer or open button from triggering body click listener
+drawer.addEventListener('click', (event) => {
+  event.stopPropagation() // Prevent click inside drawer from closing it
+})
+
 window.addEventListener('load', () => {
   const preloader = document.getElementById('preloader')
   preloader.style.display = 'none'
