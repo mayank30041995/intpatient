@@ -50,6 +50,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  <script src="js/custom.js" defer></script>
 </head>
 
 
@@ -1326,16 +1327,21 @@
   <!--end footer-->
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EGPK7ZS1P8"></script>
-  <script>
+
+  <script defer>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    setTimeout(function () {
+      var gtagScript = document.createElement("script");
+      gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=AW-EGPK7ZS1P8";
+      gtagScript.async = true;
+      document.head.appendChild(gtagScript);
 
-    gtag('config', 'G-EGPK7ZS1P8');
+      gtag('js', new Date());
+      gtag('config', 'AW-EGPK7ZS1P8');
+    }, 3000);
   </script>
 
-  <script src="js/custom.js"></script>
 </body>
 
 </html>
