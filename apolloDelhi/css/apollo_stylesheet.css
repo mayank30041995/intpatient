@@ -113,7 +113,7 @@ body {
   width: 100%;
   border-radius: 12px;
   text-align: center;
-  padding: 18px 14px;
+  padding: 12px 14px;
 }
 
 .drawer-items {
@@ -157,9 +157,8 @@ body {
   }
 
   .drawer-icon-y {
-    padding: 8px;
-    height: 55px;
-    width: 65px;
+    padding: 10 0px;
+    width: fit-content;
   }
 
   .drawer-icon-x {
