@@ -2,6 +2,10 @@ body {
   overflow-x: hidden;
 }
 
+.visually-hidden {
+  visibility: hidden;
+}
+
 #openBtn {
   display: grid;
   position: fixed;
@@ -9,7 +13,7 @@ body {
   right: 20px;
   padding: 10px 20px;
   background-color: white;
-  color: #075E54;
+  color: #075e54;
   border: none;
   cursor: pointer;
   font-size: 16px;
@@ -42,7 +46,7 @@ body {
 .drawer-icon-y {
   padding: 8px;
   border-radius: 4px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -61,7 +65,7 @@ body {
 }
 
 .drawer-items button {
-  background: #FFF;
+  background: #fff;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -831,7 +835,7 @@ body {
   border-radius: 8px;
   /* background: #fdb931; */
   background: #fff;
-  color: #25D366;
+  color: #25d366;
   padding: 10px 22px 10px 22px;
   cursor: pointer;
   border: none;
@@ -895,9 +899,9 @@ ul {
 }
 
 .btn-primary2 {
-  color: #FFF;
+  color: #fff;
   font-weight: 700;
-  background-color: #007C9d !important;
+  background-color: #007c9d !important;
   border: 2px solid #6994c3 !important;
   box-shadow: 6px 6px 70px rgb(16 40 81 / 23%);
   font-size: 18px;
@@ -908,12 +912,12 @@ ul {
 }
 
 .btn-primary2:hover {
-  color: #FFF;
-  background-color: #007C9d;
+  color: #fff;
+  background-color: #007c9d;
   cursor: pointer;
-  border-color: #01C9C9 !important;
-  background: transparent linear-gradient(281deg, #007C9D 0%, #01C9C9 100%) 0% 0% no-repeat;
-
+  border-color: #01c9c9 !important;
+  background: transparent linear-gradient(281deg, #007c9d 0%, #01c9c9 100%) 0%
+    0% no-repeat;
 }
 
 .btn-primary {
@@ -933,13 +937,12 @@ ul {
 
 /* tabs */
 
-
 .tab {
   align-items: center;
   display: flex;
   justify-content: center;
   transition: background-color 0.3s;
-  color: #017D9C !important;
+  color: #017d9c !important;
   /* box-shadow: 3px 3px 15px #0000001A; */
   background-color: transparent !important;
   border-color: transparent !important;
@@ -955,24 +958,24 @@ ul {
   gap: 8px;
 }
 
-.tab>span {
+.tab > span {
   flex: none;
 }
 
 .tabIcons {
-  background: #FFF !important;
+  background: #fff !important;
   width: 35px;
   height: 35px;
 }
 
 .tab:hover {
-  border-bottom: 4px solid #017D9C !important;
+  border-bottom: 4px solid #017d9c !important;
 }
 
 .tab.active {
-  color: #017D9C;
+  color: #017d9c;
   background-color: transparent;
-  border-bottom: 4px solid #017D9C !important;
+  border-bottom: 4px solid #017d9c !important;
   text-decoration: none;
 }
 
@@ -1191,8 +1194,8 @@ table {
 .sticky-element {
   position: sticky;
   top: 61px;
-  background-color: #ECFBFE;
-  box-shadow: 3px 3px 15px #0000001A;
+  background-color: #ecfbfe;
+  box-shadow: 3px 3px 15px #0000001a;
   padding: 0px;
   border-radius: 7px !important;
   width: 100%;
@@ -1274,10 +1277,10 @@ table {
   border: none;
 }
 
-.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show>.nav-link {
+.navbar-light .navbar-nav .show > .nav-link {
   color: #237d9e;
 }
 
@@ -1306,7 +1309,8 @@ table {
   text-align: center;
 }
 
-.service-bottom {}
+.service-bottom {
+}
 
 .background-div {
   background-image: url(../img/sidebar_logo.png);
@@ -1379,11 +1383,9 @@ table {
 }
 
 @-moz-document url-prefix() {
-
   .card-body {
     scrollbar-width: none;
   }
-
 }
 
 .card-title-new {
@@ -1834,10 +1836,10 @@ table {
     left: 3px;
   }
 
-  .navbar-light .navbar-nav .active>.nav-link,
+  .navbar-light .navbar-nav .active > .nav-link,
   .navbar-light .navbar-nav .nav-link.active,
   .navbar-light .navbar-nav .nav-link.show,
-  .navbar-light .navbar-nav .show>.nav-link {
+  .navbar-light .navbar-nav .show > .nav-link {
     color: rgb(255 255 255 / 90%);
     background: #21b2e7;
     width: 100% !important;
