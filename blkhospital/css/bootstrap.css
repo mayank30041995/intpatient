@@ -2704,7 +2704,7 @@ fieldset:disabled a.btn {
 
 .btn-info {
   color: #fff;
-  background-color: #003a70;
+  background-color: #007bff;
   border-color: #17a2b8;
 }
 
@@ -4333,6 +4333,9 @@ input[type='button'].btn-block {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .nav-link {
