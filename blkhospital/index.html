@@ -12,6 +12,7 @@
   <link rel="stylesheet" type="text/css" href="css/normalise.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="preload" href="css/font/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="icon" href="img/favicon.ico" type="image/ico" sizes="16x16">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -108,16 +109,51 @@
     }
   </script>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-922729084">
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'AW-922729084');
-  </script>
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Hospital",
+        "name": "BLK Max Super Speciality Hospital Delhi",
+        "image": "https://apollo-delhi.hosplan.com/img/delhi.webp",
+        "@id": "https://blk-max-hospital.hosplan.com/",
+        "url": "https://blk-max-hospital.hosplan.com/",
+        "telephone": "+91-7042839926",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Pusa Rd, Radha Soami Satsang, Rajinder Nagar, New Delhi",
+          "addressLocality": "New Delhi",
+          "addressRegion": "Delhi",
+          "postalCode": "110005",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "28.6435",
+          "longitude": "77.1796"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        },
+        "medicalSpecialty": [
+          "Cardiology",
+          "Orthopedic",
+          "General Surgery",
+          "Pediatrics",
+          "Emergency"
+        ]
+      }
+      </script>
 </head>
 
 <body>
@@ -144,9 +180,10 @@
               <div class="call-section">
                 <span class="d-none d-md-block">Get Doctor's Opinion & Cost
                   Estimate</span>&nbsp;&nbsp;
-                <a href="tel:917042839926"><i class="fa fa-phone"></i></a>&nbsp;&nbsp;
-                <a href="https://api.whatsapp.com/send?phone=917042839926&text=&source=&data=" target="_blank"><i
-                    class="fab fa-whatsapp"></i></a>&nbsp;&nbsp;
+                <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
+                  aria-label="link-referel"><i class="fa fa-phone"></i></a>&nbsp;&nbsp;
+                <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
+                  aria-label="link-referel"><i class="fab fa-whatsapp"></i></a>&nbsp;&nbsp;
                 <span class="number">+91-7042839926</span>
 
               </div>
@@ -179,15 +216,34 @@
             </div>
           </div>
         </nav>
+
+        <!-- Local SEO Keyword Support (hidden for users, readable for search engines) -->
+        <div class="sr-only">
+          BLK Super specialty Hospital Delhi
+          BLK hospital
+          BLK delhi
+          best hospital in Delhi
+          24x7 emergency hospital Delhi
+          multispeciality hospital in Delhi
+          best doctors in Delhi
+          advanced medical treatments in Delhi
+          Delhi healthcare services
+          BLK Super specialty Hospital online appointment
+          BLK delhi appointment
+          full body checkup apollo Delhi
+          BLK delhi doctor list
+          BLK delhi doctors
+        </div>
       </header>
     </section>
     <section id=banner>
       <div class="img-container">
         <div class="imgwrapper">
-          <img src="img/BLK-Max.jpg" class="d-block w-100 img-fluid" alt="...">
+          <img src="img/BLK-Max.jpg" class="d-block w-100 img-fluid" alt="BLK-Max Super Speciality Hospital Delhi"
+            loading="eager" fetchpriority="high">
         </div>
         <div class="centered">
-          <h2>BLK Super Speciality Hospital</h2>
+          <h1>BLK Super Speciality Hospital</h1>
         </div>
       </div>
     </section>
@@ -222,12 +278,14 @@
             </ul>
             <!--   </div>
     </nav> -->
-            <button id="openBtn"><img src="img/logoss.png" class="logo-y" alt="HTML5 Icon" width="20px" height="30px">
-              Instant Support</button>
+            <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer" aria-label="link-referel">
+              <button id="openBtn"><img src="img/logoss.png" class="logo-y"
+                  alt="BLK Super specialty Hospital appointment" width="20px" height="30px">
+                Instant Support</button></a>
 
             <div id="drawer" class="drawer">
-              <div id="imasCircle"> <img src="img/logoss.png" class="logo-yx" alt="HTML5 Icon" width="20px"
-                  height="30px"></div>
+              <div id="imasCircle"> <img src="img/logoss.png" class="logo-yx"
+                  alt="blk super speciality hospital contact number" width="20px" height="30px"></div>
               <div class="drawer-content">
                 <button id="closeBtn" type="button" class="close" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
@@ -239,9 +297,10 @@
                 </div>
                 <div class="drawer-items">
                   <h2>International Support On Whatsapp</h2>
-                  <button class="btn"><i class="fab fa-whatsapp"
-                      style="font-size: 16px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);"></i>
-                    Connect on Whatsapp</button>
+                  <button class="btn"><a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
+                      aria-label="link-referel"><i class="fab fa-whatsapp"
+                        style="font-size: 16px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);"></i>
+                      Connect on Whatsapp</a></button>
                 </div>
               </div>
             </div>
@@ -249,7 +308,7 @@
               <div role="tabpanel" class="tab-pane fade in active show" id="cardio">
                 <div class="cat-section px-100">
                   <h1 class="text-center">
-                    <img src="img/iconcardio.png">
+                    <img src="img/iconcardio.png" alt="BLK Super specialty Hospital Cardiology">
                   </h1>
                   <h2 class="text-center">Cardiology</h2>
                   <p class="text-justify">One of the Centres of Excellence of
@@ -271,7 +330,8 @@
               <div role="tabpanel" class="tab-pane fade" id="ortho">
                 <div class="cat-section px-100">
                   <h1 class="text-center">
-                    <img src="img/iconortho.png">
+                    <img src="img/iconortho.png" alt="BLK Super specialty Hospital Orthopaedics & Joint
+                    Replacement">
                   </h1>
                   <h2 class="text-center">Orthopaedics & Joint
                     Replacement</h2><br>
@@ -295,7 +355,8 @@
               <div role="tabpanel" class="tab-pane fade" id="neuro">
                 <div class="cat-section px-100">
                   <h1 class="text-center">
-                    <img src="img/iconneuro.png">
+                    <img src="img/iconneuro.png" alt="BLK Super specialty Hospital Neurosurgery & Spine
+                    Surgery">
                   </h1>
                   <h2 class="text-center">Neurosurgery & Spine
                     Surgery</h2><br>
@@ -314,7 +375,7 @@
               <div role="tabpanel" class="tab-pane fade" id="oncology">
                 <div class="cat-section px-100">
                   <h1 class="text-center">
-                    <img src="img/icononco.png">
+                    <img src="img/icononco.png" alt="BLK Super specialty Hospital oncology">
                   </h1>
                   <h2 class="text-center">Oncology</h2><br>
                   <p class="text-justify">BLKCC, with state of the art
@@ -334,7 +395,7 @@
               <div role="tabpanel" class="tab-pane fade" id="organ">
                 <div class="cat-section px-100">
                   <h1 class="text-center">
-                    <img src="img/icontransplant.png">
+                    <img src="img/icontransplant.png" alt="BLK Super specialty Hospital liver transplant">
                   </h1>
                   <h2 class="text-center">Transplant</h2><br>
                   <p class="text-justify">BLK Super specialty Hospital is
@@ -400,10 +461,15 @@
                             <h5>34 Years of experience</h5>
                             <strong>MBBS, MD - General Medicine, DNB -
                               Cardiology, DM - Cardiology</strong>
-                            <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
+                            <!-- <a data-toggle="modal" data-target="#exampleModalCenter"><span
+                                class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book
+                                an Appointment</span> </a> -->
+                            <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
+                              aria-label="link-referel"><span
                                 class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book
                                 an Appointment</span> </a>
-                            <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
+                            <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
+                              aria-label="link-referel" class=chat><span
                                 class="opinion d-inline-block btn btn-success d-block button-w mx-auto"><i
                                   class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on
                                 WhatsApp</span></a>
@@ -420,10 +486,12 @@
                             <h6>33 Years of experience</h6>
                             <strong>MBBS, MD - Medicine, DM - Cardiology,
                               FACC</strong>
-                            <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
+                            <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
+                              aria-label="link-referel"><span
                                 class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book
                                 an Appointment</span> </a>
-                            <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
+                            <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
+                              aria-label="link-referel" class=chat><span
                                 class="opinion d-inline-block btn btn-success d-block button-w mx-auto"><i
                                   class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on
                                 WhatsApp</span></a>
@@ -453,10 +521,12 @@
                             <h6>31 Years of experience</h6>
                             <strong>MBBS, MS (Orthopaedics)</strong>
 
-                            <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
+                            <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
+                              aria-label="link-referel"><span
                                 class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book
                                 an Appointment</span> </a>
-                            <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
+                            <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
+                              aria-label="link-referel" class=chat><span
                                 class="opinion d-inline-block btn btn-success d-block button-w mx-auto"><i
                                   class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on
                                 WhatsApp</span></a>
@@ -473,10 +543,12 @@
                             <h6>14 Years of experience</h6>
                             <strong>MBBS, MS, M.Ch (Ortho.)</strong>
 
-                            <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
+                            <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
+                              aria-label="link-referel"><span
                                 class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book
                                 an Appointment</span> </a>
-                            <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
+                            <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
+                              aria-label="link-referel" class=chat><span
                                 class="opinion d-inline-block btn btn-success d-block button-w mx-auto"><i
                                   class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on
                                 WhatsApp</span></a>
@@ -505,10 +577,12 @@
                             <strong>MBBS, MD (Internal Medicine), DM
                               (Neurology)</strong>
 
-                            <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
+                            <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
+                              aria-label="link-referel"><span
                                 class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book
                                 an Appointment</span> </a>
-                            <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
+                            <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
+                              aria-label="link-referel" class=chat><span
                                 class="opinion d-inline-block btn btn-success d-block button-w mx-auto"><i
                                   class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on
                                 WhatsApp</span></a>
@@ -525,10 +599,12 @@
                             <h6>27 Years of experience</h6>
                             <strong>MBBS, MS, M.Ch (Ortho.)</strong>
 
-                            <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
+                            <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
+                              aria-label="link-referel"><span
                                 class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book
                                 an Appointment</span> </a>
-                            <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
+                            <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
+                              aria-label="link-referel" class=chat><span
                                 class="opinion d-inline-block btn btn-success d-block button-w mx-auto"><i
                                   class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on
                                 WhatsApp</span></a>
@@ -555,10 +631,12 @@
                             <h6>39 Years of experience</h6>
                             <strong>MBBS, MD - Radiotherapy</strong>
 
-                            <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
+                            <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
+                              aria-label="link-referel"><span
                                 class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book
                                 an Appointment</span> </a>
-                            <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
+                            <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
+                              aria-label="link-referel" class=chat><span
                                 class="opinion d-inline-block btn btn-success d-block button-w mx-auto"><i
                                   class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on
                                 WhatsApp</span></a>
@@ -578,10 +656,12 @@
                             <strong>MBBS, MS - General Surgery, DNB -
                               Surgical Oncology</strong>
 
-                            <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
+                            <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
+                              aria-label="link-referel"><span
                                 class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book
                                 an Appointment</span> </a>
-                            <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
+                            <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
+                              aria-label="link-referel" class=chat><span
                                 class="opinion d-inline-block btn btn-success d-block button-w mx-auto"><i
                                   class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on
                                 WhatsApp</span></a>
@@ -611,10 +691,12 @@
                             <strong>MBBS, MD - Internal Medicine, DM -
                               Nephrology</strong>
 
-                            <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
+                            <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
+                              aria-label="link-referel"><span
                                 class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book
                                 an Appointment</span> </a>
-                            <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
+                            <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
+                              aria-label="link-referel" class=chat><span
                                 class="opinion d-inline-block btn btn-success d-block button-w mx-auto"><i
                                   class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on
                                 WhatsApp</span></a>
@@ -632,10 +714,12 @@
                             <h6>39 Years of experience</h6>
                             <strong>MBBS, MD - Radiotherapy</strong>
 
-                            <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span
+                            <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
+                              aria-label="link-referel"><span
                                 class="opinion d-inline-block btn btn-info d-block button-w mx-auto">Book
                                 an Appointment</span> </a>
-                            <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat><span
+                            <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
+                              aria-label="link-referel" class=chat><span
                                 class="opinion d-inline-block btn btn-success d-block button-w mx-auto"><i
                                   class="fab fa-whatsapp" style="font-size: 15px;"></i> Connect on
                                 WhatsApp</span></a>
@@ -693,7 +777,7 @@
             <h1 class="section-title" style="font-weight: 200;">Patient
               Services at BLK Hospital</h1>
             <h3>by</h3>
-            <h6 class="text-center"><img src="img/ttlogoblack.png" alt class="img-fluid" /></h6>
+            <h6 class="text-center"><img src="img/ttlogoblack.png" alt class="img-container" /></h6>
           </div>
         </div>
         <div class="row pt-row">
@@ -739,7 +823,8 @@
             </a>
           </div>
           <div class="col-md-4 col-6 pt-4">
-            <a onclick=" LC_API.open_chat_window(); return false;" href="#Live Chat" class=chat>
+            <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer" aria-label="link-referel"
+              class=chat>
               <h5 class="text-center"><i class="fa fa-comments" aria-hidden="true"
                   style="font-size: 3rem; color: #33414e;"></i>
 
@@ -748,7 +833,7 @@
             </a>
           </div>
           <div class="col-md-4 col-12 pt-4">
-            <a href="#" data-toggle="modal" data-target="#exampleModalCenter">
+            <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer" aria-label="link-referel">
               <h5 class="text-center"><i class="fa fa-book" aria-hidden="true"
                   style="font-size: 3rem; color: #33414e;"></i>
 
@@ -1034,6 +1119,25 @@
       event.stopPropagation(); // Prevent click inside drawer from closing it
     });
 
+  </script>
+
+  <script>
+    const link = document.createElement('link');
+    link.rel = 'prefetch';
+    link.href = 'https://www.googletagmanager.com/gtag/js?id=AW-922729084';
+    link.as = 'script';
+    document.head.appendChild(link);
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-922729084">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-922729084');
   </script>
 
   <!-- popup form ends -->

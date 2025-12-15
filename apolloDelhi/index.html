@@ -9,7 +9,6 @@
   <meta name="keywords"
     content="Indraprastha Apollo Hospital Delhi, Apollo Hospital Delhi, Best hospital in Delhi, Emergency hospital Delhi, Cardiology hospital Delhi, Orthopedic hospital Delhi, Oncology treatment Delhi,Get Opinion,Appointments">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex, nofollow">
   <meta name="googlebot" content="noindex, nofollow">
   <meta name="bingbot" content="noindex, nofollow">
   <meta name="AhrefsBot" content="noindex, nofollow">
@@ -18,6 +17,20 @@
   <meta name="Baiduspider" content="noindex, nofollow">
   <meta name="YandexBot" content="noindex, nofollow">
   <meta name="theme-color" content="#047C9E" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Indraprasth Apollo Hospitals, Best Multispeciality & 24/7 Emergency Care">
+  <meta property="og:description"
+    content="International Patient Care, Indraprastha Apollo Hospital, New Delhi,Get Opinion, Appointments.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://apollo-delhi.hosplan.com/img/delhi.webp">
+  <meta property="og:url" content="https://apollo-delhi.hosplan.com">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Robots: not allow indexing and following -->
+  <meta name="robots" content="noindex, nofollow">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -75,130 +88,195 @@
     "General Surgery",
     "Pediatrics",
     "Emergency"
-  ],
-  "priceRange": "$$"
+  ]
 }
 </script>
 
+  <style>
+    #main,
+    .err {
+      display: none;
+    }
+
+    .err i {
+      font-style: normal;
+      font-size: 200px;
+    }
+
+    .midcontainer {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
 
 
-  <!-- Event snippet for Lead conversion page
-    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-  <!-- <script>
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof (url) != 'undefined') {
-          window.location = url;
+  <!-- Ip Lookup -->
+  <script>
+    function ipLookUp() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          var response = JSON.parse(xhttp.response);
+          console.log("location responce ", response, response.country);
+          window.ttLocation = response.country;
+          if (response.country === 'IN') {
+            // console.log("please redirect my page is https://devtest.intpatient.com/ip.html");
+            //window.location.href = "https://www.treatmenttraveller.com/";
+            document.title = "Page not found";
+            setVisible('.err', true);
+            setVisible('#loader', false);
+          }
+          else {
+            setVisible('#main', true);
+            setVisible('#loader', false);
+            initChat();
+          }
         }
       };
-      gtag('event', 'conversion', {
-        'send_to': 'AW-922729084/zVS5CMT9j2YQ_PT-twM',
-        'event_callback': callback
-      });
-      return false;
+      xhttp.open("GET", "https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation", true);
+      xhttp.send();
     }
-  </script> -->
+    ipLookUp();
+    function onReady(callback) {
+      var intervalId = window.setInterval(function () {
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+          window.clearInterval(intervalId);
+          callback.call(this);
+        }
+      }, 1000);
+    }
+
+    function setVisible(selector, visible) {
+      document.querySelector(selector).style.display = visible ? 'block' : 'none';
+    }
+  </script>
 </head>
 
 <body>
-  <!--topbar-->
-  <header>
-    <div class="container topbar col-md-12 d-flex align-items-center">
-      <div class="row w-100 justify-content-center align-items-center">
-        <div class=" d-flex align-items-center topbar-icons">
-          <!--  Content with vertically centered text -->
-          <h2 class="text-center topbar-text">Get Doctor’s opinion & cost estimate &nbsp; &nbsp; <span class="bar">|
-            </span>&nbsp; &nbsp;</h2>
-        </div>
-        &nbsp;
-        <div class="d-flex align-items-center">
-          <!-- Other  content in the second column -->
-          <a href="http://what.sapp.link/apollo-del" rel="noopener noreferrer" target="_blank" aria-label="Whatsapp"> <i
-              class="fa fa-whatsapp " style="color: rgb(10, 183, 10);" aria-hidden="true"></i></a>&nbsp;
-          <a href="http://what.sapp.link/apollo-del" rel="noopener noreferrer" target="_blank" aria-label="Whatsapp"> <i
-              class="fa fa-phone " style="padding-left: 9px; color: rgb(31, 166, 229);" aria-hidden="true"><span
-                class="tb_text"></span></i></a>&nbsp;
-          <a data-url="http://what.sapp.link/apollo-del" rel="noopener noreferrer" href="" style="color: white;"
-            aria-label="Whatsapp"> <i class="fa fa-comments " style="padding-left: 23%; color: rgb(20, 178, 83);"
-              aria-hidden="true"><span class="tb_text"></span></i>
-          </a>&emsp;
 
-          <a return false href="" style="color: white;" data-url="http://what.sapp.link/apollo-del"
-            rel="noopener noreferrer"> (+91) 99111 63990
+  <div id="loader"></div>
+  <div class="err">
+    <div class="midcontainer">
+      <h1>Not found <span>:(</span></h1>
+      <p>Sorry, but the page you were trying to view does not exist.</p>
+
+      <i>404</i>
+    </div>
+  </div>
+  <!--topbar-->
+  <main id="main">
+    <header>
+      <div class="container topbar col-md-12 d-flex align-items-center">
+        <div class="row w-100 justify-content-center align-items-center">
+          <div class=" d-flex align-items-center topbar-icons">
+            <!--  Content with vertically centered text -->
+            <h2 class="text-center topbar-text">Get Doctor’s opinion & cost estimate &nbsp; &nbsp; <span class="bar">|
+              </span>&nbsp; &nbsp;</h2>
+          </div>
+          &nbsp;
+          <div class="d-flex align-items-center">
+            <!-- Other  content in the second column -->
+            <a href="http://what.sapp.link/apollo-del" rel="noopener noreferrer" target="_blank" aria-label="Whatsapp">
+              <i class="fa fa-whatsapp " style="color: rgb(10, 183, 10);" aria-hidden="true"></i></a>&nbsp;
+            <a href="http://what.sapp.link/apollo-del" rel="noopener noreferrer" target="_blank" aria-label="Whatsapp">
+              <i class="fa fa-phone " style="padding-left: 9px; color: rgb(31, 166, 229);" aria-hidden="true"><span
+                  class="tb_text"></span></i></a>&nbsp;
+            <a data-url="http://what.sapp.link/apollo-del" rel="noopener noreferrer" href="" style="color: white;"
+              aria-label="Whatsapp"> <i class="fa fa-comments " style="padding-left: 23%; color: rgb(20, 178, 83);"
+                aria-hidden="true"><span class="tb_text"></span></i>
+            </a>&emsp;
+
+            <a return false href="" style="color: white;" data-url="http://what.sapp.link/apollo-del"
+              rel="noopener noreferrer"> (+91) 99111 63990
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!--topbar-->
+      <!--navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light mt-0">
+        <a class="navbar-brand mt-2" href="#" aria-label="alpha">
+          <img src="assets\logo\Indraprastha-Delhi_apollo-logo.jpg" class="logo-x"
+            alt="apollo indraprastha delhi address" width="100" height="100">
+
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse center-container " id="navbarNav">
+          <ul class="navbar-nav  align-items-center">
+            <li class="nav-item active">
+              <a role="link" class="nav-link" aria-label="Overview" href="#overview">Overview</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-label="Doctors" href="#cardio">Doctors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-label="Healthcare Packages" href="#HealthPackages">Preventive checkups</a>
+            </li>
+            <li class="nav-item">
+              <span class="sr-only">apollo sarita vihar appointment</span>
+              <a class="nav-link" target="_blank" href="http://what.sapp.link/apollo-del" rel="noopener noreferrer"
+                aria-label="whatsapp-link"> Connect on whatsapp
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://what.sapp.link/apollo-del" rel="noopener noreferrer"
+                aria-label="link-referel" target="_blank">International Patient</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!--navbar end -->
+      <!--slider-->
+      <section class="container-fluid  slider">
+        <div class="text-center  ">
+          <h1 class="text-bnnr"><b>Apollo Hospitals</b>,Delhi
+          </h1><br><span class="text-bnnr-dis">INTERNATIONAL PATIENTS​</span><br>
+          <button type="button" class="btn btn-primary2" data-url="http://what.sapp.link/apollo-del"
+            rel="noopener noreferrer" aria-label="link-referel">GET FREE
+            OPINION</button><br>
+          <a href="#scrool_about" aria-label="Whatsapp">
+            <div class="container-fluid  scrol-gif text-center"></div>
           </a>
         </div>
+      </section>
+
+
+      <!-- Local SEO Keyword Support (hidden for users, readable for search engines) -->
+      <div class="sr-only">
+        indraprastha Apollo Hospital Delhi
+        indraprastha hospital
+        indraprastha delhi
+        apollo hospital Jasola Delhi
+        apollo Hospital Sarita Vihar
+        best hospital in Delhi
+        24x7 emergency hospital Delhi
+        multispeciality hospital in Delhi
+        best doctors in Delhi
+        advanced medical treatments in Delhi
+        Delhi healthcare services
+        apollo hospital delhi health checkup packages
+        apollo full body checkup price Delhi
+        apollo hospital sarita vihar appointment
+        apollo hospital south Delhi
+        indraprastha apollo hospital online appointment
+        apollo delhi appointment
+        full body checkup apollo Delhi
+        apollo delhi doctor list
+        apollo delhi doctors
       </div>
-    </div>
+    </header>
 
-    <!--topbar-->
-    <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light mt-5">
-      <a class="navbar-brand mt-2" href="#" aria-label="alpha">
-        <img src="assets\logo\Indraprastha-Delhi_apollo-logo.jpg" class="logo-x" alt="HTML5 Icon" width="100"
-          height="100">
-
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse center-container " id="navbarNav">
-        <ul class="navbar-nav  align-items-center">
-          <li class="nav-item active">
-            <a role="link" class="nav-link" aria-label="Overview" href="#overview">Overview</a>
-            <span class="sr-only">(current)</span>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-label="Doctors" href="#cardio">Doctors</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-label="Healthcare Packages" href="#HealthPackages">Preventive checkups</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="http://what.sapp.link/apollo-del" rel="noopener noreferrer"
-              aria-label="whatsapp-link"> Connect on whatsapp
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="http://what.sapp.link/apollo-del" rel="noopener noreferrer"
-              aria-label="link-referel" target="_blank">International Patient</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <!--navbar end -->
-    <!--slider-->
-    <section class="container-fluid  slider">
-      <div class="text-center  ">
-        <h1 class="text-bnnr"><b>Apollo Hospitals</b>,Delhi
-        </h1><br><span class="text-bnnr-dis">INTERNATIONAL PATIENTS​</span><br>
-        <button type="button" class="btn btn-primary2" data-url="http://what.sapp.link/apollo-del"
-          rel="noopener noreferrer" aria-label="link-referel">GET FREE
-          OPINION</button><br>
-        <a href="#scrool_about" aria-label="Whatsapp">
-          <div class="container-fluid  scrol-gif text-center"></div>
-        </a>
-      </div>
-    </section>
-
-
-    <!-- Local SEO Keyword Support (hidden for users, readable for search engines) -->
-    <div class="visually-hidden">
-      Indraprastha Apollo Hospital Delhi
-      Apollo Hospital Sarita Vihar
-      best hospital in Delhi
-      24x7 emergency hospital Delhi
-      multispeciality hospital in Delhi
-      best doctors in Delhi
-      advanced medical treatments in Delhi
-      Delhi NCR healthcare services
-    </div>
-  </header>
-  <main>
     <!-- About Section -->
     <section class="heading" id="scroll_about">
-      <h2 class="my-2"><strong> About Apollo Hospitals </strong></h2>
+      <br />
+      <h2 class="my-3"><strong> About Apollo Hospitals </strong></h2>
 
       <p class="container about-us-cont">Apollo Hospitals was established in 1983 by Dr. Prathap C Reddy, renowned as
         the
@@ -219,12 +297,12 @@
       <div class="container mt-3 text-center sticky-element">
         <div class="tabs row new_mr justify-content-around">
           <div class="tab col-4 col-md-4 col-lg-2" data-target="#Oncology">
-            <img class="tabIcons" src="assets/TabsLogo/ology.webp" alt="Best Oncology Hospital in Delhi" width="14"
-              height="18" /><span>Oncology</span>
+            <img class="tabIcons" src="assets/TabsLogo/ology.webp" alt="Oncology doctor in apollo hospital delhi"
+              width="14" height="18" /><span>Oncology</span>
           </div>
           <div class="tab col-4 col-md-4 col-lg-2" data-target="#cardio">
-            <img class="tabIcons" src="assets/TabsLogo/cardio.webp" alt="Best Cardiology Hospital in Delhi" width="14"
-              height="18" /><span>Cardiology</span>
+            <img class="tabIcons" src="assets/TabsLogo/cardio.webp" alt="Cardiologist in apollo hospital delhi"
+              width="14" height="18" /><span>Cardiology</span>
           </div>
           <!-- <div class="tab col-4 col-md-4 col-lg-2" data-target="#kidney">
         <img class="tabIcons" src="assets/TabsLogo/kidney.webp" alt="Best Oncology Hospital in Delhi" width="14"
@@ -232,17 +310,17 @@
       </div> -->
 
           <div class="tab col-4 col-md-4 col-lg-2" data-target="#neuro">
-            <img class="tabIcons" src="assets/TabsLogo/neurology.webp" alt="Best Neurology Hospital in Delhi" width="14"
-              height="18" /><span>Neurology</span>
+            <img class="tabIcons" src="assets/TabsLogo/neurology.webp" alt="Neurosurgeon apollo hospital delhi"
+              width="14" height="18" /><span>Neurology</span>
           </div>
 
           <div class="tab col-4 col-md-4 col-lg-2" data-target="#Orthopedic">
-            <img class="tabIcons" src="assets/TabsLogo/orthopaedic.webp" alt="Best Orthopedics Hospital in Delhi"
+            <img class="tabIcons" src="assets/TabsLogo/orthopaedic.webp" alt="Oncology doctor in apollo hospital delhi"
               width="14" height="18" /><span>Orthopedics</span>
           </div>
 
           <div class="tab col-4 col-md-4 col-lg-2" id="LiverTransplant" data-target="#kidney">
-            <img class="tabIcons" src="assets/TabsLogo/transplant.webp" alt="Best Liver Transplant Hospital in Delhi"
+            <img class="tabIcons" src="assets/TabsLogo/transplant.webp" alt="Liver transplant in apollo hospital delhi"
               width="14" height="18" /><span>Liver Transplant</span>
           </div>
         </div>
@@ -259,7 +337,7 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top23  commn_id" alt="Card Image"></div>
+              <div class="card-img-top23  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Amita Mahajan </h1>
                 <p class="card-text">Oncology</p>
@@ -279,7 +357,7 @@
 
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top24  commn_id" alt="Card Image"></div>
+              <div class="card-img-top24  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Dipanjan Panda
                 </h1>
@@ -299,7 +377,7 @@
 
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top25  commn_id" alt="Card Image"></div>
+              <div class="card-img-top25  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Ganesh Jadhav
                 </h1>
@@ -327,7 +405,7 @@
 
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top28  commn_id" alt="Card Image"></div>
+              <div class="card-img-top28  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. P K Das
                 </h1>
@@ -345,7 +423,7 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top29  commn_id" alt="Card Image"></div>
+              <div class="card-img-top29  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Praveen Kumar Garg
                 </h1>
@@ -363,7 +441,7 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top30  commn_id" alt="Card Image"></div>
+              <div class="card-img-top30  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Ramesh Sarin
                 </h1>
@@ -382,7 +460,7 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top31  commn_id" alt="Card Image"></div>
+              <div class="card-img-top31  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Robin Khosa
                 </h1>
@@ -400,7 +478,7 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top32  commn_id" alt="Card Image"></div>
+              <div class="card-img-top32  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Ruquaya Ahmad Mir
                 </h1>
@@ -418,7 +496,7 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top33  commn_id" alt="Card Image"></div>
+              <div class="card-img-top33  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Sameer Kaul
 
@@ -437,7 +515,7 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top34  commn_id" alt="Card Image"></div>
+              <div class="card-img-top34  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Sarika Gupta
 
@@ -456,7 +534,7 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top35  commn_id" alt="Card Image"></div>
+              <div class="card-img-top35  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Shishir Seth
 
@@ -476,7 +554,7 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top36  commn_id" alt="Card Image"></div>
+              <div class="card-img-top36  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr Rajinder Kaur Saggu
 
@@ -496,7 +574,7 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top37  commn_id" alt="Card Image"></div>
+              <div class="card-img-top37  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr spana Manocha Verma
 
@@ -516,7 +594,7 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top38  commn_id" alt="Card Image"></div>
+              <div class="card-img-top38  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr Vikram Pratap Singh
 
@@ -537,7 +615,7 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top26  commn_id" alt="Card Image"></div>
+              <div class="card-img-top26  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Harsh Dua
                 </h1>
@@ -583,7 +661,7 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top1  commn_id" alt="Card Image"></div>
+              <div class="card-img-top1  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Anoop K Ganjoo</h1>
                 <p class="card-text">Cardiology</p>
@@ -602,7 +680,7 @@
 
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top2  commn_id" alt="Card Image"></div>
+              <div class="card-img-top2  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Amit Mittal</h1>
                 <p class="card-text">Cardiology</p>
@@ -620,7 +698,7 @@
 
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top3  commn_id" alt="Card Image"></div>
+              <div class="card-img-top3  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. K K Kapur</h1>
                 <p class="card-text">Cardiology</p>
@@ -648,7 +726,7 @@
 
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top4  commn_id" alt="Card Image"></div>
+              <div class="card-img-top4  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Col V Hariharan</h1>
                 <p class="card-text">Cardiology</p>
@@ -666,7 +744,7 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top6  commn_id" alt="Card Image"></div>
+              <div class="card-img-top6  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Mukesh Goel </h1>
                 <p class="card-text">Cardiology</p>
@@ -684,7 +762,7 @@
 
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top7  commn_id" alt="Card Image"></div>
+              <div class="card-img-top7  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Prashanta Kumar
                 </h1>
@@ -735,7 +813,7 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top8  commn_id" alt="Card Image"></div>
+              <div class="card-img-top8  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Anoop Kohli </h1>
                 <p class="card-text">Neurology</p>
@@ -753,7 +831,7 @@
 
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top9  commn_id" alt="Card Image"></div>
+              <div class="card-img-top9  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Charu Gauba </h1>
                 <p class="card-text">Neurology</p>
@@ -771,7 +849,7 @@
 
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top10  commn_id" alt="Card Image"></div>
+              <div class="card-img-top10  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Mukul Varma</h1>
                 <p class="card-text">Neurology</p>
@@ -788,7 +866,7 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top11  commn_id" alt="Card Image"></div>
+              <div class="card-img-top11  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Mukul Varma </h1>
                 <p class="card-text">Neurology</p>
@@ -805,7 +883,7 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top12  commn_id" alt="Card Image"></div>
+              <div class="card-img-top12  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr Pushpendra Nath </h1>
                 <p class="card-text">Neurology</p>
@@ -861,7 +939,7 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top13  commn_id" alt="Card Image"></div>
+              <div class="card-img-top13  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Chander Shekar </h1>
                 <p class="card-text">Orthopedic</p>
@@ -879,7 +957,7 @@
 
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top14  commn_id" alt="Card Image"></div>
+              <div class="card-img-top14  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Harsh Bhargava </h1>
                 <p class="card-text">Orthopedic</p>
@@ -897,7 +975,7 @@
 
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top15  commn_id" alt="Card Image"></div>
+              <div class="card-img-top15  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Havind Tandon
                 </h1>
@@ -926,7 +1004,7 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top18  commn_id" alt="Card Image"></div>
+              <div class="card-img-top18  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Raju Vaishya </h1>
                 <p class="card-text">Orthopedic</p>
@@ -944,7 +1022,7 @@
 
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top19  commn_id" alt="Card Image"></div>
+              <div class="card-img-top19  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Ramani Narasimhan
                 </h1>
@@ -963,7 +1041,7 @@
 
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top20  commn_id" alt="Card Image"></div>
+              <div class="card-img-top20  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Vibhu Bahl
 
@@ -982,7 +1060,7 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top21  commn_id" alt="Card Image"></div>
+              <div class="card-img-top21  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Vinod Sukhija
 
@@ -1001,7 +1079,7 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top16  commn_id" alt="Card Image"></div>
+              <div class="card-img-top16  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. M N Sehar
                 </h1>
@@ -1019,7 +1097,7 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top22  commn_id" alt="Card Image"></div>
+              <div class="card-img-top22  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Yash Gulati
 
@@ -1042,7 +1120,7 @@
 
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top17  commn_id" alt="Card Image"></div>
+              <div class="card-img-top17  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Prof Amit Kumar
                 </h1>
@@ -1090,7 +1168,7 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top39  commn_id" alt="Card Image"></div>
+              <div class="card-img-top39  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. S N Mehta
                 </h1>
@@ -1109,7 +1187,7 @@
 
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top40  commn_id" alt="Card Image"></div>
+              <div class="card-img-top40  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Sandeep Guleria
                 </h1>
@@ -1127,7 +1205,7 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-top42  commn_id" alt="Card Image"></div>
+              <div class="card-img-top42  commn_id" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body">
                 <h1 class="card-title">Dr. Neerav Goyal
                 </h1>
@@ -1222,7 +1300,7 @@
           <!-- Card 1 -->
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-topn1" alt="Card Image"></div>
+              <div class="card-img-topn1" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body eqlbox">
                 <p class="card-text"><small class="text-muted">POSTED BY APOLLO HOSPITALS | 22 APR, 2023</small></p>
                 <h1 class="card-title">Apollo Hospitals launches Apollo Genomics Institute in Chennai.
@@ -1243,7 +1321,7 @@
 
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-topn2 " alt="Card Image"></div>
+              <div class="card-img-topn2 " alt="delhi apollo hospital doctor list"></div>
               <div class="card-body eqlbox eqlboxmobi">
                 <p class="card-text"><small class="text-muted">POSTED BY APOLLO HOSPITALS | 09 APR, 2023</small></p>
                 <h1 class="card-title">Apollo Cancer Centres, Navi Mumbai has launched the advanced Isotope Radionuclide
@@ -1265,7 +1343,7 @@
           <!-- Card 3 -->
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-topn3" alt="Card Image"></div>
+              <div class="card-img-topn3" alt="delhi apollo hospital doctor list"></div>
               <div class="card-body eqlbox">
                 <p class="card-text"><small class="text-muted">POSTED BY APOLLO HOSPITALS | 03 APR, 2023 </small></p>
 
@@ -1295,7 +1373,7 @@
           <div class="col-md-4">
 
             <div class="card">
-              <div class="card-img-topn4" alt="Card Image"></div>
+              <div class="card-img-topn4" alt="apollo hospital delhi medical visa"></div>
               <div class="card-body eqlbox2 ">
                 <p class="card-text"><small class="text-muted">POSTED BY APOLLO HOSPITALS | 12th May 2022</small></p>
                 <h1 class="card-title">SUMAYA ISHRAT MOYEEN
@@ -1313,7 +1391,7 @@
 
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-topn5" alt="Card Image"></div>
+              <div class="card-img-topn5" alt="apollo doctors in india"></div>
               <div class="card-body eqlbox2">
                 <p class="card-text"><small class="text-muted">POSTED BY APOLLO HOSPITALS | 12th May 2022</small></p>
                 <h1 class="card-title">MD TANVIR RAHMAN MASUM
@@ -1328,7 +1406,7 @@
           <!-- Card 3 -->
           <div class="col-md-4">
             <div class="card">
-              <div class="card-img-topn6" alt="Card Image"></div>
+              <div class="card-img-topn6" alt="apollo hospital in india"></div>
               <div class="card-body eqlbox2">
                 <p class="card-text"><small class="text-muted">POSTED BY APOLLO HOSPITALS | 26 May, 2023
                   </small></p>
@@ -1346,7 +1424,7 @@
     <section id="corner-drawer">
       <button id="openBtn" data-url="http://what.sapp.link/apollo-del" rel="noopener noreferrer"
         aria-label="link-referel"><img class="drawer-icon-y" src="assets\logo\Indraprastha-Delhi_apollo-logo.jpg"
-          alt="HTML5 Icon" width="100" height="100">
+          alt="indraprastha apollo hospital contact number" width="100" height="100">
         <div class="text-capitalize h5"><i class="fa  fa-whatsapp fa-btn-drawer"></i> Instant opinion</div>
       </button>
 
@@ -1356,7 +1434,7 @@
 
 
         <div id="imasCircle"><img class="drawer-icon-y" src="assets\logo\Indraprastha-Delhi_apollo-logo.jpg"
-            alt="HTML5 Icon" width="100" height="100" style="object-fit: cover;"></div>
+            alt="apollo indraprastha delhi address" width="100" height="100" style="object-fit: cover;"></div>
 
 
         <div class="drawer-content">
@@ -1679,7 +1757,8 @@ color: #047c9e;
         <div class="row marz">
 
           <div class="cardnew">
-            <img class="service-bottom" src="img/icon2.svg" width="16%" height="63px" alt="loding..">
+            <img class="service-bottom" src="img/icon2.svg" width="16%" height="63px"
+              alt="apollo hospital delhi international patient">
             <div class="container style_box ">
               <h1 class="font-lst-box" style="color:#047C9E"><b>Personalised Experience</b></h1>
               <p class="font-lst-box-s" style="color: #686868;">Our teams comprise of travel professionals &amp;
@@ -1693,7 +1772,8 @@ color: #047c9e;
 
 
           <div class="cardnew2">
-            <img class="service-bottom" src="img/icon1.svg" width="16%" height="63px" alt="loding..">
+            <img class="service-bottom" src="img/icon1.svg" width="16%" height="63px"
+              alt="apollo hospital delhi international patient">
             <div class="container style_box">
               <h1 class="font-lst-box" style="color:#047C9E"><b>Save Time &amp; Money</b></h1>
               <p class="font-lst-box-s" style="color: #686868;">We understand the criticality of time in healthcare.
@@ -1705,7 +1785,8 @@ color: #047c9e;
 
 
           <div class="cardnew3">
-            <img class="service-bottom" src="img/icon3.svg" width="16%" height="63px" alt="loding..">
+            <img class="service-bottom" src="img/icon3.svg" width="16%" height="63px"
+              alt="apollo hospital delhi international patient">
             <div class="container style_box">
               <h1 class="font-lst-box" style="color:#047C9E"><b>Comprehensive Care </b></h1>
               <p class="font-lst-box-s" style="color: #686868;">End-to-End care from initial Opinion &amp; Cost
@@ -1745,13 +1826,62 @@ color: #047c9e;
     <!-- Pre loader -->
     <div id="preloader">
       <div class="spinner-wrapper">
-        <img src="assets\logo\Indraprastha-Delhi_apollo-logo.jpg" alt="pre load..." class="preloader-logo">
+        <img src="assets\logo\Indraprastha-Delhi_apollo-logo.jpg" alt="apollo hospital sarita vihar appointment"
+          class="preloader-logo">
         <!-- <div class="spinner-border text-primary" role="status">
                   <span class="sr-only">Loading...</span>
               </div> -->
       </div>
     </div>
     <!-- End of Pre loader -->
+
+
+    <footer class="footer">
+      <div class="container footer-width">
+        <div class="row">
+          <div class="col-md-4 mob-footercol1 ">
+            <!-- Column 1  content -->
+            <p style="font-size: 21px;"><b>CONTACT INFO</b>
+            </p>
+            <p><b>Address</b> :Indraprastha Apollo Hospital,<br> Mathura Rd,New Delhi, Delhi 110076 ​</p>
+            <p class="footer-ph" data-url="http://what.sapp.link/apollo-del" rel="noopener noreferrer"
+              aria-label="link-referel"><i class="fa fa-phone"> ​</i> (+91) 99111
+              63990</p>
+            <img class="footer_logo" src="assets\logo\tt%20logo.png" alt="apollo indraprastha delhi address">
+          </div>
+          <div class="col-md-4 footer-column">
+            <!-- Column 2  content -->
+            <p class="mobi-head2" style="font-size: 21px;text-align: left;margin-left: 38px;"><b>Quick links</b></p>
+            <ul class=" footer-links">
+              <li>Disclaimer</li>
+              <li>Term & Conditions</li>
+              <li>Privacy Policy</li>
+              <li> <a style="color: white;" href="http://what.sapp.link/apollo-del" rel="noopener noreferrer"
+                  aria-label="link-referel">Chat on
+                  Whatsapp</a></li>
+
+
+
+            </ul>
+          </div>
+          <div class="col-md-4 footer-column ">
+
+            <!-- Column 3  content -->
+            <p style="font-size: 21px;text-align: left;margin-left: 38px;" class="footer_col2_font"><b>Departments &
+                Specialists</b></p>
+            <ul class="text-left footer-links2">
+              <li><a href="#kidney" style="color: white;">Kidney Transplant</a></li>
+              <li><a href="#Liver Transplant" style="color: white;"> Liver Transplant</a></li>
+              <li><a href="#Orthopedic" style="color: white;">Orthopedics </a></li>
+              <li><a href="#cardio" style="color: white;">Cardiology </a></li>
+              <li>
+                <a href="#Oncology" style="color: white;">Oncology</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </main>
 
   <script>
@@ -1989,52 +2119,7 @@ color: #047c9e;
       });
     });
   </script>
-  <footer class="footer">
-    <div class="container footer-width">
-      <div class="row">
-        <div class="col-md-4 mob-footercol1 ">
-          <!-- Column 1  content -->
-          <p style="font-size: 21px;"><b>CONTACT INFO</b>
-          </p>
-          <p><b>Address</b> :Indraprastha Apollo Hospital,<br> Mathura Rd,New Delhi, Delhi 110076 ​</p>
-          <p class="footer-ph" data-url="http://what.sapp.link/apollo-del" rel="noopener noreferrer"
-            aria-label="link-referel"><i class="fa fa-phone"> ​</i> (+91) 99111
-            63990</p>
-          <img class="footer_logo" src="assets\logo\tt%20logo.png" alt="Loding...">
-        </div>
-        <div class="col-md-4 footer-column">
-          <!-- Column 2  content -->
-          <p class="mobi-head2" style="font-size: 21px;text-align: left;margin-left: 38px;"><b>Quick links</b></p>
-          <ul class=" footer-links">
-            <li>Disclaimer</li>
-            <li>Term & Conditions</li>
-            <li>Privacy Policy</li>
-            <li> <a style="color: white;" href="http://what.sapp.link/apollo-del" rel="noopener noreferrer"
-                aria-label="link-referel">Chat on
-                Whatsapp</a></li>
 
-
-
-          </ul>
-        </div>
-        <div class="col-md-4 footer-column ">
-
-          <!-- Column 3  content -->
-          <p style="font-size: 21px;text-align: left;margin-left: 38px;" class="footer_col2_font"><b>Departments &
-              Specialists</b></p>
-          <ul class="text-left footer-links2">
-            <li><a href="#kidney" style="color: white;">Kidney Transplant</a></li>
-            <li><a href="#Liver Transplant" style="color: white;"> Liver Transplant</a></li>
-            <li><a href="#Orthopedic" style="color: white;">Orthopedics </a></li>
-            <li><a href="#cardio" style="color: white;">Cardiology </a></li>
-            <li>
-              <a href="#Oncology" style="color: white;">Oncology</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
   <script>
     const drawer = document.getElementById('drawer');
 

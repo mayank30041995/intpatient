@@ -252,7 +252,7 @@ body {
   background-color: #237d9e;
   color: white;
   font-size: 16px;
-  position: fixed;
+  position: relative;
   height: 63px;
 }
 
@@ -1192,7 +1192,7 @@ table {
 
 .sticky-element {
   position: sticky;
-  top: 61px;
+  top: 15px;
   background-color: #ecfbfe;
   box-shadow: 3px 3px 15px #0000001a;
   padding: 0px;
@@ -1404,6 +1404,11 @@ table {
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
   color: #237d9e;
+}
+
+.logo-x {
+  height: 61px;
+  width: 64px;
 }
 
 @media screen and (max-width: 800px) {
@@ -1692,7 +1697,7 @@ table {
   }
 
   .center-container {
-    display: block !important;
+    display: none;
   }
 
   .xmx {
@@ -1705,7 +1710,7 @@ table {
   .sticky-element {
     padding: 0px;
     padding-top: 0px !important;
-    top: 70px;
+    top: 15px;
     overflow-x: scroll;
   }
 
@@ -1827,7 +1832,7 @@ table {
   .navbar {
     padding-inline: 27px !important;
     height: 49px;
-    top: 19px !important;
+    top: 5px !important;
   }
 
   .navbar-nav {
