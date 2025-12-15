@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>BLK Hospital India</title>
@@ -173,7 +173,7 @@
           <div class="row">
             <div class="col-3">
               <div class="logo">
-                <img src="img/logoss.png" alt="BLK Hospitals">
+                <img src="img/logoss.png" alt="BLK Hospitals" loading="eager" fetchpriority="high">
               </div>
             </div>
             <div class="col-8 col-md-6 offset-md-3 offset-1">
@@ -194,8 +194,8 @@
           <div class=" navmenumain w-100">
             <div class="container">
               <button class="navbar-toggler d-md-none d-block mx-auto" type="button" data-toggle="collapse"
-                data-target="#navbarmain">
-                <span class="navbar-toggler-icon"></span>
+                data-target="#navbarmain" aria-label="navbar-toggler
+                <span class=" navbar-toggler-icon"></span>
               </button>
               <div class="navbar-collapse collapse" id="navbarmain">
                 <ul class="navbar-nav nav-fill w-100">
@@ -259,33 +259,51 @@
         <div class="navbar-collapse collapse" id="navbarSecond"> -->
             <ul class="nav nav-tabs nav-fill w-100" role="tablist">
               <li class="nav-item">
-                <a class="nav-link active" href="#cardio" role="tab" data-toggle="tab"
-                  id="1">Cardiology&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="nav-link active" id="cardio-tab" href="#cardio" role="tab" data-toggle="tab"
+                  aria-controls="cardio" aria-selected="true">
+                  Cardiology
+                </a>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="#ortho" role="tab" data-toggle="tab" id="2">Orthopaedics&nbsp;&nbsp;&nbsp;</a>
+                <a class="nav-link" id="ortho-tab" href="#ortho" role="tab" data-toggle="tab" aria-controls="ortho"
+                  aria-selected="false">
+                  Orthopaedics
+                </a>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="#neuro" role="tab" data-toggle="tab" id="3">Neuro & Spine&nbsp;</a>
+                <a class="nav-link" id="neuro-tab" href="#neuro" role="tab" data-toggle="tab" aria-controls="neuro"
+                  aria-selected="false">
+                  Neuro &amp; Spine
+                </a>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="#oncology" role="tab" data-toggle="tab"
-                  id="4">Oncology&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="nav-link" id="oncology-tab" href="#oncology" role="tab" data-toggle="tab"
+                  aria-controls="oncology" aria-selected="false">
+                  Oncology
+                </a>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="#organ" role="tab" data-toggle="tab" id="5">Transplant&nbsp;&nbsp;&nbsp;</a>
+                <a class="nav-link" id="organ-tab" href="#organ" role="tab" data-toggle="tab" aria-controls="organ"
+                  aria-selected="false">
+                  Transplant
+                </a>
               </li>
             </ul>
+
             <!--   </div>
     </nav> -->
             <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer" aria-label="link-referel">
-              <button id="openBtn"><img src="img/logoss.png" class="logo-y"
-                  alt="BLK Super specialty Hospital appointment" width="20px" height="30px">
+              <button id="openBtn"><img src="img/logoss.png" class="logo-y" loading="lazy"
+                  alt="BLK Super specialty Hospital appointment" width="20" height="30">
                 Instant Support</button></a>
 
             <div id="drawer" class="drawer">
-              <div id="imasCircle"> <img src="img/logoss.png" class="logo-yx"
-                  alt="blk super speciality hospital contact number" width="20px" height="30px"></div>
+              <div id="imasCircle"> <img src="img/logoss.png" class="logo-yx" loading="lazy"
+                  alt="blk super speciality hospital contact number" width="20" height="30"></div>
               <div class="drawer-content">
                 <button id="closeBtn" type="button" class="close" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
@@ -308,7 +326,7 @@
               <div role="tabpanel" class="tab-pane fade in active show" id="cardio">
                 <div class="cat-section px-100">
                   <h1 class="text-center">
-                    <img src="img/iconcardio.png" alt="BLK Super specialty Hospital Cardiology">
+                    <img src="img/iconcardio.png" alt="BLK Super specialty Hospital Cardiology" loading="lazy">
                   </h1>
                   <h2 class="text-center">Cardiology</h2>
                   <p class="text-justify">One of the Centres of Excellence of
@@ -331,7 +349,7 @@
                 <div class="cat-section px-100">
                   <h1 class="text-center">
                     <img src="img/iconortho.png" alt="BLK Super specialty Hospital Orthopaedics & Joint
-                    Replacement">
+                    Replacement" loading="lazy">
                   </h1>
                   <h2 class="text-center">Orthopaedics & Joint
                     Replacement</h2><br>
@@ -356,7 +374,7 @@
                 <div class="cat-section px-100">
                   <h1 class="text-center">
                     <img src="img/iconneuro.png" alt="BLK Super specialty Hospital Neurosurgery & Spine
-                    Surgery">
+                    Surgery" loading="lazy">
                   </h1>
                   <h2 class="text-center">Neurosurgery & Spine
                     Surgery</h2><br>
@@ -375,7 +393,7 @@
               <div role="tabpanel" class="tab-pane fade" id="oncology">
                 <div class="cat-section px-100">
                   <h1 class="text-center">
-                    <img src="img/icononco.png" alt="BLK Super specialty Hospital oncology">
+                    <img src="img/icononco.png" alt="BLK Super specialty Hospital oncology" loading="lazy">
                   </h1>
                   <h2 class="text-center">Oncology</h2><br>
                   <p class="text-justify">BLKCC, with state of the art
@@ -395,7 +413,8 @@
               <div role="tabpanel" class="tab-pane fade" id="organ">
                 <div class="cat-section px-100">
                   <h1 class="text-center">
-                    <img src="img/icontransplant.png" alt="BLK Super specialty Hospital liver transplant">
+                    <img src="img/icontransplant.png" alt="BLK Super specialty Hospital liver transplant"
+                      loading="lazy">
                   </h1>
                   <h2 class="text-center">Transplant</h2><br>
                   <p class="text-justify">BLK Super specialty Hospital is
@@ -421,24 +440,25 @@
               <div class="col-md-12 mb-3 navvdox">
                 <ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
                   <li class="nav-item">
-                    <a href="#cardio-pill" class="nav-link active text-center" id="cardio-tabx" data-toggle="pill"
-                      aria-controls="cardio-pill" aria-selected="true">Cardiologists</a>
+
+                    <a href="#cardio-pill" class="nav-link active text-center" id="cardio-tab" data-toggle="pill"
+                      role="tab" aria-controls="cardio-pill" aria-selected="true">Cardiologists</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#ortho-pill" class="nav-link text-center" id="ortho-tabx" data-toggle="pill"
+                    <a href="#ortho-pill" class="nav-link text-center" id="ortho-tab" data-toggle="pill" role="tab"
                       aria-controls="ortho-pill" aria-selected="false">Orthopaedic Surgeons</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#neuro-pill" class="nav-link text-center" id="neuro-tab" data-toggle="pill"
+                    <a href="#neuro-pill" class="nav-link text-center" id="neuro-tab" data-toggle="pill" role="tab"
                       aria-controls="neuro-pill" aria-selected="false">Neurosurgeons</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#onco-pill" class="nav-link text-center" id="onco-tab" data-toggle="pill"
+                    <a href="#onco-pill" class="nav-link text-center" id="onco-tab" data-toggle="pill" role="tab"
                       aria-controls="onco-pill" aria-selected="false">Oncologists</a>
                   </li>
                   <li class="nav-item">
                     <a href="#transplant-pill" class="nav-link text-center" id="transplant-tab" data-toggle="pill"
-                      aria-controls="transplant-pill" aria-selected="false">Transplant Surgeons</a>
+                      role="tab" aria-controls="transplant-pill" aria-selected="false">Transplant Surgeons</a>
                   </li>
                 </ul>
               </div>
@@ -454,7 +474,7 @@
                         <div class="col-md-6">
                           <div class="thumbnail">
                             <img src="img/subhash.jpg" alt="Dr. Subhash Chandra Cardiologist in Delhi"
-                              class="img-fluid doc-icon" />
+                              class="img-fluid doc-icon" loading="lazy" width="200" height="100" />
                           </div>
                           <div class="docinfo">
                             <h4 class="text-center">Dr. Subhash Chandra</h4>
@@ -479,7 +499,7 @@
                         <div class="col-md-6">
                           <div class="thumbnail">
                             <img src="img/neeraj.jpg" alt="Dr. Neeraj Bhalla Cardiologist, BLK Hospital Delhi"
-                              class="img-fluid doc-icon" />
+                              class="img-fluid doc-icon" loading="lazy" width="200" height="100" />
                           </div>
                           <div class="docinfo">
                             <h4 class="text-center">Dr. Neeraj Bhalla</h4>
@@ -513,7 +533,7 @@
                         <div class="col-md-6">
                           <div class="thumbnail">
                             <img src="img/deepak.jpg" alt="Dr. Deepak Chaudhary Orthopedic Surgeon"
-                              class="img-fluid doc-icon">
+                              class="img-fluid doc-icon" loading="lazy" width="200" height="100">
                           </div>
                           <div class="docinfo">
                             <h4 class="text-center">Dr. Deepak
@@ -536,7 +556,7 @@
                         <div class="col-md-6">
                           <div class="thumbnail">
                             <img src="img/puneet.jpg" alt="Dr. Puneet Girdhar Orthopedic Surgeon Delhi"
-                              class="img-fluid doc-icon">
+                              class="img-fluid doc-icon" loading="lazy" width="200" height="100">
                           </div>
                           <div class="docinfo">
                             <h4 class="text-center">Dr. Puneet Girdhar</h4>
@@ -569,7 +589,7 @@
                         <div class="col-md-6">
                           <div class="thumbnail">
                             <img src="img/rajiv.jpg" alt="Dr. Rajiv Anand Neuro Surgeons in Delhi"
-                              class="img-fluid doc-icon">
+                              class="img-fluid doc-icon" loading="lazy" width="200" height="100">
                           </div>
                           <div class="docinfo">
                             <h4 class="text-center">Dr. Rajiv Anand</h4>
@@ -592,7 +612,7 @@
                         <div class="col-md-6">
                           <div class="thumbnail">
                             <img src="img/atul.jpg" alt="Dr. Atul Prasad Neuro Surgeons, BLK Hospital Delhi"
-                              class="img-fluid doc-icon">
+                              class="img-fluid doc-icon" loading="lazy" width="200" height="100">
                           </div>
                           <div class="docinfo">
                             <h4 class="text-center">Dr. Atul Prasad</h4>
@@ -624,7 +644,7 @@
                         <div class="col-md-6">
                           <div class="thumbnail">
                             <img src="img/hukku.jpg" alt="Dr. S Hukku Oncologist, BLK Hospital Delhi"
-                              class="img-fluid doc-icon">
+                              class="img-fluid doc-icon" loading="lazy" width="200" height="100">
                           </div>
                           <div class="docinfo">
                             <h4 class="text-center">Dr. S Hukku</h4>
@@ -647,7 +667,7 @@
                         <div class="col-md-6">
                           <div class="thumbnail">
                             <img src="img/surender.jpg" alt="Dr. Surender Kumar Dabas Oncologist Delhi, BLk Hospital"
-                              class="img-fluid doc-icon">
+                              class="img-fluid doc-icon" loading="lazy" width="200" height="100">
                           </div>
                           <div class="docinfo">
                             <h4 class="text-center">Dr. Surender Kumar
@@ -683,7 +703,7 @@
                         <div class="col-md-6">
                           <div class="thumbnail">
                             <img src="img/sunil.jpg" alt="Dr. Sunil Prakash Transplant Specialist"
-                              class="img-fluid doc-icon">
+                              class="img-fluid doc-icon" loading="lazy" width="200" height="100">
                           </div>
                           <div class="docinfo">
                             <h4 class="text-center">Dr. Sunil Prakash</h4>
@@ -707,7 +727,7 @@
                         <div class="col-md-6">
                           <div class="thumbnail">
                             <img src="img/bhatyal.jpg" alt="Dr. H. S. Bhatyal Transplant Specialist"
-                              class="img-fluid doc-icon">
+                              class="img-fluid doc-icon" loading="lazy" width="200" height="100">
                           </div>
                           <div class="docinfo">
                             <h4 class="text-center">Dr. H. S. Bhatyal</h4>
@@ -777,12 +797,13 @@
             <h1 class="section-title" style="font-weight: 200;">Patient
               Services at BLK Hospital</h1>
             <h3>by</h3>
-            <h6 class="text-center"><img src="img/ttlogoblack.png" alt class="img-container" /></h6>
+            <h6 class="text-center"><img src="img/ttlogoblack.png" alt="BLK Patient Services" loading="lazy"
+                class="img-container" /></h6>
           </div>
         </div>
         <div class="row pt-row">
           <div class=col-md-4>
-            <h5 class="text-center"><img src="img/assistant-icon.jpg" alt /></h5>
+            <h5 class="text-center"><img src="img/assistant-icon.jpg" alt="BLK healthcare" loading="lazy" /></h5>
             <h4 class="text-center">Personalised Assistance</h4>
             <p class="text-justify">Our teams comprise of travel
               professionals & doctors. Each provides a personalized
