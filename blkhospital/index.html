@@ -197,7 +197,7 @@
                 data-target="#navbarmain" aria-label="navbar-toggler
                 <span class=" navbar-toggler-icon"></span>
               </button>
-              <div class="navbar-collapse collapse" id="navbarmain">
+              <ul class="navbar-collapse collapse" id="navbarmain">
                 <ul class="navbar-nav nav-fill w-100">
                   <li class="nav-item">
                     <a class="nav-link active" href="#speciality">Specialities</a>
@@ -212,7 +212,7 @@
                     <a class="nav-link" href="#about">About BLK Hospital</a>
                   </li>
                 </ul>
-              </div>
+              </ul>
             </div>
           </div>
         </nav>
@@ -326,7 +326,8 @@
               <div role="tabpanel" class="tab-pane fade in active show" id="cardio">
                 <div class="cat-section px-100">
                   <h1 class="text-center">
-                    <img src="img/iconcardio.png" alt="BLK Super specialty Hospital Cardiology" loading="lazy">
+                    <img src="img/iconcardio.png" alt="BLK Super specialty Hospital Cardiology" loading="lazy"
+                      width="100" height="100">
                   </h1>
                   <h2 class="text-center">Cardiology</h2>
                   <p class="text-justify">One of the Centres of Excellence of
@@ -349,7 +350,7 @@
                 <div class="cat-section px-100">
                   <h1 class="text-center">
                     <img src="img/iconortho.png" alt="BLK Super specialty Hospital Orthopaedics & Joint
-                    Replacement" loading="lazy">
+                    Replacement" loading="lazy" width="100" height="100">
                   </h1>
                   <h2 class="text-center">Orthopaedics & Joint
                     Replacement</h2><br>
@@ -374,7 +375,7 @@
                 <div class="cat-section px-100">
                   <h1 class="text-center">
                     <img src="img/iconneuro.png" alt="BLK Super specialty Hospital Neurosurgery & Spine
-                    Surgery" loading="lazy">
+                    Surgery" loading="lazy" width="100" height="100">
                   </h1>
                   <h2 class="text-center">Neurosurgery & Spine
                     Surgery</h2><br>
@@ -440,24 +441,23 @@
               <div class="col-md-12 mb-3 navvdox">
                 <ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
                   <li class="nav-item">
-
-                    <a href="#cardio-pill" class="nav-link active text-center" id="cardio-tab" data-toggle="pill"
+                    <a class="nav-link active text-center" id="cardio-tab" data-toggle="pill" href="#cardio-pill"
                       role="tab" aria-controls="cardio-pill" aria-selected="true">Cardiologists</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#ortho-pill" class="nav-link text-center" id="ortho-tab" data-toggle="pill" role="tab"
+                    <a class="nav-link text-center" id="ortho-tab" data-toggle="pill" href="#ortho-pill" role="tab"
                       aria-controls="ortho-pill" aria-selected="false">Orthopaedic Surgeons</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#neuro-pill" class="nav-link text-center" id="neuro-tab" data-toggle="pill" role="tab"
+                    <a class="nav-link text-center" id="neuro-tab" data-toggle="pill" href="#neuro-pill" role="tab"
                       aria-controls="neuro-pill" aria-selected="false">Neurosurgeons</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#onco-pill" class="nav-link text-center" id="onco-tab" data-toggle="pill" role="tab"
+                    <a class="nav-link text-center" id="onco-tab" data-toggle="pill" href="#onco-pill" role="tab"
                       aria-controls="onco-pill" aria-selected="false">Oncologists</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#transplant-pill" class="nav-link text-center" id="transplant-tab" data-toggle="pill"
+                    <a class="nav-link text-center" id="transplant-tab" data-toggle="pill" href="#transplant-pill"
                       role="tab" aria-controls="transplant-pill" aria-selected="false">Transplant Surgeons</a>
                   </li>
                 </ul>
@@ -477,8 +477,8 @@
                               class="img-fluid doc-icon" loading="lazy" width="200" height="100" />
                           </div>
                           <div class="docinfo">
-                            <h4 class="text-center">Dr. Subhash Chandra</h4>
-                            <h5>34 Years of experience</h5>
+                            <h3 class="text-center">Dr. Subhash Chandra</h3>
+                            <b>34 Years of experience</b>
                             <strong>MBBS, MD - General Medicine, DNB -
                               Cardiology, DM - Cardiology</strong>
                             <!-- <a data-toggle="modal" data-target="#exampleModalCenter"><span
@@ -536,9 +536,9 @@
                               class="img-fluid doc-icon" loading="lazy" width="200" height="100">
                           </div>
                           <div class="docinfo">
-                            <h4 class="text-center">Dr. Deepak
-                              Chaudhary</h4>
-                            <h6>31 Years of experience</h6>
+                            <h3 class="text-center">Dr. Deepak
+                              Chaudhary</h3>
+                            <b>31 Years of experience</b>
                             <strong>MBBS, MS (Orthopaedics)</strong>
 
                             <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
@@ -559,8 +559,8 @@
                               class="img-fluid doc-icon" loading="lazy" width="200" height="100">
                           </div>
                           <div class="docinfo">
-                            <h4 class="text-center">Dr. Puneet Girdhar</h4>
-                            <h6>14 Years of experience</h6>
+                            <h3 class="text-center">Dr. Puneet Girdhar</h3>
+                            <b>14 Years of experience</b>
                             <strong>MBBS, MS, M.Ch (Ortho.)</strong>
 
                             <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
@@ -592,8 +592,8 @@
                               class="img-fluid doc-icon" loading="lazy" width="200" height="100">
                           </div>
                           <div class="docinfo">
-                            <h4 class="text-center">Dr. Rajiv Anand</h4>
-                            <h6>40 Years of experience</h6>
+                            <h3 class="text-center">Dr. Rajiv Anand</h3>
+                            <b>40 Years of experience</b>
                             <strong>MBBS, MD (Internal Medicine), DM
                               (Neurology)</strong>
 
@@ -615,8 +615,8 @@
                               class="img-fluid doc-icon" loading="lazy" width="200" height="100">
                           </div>
                           <div class="docinfo">
-                            <h4 class="text-center">Dr. Atul Prasad</h4>
-                            <h6>27 Years of experience</h6>
+                            <h3 class="text-center">Dr. Atul Prasad</h3>
+                            <b>27 Years of experience</b>
                             <strong>MBBS, MS, M.Ch (Ortho.)</strong>
 
                             <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
@@ -647,8 +647,8 @@
                               class="img-fluid doc-icon" loading="lazy" width="200" height="100">
                           </div>
                           <div class="docinfo">
-                            <h4 class="text-center">Dr. S Hukku</h4>
-                            <h6>39 Years of experience</h6>
+                            <h3 class="text-center">Dr. S Hukku</h3>
+                            <b>39 Years of experience</b>
                             <strong>MBBS, MD - Radiotherapy</strong>
 
                             <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
@@ -670,9 +670,9 @@
                               class="img-fluid doc-icon" loading="lazy" width="200" height="100">
                           </div>
                           <div class="docinfo">
-                            <h4 class="text-center">Dr. Surender Kumar
-                              Dabas</h4>
-                            <h6>14 Years of experience</h6>
+                            <h3 class="text-center">Dr. Surender Kumar
+                              Dabas</h3>
+                            <b>14 Years of experience</b>
                             <strong>MBBS, MS - General Surgery, DNB -
                               Surgical Oncology</strong>
 
@@ -706,8 +706,8 @@
                               class="img-fluid doc-icon" loading="lazy" width="200" height="100">
                           </div>
                           <div class="docinfo">
-                            <h4 class="text-center">Dr. Sunil Prakash</h4>
-                            <h6>35 Years of experience</h6>
+                            <h3 class="text-center">Dr. Sunil Prakash</h3>
+                            <b>35 Years of experience</b>
                             <strong>MBBS, MD - Internal Medicine, DM -
                               Nephrology</strong>
 
@@ -730,8 +730,8 @@
                               class="img-fluid doc-icon" loading="lazy" width="200" height="100">
                           </div>
                           <div class="docinfo">
-                            <h4 class="text-center">Dr. H. S. Bhatyal</h4>
-                            <h6>39 Years of experience</h6>
+                            <h3 class="text-center">Dr. H. S. Bhatyal</h3>
+                            <b>39 Years of experience</b>
                             <strong>MBBS, MD - Radiotherapy</strong>
 
                             <a href="http://what.sapp.link/blk-max" target="_blank" rel="noopener noreferrer"
