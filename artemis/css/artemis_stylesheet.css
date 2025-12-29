@@ -18,7 +18,7 @@ a:hover {
   color: white;
   border: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 24px;
   letter-spacing: 0.83px;
   font-weight: 600;
   z-index: 10;
@@ -33,7 +33,7 @@ a:hover {
   position: fixed;
   bottom: -100%;
   right: 0;
-  height: 75%;
+  height: max-content;
   width: 35%;
   background: linear-gradient(#a69837, #d2c047);
   color: #fff;
@@ -61,15 +61,15 @@ a:hover {
 }
 
 .drawer-items button {
+  font-size: 24px;
   background: #fff;
   display: flex;
   align-items: center;
   gap: 5px;
-  height: 2.8rem;
   border-radius: 2px;
   color: #2d9f28;
   font-weight: 600;
-  border-radius: 25px;
+  border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
@@ -106,8 +106,8 @@ a:hover {
 
 .logo-y {
   background: #fff;
-  height: 30px;
-  width: 28px;
+  height: 55px;
+  width: 55px;
   margin-bottom: 8px;
   padding: 4px;
   border-radius: 8px;
@@ -302,7 +302,7 @@ a:hover {
 }
 
 .fa {
-  font-size: 19px !important;
+  font-size: 24px !important;
   margin-block: 5px;
 }
 
@@ -322,7 +322,7 @@ a:hover {
   padding-right: 1rem;
   padding-left: 1rem;
   font-size: 14px;
-  color: #4e4949;
+  color: #4e4949 !important;
   font-weight: 600;
 }
 
@@ -615,7 +615,7 @@ a:hover {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
   color: white;
   padding-top: 137px;
-  font-size: 42px;
+  font-size: 48px;
 }
 
 .text-bnnr-dis {
@@ -639,15 +639,14 @@ a:hover {
 }
 
 .dr_btn {
-  height: 43px;
   border-radius: 10px;
   background: #a69837;
   border: none;
   color: white;
-  padding: 8px 26px 8px 26px;
   margin-top: 4px;
   width: 100%;
-  font-size: 16px;
+  padding: 8px 0;
+  font-size: 20px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -680,16 +679,14 @@ a:hover {
 
 .dr_btn2 {
   cursor: pointer;
-  height: 43px;
   border-radius: 10px;
   background: #ffffff;
   border: none;
   color: #a69837;
-  padding: 8px 26px 8px 26px;
+  padding: 5px 0;
   margin-top: 4px;
   width: 100%;
-  font-size: 16px;
-  margin-bottom: -11px;
+  font-size: 20px;
   border: 1px solid;
 }
 
@@ -731,7 +728,7 @@ ul {
   color: #fff !important;
   background-color: #a69837 !important;
   border-color: #a69837 !important;
-  font-size: 14px;
+  font-size: 24px;
   height: 55px;
   margin-bottom: 10px;
   padding: 0px 61px 0px 61px;
@@ -752,7 +749,8 @@ ul {
   width: 153px;
   margin: 2px;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
 .tab:hover {
@@ -1062,7 +1060,7 @@ table {
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
-  color: #a69837;
+  color: #a69837 !important;
 }
 
 .footer-links {
@@ -1225,8 +1223,8 @@ h1 {
 .logo-x {
   position: absolute;
   top: 20px;
-  height: 35px;
-  width: 30px;
+  height: 55px;
+  width: 55px;
   border-radius: 4px;
   padding: 4px;
   background: #fff;

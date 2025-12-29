@@ -336,7 +336,10 @@ header {
 }
 
 .hcg-content {
+  font-weight: 500;
+  font-size: 18px;
   padding-bottom: 40px;
+  letter-spacing: 1.5px;
 }
 
 .hcg-content h1 {
