@@ -98,4 +98,5 @@ a.btn-line:before,
 
 #mainmenu > li > a:hover {
   color: var(--primary-color-1);
+  font-weight: 600;
 }

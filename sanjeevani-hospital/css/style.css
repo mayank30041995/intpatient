@@ -5921,6 +5921,7 @@ span.overlay {
 
 .de_light span.overlay {
   /* background: #fff; */
+  color: #fff;
 }
 
 .overlay-dark span.overlay {
@@ -6865,7 +6866,8 @@ header.smaller #de-extra-menu {
 
 .de_light a,
 .de_light a:hover {
-  color: #606060;
+  color: #fff;
+  font-size: 18px;
 }
 
 .de_light footer a,
@@ -7117,7 +7119,7 @@ header.smaller #de-extra-menu {
 }
 
 .de_light a:hover {
-  color: #555;
+  color: #fff;
 }
 
 #services-list {
