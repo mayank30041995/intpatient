@@ -5836,6 +5836,7 @@ a:hover,
 .picframe {
   position: relative;
   overflow: hidden;
+  border-radius: 14px;
 }
 
 span.overlay {
