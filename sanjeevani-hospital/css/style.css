@@ -86,7 +86,10 @@ html.no-scroll::-webkit-scrollbar,
 body.no-scroll::-webkit-scrollbar {
   display: none;
 }
-
+.logo {
+  border-radius: 6px;
+  padding: 6px;
+}
 #logo {
   /* max-width: 100%;
  height: auto;
