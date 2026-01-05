@@ -104,7 +104,7 @@
             <section id="section-hero" class="full-height text-light relative" data-stellar-background-ratio=".2">
 
                 <div class="center-y fadeScroll text-center relative" data-scroll-speed="1"
-                    style="margin-top: 891.5px; transform: translateY(2536px); opacity:1; background-size: cover;">
+                    style="margin-top: 891.5px; opacity:1; background-size: cover;">
                     <div class="container-fluid" style="background-size: cover;">
                         <div class="row" style="background-size: cover;">
                             <div class="col-md-8 col-md-offset-2" style="background-size: cover;">
@@ -155,7 +155,7 @@
                                     style="background-size: cover; visibility: visible; animation-delay: 1.6s; animation-name: scaleInFade;">
                                     <img src="images/elite.png" alt="elite author">
                                     <h5>Personalized treatment plan</h5>
-                                    <h6>Trusted By 20,000+ Customers</h6>
+                                    <h6 class="text-light" style="color: #fff;">Trusted By 20,000+ Customers</h6>
                                 </div>
 
                             </div>
@@ -883,6 +883,21 @@
     <script src="js/enquire.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
     <script src="js/designesia.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                document.querySelectorAll(".fadeScroll").forEach(el => {
+                    el.classList.add("show");   // step 1: display block
+
+                    // force browser reflow so transition works
+                    el.offsetHeight;
+
+                    el.classList.add("animate"); // step 2: animate
+                });
+            }, 1000); // 1 second delay
+        });
+    </script>
+
 
 
 

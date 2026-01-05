@@ -186,3 +186,19 @@
     transform: scale(1.5);
   }
 }
+
+.fadeScroll {
+  display: none; /* initially hidden */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fadeScroll.show {
+  display: block; /* JS enables display */
+}
+
+.fadeScroll.animate {
+  opacity: 1;
+  transform: translateY(0);
+}

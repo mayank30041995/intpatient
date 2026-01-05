@@ -98,6 +98,7 @@ body.no-scroll::-webkit-scrollbar {
   background: #fff;
   border-radius: 6px;
   margin-top: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .noselect {
@@ -3263,6 +3264,7 @@ footer.light h6,
 .text-light h4,
 .text-light h5 {
   color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* feature box style 1 */

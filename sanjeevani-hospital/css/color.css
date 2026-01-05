@@ -95,3 +95,7 @@ a.btn-line:before,
 .daterangepicker th.available:hover {
   background-color: var(--primary-color-1);
 }
+
+#mainmenu > li > a:hover {
+  color: var(--primary-color-1);
+}
