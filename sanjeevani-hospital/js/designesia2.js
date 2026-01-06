@@ -294,7 +294,6 @@
       singleItem: true,
       navigation: false,
       pagination: false,
-      autoPlay: true,
       mouseDrag: false,
       touchDrag: false,
       autoPlay: 2000,
