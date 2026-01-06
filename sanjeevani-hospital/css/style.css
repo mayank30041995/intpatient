@@ -10733,3 +10733,16 @@ header.header-fullwidth {
     display: none;
   }
 }
+
+
+/* Default: hide on mobile */
+.d-none {
+  display: none;
+}
+
+/* Medium screens and above (≥768px) */
+@media (min-width: 768px) {
+  .d-none {
+    display: block;
+  }
+}
