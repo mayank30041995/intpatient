@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Raleway:wght@500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        heading: ['Raleway', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+
+</head>
+
+<body class="font-sans text-gray-800 antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-sm">
+        <nav class="container mx-auto flex items-center justify-between px-6 py-4">
+            <div class="text-2xl font-heading font-bold">
+                <img src="./images/hosplan-logo-v2.svg" alt="hosplan icon" width="180" height="90" />
+            </div>
+
+            <ul class="hidden md:flex space-x-8 text-sm font-medium">
+                <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-600">About</a></li>
+                <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="home">
+
+        <section class="container mx-auto px-6 py-16">
+
+            <header class="mb-8">
+                <h2 class="font-heading text-5xl font-semibold text-center">
+                    Why Choose Hosplan
+                </h2>
+                <p class="text-gray-600 mt-2 text-center">
+                    Services
+                </p>
+            </header>
+
+            <!-- Responsive Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center place-items-center">
+
+                <article class="rounded-lg flex flex-col items-center">
+                    <div class="aspect-[4/3] w-full flex items-center justify-center bg-white">
+                        <img src="./images/services/1.webp" alt="" class="max-w-[230px] max-h-[230px] w-full h-auto" />
+                    </div>
+                    <h3 class="p-2 font-heading text-lg font-medium text-center">
+                        Four Free Opinions From Top Hospitals
+                    </h3>
+                </article>
+
+                <article class="rounded-lg flex flex-col items-center">
+                    <div class="aspect-[4/3] w-full flex items-center justify-center bg-white">
+                        <img src="./images/services/2.webp" alt="" class="max-w-[230px] max-h-[230px] w-full h-auto" />
+                    </div>
+                    <h3 class="p-2 font-heading text-lg font-medium text-center">
+                        Teleconsultation with Doctors
+                    </h3>
+                </article>
+
+                <article class="rounded-lg flex flex-col items-center">
+                    <div class="aspect-[4/3] w-full flex items-center justify-center bg-white">
+                        <img src="./images/services/3.webp" alt="" class="max-w-[230px] max-h-[230px] w-full h-auto" />
+                    </div>
+                    <h3 class="p-2 font-heading text-lg font-medium text-center">
+                        Priority in Hospital Services
+                    </h3>
+                </article>
+
+
+            </div>
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 justify-center place-items-center my-[65px]">
+                <article class="rounded-lg flex flex-col items-center">
+                    <div class="aspect-[4/3] w-full flex items-center justify-center bg-white">
+                        <img src="./images/services/4.webp" alt="" class="max-w-[230px] max-h-[230px] w-full h-auto" />
+                    </div>
+                    <h3 class="p-2 font-heading text-lg font-medium text-center">
+                        All Local Support in India
+                    </h3>
+                </article>
+
+                <article class="rounded-lg flex flex-col items-center">
+                    <div class="aspect-[4/3] w-full flex items-center justify-center bg-white">
+                        <img src="./images/services/5.webp" alt="" class="max-w-[230px] max-h-[230px] w-full h-auto" />
+                    </div>
+                    <h3 class="p-2 font-heading text-lg font-medium text-center">
+                        Visa Invitation
+                    </h3>
+                </article>
+            </div>
+
+        </section>
+
+        <section class="py-4">
+            <div class="container mx-auto px-4 py-6">
+
+                <div class="grid grid-cols-1 md:grid-cols-12 items-center justify-center gap-4">
+
+                    <!-- Title / Content (10 cols) -->
+                    <div class="md:col-span-10">
+                        <h2 class="font-heading text-xl md:text-2xl font-semibold text-light-blue">
+                            Seeking Expert Care: Connecting with Top Doctors for Your Health Concerns.
+                            Expert Guidance for managing your health - Talk to an expert if you're suffering from
+                            disease!
+                        </h2>
+                        <p class="text-gray-600 mt-1 text-sm md:text-base text-light-blue">
+                            Connect with top doctors across various specializations, regardless of your location.
+                        </p>
+                    </div>
+
+                    <!-- Button (2 cols) -->
+                    <div class="md:col-span-2 flex md:justify-end">
+                        <a href="/pdf/services-guide.pdf" download
+                            class="inline-flex items-center justify-center w-full md:w-auto px-5 py-3 bg-secondary text-white text-sm font-medium rounded-md hover:bg-blue-700 transition">
+                            Download PDF
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="container mx-auto px-4">
+            <div id="slider" class="relative w-full h-[340px] rounded-md overflow-hidden bg-gray-100">
+
+                <!-- Slide 1 -->
+                <div class="slide absolute inset-0 opacity-100 transition-opacity duration-700">
+                    <img src="./images/banner/frame1.png" alt="Banner 1" loading="lazy"
+                        class="w-full h-full object-cover" />
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide absolute inset-0 opacity-0 transition-opacity duration-700">
+                    <img src="./images/banner/frame2.png" alt="Banner 2" loading="lazy"
+                        class="w-full h-full object-cover" />
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide absolute inset-0 opacity-0 transition-opacity duration-700">
+                    <img src="./images/banner/frame3.png" alt="Banner 3" loading="lazy"
+                        class="w-full h-full object-cover" />
+                </div>
+
+            </div>
+        </section>
+
+        <section class="py-8 my-[40px]">
+            <div class="container mx-auto px-4 py-6">
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-12 items-center justify-center rounded-md gap-4 bg-light-blue py-8 px-8">
+
+                    <!-- Title / Content (10 cols) -->
+                    <div class="md:col-span-10">
+                        <h2 class="font-heading text-xl md:text-2xl font-semibold text-white">
+                            Expert Guidance for managing your health - Talk to an expert if you're suffering from
+                            disease!
+                        </h2>
+                        <p class="text-gray-600 mt-1 text-sm md:text-base text-white">
+                            A detailed PDF explaining all available services and processes.
+                        </p>
+                    </div>
+
+                    <!-- Button (2 cols) -->
+                    <div class="md:col-span-2 flex md:justify-end">
+                        <a href="/pdf/services-guide.pdf" download
+                            class="inline-flex items-center justify-center w-full md:w-auto px-5 py-3 bg-secondary text-white text-sm font-medium rounded-md hover:bg-blue-700 transition">
+                            Download PDF
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="bg-gray-50">
+            <div class="container mx-auto px-4 py-8">
+
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6  justify-center" style="align-items: center;">
+
+                    <!-- Column 1: Image (6 cols) -->
+                    <div class="md:col-span-5 flex justify-center md:justify-center">
+                        <img src="./images/doctor_handtied.webp" alt="Feature"
+                            class="w-[240px] h-[450px] object-cover rounded-md shadow-sm" />
+                    </div>
+
+                    <!-- Column 2: List (6 cols) -->
+                    <div class="md:col-span-6 space-y-4 align-self-center">
+
+                        <!-- List Item 1 -->
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0 text-blue-600"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <div>
+                                <h3 class="font-heading font-semibold text-3xl text-gray-900">
+                                    Filter by ratings, experience, fee and more...
+                                </h3>
+                                <p class="text-gray-600 text-md mt-1">
+                                    Your preferences matter, and we understand the importance of finding the perfect
+                                    match for your healthcare needs.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- List Item 2 -->
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0 text-blue-600"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <div>
+                                <h3 class="font-heading font-semibold text-3xl  text-gray-900">
+                                    Top notch care
+                                </h3>
+                                <p class="text-gray-600 text-md mt-1">
+                                    Discover Excellence: Where Expertise Meets Healthcare!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- List Item 3 -->
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0 text-blue-600"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <div>
+                                <h3 class="font-heading font-semibold text-3xl text-gray-900">
+                                    Connect to health expert 24/7
+                                </h3>
+                                <p class="text-gray-600 text-md mt-1">
+                                    Your health doesn't wait for office hours, and neither should your access to expert
+                                    advice. Experience the convenience
+                                    of connecting with health professionals anytime, anywhere.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="container mx-auto px-6 py-16">
+            <header class="text-center mb-12">
+                <h2 class="font-heading text-3xl font-semibold mb-4">
+                    Features
+                </h2>
+                <p class="text-gray-600">
+                    Everything you need to launch fast
+                </p>
+            </header>
+
+            <div class="grid gap-8 md:grid-cols-3">
+                <article class="p-6 rounded-lg">
+                    <h3 class="font-heading text-xl font-semibold mb-2">
+                        Fast Setup
+                    </h3>
+                    <p class="text-gray-600">
+                        Minimal configuration with Tailwind CDN and semantic structure.
+                    </p>
+                </article>
+
+                <article class="p-6 rounded-lg">
+                    <h3 class="font-heading text-xl font-semibold mb-2">
+                        Responsive
+                    </h3>
+                    <p class="text-gray-600">
+                        Mobile-first layout that scales across all devices.
+                    </p>
+                </article>
+
+                <article class="p-6 rounded-lg">
+                    <h3 class="font-heading text-xl font-semibold mb-2">
+                        Customizable
+                    </h3>
+                    <p class="text-gray-600">
+                        Easy to extend with Tailwind utilities and components.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="bg-gray-50 py-16">
+            <div class="container mx-auto px-6 max-w-3xl text-center">
+                <h2 class="font-heading text-3xl font-semibold mb-4">
+                    About Us
+                </h2>
+                <p class="text-gray-600">
+                    We focus on clean UI, strong typography, and semantic HTML for long-term maintainability.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t">
+        <div class="container mx-auto px-6 py-6 text-center text-sm text-gray-500">
+            © 2026 BrandName. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- script files -->
+    <script src="./js/script.js" defer></script>
+
+
+</body>
+
+</html>

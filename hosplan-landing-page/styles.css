@@ -1,0 +1,17 @@
+.bg-light-blue {
+  background: linear-gradient(
+    rgb(38, 73, 126) 78%,
+    rgb(53, 103, 176) 101.68%
+  ) !important;
+}
+
+.bg-secondary {
+  background: rgb(101, 191, 192) !important;
+}
+
+.text-light-blue {
+  color: linear-gradient(
+    rgb(38, 73, 126) 78%,
+    rgb(53, 103, 176) 101.68%
+  ) !important;
+}
