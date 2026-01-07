@@ -14,3 +14,24 @@ document.addEventListener('DOMContentLoaded', function () {
     slides[currentIndex].classList.add('opacity-100')
   }, 4000)
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+  const track = document.getElementById('carousel-track')
+  const items = document.querySelectorAll('.carousel-item')
+
+  const itemWidth = items[0].offsetWidth
+  const visibleItems = 2
+  const maxIndex = items.length - visibleItems
+
+  let index = 0
+
+  setInterval(() => {
+    index++
+
+    if (index > maxIndex) {
+      index = 0
+    }
+
+    track.style.transform = `translateX(-${index * itemWidth}px)`
+  }, 2500)
+})
