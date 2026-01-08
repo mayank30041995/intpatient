@@ -35,3 +35,41 @@ document.addEventListener('DOMContentLoaded', () => {
     track.style.transform = `translateX(-${index * itemWidth}px)`
   }, 2500)
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+  const track = document.getElementById('testimonial-track')
+  const slides = track.children
+  const totalSlides = slides.length
+  const nextBtn = document.getElementById('nextBtn')
+
+  let index = 0
+  let interval
+
+  function moveSlide() {
+    index++
+
+    if (index >= totalSlides) {
+      index = 0
+    }
+
+    track.style.transform = `translateX(-${index * 100}%)`
+  }
+
+  // Right button click
+  nextBtn.addEventListener('click', () => {
+    moveSlide()
+    resetAutoSlide()
+  })
+
+  // Auto slide
+  function startAutoSlide() {
+    interval = setInterval(moveSlide, 5000)
+  }
+
+  function resetAutoSlide() {
+    clearInterval(interval)
+    startAutoSlide()
+  }
+
+  startAutoSlide()
+})

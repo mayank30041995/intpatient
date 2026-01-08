@@ -61,7 +61,7 @@
             <header class="mb-8">
                 <h2 class="font-heading text-4xl font-semibold text-center capitalize text-secondary">
                     Get 4 Specialist Opinions from Top Hospitals in India </h2>
-                <p class="text-gray-600 text-2xl mt-2 text-center">
+                <p class="text-gray-600 text-2xl mt-2 text-center capitalize">
                     Compare, understand, and decide—supported by Hosplan’s medical team.
                 </p>
             </header>
@@ -72,7 +72,8 @@
 
                 <article class="rounded-lg flex flex-col items-center">
                     <div class="aspect-[4/3] w-full flex items-center justify-center rounded-circle">
-                        <img src="./images/services/1.webp" alt="" class="max-w-[290px] max-h-[250px] w-full h-auto " />
+                        <img src="./images/services/1.webp" alt="" class="max-w-[290px] max-h-[250px] w-full h-auto"
+                            loading="eager" fetchpriority="high" />
                     </div>
                     <h3 class="p-2 font-heading text-lg font-medium text-center">
                         Four Free Opinions From Top Hospitals
@@ -300,84 +301,395 @@
         </section>
 
 
+        <!-- Support Services -->
+        <section id="support-services" class="container mx-auto px-6 py-16">
+            <header class="text-center mb-12">
+                <h2 class="font-heading text-5xl font-semibold mb-4 text-secondary">
+                    WHO WE SUPPORT
+                </h2>
+                <p class="text-gray-600 text-lg">
+                    Partner With Hosplan Help African Patients Access World-Class Treatment in India — and Earn Referral
+                    Income Thousands of
+                    patients from Africa travel to India every year for affordable, advanced medical treatment. Hosplan
+                    makes this journey
+                    safe, simple, and successful — and rewards partners who connect patients to the right care.
+                </p>
+            </header>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center py-6 bg-white">
 
-        <section class="bg-gray-50">
-            <div class="container mx-auto px-4 py-8">
-
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-6  justify-center" style="align-items: center;">
-
-                    <!-- Column 1: Image (6 cols) -->
-                    <div class="md:col-span-5 flex justify-center md:justify-center">
-                        <img src="./images/doctor_handtied.webp" alt="Feature"
-                            class="w-[240px] h-[450px] object-cover rounded-md shadow-sm" />
+                <!-- Card -->
+                <article
+                    class="w-full max-w-sm bg-white border border-gray-200 rounded-xl shadow-sm flex flex-col items-center p-4">
+                    <div class="aspect-[4/3] w-full flex items-center justify-center">
+                        <img src="./images/services/1.webp" alt="" class="max-w-[260px] max-h-[220px] object-contain"
+                            loading="eager" fetchpriority="high" />
                     </div>
+                    <h3 class="mt-3 font-heading text-2xl font-medium text-center text-secondary">
+                        Medical Guidance & Doctor Coordination
+                    </h3>
+                    <p class="text-gray-600 text-lg text-center">Helping patients choose the right specialist and
+                        hospital through
+                        medical report review, expert opinions, second
+                        opinions, and pre-travel tele-consultations to ensure informed treatment decisions.
+                    </p>
 
-                    <!-- Column 2: List (6 cols) -->
-                    <div class="md:col-span-6 space-y-4 align-self-center">
+                </article>
 
-                        <!-- List Item 1 -->
-                        <div class="flex items-start gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0 text-secondary"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                    d="M5 13l4 4L19 7" />
-                            </svg>
-                            <div>
-                                <h3 class="font-heading font-semibold text-3xl text-gray-900 text-secondary">
-                                    Filter by ratings, experience, fee and more...
-                                </h3>
-                                <p class="text-gray-600 text-md mt-1">
-                                    Your preferences matter, and we understand the importance of finding the perfect
-                                    match for your healthcare needs.
-                                </p>
+                <!-- Card -->
+                <article
+                    class="w-full max-w-sm bg-white border border-gray-200 rounded-xl shadow-sm flex flex-col items-center p-4">
+                    <div class="aspect-[4/3] w-full flex items-center justify-center">
+                        <img src="./images/services/2.webp" alt="" class="max-w-[260px] max-h-[220px] object-contain" />
+                    </div>
+                    <h3 class="mt-3 font-heading text-2xl font-medium text-center text-secondary">
+                        Treatment Planning & Cost Transparency
+                    </h3>
+                    <p class="text-gray-600 text-lg text-center">Providing clear treatment plans and transparent cost
+                        estimates,
+                        expected timelines, length of stay, and recovery
+                        guidance so patients can plan confidently without financial surprises.
+                    </p>
+                </article>
+
+                <!-- Card -->
+                <article
+                    class="w-full max-w-sm bg-white border border-gray-200 rounded-xl shadow-sm flex flex-col items-center p-4">
+                    <div class="aspect-[4/3] w-full flex items-center justify-center">
+                        <img src="./images/services/3.webp" alt="" class="max-w-[260px] max-h-[220px] object-contain" />
+                    </div>
+                    <h3 class="mt-3 font-heading text-2xl font-medium text-center text-secondary">
+                        Travel, Visa & Documentation Support
+                    </h3>
+                    <p class="text-gray-600 text-lg text-center">Assisting with medical visas, invitation letters,
+                        travel planning,
+                        and required documentation to ensure smooth and
+                        timely entry into the treatment country.
+                    </p>
+                </article>
+
+            </div>
+
+            <!-- Second Row -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 place-items-center py-6 bg-white">
+
+                <article
+                    class="w-full max-w-sm bg-white border border-gray-200 rounded-xl shadow-sm flex flex-col items-center p-4">
+                    <div class="aspect-[4/3] w-full flex items-center justify-center">
+                        <img src="./images/services/4.webp" alt="" class="max-w-[260px] max-h-[220px] object-contain" />
+                    </div>
+                    <h3 class="mt-3 font-heading text-2xl font-medium text-center text-secondary">
+                        Hospital Admission & Care Coordination
+                    </h3>
+                    <p class="text-gray-600 text-lg text-center">Managing appointments, admissions, inpatient support,
+                        and discharge
+                        planning, while acting as a bridge between patients,
+                        doctors, and hospital departments.
+                    </p>
+                </article>
+
+                <article
+                    class="w-full max-w-sm bg-white border border-gray-200 rounded-xl shadow-sm flex flex-col items-center p-4">
+                    <div class="aspect-[4/3] w-full flex items-center justify-center">
+                        <img src="./images/services/5.webp" alt="" class="max-w-[260px] max-h-[220px] object-contain" />
+                    </div>
+                    <h3 class="mt-3 font-heading text-2xl font-medium text-center text-secondary">
+                        Stay, Transport & Daily Logistics
+                    </h3>
+                    <p class="text-gray-600 text-lg text-center">Arranging accommodation near the hospital, airport
+                        pickups, local
+                        transport, food, and daily logistics, making the stay
+                        comfortable for patients and accompanying family members.
+                    </p>
+                </article>
+
+                <!-- Card -->
+                <article
+                    class="w-full max-w-sm bg-white border border-gray-200 rounded-xl shadow-sm flex flex-col items-center p-4">
+                    <div class="aspect-[4/3] w-full flex items-center justify-center">
+                        <img src="./images/services/2.webp" alt="" class="max-w-[260px] max-h-[220px] object-contain" />
+                    </div>
+                    <h3 class="mt-3 font-heading text-2xl font-medium text-center text-secondary">
+                        On-Ground Patient Assistance & Follow-Up Care
+                    </h3>
+                    <p class="text-gray-600 text-lg text-center">Providing a dedicated patient coordinator, multilingual
+                        support,
+                        emergency assistance, and post-treatment follow-ups to
+                        ensure continuity of care even after the patient returns home.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+
+
+        <section class="hp-support" id="support-tat">
+            <div class="hp-container">
+                <header class="text-center max-w-[820px] mx-auto mb-7">
+                    <h2 class="text-5xl leading-[1.15] text-secondary mb-[10px]">
+                        Our Support Commitment &amp; Service Timelines
+                    </h2>
+                    <p class="text-[#575D64] text-lg leading-[1.6]">
+                        When it comes to healthcare decisions, time, clarity, and dependable support matter most.
+                        That’s why we follow clear turnaround times and provide end-to-end assistance for a smooth
+                        treatment journey in India.
+                    </p>
+                </header>
+
+
+                <!-- ON-GROUND SUPPORT -->
+                <section class="max-w-[1100px] mx-auto">
+                    <!-- TAT CARDS -->
+                    <div class="grid grid-cols-3 gap-4 mt-[18px] max-[920px]:grid-cols-1 py-8">
+
+                        <!-- Card 1 -->
+                        <article class="border border-[#E8ECF1] rounded-2xl p-[18px] bg-[#FEFEFE]
+                                  shadow-[0_6px_18px_rgba(5,9,16,0.06)]">
+
+                            <div class="w-[42px] h-[42px] rounded-xl mb-[10px]
+                                bg-[rgba(101,190,191,0.18)]
+                                flex items-center justify-center text-[#3567B0]">
+                                <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 7v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M12 22a10 10 0 1 0-10-10 10 10 0 0 0 10 10Z" stroke="currentColor"
+                                        stroke-width="2" />
+                                </svg>
                             </div>
-                        </div>
 
-                        <!-- List Item 2 -->
-                        <div class="flex items-start gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0 text-secondary"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                    d="M5 13l4 4L19 7" />
-                            </svg>
-                            <div>
-                                <h3 class="font-heading font-semibold text-3xl  text-gray-900 text-secondary">
-                                    Top notch care
-                                </h3>
-                                <p class="text-gray-600 text-md mt-1">
-                                    Discover Excellence: Where Expertise Meets Healthcare!
-                                </p>
-                            </div>
-                        </div>
+                            <h3 class="text-[18px] leading-[1.3] text-[#050910] mb-[6px]">
+                                Initial Specialist Opinion
+                            </h3>
 
-                        <!-- List Item 3 -->
-                        <div class="flex items-start gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0 text-secondary"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                    d="M5 13l4 4L19 7" />
-                            </svg>
-                            <div>
-                                <h3 class="font-heading font-semibold text-3xl text-gray-900 text-secondary">
-                                    Connect to health expert 24/7
-                                </h3>
-                                <p class="text-gray-600 text-md mt-1">
-                                    Your health doesn't wait for office hours, and neither should your access to expert
-                                    advice. Experience the convenience
-                                    of connecting with health professionals anytime, anywhere.
-                                </p>
+                            <p class="inline-block text-[13px] leading-none px-[10px] py-[8px] rounded-full
+                              bg-[rgba(53,103,176,0.10)] text-[#29577E] mb-[10px]">
+                                Within 24 Hours
+                            </p>
+
+                            <p class="text-[#575D64] text-[14.5px] leading-[1.6]">
+                                Share your medical reports and we route your case to the most relevant specialist.
+                                You receive a detailed opinion quickly so you can understand the condition and next
+                                steps
+                                without delay.
+                            </p>
+                        </article>
+
+                        <!-- Card 2 -->
+                        <article class="border border-[#E8ECF1] rounded-2xl p-[18px] bg-[#FEFEFE]
+                                  shadow-[0_6px_18px_rgba(5,9,16,0.06)]">
+
+                            <div class="w-[42px] h-[42px] rounded-xl mb-[10px]
+                                bg-[rgba(101,190,191,0.18)]
+                                flex items-center justify-center text-[#3567B0]">
+                                <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 19.5V6a2 2 0 0 1 2-2h12v15.5" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path d="M6 22h14a2 2 0 0 0 2-2V6" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path d="M8 8h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                    <path d="M8 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
                             </div>
+
+                            <h3 class="text-[18px] leading-[1.3] text-[#050910] mb-[6px]">
+                                Patient Education &amp; Guidance
+                            </h3>
+
+                            <p class="inline-block text-[13px] leading-none px-[10px] py-[8px] rounded-full
+                              bg-[rgba(53,103,176,0.10)] text-[#29577E] mb-[10px]">
+                                Within 2 Hours of Sharing the Opinion
+                            </p>
+
+                            <p class="text-[#575D64] text-[14.5px] leading-[1.6]">
+                                Once you receive the opinion, our medical support team connects within 2 hours to
+                                explain
+                                the diagnosis in simple terms, walk you through the plan, answer questions, and guide
+                                you
+                                on the next steps.
+                            </p>
+                        </article>
+
+                        <!-- Card 3 -->
+                        <article class="border border-[#E8ECF1] rounded-2xl p-[18px] bg-[#FEFEFE]
+                                  shadow-[0_6px_18px_rgba(5,9,16,0.06)]">
+
+                            <div class="w-[42px] h-[42px] rounded-xl mb-[10px]
+                                bg-[rgba(101,190,191,0.18)]
+                                flex items-center justify-center text-[#3567B0]">
+                                <svg class="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none">
+                                    <path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7l-5-5Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                    <path d="M14 2v5h5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                    <path d="M9 13h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                    <path d="M9 17h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </div>
+
+                            <h3 class="text-[18px] leading-[1.3] text-[#050910] mb-[6px]">
+                                Visa Invitation Letter
+                            </h3>
+
+                            <p class="inline-block text-[13px] leading-none px-[10px] py-[8px] rounded-full
+                              bg-[rgba(53,103,176,0.10)] text-[#29577E] mb-[10px]">
+                                Within 12 Hours of Sharing Passport
+                            </p>
+
+                            <p class="text-[#575D64] text-[14.5px] leading-[1.6]">
+                                After you share passport details, we issue the official medical visa invitation letter
+                                within 12 hours—so you can proceed with your visa application smoothly.
+                            </p>
+                        </article>
+
+                    </div>
+                    <!-- Section Header -->
+                    <div class="text-center max-w-[760px] mx-auto mb-8">
+                        <h2 class="text-5xl text-secondary leading-tight mb-2">
+                            On-Ground Support Services in India
+                        </h2>
+                        <p class="text-[#575D64] text-[16px] leading-[1.6]">
+                            From arrival to discharge and beyond, Hosplan coordinates everything around your treatment—
+                            so you can focus on recovery.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="bg-gray-50">
+                    <div class="container mx-auto px-4 py-8">
+
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-6  justify-center"
+                            style="align-items: center;">
+
+                            <!-- Column 1: Image (6 cols) -->
+                            <div class="md:col-span-5 flex justify-center md:justify-center">
+                                <img src="./images/doctor_handtied.webp" alt="Feature"
+                                    class="w-[240px] h-[450px] object-cover rounded-md shadow-sm" />
+                            </div>
+
+                            <!-- Column 2: List (6 cols) -->
+                            <div class="md:col-span-6 space-y-4 align-self-center">
+
+                                <!-- List Item 1 -->
+                                <div class="flex items-start gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0 text-secondary"
+                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <div>
+                                        <h3 class="font-heading font-semibold text-3xl text-gray-900 text-secondary">
+                                            Complimentary Airport Transfers
+                                        </h3>
+                                        <p class="text-gray-600 text-md mt-1">
+                                            Free airport pickup on arrival and free airport drop on departure—safe and
+                                            hassle-free.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- List Item 2 -->
+                                <div class="flex items-start gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0 text-secondary"
+                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <div>
+                                        <h3 class="font-heading font-semibold text-3xl  text-gray-900 text-secondary">
+                                            Priority Doctor Appointments
+                                        </h3>
+                                        <p class="text-gray-600 text-md mt-1">
+                                            Priority consultations and coordinated scheduling to reduce delays and
+                                            confusion.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- List Item 3 -->
+                                <div class="flex items-start gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0 text-secondary"
+                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <div>
+                                        <h3 class="font-heading font-semibold text-3xl text-gray-900 text-secondary">
+                                            Complimentary Daily Hotel–Hospital Transfers
+                                        </h3>
+                                        <p class="text-gray-600 text-md mt-1">
+                                            Daily pickup and drop between hotel and hospital for stays within 5 km of
+                                            the hospital.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- List Item 3 -->
+                                <div class="flex items-start gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0 text-secondary"
+                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <div>
+                                        <h3 class="font-heading font-semibold text-3xl text-gray-900 text-secondary">
+                                            No Waiting for Surgery & Admission
+                                        </h3>
+                                        <p class="text-gray-600 text-md mt-1">
+                                            Faster admissions and streamlined surgical scheduling once you arrive.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
                         </div>
 
                     </div>
+                </section>
 
-                </div>
+
+                <!-- CTA -->
+                <section class="max-w-[1100px] mx-auto py-8">
+                    <div class="flex flex-col lg:flex-row items-center justify-between gap-6
+                           rounded-2xl border border-[#E8ECF1]
+                      bg-light-blue px-6 py-6">
+
+                        <!-- Content -->
+                        <div class="text-center lg:text-left max-w-[640px]">
+                            <h3 class="text-[22px] leading-tight  text-white mb-2">
+                                Need fast, reliable support for treatment in India?
+                            </h3>
+                            <p class="text-[15.5px] text-white leading-[1.6]">
+                                Share your reports and get a specialist opinion within 24 hours.
+                            </p>
+                        </div>
+
+                        <!-- Actions -->
+                        <div class="flex flex-col sm:flex-row gap-3 shrink-0">
+                            <a href="#upload-reports" class="inline-flex items-center justify-center
+                               px-5 py-3 rounded-lg
+                               bg-secondary text-white text-[15px]
+                               hover:bg-[#2E5BA0] transition">
+                                Upload Medical Reports
+                            </a>
+
+                            <a href="#live-chat" class="inline-flex items-center justify-center
+                               px-5 py-3 rounded-lg
+                               bg-secondary text-white
+                               border border-[#3567B0]
+                               text-[#3567B0] text-[15px]
+                               hover:bg-[rgba(53,103,176,0.08)] transition">
+                                Chat with Our Support Team
+                            </a>
+                        </div>
+
+                    </div>
+                </section>
 
             </div>
         </section>
 
         <!-- Features Section -->
-        <section id="features" class="container mx-auto px-6 py-16">
+        <!-- <section id="features" class="container mx-auto px-6 py-16">
             <header class="text-center mb-12">
                 <h2 class="font-heading text-3xl font-semibold mb-4">
                     Features
@@ -414,6 +726,127 @@
                         Easy to extend with Tailwind utilities and components.
                     </p>
                 </article>
+            </div>
+        </section> -->
+
+        <!-- Testimonial -->
+        <section class="container mx-auto px-4 py-10">
+            <div class="relative max-w-4xl mx-auto">
+
+                <!-- Slider -->
+                <div class="overflow-hidden">
+                    <div id="testimonial-track" class="flex transition-transform duration-700 ease-in-out">
+
+                        <!-- Slide -->
+                        <article class="min-w-full">
+                            <div
+                                class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center bg-white border border-gray-200 rounded-xl p-6">
+
+                                <!-- Image (col-5) -->
+                                <div class="md:col-span-5 flex justify-center">
+                                    <img src="./images/treatment/t2.webp" alt="Patient"
+                                        class="w-full max-w-[220px] h-[220px] object-cover rounded-lg" />
+                                </div>
+
+                                <!-- Content (col-7) -->
+                                <div class="md:col-span-7">
+                                    <h3 class="font-heading text-xl font-semibold text-gray-900">
+                                        Junior Jeremias Florencio
+                                    </h3>
+                                    <p class="mt-3 text-gray-600 leading-relaxed">
+                                        Exceptional support for families traveling abroad. Traveling for our child’s
+                                        treatment was overwhelming, but
+                                        International Patient Care team Hosplan team took complete care of us. They
+                                        coordinated with doctors, helped with visas,
+                                        arranged stay near the hospital, and provided daily assistance. Their team
+                                        ensured a safe and comfortable experience for
+                                        our entire family.
+                                    </p>
+                                    <p class="mt-3 text-secondary leading-relaxed">— Parent | Africa
+                                    </p>
+                                </div>
+
+                            </div>
+                        </article>
+
+                        <!-- Slide -->
+                        <article class="min-w-full">
+                            <div
+                                class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center bg-white border border-gray-200 rounded-xl p-6">
+
+                                <div class="md:col-span-5 flex justify-center">
+                                    <img src="./images/treatment/t6.webp" alt="Patient"
+                                        class="w-full max-w-[220px] h-[220px] object-cover rounded-lg" />
+                                </div>
+
+                                <div class="md:col-span-7">
+                                    <h3 class="font-heading text-xl font-semibold text-gray-900">
+                                        Mr Oumadou Kiema
+                                    </h3>
+                                    <p class="mt-3 text-gray-600 leading-relaxed">
+                                        A stress-free medical journey in a new country.I was unsure about traveling
+                                        overseas for surgery, but Hosplan handled
+                                        all the details. They connected me with experienced doctors, arranged fast
+                                        appointments, and took care of airport
+                                        pickup, local transport, and nearby accommodation. Their constant support
+                                        allowed me to focus only on recovery
+                                    </p>
+
+                                    <p class="mt-3 text-secondary leading-relaxed">— Mr Oumadou Kiema | Burkina Faso,
+                                        Africa
+                                    </p>
+                                </div>
+
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <!-- Right Button -->
+                <button id="nextBtn"
+                    class="bg-secondary text-white absolute -right-5 top-1/2 -translate-y-1/2 bg-white border border-gray-300 rounded-full w-10 h-10 flex items-center justify-center shadow-sm hover:bg-gray-50"
+                    aria-label="Next testimonial">
+                    →
+                </button>
+
+            </div>
+        </section>
+        <!-- CTA -->
+        <section class="max-w-[1100px] mx-auto py-8">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-6
+                           rounded-2xl border border-[#E8ECF1]
+                      bg-light-blue px-6 py-6">
+
+                <!-- Content -->
+                <div class="text-center lg:text-left max-w-[640px]">
+                    <h3 class="text-[22px] leading-tight  text-white mb-2">
+                        Need fast, reliable support for treatment in India?
+                    </h3>
+                    <p class="text-[15.5px] text-white leading-[1.6]">
+                        Share your reports and get a specialist opinion within 24 hours.
+                    </p>
+                </div>
+
+                <!-- Actions -->
+                <div class="flex flex-col sm:flex-row gap-3 shrink-0">
+                    <a href="#upload-reports" class="inline-flex items-center justify-center
+                               px-5 py-3 rounded-lg
+                               bg-secondary text-white text-[15px]
+                               hover:bg-[#2E5BA0] transition">
+                        Upload Medical Reports
+                    </a>
+
+                    <a href="#live-chat" class="inline-flex items-center justify-center
+                               px-5 py-3 rounded-lg
+                               bg-secondary text-white
+                               border border-[#3567B0]
+                               text-[#3567B0] text-[15px]
+                               hover:bg-[rgba(53,103,176,0.08)] transition">
+                        Chat with Our Support Team
+                    </a>
+                </div>
+
             </div>
         </section>
 
