@@ -10,7 +10,7 @@ body {
   display: grid;
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   padding: 10px 20px;
   background-color: white;
   color: #075e54;
@@ -29,7 +29,7 @@ body {
 #drawer {
   position: fixed;
   bottom: -100%;
-  right: 0;
+  left: 0;
   /* height: 75%; */
   width: 35%;
   background: linear-gradient(#237d9e, #8fbfd1);
