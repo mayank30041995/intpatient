@@ -36,14 +36,19 @@
 .owl-dot {
   width: 12px;
   height: 12px;
-  background-color: rgba(255, 255, 255, 0.6); /* semi-transparent white */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.6
+  ) !important; /* semi-transparent white */
   border-radius: 9999px; /* full circle */
   transition: all 0.3s;
 }
 
 /* Active dot */
 .owl-dot.active {
-  background-color: #ffffff; /* fully visible white */
+  background-color: #ffffff !important; /* fully visible white */
 }
 
 /* Make sure dots are visible over dark overlay */
