@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr Amit Sharma-Sanjeevani Kaya Hospital</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="images/elite.png" type="image/x-icon">
+
+    <!-- Heebo Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        heading: ['Raleway', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/owl.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+
+<body class="font-sans text-white">
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-header fixed top-0 w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 py-2">
+            <div class="flex items-center justify-between h-16">
+
+                <!-- Logo -->
+                <img src="./images/favicon.ico" alt="Sanjeevani Kaya Hospital"
+                    class="bg-white shadow-md h-full p-2 rounded-md" width="180" height="150" />
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="/index.html" class="nav-link font-bold tracking-wide">Home</a>
+                    <a href="#" class="nav-link font-bold tracking-wide">About</a>
+
+                    <div class="relative group">
+                        <button class="nav-link font-bold tracking-wide">Treatments</button>
+                        <div class="dropdown-menu">
+                            <a href="#">Skin Care</a>
+                            <a href="#">Hair Care</a>
+                            <a href="#">Wellness</a>
+                        </div>
+                    </div>
+
+                    <a href="#" class="nav-link font-bold tracking-wide">Contact</a>
+                </nav>
+
+                <!-- CTA -->
+                <a href="#" class="booking-btn hidden md:block tracking-wide font-bold">
+                    Book Appointment
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="md:hidden text-2xl">
+                    ☰
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu hidden">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Treatments</a>
+            <a href="#">Contact</a>
+            <a href="#" class="mobile-cta">Book Appointment</a>
+        </div>
+    </header>
+
+    <section class="herodetails relative min-h-screen  flex flex-col py-32">
+
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="./images/infrastructure/i1.jpeg" alt="" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/60"></div>
+        </div>
+
+        <!-- Doctor Card -->
+        <div class="relative z-10 w-full max-w-4xl mx-auto px-6 py-10
+        bg-white/10 backdrop-blur-md
+        rounded-2xl border border-white/20
+        text-white shadow-2xl ">
+
+            <div class="flex flex-col md:flex-row gap-10 items-center justify-start">
+
+                <!-- Doctor Image -->
+                <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-white/20 shrink-0">
+                    <img src="./images/doctors/amit_sharma.webp" alt="Dr. Pradeep Mathur"
+                        class="w-full h-full object-cover">
+                </div>
+
+                <!-- Doctor Info -->
+                <div class="text-center md:text-left">
+                    <h2 class="text-4xl font-bold capitalize">amit sharma</h2>
+                    <p class="text-xl text-gray-300 mt-2 capitalize">
+                        accupressure specialist
+                    </p>
+
+                    <a href="#appointment" class="inline-block mt-6 bg-green-600 hover:bg-green-500
+                          px-8 py-3 rounded-xl font-bold transition-all duration-300">
+                        Book Appointment
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 my-4">
+
+            <div class="grid grid-cols-1 lg:grid-cols-6 gap-10 items-start">
+
+                <!-- LEFT: Personal Statement (75%) -->
+                <div class="lg:col-span-4 bg-white/5 backdrop-blur-md
+                                border border-white/10 rounded-2xl p-8">
+
+                    <h3 class="text-3xl font-bold mb-6">
+                        Personal Statement
+                    </h3>
+
+                    <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                        Dr. Amit Sharma is an accupressure specialist practicing at Sanjeevani Kaya Shodhan Sansthan in
+                        Gohana, Haryana.
+                    </p>
+
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        He
+                        specializes in acupressure therapy, offering natural pain relief treatments to patients seeking
+                        holistic healing
+                        methods.
+
+                    </p>
+
+                </div>
+
+                <!-- RIGHT: Doctor Information (25%) -->
+                <div class="lg:col-span-2 bg-white/5 backdrop-blur-md
+                                border border-white/10 rounded-2xl p-8">
+
+                    <h3 class="text-2xl font-bold mb-6">
+                        Doctor Information
+                    </h3>
+
+                    <ul class="space-y-5 text-gray-300">
+
+                        <li class="flex gap-3">
+                            <i class="fa-solid fa-stethoscope text-green-500 mt-1"></i>
+                            <div>
+                                <span class="font-semibold text-white">Speciality</span><br>
+                                Yoga & Naturopathy Specialist
+                            </div>
+                        </li>
+
+                        <li class="flex gap-3">
+                            <i class="fa-solid fa-leaf text-green-500 mt-1"></i>
+                            <div>
+                                <span class="font-semibold text-white">Other Areas</span><br>
+                                Naturopathic Physician
+                            </div>
+                        </li>
+
+                        <li class="flex gap-3">
+                            <i class="fa-solid fa-graduation-cap text-green-500 mt-1"></i>
+                            <div>
+                                <span class="font-semibold text-white">Education</span><br>
+                                25 Degrees, Jaipur University (1996)
+                            </div>
+                        </li>
+
+                        <li class="flex gap-3">
+                            <i class="fa-solid fa-briefcase text-green-500 mt-1"></i>
+                            <div>
+                                <span class="font-semibold text-white">Experience</span><br>
+                                CMHO at Sanjeevani Kaya Shodhan Sansthan
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+</body>
+
+</html>

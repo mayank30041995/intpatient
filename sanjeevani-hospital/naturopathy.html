@@ -1,271 +1,308 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Sanjeevani Hospital</title>
-    <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanjeevani Kaya Hospital</title>
 
-    <!-- CSS Files
-        ================================================== -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="icon" href="images/elite.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap">
-    <link rel="stylesheet" href="css/plugins.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/color.css" type="text/css">
+    <!-- Heebo Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
 
-    <!-- color scheme -->
-    <link rel="stylesheet" href="css/colors/brown.css" type="text/css" id="colors">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        heading: ['Raleway', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/owl.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 
-<body>
+<body class="font-sans text-white">
 
-    <!-- float text begin -->
-    <div class="float-text">
-        <div class="de_social-icons">
-            <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-            <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-            <a href="#"><i class="fa fa-instagram fa-lg"></i></a>
-        </div>
-        <span><a href="booking.html">Book Now</a></span>
-    </div>
-    <!-- float text close -->
+    <!-- ================= HEADER ================= -->
+    <header class="site-header fixed top-0 w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 py-2">
+            <div class="flex items-center justify-between h-16">
 
-    <div id="wrapper">
-        <!-- header begin -->
-        <header class="header-fullwidth menu-expand transparent">
-            <div class="container-fluid">
-                <div class="row-fluid">
-                    <div class="col-md-12">
-                        <!-- logo begin -->
-                        <div id="logo">
-                            <a href="index.html">
-                                <img class="logo" src="images/favicon.ico" alt="" width="200" height="70">
-                            </a>
+                <!-- Logo -->
+                <img src="./images/favicon.ico" alt="Sanjeevani Kaya Hospital"
+                    class="bg-white shadow-md h-full p-2 rounded-md" width="180" height="150" />
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="nav-link font-bold tracking-wide">Home</a>
+                    <a href="#" class="nav-link font-bold tracking-wide">About</a>
+
+                    <div class="relative group">
+                        <button class="nav-link font-bold tracking-wide">Treatments</button>
+                        <div class="dropdown-menu">
+                            <a href="#">Skin Care</a>
+                            <a href="#">Hair Care</a>
+                            <a href="#">Wellness</a>
                         </div>
-                        <!-- logo close -->
-
-                        <!-- small button begin -->
-                        <div id="mo-button-open" class="mo-bo-s1">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <!-- small button close -->
                     </div>
-                </div>
+
+                    <a href="#" class="nav-link font-bold tracking-wide">Contact</a>
+                </nav>
+
+                <!-- CTA -->
+                <a href="#" class="booking-btn hidden md:block tracking-wide font-bold">
+                    Book Appointment
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="md:hidden text-2xl">
+                    ☰
+                </button>
+
             </div>
-        </header>
-        <!-- header close -->
+        </div>
 
-        <!-- menu overlay begin -->
-        <div id="menu-overlay" class="slideDown">
-            <div class="container-fluid">
-                <div class="row-fluid">
-                    <div class="col-md-12">
-                        <div id="mo-button-close">
-                            <div class="line-1"></div>
-                            <div class="line-2"></div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu hidden">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Treatments</a>
+            <a href="#">Contact</a>
+            <a href="#" class="mobile-cta">Book Appointment</a>
+        </div>
+    </header>
+    <!-- ================= HERO SLIDER ================= -->
+    <section class="herodetails relative min-h-screen flex items-center justify-center">
+
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="./images/infrastructure/i1.jpeg" alt="" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/60"></div>
+        </div>
+        <!--  -->
+
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="./images/infrastructure/i1.jpeg" alt="" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/60"></div>
+        </div>
+        <div class="flex flex-col gap-2">
+            <!-- Center Card -->
+            <div class="relative max-w-3xl mx-auto px-8 py-12
+           bg-white/10 backdrop-blur-md
+           rounded-2xl border border-white/20
+           text-center text-white shadow-2xl">
+
+                <h1 class="tracking-wider text-4xl lg:text-6xl font-saint font-bold mb-6">
+                    Naturopathy
+                </h1>
+
+                <p class="text-xl lg:text-3xl leading-tight font-delafield opacity-90">
+                    Naturopathy is a drug-free, non-invasive system of medicine that emphasizes
+                    the body’s inherent ability to heal itself.
+                </p>
+
+            </div>
+
+
+            <div class="container">
+                <!-- slider card -->
+                <div class="relative max-w-6xl mx-auto px-6">
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20
+                        rounded-2xl shadow-2xl p-8">
+
+                        <!-- <div class="group bg-white/90 rounded-xl overflow-hidden
+                                                        transform transition-all duration-500
+                                                        hover:-translate-y-2 hover:shadow-2xl my-2">
+                        <img src="./images/treatment/natur-d.jpeg" class="h-96 w-full object-cover
+                                                            transition-transform duration-700
+                                                            group-hover:scale-110"> -->
+                        <!-- <div class="p-4 text-gray-800 text-center">
+                            <h3 class="text-xl font-bold">Panchakarma</h3>
+                            <p class="text-sm mt-2">Deep detox therapies</p>
+                        </div> -->
+                        <!-- </div> -->
+
+
+                        <!-- OWL SLIDER STARTS HERE -->
+                        <div class="owl-carousel therapy-slider w-full relative">
+
+                            <!-- slide -->
+                            <div class="group bg-white/90 rounded-xl overflow-hidden
+                                transform transition-all duration-500
+                                hover:-translate-y-2 hover:shadow-2xl">
+                                <img src="./images/treatment/natur-a.jpeg" class="h-56 w-full object-cover
+                                    transition-transform duration-700
+                                    group-hover:scale-110">
+                                <div class="p-4 text-gray-800 text-center">
+                                    <h3 class="text-xl font-bold">Naturopathy</h3>
+                                    <p class="text-sm mt-2">Natural healing therapies</p>
+                                </div>
+                            </div>
+
+                            <!-- slide -->
+                            <div class="group bg-white/90 rounded-xl overflow-hidden
+                                transform transition-all duration-500
+                                hover:-translate-y-2 hover:shadow-2xl">
+                                <img src="./images/treatment/natur-b.jpeg" class="h-56 w-full object-cover
+                                    transition-transform duration-700
+                                    group-hover:scale-110">
+                                <div class="p-4 text-gray-800 text-center">
+                                    <h3 class="text-xl font-bold">Ayurveda</h3>
+                                    <p class="text-sm mt-2">Ancient holistic science</p>
+                                </div>
+                            </div>
+
+                            <!-- slide -->
+                            <div class="group bg-white/90 rounded-xl overflow-hidden
+                                transform transition-all duration-500
+                                hover:-translate-y-2 hover:shadow-2xl">
+                                <img src="./images/treatment/natur-c.jpeg" class="h-56 w-full object-cover
+                                    transition-transform duration-700
+                                    group-hover:scale-110">
+                                <div class="p-4 text-gray-800 text-center">
+                                    <h3 class="text-xl font-bold">Panchakarma</h3>
+                                    <p class="text-sm mt-2">Deep detox therapies</p>
+                                </div>
+                            </div>
+                            <!-- slide -->
+                            <div class="group bg-white/90 rounded-xl overflow-hidden
+                                transform transition-all duration-500
+                                hover:-translate-y-2 hover:shadow-2xl">
+                                <img src="./images/treatment/natur-d.jpeg" class="h-56 w-full object-cover
+                                    transition-transform duration-700
+                                    group-hover:scale-110">
+                                <div class="p-4 text-gray-800 text-center">
+                                    <h3 class="text-xl font-bold">Panchakarma</h3>
+                                    <p class="text-sm mt-2">Deep detox therapies</p>
+                                </div>
+                            </div>
+
                         </div>
+                        <!-- OWL SLIDER ENDS -->
 
-                        <div class="pt80 pb80">
-                            <div class="mo-nav text-center">
-                                <a href="index.html">
-                                    <img class="logo" src="images/favicon.ico" alt="" width="200" height="70">
+
+                        <!-- SERVICES  -->
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 items-center border border-gray-200 p-4">
+
+                            <!-- Column 1 -->
+                            <div class="flex items-center gap-4">
+                                <img src="./images/logo/48x48x10.png" alt="Treatment" class="w-12 h-12 object-contain">
+                                <div>
+                                    <h3 class="text-xl font-bold text-white">Treatment</h3>
+                                    <p class="text-gray-300 text-sm">Comprehensive therapies for holistic health</p>
+                                </div>
+                            </div>
+
+                            <!-- Column 2 -->
+                            <div class="flex items-center gap-4">
+                                <img src="./images/logo/48x48x9.png" alt="Services" class="w-12 h-12 object-contain">
+                                <div>
+                                    <h3 class="text-xl font-bold text-white">Services</h3>
+                                    <p class="text-gray-300 text-sm">Expert care across multiple wellness domains</p>
+                                </div>
+                            </div>
+
+                            <!-- Column 3 -->
+                            <div class="flex items-center gap-4">
+                                <img src="./images/logo/48x48x8.png" alt="TOGA" class="w-12 h-12 object-contain">
+                                <div>
+                                    <h3 class="text-xl font-bold text-white">YOGA</h3>
+                                    <p class="text-gray-300 text-sm">Traditional and modern therapies combined</p>
+                                </div>
+                            </div>
+
+                            <!-- Column 4 (Book Now button) -->
+                            <div class="flex justify-center md:justify-end">
+                                <a href="#booking"
+                                    class="bg-green-600 hover:bg-green-500 text-white font-bold px-6 py-4 rounded-xl shadow-lg transition-all duration-300">
+                                    Book Now
                                 </a>
-
-                                <div class="spacer-single"></div>
-
-                                <!-- mainmenu begin -->
-                                <ul id="mo-menu">
-                                    <li>
-                                        Home
-                                        <ul>
-                                            <li><a href="index.html">Fullscreen Slider</a></li>
-                                            <li><a href="index-slider-2.html">Fullscreen Slider 2</a></li>
-                                            <li><a href="index-slider-3.html">Fullscreen Slider 3</a></li>
-                                            <li><a href="index-full-page.html">Full Page</a></li>
-                                            <li><a href="index-video-background.html">Fullsreen Video</a></li>
-                                            <li><a href="index-room-slider-1.html">New: Room Slider 1</a></li>
-                                            <li><a href="index-snowy.html">New: Slider + Snow</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li>
-                                        Rooms
-                                        <ul>
-                                            <li><a href="room-2-cols.html">2 Columns</a></li>
-                                            <li><a href="room.html">3 Columns</a></li>
-                                            <li><a href="room-single.html">Room Single</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="booking.html">Booking</a></li>
-                                    <li><a href="offer.html">Offers</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="gallery.html">Gallery</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                                <!-- mainmenu close -->
-
                             </div>
+
+                        </div>
+                        <!-- END OF SERVICES -->
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-start p-4 my-2">
+
+                            <!-- Left Column (75%) -->
+                            <div class="md:col-span-3 text-white">
+                                <h2 class="text-3xl font-bold mb-4">Naturopathy</h2>
+                                <ul class="list-disc list-inside space-y-2 text-gray-300 text-lg">
+                                    <li>Treatment modalities include diet therapy, therapeutic fasting, hydrotherapy,
+                                        mud
+                                        therapy, sun therapy,
+                                        and massage</li>
+                                    <li>Focuses on detoxification, metabolic correction, and immune enhancement</li>
+                                    <li>Helps restore internal balance by removing accumulated toxins and correcting
+                                        lifestyle-related disorders
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Right Column (25%) -->
+                            <div class="md:col-span-1 text-white">
+                                <h3 class="text-2xl font-semibold mb-4">Facilities</h3>
+                                <ul class="space-y-2 text-gray-300">
+                                    <li class="flex items-center gap-2">
+                                        <i class="fas fa-check text-green-500"></i>
+                                        Empathy and individualized care
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="fas fa-check text-green-500"></i>
+                                        Natural, non-invasive treatment methods
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="fas fa-check text-green-500"></i>
+                                        Long-term wellness rather than temporary relief
+                                    </li>
+                                </ul>
+                            </div>
+
                         </div>
                     </div>
+
+
+
                 </div>
+
             </div>
         </div>
-    </div>
-    <!-- menu overlay close -->
-
-    <div id="background" data-bgimage="url(images/room-single/bg.jpg) fixed"></div>
-    <div id="content-absolute">
-
-        <!-- subheader -->
-        <section id="subheader" class="no-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h4 class="my-3">Naturopathy</h4>
-                        <h1>Naturopathy is a drug-free, non-invasive system of medicine that emphasizes the body’s
-                            inherent ability to heal itself.</h1>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="section-main" class="no-bg no-top" aria-label="section-menu">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="de-content-overlay">
-                            <div class="d-carousel wow fadeInRight" data-wow-delay="2s">
-                                <div id="carousel-rooms" class="owl-carousel owl-theme">
-
-                                    <div class="item">
-                                        <div class="picframe">
-                                            <a class="image-popup-gallery" href="images/treatment/natur-a.jpeg">
-                                                <span class="overlay">
-                                                    <span class="pf_title"><i class="icon_search"></i></span>
-                                                    <span class="pf_caption">Naturopathy</span>
-                                                </span>
-                                            </a>
-                                            <img src="images/treatment/natur-b.jpeg" alt="">
-                                        </div>
-                                    </div>
-
-                                    <div class="item">
-                                        <div class="picframe">
-                                            <a class="image-popup-gallery" href="images/treatment/natur-c.jpeg">
-                                                <span class="overlay">
-                                                    <span class="pf_title"><i class="icon_search"></i></span>
-                                                    <span class="pf_caption">Naturopathy</span>
-                                                </span>
-                                            </a>
-                                            <img src="images/treatment/natur-c.jpeg" alt="">
-                                        </div>
-                                    </div>
+    </section>
 
 
-                                    <div class="item">
-                                        <div class="picframe">
-                                            <a class="image-popup-gallery" href="images/treatment/natur-b.jpeg">
-                                                <span class="overlay">
-                                                    <span class="pf_title"><i class="icon_search"></i></span>
-                                                    <span class="pf_caption">Naturopathy</span>
-                                                </span>
-                                            </a>
-                                            <img src="images/treatment/natur-b.jpeg" alt="">
-                                        </div>
-                                    </div>
 
-                                </div>
+    <!-- jQuery first -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-                                <div class=" d-arrow-left mod-a"><i class="fa fa-angle-left"></i>
-                                </div>
-                                <div class="d-arrow-right mod-a"><i class="fa fa-angle-right"></i></div>
+    <!-- Your custom JS -->
+    <script src="js/custom.js"></script>
 
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="d-room-details de-flex">
-                                        <div class="de-flex-col">
-                                            <img src="images/ui/avatar.jpg" alt="">Treatment
-                                        </div>
-                                        <div class="de-flex-col">
-                                            <img src="images/ui/floorplan.svg" alt="">Services
-                                        </div>
-                                        <div class="de-flex-col">
-                                            <img src="images/ui/bed.svg" alt="">Yoga
-                                        </div>
-                                        <div class="de-flex-col">
-                                            <a href="booking.html" class="btn-main"><span>Book Now</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h3>Naturopathy</h3>
-                                    <p>• Treatment modalities include diet therapy, therapeutic fasting,
-                                        hydrotherapy,
-                                        mud therapy, sun therapy, and massage</p>
-                                    <p>• Focuses on detoxification, metabolic correction, and immune enhancement
-                                    </p>
-
-                                    <p>• Helps restore internal balance by removing accumulated toxins and
-                                        correcting
-                                        lifestyle-related disorders</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <h3>Facilities</h3>
-                                    <ul class="ul-style-2">
-                                        <li>Empathy and individualized care</li>
-                                        <li>Natural, non-invasive treatment methods</li>
-                                        <li>Long-term wellness rather than temporary relief</li>
-
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- subheader close -->
-        <!-- footer begin -->
-        <footer class="no-top pl20 pr20">
-            <div class="subfooter">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6">&copy; Copyright 2025 - Sanjeevani<span class="id-color"></span>
-                        </div>
-                        <div class="col-md-6 text-right">
-                            <div class="social-icons">
-                                <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                                <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                                <a href="#"><i class="fa fa-rss fa-lg"></i></a>
-                                <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                <a href="#"><i class="fa fa-skype fa-lg"></i></a>
-                                <a href="#"><i class="fa fa-dribbble fa-lg"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a href="#" id="back-to-top"></a>
-        </footer>
-        <!-- footer close -->
-    </div>
-
-    <!-- Javascript Files
-    ================================================== -->
-    <script src="js/plugins.js"></script>
-    <script src="js/designesia.js"></script>
 
 </body>
 
