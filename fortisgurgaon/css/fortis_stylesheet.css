@@ -549,7 +549,7 @@ a:hover {
 
 .banner-hero-title {
   position: relative;
-  top: 30vh;
+  top: 10rem;
   color: #0ca854;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }

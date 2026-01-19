@@ -82,6 +82,18 @@ a:hover {
   background: #057d5f !important;
 }
 
+.onpagetitle {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+}
+
+.hero-title {
+  text-align: center;
+  font-size: 3.2rem !important;
+  color: #FFF;
+}
+
 #openBtn {
   position: fixed;
   bottom: 20px;
@@ -131,7 +143,7 @@ a:hover {
   gap: 5px;
 }
 
-.drawer-items > h2 {
+.drawer-items>h2 {
   color: #fff;
   font-weight: 600;
 }
@@ -301,17 +313,18 @@ body {
 /*jumbotron starts*/
 #carouselExample img {
   margin: auto;
+  aspect-ratio: 16 / 5;
 }
 
-.tabspan > div > div > div > h1 {
+.tabspan>div>div>div>h1 {
   padding-top: 20px !important;
 }
 
-.tabspan > div > div {
+.tabspan>div>div {
   box-shadow: #3d805d 0px 7px 29px 0px;
 }
 
-.tabspan > div > div h2 {
+.tabspan>div>div h2 {
   font-weight: 600;
   letter-spacing: 0.08rem;
 }
@@ -557,7 +570,7 @@ hr.hrline {
     padding: 2px 0;
   }
 
-  .brand h6 > img {
+  .brand h6>img {
     max-width: 150px;
   }
 
@@ -668,7 +681,7 @@ hr.hrline {
     width: 25%;
   }
 
-  .patient-service-detail h6 > img {
+  .patient-service-detail h6>img {
     max-width: 150px;
   }
 
@@ -740,7 +753,7 @@ hr.hrline {
     padding: 5px 0;
   }
 
-  .brand h6 > img {
+  .brand h6>img {
     max-width: 155px;
   }
 
@@ -849,7 +862,7 @@ hr.hrline {
     width: 30%;
   }
 
-  .patient-service-detail h6 > img {
+  .patient-service-detail h6>img {
     max-width: 160px;
   }
 
@@ -1046,7 +1059,7 @@ hr.hrline {
   font-weight: 500;
 }
 
-form ul li > input[type='file'] {
+form ul li>input[type='file'] {
   border: none;
   cursor: pointer;
   width: 180px;
@@ -1144,7 +1157,7 @@ form ul li label {
   color: #fff;
 }
 
-#doctors > div > h1 {
+#doctors>div>h1 {
   padding-top: 35px;
   padding-bottom: 25px;
   font-weight: 600;
@@ -1194,11 +1207,31 @@ form ul li label {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+  #carouselExample img {
+    margin: auto;
+    aspect-ratio: 4 / 4;
+  }
+
+  .onpagetitle {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+  }
+
+  .hero-title {
+    text-align: center;
+    font-size: 2.2rem !important;
+    color: #FFF;
+    min-width: max-content;
+  }
+
   ::-webkit-scrollbar {
     display: none;
   }
 
   #openBtn {
+    display: flex;
+    width: max-content;
     bottom: 10px;
     right: 10px;
     font-size: 14px;

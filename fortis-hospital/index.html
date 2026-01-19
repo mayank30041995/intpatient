@@ -6,7 +6,7 @@
   <title>Fortis HealthCare India- Fortis Hospital India</title>
   <meta charset="utf-8" />
   <meta name="description" content="Fortis India Doctors appointment, Opinion for International patients.
-  Fortis hospital international patient care " />
+  Fortis hospital international patient care" />
   <meta name="keywords" content="Fortis India Doctors appointment, Fortis Online appointment, Forties Opinion,
     Top hospitals in india, 
      cardiology cancer, Orthopaedics ,knee replacement" />
@@ -55,68 +55,7 @@
       width: 500px;
     }
   </style>
-  <!-- <script>
-    function ipLookUp() {
-      var xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-          var response = JSON.parse(xhttp.response);
-          console.log("location responce ", response, response.country);
-          window.ttLocation = response.country;
-          if (response.country === "US") {
-            // console.log("please redirect my page is https://devtest.intpatient.com/ip.html");
-            //window.location.href = "https://www.treatmenttraveller.com/";
-            document.title = "Page not found";
-            setVisible(".err", true);
-            setVisible("#loader", false);
-          } else {
-            setVisible("#main", true);
-            setVisible("#loader", false);
-            initChat();
-          }
-        }
-      };
-      xhttp.open(
-        "GET",
-        "https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation",
-        true
-      );
-      xhttp.send();
-    }
-    ipLookUp();
-    function onReady(callback) {
-      var intervalId = window.setInterval(function () {
-        if (document.getElementsByTagName("body")[0] !== undefined) {
-          window.clearInterval(intervalId);
-          callback.call(this);
-        }
-      }, 1000);
-    }
 
-    function setVisible(selector, visible) {
-      document.querySelector(selector).style.display = visible
-        ? "block"
-        : "none";
-    }
-
-    function initChat() {
-      if (window.ttLocation !== "US") {
-        console.log("starting the chat ", window.ttLocation);
-        window._lc = window._lc || {};
-        window.__lc.license = 7595311;
-        ; (function (n, t, c) { function i(n) { return e.h ? e._h.apply(null, n) : e._q.push(n) } var e = { _q: [], _h: null, _v: "2.0", on: function () { i(["on", c.call(arguments)]) }, once: function () { i(["once", c.call(arguments)]) }, off: function () { i(["off", c.call(arguments)]) }, get: function () { if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load."); return i(["get", c.call(arguments)]) }, call: function () { i(["call", c.call(arguments)]) }, init: function () { var n = t.createElement("script"); n.async = !0, n.type = "text/javascript", n.src = "https://cdn.livechatinc.com/tracking.js", t.head.appendChild(n) } }; !n._lc.asyncInit && e.init(), n.LiveChatWidget = n.LiveChatWidget || e }(window, document, [].slice))
-      }
-      window.addEventListener('load', function () {
-        console.log("Page loaded ", window.ttLocation);
-        if (window.ttLocation !== "US") {
-          LC_API.on_chat_started = function () {
-            gtag('event', 'conversion', { 'send_to': 'AW-922729084/D0RuCNTO4IoBEPz0_rcD' });
-          };
-        }
-      });
-    }
-
-  </script> -->
   <script>
     function ipLookUp() {
       var xhttp = new XMLHttpRequest();
@@ -156,20 +95,7 @@
       document.querySelector(selector).style.display = visible ? 'block' : 'none';
     }
 
-    // function initChat() {
-    //   if (window.ttLocation !== "IN") {
-    //     console.log("starting the chat ", window.ttLocation);
-    //     window.__lc = window.__lc || {}; window.__lc.license = 7595311; (function () { var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true; lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s); })();
-    //   }
-    //   window.addEventListener('load', function () {
-    //     console.log("Page loaded ", window.ttLocation);
-    //     if (window.ttLocation !== "IN") {
-    //       LC_API.on_chat_started = function () {
-    //         gtag('event', 'conversion', { 'send_to': 'AW-922729084/D0RuCNTO4IoBEPz0_rcD' });
-    //       };
-    //     }
-    //   });
-    // }
+
   </script>
   <!-- Google Tag Manager -->
   <script>
@@ -198,7 +124,7 @@
     </div>
   </div>
 
-  <button id="openBtn" class="btn" style="background: #25D366;" onclick="trackConversion()">
+  <button id="openBtn" class="btn" style="background: #25D366;" data-url="https://what.sapp.link/fmri">
     <i class="fab fa-whatsapp fa-4x" style="color: #FFF;"></i>
   </button>
 
@@ -232,9 +158,8 @@
             <ul class="text-center white">
               <li>
                 Get Doctor’s opinion & cost estimate
-                <a href="tel:917210699000"><i class="fa fa-phone"></i></a><a
-                  href="https://api.whatsapp.com/send?phone=917210699000&text=&source=&data=" target="_blank"><i
-                    class="fab fa-whatsapp"></i></a>
+                <a onclick="trackConversion(); return false"><i class="fa fa-phone"></i></a><a data-url="https://what.sapp.link/fmri"
+                  target="_blank"><i class="fab fa-whatsapp"></i></a>
               </li>
               <li>(+91) 98991 87776</li>
             </ul>
@@ -292,6 +217,7 @@
     <!--jumbotron starts-->
     <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="false">
       <div class="carousel-inner">
+
         <div class="carousel-item active">
           <img src="img/escort.jpg" class="d-block w-100" alt="..." />
         </div>
@@ -307,6 +233,13 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
+      <div class="onpagetitle">
+        <h1 class="hero-title">Fortis Hospital India</h1>
+        <a class="nav-link hero-title bg-light w-25 mx-auto my-3" onclick="trackConversion(); return false"
+          style="color: #0CA854; border-radius: 8px"><i style="color: #0CA854;" class="fa fa-solid fa-message "
+            aria-hidden="true"></i>
+          Live Chat</a>
+      </div>
     </div>
     <!--jumbotron ends-->
 
@@ -526,7 +459,7 @@
           <div class="col-12">
             <h1 class="text-center pb-3">Locations</h1>
             <div class="row">
-              <div class="col-md-6 col-sm-12 pb-5">
+              <!-- <div class="col-md-6 col-sm-12 pb-5">
                 <div class="hospital hospital-1">
                   <a href="https://fortisescortsdelhi.intpatient.com">
                     <img src="img/fortis-delhi.jpg" class="img-fluid"
@@ -537,10 +470,10 @@
                     </h5>
                   </a>
                 </div>
-              </div>
+              </div> -->
               <div class="col-md-6 col-sm-12 pb-5">
                 <div class="hospital hospital-2">
-                  <a href="https://fortisgurgaon.intpatient.com/">
+                  <a href="https://fortisgurgaon.hosplan.com/">
 
                     <img src="img/fortis-gurgaon.jpg" class="img-fluid"
                       alt="Fortis Memorial Research Institute Gurgaon" />
@@ -552,7 +485,7 @@
               </div>
               <div class="col-md-6 col-sm-12 pb-5">
                 <div class="hospital hospital-1">
-                  <a href="https://fortisbangalore.intpatient.com/">
+                  <a href="https://fortisbangalore.hosplan.com/">
 
                     <img src="img/fortis-bangalore.jpg" class="img-fluid" alt="Fortis Hospital, Bangalore" />
                     <h5 class="text-center">Fortis Hospital, Bangalore</h5>
@@ -570,7 +503,7 @@
                     </a>
                   </div>
                 </div> -->
-              <div class="col-md-6 col-sm-12 pb-5">
+              <!-- <div class="col-md-6 col-sm-12 pb-5">
                 <div class="hospital hospital-1">
                   <a href="fortismumbai.intpatient.com">
 
@@ -579,7 +512,7 @@
                       Mumbai</h5>
                   </a>
                 </div>
-              </div>
+              </div> -->
 
             </div>
           </div>
@@ -632,7 +565,7 @@
                         class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -698,7 +631,7 @@
                       </h6>
 
                       <a onclick="$zoho.salesiq.floatwindow.visible('show')"
-                        href="#Connect On WhatsApp" class="chat"><span
+                        data-url="https://what.sapp.link/fmri" class="chat"><span
                           class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                             class="fab fa-whatsapp "
                             style="font-size:15px;"></i>&nbsp;Connect On
@@ -768,7 +701,7 @@
                       <img src="img/doc/nikhilkumar.jpg" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -825,7 +758,7 @@
                       <img src="img/doc/ssmurthy.jpg" alt="" class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -877,7 +810,7 @@
                       <img src="img/doc/udgeth.png" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -944,7 +877,7 @@
                       <img src="img/doc/Rakesh-Kumar-Saklani_0.jpg" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -1004,7 +937,7 @@
                       <img src="img/doc/Dr-Mukul-Bhargava.jpg" alt="" class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -1061,7 +994,7 @@
                       <img src="img/doc/dr suresh patel.jpg" alt="" class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -1113,7 +1046,7 @@
                       <img src="img/doc/Dr Meenakshi.jpg" alt="" class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -1167,7 +1100,7 @@
                       <img src="img/doc/Dr govini.jpg" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -1205,7 +1138,7 @@
                       <img src="img/doc/jyothii.jpg" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -1245,7 +1178,7 @@
                       <img src="img/doc/dr-atul-mathur6759812.jpg" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -1313,7 +1246,7 @@
                       <img src="img/doc/Dr-Anil-Saxena8662979.jpg" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -1382,7 +1315,7 @@
                       <img src="img/doc/ritwik.png" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -1431,7 +1364,7 @@
                         class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -1495,7 +1428,7 @@
                       <img src="img/doc/Dr-Aparna-Jaswal2560351.jpg" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -1563,7 +1496,7 @@
                       <img src="img/doc/jayant.png" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -1622,7 +1555,7 @@
                       <img src="img/doc/Jangid.jpg" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -1697,7 +1630,7 @@
                       <img src="img/doc/manojpadman.png" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -1761,7 +1694,7 @@
                       <img src="img/doc/rashmirajat.png" alt="" class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -1821,7 +1754,7 @@
                       <img src="img/doc/Dr.-somesh-virmani.jpg" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -1884,7 +1817,7 @@
                       <img src="img/doc/dillipchand.jpg" alt="" class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -1923,7 +1856,7 @@
                       <img src="img/doc/karthisundhar.png" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -1985,7 +1918,7 @@
                       <img src="img/doc/mohanganesan.jpg" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -2021,7 +1954,7 @@
                       <img src="img/doc/Dr Gokulraj.jpg" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -2064,7 +1997,7 @@
                       <img src="img/doc/Dr-Praveen-Gupta_0_0.jpg" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -2118,7 +2051,7 @@
                       <img src="img/drRana.jpg" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -2183,7 +2116,7 @@
                       <img src="img/doc/sandeepvaishya.png" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -2245,7 +2178,7 @@
                       <img src="img/doc/Utkarsh_Bhagat.jpg" alt="" class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -2312,7 +2245,7 @@
                       <img src="img/doc/Dr  Pravina j - low-1637847700.jpg" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -2352,7 +2285,7 @@
                       <img src="img/doc/debashis.jpg" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -2406,7 +2339,7 @@
                       <img src="img/doc/Dr Bhanu K.jpg" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -2447,7 +2380,7 @@
                       <img src="img/doc/Vinod_Raina.jpg" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -2501,7 +2434,7 @@
                       <img src="img/doc/dr-mukesh-patekar.jpg" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -2553,7 +2486,7 @@
                       <img src="img/doc/Suman profile_0.jpg" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -2600,7 +2533,7 @@
                       <img src="img/doc/raghavkesri.jpeg" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -2659,7 +2592,7 @@
                       <img src="img/doc/suhas.jpeg" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -2719,7 +2652,7 @@
                       <img src="img/doc/ankurBhal.jpg" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -2781,7 +2714,7 @@
                       <img src="img/drVivek.jpg" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -2855,7 +2788,7 @@
                       <img src="img/drAnupam.jpg" alt class="rounded-circle" />
                     </h6>
 
-                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp"
+                    <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
                       class="chat"><span class="opinion d-inline-block btn btn-success d-block button-w mx-auto mb-2"><i
                           class="fab fa-whatsapp " style="font-size:15px;"></i>&nbsp;Connect On
                         WhatsApp</span></a>
@@ -2978,7 +2911,8 @@
               </a>
             </div>
             <div class="col-md-3 col-6 pt-2">
-              <a onclick="$zoho.salesiq.floatwindow.visible('show')" href="#Connect On WhatsApp" class="chat">
+              <a onclick="$zoho.salesiq.floatwindow.visible('show')" data-url="https://what.sapp.link/fmri"
+                class="chat">
                 <h5 class="text-center">
                   <i class="fa fa-comments" aria-hidden="true"></i>
                 </h5>
@@ -3111,7 +3045,26 @@
     style="display: none; visibility: hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
+<script defer>
+  // Get all button elements on the page
 
+  const buttons = document.querySelectorAll('button,p,a');
+
+  // Loop through each button
+  buttons.forEach(function (button) {
+    // Attach a click event listener to each button
+    button.addEventListener('click', function () {
+      // Get the URL from the button's data-url attribute
+      const url = button.getAttribute('data-url');
+
+      // Check if a URL is defined for the button
+      if (url) {
+        // Open the URL in a new tab
+        window.open(url, '_blank');
+      }
+    });
+  });
+</script>
 
 <!-- Zoho Live Chat -->
 <script>window.$zoho = window.$zoho || {}; $zoho.salesiq = $zoho.salesiq || { ready: function () { } }</script>

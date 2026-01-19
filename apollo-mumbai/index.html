@@ -18,7 +18,7 @@
     <meta name="Baiduspider" content="noindex, nofollow">
     <meta name="YandexBot" content="noindex, nofollow">
     <meta name="theme-color" content="#015E79" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="css\apollo_stylesheet.css" rel="stylesheet" />
@@ -35,33 +35,6 @@
     <link rel="preload" as="font">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/apollo_stylesheet.css">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-922729084">
-    </script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'AW-922729084');
-    </script>
-
-    <!-- Event snippet for Lead conversion page
-        In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-    <script>
-        function gtag_report_conversion(url) {
-            var callback = function () {
-                if (typeof (url) != 'undefined') {
-                    window.location = url;
-                }
-            };
-            gtag('event', 'conversion', {
-                'send_to': 'AW-922729084/zVS5CMT9j2YQ_PT-twM',
-                'event_callback': callback
-            });
-            return false;
-        }
-    </script>
 
 </head>
 
@@ -78,7 +51,7 @@
     <div class="container-flud mob-hdr-code">
         <div class="top_bar col-sm ">
             <div style="width: 50%;">
-                <p class="text-left" data-url="http://what.sapp.link/apollom"><b>Live Chat: (+91) 98991 87773</b></p>
+                <p class="text-left" data-url="http://what.sapp.link/apollom"><b>Live Chat: (+91) 99111 63990</b></p>
             </div>
             <div style="
       width: 50%;
@@ -127,7 +100,7 @@
                     </li> -->
                     <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
                         <a aria-label="apollo" class="nav-link" href="http://what.sapp.link/apollom" target="_blank">
-                            <i style="color:#00A91B" class="fa fa-whatsapp" aria-hidden="true"></i> Connect on
+                            <i style="color:#00A91B" class="fab fa-whatsapp" aria-hidden="true"></i> Connect on
                             WhatsApp</a>
                     </li>
                 </ul>
@@ -136,34 +109,15 @@
             </div>
         </nav>
     </div>
+    <!-- Right Side Drader -->
+    <section id="corner-drawer">
+        <button id="openBtn" class="btn" style="background: #25D366;" data-url="http://what.sapp.link/apollo-del"
+            rel="noopener noreferrer">
+            <i class="fab fa-whatsapp fa-4x" style="color: #FFF;"></i>
+        </button>
+    </section>
 
-    <button id="openBtn"><img src="img/logo.svg" class="logo-y" alt="HTML5 Icon" width="40px" height="50px">
-        Instant Support</button>
-
-    <div id="drawer" class="drawer">
-        <div id="icon-container">
-            <div id="imasCircle"> <img src="img/logo.svg" class="logo-yx bg-white" alt="HTML5 Icon" width="100px"
-                    height="80px">
-            </div>
-        </div>
-        <div class="drawer-content">
-            <button id="closeBtn" type="button" class="close" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-
-            <div class="drawer-banner">
-                <h2>Instant Support</h2>
-                <p>On Whatsapp</p>
-            </div>
-            <div class="drawer-items">
-                <h2>International Support On Whatsapp</h2>
-                <button class="btn" data-url="http://what.sapp.link/apollom"><i class="fa fa-whatsapp fa-btn"
-                        style="font-size:20px;"></i>
-                    Connect on Whatsapp</button>
-            </div>
-        </div>
-    </div>
-
+    <!--End of Right Side Drader -->
 
 
     <!--slilder-->
@@ -177,6 +131,10 @@
                     <a href="http://what.sapp.link/apollom" target="_blank">
                         <button data-url="http://what.sapp.link/apollom" id="slider-btn2" type="button"
                             class="btn btn-primary btn-lg">Connect on Whatsapp</button></a>
+
+                    <a href="http://what.sapp.link/apollom" target="_blank">
+                        <button onclick="trackConversion(); return false" id="slider-btn2" type="button"
+                            class="btn btn-primary btn-lg">Live Chat</button></a>
                 </div>
 
                 <div class="container-flud  text-center " id="slider-end-text">
@@ -185,7 +143,7 @@
                             <div class="container">
                                 <i id="font-conn" class="fa fa-phone" aria-hidden="false">
                                     <a style="color: #dadada;" href="http://what.sapp.link/apollom" target="_blank">
-                                        <b style="color: #015E79">Contact us on: </b> <br>(+91) 98991 87773</a>
+                                        <b style="color: #015E79">Contact us on: </b> <br>(+91) 99111 63990</a>
                                 </i>
                             </div>
                         </div>
@@ -217,9 +175,15 @@
                     <a href="http://what.sapp.link/apollom" target="_blank">
                         <button data-url="http://what.sapp.link/apollom" id="slider-btn" type="button"
                             class="btn btn-primary btn-lg">
-                            <i class="fa fa-whatsapp">
+                            <i class="fab fa-whatsapp">
                                 Connect on Whatsapp</i>
                         </button></a>
+                        <button onclick="trackConversion(); return false" id="slider-btn" type="button"
+                            class="btn btn-primary btn-lg">
+                            <i class="fab fa-whatsapp">
+                              Live Chat With Us</i>
+                        </button>
+                 
                 </div>
 
 
@@ -229,7 +193,7 @@
                             <div class="container">
                                 <i id="font-conn" class="fa fa-phone" aria-hidden="false">
                                     <a style="color: #dadada;" href="http://what.sapp.link/apollom" target="_blank">
-                                        <b style="color: #1f91b2">Contact us on: </b> (+91) 98991 87773</a>
+                                        <b style="color: #1f91b2">Contact us on: </b> (+91) 99111 63990</a>
                                 </i>
                             </div>
                         </div>
@@ -296,7 +260,7 @@
                             Appoinment </button><bR>
                         <button type="button" data-url="http://what.sapp.link/apollom"
                             onclick="gtag_report_conversion(); return false" class="btn btn-dr"
-                            data-url="http://what.sapp.link/apollom"><i style="color:#fff" class="fa fa-whatsapp"
+                            data-url="http://what.sapp.link/apollom"><i style="color:#fff" class="fab fa-whatsapp"
                                 aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
 
                     </div>
@@ -316,7 +280,7 @@
                             Appoinment</button><bR>
                         <button type="button" data-url="http://what.sapp.link/apollom"
                             onclick="gtag_report_conversion(); return false" class="btn btn-dr"><i style="color:#fff"
-                                class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on
+                                class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on
                             WhatsApp</button>
 
                     </div>
@@ -344,7 +308,7 @@
                             Appoinment</button><bR>
                         <button type="button" data-url="http://what.sapp.link/apollom"
                             onclick="gtag_report_conversion(); return false" class="btn btn-dr"><i style="color:#fff"
-                                class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on
+                                class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on
                             WhatsApp</button>
 
                     </div>
@@ -364,7 +328,7 @@
                             Appoinmentt</button><bR>
                         <button type="button" data-url="http://what.sapp.link/apollom"
                             onclick="gtag_report_conversion(); return false" class="btn btn-dr"><i style="color:#fff"
-                                class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on
+                                class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on
                             WhatsApp</button>
 
                     </div>
@@ -387,7 +351,7 @@
                             Appoinmentt</button><bR>
                         <button type="button" data-url="http://what.sapp.link/apollom"
                             onclick="gtag_report_conversion(); return false" class="btn btn-dr"><i style="color:#fff"
-                                class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on
+                                class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on
                             WhatsApp</button>
 
                     </div>
@@ -421,7 +385,7 @@
                             Appoinmentt</button><bR>
                         <button type="button" data-url="http://what.sapp.link/apollom"
                             onclick="gtag_report_conversion(); return false" class="btn btn-dr"><i style="color:#fff"
-                                class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on
+                                class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on
                             WhatsApp</button>
 
                     </div>
@@ -440,7 +404,7 @@
                             Appoinmentt</button><bR>
                         <button type="button" data-url="http://what.sapp.link/apollom"
                             onclick="gtag_report_conversion(); return false" class="btn btn-dr"><i style="color:#fff"
-                                class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on
+                                class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on
                             WhatsApp</button>
 
                     </div>
@@ -462,7 +426,7 @@
                             Appoinmentt</button><bR>
                         <button type="button" data-url="http://what.sapp.link/apollom"
                             onclick="gtag_report_conversion(); return false" class="btn btn-dr"><i style="color:#fff"
-                                class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on
+                                class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on
                             WhatsApp</button>
 
                     </div>
@@ -493,12 +457,10 @@
                     alt="Card image cap">
                 <div class="card-body">
                     <h1 class="card-title">Dr Nita S. Nair</h1>
-                    <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
-                        data-url="http://what.sapp.link/apollom">Book an
-                        Appoinmentt</button><bR>
+                    <button type="button" onclick="trackConversion();" class="btn btn-dr">Live Chat</button><bR>
                     <button type="button" data-url="http://what.sapp.link/apollom"
                         onclick="gtag_report_conversion(); return false" class="btn btn-dr"><i style="color:#fff"
-                            class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
+                            class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
 
                 </div>
             </div>
@@ -510,12 +472,10 @@
                     alt="Card image cap">
                 <div class="card-body">
                     <h1 class="card-title">Dr. Anil K Dcruz</h1>
-                    <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
-                        data-url="http://what.sapp.link/apollom">Book an
-                        Appoinmentt</button><bR>
+                    <button type="button" onclick="trackConversion();" class="btn btn-dr">Live Chat</button><bR>
                     <button type="button" data-url="http://what.sapp.link/apollom"
                         onclick="gtag_report_conversion(); return false" class="btn btn-dr"><i style="color:#fff"
-                            class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
+                            class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
 
                 </div>
 
@@ -530,12 +490,10 @@
                     alt="Card image cap">
                 <div class="card-body">
                     <h1 class="card-title">Dr. Dipalee Borade </h1>
-                    <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
-                        data-url="http://what.sapp.link/apollom">Book an
-                        Appoinmentt</button><bR>
+                    <button type="button" onclick="trackConversion();" class="btn btn-dr">Live Chat</button><bR>
                     <button type="button" data-url="http://what.sapp.link/apollom"
                         onclick="gtag_report_conversion(); return false" class="btn btn-dr"><i style="color:#fff"
-                            class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
+                            class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
 
                 </div>
             </div>
@@ -547,12 +505,10 @@
                     alt="Card image cap">
                 <div class="card-body">
                     <h1 class="card-title">Dr. Salil Vijay Patkar</h1>
-                    <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
-                        data-url="http://what.sapp.link/apollom">Book an
-                        Appoinmentt</button><bR>
+                    <button type="button" onclick="trackConversion();" class="btn btn-dr">Live Chat</button><bR>
                     <button type="button" data-url="http://what.sapp.link/apollom"
                         onclick="gtag_report_conversion(); return false" class="btn btn-dr"><i style="color:#fff"
-                            class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
+                            class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
 
                 </div>
             </div>
@@ -572,12 +528,10 @@
                 <img class="card-img-top-m-res" src="assets_mob\ONCOLOGY\webp\Dr. Sandeep De.webp" alt="Card image cap">
                 <div class="card-body">
                     <h1 class="card-title">Dr. Sandeep De</h1>
-                    <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
-                        data-url="http://what.sapp.link/apollom">Book an
-                        Appoinmentt</button><bR>
+                    <button type="button" onclick="trackConversion();" class="btn btn-dr">Live Chat</button><bR>
                     <button type="button" data-url="http://what.sapp.link/apollom"
                         onclick="gtag_report_conversion(); return false" class="btn btn-dr"><i style="color:#fff"
-                            class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
+                            class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
 
                 </div>
             </div>
@@ -588,12 +542,10 @@
                     alt="Card image cap">
                 <div class="card-body">
                     <h1 class="card-title">Dr. Sandip Bipte</h1>
-                    <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
-                        data-url="http://what.sapp.link/apollom">Book an
-                        Appoinmentt</button><bR>
+                    <button type="button" onclick="trackConversion();" class="btn btn-dr">Live Chat</button><bR>
                     <button type="button" data-url="http://what.sapp.link/apollom"
                         onclick="gtag_report_conversion(); return false" class="btn btn-dr"><i style="color:#fff"
-                            class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
+                            class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
 
                 </div>
             </div>
@@ -604,12 +556,10 @@
                     alt="Card image cap">
                 <div class="card-body">
                     <h1 class="card-title">Dr. Tejinder Singh</h1>
-                    <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
-                        data-url="http://what.sapp.link/apollom">Book an
-                        Appoinmentt</button><bR>
+                    <button type="button" onclick="trackConversion();" class="btn btn-dr">Live Chat</button><bR>
                     <button type="button" data-url="http://what.sapp.link/apollom"
                         onclick="gtag_report_conversion(); return false" class="btn btn-dr"><i style="color:#fff"
-                            class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
+                            class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
 
                 </div>
             </div>
@@ -620,12 +570,10 @@
                     alt="Card image cap">
                 <div class="card-body">
                     <h1 class="card-title">Dr. Wasim Phoplunkar</h1>
-                    <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
-                        data-url="http://what.sapp.link/apollom">Book an
-                        Appoinmentt</button><bR>
+                    <button type="button" onclick="trackConversion();" class="btn btn-dr">Live Chat</button><bR>
                     <button type="button" data-url="http://what.sapp.link/apollom"
                         onclick="gtag_report_conversion(); return false" class="btn btn-dr"><i style="color:#fff"
-                            class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
+                            class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
 
                 </div>
             </div>
@@ -648,12 +596,10 @@
                 <img class="card-img-top-m-res" src="assets_mob\Cardio\webp\Dr CHARAN REDDY.webp" alt="Card image cap">
                 <div class="card-body">
                     <h1 class="card-title">Dr CHARAN REDDY</h1>
-                    <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
-                        data-url="http://what.sapp.link/apollom">Book an
-                        Appoinmentt</button><bR>
+                    <button type="button" onclick="trackConversion();" class="btn btn-dr">Live Chat</button><bR>
                     <button type="button" data-url="http://what.sapp.link/apollom"
                         onclick="gtag_report_conversion(); return false" class="btn btn-dr"><i style="color:#fff"
-                            class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
+                            class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
 
                 </div>
             </div>
@@ -668,12 +614,10 @@
                     alt="Card image cap">
                 <div class="card-body">
                     <h1 class="card-title">Dr. Bhushan Chavan</h1>
-                    <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
-                        data-url="http://what.sapp.link/apollom">Book an
-                        Appoinmentt</button><bR>
+                    <button type="button" onclick="trackConversion();" class="btn btn-dr">Live Chat</button><bR>
                     <button type="button" data-url="http://what.sapp.link/apollom"
                         onclick="gtag_report_conversion(); return false" class="btn btn-dr"><i style="color:#fff"
-                            class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
+                            class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
 
                 </div>
             </div>
@@ -685,12 +629,10 @@
                 <img class="card-img-top-m-res" src="assets_mob\Cardio\webp\Dr. Rahul Gupta.webp" alt="Card image cap">
                 <div class="card-body">
                     <h1 class="card-title">Dr. Rahul Gupta</h1>
-                    <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
-                        data-url="http://what.sapp.link/apollom">Book an
-                        Appoinmentt</button><bR>
+                    <button type="button" onclick="trackConversion();" class="btn btn-dr">Live Chat</button><bR>
                     <button type="button" data-url="http://what.sapp.link/apollom"
                         onclick="gtag_report_conversion(); return false" class="btn btn-dr"><i style="color:#fff"
-                            class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
+                            class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
 
                 </div>
             </div>
@@ -704,12 +646,10 @@
                     alt="Card image cap">
                 <div class="card-body">
                     <h1 class="card-title">Dr. Sanjeevkumar Kalkekar</h1>
-                    <button type="button" onclick="gtag_report_conversion(); return false" class="btn btn-dr"
-                        data-url="http://what.sapp.link/apollom">Book an
-                        Appoinmentt</button><bR>
+                    <button type="button" onclick="trackConversion();" class="btn btn-dr">Live Chat</button><bR>
                     <button type="button" data-url="http://what.sapp.link/apollom"
                         onclick="gtag_report_conversion(); return false" class="btn btn-dr"><i style="color:#fff"
-                            class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
+                            class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp;Connect on WhatsApp</button>
 
                 </div>
             </div>
@@ -1213,8 +1153,7 @@
                                 CBD Belapur, Navi Mumbai, Maharashtra 400614, India</p>
                         </div>
                         <div class="add">
-                            <p><i class="fa fa-phone" aria-hidden="true"></i>(+91) 98991
-                                87773</p>
+                            <p><i class="fa fa-phone" aria-hidden="true"></i>(+91) 99111 63990</p>
                         </div>
 
                         <img class="footer_logo" src="assets\Icons & Logos\webp\TT logo.webp" alt="Loding..."
@@ -1332,87 +1271,42 @@
             });
         });
     </script>
-    <script>
-        function openNav() {
-            // document.getElementById("drawer").style.width = "40%";
 
-        }
-
-        function closeNav() {
-            document.getElementById("drawer").style.width = "0";
-        }
-
-        function openDrawer() {
-            setInterval(function () {
-                // Get the element by its ID
-                const element = document.getElementById("drawer");
-
-                // Check if the element exists
-                if (element) {
-                    document.getElementById('drawer').style.bottom = '0'; // Change to 'block' or any other desired display type
-                }
-            }, 10000);
-        }
-
-        function callevent() {
-            setTimeout(openNav, 10000);
-        }
-
-        callevent();
-        openDrawer();
-
-        let clickCount = 0;
-
-        // Function to be executed on the first click
-        function onFirstClick() {
-            setTimeout(openNav, 15000); // Execute openNav after 10 seconds
-        }
-
-        // Function to be executed on the second click
-        function onSecondClick() {
-            setTimeout(openNav, 30000); // Execute openNav after 150 seconds (2.5 minutes)
-        }
-
-        // Function to be executed on the third click
-        function onThirdClick() {
-            setTimeout(openNav, 60000); // Execute openNav after 150 seconds (2.5 minutes)
-
-        }
-
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-922729084">
     </script>
     <script>
-        const drawer = document.getElementById('drawer');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-        const openButton = document.getElementById('openBtn');
-
-        document.getElementById('openBtn').addEventListener('click', function () {
-            event.stopPropagation();
-            document.getElementById('drawer').style.bottom = '0';
-        });
-
-        document.getElementById('closeBtn').addEventListener('click', function () {
-            event.stopPropagation();
-            document.getElementById('drawer').style.bottom = '-100%';
-        });
-
-
-        document.body.addEventListener('click', (event) => {
-            const mobileBreakpoint = 768;
-
-            if (window.innerWidth >= mobileBreakpoint) {
-                // Close drawer if the click is outside the drawer or open button
-                if (!drawer.contains(event.target) && !openBtn.contains(event.target)) {
-                    document.getElementById('drawer').style.bottom = '-100%';
-                }
-            }
-        });
-
-        // Prevent clicks inside the drawer or open button from triggering body click listener
-        drawer.addEventListener('click', event => {
-            event.stopPropagation(); // Prevent click inside drawer from closing it
-        });
-
+        gtag('config', 'AW-922729084');
     </script>
+
+
+    <!-- Event snippet for Lead conversion page
+        In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-922729084/zVS5CMT9j2YQ_PT-twM',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
+
+    <!-- Zoho Chat -->
+    <script>window.$zoho = window.$zoho || {}; $zoho.salesiq = $zoho.salesiq || { ready: function () { } }</script>
+    <script id="zsiqscript"
+        src="https://salesiq.zohopublic.in/widget?wc=siqa53dfe61d6d76f5e682783d1725f3ea043af0fe51234cc5be1e3fccb53b8966f"
+        defer></script>
+
 
     <script>
         // pre load area
@@ -1421,6 +1315,19 @@
             preloader.style.display = 'none'
         })
     </script>
+    <script>
+        function trackConversion() {
+            gtag('event', 'conversion', {
+                'send_to': 'AW-922729084/CONVERSION_LABEL'
+            });
+
+            // Optional: also open Zoho chat
+            if (window.$zoho && $zoho.salesiq) {
+                $zoho.salesiq.floatwindow.visible('show');
+            }
+        }
+    </script>
+
 </body>
 
 </html>

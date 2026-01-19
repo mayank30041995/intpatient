@@ -1511,7 +1511,7 @@ div.desc {
     display: grid;
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    left: 20px;
     padding: 10px 20px;
     background-color: white;
     color: #075E54;
@@ -1522,9 +1522,11 @@ div.desc {
     font-weight: 600;
     z-index: 10;
     border-radius: 15px;
-    width: 15rem;
+    width: 8rem;
+    height: 6rem;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
     justify-items: center;
+    align-items: center;
 }
 
 #drawer {

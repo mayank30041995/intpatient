@@ -7,7 +7,7 @@
 #openBtn {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    left: 20px;
     padding: 10px 55px;
     background-color: #FFF;
     color: #04356f;
@@ -481,11 +481,13 @@ p {
 }
 
 #contant_box {
-    position: relative;
-    top: -400px;
+    position: absolute;
+    top: 5rem;
     width: 100%;
     height: 311px;
-    padding-left: 284px;
+    display: grid;
+    text-align: center;
+    place-items: center;
 }
 
 #block_IV {
@@ -771,7 +773,6 @@ div.desc {
 }
 
 #slider-btn {
-    margin-top: 20px;
     background: #015E79;
     border-radius: 0.5rem;
 }
@@ -863,10 +864,11 @@ div.desc {
 }
 
 #slider-end-text {
-    position: relative;
+    position: absolute;
     background: #00000073;
     padding-block: 27px;
-    top: -427px;
+    bottom: 0;
+    width: 100%;
 }
 
 #live_chat {

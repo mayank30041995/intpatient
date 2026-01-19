@@ -11,6 +11,29 @@ h2 {
   font-size: 25px;
 }
 
+
+#openBtn {
+  display: grid;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: white;
+  color: #075e54;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 0.83px;
+  font-weight: 600;
+  z-index: 10;
+  border-radius: 8px;
+  width: 8rem;
+  height: 6rem;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+  justify-items: center;
+}
+
 #dropdownloc {
   padding: 12px 18px 12px 18px;
   border-radius: 8px;
@@ -251,7 +274,7 @@ form ul li label {
   padding-left: 5px;
 }
 
-.fa-whatsapp {
+/* .fa-whatsapp {
   background: #37b34a;
   color: #fff;
   border-radius: 50%;
@@ -259,7 +282,7 @@ form ul li label {
   width: 25px;
   height: 25px;
 
-}
+} */
 
 .fa {
   line-height: 25px !important;
@@ -321,6 +344,10 @@ form ul li label {
     -ms-flex-preferred-size: 0;
     flex-basis: auto;
     width: 100%;
+  }
+
+  .carousel-item {
+    aspect-ratio: 4/3;
   }
 
 }

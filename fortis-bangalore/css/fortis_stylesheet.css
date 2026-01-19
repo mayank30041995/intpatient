@@ -1191,11 +1191,9 @@ h1 {
 /* Mobile Responsive */
 @media (max-width: 768px) {
   #openBtn {
-    width: 95%;
     bottom: 10px;
     left: 10px;
     font-size: 28px;
-    height: 8rem;
     border-radius: 12px;
   }
 
@@ -1257,5 +1255,6 @@ h1 {
     top: 30%;
     font-size: 2.3rem !important;
     color: #fff;
+    min-width: 100%;
   }
 }
