@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
-    <title>Medanta - The Medicity Hospital in Gurugram, India</title>
+    <title>Medanta - The Medicity Hospital in Gurgaon, India</title>
     <meta charset="UTF-8">
     <meta name="description"
-        content="International Patient Care, Medanta - The Medicity Hospital, in Gurugram, Get Opinion, Appointments.">
-    <meta name="keywords" content="Medanta - The Medicity Hospital, Medanta Gurugram, Get Opinion, Appointments">
+        content="Medanta hospital Gurgaon, Medanta Hospital Delhi. Doctors opinion, appointment. Get Opinion, Appointments.">
+    <meta name="keywords"
+        content="Medanta hospital Gurgaon, Medanta Hospital Delhi, Best Hospitals in Delhi,Opinion for International patients Doctors opinion, appointment.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
     <meta name="googlebot" content="noindex, nofollow">
@@ -34,7 +35,8 @@
     <!-- Preload critical CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
 
     <!-- Preload hero/banner images with fetchpriority -->
     <link rel="preload" as="image" href="images/bckgrnd-medanta-_1_-1.webp" type="image/webp" fetchpriority="high"
@@ -49,12 +51,12 @@
         .err {
             display: none;
         }
-    
+
         .err i {
             font-style: normal;
             font-size: 200px;
         }
-    
+
         .midcontainer {
             text-align: center;
             margin-left: auto;
@@ -204,17 +206,15 @@
                             <a class="nav-link ps-5" href="#linkone">Doctors</a>
                         </li>
                         <li class="nav-item">
-                            <form class="d-flex ps-5 ">
+                            <a onclick="trackConversion()" target="_blank" rel="noopener noreferrer"
+                                class="nav-link ps-5" aria-label="Chat with Medanta Hospital on WhatsApp">
 
-                                <img src="images/whatsapp.svg.webp" alt="whatsapp_logo" class="mt-2" width="20"
-                                    height="20">
-                                <p class="p-header ps-2 pt-1"><a href="https://what.sapp.link/medanta"
-                                        target="_blank">Contact
-                                        on WhatsApp:
-                                        (+91)
-                                        98991 87776</a></p>
-                            </form>
+                                <i class="fa fa-regular fa-message fa-btn me-2" style="font-size:20px;"
+                                    aria-hidden="true"></i>
+                                Live Chat: (+91) 98991 87776
+                            </a>
                         </li>
+
                     </ul>
 
                 </div>
@@ -237,30 +237,31 @@
             <!-- Overlay Container -->
             <div class="container overlay-container">
                 <!-- Heading -->
-                <div class="mb-4 text-start">
-                    <h1 class="banner-txt primary_color fw-bold h1 mb-2">Advanced Care</h1>
-                    <h1 class="banner-txt primary_shadow text-light h11 fw-bold">For Your Future</h1>
+                <div class="text-start my-3">
+                    <h1 class="banner-txt fw-bold mb-2 display-4 ">
+                        <span class="primary_color">Medanta The Medicity</span><br>
+                        <span class="primary_shadow text-light">Gurgaon</span>
+                    </h1>
                 </div>
 
                 <!-- WhatsApp Button -->
-                <a class="btn banner-link d-inline-flex justify-content-center align-items-center rounded-2 bg-app-btn text-light py-2 mb-4 w-25"
-                    href="https://what.sapp.link/medanta" target="_blank" rel="noopener noreferrer"
-                    aria-label="Contact Medanta on WhatsApp">
-                    <i class="fa fa-whatsapp fa-lg  text-white" aria-hidden="true"></i>
-
-                    <!-- <img src="images/whatsapp.svg.webp" alt="WhatsApp logo" width="30" height="30" style="flex-shrink:0;" /> -->
-                    <strong class="mx-1 fs-6 text-white">Contact on WhatsApp</strong>
+                <a onclick="trackConversion()"
+                    class="btn banner-link d-inline-flex justify-content-center align-items-center rounded-2 bg-app-btn text-light py-2 mb-4 w-25"
+                    target="_blank" rel="noopener noreferrer" aria-label="Contact Medanta on WhatsApp">
+                    <i class="fa fa-solid fa-message fa-xl  text-white" aria-hidden="true"></i>
+                    <strong class="mx-1 fs-4 text-white">Live Chat </strong>
                 </a>
+
 
 
                 <!-- Stats -->
                 <div class="d-flex justify-content-start gap-5 text-start">
                     <div>
-                        <h4 class="text-white">800+</h4>
+                        <span class="text-white">800+</span>
                         <p class="banner-p text-primary">Experienced Doctors</p>
                     </div>
                     <div>
-                        <h4 class="text-white">1391</h4>
+                        <span class="text-white">1391</span>
                         <p class="banner-p text-dark">Installed Beds Facility</p>
                     </div>
                 </div>
@@ -297,9 +298,11 @@
 
         <section id="drawer-corner">
             <div class="container">
-                <button id="openBtn" data-url="https://what.sapp.link/medanta"><img src="images/medantalogo.png.webp"
-                        alt="HTML5 Icon" class='logo-yx' width="100px" height="80%" style='margin-bottom: 22px;'>
-                    Talk to Us</button>
+                <button id="openBtn" class="btn" style="background: #25D366;" data-url="https://what.sapp.link/medanta"
+                    rel="noopener noreferrer" aria-label="whatsapp connect"><i class="fab fa-whatsapp fa-10x"
+                        style="font-size:80px;"></i>
+                </button>
+
 
                 <!-- Drawer -->
 
@@ -313,14 +316,20 @@
                         </button>
 
                         <div class="drawer-banner">
-                            <h2>Talk to Us</h2>
-                            <p>on Whatsapp</p>
+                            <h2>Live Chat</h2>
+                            <p>International Patient Care</p>
                         </div>
                         <div class="drawer-items">
-                            <h2>Completely Confidential<h2>
-                                    <button class="btn" data-url="https://what.sapp.link/medanta"><i
-                                            class="fa fa-whatsapp fa-btn" style="font-size:20px;"></i>
-                                        Connect on Whatsapp</button>
+                            <!-- <h2>Completely Confidential<h2> -->
+                            <button class="btn" data-url="https://what.sapp.link/medanta"><i
+                                    class="fab fa-whatsapp fa-btn" style="font-size:20px;"></i>
+                                Connect on Whatsapp</button>
+                            <button class="btn w-100 justify-content-center my-2" onclick="trackConversion()"><i
+                                    class="fa-regular fa-message fa-btn" style="font-size:20px;"></i>
+                                Live Chat</button>
+
+
+
                         </div>
                     </div>
                 </div>
@@ -333,9 +342,9 @@
             <div class="container  mb-5">
                 <a name="linkone"></a>
                 <h2 class="text-center mt-4 ">Medanta–The Medicity, Gurugram</h2>
-                <h1 class="recentblog-h1">meet our <span
-                        style="color:#F04E30; text-transform: uppercase;">specialists</span>
-                </h1>
+                <h3 class="text-center font-bold my-2">Top specialists <span style=" color:#F04E30;">Doctors in Gurgaon
+                        & Delhi NCR</span>
+                </h3>
                 <div class="d-flex justify-content-center">
                     <span>
                         <img src="images/pseudo.webp" alt="img_fluid" width="41" height="3">
@@ -376,7 +385,7 @@
                 <div id="Cardiology" class="tabcontent">
                     <div class="row mt-4 justify-content-center">
                         <div class="row g-3">
-                            <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                            <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                                 <div class="text-center">
                                     <img src="images/cardio/Dr. Naresh Trehan.webp" alt="..."
                                         style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -404,7 +413,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                            <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                                 <div class="text-center">
                                     <img src="images/cardio/dr-anil-bhan.webp" alt="..."
                                         style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -431,7 +440,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                            <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                                 <div class="text-center">
                                     <img src="images/cardio/dr-adarsh-chaudhary.webp" alt="..."
                                         style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -461,7 +470,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/cardio/dr-ramesh-kumar-bapna.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -491,7 +500,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/cardio/Dr. Amit Misri.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -521,7 +530,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/cardio/Dr. Kartikeya Bhargava.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -553,7 +562,7 @@
                     </div>
 
                     <div class="row mt-4 g-3">
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/cardio/Dr. Madhu Mary Minz.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -582,7 +591,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/cardio/Dr. Manish Bansal.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -611,7 +620,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/cardio/Dr. Nagendra Singh Chauhan.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -643,7 +652,7 @@
                     </div>
 
                     <div class="row mt-4 g-3">
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/cardio/Dr. Rajneesh Kapoor (2).webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -672,7 +681,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/cardio/Dr. Amit Chandra.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -701,7 +710,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/cardio/Dr. Sanjay Mittal.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -733,7 +742,7 @@
                     </div>
 
                     <div class="row mt-4 g-3">
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/cardio/Dr. Surinder Bazaz.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -762,7 +771,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/cardio/Dr. Vijay Kohli.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -791,7 +800,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/cardio/DR.-TARIQUE.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -823,7 +832,7 @@
                     </div>
 
                     <div class="row mt-4 g-3">
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/cardio/Indivar-Upadhyay (2).webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -859,7 +868,7 @@
 
                 <div id="Neurology" class="tabcontent">
                     <div class="row mt-4 g-3">
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/Neuro/arun-garg.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -887,7 +896,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/Neuro/Dr-Raj-Kumar.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -916,7 +925,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/Neuro/Dr. Atma Ram Bansal.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -948,7 +957,7 @@
                     </div>
 
                     <div class="row mt-4 g-3">
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/Neuro/Dr. Gaurav Goel.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -977,7 +986,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/Neuro/Dr. Karanjit Singh Narang.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -1006,7 +1015,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/Neuro/Dr. Natasha Khullar Kumar.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -1038,7 +1047,7 @@
                     </div>
 
                     <div class="row mt-4 g-3">
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/Neuro/vpsingh_1.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -1072,7 +1081,7 @@
 
                 <div id="Liver" class="tabcontent">
                     <div class="row mt-4 g-3">
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/Liver/AMITR.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -1100,7 +1109,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/Liver/ankur-atal-gupta.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -1130,7 +1139,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/Liver/AS SOIN.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -1161,7 +1170,7 @@
                     </div>
 
                     <div class="row mt-4 g-3">
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/Liver/Dr.-Narendra-Singh-Choudhary.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -1190,7 +1199,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/Liver/PRASHANT V B.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -1226,7 +1235,7 @@
 
                 <div id="Orthopedics" class="tabcontent">
                     <div class="row mt-4 g-3">
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/ortho/Ashok-Rajgopal.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -1255,7 +1264,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/ortho/Dr-Vipin-chand-tyagi-.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -1285,7 +1294,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/ortho/Dr. Sumit Kumar.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -1317,7 +1326,7 @@
                     </div>
 
                     <div class="row mt-4 g-3">
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/ortho/Dr.-Attique-vasudev-3.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -1346,7 +1355,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/ortho/Dr.-somesh-virmani.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -1375,7 +1384,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/ortho/Dr.raman-kant-aggarwal.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -1407,7 +1416,7 @@
                     </div>
 
                     <!-- <div class="row mt-4 g-3">
-                            <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                            <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                                 <div class="text-center">
                                     <img src="images/ortho/VINESH.webp"
                                         alt="..." style="border-radius:50%;background: #e4e4e4;"
@@ -1431,7 +1440,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                            <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                                 <div class="text-center">
                                     <img src="images/ortho/vivek-dahiya.webp"
                                         alt="..." style="border-radius:50%;background: #e4e4e4;"
@@ -1462,7 +1471,7 @@
 
                 <div id="Oncology" class="tabcontent">
                     <div class="row mt-4 g-3">
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/onco/ASHOK.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -1490,7 +1499,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/onco/Dr.-Satya-Pal-Kataria-e1633607168398.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -1519,7 +1528,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/onco/Dr.-Satya-Prakash-Yadav.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -1551,7 +1560,7 @@
                     </div>
 
                     <div class="row mt-4 g-3">
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/onco/Dr.-susovan-banerje-3.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180">
@@ -1579,7 +1588,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/onco/Dr.DEEPAK-GUPTA-4.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180">
@@ -1607,7 +1616,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/onco/RAJEEVAGARWAL.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180">
@@ -1639,7 +1648,7 @@
                     </div>
 
                     <div class="row mt-4 g-3">
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/onco/TEJINDER.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -1672,7 +1681,7 @@
                 </div>
                 <div id="Urology" class="tabcontent">
                     <div class="row mt-4 g-3">
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/urology/Sauravgogoi.png" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -1701,7 +1710,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/urology/dr-gagan-gautam.png" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -1730,7 +1739,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/urology/Deepak Kumar.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -1759,7 +1768,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/urology/Dr. Dinesh Kumar Yadav.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -1788,7 +1797,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                        <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                             <div class="text-center">
                                 <img src="images/urology/Dr. Sidharth Kumar Sethi.webp" alt="..."
                                     style="border-radius:50%;background: #e4e4e4;" width="180" height="180"
@@ -1828,13 +1837,20 @@
             <div class="container-fluid bg-app py-5" style="min-height:200px;">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-6 col-lg-4 text-center">
-                        <h1 class="text-light" style="min-height:60px;">Talk to Us</h1>
+                        <h1 class="text-light" style="min-height:60px;">Live Chat</h1>
                         <button type="button" data-url="https://what.sapp.link/medanta"
                             class="btn bg-btn bg-light py-3 my-2 w-100 d-flex justify-content-center align-items-center"
                             style="min-height:60px; min-width:220px;" onclick="gtag_report_conversion();">
-                            <i class="fa fa-whatsapp me-2" aria-hidden="true"></i>
+                            <i class="fab fa-whatsapp me-2" aria-hidden="true"></i>
                             Contact On WhatsApp
                         </button>
+                        <button type="button"
+                            class="btn bg-btn bg-light py-3 my-2 w-100 d-flex justify-content-center align-items-center"
+                            style="min-height:60px; min-width:220px;" onclick="trackConversion()">
+                            <i class="fa-regular fa-message me-2" aria-hidden="true"></i>
+                            Live Chat
+                        </button>
+
                     </div>
                 </div>
             </div>
@@ -2156,12 +2172,18 @@
             <div class="container-fluid bg-app py-5" style="min-height:200px;">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-6 col-lg-4 text-center">
-                        <h1 class="text-light" style="min-height:60px;">Talk to Us</h1>
+                        <h1 class="text-light" style="min-height:60px;">Live Chat</h1>
                         <button type="button" data-url="https://what.sapp.link/medanta"
                             class="btn bg-btn bg-light py-3 my-2 w-100 d-flex justify-content-center align-items-center"
                             style="min-height:60px; min-width:220px;" onclick="gtag_report_conversion();">
-                            <i class="fa fa-whatsapp me-2" aria-hidden="true"></i>
+                            <i class="fab fa-whatsapp me-2" aria-hidden="true"></i>
                             Contact On WhatsApp
+                        </button>
+                        <button type="button"
+                            class="btn bg-btn bg-light py-3 my-2 w-100 d-flex justify-content-center align-items-center"
+                            style="min-height:60px; min-width:220px;" onclick="trackConversion()">
+                            <i class="fa-regular fa-message me-2" aria-hidden="true"></i>
+                            Live Chat
                         </button>
                     </div>
                 </div>
@@ -2204,9 +2226,8 @@
                                 care and support at every stage of your journey.
                             </p>
                             <!-- Button trigger modal -->
-                            <button type="button" data-url="https://what.sapp.link/medanta"
-                                class="btn btn-primary spec-button" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal" onclick="gtag_report_conversion(); ">
+                            <button type="button" class="btn btn-primary spec-button" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" onclick="trackConversion()">
                                 Book an Appointment
                             </button>
 
@@ -4063,7 +4084,7 @@
                             </p>
                             <button type="button" data-url="https://what.sapp.link/medanta"
                                 class="btn btn-primary py-3 w-100" onclick="gtag_report_conversion(); "><i
-                                    class="fa fa-whatsapp ps-2" aria-hidden="true"></i>
+                                    class="fab fa-whatsapp ps-2" aria-hidden="true"></i>
                                 Contact On
                                 WhatsApp</button>
 
@@ -4115,7 +4136,7 @@
                             </p>
                             <button type="button" data-url="https://what.sapp.link/medanta"
                                 class="btn btn-primary py-3 w-100" onclick="gtag_report_conversion(); "><i
-                                    class="fa fa-whatsapp ps-2" aria-hidden="true"></i>
+                                    class="fab fa-whatsapp ps-2" aria-hidden="true"></i>
                                 Contact On
                                 WhatsApp</button>
 
@@ -4166,7 +4187,7 @@
                             </p>
                             <button type="button" data-url="https://what.sapp.link/medanta"
                                 class="btn btn-primary py-3 w-100" onclick="gtag_report_conversion(); "><i
-                                    class="fa fa-whatsapp ps-2" aria-hidden="true"></i>
+                                    class="fab fa-whatsapp ps-2" aria-hidden="true"></i>
                                 Contact On
                                 WhatsApp</button>
 
@@ -4217,7 +4238,7 @@
                             </p>
                             <button type="button" data-url="https://what.sapp.link/medanta"
                                 class="btn btn-primary py-3 w-100" onclick="gtag_report_conversion(); "><i
-                                    class="fa fa-whatsapp ps-2" aria-hidden="true"></i>
+                                    class="fab fa-whatsapp ps-2" aria-hidden="true"></i>
                                 Contact On
                                 WhatsApp</button>
 
@@ -4267,7 +4288,7 @@
                             </p>
                             <button type="button" data-url="https://what.sapp.link/medanta"
                                 class="btn btn-primary w-100 py-3" onclick="gtag_report_conversion(); "><i
-                                    class="fa fa-whatsapp ps-3  aria-hidden=" true></i>
+                                    class="fab fa-whatsapp ps-3  aria-hidden=" true></i>
                                 Contact On
                                 WhatsApp</button>
 
@@ -4346,8 +4367,7 @@
 
             <div class="container-fluid pt-5">
                 <div class="row">
-                    <div class="col-sm-12 col-lg-4"
-                        style="min-height: 417px; min-width: 376px;background-color:#FFF9F7;">
+                    <div class="col-sm-12 col-lg-4" style="min-height: 417px; background-color:#FFF9F7;">
                         <div class="text-center px-3 py-5">
 
                             <img src="images/Group-6.webp" alt="img_fluid" width="92px" height="92px">
@@ -4364,8 +4384,7 @@
 
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-4"
-                        style="min-height: 417px; min-width: 376px;background-color:#FFF9F7;">
+                    <div class="col-sm-12 col-lg-4" style="min-height: 417px; background-color:#FFF9F7;">
                         <div class="text-center px-3 py-5">
 
                             <img src="images/save-time-1.webp" alt="img_fluid" width="92px" height="92px">
@@ -4382,8 +4401,7 @@
 
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-4"
-                        style="min-height: 417px; min-width: 376px;background-color:#FFF9F7;">
+                    <div class="col-sm-12 col-lg-4" style="min-height: 417px; background-color:#FFF9F7;">
                         <div class="text-center px-3 py-5">
 
                             <img src="images/icons8-patient-64-1.webp" alt="img_fluid" width="92px" height="92px">
@@ -4464,7 +4482,7 @@
                         </ul>
 
                     </div>
-                    <div class="col-sm-12 col-lg-4" style="min-height: 417px; min-width: 376px;">
+                    <div class="col-sm-12 col-lg-4" style="min-height: 417px; ">
                         <h1 class="foot-h1 text-white">
                             contact
                         </h1>
@@ -4480,7 +4498,7 @@
 
                         <div class="d-flex justify-content-start pt-4">
                             <span>
-                                <i class="fa fa-whatsapp foot-fa-whatsapp" aria-hidden="true"></i>
+                                <i class="fab fa-whatsapp foot-fa-whatsapp" aria-hidden="true"></i>
                             </span>
                             <div>
                                 <a href="#" class="text-white " style="text-decoration: none;">&nbsp;&nbsp;(+91)
@@ -4543,6 +4561,24 @@
     <script id="zsiqscript"
         src="https://salesiq.zohopublic.in/widget?wc=siqfe5a1b756338db7ba9dfed96aa7b470e9201e41f064734939e734314fb6414c7"
         defer></script>
+
+    <script>
+        function trackConversion() {
+            gtag('event', 'conversion', {
+                'send_to': 'AW-922729084/CONVERSION_LABEL'
+            });
+
+            // Optional: also open Zoho chat
+            if (window.$zoho && $zoho.salesiq) {
+                $zoho.salesiq.floatwindow.visible('show');
+            }
+        }
+
+        setInterval(() => {
+            trackConversion()
+        }, [30000])
+    </script>
+
 
 </body>
 

@@ -68,13 +68,9 @@ body {
 #openBtn {
   display: grid;
   position: fixed;
+  background: #e65e46;
   bottom: 20px;
   left: 20px;
-  width: 240px;
-  height: 106.75px;
-  padding: 10px 20px;
-  background-color: var(--bg-background);
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
   color: #fff;
   border: none;
   cursor: pointer;
@@ -83,7 +79,6 @@ body {
   font-weight: 600;
   z-index: 100;
   border-radius: 8px;
-  width: 15rem;
   justify-items: center;
 }
 
@@ -91,8 +86,8 @@ body {
   position: fixed;
   bottom: -100%;
   left: 0;
-  height: 65%;
-  width: 35%;
+  height: max-content;
+  width: 30%;
   background: linear-gradient(var(--bg-background), #e65e46);
   color: #fff;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
@@ -221,7 +216,6 @@ body {
     bottom: 10px;
     left: 10px;
     font-size: 28px;
-    height: 8rem;
     border-radius: 12px;
   }
 
@@ -237,7 +231,7 @@ body {
   }
 
   #drawer {
-    height: 45%;
+    height: max-content;
     width: 100%;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
@@ -829,7 +823,7 @@ h1.card-title-h1 {
   }
 
   .banner-link {
-    font-size: 17px;
+    font-size: 18px;
     width: 49%;
     /* margin-top: 6rem !important */
   }

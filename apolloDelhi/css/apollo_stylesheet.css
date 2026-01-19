@@ -11,7 +11,7 @@ body {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  padding: 10px 20px;
+  padding: 10px 10px;
   background-color: white;
   color: #075e54;
   border: none;
@@ -21,7 +21,7 @@ body {
   font-weight: 600;
   z-index: 10;
   border-radius: 8px;
-  width: 15rem;
+  width: 8rem;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
   justify-items: center;
 }
@@ -47,7 +47,9 @@ body {
   padding: 8px;
   border-radius: 4px;
   background: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.1),
+    0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .drawer-content {
@@ -74,7 +76,9 @@ body {
   color: #2d9f28;
   font-weight: 600;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.1),
+    0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .drawer-items button:active {
@@ -84,7 +88,9 @@ body {
 .drawer-banner {
   margin-top: 100px;
   background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.1),
+    0 6px 20px rgba(0, 0, 0, 0.1);
   padding: 15px 2px 2px;
   color: #237d9e;
   border-radius: 8px;
@@ -185,7 +191,9 @@ body {
   .drawer-banner {
     margin-top: 70px;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    box-shadow:
+      0 4px 8px rgba(0, 0, 0, 0.1),
+      0 6px 20px rgba(0, 0, 0, 0.1);
     padding: 15px 2px 2px;
     color: #237d9e;
     border-radius: 8px;

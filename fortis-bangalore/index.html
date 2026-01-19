@@ -5,10 +5,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
-  <title>Fortis</title>
+  <title>Fortis Hospital Bangalore | Best Multispecialty Hospital in Bengaluru</title>
+  <meta name="description"
+    content="Fortis Hospital Bangalore offers world-class healthcare with expert doctors, advanced technology, and 24/7 emergency services. Book an appointment oday.">
+  <meta name="keywords"
+    content="Fortis Hospital Bangalore, Fortis Bangalore, best hospital in Bangalore, multispecialty hospital Bangalore, top hospital in Bengaluru, Fortis doctors Bangalore, private hospital Bangalore">
   <meta charset="UTF-8">
   <meta name="theme-color" content="#0B6531" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="css/fortis_stylesheet.css" rel="stylesheet" />
@@ -23,11 +27,42 @@
     crossorigin="anonymous"></script>
   <link rel="icon" type="image/x-icon" href="img/mobile logo.webp">
   <link rel="preload" as="font">
-  <meta name="description" content="Fortis Bengaluru ">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preload" href="css/fortis-gurugram.webp" as="image">
   <link rel="stylesheet" href="css/fortis_stylesheet.css">
 </head>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hospital",
+  "name": "Fortis Hospital Bangalore",
+  "url": "https://www.fortis-bangalore.com",
+  "logo": "https://www.fortis-bangalore.com/logo.png",
+  "image": "https://www.fortis-bangalore.com/fortis-bangalore/css/fortis-gurugram.webp",
+  "description": "Fortis Hospital Bangalore is a leading multispecialty hospital offering advanced medical care with expert doctors and modern technology.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Bangalore",
+    "addressLocality": "Bengaluru",
+    "addressRegion": "Karnataka",
+    "postalCode": "560001",
+    "addressCountry": "IN"
+  },
+  "telephone": "+91-XXXXXXXXXX",
+  "medicalSpecialty": [
+    "Cardiology",
+    "Neurology",
+    "Orthopaedics",
+    "Oncology",
+    "Gastroenterology",
+    "Urology"
+  ],
+  "openingHours": "Mo-Su 00:00-23:59",
+  "priceRange": "$$"
+}
+</script>
+
 
 <body>
 
@@ -42,9 +77,9 @@
   </div>
   <!-- End of Pre loader -->
 
-  <button id="openBtn" data-url="https://what.sapp.link/fmri" onclick="gtag_report_conversion();  return false"><img
-      src="fortis logo.png" alt="HTML5 Icon" class='logo-yx' width="100px" height="50px" style='margin-bottom: 10px;'>
-    24 × 7 Support</button>
+  <button id="openBtn" class="btn" onclick="trackConversion()"><i class="fab fa-whatsapp fa-2x"
+      style="font-size:80px;"></i>
+  </button>
 
   <!-- Drawer -->
 
@@ -65,7 +100,7 @@
       <div class="drawer-items">
         <h2>International Support On Whatsapp</h2>
         <button class="btn" data-url="https://what.sapp.link/fmri" onclick="gtag_report_conversion();  return false"><i
-            class="fa fa-whatsapp fa-btn" style="font-size:20px;"></i>
+            class="fab fa-whatsapp fa-btn" style="font-size:20px;"></i>
           Connect on Whatsapp</button>
       </div>
     </div>
@@ -80,9 +115,9 @@
         <img class="logo-img-m" src="img/mobile logo.webp" alt="logo_loging" width="155" height="59">
       </div>
 
-      <div class="g-col-6 col_topbar2" onclick="LC_API.open_chat_window() ; return false">154/9, Bannerghatta Main Rd,
-        opposite IIM-B, Sahyadri Layout,
-        Panduranga Nagar, Bengaluru, Karnataka 560076
+      <div class="g-col-6 col_topbar2" onclick="trackConversion(); return false"><span>154/9, Bannerghatta Main Rd,
+          opposite IIM-B, Sahyadri Layout,
+          Panduranga Nagar, Bengaluru, Karnataka 560076</span>
       </div>
 
 
@@ -111,11 +146,11 @@
               <a class="nav-link" href="#HealthPackages">Health Check-Up Packages</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" onclick="LC_API.open_chat_window() ; return false" href="#">Contact Us</a>
+              <a class="nav-link" onclick="trackConversion(); return false" href="#">Contact Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" onclick="LC_API.open_chat_window() ; return false" href="#"><i style="color: #0CA854;"
-                  class="fa fa-whatsapp" aria-hidden="true"></i>
+              <a class="nav-link" onclick="trackConversion(); return false" href="#"><i style="color: #0CA854;"
+                  class="fab fa-whatsapp" aria-hidden="true"></i>
                 Live Chat with Doctor</a>
             </li>
             <li class="nav-item">
@@ -132,8 +167,11 @@
 
     <div class="container-fluid slider">
 
-
-
+      <h1 class="hero-title">Fortis Hospital Bangalore</h1>
+      <a class="nav-link hero-title bg-light w-25 mx-auto my-3" href=" https://wa.me/8800844596"
+        style="color: #0CA854; border-radius: 8px"><i style="color: #0CA854;" class="fa fa-solid fa-message fa-xl"
+          aria-hidden="true"></i>
+        Live Chat</a>
     </div>
 
 
@@ -177,8 +215,8 @@
 
   <!--DR.card-->
   <div id="Doctors" class="container text-center">
-    <span class=" header-all">Fortis Hospital, Bannerghatta Road</span>
-    <h1>Our Dedicated Doctors</h1>
+    <h2><span class=" header-all">Fortis Hospital, Bannerghatta Road</span></h2>
+    <h2>Our Dedicated Doctors</h2>
     <div class="tab container-flud">
       <a href="#Cardiology" id="cardiologyLink">
         <button class="tablinks" id="cvb" onclick="openTabLink(event, 'Cardiology')">Cardiology</button>
@@ -215,9 +253,9 @@
               <div class="card-body">
                 <h1 class="card-title">Dr (Prof.) Vivek Jawali</h1>
 
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-                  Opinion</button><bR>
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Live
+                  chat</button><br>
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Book an
                   Appoinment</button>
               </div>
             </div>
@@ -232,9 +270,9 @@
               <div class="card-body">
                 <h1 class="card-title">Dr Nischal Pandya</h1>
 
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-                  Opinion</button><bR>
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Live
+                  chat</button><br>
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Book an
                   Appoinment</button>
               </div>
             </div>
@@ -249,9 +287,9 @@
               <div class="card-body">
                 <h1 class="card-title">Dr Rajpal Singh </h1>
 
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-                  Opinion</button><bR>
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Live
+                  chat</button><br>
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Book an
                   Appoinment</button>
               </div>
             </div>
@@ -266,9 +304,9 @@
               <div class="card-body">
                 <h1 class="card-title">Dr Shashidhar</h1>
 
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-                  Opinion</button><bR>
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Live
+                  chat</button><br>
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Book an
                   Appoinment</button>
               </div>
             </div>
@@ -283,9 +321,9 @@
               <div class="card-body">
                 <h1 class="card-title">Dr V Murali Manohar </h1>
 
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-                  Opinion</button><bR>
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Live
+                  chat</button><br>
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Book an
                   Appoinment</button>
               </div>
             </div>
@@ -300,9 +338,9 @@
               <div class="card-body">
                 <h1 class="card-title">Dr. Jayaprakash </h1>
 
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-                  Opinion</button><bR>
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Live
+                  chat</button><br>
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Book an
                   Appoinment</button>
               </div>
             </div>
@@ -336,9 +374,9 @@
               <div class="card-body">
                 <h1 class="card-title">Dr Mohan K Puttaswamy</h1>
 
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-                  Opinion</button><bR>
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Live
+                  chat</button><br>
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Book an
                   Appoinment</button>
               </div>
             </div>
@@ -353,9 +391,9 @@
               <div class="card-body">
                 <h1 class="card-title">Dr Narayan Hulse</h1>
 
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-                  Opinion</button><bR>
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Live
+                  chat</button><br>
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Book an
                   Appoinment</button>
               </div>
             </div>
@@ -370,9 +408,9 @@
               <div class="card-body">
                 <h1 class="card-title">Dr Naveen D Gowda</h1>
 
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-                  Opinion</button><bR>
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Live
+                  chat</button><br>
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Book an
                   Appoinment</button>
               </div>
             </div>
@@ -387,9 +425,9 @@
               <div class="card-body">
                 <h1 class="card-title"> Dr Somashekar D</h1>
 
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-                  Opinion</button><bR>
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Live
+                  chat</button><br>
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Book an
                   Appoinment</button>
               </div>
             </div>
@@ -409,9 +447,9 @@
               <div class="card-body">
                 <h1 class="card-title">Dr Yogesh K</h1>
 
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-                  Opinion</button><bR>
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Live
+                  chat</button><br>
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Book an
                   Appoinment</button>
               </div>
             </div>
@@ -442,9 +480,9 @@
               <div class="card-body">
                 <h1 class="card-title">Dr Madhusudhan N</h1>
 
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-                  Opinion</button><bR>
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Live
+                  chat</button><br>
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Book an
                   Appoinment</button>
               </div>
             </div>
@@ -459,9 +497,9 @@
               <div class="card-body">
                 <h1 class="card-title">Dr Mohan </h1>
 
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-                  Opinion</button><bR>
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Live
+                  chat</button><br>
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Book an
                   Appoinment</button>
               </div>
             </div>
@@ -476,9 +514,9 @@
               <div class="card-body">
                 <h1 class="card-title">Dr Niti Raizada </h1>
 
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-                  Opinion</button><bR>
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Live
+                  chat</button><br>
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Book an
                   Appoinment</button>
               </div>
             </div>
@@ -493,9 +531,9 @@
               <div class="card-body">
                 <h1 class="card-title">Dr Sandeep Nayak P</h1>
 
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-                  Opinion</button><bR>
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Live
+                  chat</button><br>
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Book an
                   Appoinment</button>
               </div>
             </div>
@@ -513,9 +551,9 @@
               <div class="card-body">
                 <h1 class="card-title">Dr Suresh Babu</h1>
 
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-                  Opinion</button><bR>
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Live
+                  chat</button><br>
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Book an
                   Appoinment</button>
               </div>
             </div>
@@ -544,9 +582,9 @@
               <div class="card-body">
                 <h1 class="card-title">Dr Sreeharsha Harinatha</h1>
 
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Get Free
-                  Opinion</button><bR>
-                <button type="button" onclick="LC_API.open_chat_window() ; return false" class="btn btn-dr">Book an
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Live
+                  chat</button><br>
+                <button type="button" onclick="trackConversion(); return false" class="btn btn-dr">Book an
                   Appoinment</button>
               </div>
             </div>
@@ -654,7 +692,7 @@
             you can effortlessly schedule your appointment,
             knowing that our dedicated team will provide exceptional care and support at every stage of your
             journey.</span><br><br>
-          <button onclick="LC_API.open_chat_window() ; return false" class="btn-app text-center">Book an
+          <button onclick="trackConversion(); return false" class="btn-app text-center">Book an
             Appointment</button>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
@@ -685,7 +723,7 @@
             Benefit from their expertise and experience as they provide valuable opinions tailored to your specific
             needs.
             <br><br>
-            <button onclick="LC_API.open_chat_window() ; return false" class="btn-app text-center "> Get Free Opinions
+            <button onclick="trackConversion(); return false" class="btn-app text-center "> Get Free Opinions
             </button>
             <div class="col-lg-6 col-md-6 col-sm-12">
 
@@ -711,7 +749,7 @@
             consultations with expert doctors from the comfort of your own space. Seamlessly book your
             tele-consultation, connecting with trusted medical professionals
             who will provide personalized guidance and care, all at your convenience.</span><br><br>
-          <button onclick="LC_API.open_chat_window() ; return false" class="btn-app text-center"> Book Tele-Consult
+          <button onclick="trackConversion(); return false" class="btn-app text-center"> Book Tele-Consult
           </button>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
@@ -964,8 +1002,8 @@
           <br>
           <br>
           <p class="price-text"><b>INR 2240</b></p>
-          <span>per day with Breakfast</span></p>
-          <button onclick="LC_API.open_chat_window() ; return false" class="btn-color-x">Chat with us for Best
+          <span>per day with breakfast</span></p>
+          <button onclick="trackConversion(); return false" class="btn-color-x">Chat with us for Best
             Deals</button><br>
           <span style="font-size: 13.5px;">*rates may vary depending on type of room, <br>desired features and level
             of customization</span>
@@ -1015,8 +1053,8 @@
           <br>
           <br>
           <p class="price-text"><b>INR 2915</b></p>
-          <span>per day with Breakfast</span></p>
-          <button onclick="LC_API.open_chat_window() ; return false" class="btn-color-x">Chat with us for Best
+          <span>per day with breakfast</span></p>
+          <button onclick="trackConversion(); return false" class="btn-color-x">Chat with us for Best
             Deals</button><br>
           <span style="font-size: 13.5px;">*rates may vary depending on type of room, <br>desired features and level
             of customization</span>
@@ -1067,8 +1105,8 @@
           <br>
           <br>
           <p class="price-text"><b>INR 3619</b></p>
-          <span>per day with Breakfast</span></p>
-          <button onclick="LC_API.open_chat_window() ; return false" class="btn-color-x">Chat with us for Best
+          <span>per day with breakfast</span></p>
+          <button onclick="trackConversion(); return false" class="btn-color-x">Chat with us for Best
             Deals</button><br>
           <span style="font-size: 13.5px;">*rates may vary depending on type of room, <br>desired features and level
             of customization</span>
@@ -1119,8 +1157,8 @@
           <br>
           <br>
           <p class="price-text"><b>INR 5603</b></p>
-          <span>per day with Breakfast</span></p>
-          <button onclick="LC_API.open_chat_window() ; return false" class="btn-color-x"> Chat with us for Best
+          <span>per day with breakfast</span></p>
+          <button onclick="trackConversion(); return false" class="btn-color-x"> Chat with us for Best
             Deals</button><br>
           <span style="font-size: 13.5px;">*rates may vary depending on type of room, <br>desired features and level
             of customization</span>
@@ -1170,8 +1208,8 @@
           <br>
           <br>
           <p class="price-text"><b>INR 8604</b></p>
-          <span>per day with Breakfast</span></p>
-          <button onclick="LC_API.open_chat_window() ; return false" class="btn-color-x">Chat with us for Best
+          <span>per day with breakfast</span></p>
+          <button onclick="trackConversion(); return false" class="btn-color-x">Chat with us for Best
             Deals</button><br>
           <span style="font-size: 13.5px;">*rates may vary depending on type of room, <br>desired features and level
             of customization</span>
@@ -2483,86 +2521,6 @@
   </div>
 
   <script>
-
-    function openNav() {
-      document.getElementById(".").style.width = "100%"; drawer
-
-    }
-
-    function closeNav() {
-      document.getElementById(".drawer").style.width = "0";
-    }
-
-    function openDrawer() {
-      setInterval(function () {
-        // Get the element by its ID
-        const element = document.getElementById("drawer");
-
-        // Check if the element exists
-        if (element) {
-          document.getElementById('drawer').style.bottom = '0'; // Change to 'block' or any other desired display type
-        }
-      }, 30000);
-    }
-    function callevent() {
-      setTimeout(openNav, 30000);
-    }
-
-    callevent();
-    openDrawer();
-
-    let clickCount = 0;
-
-    // Function to be executed on the first click
-    function onFirstClick() {
-      setTimeout(openNav, 15000); // Execute openNav after 10 seconds
-    }
-
-    // Function to be executed on the second click
-    function onSecondClick() {
-      setTimeout(openNav, 30000); // Execute openNav after 150 seconds (2.5 minutes)
-    }
-
-    // Function to be executed on the third click
-    function onThirdClick() {
-      setTimeout(openNav, 60000); // Execute openNav after 150 seconds (2.5 minutes)
-
-    }
-  </script>
-  <script>
-    const drawer = document.getElementById('drawer');
-
-    const openButton = document.getElementById('openBtn');
-
-    document.getElementById('openBtn').addEventListener('click', function () {
-      event.stopPropagation();
-      document.getElementById('drawer').style.bottom = '0';
-    });
-
-    document.getElementById('closeBtn').addEventListener('click', function () {
-      event.stopPropagation();
-      document.getElementById('drawer').style.bottom = '-100%';
-    });
-
-
-    document.body.addEventListener('click', (event) => {
-      const mobileBreakpoint = 768;
-
-      if (window.innerWidth >= mobileBreakpoint) {
-        // Close drawer if the click is outside the drawer or open button
-        if (!drawer.contains(event.target) && !openBtn.contains(event.target)) {
-          document.getElementById('drawer').style.bottom = '-100%';
-        }
-      }
-    });
-
-    // Prevent clicks inside the drawer or open button from triggering body click listener
-    drawer.addEventListener('click', event => {
-      event.stopPropagation(); // Prevent click inside drawer from closing it
-    });
-
-  </script>
-  <script>
     document.getElementById('Cardiology').style.display = "block";
     function openTabLink(evt, type) {
 
@@ -2610,5 +2568,24 @@
     gtag('js', new Date());
 
     gtag('config', 'G-EGPK7ZS1P8');
+  </script>
+
+  <!-- Zoho Live Chat -->
+  <script>window.$zoho = window.$zoho || {}; $zoho.salesiq = $zoho.salesiq || { ready: function () { } }</script>
+  <script id="zsiqscript"
+    src="https://salesiq.zohopublic.in/widget?wc=siq4b46e294d6212d8879a25f7c37efdc94f835ac4ca1f073f03533bdcfb99dcf14"
+    defer></script>
+
+  <script>
+    function trackConversion() {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-922729084/CONVERSION_LABEL'
+      });
+
+      // Optional: also open Zoho chat
+      if (window.$zoho && $zoho.salesiq) {
+        $zoho.salesiq.floatwindow.visible('show');
+      }
+    }
   </script>
 </body>

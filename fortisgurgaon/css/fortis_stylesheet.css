@@ -13,7 +13,7 @@ body {
   bottom: 20px;
   left: 20px;
   padding: 10px 20px;
-  background: #0a6632;
+  background: #25d366;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -22,16 +22,17 @@ body {
   font-weight: 600;
   z-index: 100;
   border-radius: 8px;
-  width: 15rem;
   justify-items: center;
-  box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0 14px 28px,
+    rgba(0, 0, 0, 0.22) 0 10px 10px;
 }
 
 #drawer {
   position: fixed;
   bottom: -100%;
   left: 0;
-  width: 35%;
+  width: 30%;
   background: linear-gradient(#0a6632, #12a012);
   color: #fff;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
@@ -58,7 +59,9 @@ body {
 .logo-yx {
   padding: 16px;
   background: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.1),
+    0 6px 20px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   object-fit: contain;
 }
@@ -73,7 +76,9 @@ body {
   color: #2d9f28;
   font-weight: 600;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.1),
+    0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .drawer-items button:hover {
@@ -88,7 +93,9 @@ body {
 .drawer-banner {
   margin-top: 100px;
   background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.1),
+    0 6px 20px rgba(0, 0, 0, 0.1);
   padding: 15px 2px 2px;
   color: #000;
   border-radius: 8px;
@@ -910,10 +917,6 @@ a:hover {
   color: #0a6632;
 }
 
-h1 {
-  font-size: 32px !important;
-}
-
 .font-slider2 {
   font-size: 35px;
   color: #fff !important;
@@ -961,9 +964,10 @@ h1 {
   }
 
   .btn-dr {
-    height: 56px;
+    padding: 10px 0;
     font-size: 17px;
     top: 10px;
+    height: max-content;
   }
 
   .card-title {
@@ -1047,11 +1051,9 @@ h1 {
 
 @media (max-width: 768px) {
   #openBtn {
-    width: 95%;
     bottom: 10px;
     left: 10px;
     font-size: 28px;
-    height: 8rem;
     border-radius: 12px;
   }
 
@@ -1071,7 +1073,6 @@ h1 {
   }
 
   #drawer {
-    height: 45%;
     width: -webkit-fill-available;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
@@ -1090,7 +1091,9 @@ h1 {
   .drawer-banner {
     margin-top: 80px;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    box-shadow:
+      0 4px 8px rgba(0, 0, 0, 0.1),
+      0 6px 20px rgba(0, 0, 0, 0.1);
     padding: 15px 2px 2px;
     color: #000;
     border-radius: 8px;

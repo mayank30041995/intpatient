@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanjeevani Kaya Hospital</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="images/elite.png" type="image/x-icon">
+
+    <!-- Heebo Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        heading: ['Raleway', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/owl.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+
+<body class="font-sans text-white">
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-header fixed top-0 w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 py-2">
+            <div class="flex items-center justify-between h-16">
+
+                <!-- Logo -->
+                <img src="./images/favicon.ico" alt="Sanjeevani Kaya Hospital"
+                    class="bg-white shadow-md h-full p-2 rounded-md" width="180" height="150" />
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="./index.html" class="nav-link font-bold tracking-wide">Home</a>
+                    <a href="./about.html" class="nav-link font-bold tracking-wide">About</a>
+
+                    <div class="relative group">
+                        <a href="./doctors.html"> <button class="nav-link font-bold tracking-wide">Doctors</button></a>
+                        <!-- <div class="dropdown-menu">
+                                        <a href="#">Skin Care</a>
+                                        <a href="#">Hair Care</a>
+                                        <a href="#">Wellness</a>
+                                    </div> -->
+                    </div>
+
+                    <a href="#" class="nav-link font-bold tracking-wide">Contact</a>
+                </nav>
+
+                <!-- CTA -->
+                <a href="#" class="booking-btn hidden md:block tracking-wide font-bold">
+                    Book Appointment
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="md:hidden text-2xl">
+                    ☰
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu hidden">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Treatments</a>
+            <a href="#">Contact</a>
+            <a href="#" class="mobile-cta">Book Appointment</a>
+        </div>
+    </header>
+    <section class="relative z-10 py-20">
+
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="./images/infrastructure/i1.jpeg" alt="" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/60"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Title -->
+            <div class="text-center mb-14">
+                <h2 class="text-4xl font-bold text-white">Sanjeevani Contacts</h2>
+                <p class="mt-3 text-gray-300">
+                    Get in touch with us for appointments and enquiries
+                </p>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+
+                <!-- LEFT : CONTACT INFO -->
+                <div class="bg-white/10 backdrop-blur-md
+                        rounded-2xl border border-white/20
+                        shadow-2xl p-8 space-y-8 text-white">
+
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-3">Sanjeevani Contacts</h3>
+                        <p class="text-gray-200 leading-relaxed">
+                            <strong>Address:</strong> Located in Gohana, Sonipat (Haryana)<br>
+                            <strong>Phone:</strong>
+                            <a href="tel:+918059800895" class="text-green-400 font-medium">
+                                +91 8059800895
+                            </a> (24 × 7)<br>
+                            <strong>Email:</strong>
+                            <a href="mailto:info@sanjeevaniindia.com" class="text-green-400 font-medium">
+                                info@sanjeevaniindia.com
+                            </a>
+                        </p>
+                    </div>
+
+                    <hr class="border-white/20">
+
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-3">Sanjeevani Contacts</h3>
+                        <p class="text-gray-200 leading-relaxed">
+                            <strong>Address:</strong> Inside Shri Ram Sharnam Ashram, Jind Road,
+                            Gohana, Haryana 131301<br>
+                            <strong>Phone:</strong>
+                            <a href="tel:+918607000895" class="text-green-400 font-medium">
+                                +91 8607000895
+                            </a><br>
+                            <strong>Email:</strong>
+                            <a href="mailto:info@sanjeevaniindia.com" class="text-green-400 font-medium">
+                                info@sanjeevaniindia.com
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT : MAP -->
+                <div class="bg-white/10 backdrop-blur-md
+                        rounded-2xl border border-white/20
+                        shadow-2xl overflow-hidden h-[450px]">
+                    <iframe class="w-full h-full border-0" loading="lazy" allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps?q=29.1401,76.7033&z=15&output=embed">
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="relative z-10 w-full mx-auto px-6 py-6
+                bg-black/75 backdrop-blur-md
+                border border-white/20
+                text-white shadow-2xl  ">
+
+
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+
+            <!-- LEFT : COPYRIGHT -->
+            <p class="text-sm text-gray-200 text-center md:text-left">
+                © <span id="year"></span> Sanjeevani Kaya Shodhan Sansthan. All Rights Reserved.
+            </p>
+
+            <!-- RIGHT : SOCIAL ICONS -->
+            <div class="flex items-center gap-5 text-xl">
+
+                <a href="#" aria-label="Facebook" class="hover:text-blue-500 transition">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Twitter" class="hover:text-sky-400 transition">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram" class="hover:text-pink-500 transition">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://wa.me/918059800895" target="_blank" aria-label="WhatsApp"
+                    class="hover:text-green-400 transition">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

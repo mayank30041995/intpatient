@@ -1,6 +1,7 @@
 // ================= MOBILE MENU =================
 const menuBtn = document.getElementById('menuBtn')
 const mobileMenu = document.getElementById('mobileMenu')
+document.getElementById('year').textContent = new Date().getFullYear()
 
 menuBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('hidden')
