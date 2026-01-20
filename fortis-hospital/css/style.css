@@ -86,12 +86,23 @@ a:hover {
   position: absolute;
   top: 30%;
   width: 100%;
+  display: grid;
+}
+
+.hero-title-1 {
+  text-align: center;
+  font-size: 2.8rem !important;
+  color: #fff;
+  font-weight: 600;
+  text-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.6),
+    0 6px 16px rgba(0, 0, 0, 0.5);
 }
 
 .hero-title {
   text-align: center;
-  font-size: 3.2rem !important;
-  color: #FFF;
+  font-size: 1.5rem !important;
+  color: #fff;
 }
 
 #openBtn {
@@ -143,7 +154,7 @@ a:hover {
   gap: 5px;
 }
 
-.drawer-items>h2 {
+.drawer-items > h2 {
   color: #fff;
   font-weight: 600;
 }
@@ -316,15 +327,15 @@ body {
   aspect-ratio: 16 / 5;
 }
 
-.tabspan>div>div>div>h1 {
+.tabspan > div > div > div > h1 {
   padding-top: 20px !important;
 }
 
-.tabspan>div>div {
+.tabspan > div > div {
   box-shadow: #3d805d 0px 7px 29px 0px;
 }
 
-.tabspan>div>div h2 {
+.tabspan > div > div h2 {
   font-weight: 600;
   letter-spacing: 0.08rem;
 }
@@ -570,7 +581,7 @@ hr.hrline {
     padding: 2px 0;
   }
 
-  .brand h6>img {
+  .brand h6 > img {
     max-width: 150px;
   }
 
@@ -681,7 +692,7 @@ hr.hrline {
     width: 25%;
   }
 
-  .patient-service-detail h6>img {
+  .patient-service-detail h6 > img {
     max-width: 150px;
   }
 
@@ -753,7 +764,7 @@ hr.hrline {
     padding: 5px 0;
   }
 
-  .brand h6>img {
+  .brand h6 > img {
     max-width: 155px;
   }
 
@@ -862,7 +873,7 @@ hr.hrline {
     width: 30%;
   }
 
-  .patient-service-detail h6>img {
+  .patient-service-detail h6 > img {
     max-width: 160px;
   }
 
@@ -1059,7 +1070,7 @@ hr.hrline {
   font-weight: 500;
 }
 
-form ul li>input[type='file'] {
+form ul li > input[type='file'] {
   border: none;
   cursor: pointer;
   width: 180px;
@@ -1126,7 +1137,7 @@ form ul li label {
   .tabspan {
     position: relative;
     z-index: 990;
-    bottom: 150px;
+    bottom: 50px;
   }
 
   /*.patient-service-detail{
@@ -1157,7 +1168,7 @@ form ul li label {
   color: #fff;
 }
 
-#doctors>div>h1 {
+#doctors > div > h1 {
   padding-top: 35px;
   padding-bottom: 25px;
   font-weight: 600;
@@ -1220,8 +1231,8 @@ form ul li label {
 
   .hero-title {
     text-align: center;
-    font-size: 2.2rem !important;
-    color: #FFF;
+    font-size: 1.2rem !important;
+    color: #fff;
     min-width: max-content;
   }
 

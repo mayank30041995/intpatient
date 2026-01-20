@@ -13,6 +13,16 @@ body {
   text-align: center;
   font-size: 2.8rem !important;
   color: #fff;
+  text-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.6),
+    0 6px 16px rgba(0, 0, 0, 0.5);
+}
+.hero-title-1 {
+  position: relative;
+  top: 30%;
+  text-align: center;
+  font-size: 1.5rem !important;
+  color: #fff;
 }
 .p_50 {
   padding: 50px;
@@ -1056,7 +1066,7 @@ h1 {
   bottom: 20px;
   left: 20px;
   padding: 10px 25px;
-  background: #0a6632;
+  background: #25d366;
   color: white;
   border: none;
   cursor: pointer;
@@ -1064,6 +1074,8 @@ h1 {
   letter-spacing: 0.83px;
   font-weight: 600;
   z-index: 100;
+  width: 8rem;
+  height: 6rem;
   border-radius: 8px;
   justify-items: center;
   box-shadow:
@@ -1253,8 +1265,11 @@ h1 {
 
   .hero-title {
     top: 30%;
-    font-size: 2.3rem !important;
+    font-size: 1.8rem !important;
     color: #fff;
     min-width: 100%;
+  }
+  .hero-title-1 {
+    width: 60% !important;
   }
 }

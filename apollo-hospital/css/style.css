@@ -10,7 +10,9 @@ body {
 h2 {
   font-size: 25px;
 }
-
+a {
+  text-decoration: none !important;
+}
 
 #openBtn {
   display: grid;
@@ -26,7 +28,7 @@ h2 {
   font-size: 16px;
   letter-spacing: 0.83px;
   font-weight: 600;
-  z-index: 10;
+  z-index: 99;
   border-radius: 8px;
   width: 8rem;
   height: 6rem;
@@ -165,7 +167,7 @@ h2 {
 }
 
 /*Media Query*/
-@media(min-width:992px) {
+@media (min-width: 992px) {
   body {
     font-size: 1rem;
   }
@@ -207,7 +209,7 @@ h2 {
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   #location {
     padding-bottom: 180px;
   }
@@ -240,7 +242,7 @@ h2 {
   font-weight: 500;
 }
 
-form ul li>input[type="file"] {
+form ul li > input[type='file'] {
   border: none;
   cursor: pointer;
   width: 180px;
@@ -336,7 +338,6 @@ form ul li label {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 @media (max-width: 768px) {
@@ -349,11 +350,9 @@ form ul li label {
   .carousel-item {
     aspect-ratio: 4/3;
   }
-
 }
 
 .docprofile {
-
   outline: 2px double #fff;
   outline-offset: -10px;
 
