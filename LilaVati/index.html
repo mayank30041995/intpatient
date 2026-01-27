@@ -16,7 +16,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <link rel="icon" type="image/x-icon" href="img/logo.png">
+  <link rel="icon" type="image/x-icon" href="img/logo.jpg">
   <link rel="preload" as="font">
   <meta name="description" content="Lilavati ">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,20 +32,22 @@
 
     gtag('config', 'AW-922729084');
   </script>
-
 </head>
 <!-- nanavat -->
 
 <body>
-  <!--navbar start-->
+  <!-- Hero Image -->
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light transprint-navbar">
     <!-- Your logo and other navbar elements here -->
-    <img src="img/logo.png" class="logo_mob" alt="logo-drawer" width="180" height="55">
+    <img src="img/logo.jpg" class="logo_mob" alt="logo-drawer" width="120" height="65" fetchpriority="high">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+
+    <!--navbar start-->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
           <a class="nav-link" aria-label="Overview" href="#overview">Overview</a>
@@ -68,12 +70,14 @@
       </ul>
     </div>
   </nav>
-
-  <button id="openBtn"><img src="img/logo.png" class="logo-y" alt="HTML5 Icon" width="180" height="50">
+  </div>
+  <!--end navbar-->
+  <!-- Drawer -->
+  <button id="openBtn"><img src="img/logo.jpg" class="logo-y" alt="HTML5 Icon" width="180" height="50">
     Instant Support</button>
 
   <div id="drawer" class="drawer">
-    <div id="imasCircle"> <img src="img/logo.png" class="logo-yx" alt="HTML5 Icon" width="180" height="50"></div>
+    <div id="imasCircle"> <img src="img/logo.jpg" class="logo-yx" alt="HTML5 Icon" width="180" height="50"></div>
     <div class="drawer-content">
       <button id="closeBtn" type="button" class="close" aria-label="Close">
         <span aria-hidden="true">&times;</span>
@@ -90,74 +94,72 @@
       </div>
     </div>
   </div>
-
-  <!--end navbar-->
   <!--slider strat-->
-  <div class="container-fluid slider-all">
-    <!--inner element-->
-    <div class="container inner-element">
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <!-- Your content goes here -->
-          <h1 class="f-m-32" style="font-size: 53px;"></h1>
-          <div class="row justify-content-center">
-            <div class="col-md-6">
-              <!-- Your content goes here -->
-              <button class="btn btn-block ">Get Free Opinion </button>
+  <div class="container-fluid hero-container">
+    <div class="container-fluid slider-all bg-light">
+      <!--inner element-->
+      <div class="container inner-element">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <!-- Your content goes here -->
+            <h1 class="f-m-32" style="font-size: 53px;"></h1>
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <!-- Your content goes here -->
+                <button class="btn btn-block btn-outline-primary btn-primary">Get Free Opinion </button>
+              </div>
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
-    </div>
 
+      <div class="container-fluid inner-dadta-slider ">
 
-
-    <div class="container-fluid inner-dadta-slider ">
-
-      <div class="i_box" style="
+        <div class="i_box" style="
         cursor: pointer;
     ">
-        <img class="inner_gif" src="img/speech-bubble.gif" alt="logo-drawer"
-          onclick="LC_API.open_chat_window() ; return false" width="17" height="17">
-        <br> <span class="inner_text">Live chat</span>
-      </div>
-      <div class="i_box2" style="
+          <img class="inner_gif" src="img/speech-bubble.gif" alt="logo-drawer"
+            onclick="LC_API.open_chat_window() ; return false" width="17" height="17">
+          <br> <span class="inner_text">Live chat</span>
+        </div>
+        <div class="i_box2" style="
       cursor: pointer;
       margin-top: 28px;
   ">
-        <a href="#Doctors"> <img class="inner_gif" src="img/optometrist.gif" alt="logo-drawer" width="17" height="17">
-          <br> <span class="inner_text">Doctor</span></a>
-      </div>
-      <div class="i_box2" style="
+          <a href="#Doctors"> <img class="inner_gif" src="img/optometrist.gif" alt="logo-drawer" width="17" height="17">
+            <br> <span class="inner_text">Doctor</span></a>
+        </div>
+        <div class="i_box2" style="
     cursor: pointer;
     margin-top: 28px;
 ">
-        <a href="https://wa.me/9899187773"> <img style="box-shadow: none;" class="inner_gif" src="img/whatsapp.webp"
-            alt="logo-drawer" width="17" height="17">
-          <br> <span class="inner_text">Whatsapp </span></a>
-      </div>
-      <div class="i_box2" style="
+          <a href="https://wa.me/9899187773"> <img style="box-shadow: none;" class="inner_gif" src="img/whatsapp.webp"
+              alt="logo-drawer" width="17" height="17">
+            <br> <span class="inner_text">Whatsapp </span></a>
+        </div>
+        <div class="i_box2" style="
   cursor: pointer;
   margin-top: 28px;
 ">
-        <img class="inner_gif" src="img\earth.gif" alt="logo-drawer" width="17" height="17">
+          <img class="inner_gif" src="img\earth.gif" alt="logo-drawer" width="17" height="17">
 
-        <br> <span class="inner_text">Address</span>
-      </div>
-      <div class="i_box2" style="
+          <br> <span class="inner_text">Address</span>
+        </div>
+        <div class="i_box2" style="
   cursor: pointer;
   margin-top: 28px;
 ">
-        <a href="tel:+91 9899187773"> <img class="inner_gif" src="img/24-hours-support.gif" alt="logo-drawer" width="17"
-            height="17">
-          <br><span class="inner_text"> &nbsp;Call</span></a>
+          <a href="tel:+91 9899187773"> <img class="inner_gif" src="img/24-hours-support.gif" alt="logo-drawer"
+              width="17" height="17">
+            <br><span class="inner_text"> &nbsp;Call</span></a>
+        </div>
       </div>
+      <!--end inner element-->
     </div>
-
-
-    <!--end inner element-->
   </div>
+  <!-- end slider end -->
+
   <marquee class="marq" style="position: relative;top: -24px;color: #ffffff;background: #0000008f;">Lilavati Hospital is
     amongst the best cancer hospitals in Mumbai, India,
     Address:LIC Colony, Suresh Colony, Vile Parle West, Mumbai, Maharashtra 400056 ,<b>(+91) 9899187773 </b><b>(+91)
@@ -1150,6 +1152,7 @@
   </div>
 
 
+
   <script>
 
     function openNav() {
@@ -1371,3 +1374,5 @@
   </script>
    -->
 </body>
+
+</html>

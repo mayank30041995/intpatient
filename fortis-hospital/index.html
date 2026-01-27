@@ -124,30 +124,6 @@
     </div>
   </div>
 
-  <button id="openBtn" class="btn" style="background: #25D366;" data-url="https://what.sapp.link/fmri">
-    <i class="fab fa-whatsapp fa-4x" style="color: #FFF;"></i>
-  </button>
-
-  <!-- Drawer -->
-
-  <div id="drawer" class="drawer">
-    <div id="imasCircle">IMAS</div>
-    <div class="drawer-content">
-      <button id="closeBtn" type="button" class="close" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-
-      <div class="drawer-banner">
-        <h2>International Patient Care</h2>
-        <p>International Support On Whatsapp</p>
-      </div>
-      <div class="drawer-items">
-        <h2>International Support On Whatsapp</h2>
-        <button class="btn"><i class="fab fa-whatsapp fa-btn" style="font-size:20px;"></i>
-          Connect on Whatsapp</button>
-      </div>
-    </div>
-  </div>
 
   <div id="main">
     <!--top header starts-->
@@ -503,16 +479,16 @@
                     </a>
                   </div>
                 </div> -->
-              <!-- <div class="col-md-6 col-sm-12 pb-5">
+              <div class="col-md-6 col-sm-12 pb-5">
                 <div class="hospital hospital-1">
-                  <a href="fortismumbai.intpatient.com">
+                  <a href="http://127.0.0.1:5500/fortis-mumbai/index.html" target="_blank">
 
                     <img src="img/fortis-mumbai.jpg" class="img-fluid" alt="Fortis Hospital, Mulund, Mumbai" />
-                    <h5 class="text-center">Fortis Hospital, Mulund,
+                    <h5 class="text-center letter-spacing">Fortis Hospital, Mulund,
                       Mumbai</h5>
                   </a>
                 </div>
-              </div> -->
+              </div>
 
             </div>
           </div>
@@ -2958,6 +2934,31 @@
         </div>
       </div>
     </section>
+    <!-- Drawer Items -->
+    <button id="openBtn" class="btn" style="background: #25D366;" data-url="https://what.sapp.link/fmri">
+      <i class="fab fa-whatsapp fa-4x" style="color: #FFF;"></i>
+    </button>
+
+    <!-- Drawer -->
+
+    <div id="drawer" class="drawer">
+      <div id="imasCircle">IMAS</div>
+      <div class="drawer-content">
+        <button id="closeBtn" type="button" class="close" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <div class="drawer-banner">
+          <h2>International Patient Care</h2>
+          <p>International Support On Whatsapp</p>
+        </div>
+        <div class="drawer-items">
+          <h2>International Support On Whatsapp</h2>
+          <button class="btn"><i class="fab fa-whatsapp fa-btn" style="font-size:20px;"></i>
+            Connect on Whatsapp</button>
+        </div>
+      </div>
+    </div>
 
     <!-- <section class="section9" id="testimonials">
         <div class="container pt-5 pb-2">
@@ -3039,50 +3040,51 @@
 
     gtag('config', 'G-EGPK7ZS1P8');
   </script>
-</body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PV25C27" height="0" width="0"
-    style="display: none; visibility: hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
-<script defer>
-  // Get all button elements on the page
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PV25C27" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-  const buttons = document.querySelectorAll('button,p,a');
+  <script defer>
+    // Get all button elements on the page
 
-  // Loop through each button
-  buttons.forEach(function (button) {
-    // Attach a click event listener to each button
-    button.addEventListener('click', function () {
-      // Get the URL from the button's data-url attribute
-      const url = button.getAttribute('data-url');
+    const buttons = document.querySelectorAll('button,p,a');
 
-      // Check if a URL is defined for the button
-      if (url) {
-        // Open the URL in a new tab
-        window.open(url, '_blank');
+    // Loop through each button
+    buttons.forEach(function (button) {
+      // Attach a click event listener to each button
+      button.addEventListener('click', function () {
+        // Get the URL from the button's data-url attribute
+        const url = button.getAttribute('data-url');
+
+        // Check if a URL is defined for the button
+        if (url) {
+          // Open the URL in a new tab
+          window.open(url, '_blank');
+        }
+      });
+    });
+  </script>
+
+  <!-- Zoho Live Chat -->
+  <script>window.$zoho = window.$zoho || {}; $zoho.salesiq = $zoho.salesiq || { ready: function () { } }</script>
+  <script id="zsiqscript"
+    src="https://salesiq.zohopublic.in/widget?wc=siq4b46e294d6212d8879a25f7c37efdc94f835ac4ca1f073f03533bdcfb99dcf14"
+    defer></script>
+
+  <script>
+    function trackConversion() {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-922729084/CONVERSION_LABEL'
+      });
+
+      // Optional: also open Zoho chat
+      if (window.$zoho && $zoho.salesiq) {
+        $zoho.salesiq.floatwindow.visible('show');
       }
-    });
-  });
-</script>
-
-<!-- Zoho Live Chat -->
-<script>window.$zoho = window.$zoho || {}; $zoho.salesiq = $zoho.salesiq || { ready: function () { } }</script>
-<script id="zsiqscript"
-  src="https://salesiq.zohopublic.in/widget?wc=siq4b46e294d6212d8879a25f7c37efdc94f835ac4ca1f073f03533bdcfb99dcf14"
-  defer></script>
-
-<script>
-  function trackConversion() {
-    gtag('event', 'conversion', {
-      'send_to': 'AW-922729084/CONVERSION_LABEL'
-    });
-
-    // Optional: also open Zoho chat
-    if (window.$zoho && $zoho.salesiq) {
-      $zoho.salesiq.floatwindow.visible('show');
     }
-  }
-</script>
+  </script>
+</body>
 
 </html>

@@ -9,9 +9,9 @@ body {
 
 .hero-title {
   position: relative;
-  top: 30%;
+  top: 12rem;
   text-align: center;
-  font-size: 2.8rem !important;
+  font-size: 2.4rem !important;
   color: #fff;
   text-shadow:
     0 2px 4px rgba(0, 0, 0, 0.6),
@@ -19,7 +19,7 @@ body {
 }
 .hero-title-1 {
   position: relative;
-  top: 30%;
+  top: 12rem;
   text-align: center;
   font-size: 1.5rem !important;
   color: #fff;
@@ -484,19 +484,19 @@ a:hover {
 }
 
 .slider {
-  background-image: url('fortis-mumbai-1.jpg');
-  height: 596px;
+  background-image: url('Fortis_Mulund.jpg');
+  width: 100%;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  aspect-ratio: 2/2;
+  aspect-ratio: 18 / 8;
 }
 
 .slider::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.1);
+  /* background: rgba(0, 0, 0, 0.1); */
 }
 
 .font_slider {
@@ -511,8 +511,9 @@ a:hover {
 }
 
 .card-img-top {
-  width: 100% !important;
-  height: auto !important;
+  aspect-ratio: 1 / 1;
+  min-height: 15rem;
+  padding: 22px;
 }
 
 .p-story {
@@ -822,7 +823,7 @@ h1 {
   }
 
   .slider {
-    height: 497px;
+    /* height: 497px; */
     background-size: 108% 99%;
     box-shadow: 0 5px 5px 1px #aaafaccc;
   }
@@ -984,8 +985,9 @@ h1 {
   }
 
   .slider {
-    background-image: url(background-m.webp) !important;
+    background-image: url(fortis-mumbai-1.jpg) !important;
     margin-top: 58px;
+    aspect-ratio: 3/2;
   }
 }
 
@@ -1274,12 +1276,14 @@ h1 {
   }
 
   .hero-title {
-    top: 30%;
+    top: 1rem;
     font-size: 1.8rem !important;
     color: #fff;
     min-width: 100%;
   }
   .hero-title-1 {
     width: 60% !important;
+    top: 4rem;
+    font-size: small;
   }
 }
