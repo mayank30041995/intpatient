@@ -116,9 +116,9 @@ body {
 }
 
 /* Backgrounds */
-.slide-1 {
+/* .slide-1 {
   background-image: url('../images/background/screenshots.jpeg');
-}
+} */
 .slide-2 {
   background-image: url('../images/background/slider-image-2.webp');
 }
@@ -209,7 +209,9 @@ body {
   border-radius: 1rem;
   cursor: pointer;
   height: 320px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
 }
 
 .infra-card:hover {
@@ -240,7 +242,9 @@ body {
 
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
 }
 
 .infra-card:hover .infra-overlay {
