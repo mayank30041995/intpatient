@@ -1,0 +1,50 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Dynamic SEO -->
+    <title>
+        <%= meta.title || site.title %>
+    </title>
+
+    <meta name="description" content="<%= meta.description || site.description %>" />
+
+    <meta name="keywords" content="<%= meta.keywords || site.keywords %>" />
+
+    <meta name="robots" content="index, follow" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/elite.png" type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Heebo Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        heading: ['Raleway', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css" />
+
+</head>

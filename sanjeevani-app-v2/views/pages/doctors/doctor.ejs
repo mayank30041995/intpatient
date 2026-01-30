@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Dynamic SEO -->
+    <title>
+        <%= doctor.meta.title || doctor.site.title %>
+    </title>
+
+    <meta name="description" content="<%= doctor.meta.description || doctor.site.description %>" />
+
+    <meta name="keywords" content="<%= doctor.meta.keywords || doctor.site.keywords %>" />
+
+    <meta name="robots" content="index, follow" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/elite.png" type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Heebo Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        heading: ['Raleway', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css" />
+
+</head>
+
+
+<body class="font-sans text-white">
+
+    <!-- ================= HEADER ================= -->
+    <%- include('../../partials/header') %>
+
+
+        <section class="herodetails relative  flex flex-col py-32">
+
+            <!-- Background Image -->
+            <div class="absolute inset-0">
+                <img src="/images/infrastructure/i1.jpeg" alt="" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/60"></div>
+            </div>
+
+            <!-- Doctor Card -->
+            <div class="relative z-10 w-full max-w-4xl mx-auto px-6 py-10
+        bg-white/10 backdrop-blur-md
+        rounded-2xl border border-white/20
+        text-white shadow-2xl ">
+
+                <div class="flex flex-col md:flex-row gap-10 items-center justify-start">
+
+                    <!-- Doctor Image -->
+                    <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-white/20 shrink-0">
+                        <img src="<%= doctor.image %>" alt="<%= doctor.name %>" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Doctor Info -->
+                    <div class="text-center md:text-left">
+                        <h2 class="text-4xl font-bold capitalize">
+                            <%= doctor.name %>
+                        </h2>
+                        <p class=" text-xl text-gray-300 mt-2 capitalize">
+                            <%= doctor.specialty %>
+                        </p>
+
+                        <a href="https://what.sapp.link/sanjeevani" rel="noopener noreferrer" target="_blank" class="inline-block mt-6 bg-green-600 hover:bg-green-500
+                          px-8 py-3 rounded-xl font-bold transition-all duration-300">
+                            Book Appointment
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-6 my-4">
+
+                <div class="grid grid-cols-1 lg:grid-cols-6 gap-10 items-start">
+
+                    <!-- LEFT: Personal Statement (75%) -->
+                    <div class="lg:col-span-4 bg-white/5 backdrop-blur-md
+                                border border-white/10 rounded-2xl p-8">
+
+                        <h3 class="text-3xl font-bold mb-6">
+                            Personal Statement
+                        </h3>
+
+                        <%- doctor.description %>
+
+                    </div>
+
+                    <!-- RIGHT: Doctor Information (25%) -->
+                    <div class="lg:col-span-2 bg-white/5 backdrop-blur-md
+                                border border-white/10 rounded-2xl p-8">
+
+                        <h3 class="text-2xl font-bold mb-6">
+                            Doctor Information
+                        </h3>
+
+                        <%- doctor.info %>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="relative z-10 w-full mx-auto px-16 py-6
+                        bg-black/75 backdrop-blur-md
+                        border border-white/20
+                        text-white shadow-2xl  ">
+
+
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+
+                <!-- LEFT : COPYRIGHT -->
+                <p class="text-sm text-gray-200 text-center md:text-left">
+                    © <span id="year"></span> Sanjeevani Kaya Shodhan Sansthan. All Rights Reserved.
+                </p>
+
+                <!-- RIGHT : SOCIAL ICONS -->
+                <div class="flex items-center gap-5 text-xl">
+
+                    <a href="https://www.facebook.com/sanjeevanikayashodhan" rel="noopener noreferrer"
+                        aria-label="Facebook" target="_blank" class="hover:text-blue-500 transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://x.com/Sanjeevani_Kaya" rel="noopener noreferrer" aria-label="Twitter"
+                        target="_blank" class="hover:text-sky-400 transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/sanjeevani_kayashodhan" rel="noopener noreferrer"
+                        aria-label="Instagram" target="_blank" class="hover:text-pink-500 transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://what.sapp.link/sanjeevani" rel="noopener noreferrer" target="_blank"
+                        aria-label="WhatsApp" class="hover:text-green-400 transition">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head') %>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/owl.css">
+        <!-- Owl Carousel -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+
+<body class="font-[Heebo] text-white bg-black">
+
+    <!-- ================= HEADER ================= -->
+    <%- include('../partials/header') %>
+
+
+        <!-- ================= HERO ================= -->
+        <section class="relative min-h-screen flex items-center justify-center py-20 lg:py-32">
+
+            <div class="absolute inset-0 -z-10">
+                <img src="/images/infrastructure/i1.jpeg" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/70"></div>
+            </div>
+
+            <div class="w-full flex flex-col gap-8">
+
+                <!-- HERO CARD -->
+                <div class="relative max-w-3xl mx-auto px-6 py-8 lg:px-8 lg:py-12
+                        bg-white/10 backdrop-blur-md
+                        rounded-2xl border border-white/20
+                        text-center text-white shadow-2xl">
+
+                    <h1 class="text-4xl lg:text-6xl font-bold mb-4">Naturopathy</h1>
+                    <p class="text-lg lg:text-2xl text-gray-200">
+                        Naturopathy is a drug-free, non-invasive system of medicine that emphasizes the body’s
+                        inherent ability to heal itself.
+                    </p>
+                </div>
+                <!-- CONTENT CARD -->
+                <%- include(treatment.content) %>
+            </div>
+
+            </div>
+        </section>
+
+        <!-- ================= FOOTER ================= -->
+        <footer class="relative z-10 w-full mx-auto px-16 py-6
+                bg-black/75 backdrop-blur-md
+                border border-white/20
+                text-white shadow-2xl  ">
+
+
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+
+                <!-- LEFT : COPYRIGHT -->
+                <p class="text-sm text-gray-200 text-center md:text-left">
+                    © <span id="year"></span> Sanjeevani Kaya Shodhan Sansthan. All Rights Reserved.
+                </p>
+
+                <!-- RIGHT : SOCIAL ICONS -->
+                <div class="flex items-center gap-5 text-xl">
+
+                    <a href="https://www.facebook.com/sanjeevanikayashodhan" rel="noopener noreferrer"
+                        aria-label="Facebook" target="_blank" class="hover:text-blue-500 transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://x.com/Sanjeevani_Kaya" rel="noopener noreferrer" aria-label="Twitter"
+                        target="_blank" class="hover:text-sky-400 transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/sanjeevani_kayashodhan" rel="noopener noreferrer"
+                        aria-label="Instagram" target="_blank" class="hover:text-pink-500 transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://what.sapp.link/sanjeevani" rel="noopener noreferrer" target="_blank"
+                        aria-label="WhatsApp" class="hover:text-green-400 transition">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+        <!-- jQuery first -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <!-- Owl Carousel -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+        <!-- Your custom JS -->
+        <script src="js/custom.js"></script>
+
+</body>
+
+</html>

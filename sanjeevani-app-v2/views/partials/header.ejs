@@ -1,0 +1,55 @@
+<!-- ================= HEADER ================= -->
+<header class="site-header fixed top-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 py-2">
+        <div class="flex items-center justify-between h-16">
+
+            <!-- Logo -->
+            <a href="<%= pages.home %>">
+                <img src="/images/favicon.ico" alt="Sanjeevani Kaya Hospital"
+                    class="bg-white shadow-md h-16 p-2 rounded-md" width="180" height="100" />
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="<%= pages.home %>" class="nav-link font-bold tracking-wide">Home</a>
+                <a href="<%= pages.about %>" class="nav-link font-bold tracking-wide">About</a>
+
+                <div class="relative group">
+                    <a href="<%= pages.doctors %>" class="nav-link font-bold tracking-wide">
+                        Doctors
+                    </a>
+                </div>
+
+                <a href="<%= pages.infrastructure %>" class="nav-link font-bold tracking-wide">
+                    Infrastructure
+                </a>
+                <a href="<%= pages.contact %>" class="nav-link font-bold tracking-wide">
+                    Contact
+                </a>
+            </nav>
+
+            <!-- CTA -->
+            <a href="<%= pages.bookAppointment %>" rel="noopener noreferrer" target="_blank"
+                class="booking-btn hidden md:block tracking-wide font-bold">
+                Book Appointment
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu hidden">
+        <a href="<%= pages.home %>">Home</a>
+        <a href="<%= pages.about %>">About</a>
+        <a href="<%= pages.doctors %>">Doctors</a>
+        <a href="<%= pages.infrastructure %>">Infrastructure</a>
+        <a href="<%= pages.contact %>">Contact</a>
+
+        <a href="<%= pages.bookAppointment %>" rel="noopener noreferrer" target="_blank" class="mobile-cta">
+            Book Appointment
+        </a>
+    </div>
+</header>

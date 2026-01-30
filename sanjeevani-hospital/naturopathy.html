@@ -112,14 +112,14 @@
     </header>
 
     <!-- ================= HERO ================= -->
-    <section class="relative min-h-screen flex items-center justify-center pt-28 pb-16">
+    <section class="relative min-h-screen flex items-center justify-center py-20 lg:py-32">
 
         <div class="absolute inset-0 -z-10">
             <img src="images/infrastructure/i1.jpeg" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-black/70"></div>
         </div>
 
-        <div class="max-w-6xl mx-auto px-4 space-y-10">
+        <div class="w-full flex flex-col gap-8">
 
             <!-- HERO CARD -->
             <div class="relative max-w-3xl mx-auto px-6 py-8 lg:px-8 lg:py-12
@@ -133,110 +133,115 @@
                     inherent ability to heal itself.
                 </p>
             </div>
+            <!-- CONTENT CARD -->
+            <div class="container mx-auto px-4">
+                <div class="relative max-w-6xl mx-auto
+                            bg-white/10 backdrop-blur-md
+                            border border-white/20 rounded-2xl
+                            shadow-2xl p-4 sm:p-6 lg:p-8">
+                    <!-- SLIDER -->
+                    <div class="owl-carousel therapy-slider mb-10">
 
-            <!-- MAIN CONTENT -->
-            <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 lg:p-10 shadow-xl">
-
-                <!-- SLIDER -->
-                <div class="owl-carousel therapy-slider mb-10">
-
-                    <div class="bg-white rounded-xl overflow-hidden shadow-md">
-                        <img src="images/treatment/natur-a.jpeg" fetchpriority="high" class="h-52 w-full object-cover">
-                        <div class="p-4 text-center text-gray-800">
-                            <h3 class="font-bold">Diet Therapy</h3>
-                            <p class="text-sm">Healing through nutrition</p>
+                        <div class="bg-white rounded-xl overflow-hidden shadow-md">
+                            <img src="images/treatment/natur-a.jpeg" fetchpriority="high"
+                                class="h-52 w-full object-cover">
+                            <div class="p-4 text-center text-gray-800">
+                                <h3 class="font-bold">Diet Therapy</h3>
+                                <p class="text-sm">Healing through nutrition</p>
+                            </div>
                         </div>
+
+                        <div class="bg-white rounded-xl overflow-hidden shadow-md">
+                            <img src="images/treatment/natur-b.jpeg" class="h-52 w-full object-cover">
+                            <div class="p-4 text-center text-gray-800">
+                                <h3 class="font-bold">Hydrotherapy</h3>
+                                <p class="text-sm">Water-based healing</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl overflow-hidden shadow-md">
+                            <img src="images/treatment/natur-c.jpeg" class="h-52 w-full object-cover">
+                            <div class="p-4 text-center text-gray-800">
+                                <h3 class="font-bold">Mud Therapy</h3>
+                                <p class="text-sm">Natural detoxification</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl overflow-hidden shadow-md">
+                            <img src="images/treatment/natur-a.jpeg" class="h-52 w-full object-cover">
+                            <div class="p-4 text-center text-gray-800">
+                                <h3 class="font-bold">Massage Therapy</h3>
+                                <p class="text-sm">Muscle & nerve relaxation</p>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="bg-white rounded-xl overflow-hidden shadow-md">
-                        <img src="images/treatment/natur-b.jpeg" class="h-52 w-full object-cover">
-                        <div class="p-4 text-center text-gray-800">
-                            <h3 class="font-bold">Hydrotherapy</h3>
-                            <p class="text-sm">Water-based healing</p>
+                    <!-- SERVICES BAR -->
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 border border-white/20 rounded-xl p-5 mb-10">
+
+                        <div class="flex gap-3">
+                            <i class="fas fa-leaf text-green-400 text-2xl"></i>
+                            <div>
+                                <h4 class="font-semibold">Treatment</h4>
+                                <p class="text-sm text-gray-300">Detox & Healing</p>
+                            </div>
                         </div>
+
+                        <div class="flex gap-3">
+                            <i class="fas fa-hand-holding-medical text-green-400 text-2xl"></i>
+                            <div>
+                                <h4 class="font-semibold">Therapies</h4>
+                                <p class="text-sm text-gray-300">Natural Methods</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-3">
+                            <i class="fas fa-spa text-green-400 text-2xl"></i>
+                            <div>
+                                <h4 class="font-semibold">Lifestyle</h4>
+                                <p class="text-sm text-gray-300">Holistic Wellness</p>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center lg:justify-end items-center">
+                            <a href="https://what.sapp.link/sanjeevani" rel="noopener noreferrer" target="_blank"
+                                class="bg-green-600 hover:bg-green-500 px-6 py-3 rounded-xl font-semibold">
+                                Book Now
+                            </a>
+                        </div>
+
                     </div>
 
-                    <div class="bg-white rounded-xl overflow-hidden shadow-md">
-                        <img src="images/treatment/natur-c.jpeg" class="h-52 w-full object-cover">
-                        <div class="p-4 text-center text-gray-800">
-                            <h3 class="font-bold">Mud Therapy</h3>
-                            <p class="text-sm">Natural detoxification</p>
-                        </div>
-                    </div>
+                    <!-- DETAILS -->
+                    <div class="grid md:grid-cols-4 gap-8">
 
-                    <div class="bg-white rounded-xl overflow-hidden shadow-md">
-                        <img src="images/treatment/natur-a.jpeg" class="h-52 w-full object-cover">
-                        <div class="p-4 text-center text-gray-800">
-                            <h3 class="font-bold">Massage Therapy</h3>
-                            <p class="text-sm">Muscle & nerve relaxation</p>
+                        <div class="md:col-span-3">
+                            <h2 class="text-3xl font-bold mb-4">Naturopathy Treatments</h2>
+                            <ul class="list-disc list-inside text-gray-300 space-y-2 text-lg">
+                                <li>Diet therapy and therapeutic fasting</li>
+                                <li>Hydrotherapy, mud therapy, and sun therapy</li>
+                                <li>Massage therapy for circulation and detox</li>
+                                <li>Focus on toxin removal and metabolic balance</li>
+                                <li>Improves immunity and lifestyle-related disorders</li>
+                            </ul>
                         </div>
+
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-4">Facilities</h3>
+                            <ul class="space-y-2 text-gray-300">
+                                <li><i class="fas fa-check text-green-500"></i> Individual health assessment</li>
+                                <li><i class="fas fa-check text-green-500"></i> Non-invasive therapies</li>
+                                <li><i class="fas fa-check text-green-500"></i> Long-term wellness focus</li>
+                            </ul>
+                        </div>
+
                     </div>
 
                 </div>
-
-                <!-- SERVICES BAR -->
-                <div
-                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 border border-white/20 rounded-xl p-5 mb-10">
-
-                    <div class="flex gap-3">
-                        <i class="fas fa-leaf text-green-400 text-2xl"></i>
-                        <div>
-                            <h4 class="font-semibold">Treatment</h4>
-                            <p class="text-sm text-gray-300">Detox & Healing</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-3">
-                        <i class="fas fa-hand-holding-medical text-green-400 text-2xl"></i>
-                        <div>
-                            <h4 class="font-semibold">Therapies</h4>
-                            <p class="text-sm text-gray-300">Natural Methods</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-3">
-                        <i class="fas fa-spa text-green-400 text-2xl"></i>
-                        <div>
-                            <h4 class="font-semibold">Lifestyle</h4>
-                            <p class="text-sm text-gray-300">Holistic Wellness</p>
-                        </div>
-                    </div>
-
-                    <div class="flex justify-center lg:justify-end items-center">
-                        <a href="https://what.sapp.link/sanjeevani" rel="noopener noreferrer" target="_blank"
-                            class="bg-green-600 hover:bg-green-500 px-6 py-3 rounded-xl font-semibold">
-                            Book Now
-                        </a>
-                    </div>
-
-                </div>
-
-                <!-- DETAILS -->
-                <div class="grid md:grid-cols-4 gap-8">
-
-                    <div class="md:col-span-3">
-                        <h2 class="text-3xl font-bold mb-4">Naturopathy Treatments</h2>
-                        <ul class="list-disc list-inside text-gray-300 space-y-2 text-lg">
-                            <li>Diet therapy and therapeutic fasting</li>
-                            <li>Hydrotherapy, mud therapy, and sun therapy</li>
-                            <li>Massage therapy for circulation and detox</li>
-                            <li>Focus on toxin removal and metabolic balance</li>
-                            <li>Improves immunity and lifestyle-related disorders</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h3 class="text-2xl font-semibold mb-4">Facilities</h3>
-                        <ul class="space-y-2 text-gray-300">
-                            <li><i class="fas fa-check text-green-500"></i> Individual health assessment</li>
-                            <li><i class="fas fa-check text-green-500"></i> Non-invasive therapies</li>
-                            <li><i class="fas fa-check text-green-500"></i> Long-term wellness focus</li>
-                        </ul>
-                    </div>
-
-                </div>
-
             </div>
+        </div>
 
         </div>
     </section>
@@ -284,22 +289,14 @@
 
     </footer>
 
-    <!-- Scripts -->
+    <!-- jQuery first -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <script>
-        $('.therapy-slider').owlCarousel({
-            loop: true,
-            margin: 20,
-            autoplay: true,
-            responsive: {
-                0: { items: 1 },
-                640: { items: 2 },
-                1024: { items: 3 }
-            }
-        });
-    </script>
+    <!-- Your custom JS -->
+    <script src="js/custom.js"></script>
 
 </body>
 
