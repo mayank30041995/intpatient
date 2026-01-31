@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../../partials/head') %>
+</head>
+
+<body class="font-sans text-white">
+
+    <!-- ================= HEADER ================= -->
+    <%- include('../../partials/header') %>
+
+        <section class=" relative min-h-screen flex items-center justify-center py-32">
+
+            <!-- Background Image -->
+            <div class="absolute inset-0">
+                <img src="/images/infrastructure/i1.jpeg" alt="" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/60"></div>
+            </div>
+
+            <!-- Doctor Card -->
+            <div class="relative z-10 w-full max-w-6xl mx-auto lg:px-6 py-10
+        bg-white/10 backdrop-blur-md
+        rounded-2xl border border-white/20
+        text-white shadow-2xl ">
+                <h1 class="text-4xl font-semibold text-center py-12">Our Doctors</h1>
+
+
+                <div class="max-w-6xl mx-auto px-4
+                grid gap-6
+                grid-cols-1
+                md:grid-cols-2
+                lg:grid-cols-3
+                items-stretch
+                my-5">
+
+                    <!-- Card 1 -->
+                    <div class="group h-full flex flex-col">
+                        <div class="infra-card group flex-1 rounded-lg overflow-hidden shadow-sm">
+                            <a href="/doctors/pradeep-mathur" aria-label="Naturopathy" class="block h-full relative">
+
+                                <img src="/images/doctors/pradeep_mathur.webp" alt="Pradeep Mathur"
+                                    class="w-full h-56 object-cover" fetchpriority="high">
+
+                                <div class="infra-overlay absolute inset-0
+                                bg-black/60 text-white
+                                flex flex-col justify-end
+                                p-4 opacity-0
+                                transition group-hover:opacity-100">
+                                    <h3 class="capitalize text-lg font-semibold">
+                                        pradeep mathur
+                                    </h3>
+                                    <p class="text-sm">
+                                        Holistic healing through natural therapies and lifestyle balance.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <h3 class="mt-4 text-center text-lg font-semibold capitalize text-white-600">
+                            pradeep mathur
+                        </h3>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="group h-full flex flex-col">
+                        <div class="infra-card group flex-1 rounded-lg overflow-hidden shadow-sm">
+                            <a href="/doctors/divya-grover" aria-label="Ayurveda" class="block h-full relative">
+
+                                <img src="/images/doctors/divya_grover.webp" alt="Divya Grover"
+                                    class="w-full  h-56  object-cover">
+
+                                <div class="infra-overlay absolute inset-0
+                                bg-black/60 text-white
+                                flex flex-col justify-end
+                                p-4 opacity-0
+                                transition group-hover:opacity-100">
+                                    <h3 class="capitalize text-lg font-semibold">
+                                        divya grover
+                                    </h3>
+                                    <p class="text-sm">
+                                        Traditional Ayurvedic treatments guided by experienced physicians.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <h3 class="mt-4 text-center text-lg font-semibold capitalize text-white-600">
+                            divya grover
+                        </h3>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="group h-full flex flex-col">
+                        <div class="infra-card group flex-1 rounded-lg overflow-hidden shadow-sm">
+                            <a href="/doctors/amit-sharma" aria-label="Acupressure" class="block h-full relative">
+
+                                <img src="/images/doctors/amit_sharma.webp" alt="Amit Sharma"
+                                    class="w-full h-56 object-cover">
+
+                                <div class="infra-overlay absolute inset-0
+                                bg-black/60 text-white
+                                flex flex-col justify-end
+                                p-4 opacity-0
+                                transition group-hover:opacity-100">
+                                    <h3 class="capitalize text-lg font-semibold">
+                                        amit sharma
+                                    </h3>
+                                    <p class="text-sm">
+                                        Advanced detoxification therapies for deep rejuvenation.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <h3 class="mt-4 text-center text-lg font-semibold capitalize text-white-600">
+                            amit sharma
+                        </h3>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+
+        </section>
+        <!-- Footer Start -->
+        <%- include('../../partials/footer') %>
+</body>
+
+</html>

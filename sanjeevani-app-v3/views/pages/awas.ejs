@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head') %>
+    <link rel="stylesheet" href="css/owl.css" />
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+  </head>
+
+  <body class="font-sans text-white">
+    <!-- ================= HEADER ================= -->
+    <%- include('../partials/header') %>
+
+    <!-- ================= HERO SLIDER ================= -->
+    <section
+      class="relative min-h-screen flex items-center justify-center py-20 lg:py-32"
+    >
+      <!-- Background -->
+      <div class="absolute inset-0 -z-10">
+        <img
+          src="/images/infrastructure/i1.jpeg"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-black/60"></div>
+      </div>
+
+      <div class="w-full flex flex-col gap-8">
+        <!-- HERO CARD -->
+        <div
+          class="relative max-w-5xl mx-auto px-6 py-8 lg:px-8 lg:py-12 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 text-center text-white shadow-2xl"
+        >
+          <h1 class="tracking-wider text-3xl lg:text-6xl font-bold mb-4">
+            Awas
+          </h1>
+
+          <p class="text-base lg:text-3xl leading-snug opacity-90">
+            Sanjeevani India Kaya Sodhan Awas is a residential housing
+            initiative focused on providing affordable and well-planned homes
+            with an emphasis on healthy living and sustainable development. The
+            project aims to offer basic modern amenities in a secure and
+            community-oriented environment, making quality housing accessible to
+            families while supporting overall well-being and social upliftment.
+          </p>
+        </div>
+
+        <!-- CONTENT CARD -->
+        <div class="container mx-auto px-4">
+          <div
+            class="relative max-w-6xl mx-auto bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-2xl p-4 sm:p-6 lg:p-8"
+          >
+            <!-- OWL SLIDER -->
+            <div class="owl-carousel therapy-slider w-full mb-8">
+              <div class="group bg-white rounded-xl overflow-hidden shadow-md">
+                <img
+                  src="/images/room/1.jpg"
+                  class="h-48 w-full object-cover"
+                />
+                <!-- <div class="p-4 text-center text-gray-800">
+                                <h3 class="text-lg font-bold">Ayurveda</h3>
+                                <p class="text-sm mt-1">Ancient holistic science</p>
+                            </div> -->
+              </div>
+
+              <div class="group bg-white rounded-xl overflow-hidden shadow-md">
+                <img
+                  src="/images/room/2.jpg"
+                  class="h-48 w-full object-cover"
+                />
+                <!-- <div class="p-4 text-center text-gray-800">
+                                <h3 class="text-lg font-bold">Panchakarma</h3>
+                                <p class="text-sm mt-1">Deep detox therapies</p>
+                            </div> -->
+              </div>
+
+              <div class="group bg-white rounded-xl overflow-hidden shadow-md">
+                <img
+                  src="/images/room/3.jpg"
+                  class="h-48 w-full object-cover"
+                />
+                <!-- <div class="p-4 text-center text-gray-800">
+                                <h3 class="text-lg font-bold">Ayurveda</h3>
+                                <p class="text-sm mt-1">Ancient holistic science</p>
+                            </div> -->
+              </div>
+              <div class="group bg-white rounded-xl overflow-hidden shadow-md">
+                <img
+                  src="/images/room/4.jpg"
+                  class="h-48 w-full object-cover"
+                />
+                <!-- <div class="p-4 text-center text-gray-800">
+                                <h3 class="text-lg font-bold">Awas</h3>
+                                <p class="text-sm mt-1">Ancient holistic science</p>
+                            </div> -->
+              </div>
+            </div>
+
+            <!-- SERVICES -->
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 border border-white/20 rounded-xl p-4 mb-8"
+            >
+              <div class="flex gap-3">
+                <img src="/images/logo/48x48x10.png" class="w-10 h-10" />
+                <div>
+                  <h3 class="font-semibold text-white">Treatment</h3>
+                  <p class="text-sm text-gray-300">Health Assessment</p>
+                </div>
+              </div>
+
+              <div class="flex gap-3">
+                <img src="/images/logo/48x48x9.png" class="w-10 h-10" />
+                <div>
+                  <h3 class="font-semibold text-white">Services</h3>
+                  <p class="text-sm text-gray-300">Personalized Yoga</p>
+                </div>
+              </div>
+
+              <div class="flex gap-3">
+                <img src="/images/logo/48x48x8.png" class="w-10 h-10" />
+                <div>
+                  <h3 class="font-semibold text-white">Yoga</h3>
+                  <p class="text-sm text-gray-300">Guided Yoga Practice</p>
+                </div>
+              </div>
+
+              <div class="flex justify-center lg:justify-end items-center">
+                <a
+                  href="https://what.sapp.link/sanjeevani"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="bg-green-600 hover:bg-green-500 px-6 py-3 rounded-xl font-semibold"
+                >
+                  Book Now
+                </a>
+              </div>
+            </div>
+
+            <!-- DETAILS -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-4 gap-8 items-start p-4 my-2"
+            >
+              <!-- Left Column (75%) -->
+              <div class="md:col-span-3 text-white">
+                <h2 class="text-3xl font-bold mb-4">Awas</h2>
+                <ul
+                  class="list-disc list-inside space-y-2 text-gray-300 text-lg"
+                >
+                  <li>Focus on health-oriented and holistic living concepts</li>
+                  <li>
+                    Well-planned residential units with essential modern
+                    amenities
+                  </li>
+                  <li>
+                    Safe, serene, and community-friendly living environment
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Right Column (25%) -->
+              <div class="md:col-span-1 text-white">
+                <h3 class="text-2xl font-semibold mb-4">Facilities</h3>
+                <ul class="space-y-2 text-gray-300">
+                  <li class="flex items-center gap-2">
+                    <i class="fas fa-check text-green-500"></i>
+                    Free Wi-Fi connectivity across common areas
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="fas fa-check text-green-500"></i>
+                    Swimming pool for recreation and wellness
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="fas fa-check text-green-500"></i>
+                    Spacious meeting hall for community events and functions
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%- include('../partials/footer') %>
+
+    <!-- jQuery first -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Your custom JS -->
+    <script src="js/custom.js"></script>
+  </body>
+</html>
