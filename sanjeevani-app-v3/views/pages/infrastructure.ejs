@@ -1,152 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include('../partials/head') %>
+<head>
+    <%- include('../partials/head') %>
+</head>
+
+<body class="font-[Heebo] text-white bg-black">
+
+    <!-- ================= HEADER ================= -->
+    <%- include('../partials/header') %>
 
 
-    <body class="font-[Heebo] text-white bg-black">
+        <!-- ================= HERO ================= -->
+        <section class="relative min-h-screen flex items-center justify-center pt-28 pb-16">
 
-        <!-- ================= HEADER ================= -->
-        <%- include('../partials/header') %>
+            <div class="absolute inset-0 -z-10">
+                <img src="/images/infrastructure/i1.jpeg" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/70"></div>
+            </div>
 
+            <div class="max-w-6xl mx-auto px-4 space-y-10">
 
-            <!-- ================= HERO ================= -->
-            <section class="relative min-h-screen flex items-center justify-center pt-28 pb-16">
-
-                <div class="absolute inset-0 -z-10">
-                    <img src="/images/infrastructure/i1.jpeg" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-black/70"></div>
-                </div>
-
-                <div class="max-w-6xl mx-auto px-4 space-y-10">
-
-                    <!-- HERO CARD -->
-                    <div class="relative max-w-5xl mx-auto px-6 py-8 lg:px-8 lg:py-12
+                <!-- HERO CARD -->
+                <div class="relative max-w-5xl mx-auto px-6 py-8 lg:px-8 lg:py-12
                         bg-white/10 backdrop-blur-md
                         rounded-2xl border border-white/20
                         text-center text-white shadow-2xl">
-                        <h1 class="text-4xl lg:text-6xl font-bold mb-4">Infrastructure</h1>
-                        <p class="text-lg lg:text-2xl text-gray-200">
-                            Sanjeevani Kaya Shodhan Sansthan is thoughtfully designed to support natural healing,
-                            comfort, and inner calm through a perfect blend of nature and modern wellness facilities.
-                        </p>
+                    <h1 class="text-4xl lg:text-6xl font-bold mb-4">Infrastructure</h1>
+                    <p class="text-lg lg:text-2xl text-gray-200">
+                        Sanjeevani Kaya Shodhan Sansthan is thoughtfully designed to support natural healing,
+                        comfort, and inner calm through a perfect blend of nature and modern wellness facilities.
+                    </p>
 
-                    </div>
-                    <div class="relative max-w-5xl mx-auto px-6 py-4 lg:px-4 lg:py-12">
-                        <!-- IMAGE -->
-                        <div class="rounded-2xl overflow-hidden shadow-xl border border-white/20">
-                            <img src="/images/treatment/physiotherapist-a.jpeg"
-                                alt="Serene Nature Rich Campus at Sanjeevani" class="w-full h-80 object-cover">
-                        </div>
-
-                        <!-- MAIN CONTENT -->
-                        <h2 class="text-3xl font-bold mb-4 py-8">Serene & Nature-Rich Campus</h2>
-                        <ul class="list-disc list-inside text-gray-300 space-y-2 text-lg">
-                            <li><strong>Green Healing Environment:</strong> Lush greenery with open spaces that promote
-                                calmness
-                                and
-                                recovery.
-                            </li>
-                            <li><strong>Pollution-Free Campus:</strong> Noise-free surroundings supporting mental peace.
-                            </li>
-                            <li><strong>Healing Gardens & Walkways:</strong> Designed for gentle movement and
-                                mindfulness.
-                            </li>
-                            <li><strong>Natural Light & Fresh Air:</strong> Architecture that enhances circulation and
-                                vitality.
-                            </li>
-                        </ul>
-
-
-                        <h2 class="text-3xl font-bold mt-10 mb-4">Clinical & Therapy Infrastructure</h2>
-                        <ul class="list-disc list-inside text-gray-300 space-y-2 text-lg">
-                            <li><strong>Naturopathy Treatment Units:</strong> Dedicated spaces for detox and natural
-                                therapies.
-                            </li>
-                            <li><strong>Hydrotherapy & Bath Therapy Section:</strong> Fully equipped water-based healing
-                                units.
-                            </li>
-                            <li><strong>Massage & Physical Therapy Rooms:</strong> Designed for comfort and therapeutic
-                                effectiveness.</li>
-                            <li><strong>Ayurveda & Panchakarma Units:</strong> Traditional setups following authentic
-                                protocols.
-                            </li>
-                            <li><strong>Acupressure & Physiotherapy Areas:</strong> Focused on pain relief and
-                                functional
-                                recovery.
-                            </li>
-                            <li><strong>Medical Consultation Rooms:</strong> Hygienic and private assessment spaces.
-                            </li>
-                        </ul>
-
-                        <h2 class="text-3xl font-bold mt-10 mb-4">Yoga & Meditation Facilities</h2>
-                        <ul class="list-disc list-inside text-gray-300 space-y-2 text-lg">
-                            <li><strong>Spacious Yoga Halls:</strong> Well-ventilated areas for group and individual
-                                practice.
-                            </li>
-                            <li><strong>Meditation & Pranayama Zones:</strong> Quiet spaces for inner balance.</li>
-                            <li><strong>Natural Flooring & Ambience:</strong> Enhancing grounding and focus.</li>
-                            <li><strong>Dedicated Practice Areas:</strong> Separate zones for therapy-based sessions.
-                            </li>
-                        </ul>
-
-                        <h2 class="text-3xl font-bold mt-10 mb-4">Residential & Stay Facilities</h2>
-                        <ul class="list-disc list-inside text-gray-300 space-y-2 text-lg">
-                            <li><strong>Comfortable Accommodation:</strong> Clean and well-maintained rooms.</li>
-                            <li><strong>Flexible Stay Options:</strong> Single and shared rooms available.</li>
-                            <li><strong>Peaceful Living Environment:</strong> Supports deep healing and rest.</li>
-                            <li><strong>Recovery-Focused Design:</strong> Rooms designed for relaxation and renewal.
-                            </li>
-                        </ul>
-
-                        <h2 class="text-3xl font-bold mt-10 mb-4">Dining & Nutrition Area</h2>
-                        <ul class="list-disc list-inside text-gray-300 space-y-2 text-lg">
-                            <li><strong>Wellness Dining Hall:</strong> Dedicated space for mindful eating.</li>
-                            <li><strong>Satvik & Therapeutic Meals:</strong> Prepared as per treatment protocols.</li>
-                            <li><strong>Fresh & Hygienic Food:</strong> Naturally cooked with quality ingredients.</li>
-                            <li><strong>Personalized Nutrition:</strong> Diet plans aligned with individual therapy
-                                needs.
-                            </li>
-                        </ul>
-
-                        <h2 class="text-3xl font-bold mt-10 mb-4">Support Facilities</h2>
-                        <ul class="list-disc list-inside text-gray-300 space-y-2 text-lg">
-                            <li><strong>24/7 Utilities:</strong> Continuous water and electricity supply.</li>
-                            <li><strong>Comfort Amenities:</strong> Hot water, geysers, and climate support.</li>
-                            <li><strong>Housekeeping & Laundry:</strong> Regular cleaning and maintenance.</li>
-                            <li><strong>Secure Parking:</strong> Safe vehicle parking within campus.</li>
-                            <li><strong>High-Speed Wi-Fi:</strong> Available for essential communication.</li>
-                            <li><strong>Safety Lockers:</strong> Secure storage for personal belongings.</li>
-                        </ul>
-
-
-                    </div>
                 </div>
-            </section>
+                <div class="relative max-w-5xl mx-auto px-6 py-4 lg:px-4 lg:py-12">
+                    <!-- IMAGE -->
+                    <div class="rounded-2xl overflow-hidden shadow-xl border border-white/20">
+                        <img src="/images/treatment/physiotherapist-a.jpeg"
+                            alt="Serene Nature Rich Campus at Sanjeevani" class="w-full h-80 object-cover">
+                    </div>
 
-            <!-- ================= FOOTER ================= -->
-            <%- include('../partials/footer') %>
+                    <!-- MAIN CONTENT -->
+                    <h2 class="text-3xl font-bold mb-4 py-8">Serene & Nature-Rich Campus</h2>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 text-lg">
+                        <li><strong>Green Healing Environment:</strong> Lush greenery with open spaces that promote
+                            calmness
+                            and
+                            recovery.
+                        </li>
+                        <li><strong>Pollution-Free Campus:</strong> Noise-free surroundings supporting mental peace.
+                        </li>
+                        <li><strong>Healing Gardens & Walkways:</strong> Designed for gentle movement and
+                            mindfulness.
+                        </li>
+                        <li><strong>Natural Light & Fresh Air:</strong> Architecture that enhances circulation and
+                            vitality.
+                        </li>
+                    </ul>
 
 
-                <!-- Scripts -->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+                    <h2 class="text-3xl font-bold mt-10 mb-4">Clinical & Therapy Infrastructure</h2>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 text-lg">
+                        <li><strong>Naturopathy Treatment Units:</strong> Dedicated spaces for detox and natural
+                            therapies.
+                        </li>
+                        <li><strong>Hydrotherapy & Bath Therapy Section:</strong> Fully equipped water-based healing
+                            units.
+                        </li>
+                        <li><strong>Massage & Physical Therapy Rooms:</strong> Designed for comfort and therapeutic
+                            effectiveness.</li>
+                        <li><strong>Ayurveda & Panchakarma Units:</strong> Traditional setups following authentic
+                            protocols.
+                        </li>
+                        <li><strong>Acupressure & Physiotherapy Areas:</strong> Focused on pain relief and
+                            functional
+                            recovery.
+                        </li>
+                        <li><strong>Medical Consultation Rooms:</strong> Hygienic and private assessment spaces.
+                        </li>
+                    </ul>
 
-                <script>
-                    $('.therapy-slider').owlCarousel({
-                        loop: true,
-                        margin: 20,
-                        autoplay: true,
-                        responsive: {
-                            0: { items: 1 },
-                            640: { items: 2 },
-                            1024: { items: 3 }
-                        }
-                    });
-                </script>
+                    <h2 class="text-3xl font-bold mt-10 mb-4">Yoga & Meditation Facilities</h2>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 text-lg">
+                        <li><strong>Spacious Yoga Halls:</strong> Well-ventilated areas for group and individual
+                            practice.
+                        </li>
+                        <li><strong>Meditation & Pranayama Zones:</strong> Quiet spaces for inner balance.</li>
+                        <li><strong>Natural Flooring & Ambience:</strong> Enhancing grounding and focus.</li>
+                        <li><strong>Dedicated Practice Areas:</strong> Separate zones for therapy-based sessions.
+                        </li>
+                    </ul>
+
+                    <h2 class="text-3xl font-bold mt-10 mb-4">Residential & Stay Facilities</h2>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 text-lg">
+                        <li><strong>Comfortable Accommodation:</strong> Clean and well-maintained rooms.</li>
+                        <li><strong>Flexible Stay Options:</strong> Single and shared rooms available.</li>
+                        <li><strong>Peaceful Living Environment:</strong> Supports deep healing and rest.</li>
+                        <li><strong>Recovery-Focused Design:</strong> Rooms designed for relaxation and renewal.
+                        </li>
+                    </ul>
+
+                    <h2 class="text-3xl font-bold mt-10 mb-4">Dining & Nutrition Area</h2>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 text-lg">
+                        <li><strong>Wellness Dining Hall:</strong> Dedicated space for mindful eating.</li>
+                        <li><strong>Satvik & Therapeutic Meals:</strong> Prepared as per treatment protocols.</li>
+                        <li><strong>Fresh & Hygienic Food:</strong> Naturally cooked with quality ingredients.</li>
+                        <li><strong>Personalized Nutrition:</strong> Diet plans aligned with individual therapy
+                            needs.
+                        </li>
+                    </ul>
+
+                    <h2 class="text-3xl font-bold mt-10 mb-4">Support Facilities</h2>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 text-lg">
+                        <li><strong>24/7 Utilities:</strong> Continuous water and electricity supply.</li>
+                        <li><strong>Comfort Amenities:</strong> Hot water, geysers, and climate support.</li>
+                        <li><strong>Housekeeping & Laundry:</strong> Regular cleaning and maintenance.</li>
+                        <li><strong>Secure Parking:</strong> Safe vehicle parking within campus.</li>
+                        <li><strong>High-Speed Wi-Fi:</strong> Available for essential communication.</li>
+                        <li><strong>Safety Lockers:</strong> Secure storage for personal belongings.</li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FOOTER ================= -->
+        <%- include('../partials/footer') %>
+
+
+            <!-- Scripts -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+            <script>
+                $('.therapy-slider').owlCarousel({
+                    loop: true,
+                    margin: 20,
+                    autoplay: true,
+                    responsive: {
+                        0: { items: 1 },
+                        640: { items: 2 },
+                        1024: { items: 3 }
+                    }
+                });
+            </script>
 
 
 
-    </body>
+</body>
 
 </html>
