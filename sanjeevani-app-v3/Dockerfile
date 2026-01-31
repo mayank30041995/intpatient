@@ -2,7 +2,7 @@
 FROM node:20-alpine
 
 # Set working directory
-WORKDIR /app
+WORKDIR /src
 
 # Copy package files first (better caching)
 COPY package*.json ./
