@@ -31,16 +31,19 @@
             <div class="w-full flex flex-col gap-8">
 
                 <!-- HERO CARD -->
-                <div class="relative max-w-3xl mx-auto px-6 py-8 lg:px-8 lg:py-12
+                <div class="relative max-w-6xl mx-auto px-6 py-8 lg:px-8 lg:py-12
                         bg-white/10 backdrop-blur-md
                         rounded-2xl border border-white/20
                         text-center text-white shadow-2xl">
 
-                    <h1 class="text-4xl lg:text-6xl font-bold mb-4">
+                    <h1 class="text-4xl lg:text-6xl font-bold mb-4 capitalize">
                         <%= treatment.title %>
                     </h1>
-                    <p class="text-lg lg:text-2xl text-gray-200">
-                        <%= treatment.description %>
+                    <p class="text-lg lg:text-lg text-gray-200">
+                        <%= treatment.description1 %>
+                    </p>
+                    <p class="text-lg lg:text-lg text-gray-200 my-2">
+                        <%= treatment.description2 %>
                     </p>
                 </div>
                 <!-- CONTENT CARD -->
