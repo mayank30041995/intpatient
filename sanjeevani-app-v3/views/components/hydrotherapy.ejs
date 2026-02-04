@@ -1,128 +1,544 @@
-     <div class="container mx-auto px-4">
-                <div class="relative max-w-6xl mx-auto
-                bg-white/10 backdrop-blur-md
-                border border-white/20 rounded-2xl
-                shadow-2xl p-4 sm:p-6 lg:p-8">
+<div class="container mx-auto px-4">
+  <div
+    class="relative max-w-6xl mx-auto border border-white/20/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-2xl p-4 sm:p-6 lg:p-8"
+  >
+    <!-- OWL SLIDER -->
+    <div class="owl-carousel therapy-slider w-full mb-8 h-[18rem]">
+      <div class="group bg-white rounded-xl overflow-hidden shadow-md border border-white/30">
+        <img
+          src="./images/treatment/SPA-1.avif" fetchpriority="high"
+          class="h-48 w-full object-cover"
+        />
+        <div class="p-4 text-center text-gray-800">
+          <h3 class="text-lg font-bold">Swedish Massage</h3>
+          <!-- <p class="text-sm mt-1">Ancient holistic science</p> -->
+        </div>
+      </div>
 
-                    <!-- OWL SLIDER -->
-                    <div class="owl-carousel therapy-slider w-full mb-8">
+      <div class="group bg-white rounded-xl overflow-hidden shadow-md border border-white/30">
+        <img
+          src="./images/treatment/SPA-2.jpg"
+          class="h-48 w-full object-cover"
+        />
+        <div class="p-4 text-center text-gray-800">
+          <h3 class="text-lg font-bold">Deep Tissue Massage</h3>
+          <!-- <p class="text-sm mt-1">Deep detox therapies</p> -->
+        </div>
+      </div>
 
-                        <div class="group bg-white rounded-xl overflow-hidden shadow-md">
-                            <img src="./images/treatment/SPA-1.avif" class="h-48 w-full object-cover">
-                            <div class="p-4 text-center text-gray-800">
-                                <h3 class="text-lg font-bold">Ayurveda</h3>
-                                <p class="text-sm mt-1">Ancient holistic science</p>
-                            </div>
-                        </div>
+      <div class="group bg-white rounded-xl overflow-hidden shadow-md border border-white/30">
+        <img
+          src="./images/treatment/SPA-3.jpg"
+          class="h-48 w-full object-cover"
+        />
+        <div class="p-4 text-center text-gray-800">
+          <h3 class="text-lg font-bold">Therapeutic / Medical Massage</h3>
+          <!-- <p class="text-sm mt-1">Ancient holistic science</p> -->
+        </div>
+      </div>
+    </div>
 
-                        <div class="group bg-white rounded-xl overflow-hidden shadow-md">
-                            <img src="./images/treatment/SPA-2.jpg" class="h-48 w-full object-cover">
-                            <div class="p-4 text-center text-gray-800">
-                                <h3 class="text-lg font-bold">Panchakarma</h3>
-                                <p class="text-sm mt-1">Deep detox therapies</p>
-                            </div>
-                        </div>
+    <!-- SERVICES -->
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 border border-white/20 rounded-xl p-4 mb-8"
+    >
+      <div class="flex gap-3">
+        <img src="./images/logo/48x48x10.png" class="w-10 h-10" />
+        <div>
+          <h3 class="font-semibold text-white">Treatment</h3>
+          <p class="text-sm text-gray-300">Modarn Hydrotherapy</p>
+        </div>
+      </div>
 
-                        <div class="group bg-white rounded-xl overflow-hidden shadow-md">
-                            <img src="./images/treatment/SPA-3.jpg" class="h-48 w-full object-cover">
-                            <div class="p-4 text-center text-gray-800">
-                                <h3 class="text-lg font-bold">Ayurveda</h3>
-                                <p class="text-sm mt-1">Ancient holistic science</p>
-                            </div>
-                        </div>
+      <div class="flex gap-3">
+        <img src="./images/logo/48x48x9.png" class="w-10 h-10" />
+        <div>
+          <h3 class="font-semibold text-white">Services</h3>
+          <p class="text-sm text-gray-300">Trained Therapists</p>
+        </div>
+      </div>
 
-                    </div>
+      <div class="flex gap-3">
+        <img src="./images/logo/48x48x8.png" class="w-10 h-10" />
+        <div>
+          <h3 class="font-semibold text-white">Support</h3>
+          <p class="text-sm text-gray-300">Relaxation & Recovery</p>
+        </div>
+      </div>
 
-                    <!-- SERVICES -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4
-                    gap-6 border border-white/20 rounded-xl p-4 mb-8">
+      <div class="flex justify-center lg:justify-end items-center">
+        <a
+          href="https://what.sapp.link/sanjeevani"
+          rel="noopener noreferrer"
+          target="_blank"
+          class="bg-green-600 hover:border border-white/200 px-6 py-3 rounded-xl font-semibold"
+        >
+          Book Now
+        </a>
+      </div>
+    </div>
 
-                        <div class="flex gap-3">
-                            <img src="./images/logo/48x48x10.png" class="w-10 h-10">
-                            <div>
-                                <h3 class="font-semibold text-white">Treatment</h3>
-                                <p class="text-sm text-gray-300">
-                                    Modarn Hydrotherapy
-                                </p>
-                            </div>
-                        </div>
+    <!-- DETAILS -->
+    <!-- <div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-start p-4 my-2">
+      <!-- Left Column (75%) -->
+      <!-- <div class="md:col-span-3 text-white">
+        <h2 class="text-3xl font-bold mb-4">Hydrotherapy and Massage units</h2>
+        <ul class="list-disc list-inside space-y-2 text-gray-300 text-lg">
+          <li>
+            Hydrotherapy and Massage Therapy are core naturopathic treatments
+            that use water, touch, and natural techniques to stimulate
+            circulation, detoxify the body, relax the nervous system, and
+            support healing from chronic and lifestyle-related conditions.
+          </li>
+          <li>Improves Blood and Lymphatic Circulation</li>
+          <li>Enhancing Detoxification through Sceen and Orgains</li>
+        </ul>
+      </div> -->
 
-                        <div class="flex gap-3">
-                            <img src="./images/logo/48x48x9.png" class="w-10 h-10">
-                            <div>
-                                <h3 class="font-semibold text-white">Services</h3>
-                                <p class="text-sm text-gray-300">
-                                    Trained Therapists
-                                </p>
-                            </div>
-                        </div>
+      <!-- Right Column (25%) -->
+      <!-- <div class="md:col-span-1 text-white">
+        <h3 class="text-2xl font-semibold mb-4">Facilities</h3>
+        <ul class="space-y-2 text-gray-300">
+          <li class="flex items-center gap-2">
+            <i class="fas fa-check text-green-500"></i>
+            Full Body Therapeutic Massage
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fas fa-check text-green-500"></i>
+            Abdominal Massage
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fas fa-check text-green-500"></i>
+            Black & Spine Massage
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fas fa-check text-green-500"></i>
+            Head & Neck Massage
+          </li>
+        </ul>
+      </div>
+    </div> --> 
 
-                        <div class="flex gap-3">
-                            <img src="./images/logo/48x48x8.png" class="w-10 h-10">
-                            <div>
-                                <h3 class="font-semibold text-white">Support</h3>
-                                <p class="text-sm text-gray-300">
-                                    Relaxation & Recovery
-                                </p>
-                            </div>
-                        </div>
+    <section class="py-16 px-4 lg:px-5">
+      <div class="max-w-7xl mx-auto">
+        <!-- HEADER -->
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold  mb-4">
+            Massage Therapy & Hydrotherapy
+          </h2>
+          <p class="text-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
+            Therapeutic care services focused on pain relief, circulation
+            improvement, relaxation, and long-term recovery through non-invasive
+            supportive therapies.
+          </p>
+        </div>
 
-                        <div class="flex justify-center lg:justify-end items-center">
-                            <a href="https://what.sapp.link/sanjeevani" rel="noopener noreferrer" target="_blank"
-                                class="bg-green-600 hover:bg-green-500 px-6 py-3 rounded-xl font-semibold">
-                                Book Now
-                            </a>
-                        </div>
-                    </div>
+        <!-- MASSAGE THERAPY -->
+        <div class="rounded-2xl p-5 mb-16">
+          <h3 class="text-2xl font-semibold mb-4">
+            1. Massage Therapy
+          </h3>
 
-                    <!-- DETAILS -->
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-start p-4 my-2">
+          <p class="text-white/80 leading-relaxed mb-6">
+            Massage therapy is a manual therapeutic technique involving
+            systematic movements and pressure applied to muscles, soft tissues,
+            joints, and connective tissues. At Sanjeevani, it is used as a
+            supportive and rehabilitative treatment to relieve pain, improve
+            circulation, and promote relaxation and healing.
+          </p>
 
-                        <!-- Left Column (75%) -->
-                        <div class="md:col-span-3 text-white">
-                            <h2 class="text-3xl font-bold mb-4">Hydrotherapy and Massage units</h2>
-                            <ul class="list-disc list-inside space-y-2 text-gray-300 text-lg">
-                                <li>
-                                    Hydrotherapy and Massage Therapy are core
-                                    naturopathic treatments that use water, touch, and natural techniques to stimulate
-                                    circulation, detoxify the body, relax the nervous system, and support healing from
-                                    chronic
-                                    and lifestyle-related conditions.
-                                </li>
-                                <li>
-                                    Improves Blood and Lymphatic Circulation
-                                </li>
-                                <li>
-                                    Enhancing Detoxification through Sceen and Orgains
-                                </li>
+          <h4 class="text-xl font-semibold  mb-3">
+            How Massage Therapy Works
+          </h4>
+          <ul class="list-disc list-inside text-white/80 space-y-1 mb-6">
+            <li>Mechanical stimulation of muscles and soft tissues</li>
+            <li>Improved blood and lymphatic circulation</li>
+            <li>Reduction of muscle spasm and stiffness</li>
+            <li>Stimulation of the nervous system</li>
+            <li>Release of stress and tension</li>
+          </ul>
 
-                            </ul>
-                        </div>
+          <h4 class="text-xl font-semibold  mb-3">
+            Conditions Treated
+          </h4>
+          <ul class="list-disc list-inside text-white/80 space-y-1 mb-6">
+            <li>Muscular pain and stiffness</li>
+            <li>Back, neck, and shoulder pain</li>
+            <li>Joint stiffness and arthritis (supportive care)</li>
+            <li>Stress, anxiety, and fatigue</li>
+            <li>Post-injury and post-illness recovery</li>
+            <li>Poor circulation and sleep disturbances</li>
+          </ul>
 
-                        <!-- Right Column (25%) -->
-                        <div class="md:col-span-1 text-white">
-                            <h3 class="text-2xl font-semibold mb-4">Facilities</h3>
-                            <ul class="space-y-2 text-gray-300">
-                                <li class="flex items-center gap-2">
-                                    <i class="fas fa-check text-green-500"></i>
-                                    Full Body Therapeutic Massage
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="fas fa-check text-green-500"></i>
-                                    Abdominal Massage
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="fas fa-check text-green-500"></i>
-                                    Black & Spine Massage
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="fas fa-check text-green-500"></i>
-                                    Head & Neck Massage
-                                </li>
-                            </ul>
-                        </div>
+          <h4 class="text-xl font-semibold  mb-4">
+            Types of Massage Therapy Used
+          </h4>
 
-                    </div>
-
-                </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="border border-white/20 p-6 rounded-xl shadow-sm">
+              <h5 class="font-semibold  mb-2">Swedish Massage</h5>
+              <p class="text-white/80">
+                Gentle strokes for relaxation and circulation
+              </p>
             </div>
+
+            <div class="border border-white/20 p-6 rounded-xl shadow-sm">
+              <h5 class="font-semibold  mb-2">
+                Deep Tissue Massage
+              </h5>
+              <p class="text-white/80">
+                Targets deeper muscle layers for chronic tension
+              </p>
+            </div>
+
+            <div class="border border-white/20 p-6 rounded-xl shadow-sm">
+              <h5 class="font-semibold  mb-2">
+                Therapeutic / Medical Massage
+              </h5>
+              <p class="text-white/80">
+                Condition-specific massage for rehabilitation
+              </p>
+            </div>
+
+            <div class="border border-white/20 p-6 rounded-xl shadow-sm">
+              <h5 class="font-semibold  mb-2">
+                Oil Massage (Abhyanga-based)
+              </h5>
+              <p class="text-white/80">
+                Improves circulation and nourishes muscles
+              </p>
+            </div>
+
+            <div class="border border-white/20 p-6 rounded-xl shadow-sm md:col-span-2">
+              <h5 class="font-semibold  mb-2">
+                Localized Massage
+              </h5>
+              <p class="text-white/80">
+                Focused therapy for specific areas like neck, back, or limbs
+              </p>
+            </div>
+          </div>
+
+          <h4 class="text-xl font-semibold  mt-8 mb-3">
+            Benefits of Massage Therapy
+          </h4>
+          <ul class="list-disc list-inside text-white/80 space-y-1">
+            <li>Reduces muscle pain and stiffness</li>
+            <li>Improves blood circulation</li>
+            <li>Enhances relaxation and mental calmness</li>
+            <li>Reduces stress and fatigue</li>
+            <li>Improves sleep quality</li>
+            <li>Supports rehabilitation and recovery</li>
+          </ul>
+        </div>
+
+        <!-- HYDROTHERAPY -->
+        <div class="border border-white/20 rounded-2xl  p-5 mb-16">
+          <h3 class="text-2xl font-semibold mb-4">
+            2. Hydrotherapy
+          </h3>
+
+          <p class="text-white/80 leading-relaxed mb-6">
+            Hydrotherapy uses water in different forms and temperatures to
+            support pain relief, circulation improvement, relaxation, and
+            detoxification. At Sanjeevani, it is applied as a supportive and
+            rehabilitative therapy.
+          </p>
+
+          <h4 class="text-xl font-semibold  mb-3">
+            How Hydrotherapy Works
+          </h4>
+          <ul class="list-disc list-inside text-white/80 space-y-1 mb-6">
+            <li>Thermal effects of hot and cold water</li>
+            <li>Mechanical effects of water pressure and buoyancy</li>
+            <li>Circulatory stimulation</li>
+            <li>Relaxation of muscles and nerves</li>
+          </ul>
+
+          <h4 class="text-xl font-semibold  mb-3">
+            Conditions Treated
+          </h4>
+          <ul class="list-disc list-inside text-white/80 space-y-1 mb-6">
+            <li>Joint pain and arthritis</li>
+            <li>Muscle stiffness and soreness</li>
+            <li>Back pain</li>
+            <li>Stress and nervous tension</li>
+            <li>Poor circulation and fatigue</li>
+            <li>Rehabilitation and recovery support</li>
+          </ul>
+
+          <h4 class="text-xl font-semibold  mb-4">
+            Types of Hydrotherapy Used
+          </h4>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="border border-white/20 p-6 rounded-xl shadow-sm">
+              <h5 class="font-semibold  mb-2">
+                Hot Water Therapy
+              </h5>
+              <p class="text-white/80">
+                Relaxes muscles and reduces pain and stiffness
+              </p>
+            </div>
+
+            <div class="border border-white/20 p-6 rounded-xl shadow-sm">
+              <h5 class="font-semibold  mb-2">
+                Cold Water Therapy
+              </h5>
+              <p class="text-white/80">
+                Reduces inflammation and acute muscle pain
+              </p>
+            </div>
+
+            <div class="border border-white/20 p-6 rounded-xl shadow-sm">
+              <h5 class="font-semibold  mb-2">
+                Contrast Bath Therapy
+              </h5>
+              <p class="text-white/80">
+                Alternating hot and cold water for circulation
+              </p>
+            </div>
+
+            <div class="border border-white/20 p-6 rounded-xl shadow-sm">
+              <h5 class="font-semibold  mb-2">Steam Bath</h5>
+              <p class="text-white/80">
+                Supports detoxification and respiratory health
+              </p>
+            </div>
+
+            <div class="border border-white/20 p-6 rounded-xl shadow-sm">
+              <h5 class="font-semibold  mb-2">Sitz Bath</h5>
+              <p class="text-white/80">
+                Used for pelvic and lower abdominal conditions
+              </p>
+            </div>
+
+            <div class="border border-white/20 p-6 rounded-xl shadow-sm">
+              <h5 class="font-semibold  mb-2">Foot Bath</h5>
+              <p class="text-white/80">
+                Relieves fatigue and improves sleep quality
+              </p>
+            </div>
+          </div>
+
+          <h4 class="text-xl font-semibold  mt-8 mb-3">
+            Benefits of Hydrotherapy
+          </h4>
+          <ul class="list-disc list-inside text-white/80 space-y-1">
+            <li>Relieves muscle and joint pain</li>
+            <li>Improves blood circulation</li>
+            <li>Reduces stress and mental fatigue</li>
+            <li>Enhances relaxation</li>
+            <li>Supports detoxification</li>
+            <li>Improves mobility and flexibility</li>
+          </ul>
+        </div>
+
+        <!-- COMBINED ROLE -->
+        <div class="bg-green-700 text-white p-10 rounded-2xl text-center">
+          <h3 class="text-3xl font-semibold mb-6">
+            Integrated Care at Sanjeevani
+          </h3>
+          <p class="text-lg leading-relaxed max-w-3xl mx-auto">
+            Massage therapy and hydrotherapy are integrated with physiotherapy,
+            yoga, pranayama, and acupressure to provide comprehensive patient
+            care focused on symptom relief, recovery, and long-term
+            wellness—while maintaining strict safety, hygiene, and ethical
+            standards.
+          </p>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto my-10">
+        <!-- HEADER -->
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold  mb-4">
+            Hydrotherapy Services at Sanjeevani
+          </h2>
+          <p class="text-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
+            Hydrotherapy is a therapeutic method that uses water at different
+            temperatures and forms to promote healing, relaxation, and
+            rehabilitation. At Sanjeevani, hydrotherapy is provided as a safe,
+            non-invasive supportive treatment.
+          </p>
+        </div>
+
+        <!-- INTRO -->
+        <div class="border border-white/20 rounded-2xl  p-10 mb-16">
+          <h3 class="text-2xl font-semibold mb-4">
+            Types of Hydrotherapy & Their Benefits
+          </h3>
+          <p class="text-white/80 leading-relaxed">
+            Hydrotherapy works by stimulating circulation, relaxing muscles,
+            reducing pain, and supporting detoxification. Different water
+            temperatures and techniques are selected based on individual health
+            conditions and therapeutic needs.
+          </p>
+        </div>
+
+        <!-- THERAPY TYPES -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
+          <!-- HOT WATER -->
+          <div class="border border-white/20 p-8 rounded-2xl shadow-md">
+            <h4 class="text-xl font-semibold  mb-3">
+              Hot Water Therapy
+            </h4>
+            <p class="text-white mb-4">
+              Uses warm or hot water through baths, compresses, or showers.
+            </p>
+            <ul class="list-disc list-inside text-white/80 space-y-1">
+              <li>Relaxes muscles and reduces stiffness</li>
+              <li>Improves blood circulation</li>
+              <li>Relieves joint and muscle pain</li>
+              <li>Reduces stress and nervous tension</li>
+            </ul>
+            <p class="mt-4 text-sm text-white/80">
+              Common Uses: Arthritis, back pain, muscle spasm, chronic pain
+            </p>
+          </div>
+
+          <!-- COLD WATER -->
+          <div class="border border-white/20 p-8 rounded-2xl shadow-md">
+            <h4 class="text-xl font-semibold  mb-3">
+              Cold Water Therapy
+            </h4>
+            <p class="text-white mb-4">
+              Uses cold compresses, baths, or showers.
+            </p>
+            <ul class="list-disc list-inside text-white/80 space-y-1">
+              <li>Reduces inflammation and swelling</li>
+              <li>Decreases pain sensation</li>
+              <li>Controls acute injury symptoms</li>
+              <li>Refreshes the nervous system</li>
+            </ul>
+            <p class="mt-4 text-sm text-white/80">
+              Common Uses: Acute injuries, swelling, sports injuries
+            </p>
+          </div>
+
+          <!-- CONTRAST -->
+          <div class="border border-white/20 p-8 rounded-2xl shadow-md">
+            <h4 class="text-xl font-semibold  mb-3">
+              Contrast Bath Therapy
+            </h4>
+            <p class="text-white mb-4">
+              Alternating hot and cold water applications.
+            </p>
+            <ul class="list-disc list-inside text-white/80 space-y-1">
+              <li>Stimulates blood circulation</li>
+              <li>Reduces muscle soreness</li>
+              <li>Speeds recovery</li>
+              <li>Improves tissue healing</li>
+            </ul>
+            <p class="mt-4 text-sm text-white/80">
+              Common Uses: Chronic joint pain, sports recovery
+            </p>
+          </div>
+
+          <!-- STEAM -->
+          <div class="border border-white/20 p-8 rounded-2xl shadow-md">
+            <h4 class="text-xl font-semibold  mb-3">
+              Steam Bath
+            </h4>
+            <p class="text-white mb-4">
+              Uses hot steam to induce sweating and relaxation.
+            </p>
+            <ul class="list-disc list-inside text-white/80 space-y-1">
+              <li>Detoxifies through sweating</li>
+              <li>Relieves muscle tension</li>
+              <li>Improves skin health</li>
+              <li>Clears respiratory passages</li>
+            </ul>
+            <p class="mt-4 text-sm text-white/80">
+              Common Uses: Stress, respiratory congestion, wellness
+            </p>
+          </div>
+
+          <!-- SITZ -->
+          <div class="border border-white/20 p-8 rounded-2xl shadow-md">
+            <h4 class="text-xl font-semibold  mb-3">Sitz Bath</h4>
+            <p class="text-white mb-4">
+              Immersion of hip and pelvic region in warm or cold water.
+            </p>
+            <ul class="list-disc list-inside text-white/80 space-y-1">
+              <li>Relieves pelvic and lower abdominal pain</li>
+              <li>Improves pelvic circulation</li>
+              <li>Reduces inflammation</li>
+              <li>Promotes relaxation</li>
+            </ul>
+            <p class="mt-4 text-sm text-white/80">
+              Common Uses: Piles, postnatal care, pelvic discomfort
+            </p>
+          </div>
+
+          <!-- FOOT BATH -->
+          <div class="border border-white/20 p-8 rounded-2xl shadow-md">
+            <h4 class="text-xl font-semibold  mb-3">Foot Bath</h4>
+            <p class="text-white mb-4">
+              Soaking the feet in warm or cold water.
+            </p>
+            <ul class="list-disc list-inside text-white/80 space-y-1">
+              <li>Improves circulation</li>
+              <li>Relieves tired feet</li>
+              <li>Reduces stress</li>
+              <li>Improves sleep quality</li>
+            </ul>
+            <p class="mt-4 text-sm text-white/80">
+              Common Uses: Fatigue, stress, sleep disorders
+            </p>
+          </div>
+
+          <!-- FULL BODY -->
+          <div class="border border-white/20 p-8 rounded-2xl shadow-md md:col-span-2">
+            <h4 class="text-xl font-semibold  mb-3">
+              Full Body Bath
+            </h4>
+            <p class="text-white mb-4">
+              Immersion of the entire body in warm water.
+            </p>
+            <ul class="list-disc list-inside text-white/80 space-y-1">
+              <li>Relaxes the whole body</li>
+              <li>Improves circulation</li>
+              <li>Reduces muscle and joint pain</li>
+              <li>Promotes mental calmness</li>
+            </ul>
+            <p class="mt-4 text-sm text-white/80">
+              Common Uses: Stress, chronic pain, general wellness
+            </p>
+          </div>
+
+          <!-- COMPRESS -->
+          <div class="border border-white/20 p-8 rounded-2xl shadow-md md:col-span-2">
+            <h4 class="text-xl font-semibold  mb-3">
+              Hot & Cold Compress Therapy
+            </h4>
+            <p class="text-white mb-4">
+              Localized application of hot or cold water compresses.
+            </p>
+            <ul class="list-disc list-inside text-white/80 space-y-1">
+              <li>Targeted pain relief</li>
+              <li>Reduces swelling or stiffness</li>
+              <li>Improves local circulation</li>
+              <li>Supports injury recovery</li>
+            </ul>
+            <p class="mt-4 text-sm text-white/80">
+              Common Uses: Localized pain, joint inflammation, muscle injuries
+            </p>
+          </div>
+        </div>
+
+        <!-- ROLE -->
+        <div class="bg-green-700 text-white p-10 rounded-2xl text-center">
+          <h3 class="text-3xl font-semibold mb-6">
+            Role of Hydrotherapy at Sanjeevani
+          </h3>
+          <p class="text-lg leading-relaxed max-w-3xl mx-auto">
+            At Sanjeevani, hydrotherapy is used as a supportive and
+            complementary treatment, integrated with physiotherapy, yoga,
+            massage, and other wellness therapies to ensure safe, effective, and
+            holistic patient care.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
