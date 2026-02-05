@@ -120,7 +120,7 @@ const doctors = [
                             <i class="fa-solid fa-graduation-cap text-green-500 mt-1"></i>
                             <div>
                                 <span class="font-semibold text-white">Education</span><br>
-                                MPT
+                                 Chief Medical and Health Officer
                             </div>
                         </li>
 
@@ -128,7 +128,7 @@ const doctors = [
                             <i class="fa-solid fa-briefcase text-green-500 mt-1"></i>
                             <div>
                                 <span class="font-semibold text-white">Experience</span><br>
-                                MPT at Sanjeevani Kaya Shodhan Sansthan
+                               Physiotherapist  Specialist
                             </div>
                         </li>
 
@@ -182,7 +182,7 @@ const doctors = [
                             <i class="fa-solid fa-graduation-cap text-green-500 mt-1"></i>
                             <div>
                                 <span class="font-semibold text-white">Education</span><br>
-                               DNYS
+                              Deploma in Naturopathy and Yogic Sciences (DNYS)
                             </div>
                         </li>
 
@@ -190,7 +190,7 @@ const doctors = [
                             <i class="fa-solid fa-briefcase text-green-500 mt-1"></i>
                             <div>
                                 <span class="font-semibold text-white">Experience</span><br>
-                                DNYS at Sanjeevani Kaya Shodhan Sansthan
+                                 Chief Medical and Health Officer - (CMHO)
                             </div>
                         </li>
 
@@ -204,7 +204,7 @@ const doctors = [
     experience: '10 years',
     image: '/images/doctors/dr-reeta-majhi.webp',
     meta: {
-      title: 'Dr. Amit Sharma - Sanjeevani Kaya Hospital',
+      title: 'Dr. Reeta Majhi - Sanjeevani Kaya Hospital',
       description:
         'Dr. Reeta Majhi is a Naturopathic Doctor at Sanjeevani Kaya Shodan Sansthan, Panipat, Haryana, India.',
       keywords:
@@ -239,7 +239,7 @@ const doctors = [
                             <i class="fa-solid fa-graduation-cap text-green-500 mt-1"></i>
                             <div>
                                 <span class="font-semibold text-white">Education</span><br>
-                              PHD
+                                Bachelor in Naturopathy and Yogic Sciences (BNYS)
                             </div>
                         </li>
 
@@ -278,7 +278,7 @@ const doctors = [
                        </p>`,
     info: `   <ul class="space-y-5 text-gray-300">
 
-                        <li class="flex gap-3">
+                        <li class="flex gap-3 capitalize">
                             <i class="fa-solid fa-stethoscope text-green-500 mt-1"></i>
                             <div>
                                 <span class="font-semibold text-white">Speciality</span><br>
@@ -298,7 +298,7 @@ const doctors = [
                             <i class="fa-solid fa-graduation-cap text-green-500 mt-1"></i>
                             <div>
                                 <span class="font-semibold text-white">Education</span><br>
-                                Master’s Degree in Yoga Science
+                              Master of Physiotherapy (MPT)
                             </div>
                         </li>
 
@@ -306,7 +306,7 @@ const doctors = [
                             <i class="fa-solid fa-briefcase text-green-500 mt-1"></i>
                             <div>
                                 <span class="font-semibold text-white">Experience</span><br>
-                               Yoga therapy sessions, workshops, and wellness retreats
+                               Chief Medical and Health Officer - (CMHO)
                             </div>
                         </li>
 
@@ -320,9 +320,9 @@ const doctors = [
     experience: '10 years',
     image: '/images/doctors/dr-nitin-dhruv.webp',
     meta: {
-      title: 'Dr. Amit Sharma - Sanjeevani Kaya Hospital',
+      title: 'Dr. Nitin Dhruv - Sanjeevani Kaya Hospital',
       description:
-        'Meet the experienced Internal Medicine doctor DR. Amit Sharma at Sanjeevani Kaya Hospital, dedicated to personalized, natural healing through holistic and drug-free treatment approaches.',
+        'Meet the experienced Internal Medicine doctor Dr. Nitin Dhruv at Sanjeevani Kaya Hospital, dedicated to personalized, natural healing through holistic and drug-free treatment approaches.',
       keywords:
         'Sanjeevani Kaya Hospital doctors, Internal Medicine specialists, holistic doctors, natural healing experts, Internal Medicine physician team',
     },
@@ -355,7 +355,7 @@ const doctors = [
                             <i class="fa-solid fa-graduation-cap text-green-500 mt-1"></i>
                             <div>
                                 <span class="font-semibold text-white">Education</span><br>
-                                PhD in Kaya chikitsaSwami Narayan university,Kalol, Ahemdabad,Gujarat
+                                PHD,MD,BAMS,FAMILY PHYSICIAN
                             </div>
                         </li>
 
