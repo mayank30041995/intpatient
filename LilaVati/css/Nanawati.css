@@ -694,6 +694,7 @@ h1 {
   }
 
   .slider-all {
+    width: 100%;
     background-size: 149% 107%;
     top: -10px !important;
   }
