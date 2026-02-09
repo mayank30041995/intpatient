@@ -25,7 +25,8 @@ a:hover {
   border-radius: 8px;
   display: grid;
   justify-items: center;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
@@ -70,7 +71,8 @@ a:hover {
   color: #2d9f28;
   font-weight: 600;
   border-radius: 12px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
@@ -81,7 +83,9 @@ a:hover {
 .drawer-banner {
   margin-top: 100px;
   background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.1),
+    0 6px 20px rgba(0, 0, 0, 0.1);
   padding: 15px 2px 2px;
   color: #000;
   border-radius: 8px;
@@ -141,7 +145,7 @@ a:hover {
   .logo-y {
     background: #fff;
     height: 30px;
-    width: 28px;
+    width: 110px;
     margin-bottom: 8px;
     padding: 4px;
   }
@@ -205,7 +209,9 @@ a:hover {
   .drawer-banner {
     margin-top: 80px;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    box-shadow:
+      0 4px 8px rgba(0, 0, 0, 0.1),
+      0 6px 20px rgba(0, 0, 0, 0.1);
     padding: 15px 2px 2px;
     color: #000;
     border-radius: 8px;
@@ -239,6 +245,11 @@ a:hover {
   position: fixed;
   right: 0px;
   top: 0px;
+}
+.about-section {
+  background-color: #f2f2f2;
+  padding: 50px;
+  text-align: center;
 }
 
 #swipeArea {
@@ -332,17 +343,28 @@ a:hover {
 }
 
 .slider {
-  background-image: url(../img/kims-kerala.png);
-  aspect-ratio: 24/9;
-  min-height: 28rem;
-  background-size: 100% 121%;
+  position: relative; /* REQUIRED for ::before */
+  background-image: url("../img/kims-kerala.webp");
+  aspect-ratio: 24 / 9;
+  min-height: 29rem;
+  background-size: cover; /* prevents distortion */
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden; /* keeps overlay contained */
 }
 
 .slider::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.15); /* adjust: 0.15–0.35 */
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+/* optional: keep content above overlay */
+.slider > * {
+  position: relative;
+  z-index: 2;
 }
 
 /* cardio dr */
@@ -1464,7 +1486,7 @@ h1 {
     width: 16px;
     height: 20px;
     vertical-align: middle;
-    content: '';
+    content: "";
     background: no-repeat center center;
     background-size: 100% 100%;
   }
@@ -1493,10 +1515,10 @@ h1 {
   }
 
   .logo-x {
-    height: 30px;
+    height: 50px;
     position: relative;
     top: -10px;
-    width: 48px;
+    width: 110px;
     object-fit: contain;
     background: #fff;
     border-radius: 8px;
@@ -1771,7 +1793,8 @@ h1 {
   padding: 6px;
   /* max-width: 15%; */
   border: 6px solid #d3d3d3;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   border-radius: 18px;
   display: grid;
