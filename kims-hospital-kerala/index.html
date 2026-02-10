@@ -76,12 +76,13 @@
     <!--topbar-->
 
     <div class="container topbar col-md-12 d-flex align-items-center">
-        <div class="row w-100 justify-content-center align-items-center">
+        <div class="d-grid d-md-flex justify-content-center align-items-center w-100" style="place-items: center;">
             <div class=" d-flex align-items-center ">
                 <!-- Content with vertically centered text -->
-                <h3 class="text-center topbar-text">Get Doctor’s opinion & cost
-                    estimate &nbsp; &nbsp; <span class="bar">| </span>&nbsp;
-                    &nbsp;</h3>
+                <p class="text-align-center px-2" style="position: relative; top: 6px;">
+                    <span>Get Doctor’s opinion & cost estimate</span>
+                </p>
+
             </div>
             &nbsp;
             <div class="  d-flex align-items-center topbar_i-cons ">
@@ -100,31 +101,6 @@
         </div>
     </div>
 
-    <button id="openBtn" data-url="https://what.sapp.link/kims-health"><img src="img/logo_kims.png" class="logo-y"
-            alt="KIMS Health Hospital" width="100" height="100">Connect on WhatsApp</button>
-
-    <!-- Drawer -->
-
-    <div id="drawer" class="drawer">
-        <div id="imasCircle"> <img src="img/logo_kims.png" class="logo-x" alt="KIMS Health Hospital appointment"
-                width="100" height="100"></div>
-        <div class="drawer-content">
-            <button id="closeBtn" type="button" class="close" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-
-            <div class="drawer-banner">
-                <h3>International Patient Care</h3>
-                <p>International Support On Whatsapp</p>
-            </div>
-            <div class="drawer-items">
-                <h3>International Support On Whatsapp</h3>
-                <button class="btn" data-url="https://what.sapp.link/kims-health"><i class="fa fa-whatsapp fa-btn"
-                        style="font-size:20px;"></i>
-                    Connect on Whatsapp</button>
-            </div>
-        </div>
-    </div>
 
     <!--topbar-->
     <!--navbar-->
@@ -171,19 +147,45 @@
     <!--navbar end -->
     <!--slider-->
     <div class="container-fluid  slider">
-        <div class="text-center  ">
+        <div class="text-center ">
             <h1 class="text-bnnr"><b>KIMSHEALTH Trivandrum</b>,Kerala
             </h1><br><span class="text-bnnr-dis">INTERNATIONAL PATIENTS​</span><br>
-            <a href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer">
-                <button type="button" class="btn btn-primary2">
-                    GET FREE OPINION
-                </button>
-            </a>
+            
+            <button type="button" class="btn btn-primary2" data-url="https://what.sapp.link/kims-health"
+                aria-label="Get free opinion">
+                GET FREE OPINION
+            </button>
             <br>
             <a href="#scrool_about" aria-label="Whatsapp">
                 <div class="container-fluid  scrol-gif text-center"></div>
         </div></a>
 
+    </div>
+    
+    <button id="openBtn" data-url="https://what.sapp.link/kims-health"><img src="img/logo_kims.png" class="logo-y"
+            alt="KIMS Health Hospital" width="100" height="100">Connect on WhatsApp</button>
+
+    <!-- Drawer -->
+
+    <div id="drawer" class="drawer">
+        <div id="imasCircle"> <img src="img/logo_kims.png" class="logo-x" alt="KIMS Health Hospital appointment"
+                width="100" height="100"></div>
+        <div class="drawer-content">
+            <button id="closeBtn" type="button" class="close" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+            <div class="drawer-banner">
+                <h3>International Patient Care</h3>
+                <p>International Support On Whatsapp</p>
+            </div>
+            <div class="drawer-items">
+                <h3>International Support On Whatsapp</h3>
+                <button class="btn" data-url="https://what.sapp.link/kims-health"><i class="fa fa-whatsapp fa-btn"
+                        style="font-size:20px;"></i>
+                    Connect on Whatsapp</button>
+            </div>
+        </div>
     </div>
     <section id="scroll_about py-5" class="about-section">
 
@@ -274,16 +276,14 @@
                     <div class="card-body">
                         <h1 class="card-title">Dr. Abdul Shahid P P</h1>
                         <p class="card-text"> Medical Oncology</p>
-                        <button class="dr_btn" href="https://what.sapp.link/kims-health" target="_blank"
-                            rel="noopener noreferrer" aria-label="chat us">Book an
+                        <button class="dr_btn" data-url="https://what.sapp.link/kims-health"
+                            aria-label="book an appointment" rel="noopener noreferrer" aria-label="chat us">Book an
                             Appointment</button>
-                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health"
-                            href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer"
-                            aria-label="chat us"> <i class="fa fa-whatsapp" style="font-size:8px;color:#b71c2b"></i>
+                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health" target="_blank"
+                            rel="noopener noreferrer" aria-label="chat us"> <i class="fa fa-whatsapp"
+                                style="font-size:8px;color:#b71c2b"></i>
                             Connect on
                             WhatsApp</button>
-
-
                     </div>
                 </div>
             </div>
@@ -295,12 +295,12 @@
                         <h1 class="card-title">Dr. Arun Raj S T
                         </h1>
                         <p class="card-text">Nuclear Medicine - ONCOLOGY</p>
-                        <button class="dr_btn" href="https://what.sapp.link/kims-health" target="_blank"
-                            rel="noopener noreferrer" aria-label="chat us">Book an
+                        <button class="dr_btn" data-url="https://what.sapp.link/kims-health"
+                            aria-label="book an appointment" rel="noopener noreferrer" aria-label="chat us">Book an
                             Appointment</button>
-                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health"
-                            href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer"
-                            aria-label="chat us"><i class="fa fa-whatsapp" style="font-size:8px;color:#b71c2b"></i>
+                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health" target="_blank"
+                            rel="noopener noreferrer" aria-label="chat us"><i class="fa fa-whatsapp"
+                                style="font-size:8px;color:#b71c2b"></i>
                             Connect on
                             WhatsApp</button>
 
@@ -316,12 +316,12 @@
                         <h1 class="card-title">Dr. Azgar Abdul Rasheed
                         </h1>
                         <p class="card-text">ONCOLOGY</p>
-                        <button class="dr_btn" href="https://what.sapp.link/kims-health" target="_blank"
-                            rel="noopener noreferrer" aria-label="chat us">Book an
+                        <button class="dr_btn" data-url="https://what.sapp.link/kims-health"
+                            aria-label="book an appointment" rel="noopener noreferrer" aria-label="chat us">Book an
                             Appointment</button>
-                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health"
-                            href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer"
-                            aria-label="chat us"><i class="fa fa-whatsapp" style="font-size:8px;color:#b71c2b"></i>
+                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health" target="_blank"
+                            rel="noopener noreferrer" aria-label="chat us"><i class="fa fa-whatsapp"
+                                style="font-size:8px;color:#b71c2b"></i>
                             Connect on
                             WhatsApp</button>
 
@@ -336,12 +336,12 @@
                         <h1 class="card-title">Dr. Bharath V M
                         </h1>
                         <p class="card-text">Surgical Oncology</p>
-                        <button class="dr_btn" href="https://what.sapp.link/kims-health" target="_blank"
-                            rel="noopener noreferrer" aria-label="chat us">Book an
+                        <button class="dr_btn" data-url="https://what.sapp.link/kims-health"
+                            aria-label="book an appointment" rel="noopener noreferrer" aria-label="chat us">Book an
                             Appointment</button>
-                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health"
-                            href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer"
-                            aria-label="chat us"><i class="fa fa-whatsapp" style="font-size:8px;color:#b71c2b"></i>
+                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health" target="_blank"
+                            rel="noopener noreferrer" aria-label="chat us"><i class="fa fa-whatsapp"
+                                style="font-size:8px;color:#b71c2b"></i>
                             Connect on
                             WhatsApp</button>
 
@@ -356,12 +356,12 @@
                         <h1 class="card-title">Dr. Bijay P. Nair
                         </h1>
                         <p class="card-text">ONCOLOGY</p>
-                        <button class="dr_btn" href="https://what.sapp.link/kims-health" target="_blank"
-                            rel="noopener noreferrer" aria-label="chat us">Book an
+                        <button class="dr_btn" data-url="https://what.sapp.link/kims-health"
+                            aria-label="book an appointment" rel="noopener noreferrer" aria-label="chat us">Book an
                             Appointment</button>
-                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health"
-                            href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer"
-                            aria-label="chat us"><i class="fa fa-whatsapp" style="font-size:8px;color:#b71c2b"></i>
+                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health" target="_blank"
+                            rel="noopener noreferrer" aria-label="chat us"><i class="fa fa-whatsapp"
+                                style="font-size:8px;color:#b71c2b"></i>
                             Connect on
                             WhatsApp</button>
 
@@ -403,12 +403,12 @@
                     <div class="card-body">
                         <h1 class="card-title">Dr. Ajit Kumar V K</h1>
                         <p class="card-text">Senior Consultant - CARDIOLOGY</p>
-                        <button class="dr_btn" href="https://what.sapp.link/kims-health" target="_blank"
-                            rel="noopener noreferrer" aria-label="chat us">Book an
+                        <button class="dr_btn" data-url="https://what.sapp.link/kims-health"
+                            aria-label="book an appointment" rel="noopener noreferrer" aria-label="chat us">Book an
                             Appointment</button>
-                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health"
-                            href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer"
-                            aria-label="chat us"><i class="fa fa-whatsapp" style="font-size:8px;color:#b71c2b"></i>
+                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health" target="_blank"
+                            rel="noopener noreferrer" aria-label="chat us"><i class="fa fa-whatsapp"
+                                style="font-size:8px;color:#b71c2b"></i>
                             Connect on
                             WhatsApp</button>
 
@@ -422,12 +422,12 @@
                     <div class="card-body">
                         <h1 class="card-title">Dr. Anees Thajudeen</h1>
                         <p class="card-text">CARDIOLOGY</p>
-                        <button class="dr_btn" href="https://what.sapp.link/kims-health" target="_blank"
-                            rel="noopener noreferrer" aria-label="chat us">Book an
+                        <button class="dr_btn" data-url="https://what.sapp.link/kims-health"
+                            aria-label="book an appointment" rel="noopener noreferrer" aria-label="chat us">Book an
                             Appointment</button>
-                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health"
-                            href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer"
-                            aria-label="chat us"><i class="fa fa-whatsapp" style="font-size:8px;color:#b71c2b"></i>
+                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health" target="_blank"
+                            rel="noopener noreferrer" aria-label="chat us"><i class="fa fa-whatsapp"
+                                style="font-size:8px;color:#b71c2b"></i>
                             Connect on
                             WhatsApp</button>
 
@@ -441,12 +441,12 @@
                     <div class="card-body">
                         <h1 class="card-title">Dr. Ashwin Haridas</h1>
                         <p class="card-text">CARDIOLOGY</p>
-                        <button class="dr_btn" href="https://what.sapp.link/kims-health" target="_blank"
-                            rel="noopener noreferrer" aria-label="chat us">Book an
+                        <button class="dr_btn" data-url="https://what.sapp.link/kims-health"
+                            aria-label="book an appointment" rel="noopener noreferrer" aria-label="chat us">Book an
                             Appointment</button>
-                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health"
-                            href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer"
-                            aria-label="chat us"><i class="fa fa-whatsapp" style="font-size:8px;color:#b71c2b"></i>
+                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health" target="_blank"
+                            rel="noopener noreferrer" aria-label="chat us"><i class="fa fa-whatsapp"
+                                style="font-size:8px;color:#b71c2b"></i>
                             Connect on
                             WhatsApp</button>
 
@@ -460,12 +460,12 @@
                     <div class="card-body">
                         <h1 class="card-title">Dr. Atul Abraham</h1>
                         <p class="card-text">CARDIOLOGY</p>
-                        <button class="dr_btn" href="https://what.sapp.link/kims-health" target="_blank"
-                            rel="noopener noreferrer" aria-label="chat us">Book an
+                        <button class="dr_btn" data-url="https://what.sapp.link/kims-health"
+                            aria-label="book an appointment" rel="noopener noreferrer" aria-label="chat us">Book an
                             Appointment</button>
-                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health"
-                            href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer"
-                            aria-label="chat us"><i class="fa fa-whatsapp" style="font-size:8px;color:#b71c2b"></i>
+                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health" target="_blank"
+                            rel="noopener noreferrer" aria-label="chat us"><i class="fa fa-whatsapp"
+                                style="font-size:8px;color:#b71c2b"></i>
                             Connect on
                             WhatsApp</button>
 
@@ -479,12 +479,12 @@
                     <div class="card-body">
                         <h1 class="card-title">Dr. Bijulal S</h1>
                         <p class="card-text">CARDIOLOGY</p>
-                        <button class="dr_btn" href="https://what.sapp.link/kims-health" target="_blank"
-                            rel="noopener noreferrer" aria-label="chat us">Book an
+                        <button class="dr_btn" data-url="https://what.sapp.link/kims-health"
+                            aria-label="book an appointment" rel="noopener noreferrer" aria-label="chat us">Book an
                             Appointment</button>
-                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health"
-                            href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer"
-                            aria-label="chat us"><i class="fa fa-whatsapp" style="font-size:8px;color:#b71c2b"></i>
+                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health" target="_blank"
+                            rel="noopener noreferrer" aria-label="chat us"><i class="fa fa-whatsapp"
+                                style="font-size:8px;color:#b71c2b"></i>
                             Connect on
                             WhatsApp</button>
 
@@ -497,12 +497,12 @@
                     <div class="card-body">
                         <h1 class="card-title">Dr. Dhinesh David</h1>
                         <p class="card-text">CARDIOLOGY</p>
-                        <button class="dr_btn" href="https://what.sapp.link/kims-health" target="_blank"
-                            rel="noopener noreferrer" aria-label="chat us">Book an
+                        <button class="dr_btn" data-url="https://what.sapp.link/kims-health"
+                            aria-label="book an appointment" rel="noopener noreferrer" aria-label="chat us">Book an
                             Appointment</button>
-                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health"
-                            href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer"
-                            aria-label="chat us"><i class="fa fa-whatsapp" style="font-size:8px;color:#b71c2b"></i>
+                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health" target="_blank"
+                            rel="noopener noreferrer" aria-label="chat us"><i class="fa fa-whatsapp"
+                                style="font-size:8px;color:#b71c2b"></i>
                             Connect on
                             WhatsApp</button>
 
@@ -543,12 +543,12 @@
                     <div class="card-body">
                         <h1 class="card-title">Dr. Abu Madan</h1>
                         <p class="card-text">NEUROSURGERY</p>
-                        <button class="dr_btn" href="https://what.sapp.link/kims-health" target="_blank"
-                            rel="noopener noreferrer" aria-label="chat us">Book an
+                        <button class="dr_btn" data-url="https://what.sapp.link/kims-health"
+                            aria-label="book an appointment" rel="noopener noreferrer" aria-label="chat us">Book an
                             Appointment</button>
-                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health"
-                            href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer"
-                            aria-label="chat us"><i class="fa fa-whatsapp" style="font-size:8px;color:#b71c2b"></i>
+                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health" target="_blank"
+                            rel="noopener noreferrer" aria-label="chat us"><i class="fa fa-whatsapp"
+                                style="font-size:8px;color:#b71c2b"></i>
                             Connect on
                             WhatsApp</button>
 
@@ -562,12 +562,12 @@
                     <div class="card-body">
                         <h1 class="card-title">Dr. Ajith M</h1>
                         <p class="card-text">NEUROSURGERY </p>
-                        <button class="dr_btn" href="https://what.sapp.link/kims-health" target="_blank"
-                            rel="noopener noreferrer" aria-label="chat us">Book an
+                        <button class="dr_btn" data-url="https://what.sapp.link/kims-health"
+                            aria-label="book an appointment" rel="noopener noreferrer" aria-label="chat us">Book an
                             Appointment</button>
-                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health"
-                            href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer"
-                            aria-label="chat us"><i class="fa fa-whatsapp" style="font-size:8px;color:#b71c2b"></i>
+                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health" target="_blank"
+                            rel="noopener noreferrer" aria-label="chat us"><i class="fa fa-whatsapp"
+                                style="font-size:8px;color:#b71c2b"></i>
                             Connect on
                             WhatsApp</button>
                         <!--call btn dr-->
@@ -588,12 +588,12 @@
                     <div class="card-body">
                         <h1 class="card-title">Dr. Ajith R</h1>
                         <p class="card-text">NEUROSURGERY </p>
-                        <button class="dr_btn" href="https://what.sapp.link/kims-health" target="_blank"
-                            rel="noopener noreferrer" aria-label="chat us">Book an
+                        <button class="dr_btn" data-url="https://what.sapp.link/kims-health"
+                            aria-label="book an appointment" rel="noopener noreferrer" aria-label="chat us">Book an
                             Appointment</button>
-                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health"
-                            href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer"
-                            aria-label="chat us"><i class="fa fa-whatsapp" style="font-size:8px;color:#b71c2b"></i>
+                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health" target="_blank"
+                            rel="noopener noreferrer" aria-label="chat us"><i class="fa fa-whatsapp"
+                                style="font-size:8px;color:#b71c2b"></i>
                             Connect on
                             WhatsApp</button>
                         <!--call btn dr-->
@@ -613,12 +613,12 @@
                     <div class="card-body">
                         <h1 class="card-title">Dr. Ashok V P</h1>
                         <p class="card-text">NEUROSURGERY</p>
-                        <button class="dr_btn" href="https://what.sapp.link/kims-health" target="_blank"
-                            rel="noopener noreferrer" aria-label="chat us">Book an
+                        <button class="dr_btn" data-url="https://what.sapp.link/kims-health"
+                            aria-label="book an appointment" rel="noopener noreferrer" aria-label="chat us">Book an
                             Appointment</button>
-                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health"
-                            href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer"
-                            aria-label="chat us"><i class="fa fa-whatsapp" style="font-size:8px;color:#b71c2b"></i>
+                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health" target="_blank"
+                            rel="noopener noreferrer" aria-label="chat us"><i class="fa fa-whatsapp"
+                                style="font-size:8px;color:#b71c2b"></i>
                             Connect on
                             WhatsApp</button>
                         <!--call btn dr-->
@@ -639,12 +639,12 @@
                     <div class="card-body">
                         <h1 class="card-title">Dr. Kalpana D</h1>
                         <p class="card-text">NEUROSURGERY</p>
-                        <button class="dr_btn" href="https://what.sapp.link/kims-health" target="_blank"
-                            rel="noopener noreferrer" aria-label="chat us">Book an
+                        <button class="dr_btn" data-url="https://what.sapp.link/kims-health"
+                            aria-label="book an appointment" rel="noopener noreferrer" aria-label="chat us">Book an
                             Appointment</button>
-                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health"
-                            href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer"
-                            aria-label="chat us"><i class="fa fa-whatsapp" style="font-size:8px;color:#b71c2b"></i>
+                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health" target="_blank"
+                            rel="noopener noreferrer" aria-label="chat us"><i class="fa fa-whatsapp"
+                                style="font-size:8px;color:#b71c2b"></i>
                             Connect on
                             WhatsApp</button>
 
@@ -691,12 +691,12 @@
                     <div class="card-body">
                         <h1 class="card-title">Dr. Chandhan M</h1>
                         <p class="card-text">ORTHOPAEDICS </p>
-                        <button class="dr_btn" href="https://what.sapp.link/kims-health" target="_blank"
-                            rel="noopener noreferrer" aria-label="chat us">Book an
+                        <button class="dr_btn" data-url="https://what.sapp.link/kims-health"
+                            aria-label="book an appointment" rel="noopener noreferrer" aria-label="chat us">Book an
                             Appointment</button>
-                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health"
-                            href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer"
-                            aria-label="chat us"><i class="fa fa-whatsapp" style="font-size:8px;color:#b71c2b"></i>
+                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health" target="_blank"
+                            rel="noopener noreferrer" aria-label="chat us"><i class="fa fa-whatsapp"
+                                style="font-size:8px;color:#b71c2b"></i>
                             Connect on
                             WhatsApp</button>
 
@@ -710,12 +710,12 @@
                     <div class="card-body">
                         <h1 class="card-title">Dr. Madan Mohan B</h1>
                         <p class="card-text">ORTHOPAEDICS</p>
-                        <button class="dr_btn" href="https://what.sapp.link/kims-health" target="_blank"
-                            rel="noopener noreferrer" aria-label="chat us">Book an
+                        <button class="dr_btn" data-url="https://what.sapp.link/kims-health"
+                            aria-label="book an appointment" rel="noopener noreferrer" aria-label="chat us">Book an
                             Appointment</button>
-                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health"
-                            href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer"
-                            aria-label="chat us"><i class="fa fa-whatsapp" style="font-size:8px;color:#b71c2b"></i>
+                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health" target="_blank"
+                            rel="noopener noreferrer" aria-label="chat us"><i class="fa fa-whatsapp"
+                                style="font-size:8px;color:#b71c2b"></i>
                             Connect on
                             WhatsApp</button>
 
@@ -730,12 +730,12 @@
                         <h1 class="card-title">Dr. Muhammed Nazeer
                         </h1>
                         <p class="card-text">ORTHOPAEDICS</p>
-                        <button class="dr_btn" href="https://what.sapp.link/kims-health" target="_blank"
-                            rel="noopener noreferrer" aria-label="chat us">Book an
+                        <button class="dr_btn" data-url="https://what.sapp.link/kims-health"
+                            aria-label="book an appointment" rel="noopener noreferrer" aria-label="chat us">Book an
                             Appointment</button>
-                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health"
-                            href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer"
-                            aria-label="chat us"><i class="fa fa-whatsapp" style="font-size:8px;color:#b71c2b"></i>
+                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health" target="_blank"
+                            rel="noopener noreferrer" aria-label="chat us"><i class="fa fa-whatsapp"
+                                style="font-size:8px;color:#b71c2b"></i>
                             Connect on
                             WhatsApp</button>
 
@@ -750,12 +750,12 @@
                         <h1 class="card-title">Dr. Rajesh V Pillai
                         </h1>
                         <p class="card-text">ORTHOPAEDICS</p>
-                        <button class="dr_btn" href="https://what.sapp.link/kims-health" target="_blank"
-                            rel="noopener noreferrer" aria-label="chat us">Book an
+                        <button class="dr_btn" data-url="https://what.sapp.link/kims-health"
+                            aria-label="book an appointment" rel="noopener noreferrer" aria-label="chat us">Book an
                             Appointment</button>
-                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health"
-                            href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer"
-                            aria-label="chat us"><i class="fa fa-whatsapp" style="font-size:8px;color:#b71c2b"></i>
+                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health" target="_blank"
+                            rel="noopener noreferrer" aria-label="chat us"><i class="fa fa-whatsapp"
+                                style="font-size:8px;color:#b71c2b"></i>
                             Connect on
                             WhatsApp</button>
 
@@ -769,12 +769,12 @@
                         <h1 class="card-title">Dr. Ranjith Unnikrishnan
                         </h1>
                         <p class="card-text">ORTHOPAEDICS</p>
-                        <button class="dr_btn" href="https://what.sapp.link/kims-health" target="_blank"
-                            rel="noopener noreferrer" aria-label="chat us">Book an
+                        <button class="dr_btn" data-url="https://what.sapp.link/kims-health"
+                            aria-label="book an appointment" rel="noopener noreferrer" aria-label="chat us">Book an
                             Appointment</button>
-                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health"
-                            href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer"
-                            aria-label="chat us"><i class="fa fa-whatsapp" style="font-size:8px;color:#b71c2b"></i>
+                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health" target="_blank"
+                            rel="noopener noreferrer" aria-label="chat us"><i class="fa fa-whatsapp"
+                                style="font-size:8px;color:#b71c2b"></i>
                             Connect on
                             WhatsApp</button>
 
@@ -819,12 +819,12 @@
                         <h1 class="card-title">Dr. Mayank Bharti
                         </h1>
                         <p class="card-text">Urology</p>
-                        <button class="dr_btn" href="https://what.sapp.link/kims-health" target="_blank"
-                            rel="noopener noreferrer" aria-label="chat us">Book an
+                        <button class="dr_btn" data-url="https://what.sapp.link/kims-health"
+                            aria-label="book an appointment" rel="noopener noreferrer" aria-label="chat us">Book an
                             Appointment</button>
-                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health"
-                            href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer"
-                            aria-label="chat us"><i class="fa fa-whatsapp" style="font-size:8px;color:#b71c2b"></i>
+                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health" target="_blank"
+                            rel="noopener noreferrer" aria-label="chat us"><i class="fa fa-whatsapp"
+                                style="font-size:8px;color:#b71c2b"></i>
                             Connect on
                             WhatsApp</button>
 
@@ -839,12 +839,12 @@
                         <h1 class="card-title">Dr. Nithya R
                         </h1>
                         <p class="card-text"> Urology</p>
-                        <button class="dr_btn" href="https://what.sapp.link/kims-health" target="_blank"
-                            rel="noopener noreferrer" aria-label="chat us">Book an
+                        <button class="dr_btn" data-url="https://what.sapp.link/kims-health"
+                            aria-label="book an appointment" rel="noopener noreferrer" aria-label="chat us">Book an
                             Appointment</button>
-                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health"
-                            href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer"
-                            aria-label="chat us"><i class="fa fa-whatsapp" style="font-size:8px;color:#b71c2b"></i>
+                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health" target="_blank"
+                            rel="noopener noreferrer" aria-label="chat us"><i class="fa fa-whatsapp"
+                                style="font-size:8px;color:#b71c2b"></i>
                             Connect on
                             WhatsApp</button>
 
@@ -859,12 +859,12 @@
                         <h1 class="card-title">Dr. Renu Thomas
                         </h1>
                         <p class="card-text"> Urology</p>
-                        <button class="dr_btn" href="https://what.sapp.link/kims-health" target="_blank"
-                            rel="noopener noreferrer" aria-label="chat us">Book an
+                        <button class="dr_btn" data-url="https://what.sapp.link/kims-health"
+                            aria-label="book an appointment" rel="noopener noreferrer" aria-label="chat us">Book an
                             Appointment</button>
-                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health"
-                            href="https://what.sapp.link/kims-health" target="_blank" rel="noopener noreferrer"
-                            aria-label="chat us"><i class="fa fa-whatsapp" style="font-size:8px;color:#b71c2b"></i>
+                        <button class="dr_btn2" data-url="https://what.sapp.link/kims-health" target="_blank"
+                            rel="noopener noreferrer" aria-label="chat us"><i class="fa fa-whatsapp"
+                                style="font-size:8px;color:#b71c2b"></i>
                             Connect on
                             WhatsApp</button>
 

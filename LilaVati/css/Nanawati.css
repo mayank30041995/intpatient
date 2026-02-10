@@ -30,7 +30,7 @@
   position: absolute;
   width: 17%;
   height: 13%;
-  top: -15px;
+  top: 5px;
   object-fit: contain;
 }
 
@@ -101,7 +101,9 @@
   text-align: center;
 }
 
-.drawer-banner h2 {
+.drawer-banner p {
+  font-size: 24px;
+  font-weight: 700;
   letter-spacing: 0.83px;
 }
 
@@ -131,9 +133,11 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   #openBtn {
+    display: none;
     bottom: 10px;
-    left: 10px;
+    left: 0px;
     font-size: 14px;
+    width: 42%;
   }
 
   #closeBtn {
@@ -150,11 +154,11 @@
   #imasCircle {
     display: block;
     position: absolute;
-    height: 70px;
+    height: 40px;
     width: 70px;
     border-radius: 38px;
-    top: 10px;
-    left: 41%;
+    top: 0px;
+    left: 30%;
     /* background-color: #0f0f0f;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); */
     border: none;
@@ -164,8 +168,10 @@
   }
 
   #drawer {
-    height: 45%;
-    width: 100%;
+    display: none;
+    left: 0;
+    height: 20%;
+    width: fit-content;
     border-top-left-radius: 160px;
     /* Rounded top-left corner */
     border-top-right-radius: 160px;
@@ -193,7 +199,7 @@
     text-align: center;
   }
 
-  .drawer-banner h2 {
+  .drawer-banner p {
     font-size: 18px;
     font-weight: 700;
   }
@@ -240,7 +246,7 @@ h1 {
   min-height: 450px;
   width: 60rem;
 
-  background: url('LILAVATI%20PIC.cms');
+  background: url("LILAVATI%20PIC.cms");
 
   background-repeat: no-repeat;
   background-position: center;
@@ -676,7 +682,7 @@ h1 {
   }
 
   .logo_mob {
-    width: 49%;
+    width: 30%;
   }
 
   .hotel-img {
@@ -688,6 +694,7 @@ h1 {
   }
 
   .slider-all {
+    width: 100%;
     background-size: 149% 107%;
     top: -10px !important;
   }
@@ -738,7 +745,7 @@ h1 {
 .logo-yx {
   height: 70px;
   position: relative;
-  top: 15px;
+  top: 20px;
   width: 150px;
   border-radius: 30px;
   object-fit: contain;
@@ -1013,7 +1020,7 @@ li {
 }
 
 .custom-list {
-  list-style-image: url('Green.svg') !important;
+  list-style-image: url("Green.svg") !important;
   padding-left: 0;
   padding-inline: 34px;
 }
@@ -1051,7 +1058,7 @@ li {
 }
 
 .text_dec:before {
-  content: '';
+  content: "";
   display: block;
   width: 193px;
   height: 2px;
@@ -1066,7 +1073,7 @@ li {
 }
 
 .text_dec:after {
-  content: '';
+  content: "";
   display: block;
   width: 193px;
   height: 2px;
