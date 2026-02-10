@@ -261,3 +261,13 @@ body {
   font-size: 0.95rem;
   opacity: 0.9;
 }
+
+
+
+@media (min-width: 1024px) {
+  .desktop-indent {
+    text-indent: -1.3em;
+    padding-left: 1.3em;
+  }
+}
+
