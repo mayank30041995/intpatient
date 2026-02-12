@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apollo Hospitals, Delhi | International Patients</title>
+  <meta name="description" content="Apollo Hospitals, Delhi – specialist care for international patients. Get medical opinion, treatment guidance, and next steps via WhatsApp, call, or form." />
+  <meta name="robots" content="index,follow" />
+  <style>
+    :root{
+      --accent:#0b5ed7;
+      --accent-2:#25D366; /* WhatsApp */
+      --text:#0f172a;
+      --muted:#475569;
+      --line:#e2e8f0;
+      --bg:#ffffff;
+      --soft:#f8fafc;
+      --shadow: 0 10px 26px rgba(2,6,23,.08);
+      --radius: 16px;
+      --max: 1120px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.55;
+    }
+    a{color:inherit}
+    .container{max-width:var(--max); margin:0 auto; padding:18px}
+
+    /* Topbar */
+    .topbar{
+      display:flex; gap:14px; align-items:center; justify-content:space-between;
+      padding:10px 0 6px;
+    }
+    .brand{display:flex; gap:12px; align-items:center}
+    .mark{
+      width:40px; height:40px; border-radius:12px;
+      background: linear-gradient(135deg, var(--accent), rgba(11,94,215,.25));
+    }
+    .brand h1{margin:0; font-size:14px; font-weight:850; letter-spacing:.2px}
+    .brand p{margin:0; font-size:12px; color:var(--muted)}
+    .top-cta{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+    .top-cta a{text-decoration:none}
+    .chip{
+      border:1px solid var(--line);
+      background:var(--soft);
+      padding:10px 12px;
+      border-radius:999px;
+      font-size:13px;
+    }
+    .chip strong{color:var(--text)}
+
+    /* Buttons */
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:12px 14px;
+      border-radius:12px;
+      border:1px solid transparent;
+      font-weight:750;
+      text-decoration:none;
+      cursor:pointer;
+      user-select:none;
+      white-space:nowrap;
+    }
+    .btn-primary{background:var(--accent-2); color:#05210e; box-shadow: var(--shadow);}
+    .btn-secondary{background:var(--accent); color:#fff;}
+    .btn-ghost{background:#fff; border-color:var(--line); color:var(--text);}
+    .btn-primary:hover{filter:brightness(1.02)}
+    .btn-secondary:hover{filter:brightness(1.02)}
+    .btn-ghost:hover{background:var(--soft)}
+
+    /* Hero */
+    .hero{
+      margin-top:8px;
+      border-top:1px solid var(--line);
+      padding:18px 0 6px;
+    }
+    .hero-grid{display:grid; grid-template-columns: 1.1fr .9fr; gap:18px; align-items:stretch}
+    @media (max-width: 960px){ .hero-grid{grid-template-columns:1fr} }
+
+    .kicker{
+      display:inline-flex; align-items:center; gap:10px;
+      font-size:12px;
+      color:var(--muted);
+      background:var(--soft);
+      border:1px solid var(--line);
+      padding:8px 10px;
+      border-radius:999px;
+      width:fit-content;
+      margin-bottom:12px;
+    }
+    .hero h2{margin:0 0 8px; font-size:34px; line-height:1.12}
+    @media (max-width: 480px){ .hero h2{font-size:28px} }
+    .hero p{margin:0 0 14px; color:var(--muted); font-size:15px}
+
+    .trustbar{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap:10px;
+      margin-top:14px;
+    }
+    @media (max-width: 960px){ .trustbar{grid-template-columns: repeat(2, 1fr)} }
+    .trustitem{
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:12px;
+      background:#fff;
+    }
+    .trustitem .t1{font-weight:850; font-size:13px; margin:0 0 2px}
+    .trustitem .t2{margin:0; font-size:12px; color:var(--muted)}
+
+    .hero-media{
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      overflow:hidden;
+      background: linear-gradient(180deg, rgba(11,94,215,.06), rgba(2,6,23,.02));
+      min-height: 280px;
+      box-shadow: var(--shadow);
+      position:relative;
+    }
+    .hero-media .placeholder{
+      position:absolute; inset:0;
+      display:flex; align-items:center; justify-content:center;
+      color:rgba(15,23,42,.55);
+      font-weight:750;
+      padding:16px;
+      text-align:center;
+    }
+    .caption{
+      position:absolute; left:12px; right:12px; bottom:12px;
+      background: rgba(255,255,255,.92);
+      border:1px solid var(--line);
+      border-radius: 14px;
+      padding:10px 12px;
+      box-shadow: 0 6px 18px rgba(2,6,23,.08);
+      font-size:12px;
+      color:var(--muted);
+    }
+
+    /* Lead card */
+    .lead-card{
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      background:#fff;
+      box-shadow: var(--shadow);
+      padding:16px;
+    }
+    .lead-card h3{margin:0 0 6px; font-size:18px}
+    .lead-card p{margin:0 0 12px; color:var(--muted); font-size:13px}
+    .cta-row{display:grid; gap:10px; margin-top:10px}
+    .mini{font-size:12px; color:var(--muted); margin-top:10px}
+    .mini ul{margin:8px 0 0; padding-left:18px}
+
+    /* Sections */
+    section{padding:22px 0}
+    section h3{margin:0 0 10px; font-size:22px}
+    section p{margin:0 0 12px; color:var(--muted)}
+
+    .soft-wrap{background:var(--soft); border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
+
+    .grid3{display:grid; grid-template-columns: repeat(3, 1fr); gap:14px}
+    .grid2{display:grid; grid-template-columns: repeat(2, 1fr); gap:14px}
+    @media (max-width: 960px){ .grid3,.grid2{grid-template-columns:1fr} }
+
+    .box{
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      background:#fff;
+      padding:16px;
+    }
+    .box h4{margin:0 0 6px; font-size:16px}
+    .box p{margin:0; font-size:13px; color:var(--muted)}
+    .list{margin:10px 0 0; padding-left:18px; color:var(--muted); display:grid; gap:10px}
+
+    /* Specialties */
+    .spec-grid{display:grid; grid-template-columns: repeat(3, 1fr); gap:14px}
+    @media (max-width: 960px){ .spec-grid{grid-template-columns:1fr} }
+    .spec{
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      background:#fff;
+      padding:16px;
+    }
+    .spec h4{margin:0 0 6px; font-size:16px}
+    .spec p{margin:0 0 10px; font-size:13px; color:var(--muted)}
+    .spec a{text-decoration:underline; color: var(--accent)}
+
+    /* Form */
+    .form-grid{display:grid; grid-template-columns: 1.05fr .95fr; gap:14px}
+    @media (max-width: 960px){ .form-grid{grid-template-columns:1fr} }
+    form{display:grid; gap:10px}
+    label{font-size:12px; color:var(--muted)}
+    input, select, textarea{
+      width:100%;
+      padding:12px 12px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:#fff;
+      color:var(--text);
+      outline:none;
+    }
+    textarea{min-height:96px; resize:vertical}
+    .submit{width:100%}
+
+    /* FAQ */
+    .faq{display:grid; grid-template-columns: repeat(2, 1fr); gap:12px}
+    @media (max-width: 960px){ .faq{grid-template-columns:1fr} }
+    details{
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      background:#fff;
+      padding:12px 14px;
+    }
+    summary{cursor:pointer; font-weight:850}
+    details p{margin:10px 0 0; color:var(--muted)}
+
+    /* Footer */
+    .footer{
+      padding:18px 0 40px;
+      color:var(--muted);
+      font-size:12px;
+      border-top:1px solid var(--line);
+    }
+
+    /* Sticky mobile CTA */
+    .sticky{
+      position:fixed; left:0; right:0; bottom:0;
+      background: rgba(255,255,255,.95);
+      border-top:1px solid var(--line);
+      display:none;
+      padding:10px 12px;
+      z-index:999;
+    }
+    .sticky .wrap{max-width:var(--max); margin:0 auto; display:flex; gap:10px}
+    .sticky .wrap a{flex:1}
+    @media (max-width: 960px){
+      .sticky{display:block}
+      body{padding-bottom:76px}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="topbar">
+      <div class="brand" aria-label="Apollo Hospitals Delhi">
+        <div class="mark" aria-hidden="true"></div>
+        <div>
+          <h1>Apollo Hospitals, Delhi</h1>
+          <p>International patient support & care coordination</p>
+        </div>
+      </div>
+
+      <div class="top-cta">
+        <a class="chip" href="#specialties">Specialties</a>
+        <a class="chip" href="#international">International support</a>
+        <a class="chip" href="#faq">FAQ</a>
+        <a class="chip" href="tel:+919899187776"><strong>Call:</strong> +91 98991 87776</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero" id="top">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="kicker">For International Patients • Apollo Hospitals, Delhi</div>
+          <h2>Get guidance from the right specialist team — with clear next steps</h2>
+          <p>
+            We help international patients connect with the appropriate department for consultation, medical opinion,
+            and treatment planning. You can start with a simple message — reports are optional.
+          </p>
+
+          <div class="trustbar" aria-label="Trust row">
+            <div class="trustitem"><p class="t1">Trusted brand</p><p class="t2">High-intent hospital searches</p></div>
+            <div class="trustitem"><p class="t1">Specialist teams</p><p class="t2">Multidisciplinary approach</p></div>
+            <div class="trustitem"><p class="t1">Confidential</p><p class="t2">Respectful guidance</p></div>
+            <div class="trustitem"><p class="t1">Fast start</p><p class="t2">WhatsApp / call / form</p></div>
+          </div>
+
+          <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn btn-primary" href="https://wa.me/919899187776?text=Hello%2C%20I%20am%20an%20international%20patient%20considering%20Apollo%20Hospitals%20Delhi.%20Please%20guide%20me%20on%20the%20right%20specialist%20and%20next%20steps." target="_blank" rel="noopener">
+              🟢 WhatsApp (Fast Response)
+            </a>
+            <a class="btn btn-secondary" href="#lead-form">Request Call Back</a>
+            <a class="btn btn-ghost" href="#lead-form">Get Medical Opinion</a>
+          </div>
+        </div>
+
+        <div class="hero-media" aria-label="Hero image placeholder">
+          <div class="placeholder">
+            Add a hospital / doctor-team image here (recommended for B2C feel)
+          </div>
+          <div class="caption">
+            Tip: Use a real hospital or doctor-team photo to increase trust and reduce bounce.
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:14px;">
+        <div class="lead-card">
+          <h3>Speak with a care coordinator</h3>
+          <p>Share your requirement and we’ll guide you to the right specialty team and next steps.</p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20discuss%20treatment%20at%20Apollo%20Hospitals%20Delhi.%20My%20requirement%20is%3A%20%5Btype%20here%5D." target="_blank" rel="noopener">🟢 WhatsApp Now</a>
+            <a class="btn btn-ghost" href="tel:+919899187776">📞 Call +91 98991 87776</a>
+          </div>
+
+          <div class="mini">
+            <ul>
+              <li>Confidential & respectful</li>
+              <li>Reports optional to start</li>
+              <li>No obligation to proceed</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="soft-wrap">
+    <section class="container" id="why">
+      <h3>Why patients choose Apollo Hospitals, Delhi</h3>
+      <p>High-intent patients look for trusted hospitals first. This page helps them reach the right team quickly, with clarity.</p>
+
+      <div class="grid3">
+        <div class="box">
+          <h4>Specialist matching</h4>
+          <p>Tell us your diagnosis/symptoms and we guide you to the appropriate specialty team.</p>
+        </div>
+        <div class="box">
+          <h4>Clarity before travel</h4>
+          <p>Understand options, timelines, and next steps first — then decide.</p>
+        </div>
+        <div class="box">
+          <h4>Support for international patients</h4>
+          <p>Help with appointment coordination and practical next steps (as applicable).</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="container" id="specialties">
+    <h3>Specialties patients commonly enquire about</h3>
+    <p>Choose a specialty to start a WhatsApp message. If you’re unsure, select “General guidance”.</p>
+
+    <div class="spec-grid">
+      <div class="spec">
+        <h4>Oncology (Cancer Care)</h4>
+        <p>Case review, treatment pathway guidance, and next steps.</p>
+        <a href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Oncology%20at%20Apollo%20Hospitals%20Delhi.%20Please%20advise%20next%20steps." target="_blank" rel="noopener">Ask on WhatsApp →</a>
+      </div>
+      <div class="spec">
+        <h4>Cardiac Sciences</h4>
+        <p>Heart consultation guidance, diagnostics, and treatment planning.</p>
+        <a href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Cardiac%20Care%20at%20Apollo%20Hospitals%20Delhi.%20Please%20advise%20reports%20needed%20and%20next%20steps." target="_blank" rel="noopener">Ask on WhatsApp →</a>
+      </div>
+      <div class="spec">
+        <h4>Orthopaedics & Joint Replacement</h4>
+        <p>Joint replacement, spine care, and orthopaedic pathways.</p>
+        <a href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Orthopaedics%20%2F%20Joint%20Replacement%20at%20Apollo%20Hospitals%20Delhi." target="_blank" rel="noopener">Ask on WhatsApp →</a>
+      </div>
+      <div class="spec">
+        <h4>Neurology & Neurosurgery</h4>
+        <p>Brain/spine evaluation and surgical planning guidance.</p>
+        <a href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Neurology%20%2F%20Neurosurgery%20at%20Apollo%20Hospitals%20Delhi." target="_blank" rel="noopener">Ask on WhatsApp →</a>
+      </div>
+      <div class="spec">
+        <h4>Gastroenterology</h4>
+        <p>Digestive/liver evaluation guidance and next steps.</p>
+        <a href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Gastroenterology%20at%20Apollo%20Hospitals%20Delhi." target="_blank" rel="noopener">Ask on WhatsApp →</a>
+      </div>
+      <div class="spec">
+        <h4>Transplants</h4>
+        <p>Eligibility guidance, evaluation steps, and coordination.</p>
+        <a href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Transplant%20evaluation%20at%20Apollo%20Hospitals%20Delhi.%20Please%20advise%20next%20steps." target="_blank" rel="noopener">Ask on WhatsApp →</a>
+      </div>
+    </div>
+
+    <div class="box" style="margin-top:14px;">
+      <h4>Not sure which department to choose?</h4>
+      <p>Message your symptoms/diagnosis and we’ll guide you to the right team.</p>
+      <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;">
+        <a class="btn btn-primary" href="https://wa.me/919899187776?text=Hello%2C%20I%20am%20not%20sure%20which%20department%20to%20consult%20at%20Apollo%20Hospitals%20Delhi.%20My%20condition%20is%3A%20%5Btype%20here%5D.%20Please%20guide%20me." target="_blank" rel="noopener">🟢 General guidance on WhatsApp</a>
+        <a class="btn btn-ghost" href="#lead-form">Request a call back</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="soft-wrap">
+    <section class="container" id="international">
+      <h3>International patient support</h3>
+      <p>Support depends on your case and requirement. We guide you step-by-step.</p>
+
+      <div class="grid2">
+        <div class="box">
+          <h4>Before you travel</h4>
+          <ul class="list">
+            <li>Case discussion & specialty matching</li>
+            <li>Appointment coordination</li>
+            <li>Guidance on reports / tests needed</li>
+            <li>Next-step planning (as applicable)</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h4>During & after treatment</h4>
+          <ul class="list">
+            <li>Hospital coordination support</li>
+            <li>Guidance for stay options near the hospital (if needed)</li>
+            <li>Post-treatment follow-up coordination</li>
+            <li>Tele-consultation guidance (if applicable)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="container" id="lead-form">
+    <h3>Get medical opinion / request call back</h3>
+    <p>Share basic details. Reports are optional to start; you can share them later on WhatsApp.</p>
+
+    <div class="form-grid">
+      <div class="box">
+        <form action="#" method="post" enctype="multipart/form-data">
+          <div style="display:grid; gap:10px;">
+            <div>
+              <label>Full Name*</label>
+              <input type="text" name="name" placeholder="Your name" required />
+            </div>
+            <div>
+              <label>Country*</label>
+              <input type="text" name="country" placeholder="Country" required />
+            </div>
+            <div>
+              <label>WhatsApp Number (with country code)*</label>
+              <input type="tel" name="whatsapp" placeholder="+971 / +968 / +965 ..." required />
+            </div>
+            <div>
+              <label>Email (optional)</label>
+              <input type="email" name="email" placeholder="you@example.com" />
+            </div>
+            <div>
+              <label>What do you need help with?*</label>
+              <select name="need" required>
+                <option value="" disabled selected>Select</option>
+                <option>Oncology (Cancer Care)</option>
+                <option>Cardiac Sciences</option>
+                <option>Orthopaedics / Joint Replacement</option>
+                <option>Neurology / Neurosurgery</option>
+                <option>Gastroenterology</option>
+                <option>Transplants</option>
+                <option>Other / Not sure</option>
+              </select>
+            </div>
+            <div>
+              <label>Message (optional)</label>
+              <textarea name="message" placeholder="Brief details about the case, timeline, diagnosis (if any)…"></textarea>
+            </div>
+            <div>
+              <label>Upload reports (optional)</label>
+              <input type="file" name="reports" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" />
+              <p style="margin:8px 0 0; font-size:12px; color:var(--muted);">Optional. You can also share reports later on WhatsApp.</p>
+            </div>
+            <button class="btn btn-secondary submit" type="submit">Submit</button>
+            <p style="margin:0; font-size:12px; color:var(--muted);">
+              By submitting, you agree to be contacted for coordination support. Your information remains confidential.
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <div class="box">
+        <h4 style="margin:0 0 6px;">Prefer WhatsApp?</h4>
+        <p style="margin:0 0 12px; color:var(--muted); font-size:13px;">
+          WhatsApp is the fastest way to start. Share your requirement and we’ll guide you.
+        </p>
+        <a class="btn btn-primary" href="https://wa.me/919899187776" target="_blank" rel="noopener">🟢 WhatsApp Now</a>
+        <div style="margin-top:12px; border-top:1px solid var(--line); padding-top:12px;">
+          <h4 style="margin:0 0 6px;">Privacy & reassurance</h4>
+          <ul class="list" style="margin-top:0;">
+            <li>Confidential discussion</li>
+            <li>Reports optional to start</li>
+            <li>No pressure to proceed</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="faq">
+    <h3>Frequently asked questions</h3>
+
+    <div class="faq">
+      <details>
+        <summary>Who will I speak with on WhatsApp?</summary>
+        <p>A trained care coordinator will guide you to the appropriate specialty team and help with next steps.</p>
+      </details>
+      <details>
+        <summary>Do I need reports to start?</summary>
+        <p>No. You can start with a brief description. Reports help with precision but are optional initially.</p>
+      </details>
+      <details>
+        <summary>Is my information confidential?</summary>
+        <p>Yes. Your information is used only for guidance and coordination support.</p>
+      </details>
+      <details>
+        <summary>Will I be pressured to book treatment?</summary>
+        <p>No. We provide clarity and support; you decide whether and when to proceed.</p>
+      </details>
+      <details>
+        <summary>Can I take an online opinion first?</summary>
+        <p>Yes. Many patients start with guidance/medical opinion and decide about travel later.</p>
+      </details>
+      <details>
+        <summary>How do I start?</summary>
+        <p>Click WhatsApp, call us, or submit the form. We’ll respond with next steps.</p>
+      </details>
+    </div>
+  </section>
+
+  <footer class="container footer">
+    <p style="margin:0 0 8px;">
+      Disclaimer: This page provides information and coordination support for patients seeking care at Apollo Hospitals, Delhi.
+      Final diagnosis and treatment decisions are made by the hospital’s treating medical team.
+    </p>
+    <p style="margin:0;">© <span id="y"></span> Hosplan</p>
+  </footer>
+
+  <div class="sticky" role="navigation" aria-label="Quick contact">
+    <div class="wrap">
+      <a class="btn btn-primary" href="https://wa.me/919899187776" target="_blank" rel="noopener">🟢 WhatsApp</a>
+      <a class="btn btn-secondary" href="#lead-form">Request Call Back</a>
+    </div>
+  </div>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

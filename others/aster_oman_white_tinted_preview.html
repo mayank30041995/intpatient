@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aster Medcity, Kochi | Oman Private Patients</title>
+  <meta name="description" content="Aster Medcity, Kochi — information & coordination support for private patients from Oman. WhatsApp, live chat, or request medical opinion." />
+  <meta name="robots" content="index,follow" />
+
+  <!--
+    Notes for your developer:
+    - Replace WHATSAPP_NUMBER, PHONE_NUMBER, and FORM_ACTION as needed.
+    - Replace placeholder logo image src with your actual Aster logo (PNG/SVG).
+  -->
+
+  <style>
+    :root{
+      --text:#0f172a;
+      --muted:#475569;
+      --line:#e2e8f0;
+      --bg:#ffffff;
+      --soft:#f7fbfb;
+
+      /* Aster-ish tints (subtle) */
+      --brand:#10b981;   /* emerald */
+      --brand2:#22c55e;  /* green */
+      --brand3:#06b6d4;  /* teal */
+      --wa:#25D366;
+
+      --shadow: 0 14px 34px rgba(2,6,23,.10);
+      --radius:18px;
+      --max:1140px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.6;
+    }
+    a{color:inherit}
+    .container{max-width:var(--max); margin:0 auto; padding:18px}
+
+    /* Topbar */
+    .topbar{
+      position:sticky; top:0; z-index:30;
+      background: rgba(255,255,255,.92);
+      backdrop-filter: blur(10px);
+      border-bottom:1px solid var(--line);
+    }
+    .topbar .row{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:12px; padding:10px 0;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      min-width: 260px;
+    }
+    .logo{
+      width:44px; height:44px; border-radius:14px;
+      background: radial-gradient(120% 120% at 30% 20%, rgba(6,182,212,.85), rgba(16,185,129,.95));
+      box-shadow: 0 10px 20px rgba(16,185,129,.15);
+      overflow:hidden;
+      display:flex; align-items:center; justify-content:center;
+    }
+    .logo img{width:100%; height:100%; object-fit:contain; padding:8px; background:#fff}
+    .brand .name{margin:0; font-weight:950; letter-spacing:.2px; font-size:14px}
+    .brand .sub{margin:0; font-size:12px; color:var(--muted)}
+
+    .nav{
+      display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; align-items:center;
+    }
+    .nav a{
+      text-decoration:none; font-size:13px;
+      padding:10px 12px; border-radius:999px;
+      border:1px solid var(--line); background: #fff;
+    }
+    .nav a:hover{background:var(--soft)}
+    .nav .call{
+      border-color: rgba(16,185,129,.25);
+      background: rgba(16,185,129,.08);
+    }
+
+    /* Buttons */
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:12px 14px; border-radius:14px; border:1px solid transparent;
+      font-weight:900; text-decoration:none; cursor:pointer; user-select:none;
+    }
+    .btn-wa{background:var(--wa); color:#05210e; box-shadow: var(--shadow);}
+    .btn-wa:hover{filter:brightness(1.02)}
+    .btn-primary{background: linear-gradient(135deg, var(--brand), var(--brand3)); color:#fff;}
+    .btn-primary:hover{filter:brightness(1.03)}
+    .btn-outline{background:#fff; border-color:var(--line); color:var(--text);}
+    .btn-outline:hover{background:var(--soft)}
+
+    /* Hero */
+    .hero{
+      background:
+        radial-gradient(1200px 520px at 15% 10%, rgba(16,185,129,.12), transparent 55%),
+        radial-gradient(900px 480px at 90% 25%, rgba(6,182,212,.10), transparent 55%),
+        linear-gradient(180deg, var(--soft), #fff 60%);
+      border-bottom:1px solid var(--line);
+      padding:18px 0 10px;
+    }
+    .heroGrid{
+      display:grid; grid-template-columns: 1.1fr .9fr; gap:18px; align-items:stretch;
+    }
+    @media (max-width: 980px){ .heroGrid{grid-template-columns:1fr} .nav{justify-content:flex-start} }
+    .kicker{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:8px 10px; border-radius:999px;
+      border:1px solid rgba(16,185,129,.22);
+      background: rgba(16,185,129,.08);
+      color:var(--muted); font-size:12px; width:fit-content; margin-bottom:12px;
+    }
+    h1{margin:0 0 10px; font-size:36px; line-height:1.12; letter-spacing:-.5px}
+    @media (max-width: 480px){ h1{font-size:30px} }
+    .lead{margin:0 0 14px; color:var(--muted); font-size:15px}
+
+    .trustRow{
+      display:grid; grid-template-columns: repeat(4, 1fr); gap:10px; margin-top:14px;
+    }
+    @media (max-width: 980px){ .trustRow{grid-template-columns:repeat(2, 1fr)} }
+    .trust{
+      background:#fff; border:1px solid var(--line); border-radius:14px; padding:12px;
+    }
+    .trust b{display:block; font-size:13px}
+    .trust span{display:block; font-size:12px; color:var(--muted); margin-top:2px}
+
+    .card{
+      background:#fff; border:1px solid var(--line); border-radius: var(--radius);
+      box-shadow: var(--shadow); padding:16px;
+    }
+    .card h2{margin:0 0 6px; font-size:18px}
+    .card p{margin:0 0 12px; color:var(--muted); font-size:13px}
+    .stack{display:grid; gap:10px}
+    .mini{font-size:12px; color:var(--muted); margin-top:10px}
+    .mini ul{margin:8px 0 0; padding-left:18px}
+
+    /* Sections */
+    section{padding:22px 0}
+    section h3{margin:0 0 10px; font-size:22px}
+    section p{margin:0 0 12px; color:var(--muted)}
+    .grid3{display:grid; grid-template-columns:repeat(3, 1fr); gap:14px}
+    .grid2{display:grid; grid-template-columns:repeat(2, 1fr); gap:14px}
+    @media (max-width: 980px){ .grid3,.grid2{grid-template-columns:1fr} }
+
+    .box{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      padding:16px;
+    }
+    .box h4{margin:0 0 6px; font-size:16px}
+    .box p{margin:0; font-size:13px; color:var(--muted)}
+    .link{color: var(--brand); text-decoration:underline}
+
+    /* Specialty list */
+    .specGrid{display:grid; grid-template-columns:repeat(3, 1fr); gap:14px}
+    @media (max-width: 980px){ .specGrid{grid-template-columns:1fr} }
+    .spec a{color: var(--brand); text-decoration:underline}
+
+    /* Form */
+    .formGrid{display:grid; grid-template-columns: 1.05fr .95fr; gap:14px}
+    @media (max-width: 980px){ .formGrid{grid-template-columns:1fr} }
+    form{display:grid; gap:10px}
+    label{font-size:12px; color:var(--muted)}
+    input, select, textarea{
+      width:100%; padding:12px; border-radius:14px;
+      border:1px solid var(--line);
+      background:#fff; color:var(--text);
+      outline:none;
+    }
+    textarea{min-height:96px; resize:vertical}
+    .row2{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+    @media (max-width: 560px){ .row2{grid-template-columns:1fr} }
+
+    /* Doctors */
+    .dept{margin-top:14px}
+    .deptHead{
+      display:flex; align-items:flex-end; justify-content:space-between; gap:10px; flex-wrap:wrap;
+      margin:0 0 10px;
+    }
+    .deptHead h4{margin:0; font-size:18px}
+    .deptHead .deptTag{
+      font-size:12px; color:var(--muted);
+      border:1px solid var(--line);
+      background: rgba(16,185,129,.06);
+      padding:8px 10px;
+      border-radius:999px;
+    }
+    .docGrid{display:grid; grid-template-columns:repeat(5, 1fr); gap:12px}
+    @media (max-width: 980px){ .docGrid{grid-template-columns:repeat(2, 1fr)} }
+    @media (max-width: 520px){ .docGrid{grid-template-columns:1fr} }
+    .docCard{
+      border:1px solid rgba(16,185,129,.16);
+      background: rgba(16,185,129,.06);
+      border-radius: 16px;
+      padding:14px;
+    }
+    .docCard .name{margin:0 0 4px; font-weight:950; font-size:14px}
+    .docCard .deptName{margin:0; font-size:12px; color:var(--muted)}
+    .docActions{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .docActions a{font-size:12px; font-weight:900; text-decoration:none}
+    .docActions a:hover{text-decoration:underline}
+    .pill{
+      display:inline-flex; margin-top:10px;
+      font-size:12px; font-weight:900;
+      padding:7px 9px;
+      border-radius:999px;
+      border:1px solid rgba(6,182,212,.18);
+      background: rgba(6,182,212,.08);
+      color:#0b1220;
+    }
+
+    /* Tables */
+    table{width:100%; border-collapse:collapse; overflow:hidden; border-radius: 16px; border:1px solid var(--line); background:#fff}
+    th, td{padding:12px; text-align:left; border-bottom:1px solid var(--line)}
+    th{background: rgba(16,185,129,.07); font-size:13px}
+    td{font-size:13px; color:var(--muted)}
+    tr:last-child td{border-bottom:none}
+
+    /* FAQ */
+    .faq{display:grid; grid-template-columns:repeat(2, 1fr); gap:12px}
+    @media (max-width: 980px){ .faq{grid-template-columns:1fr} }
+    details{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      padding:12px 14px;
+    }
+    summary{cursor:pointer; font-weight:950}
+    details p{margin:10px 0 0; color:var(--muted)}
+
+    footer{
+      border-top:1px solid var(--line);
+      padding:18px 0 44px;
+      color:var(--muted);
+      font-size:12px;
+      background: linear-gradient(180deg, #fff, rgba(16,185,129,.04));
+    }
+
+    /* Sticky */
+    .sticky{
+      position:fixed; left:0; right:0; bottom:0; z-index:60;
+      background: rgba(255,255,255,.96);
+      border-top:1px solid var(--line);
+      display:none; padding:10px 12px;
+      backdrop-filter: blur(10px);
+    }
+    .sticky .wrap{max-width:var(--max); margin:0 auto; display:flex; gap:10px}
+    .sticky .wrap a{flex:1}
+    @media (max-width: 980px){ .sticky{display:block} body{padding-bottom:76px} }
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="row">
+        <div class="brand">
+          <div class="logo" aria-hidden="true">
+            <!-- Optional: replace with actual Aster logo -->
+            <!-- <img src="assets/aster-logo.png" alt="Aster logo" /> -->
+          </div>
+          <div>
+            <p class="name">Aster Medcity, Kochi</p>
+            <p class="sub">Information & coordination support for private patients from Oman</p>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Page navigation">
+          <a href="#help">How we help</a>
+          <a href="#specialties">Specialities</a>
+          <a href="#checkups">Check-ups</a>
+          <a href="#faq">FAQ</a>
+          <a class="call" href="tel:+919899187776"><strong>Call:</strong> +91 98991 87776</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero" id="top">
+    <div class="container">
+      <div class="heroGrid">
+        <div>
+          <div class="kicker">🇴🇲 For patients in Oman • Private patients</div>
+          <h1>Aster Medcity Kochi — trusted care, with the choice always yours</h1>
+          <p class="lead">
+            Patients from Oman contact Aster Medcity for different needs — from preventive health check-ups and consultations
+            to second opinions and advanced treatment options. Start with a confidential discussion and decide your next step with clarity.
+          </p>
+
+          <div class="trustRow" aria-label="Trust row">
+            <div class="trust"><b>JCI-accredited</b><span>International standards</span></div>
+            <div class="trust"><b>NABH-accredited</b><span>Quality & safety</span></div>
+            <div class="trust"><b>670-bed quaternary care</b><span>Advanced infrastructure</span></div>
+            <div class="trust"><b>Kochi, Kerala • India</b><span>Well-connected destination</span></div>
+          </div>
+        </div>
+
+        <div class="card" id="help">
+          <h2>Speak with a medical coordinator</h2>
+          <p>Confidential guidance on check-ups, opinions, or treatment planning. No pressure.</p>
+          <div class="stack">
+            <a class="btn btn-wa" href="https://wa.me/919899187776?text=Hello%2C%20I%20am%20from%20Oman%20and%20want%20guidance%20for%20Aster%20Medcity%20Kochi.%20Please%20help%20me%20with%20next%20steps." target="_blank" rel="noopener">🟢 Chat on WhatsApp</a>
+            <a class="btn btn-primary" href="#lead-form">Start Live Chat / Request Call Back</a>
+            <a class="btn btn-outline" href="#lead-form">✉️ Get Medical Opinion (Form)</a>
+          </div>
+          <div class="mini">
+            <ul>
+              <li>Private & confidential</li>
+              <li>No obligation to travel</li>
+              <li>You decide what to do next</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" style="margin-top:14px; border-color: rgba(16,185,129,.18); background: rgba(16,185,129,.06);">
+        <h4 style="margin:0 0 6px;">Not sure whether travel is required?</h4>
+        <p style="margin:0; color:var(--muted); font-size:13px;">
+          Many patients begin with guidance first. You can request a medical opinion and decide later — no obligation.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <section class="container" id="how">
+    <h3>How can we help you today?</h3>
+    <p>Choose what you’re looking for — we’ll guide you accordingly.</p>
+
+    <div class="grid3">
+      <div class="box">
+        <h4>✅ Health Check-up & General Care</h4>
+        <p>For preventive health packages, consultations, routine evaluations, and general care planning.</p>
+        <div style="margin-top:10px; display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn btn-wa" href="https://wa.me/919899187776?text=Hello%2C%20I%20am%20from%20Oman.%20I%20want%20a%20health%20check-up%20at%20Aster%20Medcity%20Kochi.%20Please%20share%20options." target="_blank" rel="noopener">WhatsApp: Check-up</a>
+          <a class="btn btn-outline" href="#checkups">View Check-ups</a>
+        </div>
+      </div>
+      <div class="box">
+        <h4>Medical Opinion / Second Opinion</h4>
+        <p>For clarity on diagnosis, treatment options, and whether care in Oman is sufficient or travel may help.</p>
+        <div style="margin-top:10px; display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn btn-wa" href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20a%20medical%20opinion%20for%20my%20case%20(Aster%20Medcity%20Kochi).%20Please%20guide%20me." target="_blank" rel="noopener">WhatsApp: Opinion</a>
+          <a class="btn btn-outline" href="#lead-form">Send Report</a>
+        </div>
+      </div>
+      <div class="box">
+        <h4>Specialized / Advanced Treatment</h4>
+        <p>For advanced procedures, multidisciplinary care, surgery planning, and complex case coordination.</p>
+        <div style="margin-top:10px; display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn btn-wa" href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20treatment%20planning%20guidance%20(Aster%20Medcity%20Kochi).%20Please%20guide%20me%20to%20the%20right%20department." target="_blank" rel="noopener">WhatsApp: Treatment</a>
+          <a class="btn btn-outline" href="#specialties">See Specialities</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="specialties">
+    <h3>Specialities patients frequently enquire about</h3>
+    <p>Select a speciality to start a WhatsApp discussion.</p>
+
+    <div class="specGrid">
+      <div class="box spec">
+        <h4>Oncology (Cancer Care)</h4>
+        <p>Consultation, treatment planning, and multidisciplinary cancer care pathways.</p>
+        <a class="link" href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Oncology%20at%20Aster%20Medcity%20Kochi.%20Please%20advise%20next%20steps." target="_blank" rel="noopener">Ask on WhatsApp →</a>
+      </div>
+      <div class="box spec">
+        <h4>Cardiology</h4>
+        <p>Heart consultation, diagnostics, and treatment/surgery coordination.</p>
+        <a class="link" href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Cardiology%20at%20Aster%20Medcity%20Kochi.%20Please%20advise%20next%20steps." target="_blank" rel="noopener">Ask on WhatsApp →</a>
+      </div>
+      <div class="box spec">
+        <h4>Neurology & Neurosurgery</h4>
+        <p>Brain/spine consultations and surgical planning guidance.</p>
+        <a class="link" href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Neurology%20%2F%20Neurosurgery%20at%20Aster%20Medcity%20Kochi.%20Please%20advise%20next%20steps." target="_blank" rel="noopener">Ask on WhatsApp →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="lead-form">
+    <h3>Get a medical opinion / call back</h3>
+    <p>Share basic details and we’ll respond. Your information is kept confidential.</p>
+
+    <div class="formGrid">
+      <div class="box">
+        <form action="#" method="post" enctype="multipart/form-data">
+          <div class="row2">
+            <div>
+              <label>Full Name*</label>
+              <input type="text" name="name" placeholder="Your name" required />
+            </div>
+            <div>
+              <label>Country*</label>
+              <select name="country" required>
+                <option selected>Oman</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="row2">
+            <div>
+              <label>WhatsApp (with country code)*</label>
+              <input type="tel" name="whatsapp" placeholder="+968 ..." required />
+            </div>
+            <div>
+              <label>What do you need help with?*</label>
+              <select name="need" required>
+                <option disabled selected>Select</option>
+                <option>Health check-up / general care</option>
+                <option>Medical opinion / second opinion</option>
+                <option>Treatment planning</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label>Message (optional)</label>
+            <textarea name="message" placeholder="Brief symptoms/diagnosis, urgency, preferred dates…"></textarea>
+          </div>
+          <div>
+            <label>Upload reports (optional)</label>
+            <input type="file" name="reports" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" />
+          </div>
+          <button class="btn btn-primary" type="submit">Submit (We will contact you)</button>
+          <p style="margin:0; font-size:12px; color:var(--muted);">Your information is kept confidential.</p>
+        </form>
+      </div>
+
+      <div class="box">
+        <h4 style="margin:0 0 6px;">Prefer WhatsApp?</h4>
+        <p style="margin:0 0 12px; font-size:13px;">Send a message and we’ll guide you.</p>
+        <a class="btn btn-wa" href="https://wa.me/919899187776" target="_blank" rel="noopener">🟢 WhatsApp Now</a>
+        <div style="margin-top:12px; border-top:1px solid var(--line); padding-top:12px;">
+          <h4 style="margin:0 0 6px;">Why patients like starting here</h4>
+          <ul style="margin:8px 0 0; padding-left:18px; color:var(--muted); display:grid; gap:10px;">
+            <li>Simple first step — talk first, decide later</li>
+            <li>Clarifies whether travel is required</li>
+            <li>Private & confidential</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="faq">
+    <h3>Frequently asked questions (Oman)</h3>
+    <div class="faq">
+      <details>
+        <summary>Do I have to travel if I contact you?</summary>
+        <p>No. There is no obligation to travel. Many patients start with guidance first.</p>
+      </details>
+      <details>
+        <summary>Can I come only for a check-up?</summary>
+        <p>Yes. Some patients visit Kochi for preventive check-ups and consultations.</p>
+      </details>
+      <details>
+        <summary>Is my information confidential?</summary>
+        <p>Yes. Your details are treated confidentially and used only to guide your request.</p>
+      </details>
+      <details>
+        <summary>How do I start?</summary>
+        <p>WhatsApp is fastest. You can also submit the form to request a call back or medical opinion.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="container" id="departments">
+    <h3>Departments & Specialists</h3>
+    <p>Doctor list below matches the page content you shared. Add photos later if you have image URLs.</p>
+
+    <div class="dept">
+      <div class="deptHead"><h4>Oncology</h4><span class="deptTag">Department: Oncology</span></div>
+      <div class="docGrid">
+        <div class="docCard"><p class="name">Dr. Arun R Warrier</p><p class="deptName">Oncology</p><span class="pill">Connect on WhatsApp</span></div>
+        <div class="docCard"><p class="name">Dr. Durgapoorna</p><p class="deptName">Oncology</p><span class="pill">Connect on WhatsApp</span></div>
+        <div class="docCard"><p class="name">Dr. Jem Kalathil</p><p class="deptName">Oncology</p><span class="pill">Connect on WhatsApp</span></div>
+        <div class="docCard"><p class="name">Dr. Ramaswamy N V</p><p class="deptName">Oncology</p><span class="pill">Connect on WhatsApp</span></div>
+        <div class="docCard"><p class="name">Dr. Subin Sugath</p><p class="deptName">Oncology</p><span class="pill">Connect on WhatsApp</span></div>
+      </div>
+    </div>
+
+    <div class="dept">
+      <div class="deptHead"><h4>Cardiology</h4><span class="deptTag">Department: Cardiology</span></div>
+      <div class="docGrid">
+        <div class="docCard"><p class="name">Dr. Anil Kumar R</p><p class="deptName">Cardiology</p><span class="pill">Connect on WhatsApp</span></div>
+        <div class="docCard"><p class="name">Dr. Edwin Francis</p><p class="deptName">Cardiology</p><span class="pill">Connect on WhatsApp</span></div>
+        <div class="docCard"><p class="name">Dr. Rajasekhar Varma</p><p class="deptName">Cardiology</p><span class="pill">Connect on WhatsApp</span></div>
+        <div class="docCard"><p class="name">Dr. Sajan Koshy</p><p class="deptName">Cardiology</p><span class="pill">Connect on WhatsApp</span></div>
+        <div class="docCard"><p class="name">Dr. Manoj P Nair</p><p class="deptName">Cardiology</p><span class="pill">Connect on WhatsApp</span></div>
+      </div>
+    </div>
+
+    <div class="dept">
+      <div class="deptHead"><h4>Neuro</h4><span class="deptTag">Department: Neuro Sciences</span></div>
+      <div class="docGrid">
+        <div class="docCard"><p class="name">Dr. Anup P Nair</p><p class="deptName">Neurosurgery</p><span class="pill">Connect on WhatsApp</span></div>
+        <div class="docCard"><p class="name">Dr. Asha Kishore</p><p class="deptName">Neurosurgery</p><span class="pill">Connect on WhatsApp</span></div>
+        <div class="docCard"><p class="name">Dr. Davidson Devasia</p><p class="deptName">Neurosurgery</p><span class="pill">Connect on WhatsApp</span></div>
+        <div class="docCard"><p class="name">Dr. Dilip Panikar</p><p class="deptName">Neurosurgery</p><span class="pill">Connect on WhatsApp</span></div>
+        <div class="docCard"><p class="name">Dr. Shyam Sundar S</p><p class="deptName">Neurosurgery</p><span class="pill">Connect on WhatsApp</span></div>
+      </div>
+    </div>
+
+    <div class="dept">
+      <div class="deptHead"><h4>Orthopedics</h4><span class="deptTag">Department: Orthopaedics</span></div>
+      <div class="docGrid">
+        <div class="docCard"><p class="name">Dr. Ananthakrishna Bhat V</p><p class="deptName">Orthopaedics</p><span class="pill">Connect on WhatsApp</span></div>
+        <div class="docCard"><p class="name">Dr. Joe Davis</p><p class="deptName">Orthopaedics</p><span class="pill">Connect on WhatsApp</span></div>
+      </div>
+    </div>
+
+    <div class="dept">
+      <div class="deptHead"><h4>Transplant</h4><span class="deptTag">Department: Transplant</span></div>
+      <div class="docGrid">
+        <div class="docCard"><p class="name">Dr. Bipi PK</p><p class="deptName">Transplant</p><span class="pill">Connect on WhatsApp</span></div>
+        <div class="docCard"><p class="name">Dr. Geetha Mammayil</p><p class="deptName">Transplant</p><span class="pill">Connect on WhatsApp</span></div>
+        <div class="docCard"><p class="name">Dr. Kishore T.A</p><p class="deptName">Transplant</p><span class="pill">Connect on WhatsApp</span></div>
+        <div class="docCard"><p class="name">Dr. Mathew Jacob</p><p class="deptName">Transplant</p><span class="pill">Connect on WhatsApp</span></div>
+        <div class="docCard"><p class="name">Dr. V. Narayanan Unni</p><p class="deptName">Transplant</p><span class="pill">Connect on WhatsApp</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="checkups">
+    <h3>Aster Kochi Preventive Health Check up Plans</h3>
+    <p>Health packages with costs (in USD).</p>
+    <table aria-label="Health packages and costs">
+      <thead><tr><th>Package</th><th>Cost (USD)</th></tr></thead>
+      <tbody>
+        <tr><td>ASTER EXECUTIVE HEALTH</td><td>$132.39</td></tr>
+        <tr><td>ASTER GOLDEN YEARS (FEMALE)</td><td>$205.20</td></tr>
+        <tr><td>ASTER GOLDEN YEARS (MALE)</td><td>$205.20</td></tr>
+        <tr><td>ASTER HEALTHY HEART</td><td>$178.72</td></tr>
+        <tr><td>ASTER ESSENTIAL HEALTH CHECK UP</td><td>$99.29</td></tr>
+        <tr><td>ASTER PLATINUM PACKAGE – FEMALE</td><td>$992.89</td></tr>
+        <tr><td>ASTER PLATINUM PACKAGE – MALE</td><td>$992.89</td></tr>
+        <tr><td>COMPREHENSIVE DIABETES PACKAGE</td><td>$297.87</td></tr>
+        <tr><td>ASTER WELL WOMEN</td><td>$191.96</td></tr>
+        <tr><td>ASTER WELL WOMEN COMPREHENSIVE</td><td>$284.63</td></tr>
+        <tr><td>ORTHOPAEDICS PACKAGE</td><td>$191.96</td></tr>
+        <tr><td>CANCER SCREENING – FOR MEN</td><td>$205.20</td></tr>
+        <tr><td>CANCER SCREENING – FOR WOMEN</td><td>$284.63</td></tr>
+        <tr><td>POST COVID PACKAGE 1</td><td>$65.59</td></tr>
+        <tr><td>ASTER CHILD PACKAGE</td><td>$44.77</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="container" id="hotels">
+    <h3>Hotels and Guest Houses at all budget</h3>
+    <p>Near Aster Medcity, Kochi. (Rates may vary depending on room type and season.)</p>
+
+    <div class="grid3">
+      <div class="box">
+        <h4>TItsy By Treebo</h4>
+        <p>4.6 star • 3.3km • ₹1604</p>
+        <p style="margin-top:10px;"><a class="link" href="https://wa.me/919899187776?text=Hello%2C%20please%20share%20best%20deals%20for%20nearby%20stay%20options%20near%20Aster%20Medcity%20Kochi." target="_blank" rel="noopener">Chat with us for Best Deals</a></p>
+      </div>
+      <div class="box">
+        <h4>HOTEL NUJOOM</h4>
+        <p>3.8 star • 5.2km • ₹3000</p>
+        <p style="margin-top:10px;"><a class="link" href="https://wa.me/919899187776?text=Hello%2C%20please%20share%20best%20deals%20for%20nearby%20stay%20options%20near%20Aster%20Medcity%20Kochi." target="_blank" rel="noopener">Chat with us for Best Deals</a></p>
+      </div>
+      <div class="box">
+        <h4>Nova Arafa Palace</h4>
+        <p>4.0 star • 3.9km • ₹1796</p>
+        <p style="margin-top:10px;"><a class="link" href="https://wa.me/919899187776?text=Hello%2C%20please%20share%20best%20deals%20for%20nearby%20stay%20options%20near%20Aster%20Medcity%20Kochi." target="_blank" rel="noopener">Chat with us for Best Deals</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="ips">
+    <h3>International Patient Services — Aster Medcity Kochi</h3>
+    <div class="grid3">
+      <div class="box" style="border-color: rgba(6,182,212,.18); background: rgba(6,182,212,.06);">
+        <h4>Personalised Experience</h4>
+        <p>Our teams include care coordinators and support staff to guide patients step-by-step.</p>
+      </div>
+      <div class="box" style="border-color: rgba(16,185,129,.18); background: rgba(16,185,129,.06);">
+        <h4>Save Time & Money</h4>
+        <p>Well-designed protocols help reduce delays and support planned and emergency needs.</p>
+      </div>
+      <div class="box" style="border-color: rgba(16,185,129,.18); background: rgba(16,185,129,.06);">
+        <h4>Comprehensive Care</h4>
+        <p>End-to-end coordination: opinions, planning, travel guidance, stay options, and follow-up support (as applicable).</p>
+      </div>
+    </div>
+
+    <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+      <a class="btn btn-wa" href="https://wa.me/919899187776" target="_blank" rel="noopener">🟢 Connect on WhatsApp</a>
+      <a class="btn btn-outline" href="#lead-form">Request Call Back</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="grid2">
+        <div>
+          <h4 style="margin:0 0 8px;">Contact info</h4>
+          <p style="margin:0; color:var(--muted); font-size:13px;">
+            Address: Aster Medcity, Kuttisahib Road, Near Kothad Bridge, South Chittoor P.O., Cheranelloor, Kochi, Kerala 682027<br/>
+            Phone: +91 92669 70900
+          </p>
+        </div>
+        <div>
+          <h4 style="margin:0 0 8px;">Quick links</h4>
+          <p style="margin:0; color:var(--muted); font-size:13px; display:grid; gap:8px;">
+            <a class="link" href="#">Disclaimer</a>
+            <a class="link" href="#">Terms & Conditions</a>
+            <a class="link" href="#">Privacy Policy</a>
+            <a class="link" href="https://wa.me/919899187776" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          </p>
+        </div>
+      </div>
+
+      <p style="margin:14px 0 0; font-size:12px; color:var(--muted);">
+        © <span id="y"></span> Hosplan • This page provides information and coordination support. Final diagnosis and treatment decisions are made by the treating medical team.
+      </p>
+    </div>
+  </footer>
+
+  <div class="sticky" role="navigation" aria-label="Quick contact">
+    <div class="wrap">
+      <a class="btn btn-wa" href="https://wa.me/919899187776" target="_blank" rel="noopener">🟢 WhatsApp</a>
+      <a class="btn btn-primary" href="#lead-form">Request Call Back</a>
+    </div>
+  </div>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

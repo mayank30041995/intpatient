@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apollo Hospitals, Delhi | International Patients</title>
+  <meta name="description" content="Apollo Hospitals, Delhi – trusted specialist care for international patients. Get medical opinion, treatment guidance, and next steps via WhatsApp, live chat, or form." />
+  <meta name="robots" content="index,follow" />
+
+  <!--
+    Replace these defaults with your own:
+    - WHATSAPP_NUMBER: e.g. 9198XXXXXXXX (no +)
+    - PHONE_NUMBER: e.g. +91 98XXXXXXXX
+    - FORM_ACTION_URL: your CRM endpoint
+  -->
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --surface: rgba(255,255,255,.06);
+      --surface2: rgba(255,255,255,.04);
+      --border: rgba(255,255,255,.12);
+      --text:#eaf0ff;
+      --muted:#b9c5e6;
+      --accent:#38d26a;      /* WhatsApp */
+      --accent2:#5aa6ff;     /* Secondary */
+      --shadow:0 12px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      --max:1120px;
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background:
+        radial-gradient(1200px 600px at 15% 10%, rgba(90,166,255,.18), transparent 55%),
+        radial-gradient(1000px 520px at 85% 20%, rgba(56,210,106,.16), transparent 60%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{ color:inherit; text-decoration:none; }
+    .container{ max-width:var(--max); margin:0 auto; padding:20px; }
+
+    /* Top bar */
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:14px; padding:14px 0;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      min-width: 220px;
+    }
+    .logo{
+      width:40px; height:40px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(90,166,255,.9), rgba(56,210,106,.9));
+      box-shadow: var(--shadow);
+      flex:0 0 auto;
+    }
+    .brand .title{ margin:0; font-size:14px; letter-spacing:.2px; }
+    .brand .subtitle{ margin:0; font-size:12px; color:var(--muted); }
+
+    .navpills{ display:flex; flex-wrap:wrap; gap:10px; justify-content:flex-end; }
+    .pill{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 12px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.05);
+      font-size:13px;
+    }
+    .pill:hover{ background: rgba(255,255,255,.10); }
+    .pill strong{ color:var(--text); }
+
+    /* Hero */
+    .lp-hero{ padding:10px 0 6px; }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    @media (max-width: 960px){
+      .hero-grid{ grid-template-columns:1fr; }
+      .navpills{ justify-content:flex-start; }
+    }
+
+    .panel{
+      border:1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.04));
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding:22px;
+    }
+
+    .kicker{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:7px 10px;
+      background: rgba(56,210,106,.14);
+      border:1px solid rgba(56,210,106,.35);
+      border-radius:999px;
+      font-size:12px;
+      width:fit-content;
+      margin-bottom:12px;
+    }
+
+    h1{ margin:8px 0 10px; font-size:34px; line-height:1.15; }
+    @media (max-width: 480px){ h1{ font-size:28px; } }
+    .subhead{ margin:0 0 14px; color:var(--muted); font-size:15px; }
+
+    .trust-tags{ display:flex; flex-wrap:wrap; gap:10px; margin:14px 0 10px; }
+    .tag{
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.05);
+      font-size:12px;
+      color: var(--muted);
+    }
+
+    .hero-bullets{
+      margin:14px 0 0;
+      padding-left:18px;
+      color: var(--muted);
+      display:grid;
+      gap:10px;
+    }
+    .hero-bullets strong{ color: var(--text); }
+
+    /* CTA card */
+    .cta-card h2{ margin:0 0 8px; font-size:18px; }
+    .cta-card p{ margin:0 0 12px; color:var(--muted); font-size:13px; }
+    .cta-stack{ display:grid; gap:10px; margin-top:12px; }
+
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:12px 14px;
+      border-radius:12px;
+      border:1px solid transparent;
+      font-weight:700;
+      cursor:pointer;
+      user-select:none;
+      text-align:center;
+    }
+    .btn-whatsapp{
+      background: var(--accent);
+      color:#062012;
+      box-shadow: var(--shadow);
+    }
+    .btn-whatsapp:hover{ filter:brightness(1.03); }
+    .btn-livechat{
+      background: rgba(90,166,255,.16);
+      border-color: rgba(90,166,255,.35);
+    }
+    .btn-livechat:hover{ background: rgba(90,166,255,.22); }
+    .btn-outline{
+      background: rgba(255,255,255,.06);
+      border-color: var(--border);
+    }
+    .btn-outline:hover{ background: rgba(255,255,255,.10); }
+    .btn-submit{
+      width:100%;
+      background: rgba(90,166,255,.18);
+      border-color: rgba(90,166,255,.35);
+    }
+    .btn-submit:hover{ background: rgba(90,166,255,.24); }
+
+    .micro-trust{ margin-top:10px; font-size:12px; color:var(--muted); }
+    .micro-trust ul{ margin:8px 0 0; padding-left:18px; }
+    .cta-alt{ margin-top:12px; font-size:13px; color:var(--muted); }
+    .cta-alt a{ text-decoration:underline; }
+
+    /* Sections */
+    .lp-section{ padding:22px 0; }
+    .lp-section h2{ margin:0 0 10px; font-size:22px; }
+    .lp-section p{ margin:0 0 12px; color:var(--muted); }
+
+    .cards-3{ display:grid; grid-template-columns: repeat(3, 1fr); gap:14px; }
+    .cards-2{ display:grid; grid-template-columns: repeat(2, 1fr); gap:14px; }
+    .cards-6{ display:grid; grid-template-columns: repeat(3, 1fr); gap:14px; }
+    @media (max-width: 960px){
+      .cards-3, .cards-2, .cards-6{ grid-template-columns:1fr; }
+    }
+
+    .card{
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.05);
+      border-radius: var(--radius);
+      padding:16px;
+    }
+    .card h3{ margin:0 0 6px; font-size:16px; }
+    .card p{ margin:0 0 10px; font-size:13px; color:var(--muted); }
+    .card-highlight{
+      background: linear-gradient(180deg, rgba(90,166,255,.14), rgba(255,255,255,.04));
+      border-color: rgba(90,166,255,.35);
+    }
+
+    .inline-cta{ display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+    .link{ display:inline-flex; margin-top:6px; color: rgba(234,240,255,.95); text-decoration:underline; }
+
+    /* Lists */
+    .list{
+      margin:10px 0 0;
+      padding-left:18px;
+      color: var(--muted);
+      display:grid;
+      gap:10px;
+      font-size:14px;
+    }
+
+    /* Steps */
+    .steps{ display:grid; gap:10px; margin-top:10px; }
+    .step{
+      display:flex; gap:12px; align-items:flex-start;
+      padding:12px;
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.04);
+    }
+    .step-num{
+      width:30px; height:30px; border-radius:10px;
+      display:flex; align-items:center; justify-content:center;
+      background: rgba(90,166,255,.18);
+      border:1px solid rgba(90,166,255,.35);
+      color: var(--text);
+      font-weight:800;
+      flex:0 0 auto;
+    }
+    .step-body h3{ margin:0 0 4px; font-size:15px; }
+    .step-body p{ margin:0; font-size:13px; color:var(--muted); }
+
+    /* Form */
+    .form-grid{ display:grid; grid-template-columns: 1.1fr .9fr; gap:14px; }
+    @media (max-width: 960px){ .form-grid{ grid-template-columns:1fr; } }
+
+    form{ display:grid; gap:10px; }
+    .form-row{ display:grid; gap:6px; }
+    label{ font-size:12px; color: var(--muted); }
+    input, select, textarea{
+      width:100%;
+      padding:12px 12px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      outline:none;
+    }
+    input::placeholder, textarea::placeholder{ color: rgba(185,197,230,.75); }
+    textarea{ resize:vertical; }
+    .small{ font-size:12px; color:var(--muted); margin:0; }
+
+    .divider{ border:none; border-top:1px solid rgba(255,255,255,.10); margin:12px 0; }
+
+    /* FAQ */
+    .faq-grid{ display:grid; grid-template-columns: repeat(2, 1fr); gap:12px; margin-top:10px; }
+    @media (max-width: 960px){ .faq-grid{ grid-template-columns:1fr; } }
+    details{
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.04);
+      padding:12px 14px;
+    }
+    summary{ cursor:pointer; font-weight:750; }
+    details p{ margin:10px 0 0; color:var(--muted); }
+
+    /* Final CTA */
+    .lp-final-cta{ padding:26px 0 44px; }
+    .final-cta-box{
+      border:1px solid rgba(56,210,106,.35);
+      background: rgba(56,210,106,.12);
+      border-radius: var(--radius);
+      padding:18px;
+      display:flex;
+      gap:14px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+    .final-cta-box h2{ margin:0 0 6px; font-size:20px; }
+    .final-cta-box p{ margin:0; color: rgba(234,240,255,.9); }
+    .final-cta-actions{ display:flex; gap:10px; flex-wrap:wrap; }
+    .footer-note{ margin:12px 0 0; font-size:12px; color:var(--muted); }
+
+    /* Sticky mobile CTA bar */
+    .stickybar{
+      position:fixed; left:0; right:0; bottom:0;
+      padding:10px 12px;
+      background: rgba(11,18,32,.82);
+      border-top:1px solid rgba(255,255,255,.12);
+      backdrop-filter: blur(10px);
+      display:none;
+      z-index:999;
+    }
+    .stickybar .wrap{
+      max-width: var(--max);
+      margin:0 auto;
+      display:flex;
+      gap:10px;
+    }
+    .stickybar .wrap a{ flex:1; }
+    @media (max-width: 960px){
+      .stickybar{ display:block; }
+      body{ padding-bottom:76px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="topbar">
+      <div class="brand" aria-label="Apollo Hospitals Delhi">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <p class="title" style="margin:0;font-weight:800;">Apollo Hospitals, Delhi</p>
+          <p class="subtitle">International patient support & care coordination</p>
+        </div>
+      </div>
+
+      <nav class="navpills" aria-label="Page navigation">
+        <a class="pill" href="#why-apollo">Why Apollo</a>
+        <a class="pill" href="#specialties">Specialties</a>
+        <a class="pill" href="#international-support">International Support</a>
+        <a class="pill" href="#faq">FAQ</a>
+        <a class="pill" href="tel:+919899187776"><strong>Call:</strong> +91 98991 87776</a>
+      </nav>
+    </div>
+  </div>
+
+  <header id="top" class="lp-hero">
+    <div class="container">
+      <div class="hero-grid">
+
+        <div class="panel hero-left">
+          <div class="kicker">🌍 For International Patients • Apollo Hospitals, Delhi</div>
+          <h1>Apollo Hospitals, Delhi – Trusted Specialist Care for International Patients</h1>
+          <p class="subhead">
+            Connect with the right Apollo Delhi specialist team for medical opinion, treatment planning, and next-step guidance.
+            Start with a confidential discussion — reports are optional.
+          </p>
+
+          <div class="trust-tags" aria-label="Trust indicators">
+            <span class="tag">Accredited Hospital Network</span>
+            <span class="tag">Senior Specialists</span>
+            <span class="tag">Advanced Technology</span>
+            <span class="tag">International Patient Support</span>
+          </div>
+
+          <ul class="hero-bullets">
+            <li><strong>Specialist matching:</strong> we guide you to the appropriate department based on your condition.</li>
+            <li><strong>Clarity before travel:</strong> understand treatment options, timelines, and next steps first.</li>
+            <li><strong>Dedicated support:</strong> coordination help for appointments and international patient journey.</li>
+          </ul>
+        </div>
+
+        <div class="panel cta-card hero-right">
+          <h2>Speak with an Apollo Delhi Care Coordinator</h2>
+          <p>Share your requirement and get guidance on doctor/department, treatment pathway, and how to proceed.</p>
+
+          <div class="cta-stack">
+            <a class="btn btn-whatsapp"
+               href="https://wa.me/919899187776?text=Hello%2C%20I%20am%20an%20international%20patient%20considering%20Apollo%20Hospitals%2C%20Delhi.%20Please%20guide%20me%20on%20the%20right%20specialist%20and%20next%20steps."
+               target="_blank" rel="noopener">🟢 WhatsApp Apollo Delhi Coordinator</a>
+
+            <a class="btn btn-livechat" href="#lead-form">💬 Start Live Chat / Request Call Back</a>
+
+            <a class="btn btn-outline" href="#lead-form">✉️ Get Medical Opinion (Form)</a>
+          </div>
+
+          <div class="micro-trust">
+            <ul>
+              <li>Confidential & respectful</li>
+              <li>No pressure to travel</li>
+              <li>You decide what to do next</li>
+            </ul>
+          </div>
+
+          <div class="cta-alt">
+            <p><strong>Call/WhatsApp:</strong> <a href="tel:+919899187776">+91 98991 87776</a></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <section id="why-apollo" class="lp-section">
+    <div class="container">
+      <h2>Why Patients Choose Apollo Hospitals, Delhi</h2>
+      <p>
+        Apollo Hospitals is one of India’s most trusted healthcare brands. Patients visit Apollo Delhi for specialist expertise,
+        comprehensive care pathways, and reliable support for complex treatment needs.
+      </p>
+
+      <div class="cards-3">
+        <div class="card">
+          <h3>Clinical Expertise</h3>
+          <p>Access to experienced consultants and multidisciplinary teams across major specialties.</p>
+        </div>
+        <div class="card">
+          <h3>Advanced Care Pathways</h3>
+          <p>Structured diagnosis and treatment planning with modern technology and evidence-based protocols.</p>
+        </div>
+        <div class="card">
+          <h3>International Patient Support</h3>
+          <p>Guidance for appointments, coordination, and post-treatment follow-up support.</p>
+        </div>
+      </div>
+
+      <div class="inline-cta">
+        <a class="btn btn-whatsapp"
+           href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20consult%20Apollo%20Delhi%20for%20treatment.%20Please%20guide%20me%20on%20next%20steps."
+           target="_blank" rel="noopener">🟢 Chat on WhatsApp</a>
+        <a class="btn btn-outline" href="#lead-form">Request Medical Opinion</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="specialties" class="lp-section">
+    <div class="container">
+      <h2>Specialties Patients Commonly Seek at Apollo Delhi</h2>
+      <p>
+        Select your area of care to start a conversation. If you are unsure, choose “General Guidance” and we will help you reach the right team.
+      </p>
+
+      <div class="cards-6">
+        <div class="card">
+          <h3>Oncology (Cancer Care)</h3>
+          <p>Guidance on diagnosis, treatment planning, and multidisciplinary cancer care pathways.</p>
+          <a class="link"
+             href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Cancer%20Care%20(Oncology)%20at%20Apollo%20Hospitals%2C%20Delhi.%20Please%20advise%20next%20steps."
+             target="_blank" rel="noopener">Ask on WhatsApp →</a>
+        </div>
+
+        <div class="card">
+          <h3>Cardiac Sciences</h3>
+          <p>Heart consultation, diagnostics, and surgical/interventional planning support.</p>
+          <a class="link"
+             href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Cardiac%20Care%20at%20Apollo%20Hospitals%2C%20Delhi.%20Please%20advise%20reports%20needed%20and%20next%20steps."
+             target="_blank" rel="noopener">Ask on WhatsApp →</a>
+        </div>
+
+        <div class="card">
+          <h3>Orthopaedics & Joint Replacement</h3>
+          <p>Joint replacement, spine care, and orthopaedic treatment pathways.</p>
+          <a class="link"
+             href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Orthopaedics%20%2F%20Joint%20Replacement%20at%20Apollo%20Hospitals%2C%20Delhi."
+             target="_blank" rel="noopener">Ask on WhatsApp →</a>
+        </div>
+
+        <div class="card">
+          <h3>Neurology & Neurosurgery</h3>
+          <p>Brain/spine evaluations and neurosurgical planning guidance.</p>
+          <a class="link"
+             href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Neurology%20%2F%20Neurosurgery%20at%20Apollo%20Hospitals%2C%20Delhi."
+             target="_blank" rel="noopener">Ask on WhatsApp →</a>
+        </div>
+
+        <div class="card">
+          <h3>Gastroenterology</h3>
+          <p>Digestive/liver evaluations, endoscopy guidance, and treatment planning.</p>
+          <a class="link"
+             href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Gastroenterology%20at%20Apollo%20Hospitals%2C%20Delhi."
+             target="_blank" rel="noopener">Ask on WhatsApp →</a>
+        </div>
+
+        <div class="card">
+          <h3>Transplants</h3>
+          <p>Eligibility guidance, evaluation steps, and coordination support.</p>
+          <a class="link"
+             href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Transplant%20evaluation%20at%20Apollo%20Hospitals%2C%20Delhi.%20Please%20advise%20next%20steps."
+             target="_blank" rel="noopener">Ask on WhatsApp →</a>
+        </div>
+      </div>
+
+      <div class="card card-highlight" style="margin-top:14px;">
+        <h3>Not sure which department to choose?</h3>
+        <p>Message us your symptoms/diagnosis and we will guide you to the appropriate Apollo Delhi specialty team.</p>
+        <a class="btn btn-whatsapp"
+           href="https://wa.me/919899187776?text=Hello%2C%20I%20am%20not%20sure%20which%20department%20to%20consult%20at%20Apollo%20Delhi.%20My%20condition%20is%3A%20%5Btype%20here%5D.%20Please%20guide%20me."
+           target="_blank" rel="noopener">🟢 Get General Guidance on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="international-support" class="lp-section">
+    <div class="container">
+      <h2>International Patient Support – What We Assist With</h2>
+      <p>If you choose to proceed with Apollo Hospitals, Delhi, our team helps coordinate the process so you can focus on care.</p>
+
+      <div class="cards-2">
+        <div class="card">
+          <h3>Before You Travel</h3>
+          <ul class="list">
+            <li>Case discussion & specialty matching</li>
+            <li>Appointment coordination</li>
+            <li>Guidance on required reports and tests</li>
+            <li>Travel planning guidance (as applicable)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>During & After Treatment</h3>
+          <ul class="list">
+            <li>Hospital coordination and support</li>
+            <li>Assistance for stay options near the hospital (if needed)</li>
+            <li>Post-treatment follow-up coordination</li>
+            <li>Tele-consultation guidance (if applicable)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="inline-cta">
+        <a class="btn btn-whatsapp"
+           href="https://wa.me/919899187776?text=Hello%2C%20I%20am%20an%20international%20patient%20planning%20Apollo%20Delhi.%20Please%20guide%20me%20on%20appointments%20and%20next%20steps."
+           target="_blank" rel="noopener">🟢 WhatsApp International Support</a>
+        <a class="btn btn-outline" href="#lead-form">Request a Call Back</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="lp-section">
+    <div class="container">
+      <h2>What Happens After You Message Us</h2>
+      <p>Clear, simple steps — with no pressure to commit.</p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h3>Start a WhatsApp / Live Chat</h3>
+            <p>Share your requirement and country. Reports are optional at this stage.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h3>Guidance on the Right Specialist Team</h3>
+            <p>We help connect you to the appropriate Apollo Delhi department based on your case.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h3>Clarity on Next Steps</h3>
+            <p>Understand treatment options, suggested plan, and how to proceed if you decide to travel.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <h3>You Decide</h3>
+            <p>No obligation to proceed. We support you with information so you can make the right decision.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-highlight" style="margin-top:14px;">
+        <h3>Prefer to start with a medical opinion?</h3>
+        <p>Submit your details and (optional) reports. We’ll respond with guidance on next steps.</p>
+        <a class="btn btn-outline" href="#lead-form">Get Medical Opinion (Form)</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="lead-form" class="lp-section">
+    <div class="container">
+      <h2>Get Medical Opinion / Request Call Back</h2>
+      <p>Share basic details. If you have reports, you may upload or mention them. Your information is treated confidentially.</p>
+
+      <div class="form-grid">
+        <div class="card">
+          <form action="#" method="post" enctype="multipart/form-data">
+            <div class="form-row">
+              <label>Full Name*</label>
+              <input type="text" name="name" placeholder="Your name" required>
+            </div>
+
+            <div class="form-row">
+              <label>Country*</label>
+              <input type="text" name="country" placeholder="Country" required>
+            </div>
+
+            <div class="form-row">
+              <label>WhatsApp Number (with country code)*</label>
+              <input type="tel" name="whatsapp" placeholder="+968 ..." required>
+            </div>
+
+            <div class="form-row">
+              <label>Email (optional)</label>
+              <input type="email" name="email" placeholder="you@example.com">
+            </div>
+
+            <div class="form-row">
+              <label>Condition / Treatment Required*</label>
+              <select name="need" required>
+                <option value="" selected disabled>Select</option>
+                <option>Oncology (Cancer Care)</option>
+                <option>Cardiac Sciences</option>
+                <option>Orthopaedics / Joint Replacement</option>
+                <option>Neurology / Neurosurgery</option>
+                <option>Gastroenterology</option>
+                <option>Transplants</option>
+                <option>Other / Not sure</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label>Message (optional)</label>
+              <textarea name="message" rows="4" placeholder="Brief details about the case, timeline, any diagnosis…"></textarea>
+            </div>
+
+            <div class="form-row">
+              <label>Upload Reports (optional)</label>
+              <input type="file" name="reports" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx">
+              <p class="small">Optional. You can also share reports later on WhatsApp if you prefer.</p>
+            </div>
+
+            <button type="submit" class="btn btn-submit">Submit</button>
+
+            <p class="small">
+              By submitting this form, you agree to be contacted for coordination support. Your information remains confidential.
+            </p>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3>Prefer WhatsApp?</h3>
+          <p>WhatsApp is the fastest way to start. You may simply message “Apollo Delhi” and your requirement.</p>
+
+          <a class="btn btn-whatsapp"
+             href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20consult%20Apollo%20Hospitals%2C%20Delhi.%20My%20requirement%20is%3A%20%5Btype%20here%5D.%20Please%20guide%20me."
+             target="_blank" rel="noopener">🟢 WhatsApp Now</a>
+
+          <hr class="divider" />
+
+          <h3 style="margin:0 0 8px;">Privacy & reassurance</h3>
+          <ul class="list" style="margin-top:0;">
+            <li>Confidential discussion</li>
+            <li>No pressure to travel or proceed</li>
+            <li>Guidance first, decision later</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="lp-section">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-grid">
+        <details>
+          <summary>Who will I speak with on WhatsApp or Live Chat?</summary>
+          <p>You will speak with a trained care coordinator who helps international patients connect with the appropriate Apollo Delhi specialty team and understand next steps.</p>
+        </details>
+
+        <details>
+          <summary>Do I need medical reports to start?</summary>
+          <p>No. You can start with a brief description of your condition. Reports help with more precise guidance but are optional initially.</p>
+        </details>
+
+        <details>
+          <summary>Is my information confidential?</summary>
+          <p>Yes. Your details are handled confidentially and used only to guide and coordinate your request.</p>
+        </details>
+
+        <details>
+          <summary>Will I be pressured to book treatment?</summary>
+          <p>No. Our role is to provide clarity and support. You decide whether to proceed and when.</p>
+        </details>
+
+        <details>
+          <summary>Can I get guidance before traveling to India?</summary>
+          <p>Yes. Many international patients begin with guidance/medical opinion first and travel only if they decide it is beneficial.</p>
+        </details>
+
+        <details>
+          <summary>How do I start?</summary>
+          <p>Click WhatsApp to message the coordinator, start Live Chat, or submit the medical opinion form.</p>
+        </details>
+      </div>
+
+      <div class="inline-cta">
+        <a class="btn btn-whatsapp"
+           href="https://wa.me/919899187776?text=Hello%2C%20I%20have%20a%20question%20about%20Apollo%20Hospitals%2C%20Delhi.%20Please%20help%20me%20with%20next%20steps."
+           target="_blank" rel="noopener">🟢 Ask on WhatsApp</a>
+        <a class="btn btn-outline" href="#lead-form">Request Medical Opinion</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="final-cta" class="lp-final-cta">
+    <div class="container">
+      <div class="final-cta-box">
+        <div>
+          <h2>Ready to take the next step?</h2>
+          <p>Start with a confidential chat and get guidance on the right Apollo Delhi specialist team.</p>
+        </div>
+        <div class="final-cta-actions">
+          <a class="btn btn-whatsapp"
+             href="https://wa.me/919899187776?text=Hello%2C%20I%20am%20ready%20to%20discuss%20Apollo%20Delhi%20treatment.%20Please%20guide%20me%20on%20next%20steps."
+             target="_blank" rel="noopener">🟢 WhatsApp Now</a>
+          <a class="btn btn-outline" href="#lead-form">Get Medical Opinion</a>
+        </div>
+      </div>
+
+      <p class="footer-note">
+        Disclaimer: This page provides information and coordination support for patients seeking care at Apollo Hospitals, Delhi.
+        Final diagnosis and treatment decisions are made by the hospital’s treating medical team.
+      </p>
+    </div>
+  </section>
+
+  <div class="stickybar" role="navigation" aria-label="Quick contact">
+    <div class="wrap">
+      <a class="btn btn-whatsapp"
+         href="https://wa.me/919899187776?text=Hello%2C%20I%20am%20an%20international%20patient%20considering%20Apollo%20Delhi.%20Please%20guide%20me%20on%20next%20steps."
+         target="_blank" rel="noopener">🟢 WhatsApp</a>
+      <a class="btn btn-livechat" href="#lead-form">💬 Form</a>
+    </div>
+  </div>
+
+</body>
+</html>
