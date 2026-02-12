@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Medanta – The Medicity, Gurugram | International Patients</title>
+  <meta name="description" content="Medanta – The Medicity, Gurugram – international patient guidance, medical opinion, and treatment planning. Start on WhatsApp, call, or use the form." />
+  <meta name="robots" content="index,follow" />
+  <style>
+    :root{
+      --text:#111827;
+      --muted:#4b5563;
+      --line:#e5e7eb;
+      --bg:#fbf7f3;          /* warm, premium */
+      --paper:#ffffff;
+      --accent:#b91c1c;      /* Medanta-ish red */
+      --accent2:#111827;     /* charcoal */
+      --wa:#25D366;
+      --shadow:0 14px 34px rgba(17,24,39,.10);
+      --radius:18px;
+      --max:1120px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--text);
+      line-height:1.6;
+    }
+    a{color:inherit}
+    .container{max-width:var(--max); margin:0 auto; padding:18px}
+
+    /* Header */
+    .header{
+      position:sticky; top:0; z-index:30;
+      background: rgba(251,247,243,.92);
+      backdrop-filter: blur(10px);
+      border-bottom:1px solid rgba(229,231,235,.9);
+    }
+    .bar{display:flex; align-items:center; justify-content:space-between; gap:14px; padding:10px 0}
+    .brand{display:flex; align-items:center; gap:12px}
+    .mark{
+      width:44px; height:44px; border-radius:14px;
+      background: radial-gradient(120% 120% at 30% 20%, rgba(185,28,28,.95), rgba(17,24,39,.85));
+      box-shadow: 0 10px 20px rgba(185,28,28,.18);
+    }
+    .brand .name{margin:0; font-weight:950; letter-spacing:.2px; font-size:14px}
+    .brand .sub{margin:0; font-size:12px; color:var(--muted)}
+    .links{display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end; align-items:center}
+    .links a{font-size:13px; color:var(--muted); text-decoration:none}
+    .links a:hover{text-decoration:underline}
+    .call{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.65);
+      padding:10px 12px;
+      border-radius:999px;
+      color:var(--text);
+      text-decoration:none;
+      font-size:13px;
+    }
+
+    /* Buttons */
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:12px 14px; border-radius:14px; border:1px solid transparent;
+      font-weight:900; text-decoration:none; cursor:pointer; user-select:none;
+    }
+    .btn-wa{background:var(--wa); color:#05210e; box-shadow: var(--shadow);}
+    .btn-wa:hover{filter:brightness(1.02)}
+    .btn-red{background:var(--accent); color:#fff;}
+    .btn-red:hover{filter:brightness(1.03)}
+    .btn-ghost{background:transparent; border-color: rgba(17,24,39,.16); color:var(--text);}
+    .btn-ghost:hover{background: rgba(255,255,255,.55)}
+
+    /* Hero */
+    .hero{padding:18px 0 8px}
+    .hero-grid{display:grid; grid-template-columns: 1.1fr .9fr; gap:18px; align-items:stretch}
+    @media (max-width: 980px){ .hero-grid{grid-template-columns:1fr} .links{justify-content:flex-start} }
+    .kicker{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:8px 10px; border-radius:999px;
+      border:1px solid rgba(185,28,28,.22);
+      background: rgba(185,28,28,.06);
+      color: var(--muted);
+      font-size:12px;
+      width:fit-content;
+      margin-bottom:12px;
+    }
+    .hero h1{
+      margin:0 0 10px;
+      font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+      font-weight:900;
+      font-size:38px;
+      line-height:1.08;
+      letter-spacing:-.6px;
+      color: var(--accent2);
+    }
+    @media (max-width: 480px){ .hero h1{font-size:30px} }
+    .hero p{margin:0 0 14px; color:var(--muted); font-size:15px}
+    .points{margin:10px 0 0; padding-left:18px; color:var(--muted); display:grid; gap:10px}
+    .points strong{color:var(--text)}
+    .media{
+      border:1px solid rgba(229,231,235,.9);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255,255,255,.85), rgba(255,255,255,.55));
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      min-height: 300px;
+      position:relative;
+    }
+    .media .ph{
+      position:absolute; inset:0;
+      display:flex; align-items:center; justify-content:center;
+      padding:18px;
+      text-align:center;
+      color: rgba(17,24,39,.55);
+      font-weight:900;
+      background:
+        radial-gradient(120% 90% at 70% 25%, rgba(185,28,28,.14), transparent 55%),
+        radial-gradient(120% 90% at 20% 10%, rgba(17,24,39,.10), transparent 55%);
+    }
+
+    /* Floating consult card */
+    .card{
+      background: rgba(255,255,255,.92);
+      border:1px solid rgba(229,231,235,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding:16px;
+    }
+    .card h2{margin:0 0 6px; font-size:18px; color:var(--accent2)}
+    .card p{margin:0 0 12px; color:var(--muted); font-size:13px}
+    .stack{display:grid; gap:10px}
+    .mini{font-size:12px; color:var(--muted); margin:10px 0 0}
+    .mini ul{margin:8px 0 0; padding-left:18px}
+
+    /* Sections */
+    section{padding:22px 0}
+    .paper{
+      background: rgba(255,255,255,.85);
+      border:1px solid rgba(229,231,235,.9);
+      border-radius: 22px;
+      box-shadow: 0 10px 28px rgba(17,24,39,.06);
+      padding:18px;
+    }
+    section h3{margin:0 0 10px; font-size:22px; color:var(--accent2)}
+    section p{margin:0 0 12px; color:var(--muted)}
+    .grid3{display:grid; grid-template-columns:repeat(3, 1fr); gap:14px}
+    .grid2{display:grid; grid-template-columns:repeat(2, 1fr); gap:14px}
+    @media (max-width: 980px){ .grid3,.grid2{grid-template-columns:1fr} }
+    .box{
+      background: rgba(255,255,255,.90);
+      border:1px solid rgba(229,231,235,.9);
+      border-radius: 18px;
+      padding:16px;
+    }
+    .box h4{margin:0 0 6px; font-size:16px}
+    .box p{margin:0; color:var(--muted); font-size:13px}
+    .list{margin:10px 0 0; padding-left:18px; color:var(--muted); display:grid; gap:10px}
+
+    .specGrid{display:grid; grid-template-columns:repeat(3, 1fr); gap:14px}
+    @media (max-width: 980px){ .specGrid{grid-template-columns:1fr} }
+    .spec a{color:var(--accent); text-decoration:underline}
+
+    /* Form */
+    .formGrid{display:grid; grid-template-columns: 1.05fr .95fr; gap:14px}
+    @media (max-width: 980px){ .formGrid{grid-template-columns:1fr} }
+    form{display:grid; gap:10px}
+    label{font-size:12px; color:var(--muted)}
+    input, select, textarea{
+      width:100%; padding:12px; border-radius:14px;
+      border:1px solid rgba(229,231,235,.95);
+      background: rgba(255,255,255,.95);
+      color:var(--text);
+      outline:none;
+    }
+    textarea{min-height:96px; resize:vertical}
+    .row2{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+    @media (max-width: 560px){ .row2{grid-template-columns:1fr} }
+
+    /* FAQ */
+    .faq{display:grid; grid-template-columns:repeat(2, 1fr); gap:12px}
+    @media (max-width: 980px){ .faq{grid-template-columns:1fr} }
+    details{
+      background: rgba(255,255,255,.90);
+      border:1px solid rgba(229,231,235,.95);
+      border-radius: 18px;
+      padding:12px 14px;
+    }
+    summary{cursor:pointer; font-weight:950}
+    details p{margin:10px 0 0; color:var(--muted)}
+
+    footer{
+      padding:18px 0 44px;
+      color:var(--muted);
+      font-size:12px;
+    }
+
+    /* Sticky */
+    .sticky{
+      position:fixed; left:0; right:0; bottom:0; z-index:60;
+      background: rgba(251,247,243,.96);
+      border-top:1px solid rgba(229,231,235,.95);
+      display:none; padding:10px 12px;
+      backdrop-filter: blur(10px);
+    }
+    .sticky .wrap{max-width:var(--max); margin:0 auto; display:flex; gap:10px}
+    .sticky .wrap a{flex:1}
+    @media (max-width: 980px){ .sticky{display:block} body{padding-bottom:76px} }
+  
+    /* Doctors */
+    .dept{margin-top:14px}
+    .deptHead{
+      display:flex; align-items:flex-end; justify-content:space-between; gap:10px; flex-wrap:wrap;
+      margin:0 0 10px;
+    }
+    .deptHead h4{margin:0; font-size:18px}
+    .deptHead .deptTag{
+      font-size:12px; color:var(--muted);
+      border:1px solid var(--line);
+      background: #fff;
+      padding:8px 10px;
+      border-radius:999px;
+    }
+    .docGrid{display:grid; grid-template-columns:repeat(4, 1fr); gap:12px}
+    @media (max-width: 980px){ .docGrid{grid-template-columns:repeat(2, 1fr)} }
+    @media (max-width: 520px){ .docGrid{grid-template-columns:1fr} }
+    .docCard{
+      border:1px solid var(--line);
+      border-radius: 16px;
+      background: var(--paper, #fff);
+      padding:14px;
+      position:relative;
+      overflow:hidden;
+    }
+    .docCard:before{
+      content:"";
+      position:absolute; inset:-60px -60px auto auto;
+      width:160px; height:160px;
+      background: radial-gradient(closest-side, rgba(0,0,0,0), transparent);
+      opacity:.9;
+      pointer-events:none;
+    }
+    .docCard .name{margin:0 0 4px; font-weight:900; font-size:14px}
+    .docCard .deptName{margin:0; font-size:12px; color:var(--muted)}
+    .docCard .pill{
+      display:inline-flex; margin-top:10px;
+      font-size:12px; font-weight:850;
+      padding:7px 9px;
+      border-radius:999px;
+      border:1px solid rgba(2,6,23,.08);
+      background: rgba(2,6,23,.04);
+    }
+    .replaceNote{
+      margin-top:12px;
+      font-size:12px;
+      color:var(--muted);
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="bar">
+        <div class="brand">
+          <div class="mark" aria-hidden="true"></div>
+          <div>
+            <p class="name">Medanta – The Medicity, Gurugram</p>
+            <p class="sub">International patient guidance • Medical opinion • Treatment planning</p>
+          </div>
+        </div>
+        <div class="links" aria-label="Page links">
+          <a href="#specialties">Specialties</a>
+          <a href="#specialties">Specialties</a>
+          <a href="#doctors">Doctors</a>
+          <a href="#international">International support</a>
+          <a href="#faq">FAQ</a>
+          <a class="call" href="tel:+919899187776"><strong>Call:</strong> +91 98991 87776</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero" id="top">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="kicker">🌍 For International Patients • Medanta, Gurugram</div>
+          <h1>Clarity, confidence, and a clear plan — before you travel</h1>
+          <p>
+            Start with a confidential discussion. We guide you to the right specialty team at Medanta,
+            help you understand next steps, and coordinate what you need (reports optional to start).
+          </p>
+
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn btn-wa" href="https://wa.me/919899187776?text=Hello%2C%20I%20am%20an%20international%20patient%20considering%20Medanta%20Gurugram.%20Please%20guide%20me%20on%20the%20right%20specialist%20and%20next%20steps." target="_blank" rel="noopener">🟢 WhatsApp (Fast Response)</a>
+            <a class="btn btn-red" href="#lead-form">Request Call Back</a>
+            <a class="btn btn-ghost" href="#lead-form">Get Medical Opinion</a>
+          </div>
+
+          <ul class="points">
+            <li><strong>Specialist matching:</strong> we guide you to the appropriate department based on your condition.</li>
+            <li><strong>Clarity before travel:</strong> understand evaluation, timelines, and next steps first.</li>
+            <li><strong>Respect & privacy:</strong> confidential communication, no pressure to proceed.</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="media" aria-label="Hero image placeholder">
+            <div class="ph">Add a Medanta hospital / doctor-team photo here for a premium B2C feel</div>
+          </div>
+
+          <div class="card" style="margin-top:14px;">
+            <h2>Speak with a care coordinator</h2>
+            <p>WhatsApp is fastest. You can also request a callback.</p>
+            <div class="stack">
+              <a class="btn btn-wa" href="https://wa.me/919899187776" target="_blank" rel="noopener">🟢 WhatsApp Now</a>
+              <a class="btn btn-ghost" href="tel:+919899187776">📞 Call +91 98991 87776</a>
+            </div>
+            <div class="mini">
+              <ul>
+                <li>Confidential & respectful</li>
+                <li>Reports optional to start</li>
+                <li>You decide what to do next</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="container" id="why">
+    <div class="paper">
+      <h3>Why patients choose Medanta, Gurugram</h3>
+      <p>High-intent patients look for specialist pathways and a clear plan. This page helps you start quickly.</p>
+
+      <div class="grid3">
+        <div class="box">
+          <h4>Specialist pathways</h4>
+          <p>We help you reach the appropriate specialty team based on diagnosis and urgency.</p>
+        </div>
+        <div class="box">
+          <h4>Plan before travel</h4>
+          <p>Understand evaluation steps, suggested plan, and timelines—then decide.</p>
+        </div>
+        <div class="box">
+          <h4>International coordination</h4>
+          <p>Appointment coordination and practical guidance (as applicable).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="specialties">
+    <div class="paper">
+      <h3>Specialties</h3>
+      <p>Choose a specialty to message us on WhatsApp.</p>
+
+      <div class="specGrid">
+        <div class="box spec">
+          <h4>Oncology (Cancer Care)</h4><p>Guidance on treatment planning and next steps.</p>
+          <a href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Oncology%20at%20Medanta%20Gurugram.%20Please%20advise%20next%20steps." target="_blank" rel="noopener">Ask on WhatsApp →</a>
+        </div>
+        <div class="box spec">
+          <h4>Cardiac Sciences</h4><p>Heart care guidance, diagnostics and planning.</p>
+          <a href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Cardiac%20Care%20at%20Medanta%20Gurugram." target="_blank" rel="noopener">Ask on WhatsApp →</a>
+        </div>
+        <div class="box spec">
+          <h4>Orthopaedics</h4><p>Joint replacement / spine evaluation pathways.</p>
+          <a href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Orthopaedics%20at%20Medanta%20Gurugram." target="_blank" rel="noopener">Ask on WhatsApp →</a>
+        </div>
+        <div class="box spec">
+          <h4>Neurology & Neurosurgery</h4><p>Brain/spine evaluation and surgical planning.</p>
+          <a href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Neurology%20%2F%20Neurosurgery%20at%20Medanta%20Gurugram." target="_blank" rel="noopener">Ask on WhatsApp →</a>
+        </div>
+        <div class="box spec">
+          <h4>Gastroenterology</h4><p>Digestive/liver evaluation and next steps.</p>
+          <a href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Gastroenterology%20at%20Medanta%20Gurugram." target="_blank" rel="noopener">Ask on WhatsApp →</a>
+        </div>
+        <div class="box spec">
+          <h4>Transplants</h4><p>Eligibility guidance and evaluation steps.</p>
+          <a href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Transplant%20evaluation%20at%20Medanta%20Gurugram." target="_blank" rel="noopener">Ask on WhatsApp →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container" id="doctors">
+    <div class="paper">
+      <h3>Doctors by department (replace with Medanta doctor list)</h3>
+      <p>These are placeholder doctor names for layout. Replace with actual Medanta consultants for each department.</p>
+
+      <!-- Oncology -->
+      <div class="dept">
+        <div class="deptHead">
+          <h4>Oncology (Cancer Care)</h4>
+          <span class="deptTag">Department: Oncology</span>
+        </div>
+        <div class="docGrid">
+          <div class="docCard" style="background: rgba(185,28,28,.06); border-color: rgba(185,28,28,.18);">
+            <p class="name">Dr. Ayesha Siddiqui</p><p class="deptName">Oncology</p><span class="pill" style="background: rgba(185,28,28,.10); border-color: rgba(185,28,28,.18);">Medanta • Consultant</span>
+          </div>
+          <div class="docCard" style="background: rgba(17,24,39,.03); border-color: rgba(17,24,39,.12);">
+            <p class="name">Dr. Karan Oberoi</p><p class="deptName">Oncology</p><span class="pill" style="background: rgba(17,24,39,.06); border-color: rgba(17,24,39,.12);">Medanta • Consultant</span>
+          </div>
+          <div class="docCard" style="background: rgba(185,28,28,.06); border-color: rgba(185,28,28,.18);">
+            <p class="name">Dr. Neha Choudhary</p><p class="deptName">Oncology</p><span class="pill" style="background: rgba(185,28,28,.10); border-color: rgba(185,28,28,.18);">Medanta • Consultant</span>
+          </div>
+          <div class="docCard" style="background: rgba(17,24,39,.03); border-color: rgba(17,24,39,.12);">
+            <p class="name">Dr. Rajiv Khanna</p><p class="deptName">Oncology</p><span class="pill" style="background: rgba(17,24,39,.06); border-color: rgba(17,24,39,.12);">Medanta • Consultant</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cardiac -->
+      <div class="dept">
+        <div class="deptHead">
+          <h4>Cardiac Sciences</h4>
+          <span class="deptTag">Department: Cardiology / Cardiac Surgery</span>
+        </div>
+        <div class="docGrid">
+          <div class="docCard" style="background: rgba(185,28,28,.06); border-color: rgba(185,28,28,.18);">
+            <p class="name">Dr. Sameer Bhatia</p><p class="deptName">Cardiac Sciences</p><span class="pill" style="background: rgba(185,28,28,.10); border-color: rgba(185,28,28,.18);">Medanta • Consultant</span>
+          </div>
+          <div class="docCard" style="background: rgba(17,24,39,.03); border-color: rgba(17,24,39,.12);">
+            <p class="name">Dr. Shalini Arora</p><p class="deptName">Cardiac Sciences</p><span class="pill" style="background: rgba(17,24,39,.06); border-color: rgba(17,24,39,.12);">Medanta • Consultant</span>
+          </div>
+          <div class="docCard" style="background: rgba(185,28,28,.06); border-color: rgba(185,28,28,.18);">
+            <p class="name">Dr. Vivek Narang</p><p class="deptName">Cardiac Sciences</p><span class="pill" style="background: rgba(185,28,28,.10); border-color: rgba(185,28,28,.18);">Medanta • Consultant</span>
+          </div>
+          <div class="docCard" style="background: rgba(17,24,39,.03); border-color: rgba(17,24,39,.12);">
+            <p class="name">Dr. Priti Joshi</p><p class="deptName">Cardiac Sciences</p><span class="pill" style="background: rgba(17,24,39,.06); border-color: rgba(17,24,39,.12);">Medanta • Consultant</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ortho -->
+      <div class="dept">
+        <div class="deptHead">
+          <h4>Orthopaedics & Joint Replacement</h4>
+          <span class="deptTag">Department: Orthopaedics</span>
+        </div>
+        <div class="docGrid">
+          <div class="docCard" style="background: rgba(185,28,28,.06); border-color: rgba(185,28,28,.18);">
+            <p class="name">Dr. Gaurav Sinha</p><p class="deptName">Orthopaedics</p><span class="pill" style="background: rgba(185,28,28,.10); border-color: rgba(185,28,28,.18);">Medanta • Consultant</span>
+          </div>
+          <div class="docCard" style="background: rgba(17,24,39,.03); border-color: rgba(17,24,39,.12);">
+            <p class="name">Dr. Radhika Iqbal</p><p class="deptName">Orthopaedics</p><span class="pill" style="background: rgba(17,24,39,.06); border-color: rgba(17,24,39,.12);">Medanta • Consultant</span>
+          </div>
+          <div class="docCard" style="background: rgba(185,28,28,.06); border-color: rgba(185,28,28,.18);">
+            <p class="name">Dr. Mohit Aggarwal</p><p class="deptName">Orthopaedics</p><span class="pill" style="background: rgba(185,28,28,.10); border-color: rgba(185,28,28,.18);">Medanta • Consultant</span>
+          </div>
+          <div class="docCard" style="background: rgba(17,24,39,.03); border-color: rgba(17,24,39,.12);">
+            <p class="name">Dr. Sangeeta Pillai</p><p class="deptName">Orthopaedics</p><span class="pill" style="background: rgba(17,24,39,.06); border-color: rgba(17,24,39,.12);">Medanta • Consultant</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Neuro -->
+      <div class="dept">
+        <div class="deptHead">
+          <h4>Neurology & Neurosurgery</h4>
+          <span class="deptTag">Department: Neuro Sciences</span>
+        </div>
+        <div class="docGrid">
+          <div class="docCard" style="background: rgba(185,28,28,.06); border-color: rgba(185,28,28,.18);">
+            <p class="name">Dr. Ishan Mukherjee</p><p class="deptName">Neuro Sciences</p><span class="pill" style="background: rgba(185,28,28,.10); border-color: rgba(185,28,28,.18);">Medanta • Consultant</span>
+          </div>
+          <div class="docCard" style="background: rgba(17,24,39,.03); border-color: rgba(17,24,39,.12);">
+            <p class="name">Dr. Meenakshi Rao</p><p class="deptName">Neuro Sciences</p><span class="pill" style="background: rgba(17,24,39,.06); border-color: rgba(17,24,39,.12);">Medanta • Consultant</span>
+          </div>
+          <div class="docCard" style="background: rgba(185,28,28,.06); border-color: rgba(185,28,28,.18);">
+            <p class="name">Dr. Sahil Grover</p><p class="deptName">Neuro Sciences</p><span class="pill" style="background: rgba(185,28,28,.10); border-color: rgba(185,28,28,.18);">Medanta • Consultant</span>
+          </div>
+          <div class="docCard" style="background: rgba(17,24,39,.03); border-color: rgba(17,24,39,.12);">
+            <p class="name">Dr. Nandini Bose</p><p class="deptName">Neuro Sciences</p><span class="pill" style="background: rgba(17,24,39,.06); border-color: rgba(17,24,39,.12);">Medanta • Consultant</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gastro -->
+      <div class="dept">
+        <div class="deptHead">
+          <h4>Gastroenterology</h4>
+          <span class="deptTag">Department: Gastro & Liver</span>
+        </div>
+        <div class="docGrid">
+          <div class="docCard" style="background: rgba(185,28,28,.06); border-color: rgba(185,28,28,.18);">
+            <p class="name">Dr. Tanmay Shah</p><p class="deptName">Gastro & Liver</p><span class="pill" style="background: rgba(185,28,28,.10); border-color: rgba(185,28,28,.18);">Medanta • Consultant</span>
+          </div>
+          <div class="docCard" style="background: rgba(17,24,39,.03); border-color: rgba(17,24,39,.12);">
+            <p class="name">Dr. Hina Qureshi</p><p class="deptName">Gastro & Liver</p><span class="pill" style="background: rgba(17,24,39,.06); border-color: rgba(17,24,39,.12);">Medanta • Consultant</span>
+          </div>
+          <div class="docCard" style="background: rgba(185,28,28,.06); border-color: rgba(185,28,28,.18);">
+            <p class="name">Dr. Ajay Menon</p><p class="deptName">Gastro & Liver</p><span class="pill" style="background: rgba(185,28,28,.10); border-color: rgba(185,28,28,.18);">Medanta • Consultant</span>
+          </div>
+          <div class="docCard" style="background: rgba(17,24,39,.03); border-color: rgba(17,24,39,.12);">
+            <p class="name">Dr. Preeti Sehgal</p><p class="deptName">Gastro & Liver</p><span class="pill" style="background: rgba(17,24,39,.06); border-color: rgba(17,24,39,.12);">Medanta • Consultant</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Transplant -->
+      <div class="dept">
+        <div class="deptHead">
+          <h4>Transplants</h4>
+          <span class="deptTag">Department: Transplant</span>
+        </div>
+        <div class="docGrid">
+          <div class="docCard" style="background: rgba(185,28,28,.06); border-color: rgba(185,28,28,.18);">
+            <p class="name">Dr. Devansh Tiwari</p><p class="deptName">Transplant</p><span class="pill" style="background: rgba(185,28,28,.10); border-color: rgba(185,28,28,.18);">Medanta • Consultant</span>
+          </div>
+          <div class="docCard" style="background: rgba(17,24,39,.03); border-color: rgba(17,24,39,.12);">
+            <p class="name">Dr. Ritu Bhatnagar</p><p class="deptName">Transplant</p><span class="pill" style="background: rgba(17,24,39,.06); border-color: rgba(17,24,39,.12);">Medanta • Consultant</span>
+          </div>
+          <div class="docCard" style="background: rgba(185,28,28,.06); border-color: rgba(185,28,28,.18);">
+            <p class="name">Dr. Pranav Kulkarni</p><p class="deptName">Transplant</p><span class="pill" style="background: rgba(185,28,28,.10); border-color: rgba(185,28,28,.18);">Medanta • Consultant</span>
+          </div>
+          <div class="docCard" style="background: rgba(17,24,39,.03); border-color: rgba(17,24,39,.12);">
+            <p class="name">Dr. Shweta Iyer</p><p class="deptName">Transplant</p><span class="pill" style="background: rgba(17,24,39,.06); border-color: rgba(17,24,39,.12);">Medanta • Consultant</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="replaceNote"><strong>Note:</strong> Replace placeholder doctors with Medanta’s actual consultant list for each department. You can add doctor photos later if you have image URLs.</p>
+    </div>
+  </section>
+
+  <section class="container" id="international">
+    <div class="paper">
+      <h3>International patient support</h3>
+      <p>Support depends on case requirements. We guide you step-by-step.</p>
+
+      <div class="grid2">
+        <div class="box">
+          <h4>Before travel</h4>
+          <ul class="list">
+            <li>Case discussion & specialty matching</li>
+            <li>Appointment coordination</li>
+            <li>Guidance on reports/tests needed</li>
+            <li>Next-step planning (as applicable)</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h4>During & after treatment</h4>
+          <ul class="list">
+            <li>Hospital coordination support</li>
+            <li>Guidance for nearby stay options (if needed)</li>
+            <li>Follow-up coordination</li>
+            <li>Tele-consultation guidance (if applicable)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+        <a class="btn btn-wa" href="https://wa.me/919899187776" target="_blank" rel="noopener">🟢 WhatsApp Now</a>
+        <a class="btn btn-red" href="#lead-form">Request Call Back</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="lead-form">
+    <div class="paper">
+      <h3>Get medical opinion / request call back</h3>
+      <p>Share basic details. Reports are optional to start; you can share them later on WhatsApp.</p>
+
+      <div class="formGrid">
+        <div class="box">
+          <form action="#" method="post" enctype="multipart/form-data">
+            <div class="row2">
+              <div>
+                <label>Full Name*</label>
+                <input type="text" name="name" placeholder="Your name" required />
+              </div>
+              <div>
+                <label>Country*</label>
+                <input type="text" name="country" placeholder="Country" required />
+              </div>
+            </div>
+            <div class="row2">
+              <div>
+                <label>WhatsApp (with country code)*</label>
+                <input type="tel" name="whatsapp" placeholder="+971 / +968 / +965 ..." required />
+              </div>
+              <div>
+                <label>Specialty*</label>
+                <select name="need" required>
+                  <option value="" disabled selected>Select</option>
+                  <option>Oncology (Cancer Care)</option>
+                  <option>Cardiac Sciences</option>
+                  <option>Orthopaedics</option>
+                  <option>Neurology / Neurosurgery</option>
+                  <option>Gastroenterology</option>
+                  <option>Transplants</option>
+                  <option>Other / Not sure</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label>Message (optional)</label>
+              <textarea name="message" placeholder="Brief diagnosis/symptoms, how urgent, any preferred dates…"></textarea>
+            </div>
+            <div>
+              <label>Upload reports (optional)</label>
+              <input type="file" name="reports" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" />
+              <p style="margin:8px 0 0; font-size:12px; color:var(--muted);">Optional. You can also share reports later on WhatsApp.</p>
+            </div>
+            <button class="btn btn-red" type="submit">Submit</button>
+            <p style="margin:0; font-size:12px; color:var(--muted);">Confidential. No pressure to proceed. We guide you, you decide.</p>
+          </form>
+        </div>
+
+        <div class="box">
+          <h4 style="margin:0 0 6px;">Prefer WhatsApp?</h4>
+          <p style="margin:0 0 12px; color:var(--muted); font-size:13px;">WhatsApp is the fastest way to start. Share your requirement and we’ll guide you.</p>
+          <a class="btn btn-wa" href="https://wa.me/919899187776" target="_blank" rel="noopener">🟢 WhatsApp Now</a>
+          <div style="margin-top:12px; border-top:1px solid rgba(229,231,235,.95); padding-top:12px;">
+            <h4 style="margin:0 0 6px;">Privacy & reassurance</h4>
+            <ul class="list" style="margin-top:0;">
+              <li>Confidential discussion</li>
+              <li>Reports optional to start</li>
+              <li>You decide what to do next</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="faq">
+    <div class="paper">
+      <h3>FAQ</h3>
+      <div class="faq">
+        <details><summary>Do I need reports to start?</summary><p>No. You can start with a brief description. Reports help with precision but are optional initially.</p></details>
+        <details><summary>Is my information confidential?</summary><p>Yes. Your information is used only for guidance and coordination support.</p></details>
+        <details><summary>Will I be pressured to book treatment?</summary><p>No. We provide clarity and support; you decide whether and when to proceed.</p></details>
+        <details><summary>How fast will you respond?</summary><p>WhatsApp typically gets the fastest response. You can also request a callback using the form.</p></details>
+        <details><summary>Can I take an online opinion first?</summary><p>Yes. Many patients start with guidance/medical opinion and decide about travel later.</p></details>
+        <details><summary>How do I start?</summary><p>Click WhatsApp, call us, or submit the form.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container">
+    <p style="margin:0 0 8px; color:var(--muted); font-size:12px;">
+      Disclaimer: This page provides information and coordination support for patients seeking care at Medanta – The Medicity, Gurugram.
+      Final diagnosis and treatment decisions are made by the hospital’s treating medical team.
+    </p>
+    <p style="margin:0; color:var(--muted); font-size:12px;">© <span id="y"></span> Hosplan</p>
+  </footer>
+
+  <div class="sticky" role="navigation" aria-label="Quick contact">
+    <div class="wrap">
+      <a class="btn btn-wa" href="https://wa.me/919899187776" target="_blank" rel="noopener">🟢 WhatsApp</a>
+      <a class="btn btn-red" href="#lead-form">Request Call Back</a>
+    </div>
+  </div>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
