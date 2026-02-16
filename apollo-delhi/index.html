@@ -131,62 +131,66 @@
       </div>
     </div>
     <main id="main" class="hidden">
-      <div class="max-w-[1200px] mx-auto px-4 py-4">
-        <div class="flex flex-wrap items-center justify-between gap-2 py-3">
-          <!-- Brand -->
+      <div
+        class="bg-white/90 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-20"
+      >
+        <div class="max-w-[1200px] mx-auto px-4 py-4">
           <div
-            class="flex items-center gap-3"
-            aria-label="Apollo Hospitals Delhi"
+            class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4"
           >
-            <div
-              class="w-20 h-[7rem] rounded-xl bg-gradient-to-br from-bue-700 to-bue-200 absolute flex items-center justify-center"
-            >
+            <!-- Brand -->
+            <div class="flex items-center gap-3">
+              <!-- Logo -->
               <img
                 src="./public/icons/Indraprastha-Delhi_apollo-logo.jpg"
-                alt="Apollo Hospitals, Delhi"
+                alt="Indraprastha Apollo Hospital, New Delhi"
                 width="80"
                 height="80"
-                class="d-flex w-50 relative"
+                class="w-16 md:w-20 h-auto"
               />
-            </div>
-            <div class="relative left-[100px]">
-              <h1
-                class="text-xl md:text-xl font-extrabold tracking-wide text-[#2582a1]"
-              >
-                Indraprastha Apollo Hospital,New Delhi,
-              </h1>
-              <p class="text-xs text-slate-600">
-                International patient support & care coordination
-              </p>
-            </div>
-          </div>
 
-          <!-- Top CTA -->
-          <div class="flex flex-wrap items-center gap-2">
-            <a
-              href="#specialties"
-              class="px-4 py-2 text-sm rounded-md border border-slate-200 bg-slate-50"
+              <!-- Title -->
+              <div>
+                <h1
+                  class="text-lg md:text-xl lg:text-2xl font-extrabold tracking-wide text-[#2582a1] leading-tight"
+                >
+                  Indraprastha Apollo Hospital, New Delhi
+                </h1>
+                <p class="text-xs md:text-sm text-slate-600 mt-1">
+                  International patient support & care coordination
+                </p>
+              </div>
+            </div>
+
+            <!-- Navigation / CTA -->
+            <nav
+              class="flex flex-wrap gap-2 justify-start lg:justify-end mt-3 lg:mt-0"
             >
-              Specialties
-            </a>
-            <a
-              href="#international"
-              class="px-4 py-2 text-sm rounded-md border border-slate-200 bg-slate-50"
-            >
-              International support
-            </a>
-            <a
-              href="#faq"
-              class="px-4 py-2 text-sm rounded-md border border-slate-200 bg-slate-50"
-            >
-              FAQ
-            </a>
-            <a
-              href="http://what.sapp.link/apollo-del"
-              class="px-4 py-2 text-sm rounded-md border border-slate-200 bg-slate-50 font-semibold"
-            >
-              <strong>Whatsapp:</strong> +91 99111 63990
-            </a>
+              <a
+                href="#specialties"
+                class="px-4 py-2 text-sm rounded-md border border-slate-200 bg-slate-50 hover:bg-slate-100 transition"
+              >
+                Specialties
+              </a>
+              <a
+                href="#international"
+                class="px-4 py-2 text-sm rounded-md border border-slate-200 bg-slate-50 hover:bg-slate-100 transition"
+              >
+                International Support
+              </a>
+              <a
+                href="#faq"
+                class="px-4 py-2 text-sm rounded-md border border-slate-200 bg-slate-50 hover:bg-slate-100 transition"
+              >
+                FAQ
+              </a>
+              <a
+                href="https://wa.me/919911163990"
+                class="px-4 py-2 text-sm rounded-md border border-green-300 bg-green-50 font-semibold hover:bg-green-100 transition whitespace-nowrap"
+              >
+                WhatsApp: +91 99111 63990
+              </a>
+            </nav>
           </div>
         </div>
       </div>
@@ -2213,28 +2217,31 @@
         </div>
       </footer>
 
+      <!-- Bottom Contact Bar -->
       <div
-        class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur border-t border-slate-200 p-3 md:block z-50"
+        class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur border-t border-slate-200 py-3 px-4 z-50"
         role="navigation"
         aria-label="Quick contact"
       >
-        <div class="max-w-[1200px] mx-auto flex gap-3">
+        <div class="max-w-[900px] mx-auto flex flex-col sm:flex-row gap-3">
+          <!-- WhatsApp -->
           <a
-            href="http://what.sapp.link/apollo-del"
+            href="https://wa.me/919899187776"
             target="_blank"
             rel="noopener"
-            class="flex-1 inline-flex justify-center items-center px-4 py-3 rounded-xl bg-green-500 text-white font-semibold shadow-lg"
+            class="flex-1 inline-flex justify-center items-center px-6 py-3 rounded-xl bg-green-500 text-white font-semibold shadow-lg hover:bg-green-600 transition"
           >
-            <i class="fab fa-whatsapp fa-1x mx-2" aria-hidden="true"></i>
-            WhatsApp
+            <i class="fab fa-whatsapp mr-2"></i>
+            WhatsApp Consultation
           </a>
 
-          <a
+          <!-- Request Callback -->
+          <button
             onclick="trackConversion()"
-            class="cursor-pointer flex-1 inline-flex justify-center items-center px-4 py-3 rounded-xl bg-[#2582a1] text-white font-semibold"
+            class="flex-1 inline-flex justify-center items-center px-6 py-3 rounded-xl bg-[#2582a1] text-white font-semibold shadow-md hover:opacity-90 transition"
           >
             Request Call Back
-          </a>
+          </button>
         </div>
       </div>
     </main>
