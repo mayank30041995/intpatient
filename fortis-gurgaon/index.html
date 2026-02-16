@@ -1196,67 +1196,72 @@
   </script>
   <!-- End of Google Tag (delayed for performance) -->
 
-  <!-- GEO + CHAT SCRIPT -->
-  <script defer>
-    function ipLookUp() {
-      var xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-          var response = JSON.parse(xhttp.response);
-          console.log("location response", response);
+   <!-- GEO + CHAT SCRIPT -->
+    <script defer>
+      function ipLookUp() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            var response = JSON.parse(xhttp.response);
+            console.log("location response", response);
 
-          window.ttLocation = response.country;
+            window.ttLocation = response.country;
 
-          if (response.country === "IN") {
-            document.title = "Page not found";
-            setVisible(".err", true);
-            setVisible("#loader", false);
-            $zoho.salesiq.floatwindow.visible("show");
-            $zoho.salesiq.chat.start();
-          } else {
-            setVisible("#main", true);
-            setVisible("#loader", false);
-            initChat();
+            if (response.country === "IN") {
+              document.title = "Page not found";
+              setVisible(".err", true);
+              setVisible("#loader", false);
+              setVisible("#main", false);
+              $zoho.salesiq.floatwindow.visible("show");
+              $zoho.salesiq.chat.start();
+            } else {
+              setVisible("#main", true);
+              setVisible("#loader", false);
+              initChat();
+            }
           }
+        };
+
+        xhttp.open(
+          "GET",
+          "https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation",
+          true,
+        );
+        xhttp.send();
+      }
+
+      function setVisible(selector, visible) {
+        const el = document.querySelector(selector);
+        if (el) {
+          el.classList.toggle("hidden", !visible);
         }
-      };
-
-      xhttp.open(
-        "GET",
-        "https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation",
-        true,
-      );
-      xhttp.send();
-    }
-
-    function setVisible(selector, visible) {
-      const el = document.querySelector(selector);
-      if (el) {
-        el.classList.toggle("hidden", !visible);
       }
-    }
 
-    function initChat() {
-      if (window.ttLocation !== "IN") {
-        window.__lc = window.__lc || {};
-        window.__lc.license = 7595311;
+      function initChat() {
+        if (window.ttLocation !== "IN") {
+          window.__lc = window.__lc || {};
+          window.__lc.license = 7595311;
 
-        (function () {
-          var lc = document.createElement("script");
-          lc.type = "text/javascript";
-          lc.async = true;
-          lc.src =
-            (document.location.protocol === "https:"
-              ? "https://"
-              : "http://") + "cdn.livechatinc.com/tracking.js";
-          document.head.appendChild(lc);
-        })();
+          (function () {
+            var lc = document.createElement("script");
+            lc.type = "text/javascript";
+            lc.async = true;
+            lc.src =
+              (document.location.protocol === "https:"
+                ? "https://"
+                : "http://") + "cdn.livechatinc.com/tracking.js";
+            document.head.appendChild(lc);
+          })();
+        }
       }
-    }
 
-    document.addEventListener("DOMContentLoaded", ipLookUp);
-  </script>
-  <!-- End of GEO + CHAT SCRIPT -->
+      document.addEventListener("DOMContentLoaded", function () {
+        setVisible("#main", true); // show page immediately
+        setVisible("#loader", false);
+        ipLookUp(); // run in background
+      });
+    </script>
+    <!-- End of GEO + CHAT SCRIPT -->
 
   <!-- Zoho Live Chat -->
   <script>window.$zoho = window.$zoho || {}; $zoho.salesiq = $zoho.salesiq || { ready: function () { } }</script>

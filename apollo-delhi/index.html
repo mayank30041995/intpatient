@@ -2307,6 +2307,7 @@
               document.title = "Page not found";
               setVisible(".err", true);
               setVisible("#loader", false);
+              setVisible("#main", false);
               $zoho.salesiq.floatwindow.visible("show");
               $zoho.salesiq.chat.start();
             } else {
@@ -2350,7 +2351,11 @@
         }
       }
 
-      document.addEventListener("DOMContentLoaded", ipLookUp);
+      document.addEventListener("DOMContentLoaded", function () {
+        setVisible("#main", true); // show page immediately
+        setVisible("#loader", false);
+        ipLookUp(); // run in background
+      });
     </script>
     <!-- End of GEO + CHAT SCRIPT -->
     <script>

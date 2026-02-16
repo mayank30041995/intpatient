@@ -78,15 +78,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <!-- <div class="err hidden text-center py-20 text-red-600 font-bold">
+    <div class="err hidden text-center py-20 text-red-600 font-bold">
       <div class="midcontainer">
         <h1>Not found <span>:(</span></h1>
         <p>Sorry, but the page you were trying to view does not exist.</p>
 
         <i>404</i>
       </div>
-    </div> -->
-    <main id="main">
+    </div>
+    <main id="main" class="hidden">
       <!-- Header -->
       <div
         class="md:sticky top-0 z-30 bg-[rgba(251,247,243,0.92)] backdrop-blur-md border-b border-[rgba(229,231,235,0.9)]"
@@ -1490,6 +1490,7 @@
               document.title = "Page not found";
               setVisible(".err", true);
               setVisible("#loader", false);
+              setVisible("#main", false);
               $zoho.salesiq.floatwindow.visible("show");
               $zoho.salesiq.chat.start();
             } else {
@@ -1533,7 +1534,11 @@
         }
       }
 
-      document.addEventListener("DOMContentLoaded", ipLookUp);
+      document.addEventListener("DOMContentLoaded", function () {
+        setVisible("#main", true); // show page immediately
+        setVisible("#loader", false);
+        ipLookUp(); // run in background
+      });
     </script>
     <!-- End of GEO + CHAT SCRIPT -->
 
