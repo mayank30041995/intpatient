@@ -38,7 +38,7 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:image"
-      content="https://apollo-delhi.hosplan.com/img/delhi.webp"
+      content="https://apollo-delhi.hosplan.com/public/icons/delhi.webp"
     />
     <meta property="og:url" content="https://apollo-delhi.hosplan.com" />
     <!-- Twitter -->
@@ -47,11 +47,9 @@
     <!-- Robots: not allow indexing and following -->
     <meta name="robots" content="noindex, nofollow" />
 
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script> -->
 
     <link
       rel="icon"
@@ -59,9 +57,8 @@
       href="public/icons/Indraprastha-Delhi_apollo-logo.jpg"
     />
     <link rel="preload" as="font" />
-    <link rel="preload" as="image" href="./img/delhi.webp" />
+    <link rel="preload" as="image" href="./public/icons/delhi.webp" />
 
-    <link rel="stylesheet" href="css/apollo_stylesheet.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -117,6 +114,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <!-- Tailwind CDN -->
+    <script>
+      tailwind.config = {
+        corePlugins: { preflight: true },
+      };
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
