@@ -1,14 +1,69 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Medanta – The Medicity, Gurugram | International Patients</title>
+    <title>Medanta - The Medicity Hospital in Gurgaon, India</title>
+    <meta charset="UTF-8" />
     <meta
       name="description"
-      content="Medanta – The Medicity, Gurugram – international patient guidance, medical opinion, and treatment planning. Start on WhatsApp, call, or use the form."
+      content="Medanta hospital Gurgaon, Medanta Hospital Delhi. Doctors opinion, appointment. Get Opinion, Appointments."
     />
-    <meta name="robots" content="index,follow" />
+    <meta
+      name="keywords"
+      content="Medanta hospital Gurgaon, Medanta Hospital Delhi, Best Hospitals in Delhi,Opinion for International patients Doctors opinion, appointment."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex, nofollow" />
+    <meta name="bingbot" content="noindex, nofollow" />
+    <meta name="AhrefsBot" content="noindex, nofollow" />
+    <meta name="SemrushBot" content="noindex, nofollow" />
+    <meta name="MJ12bot" content="noindex, nofollow" />
+    <meta name="Baiduspider" content="noindex, nofollow" />
+    <meta name="YandexBot" content="noindex, nofollow" />
+
+    <link rel="manifest" href="favicon_package_v0.16/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon_package_v0.16/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Load Montserrat font with swap to prevent CLS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Preload hero/banner images with fetchpriority -->
+    <link
+      rel="preload"
+      as="image"
+      href="./public/images/bckgrnd-medanta-_1_-1.webp"
+      type="image/webp"
+      fetchpriority="high"
+      media="(min-width: 768px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./public/images/medanta-mobile.webp"
+      type="image/webp"
+      fetchpriority="high"
+      media="(max-width: 767px)"
+    />
+    <link rel="icon" type="image/x-icon" href="./public/images/favicon.ico" />
+    <!-- new Hero image -->
 
     <link
       rel="stylesheet"
@@ -20,38 +75,39 @@
   <body>
     <!-- Header -->
     <div
-      class="sticky top-0 z-30 bg-[rgba(251,247,243,0.92)] backdrop-blur-md border-b border-[rgba(229,231,235,0.9)]"
+      class="md:sticky top-0 z-30 bg-[rgba(251,247,243,0.92)] backdrop-blur-md border-b border-[rgba(229,231,235,0.9)]"
     >
-      <div class="max-w-[1120px] mx-auto px-[18px]">
+      <div class="max-w-[1200px] mx-auto px-4">
         <div
-          class="flex items-center justify-between gap-[14px] py-[10px] flex-wrap lg:flex-nowrap"
+          class="flex flex-col lg:flex-row lg:items-center lg:justify-between py-3 gap-4"
         >
-          <div class="flex items-center gap-[12px]">
-            <div class="w-20 h-10 rounded-xl absolute gap-5">
+          <!-- Left Section -->
+          <div class="flex items-center gap-4">
+            <!-- Logo -->
+            <div class="w-24 h-14 flex items-center">
               <img
                 src="./public/images/medantalogo.png.webp"
-                alt="Fortis Gurgaon FMRI"
-                width="80"
-                height="80"
-                class="d-flex w-50 relative"
-                style="height: 50px; min-width: 140px"
+                alt="Medanta Gurugram"
+                class="w-full h-auto object-contain"
               />
             </div>
-            <div class="relative left-[100px] w-[90%] ml-14">
-              <p class="font-[900] text-[#f04e30] text-[18px] tracking-[.2px]">
+
+            <!-- Hospital Info -->
+            <div>
+              <p
+                class="font-extrabold text-[#f04e30] text-base sm:text-lg md:text-2xl"
+              >
                 Medanta – The Medicity, Gurugram
               </p>
-              <p class="text-[12px] text-[#4b5563]">
+              <p class="text-xs sm:text-sm text-[#4b5563]">
                 International patient guidance • Medical opinion • Treatment
                 planning
               </p>
             </div>
           </div>
 
-          <div
-            class="flex gap-[14px] flex-wrap items-center text-[13px] text-[#4b5563]"
-          >
-            <a href="#specialties" class="hover:underline">Specialties</a>
+          <!-- Right Section -->
+          <div class="flex flex-wrap items-center gap-3 text-sm text-[#4b5563]">
             <a href="#specialties" class="hover:underline">Specialties</a>
             <a href="#doctors" class="hover:underline">Doctors</a>
             <a href="#international" class="hover:underline"
@@ -60,10 +116,10 @@
             <a href="#faq" class="hover:underline">FAQ</a>
 
             <a
-              href="tel:+919899187776"
-              class="border border-[#e5e7eb] bg-[rgba(255,255,255,.65)] px-[12px] py-[10px] rounded-full text-[#111827] text-[13px]"
+              href="https://what.sapp.link/medanta"
+              class="border border-[#e5e7eb] bg-white px-4 py-2 rounded-full text-[#111827] whitespace-nowrap"
             >
-              <strong>Call:</strong> +91 98991 87776
+              <strong>Whatsapp:</strong> +91 98991 87776
             </a>
           </div>
         </div>
@@ -72,7 +128,7 @@
 
     <!-- Hero -->
     <header class="py-[18px]" id="top">
-      <div class="max-w-[1140px] mx-auto px-[18px]">
+      <div class="max-w-[1200px] mx-auto px-[18px]">
         <div class="grid lg:grid-cols-[1.1fr_.9fr] gap-[18px] items-stretch">
           <div>
             <div
@@ -95,23 +151,28 @@
 
             <div class="flex gap-[10px] flex-wrap">
               <a
-                class="inline-flex items-center justify-center gap-[10px] px-[14px] py-[12px] rounded-[14px] bg-[#25D366] text-[#FFF] font-[900] shadow-[0_14px_34px_rgba(17,24,39,.10)]"
+                href="https://what.sapp.link/medanta"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-[10px] px-[14px] py-[12px] rounded-[8px] bg-[#25D366] text-[#FFF] font-[900] shadow-[0_14px_34px_rgba(17,24,39,.10)]"
               >
                 <i class="fab fa-whatsapp fa-1x" aria-hidden="true"></i>
                 WhatsApp (Fast Response)
               </a>
 
-              <a
-                class="inline-flex items-center justify-center px-[14px] py-[12px] rounded-[14px] bg-[#f04e30] text-white font-[900]"
+              <span
+                class="inline-flex items-center justify-center px-[14px] py-[12px] rounded-[8px] bg-[#f04e30] text-white font-[900] cursor-pointer"
+                onclick="trackConversion()"
               >
                 Request Call Back
-              </a>
+              </span>
 
-              <a
-                class="inline-flex items-center justify-center px-[14px] py-[12px] rounded-[14px] border border-[rgba(17,24,39,.16)] text-[#111827]"
+              <span
+                class="inline-flex items-center justify-center px-[14px] py-[12px] rounded-[8px] border border-[rgba(17,24,39,.16)] text-[#111827] cursor-pointer"
+                onclick="trackConversion()"
               >
                 Get Medical Opinion
-              </a>
+              </span>
             </div>
           </div>
 
@@ -143,7 +204,7 @@
               ></div>
               <!-- Tip Box -->
               <div
-                class="absolute left-3 right-3 bottom-3 bg-white/95 border border-slate-200 rounded-xl p-2 shadow-md flex flex-col md:flex-row items-center justify-between gap-3"
+                class="absolute left-3 right-3 bottom-3 bg-white/95 border border-slate-200 rounded-xl px-3 py-2 shadow-md flex flex-col md:flex-row items-center justify-between gap-3"
               >
                 <h3
                   class="text-base md:text-sm font-semibold text-[#2582a1] text-center md:text-left"
@@ -152,10 +213,10 @@
                 </h3>
 
                 <a
-                  href="https://wa.me/919899187776?text=Hello%2C%20I%20am%20an%20international%20patient%20considering%20Apollo%20Hospitals%20Delhi.%20Please%20guide%20me%20on%20the%20right%20specialist%20and%20next%20steps."
+                  href="https://what.sapp.link/medanta"
                   target="_blank"
-                  rel="noopener"
-                  class="inline-flex items-center text-sm justify-center px-2 h-11 rounded-xl bg-green-500 text-white font-semibold shadow-lg hover:brightness-105 transition whitespace-nowrap"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center text-sm justify-center px-2 h-11 rounded-md bg-green-500 text-white font-semibold shadow-lg hover:brightness-105 transition whitespace-nowrap"
                 >
                   <i class="fab fa-whatsapp fa-1x mx-2" aria-hidden="true"></i>
                   WhatsApp (Fast Response)
@@ -169,11 +230,11 @@
 
     <!-- Why Section -->
     <section class="py-6">
-      <div class="max-w-[1140px] mx-auto px-4">
+      <div class="max-w-[1200px] mx-auto px-4">
         <div
           class="bg-white/90 border border-gray-200 rounded-3xl shadow-lg p-5"
         >
-          <h3 class="text-2xl font-semibold text-gray-900 mb-2">
+          <h3 class="text-3xl font-bold mb-2 text-[#f04e30]">
             Why patients choose Medanta, Gurugram
           </h3>
 
@@ -211,7 +272,7 @@
     </section>
 
     <section
-      class="max-w-[1140px] mx-auto px-[18px] py-[22px]"
+      class="max-w-[1200px] mx-auto px-[18px] py-[22px]"
       id="specialties"
     >
       <div
@@ -233,9 +294,9 @@
             </p>
 
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Oncology%20at%20Medanta%20Gurugram.%20Please%20advise%20next%20steps."
+              href="https://what.sapp.link/medanta"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               class="inline-block mt-[10px] text-[#f04e30] underline"
             >
               Ask on WhatsApp →
@@ -252,9 +313,9 @@
               Heart care guidance, diagnostics and planning.
             </p>
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Cardiac%20Care%20at%20Medanta%20Gurugram."
+              href="https://what.sapp.link/medanta"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               class="inline-block mt-[10px] text-[#f04e30] underline"
             >
               Ask on WhatsApp →
@@ -269,9 +330,9 @@
               Joint replacement / spine evaluation pathways.
             </p>
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Orthopaedics%20at%20Medanta%20Gurugram."
+              href="https://what.sapp.link/medanta"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               class="inline-block mt-[10px] text-[#f04e30] underline"
             >
               Ask on WhatsApp →
@@ -286,9 +347,9 @@
               Brain/spine evaluation and surgical planning.
             </p>
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Neurology%20%2F%20Neurosurgery%20at%20Medanta%20Gurugram."
+              href="https://what.sapp.link/medanta"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               class="inline-block mt-[10px] text-[#f04e30] underline"
             >
               Ask on WhatsApp →
@@ -303,9 +364,9 @@
               Digestive/liver evaluation and next steps.
             </p>
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Gastroenterology%20at%20Medanta%20Gurugram."
+              href="https://what.sapp.link/medanta"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               class="inline-block mt-[10px] text-[#f04e30] underline"
             >
               Ask on WhatsApp →
@@ -320,9 +381,9 @@
               Eligibility guidance and evaluation steps.
             </p>
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Transplant%20evaluation%20at%20Medanta%20Gurugram."
+              href="https://what.sapp.link/medanta"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               class="inline-block mt-[10px] text-[#f04e30] underline"
             >
               Ask on WhatsApp →
@@ -332,11 +393,21 @@
       </div>
     </section>
 
-    <section class="max-w-[1140px] mx-auto px-4 py-10" id="doctors">
-      <h3>Doctors by department</h3>
-      <p>
-        These are placeholder doctor names for layout. Replace with actual
-        Medanta consultants for each department.
+    <section class="max-w-[1200px] mx-auto px-4 py-10" id="doctors">
+      <h3 class="text-3xl text-[#f04e30] font-bold my-2">
+        Doctors by Department
+      </h3>
+
+      <p class="text-gray-600 leading-relaxed">
+        At Medanta – The Medicity, Gurugram, our internationally trained
+        specialists deliver world-class care across cardiology, oncology,
+        neurology, organ transplant, orthopedics, and more. For international
+        patients, we provide end-to-end support including medical opinion
+        review, treatment planning, visa assistance, airport transfers, language
+        interpretation, and dedicated care coordinators. Our multidisciplinary
+        approach ensures accurate diagnosis, transparent treatment pathways, and
+        personalized care aligned with global clinical standards — making
+        Medanta a trusted destination for advanced medical treatment in India.
       </p>
 
       <div class="mt-6">
@@ -362,15 +433,23 @@
                 <span
                   class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-blue-200 bg-blue-100"
                 >
-                  FMRI • Consultant
+                  Senior Medanta Cardiac Surgery
                 </span>
+                <a
+                  href="https://what.sapp.link/medanta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block mt-[10px] text-[#f04e30] underline"
+                >
+                  Ask on WhatsApp →
+                </a>
               </div>
               <!-- Right: Doctor Image -->
               <div class="shrink-0">
                 <img
                   src="./public/images/cardio/Dr. Naresh Trehan.webp"
                   alt="Dr. Naresh Trehan"
-                  class="w-20 h-30 object-fill rounded-xl border border-sky-200"
+                  class="w-20 h-[7rem] object-fill rounded-xl border border-sky-200"
                 />
               </div>
             </div>
@@ -385,15 +464,23 @@
                 <span
                   class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-sky-200 bg-sky-100"
                 >
-                  FMRI • Consultant
+                  Medanta Cardiac Surgery
                 </span>
+                <a
+                  href="https://what.sapp.link/medanta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block mt-[10px] text-[#f04e30] underline"
+                >
+                  Ask on WhatsApp →
+                </a>
               </div>
               <!-- Right: Doctor Image -->
               <div class="shrink-0">
                 <img
                   src="./public/images/cardio/dr-anil-bhan.webp"
                   alt="Dr. Anil Bhan"
-                  class="w-20 h-30 object-cover rounded-xl border border-sky-200"
+                  class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200"
                 />
               </div>
             </div>
@@ -408,15 +495,23 @@
                 <span
                   class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-blue-200 bg-blue-100"
                 >
-                  FMRI • Consultant
+                  Medanta Cardiac Surgery
                 </span>
+                <a
+                  href="https://what.sapp.link/medanta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block mt-[10px] text-[#f04e30] underline"
+                >
+                  Ask on WhatsApp →
+                </a>
               </div>
               <!-- Right: Doctor Image -->
               <div class="shrink-0">
                 <img
                   src="./public/images/cardio/dr-adarsh-chaudhary.webp"
                   alt="Dr. Udgeath Dhir"
-                  class="w-20 h-30 object-cover rounded-xl border border-sky-200"
+                  class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200"
                 />
               </div>
             </div>
@@ -431,22 +526,30 @@
                 <span
                   class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-sky-200 bg-sky-100"
                 >
-                  FMRI • Consultant
+                  Medanta Cardiac Surgery
                 </span>
+                <a
+                  href="https://what.sapp.link/medanta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block mt-[10px] text-[#f04e30] underline"
+                >
+                  Ask on WhatsApp →
+                </a>
               </div>
               <!-- Right: Doctor Image -->
               <div class="shrink-0">
                 <img
                   src="./public/images/cardio/dr-ramesh-kumar-bapna.webp"
                   alt="Dr Manjinder Sandhu"
-                  class="w-20 h-30 object-cover rounded-xl border border-sky-200"
+                  class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200"
                 />
               </div>
             </div>
           </div>
         </div>
         <!-- ================= Oncology ================= -->
-        <div class="flex flex-wrap items-end justify-between gap-3 mb-4">
+        <div class="flex flex-wrap items-end justify-between gap-3 mb-4 mt-4">
           <h4 class="text-lg font-semibold">Oncology (Cancer Care)</h4>
           <span
             class="text-xs text-slate-600 border border-slate-200 bg-white px-3 py-1.5 rounded-full"
@@ -466,15 +569,23 @@
               <span
                 class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-blue-200 bg-blue-100"
               >
-                FMRI • Consultant
+                Medanta Cardiac Surgery
               </span>
+              <a
+                href="https://what.sapp.link/medanta"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block mt-[10px] text-[#f04e30] underline"
+              >
+                Ask on WhatsApp →
+              </a>
             </div>
             <!-- Right: Doctor Image -->
             <div class="shrink-0">
               <img
                 src="./public/images/onco/ASHOK.webp"
                 alt="Dr.ASHOK"
-                class="w-20 h-30 object-cover rounded-xl border border-sky-200"
+                class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200"
               />
             </div>
           </div>
@@ -489,15 +600,23 @@
               <span
                 class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-sky-200 bg-sky-100"
               >
-                FMRI • Consultant
+                Medanta Oncology Surgery
               </span>
+              <a
+                href="https://what.sapp.link/medanta"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block mt-[10px] text-[#f04e30] underline"
+              >
+                Ask on WhatsApp →
+              </a>
             </div>
             <!-- Right: Doctor Image -->
             <div class="shrink-0">
               <img
                 src="./public/images/onco/Dr.-susovan-banerje-3.webp"
                 alt="Dr. Susovan Banerje"
-                class="w-20 h-30 object-cover rounded-xl border border-sky-200"
+                class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200"
               />
             </div>
           </div>
@@ -512,15 +631,23 @@
               <span
                 class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-blue-200 bg-blue-100"
               >
-                FMRI • Consultant
+                Medanta Oncology Surgery
               </span>
+              <a
+                href="https://what.sapp.link/medanta"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block mt-[10px] text-[#f04e30] underline"
+              >
+                Ask on WhatsApp →
+              </a>
             </div>
             <!-- Right: Doctor Image -->
             <div class="shrink-0">
               <img
                 src="./public/images/onco/Dr.-Satya-Prakash-Yadav.webp"
                 alt="Dr.-Satya-Prakash-Yadav"
-                class="w-20 h-30 object-cover rounded-xl border border-sky-200"
+                class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200"
               />
             </div>
           </div>
@@ -535,15 +662,23 @@
               <span
                 class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-sky-200 bg-sky-100"
               >
-                FMRI • Consultant
+                Medanta Oncology Surgery
               </span>
+              <a
+                href="https://what.sapp.link/medanta"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block mt-[10px] text-[#f04e30] underline"
+              >
+                Ask on WhatsApp →
+              </a>
             </div>
             <!-- Right: Doctor Image -->
             <div class="shrink-0">
               <img
                 src="./public/images/onco/Dr.DEEPAK-GUPTA-4.webp"
                 alt="Dr.Rahul Bhargava"
-                class="w-20 h-30 object-cover rounded-xl border border-sky-200"
+                class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200"
               />
             </div>
           </div>
@@ -573,15 +708,23 @@
                 <span
                   class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-blue-200 bg-blue-100"
                 >
-                  FMRI • Consultant
+                  Medanta Orthopaedics Surgery
                 </span>
+                <a
+                  href="https://what.sapp.link/medanta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block mt-[10px] text-[#f04e30] underline"
+                >
+                  Ask on WhatsApp →
+                </a>
               </div>
               <!-- Right: Doctor Image -->
               <div class="shrink-0">
                 <img
                   src="./public/images/ortho/Ashok-Rajgopal.webp"
                   alt="Dr Manoj Padman"
-                  class="w-20 h-30 object-cover rounded-xl border border-sky-200"
+                  class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200"
                 />
               </div>
             </div>
@@ -596,15 +739,23 @@
                 <span
                   class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-sky-200 bg-sky-100"
                 >
-                  FMRI • Consultant
+                  Medanta Orthopaedics Surgery
                 </span>
+                <a
+                  href="https://what.sapp.link/medanta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block mt-[10px] text-[#f04e30] underline"
+                >
+                  Ask on WhatsApp →
+                </a>
               </div>
               <!-- Right: Doctor Image -->
               <div class="shrink-0">
                 <img
                   src="./public/images/ortho/Dr-Vipin-chand-tyagi-.webp"
                   alt="Dr. Jayant Arora"
-                  class="w-20 h-30 object-cover rounded-xl border border-sky-200"
+                  class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200"
                 />
               </div>
             </div>
@@ -619,15 +770,23 @@
                 <span
                   class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-blue-200 bg-blue-100"
                 >
-                  FMRI • Consultant
+                  Medanta Orthopaedics Surgery
                 </span>
+                <a
+                  href="https://what.sapp.link/medanta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block mt-[10px] text-[#f04e30] underline"
+                >
+                  Ask on WhatsApp →
+                </a>
               </div>
               <!-- Right: Doctor Image -->
               <div class="shrink-0">
                 <img
                   src="./public/images/ortho/Dr. Sumit Kumar.webp"
                   alt="Dr Monu Singh"
-                  class="w-20 h-30 object-cover rounded-xl border border-sky-200"
+                  class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200"
                 />
               </div>
             </div>
@@ -642,15 +801,23 @@
                 <span
                   class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-sky-200 bg-sky-100"
                 >
-                  FMRI • Consultant
+                  Medanta Orthopaedics Surgery
                 </span>
+                <a
+                  href="https://what.sapp.link/medanta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block mt-[10px] text-[#f04e30] underline"
+                >
+                  Ask on WhatsApp →
+                </a>
               </div>
               <!-- Right: Doctor Image -->
               <div class="shrink-0">
                 <img
                   src="./public/images/ortho/Dr.-Attique-vasudev-3.webp"
                   alt="Dr. Nisha Thomas"
-                  class="w-20 h-30 object-cover rounded-xl border border-sky-200"
+                  class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200"
                 />
               </div>
             </div>
@@ -679,15 +846,23 @@
                 <span
                   class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-blue-200 bg-blue-100"
                 >
-                  FMRI • Consultant
+                  Medanta Neurology & Neurosurgery
                 </span>
+                <a
+                  href="https://what.sapp.link/medanta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block mt-[10px] text-[#f04e30] underline"
+                >
+                  Ask on WhatsApp →
+                </a>
               </div>
               <!-- Right: Doctor Image -->
               <div class="shrink-0">
                 <img
                   src="./public/images/Neuro/arun-garg.webp"
                   alt="Dr Praveen Gupta"
-                  class="w-20 h-30 object-cover rounded-xl border border-sky-200"
+                  class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200"
                 />
               </div>
             </div>
@@ -702,15 +877,23 @@
                 <span
                   class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-sky-200 bg-sky-100"
                 >
-                  FMRI • Consultant
+                  Medanta Neurology & Neurosurgery
                 </span>
+                <a
+                  href="https://what.sapp.link/medanta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block mt-[10px] text-[#f04e30] underline"
+                >
+                  Ask on WhatsApp →
+                </a>
               </div>
               <!-- Right: Doctor Image -->
               <div class="shrink-0">
                 <img
                   src="./public/images/Neuro/Dr-Raj-Kumar.webp"
                   alt="Dr. Charu Gauba"
-                  class="w-20 h-30 object-cover rounded-xl border border-sky-200"
+                  class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200"
                 />
               </div>
             </div>
@@ -725,15 +908,23 @@
                 <span
                   class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-blue-200 bg-blue-100"
                 >
-                  FMRI • Consultant
+                  Medanta Neurology & Neurosurgery
                 </span>
+                <a
+                  href="https://what.sapp.link/medanta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block mt-[10px] text-[#f04e30] underline"
+                >
+                  Ask on WhatsApp →
+                </a>
               </div>
               <!-- Right: Doctor Image -->
               <div class="shrink-0">
                 <img
                   src="./public/images/Neuro/Dr. Atma Ram Bansal.webp"
                   alt="Dr. Mukul Varma"
-                  class="w-20 h-30 object-cover rounded-xl border border-sky-200"
+                  class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200"
                 />
               </div>
             </div>
@@ -748,15 +939,23 @@
                 <span
                   class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-sky-200 bg-sky-100"
                 >
-                  FMRI • Consultant
+                  Medanta Neurology & Neurosurgery
                 </span>
+                <a
+                  href="https://what.sapp.link/medanta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block mt-[10px] text-[#f04e30] underline"
+                >
+                  Ask on WhatsApp →
+                </a>
               </div>
               <!-- Right: Doctor Image -->
               <div class="shrink-0">
                 <img
                   src="./public/images/Neuro/Dr. Gaurav Goel.webp"
                   alt="Dr Pushpendra Nath"
-                  class="w-20 h-30 object-cover rounded-xl border border-sky-200"
+                  class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200"
                 />
               </div>
             </div>
@@ -766,13 +965,15 @@
     </section>
 
     <section
-      class="max-w-[1140px] mx-auto px-[18px] py-[22px]"
+      class="max-w-[1200px] mx-auto px-[18px] py-[22px]"
       id="international"
     >
       <div
         class="bg-[rgba(255,255,255,.85)] border border-[rgba(229,231,235,.9)] rounded-[22px] shadow-[0_10px_28px_rgba(17,24,39,.06)] p-[18px]"
       >
-        <h3 class="text-[22px] text-[#111827] mb-[10px]">
+        <h3
+          class="text-[28px] text-[#111827] mb-[10px] text-[#f04e30] font-bold"
+        >
           International patient support
         </h3>
         <p class="text-[#4b5563] mb-[12px]">
@@ -807,10 +1008,10 @@
 
         <div class="mt-[14px] flex gap-[10px] flex-wrap">
           <a
-            href="https://wa.me/919899187776"
+            href="https://what.sapp.link/medanta"
             target="_blank"
-            rel="noopener"
-            class="inline-flex items-center justify-center gap-[10px] px-[14px] py-[12px] rounded-[14px] font-[900] bg-[#25D366] text-[#FFF] shadow-[0_14px_34px_rgba(17,24,39,.10)]"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center gap-[10px] px-[14px] py-[12px] rounded-[8px] font-[900] bg-[#25D366] text-[#FFF] shadow-[0_14px_34px_rgba(17,24,39,.10)]"
           >
             <i class="fab fa-whatsapp fa-1x mx-2" aria-hidden="true"></i>
             WhatsApp Now
@@ -818,7 +1019,7 @@
 
           <a
             href="#lead-form"
-            class="inline-flex items-center justify-center gap-[10px] px-[14px] py-[12px] rounded-[14px] font-[900] bg-[#f04e30] text-white"
+            class="inline-flex items-center justify-center gap-[10px] px-[14px] py-[12px] rounded-[8px] font-[900] bg-[#f04e30] text-white"
           >
             Request Call Back
           </a>
@@ -826,11 +1027,11 @@
       </div>
     </section>
 
-    <section class="max-w-[1140px] mx-auto px-[18px] py-[22px]" id="lead-form">
+    <section class="max-w-[1200px] mx-auto px-[18px] py-[22px]" id="lead-form">
       <div
         class="bg-[rgba(255,255,255,.85)] border border-[rgba(229,231,235,.9)] rounded-[22px] shadow-[0_10px_28px_rgba(17,24,39,.06)] p-[18px]"
       >
-        <h3 class="text-[22px] text-[#111827] mb-[10px]">
+        <h3 class="text-[28px] text-[#f04e30] font-bold mb-[10px]">
           Get medical opinion / request call back
         </h3>
         <p class="text-[#4b5563] mb-[12px]">
@@ -852,7 +1053,7 @@
                   <input
                     type="text"
                     required
-                    class="w-full px-[12px] py-[12px] rounded-[14px] border border-[rgba(229,231,235,.95)] bg-[rgba(255,255,255,.95)]"
+                    class="w-full px-[12px] py-[12px] rounded-[8px] border border-[rgba(229,231,235,.95)] bg-[rgba(255,255,255,.95)]"
                   />
                 </div>
                 <div>
@@ -860,7 +1061,7 @@
                   <input
                     type="text"
                     required
-                    class="w-full px-[12px] py-[12px] rounded-[14px] border border-[rgba(229,231,235,.95)] bg-[rgba(255,255,255,.95)]"
+                    class="w-full px-[12px] py-[12px] rounded-[8px] border border-[rgba(229,231,235,.95)] bg-[rgba(255,255,255,.95)]"
                   />
                 </div>
               </div>
@@ -871,14 +1072,14 @@
                   <input
                     type="tel"
                     required
-                    class="w-full px-[12px] py-[12px] rounded-[14px] border border-[rgba(229,231,235,.95)] bg-[rgba(255,255,255,.95)]"
+                    class="w-full px-[12px] py-[12px] rounded-[8px] border border-[rgba(229,231,235,.95)] bg-[rgba(255,255,255,.95)]"
                   />
                 </div>
                 <div>
                   <label class="text-[12px] text-[#4b5563]">Specialty*</label>
                   <select
                     required
-                    class="w-full px-[12px] py-[12px] rounded-[14px] border border-[rgba(229,231,235,.95)] bg-[rgba(255,255,255,.95)]"
+                    class="w-full px-[12px] py-[12px] rounded-[8px] border border-[rgba(229,231,235,.95)] bg-[rgba(255,255,255,.95)]"
                   >
                     <option>Select</option>
                   </select>
@@ -888,7 +1089,7 @@
               <div>
                 <label class="text-[12px] text-[#4b5563]">Message</label>
                 <textarea
-                  class="w-full px-[12px] py-[12px] rounded-[14px] border border-[rgba(229,231,235,.95)] bg-[rgba(255,255,255,.95)] min-h-[96px]"
+                  class="w-full px-[12px] py-[12px] rounded-[8px] border border-[rgba(229,231,235,.95)] bg-[rgba(255,255,255,.95)] min-h-[96px]"
                 ></textarea>
               </div>
 
@@ -896,7 +1097,7 @@
                 <label class="text-[12px] text-[#4b5563]">Upload reports</label>
                 <input
                   type="file"
-                  class="w-full px-[12px] py-[12px] rounded-[14px] border border-[rgba(229,231,235,.95)] bg-[rgba(255,255,255,.95)]"
+                  class="w-full px-[12px] py-[12px] rounded-[8px] border border-[rgba(229,231,235,.95)] bg-[rgba(255,255,255,.95)]"
                 />
                 <p class="text-[12px] text-[#4b5563] mt-[8px]">
                   Optional. You can also share reports later on WhatsApp.
@@ -905,7 +1106,7 @@
 
               <button
                 type="submit"
-                class="inline-flex items-center justify-center px-[14px] py-[12px] rounded-[14px] font-[900] bg-[#f04e30] text-white"
+                class="inline-flex items-center justify-center px-[14px] py-[12px] rounded-[8px] font-[900] bg-[#f04e30] text-white"
               >
                 Submit
               </button>
@@ -927,9 +1128,9 @@
             </p>
 
             <a
-              href="https://wa.me/919899187776"
+              href="https://what.sapp.link/medanta"
               target="_blank"
-              class="inline-flex items-center justify-center px-[14px] py-[12px] rounded-[14px] font-[900] bg-[#25D366] text-[#FFF] shadow-[0_14px_34px_rgba(17,24,39,.10)]"
+              class="inline-flex items-center justify-center px-[14px] py-[12px] rounded-[8px] font-[900] bg-[#25D366] text-[#FFF] shadow-[0_14px_34px_rgba(17,24,39,.10)]"
             >
               <i class="fab fa-whatsapp fa-1x mx-2" aria-hidden="true"></i>
               WhatsApp Now
@@ -950,7 +1151,7 @@
       </div>
     </section>
 
-    <section id="faq" class="max-w-[1140px] mx-auto px-[18px] py-[22px]">
+    <section id="faq" class="max-w-[1200px] mx-auto px-[18px] py-[22px]">
       <div
         class="bg-[rgba(255,255,255,.85)] border border-[rgba(229,231,235,.9)] rounded-[22px] shadow-[0_10px_28px_rgba(17,24,39,.06)] p-[18px]"
       >
@@ -1031,40 +1232,121 @@
       </div>
     </section>
 
-    <footer class="max-w-[1120px] mx-auto px-[18px] py-[18px] pb-[44px]">
-      <p class="text-[12px] text-[#4b5563] mb-[8px]">
-        Disclaimer: This page provides information and coordination support for
-        patients seeking care at Medanta – The Medicity, Gurugram. Final
-        diagnosis and treatment decisions are made by the hospital’s treating
-        medical team.
-      </p>
-      <p class="text-[12px] text-[#4b5563]">© <span id="y"></span> Hosplan</p>
-    </footer>
-
     <div
       class="fixed bottom-0 inset-x-0 z-50 bg-[rgba(255,255,255,.95)] backdrop-blur-md border-t border-[rgba(229,231,235,.9)]"
     >
-      <div class="max-w-[1120px] mx-auto px-[18px] py-[10px]">
+      <div class="max-w-[1200px] mx-auto px-[18px] py-[10px]">
         <div class="flex gap-[10px] flex-wrap">
           <a
-            href="https://wa.me/919899187776"
+            href="https://what.sapp.link/medanta"
             target="_blank"
-            rel="noopener"
-            class="flex-1 inline-flex items-center justify-center px-[14px] py-[12px] rounded-[14px] font-[900] bg-[#25D366] text-[#FFF] shadow-[0_14px_34px_rgba(17,24,39,.10)]"
+            rel="noopener noreferrer"
+            class="flex-1 inline-flex items-center justify-center px-[14px] text-sm md:text-[14px] py-[12px] rounded-[8px] font-[900] bg-[#25D366] text-[#FFF] shadow-[0_14px_34px_rgba(17,24,39,.10)]"
           >
             <i class="fab fa-whatsapp fa-1x mx-2" aria-hidden="true"></i>
             WhatsApp
           </a>
-
+          <!-- href="#lead-form" -->
           <a
-            href="#lead-form"
-            class="flex-1 inline-flex items-center justify-center px-[14px] py-[12px] rounded-[14px] font-[900] bg-[#f04e30] text-white"
+            onclick="trackConversion()"
+            class="flex-1 inline-flex items-center justify-center cursor-pointer px-[14px] py-[12px] text-sm md:text-[14px] bg-[#f04e30] rounded-[8px] font-[900] bg-[#f04e30] text-white"
           >
             Request Call Back
           </a>
         </div>
       </div>
     </div>
+
+    <footer class="text-white text-xs border-t border-white/20 pb-10">
+      <div class="max-w-[1180px] mx-auto px-4 py-6">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-8"
+        >
+          <!-- Links -->
+          <div class="flex gap-5 flex-wrap justify-center">
+            <a
+              href="https://www.hosplan.com/t&c/patients"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:underline text-[14px] text-black/80"
+            >
+              Terms & Conditions
+            </a>
+            <a
+              href="https://www.hosplan.com/privacypolicy"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:underline text-[14px] text-black/80"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="#faq"
+              rel="noopener noreferrer"
+              class="hover:underline text-[14px] text-black/80"
+            >
+              FAQ
+            </a>
+          </div>
+        </div>
+
+        <!-- Disclaimer -->
+        <!-- Copyright -->
+        <p
+          class="mt-4 mb-5 text-[14px] text-black/80 text-center md:text-left leading-relaxed"
+        >
+          © <span id="y"></span> Hosplan. All rights reserved.This page provides
+          information and coordination support for patients seeking care at
+          Medanta – The Medicity, Gurugram. Final diagnosis and treatment
+          decisions are made by the hospital’s treating medical team.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Google Tag (delayed for performance) -->
+    <script defer>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      setTimeout(function () {
+        var gtagScript = document.createElement("script");
+        gtagScript.src =
+          "https://www.googletagmanager.com/gtag/js?id=AW-922729084";
+        gtagScript.async = true;
+        document.head.appendChild(gtagScript);
+
+        gtag("js", new Date());
+        gtag("config", "AW-922729084");
+      }, 3000);
+    </script>
+
+    <script>
+      window.$zoho = window.$zoho || {};
+      $zoho.salesiq = $zoho.salesiq || { ready: function () {} };
+    </script>
+    <script
+      id="zsiqscript"
+      src="https://salesiq.zohopublic.in/widget?wc=siqfe5a1b756338db7ba9dfed96aa7b470e9201e41f064734939e734314fb6414c7"
+      defer
+    ></script>
+
+    <script>
+      function trackConversion() {
+        gtag("event", "conversion", {
+          send_to: "AW-922729084/CONVERSION_LABEL",
+        });
+
+        // Optional: also open Zoho chat
+        if (window.$zoho && $zoho.salesiq) {
+          $zoho.salesiq.floatwindow.visible("show");
+        }
+      }
+
+      setInterval(() => {
+        trackConversion();
+      }, [30000]);
+    </script>
 
     <script>
       document.getElementById("y").textContent = new Date().getFullYear();
