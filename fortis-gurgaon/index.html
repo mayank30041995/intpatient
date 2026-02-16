@@ -39,41 +39,61 @@
     <!-- Top bar -->
     <div class="sticky top-0 z-20 bg-white/90 backdrop-blur-sm border-b border-gray-200">
       <div class="max-w-[1200px] mx-auto px-4">
-        <div class="flex items-center justify-between gap-3 py-4">
-          <!-- Brand -->
-          <div class="flex items-center gap-3" aria-label="Fortis Memorial Research Institute, Gurgaon">
-            <!-- class="w-20 h-[7rem] rounded-xl bg-gradient-to-br from-blue-700 to-blue-200 absolute" -->
-            <div class="w-20 h-10 rounded-xl absolute">
-              <img src="./public/logo/mobile logo.webp" alt="Fortis Gurgaon FMRI" width="80" height="80"
-                class="d-flex w-50 relative" />
-            </div>
-            <div class="relative left-[100px] w-[90%]">
-              <h1 class="text-lg  md:text-2xl font-extrabold tracking-wide text-[#009933]">
+
+        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 py-4">
+
+          <!-- Brand Section -->
+          <div class="flex items-center gap-4">
+
+            <!-- Logo -->
+            <img src="./public/logo/mobile logo.webp" alt="Fortis Memorial Research Institute Gurugram" width="80" height="80"
+              class="w-16 md:w-20 h-auto" />
+
+            <!-- Title -->
+            <div>
+              <h1 class="text-base md:text-xl lg:text-2xl font-extrabold tracking-wide text-[#009933] leading-tight">
                 Fortis Memorial Research Institute (FMRI), Gurugram
               </h1>
-              <p class="text-xs text-slate-600">
-                International patient support • Medical opinion • Treatment
-                planning
+
+              <p class="text-xs md:text-sm text-slate-600 mt-1">
+                International patient support • Medical opinion • Treatment planning
               </p>
             </div>
           </div>
 
-          <nav class="flex flex-wrap gap-2 justify-end" aria-label="Page navigation">
+          <!-- Navigation -->
+          <nav class="flex flex-wrap gap-2 justify-start lg:justify-end">
             <a href="#specialties"
-              class="text-xs px-3 py-2 rounded-md border border-gray-200 bg-white hover:bg-gray-50">Specialties</a>
+              class="text-xs px-3 py-2 rounded-md border border-gray-200 bg-white hover:bg-gray-50 transition">
+              Specialties
+            </a>
+
             <a href="#doctors"
-              class="text-xs px-3 py-2 rounded-md border border-gray-200 bg-white hover:bg-gray-50">Doctors</a>
+              class="text-xs px-3 py-2 rounded-md border border-gray-200 bg-white hover:bg-gray-50 transition">
+              Doctors
+            </a>
+
             <a href="#international"
-              class="text-xs px-3 py-2 rounded-md border border-gray-200 bg-white hover:bg-gray-50">International
-              support</a>
-            <a href="#faq" class="text-xs px-3 py-2 rounded-md border border-gray-200 bg-white hover:bg-gray-50">FAQ</a>
+              class="text-xs px-3 py-2 rounded-md border border-gray-200 bg-white hover:bg-gray-50 transition">
+              International Support
+            </a>
+
+            <a href="#faq"
+              class="text-xs px-3 py-2 rounded-md border border-gray-200 bg-white hover:bg-gray-50 transition">
+              FAQ
+            </a>
+
             <a href="https://what.sapp.link/fmri"
-              class="text-xs px-3 py-2 rounded-md border border-blue-300 bg-blue-50 font-semibold"><strong>Whatsapp:</strong>
-              +91 98991 87776</a>
+              class="text-xs px-3 py-2 rounded-md border border-green-300 bg-green-50 font-semibold hover:bg-green-100 transition whitespace-nowrap">
+              WhatsApp: +91 98991 87776
+            </a>
           </nav>
+
         </div>
+
       </div>
     </div>
+
 
     <!-- Hero -->
     <header class="relative overflow-hidden border-b border-gray-200 bg-gradient-to-b from-gray-50 to-white hero"
