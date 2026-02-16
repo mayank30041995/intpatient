@@ -20,6 +20,11 @@
         },
       };
     </script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
 
   <body class="bg-white text-slate-900">
@@ -46,27 +51,96 @@
             <a
               href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20plan%20my%20visit%20to%20BLK%20Max%20Hospital%20New%20Delhi.%20Please%20share%20doctor%20options%2C%20opinion%2C%20teleconsult%20and%20next%20steps."
               target="_blank"
-              class="px-6 py-3 rounded-xl bg-emerald-500 text-emerald-950 font-extrabold shadow-md"
-              >🟢 WhatsApp Now</a
+              class="px-6 py-3 rounded-md bg-emerald-500 text-white font-extrabold shadow-md"
+            >
+              <i class="fab fa-whatsapp fa-1x mx-2" aria-hidden="true"></i>
+              WhatsApp Now</a
             >
             <a
               href="#opinion"
-              class="px-6 py-3 rounded-xl bg-brand text-white font-extrabold shadow-md"
+              class="px-6 py-3 rounded-md bg-[#003a70] text-white font-extrabold shadow-md"
               >Get Opinion</a
             >
             <a
               href="#form"
-              class="px-6 py-3 rounded-xl border border-slate-300 font-extrabold"
+              class="px-6 py-3 rounded-md border border-slate-300 font-extrabold"
               >Request Call Back</a
             >
           </div>
         </div>
 
         <div class="rounded-3xl border bg-white shadow-lg p-6">
-          <div
-            class="aspect-[4/3] bg-slate-100 border border-dashed flex items-center justify-center text-slate-500"
-          >
-            Place BLK Max Hospital Building Image Here
+          <!-- Image Container -->
+          <div class="relative aspect-[4/3] overflow-hidden rounded-2xl">
+            <!-- Responsive Image -->
+            <picture>
+              <!-- AVIF -->
+              <source
+                srcset="
+                  ./img/BLK-Max.jpg   480w,
+                  ./img/BLK-Max.jpgf  768w,
+                  ./img/BLK-Max.jpg  1200w
+                "
+                type="image/avif"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+
+              <!-- WebP -->
+              <source
+                srcset="
+                  ./img/BLK-Max.jpg  480w,
+                  ./img/BLK-Max.jpg  768w,
+                  ./img/BLK-Max.jpg 1200w
+                "
+                type="image/webp"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+
+              <!-- Fallback -->
+              <img
+                src="./img/BLK-Max.jpg"
+                alt="BLK-Max Super Speciality Hospital building in New Delhi"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </picture>
+
+            <!-- Subtle Overlay -->
+            <div class="absolute inset-0 bg-black/10"></div>
+
+            <!-- CTA Box -->
+            <div
+              class="absolute left-4 right-4 bottom-4 bg-white/95 backdrop-blur border border-slate-200 rounded-md p-4 shadow-lg flex flex-col md:flex-row items-center justify-between gap-3"
+            >
+              <h3
+                class="text-sm md:text-base font-semibold text-[#2582a1] text-center md:text-left"
+              >
+                Connect with our experts for personalized treatment guidance.
+              </h3>
+
+              <a
+                href="https://wa.me/919999999999"
+                target="_blank"
+                rel="noopener"
+                class="inline-flex items-center justify-center px-5 h-11 rounded-md bg-green-500 text-white font-semibold shadow-md hover:brightness-105 transition whitespace-nowrap"
+              >
+                <i class="fab fa-whatsapp mr-2"></i>
+                WhatsApp (Fast Response)
+              </a>
+            </div>
+          </div>
+
+          <!-- Optional Content Section -->
+          <div class="mt-6">
+            <h2 class="text-xl font-bold text-slate-800">
+              BLK-Max Super Speciality Hospital
+            </h2>
+            <p class="text-slate-600 mt-2 text-sm leading-relaxed">
+              Located in New Delhi, BLK-Max is one of India's leading super
+              speciality hospitals offering advanced cardiac sciences, oncology,
+              orthopaedics, neurology, and transplant services with
+              international patient support.
+            </p>
           </div>
         </div>
       </div>
@@ -122,12 +196,14 @@
               <a
                 href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20plan%20my%20visit%20to%20BLK%20Max%20Hospital%20New%20Delhi.%20Please%20share%20doctor%20options%2C%20opinion%2C%20teleconsult%20and%20next%20steps."
                 target="_blank"
-                class="px-4 py-2 rounded-xl bg-emerald-500 text-emerald-950 font-bold"
-                >🟢 WhatsApp</a
+                class="px-4 py-2 rounded-md bg-emerald-500 text-white font-bold"
+              >
+                <i class="fab fa-whatsapp fa-1x mx-2" aria-hidden="true"></i>
+                WhatsApp</a
               >
               <a
                 href="#opinion"
-                class="px-4 py-2 rounded-xl border border-slate-300 font-bold"
+                class="px-4 py-2 rounded-md border border-slate-300 font-bold"
                 >Opinion</a
               >
             </div>
@@ -146,12 +222,14 @@
               <a
                 href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20plan%20my%20visit%20to%20BLK%20Max%20Hospital%20New%20Delhi.%20Please%20share%20doctor%20options%2C%20opinion%2C%20teleconsult%20and%20next%20steps."
                 target="_blank"
-                class="px-4 py-2 rounded-xl bg-emerald-500 text-emerald-950 font-bold"
-                >🟢 WhatsApp</a
+                class="px-4 py-2 rounded-md bg-emerald-500 text-white font-bold"
+              >
+                <i class="fab fa-whatsapp fa-1x mx-2" aria-hidden="true"></i>
+                WhatsApp</a
               >
               <a
                 href="#opinion"
-                class="px-4 py-2 rounded-xl border border-slate-300 font-bold"
+                class="px-4 py-2 rounded-md border border-slate-300 font-bold"
                 >Opinion</a
               >
             </div>
@@ -170,12 +248,14 @@
               <a
                 href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20plan%20my%20visit%20to%20BLK%20Max%20Hospital%20New%20Delhi.%20Please%20share%20doctor%20options%2C%20opinion%2C%20teleconsult%20and%20next%20steps."
                 target="_blank"
-                class="px-4 py-2 rounded-xl bg-emerald-500 text-emerald-950 font-bold"
-                >🟢 WhatsApp</a
+                class="px-4 py-2 rounded-md bg-emerald-500 text-white font-bold"
+              >
+                <i class="fab fa-whatsapp fa-1x mx-2" aria-hidden="true"></i>
+                WhatsApp</a
               >
               <a
                 href="#opinion"
-                class="px-4 py-2 rounded-xl border border-slate-300 font-bold"
+                class="px-4 py-2 rounded-md border border-slate-300 font-bold"
                 >Opinion</a
               >
             </div>
@@ -194,12 +274,14 @@
               <a
                 href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20plan%20my%20visit%20to%20BLK%20Max%20Hospital%20New%20Delhi.%20Please%20share%20doctor%20options%2C%20opinion%2C%20teleconsult%20and%20next%20steps."
                 target="_blank"
-                class="px-4 py-2 rounded-xl bg-emerald-500 text-emerald-950 font-bold"
-                >🟢 WhatsApp</a
+                class="px-4 py-2 rounded-md bg-emerald-500 text-white font-bold"
+              >
+                <i class="fab fa-whatsapp fa-1x mx-2" aria-hidden="true"></i>
+                WhatsApp</a
               >
               <a
                 href="#opinion"
-                class="px-4 py-2 rounded-xl border border-slate-300 font-bold"
+                class="px-4 py-2 rounded-md border border-slate-300 font-bold"
                 >Opinion</a
               >
             </div>
@@ -218,12 +300,14 @@
               <a
                 href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20plan%20my%20visit%20to%20BLK%20Max%20Hospital%20New%20Delhi.%20Please%20share%20doctor%20options%2C%20opinion%2C%20teleconsult%20and%20next%20steps."
                 target="_blank"
-                class="px-4 py-2 rounded-xl bg-emerald-500 text-emerald-950 font-bold"
-                >🟢 WhatsApp</a
+                class="px-4 py-2 rounded-md bg-emerald-500 text-white font-bold"
+              >
+                <i class="fab fa-whatsapp fa-1x mx-2" aria-hidden="true"></i>
+                WhatsApp</a
               >
               <a
                 href="#opinion"
-                class="px-4 py-2 rounded-xl border border-slate-300 font-bold"
+                class="px-4 py-2 rounded-md border border-slate-300 font-bold"
                 >Opinion</a
               >
             </div>
@@ -242,12 +326,14 @@
               <a
                 href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20plan%20my%20visit%20to%20BLK%20Max%20Hospital%20New%20Delhi.%20Please%20share%20doctor%20options%2C%20opinion%2C%20teleconsult%20and%20next%20steps."
                 target="_blank"
-                class="px-4 py-2 rounded-xl bg-emerald-500 text-emerald-950 font-bold"
-                >🟢 WhatsApp</a
+                class="px-4 py-2 rounded-md bg-emerald-500 text-white font-bold"
+              >
+                <i class="fab fa-whatsapp fa-1x mx-2" aria-hidden="true"></i>
+                WhatsApp</a
               >
               <a
                 href="#opinion"
-                class="px-4 py-2 rounded-xl border border-slate-300 font-bold"
+                class="px-4 py-2 rounded-md border border-slate-300 font-bold"
                 >Opinion</a
               >
             </div>
@@ -273,7 +359,7 @@
           <a
             href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20plan%20my%20visit%20to%20BLK%20Max%20Hospital%20New%20Delhi.%20Please%20share%20doctor%20options%2C%20opinion%2C%20teleconsult%20and%20next%20steps."
             target="_blank"
-            class="mt-6 inline-block px-6 py-3 bg-brand text-white font-extrabold rounded-xl shadow-md"
+            class="mt-6 inline-block px-6 py-3 bg-[#003a70] text-white font-extrabold rounded-md shadow-md"
             >Request Opinion</a
           >
         </div>
@@ -283,7 +369,7 @@
           <p class="mt-2 text-slate-600 text-sm">
             Replace with your actual PDF link.
           </p>
-          <button class="mt-6 w-full px-6 py-3 border rounded-xl font-bold">
+          <button class="mt-6 w-full px-6 py-3 border rounded-md font-bold">
             ⬇️ Download Sample
           </button>
         </div>
@@ -300,7 +386,7 @@
           </h3>
           <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
             <div
-              class="rounded-xl border border-slate-200 p-4 bg-white shadow-sm"
+              class="rounded-md border border-slate-200 p-4 bg-white shadow-sm"
             >
               <div
                 class="aspect-square bg-slate-100 border border-dashed flex items-center justify-center text-xs text-slate-500"
@@ -313,7 +399,7 @@
             </div>
 
             <div
-              class="rounded-xl border border-slate-200 p-4 bg-white shadow-sm"
+              class="rounded-md border border-slate-200 p-4 bg-white shadow-sm"
             >
               <div
                 class="aspect-square bg-slate-100 border border-dashed flex items-center justify-center text-xs text-slate-500"
@@ -326,7 +412,7 @@
             </div>
 
             <div
-              class="rounded-xl border border-slate-200 p-4 bg-white shadow-sm"
+              class="rounded-md border border-slate-200 p-4 bg-white shadow-sm"
             >
               <div
                 class="aspect-square bg-slate-100 border border-dashed flex items-center justify-center text-xs text-slate-500"
@@ -339,7 +425,7 @@
             </div>
 
             <div
-              class="rounded-xl border border-slate-200 p-4 bg-white shadow-sm"
+              class="rounded-md border border-slate-200 p-4 bg-white shadow-sm"
             >
               <div
                 class="aspect-square bg-slate-100 border border-dashed flex items-center justify-center text-xs text-slate-500"
@@ -357,7 +443,7 @@
           <h3 class="text-2xl font-black text-slate-900">Neuro & Brain Care</h3>
           <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
             <div
-              class="rounded-xl border border-slate-200 p-4 bg-white shadow-sm"
+              class="rounded-md border border-slate-200 p-4 bg-white shadow-sm"
             >
               <div
                 class="aspect-square bg-slate-100 border border-dashed flex items-center justify-center text-xs text-slate-500"
@@ -370,7 +456,7 @@
             </div>
 
             <div
-              class="rounded-xl border border-slate-200 p-4 bg-white shadow-sm"
+              class="rounded-md border border-slate-200 p-4 bg-white shadow-sm"
             >
               <div
                 class="aspect-square bg-slate-100 border border-dashed flex items-center justify-center text-xs text-slate-500"
@@ -383,7 +469,7 @@
             </div>
 
             <div
-              class="rounded-xl border border-slate-200 p-4 bg-white shadow-sm"
+              class="rounded-md border border-slate-200 p-4 bg-white shadow-sm"
             >
               <div
                 class="aspect-square bg-slate-100 border border-dashed flex items-center justify-center text-xs text-slate-500"
@@ -396,7 +482,7 @@
             </div>
 
             <div
-              class="rounded-xl border border-slate-200 p-4 bg-white shadow-sm"
+              class="rounded-md border border-slate-200 p-4 bg-white shadow-sm"
             >
               <div
                 class="aspect-square bg-slate-100 border border-dashed flex items-center justify-center text-xs text-slate-500"
@@ -416,7 +502,7 @@
           </h3>
           <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
             <div
-              class="rounded-xl border border-slate-200 p-4 bg-white shadow-sm"
+              class="rounded-md border border-slate-200 p-4 bg-white shadow-sm"
             >
               <div
                 class="aspect-square bg-slate-100 border border-dashed flex items-center justify-center text-xs text-slate-500"
@@ -429,7 +515,7 @@
             </div>
 
             <div
-              class="rounded-xl border border-slate-200 p-4 bg-white shadow-sm"
+              class="rounded-md border border-slate-200 p-4 bg-white shadow-sm"
             >
               <div
                 class="aspect-square bg-slate-100 border border-dashed flex items-center justify-center text-xs text-slate-500"
@@ -442,7 +528,7 @@
             </div>
 
             <div
-              class="rounded-xl border border-slate-200 p-4 bg-white shadow-sm"
+              class="rounded-md border border-slate-200 p-4 bg-white shadow-sm"
             >
               <div
                 class="aspect-square bg-slate-100 border border-dashed flex items-center justify-center text-xs text-slate-500"
@@ -455,7 +541,7 @@
             </div>
 
             <div
-              class="rounded-xl border border-slate-200 p-4 bg-white shadow-sm"
+              class="rounded-md border border-slate-200 p-4 bg-white shadow-sm"
             >
               <div
                 class="aspect-square bg-slate-100 border border-dashed flex items-center justify-center text-xs text-slate-500"
@@ -475,7 +561,7 @@
           </h3>
           <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
             <div
-              class="rounded-xl border border-slate-200 p-4 bg-white shadow-sm"
+              class="rounded-md border border-slate-200 p-4 bg-white shadow-sm"
             >
               <div
                 class="aspect-square bg-slate-100 border border-dashed flex items-center justify-center text-xs text-slate-500"
@@ -488,7 +574,7 @@
             </div>
 
             <div
-              class="rounded-xl border border-slate-200 p-4 bg-white shadow-sm"
+              class="rounded-md border border-slate-200 p-4 bg-white shadow-sm"
             >
               <div
                 class="aspect-square bg-slate-100 border border-dashed flex items-center justify-center text-xs text-slate-500"
@@ -501,7 +587,7 @@
             </div>
 
             <div
-              class="rounded-xl border border-slate-200 p-4 bg-white shadow-sm"
+              class="rounded-md border border-slate-200 p-4 bg-white shadow-sm"
             >
               <div
                 class="aspect-square bg-slate-100 border border-dashed flex items-center justify-center text-xs text-slate-500"
@@ -514,7 +600,7 @@
             </div>
 
             <div
-              class="rounded-xl border border-slate-200 p-4 bg-white shadow-sm"
+              class="rounded-md border border-slate-200 p-4 bg-white shadow-sm"
             >
               <div
                 class="aspect-square bg-slate-100 border border-dashed flex items-center justify-center text-xs text-slate-500"
@@ -534,7 +620,7 @@
           </h3>
           <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
             <div
-              class="rounded-xl border border-slate-200 p-4 bg-white shadow-sm"
+              class="rounded-md border border-slate-200 p-4 bg-white shadow-sm"
             >
               <div
                 class="aspect-square bg-slate-100 border border-dashed flex items-center justify-center text-xs text-slate-500"
@@ -547,7 +633,7 @@
             </div>
 
             <div
-              class="rounded-xl border border-slate-200 p-4 bg-white shadow-sm"
+              class="rounded-md border border-slate-200 p-4 bg-white shadow-sm"
             >
               <div
                 class="aspect-square bg-slate-100 border border-dashed flex items-center justify-center text-xs text-slate-500"
@@ -560,7 +646,7 @@
             </div>
 
             <div
-              class="rounded-xl border border-slate-200 p-4 bg-white shadow-sm"
+              class="rounded-md border border-slate-200 p-4 bg-white shadow-sm"
             >
               <div
                 class="aspect-square bg-slate-100 border border-dashed flex items-center justify-center text-xs text-slate-500"
@@ -573,7 +659,7 @@
             </div>
 
             <div
-              class="rounded-xl border border-slate-200 p-4 bg-white shadow-sm"
+              class="rounded-md border border-slate-200 p-4 bg-white shadow-sm"
             >
               <div
                 class="aspect-square bg-slate-100 border border-dashed flex items-center justify-center text-xs text-slate-500"
@@ -593,7 +679,7 @@
           </h3>
           <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
             <div
-              class="rounded-xl border border-slate-200 p-4 bg-white shadow-sm"
+              class="rounded-md border border-slate-200 p-4 bg-white shadow-sm"
             >
               <div
                 class="aspect-square bg-slate-100 border border-dashed flex items-center justify-center text-xs text-slate-500"
@@ -606,7 +692,7 @@
             </div>
 
             <div
-              class="rounded-xl border border-slate-200 p-4 bg-white shadow-sm"
+              class="rounded-md border border-slate-200 p-4 bg-white shadow-sm"
             >
               <div
                 class="aspect-square bg-slate-100 border border-dashed flex items-center justify-center text-xs text-slate-500"
@@ -619,7 +705,7 @@
             </div>
 
             <div
-              class="rounded-xl border border-slate-200 p-4 bg-white shadow-sm"
+              class="rounded-md border border-slate-200 p-4 bg-white shadow-sm"
             >
               <div
                 class="aspect-square bg-slate-100 border border-dashed flex items-center justify-center text-xs text-slate-500"
@@ -632,7 +718,7 @@
             </div>
 
             <div
-              class="rounded-xl border border-slate-200 p-4 bg-white shadow-sm"
+              class="rounded-md border border-slate-200 p-4 bg-white shadow-sm"
             >
               <div
                 class="aspect-square bg-slate-100 border border-dashed flex items-center justify-center text-xs text-slate-500"
@@ -656,25 +742,27 @@
           </h2>
           <form class="mt-6 grid gap-4">
             <input
-              class="border rounded-xl px-4 py-3"
+              class="border rounded-md px-4 py-3"
               placeholder="Full Name"
             />
-            <input class="border rounded-xl px-4 py-3" placeholder="Country" />
+            <input class="border rounded-md px-4 py-3" placeholder="Country" />
             <input
-              class="border rounded-xl px-4 py-3"
+              class="border rounded-md px-4 py-3"
               placeholder="WhatsApp Number"
             />
-            <select class="border rounded-xl px-4 py-3">
+            <select class="border rounded-md px-4 py-3">
               <option>Preferred Service</option>
               <option>Plan Visit</option>
               <option>Opinion</option>
               <option>Teleconsult</option>
             </select>
             <textarea
-              class="border rounded-xl px-4 py-3"
+              class="border rounded-md px-4 py-3"
               placeholder="Brief Details"
             ></textarea>
-            <button class="bg-brand text-white font-extrabold py-3 rounded-xl">
+            <button
+              class="bg-[#003a70] text-white font-extrabold py-3 rounded-md"
+            >
               Submit
             </button>
           </form>
@@ -685,7 +773,7 @@
     <footer
       class="border-t border-slate-200 py-8 text-center text-sm text-slate-500"
     >
-      © 2026 Treatment Traveller (Hosplan) • No trackers included.
+      © 2026 Treatment Traveller (Hosplan)
     </footer>
   </body>
 </html>
