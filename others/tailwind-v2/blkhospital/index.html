@@ -155,17 +155,17 @@
           </div>
         </div>
 
-        <div class="rounded-3xl border bg-white shadow-lg p-6">
+        <div class="rounded-xl border bg-white shadow-lg p-4 md:p-6">
           <!-- Image Container -->
-          <div class="relative aspect-[4/3] overflow-hidden rounded-2xl">
+          <div class="relative aspect-[4/3] overflow-hidden rounded-xl">
             <!-- Responsive Image -->
             <picture>
               <!-- AVIF -->
               <source
                 srcset="
-                  ./img/BLK-Max.jpg   480w,
-                  ./img/BLK-Max.jpgf  768w,
-                  ./img/BLK-Max.jpg  1200w
+                  ./img/BLK-Max.jpg  480w,
+                  ./img/BLK-Max.jpg  768w,
+                  ./img/BLK-Max.jpg 1200w
                 "
                 type="image/avif"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -197,7 +197,7 @@
 
             <!-- CTA Box -->
             <div
-              class="absolute left-4 right-4 bottom-4 bg-white/95 backdrop-blur border border-slate-200 rounded-md p-4 shadow-lg flex flex-col md:flex-row items-center justify-between gap-3"
+              class="hidden md:flex absolute left-4 right-4 bottom-4 bg-white/95 backdrop-blur border border-slate-200 rounded-md p-4 shadow-lg flex flex-col md:flex-row items-center justify-between gap-3"
             >
               <h3
                 class="text-sm md:text-base font-semibold text-[#2582a1] text-center md:text-left"
