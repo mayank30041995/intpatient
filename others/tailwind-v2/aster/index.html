@@ -4,59 +4,148 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Aster Medcity, Kochi | India Private Patients</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="preload"
+      href="css/font/Poppins-Regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: "#0ea5e9",
+              ink: "#0b1220",
+              sand: "#F7F7FB",
+            },
+            boxShadow: {
+              soft: "0 18px 44px rgba(2,6,23,.10)",
+              lift: "0 14px 30px rgba(2,6,23,.12)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @font-face {
+        font-family: "Poppins";
+        src: url("css/font/Poppins-Regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-weight: 600;
+      }
+    </style>
   </head>
 
   <body class="bg-white text-slate-900 leading-relaxed">
     <!-- Topbar -->
-    <div class="sticky top-0 z-30 bg-white/90 backdrop-blur border-b">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="flex items-center justify-between gap-3 py-2">
-          <div class="flex items-center gap-3 min-w-[260px]">
-            <div
-              class="w-11 h-11 rounded-xl bg-gradient-to-br from-cyan-500 to-emerald-500 shadow flex items-center justify-center"
-            ></div>
-            <div>
-              <p class="font-black text-sm">Aster Medcity, Kochi</p>
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex items-center justify-between py-3">
+          <!-- Logo + Title -->
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center">
+              <img
+                src="./img/favicon.ico"
+                alt="Aster Medcity logo"
+                class="w-full h-auto object-contain"
+              />
+            </div>
+
+            <div class="hidden sm:block">
+              <p class="font-bold text-sm">Aster Medcity, Kochi</p>
               <p class="text-xs text-slate-500">
-                Information & coordination support for private patients from
-                India
+                Information & coordination support
               </p>
             </div>
           </div>
 
-          <nav class="flex gap-2 flex-wrap text-sm">
+          <!-- Desktop Nav -->
+          <nav class="hidden lg:flex items-center gap-2 text-sm">
             <a
               href="#help"
               class="px-3 py-2 border rounded-full hover:bg-slate-50"
-              >How we help</a
             >
+              How we help
+            </a>
             <a
               href="#specialties"
               class="px-3 py-2 border rounded-full hover:bg-slate-50"
-              >Specialities</a
             >
+              Specialities
+            </a>
             <a
               href="#checkups"
               class="px-3 py-2 border rounded-full hover:bg-slate-50"
-              >Check-ups</a
             >
+              Check-ups
+            </a>
             <a
               href="#faq"
               class="px-3 py-2 border rounded-full hover:bg-slate-50"
-              >FAQ</a
             >
+              FAQ
+            </a>
             <a
               href="tel:+919899187776"
-              class="px-3 py-2 border rounded-full bg-emerald-50 border-emerald-200 font-semibold"
+              class="px-4 py-2 rounded-full bg-emerald-500 text-white font-semibold shadow"
             >
-              Call: +91 98991 87776
+              Call Now
             </a>
           </nav>
+
+          <!-- Mobile Hamburger -->
+          <button
+            id="menuBtn"
+            class="lg:hidden flex items-center justify-center w-10 h-10 rounded-md border"
+          >
+            ☰
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobileMenu"
+          class="hidden lg:hidden pb-4 flex flex-col gap-2 text-sm"
+        >
+          <a href="#help" class="px-3 py-2 border rounded-md"> How we help </a>
+          <a href="#specialties" class="px-3 py-2 border rounded-md">
+            Specialities
+          </a>
+          <a href="#checkups" class="px-3 py-2 border rounded-md">
+            Check-ups
+          </a>
+          <a href="#faq" class="px-3 py-2 border rounded-md"> FAQ </a>
+          <a
+            href="tel:+919899187776"
+            class="px-3 py-2 rounded-md bg-emerald-500 text-white font-semibold text-center"
+          >
+            Call: +91 98991 87776
+          </a>
         </div>
       </div>
-    </div>
+    </header>
 
     <!-- HERO -->
     <header class="bg-gradient-to-b from-emerald-50 to-white border-b">
@@ -69,7 +158,9 @@
               🇴🇲 For patients in India • Private patients
             </div>
 
-            <h1 class="text-3xl lg:text-4xl font-black mb-3 leading-tight">
+            <h1
+              class="text-3xl lg:text-4xl font-black mb-3 font-bold leading-tight"
+            >
               Aster Medcity Kochi — trusted care, with the choice always yours
             </h1>
 
@@ -114,10 +205,13 @@
 
             <div class="grid gap-2">
               <a
-                href="https://wa.me/919899187776"
-                class="bg-green-500 text-black font-bold py-3 rounded-lg text-center shadow hover:brightness-105"
+                href="https://what.sapp.link/aster-kochi"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-green-500 text-white font-bold py-3 rounded-lg text-center shadow hover:brightness-105"
               >
-                🟢 Chat on WhatsApp
+                <i class="fab fa-whatsapp mr-1 mt-1 fa-1x bg-transparent"></i>
+                Chat on WhatsApp
               </a>
 
               <a
@@ -146,165 +240,157 @@
     </header>
 
     <!-- HOW WE HELP -->
-    <section class="max-w-[1140px] mx-auto px-[18px] py-[22px]" id="how">
-      <h3 class="text-[22px] font-semibold mb-[10px]">
-        How can we help you today?
-      </h3>
+    <section class="max-w-7xl mx-auto px-[18px] py-[22px]" id="how">
+      <h3 class="text-[22px] font-semibold mb-[10px]">Tell Us What You Need</h3>
       <p class="text-slate-500 mb-[12px]">
-        Choose what you’re looking for — we’ll guide you accordingly.
+        Select your requirement below and our team will assist you with the
+        right guidance.
       </p>
 
-      <div class="grid md:grid-cols-3 gap-[14px]">
-        <!-- Box 1 -->
-        <div class="bg-white border border-slate-200 rounded-[18px] p-[16px]">
-          <h4 class="text-[16px] font-semibold mb-[6px]">
-            ✅ Health Check-up & General Care
-          </h4>
-          <p class="text-slate-500 text-[13px]">
-            For preventive health packages, consultations, routine evaluations,
-            and general care planning.
-          </p>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <!-- LEFT COLUMN -->
+        <div class="lg:col-span-5 space-y-6">
+          <!-- Box 1 -->
+          <div
+            class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm"
+          >
+            <h4 class="text-base font-semibold mb-2">
+              ✅ Preventive Health & Routine Care
+            </h4>
+            <p class="text-slate-500 text-sm">
+              Comprehensive health screenings, doctor consultations, and
+              personalized wellness plans to keep you at your best.
+            </p>
 
-          <div class="mt-[10px] flex flex-wrap gap-[10px]">
-            <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20am%20from%20India.%20I%20want%20a%20health%20check-up%20at%20Aster%20Medcity%20Kochi.%20Please%20share%20options."
-              target="_blank"
-              class="inline-flex items-center justify-center px-[14px] py-[12px] rounded-[14px] font-bold bg-[#25d366] text-[#05210e] shadow-md"
-            >
-              WhatsApp: Check-up
-            </a>
+            <div class="mt-4 flex flex-col sm:flex-row gap-3">
+              <a
+                href="#"
+                class="w-full sm:w-auto text-center bg-green-500 text-white px-4 py-2.5 rounded-lg text-sm font-semibold"
+              >
+                WhatsApp: Check-up
+              </a>
+              <a
+                href="#lead-form"
+                class="w-full sm:w-auto text-center border px-4 py-2.5 rounded-lg text-sm"
+              >
+                Explore Packages
+              </a>
+            </div>
+          </div>
 
-            <a
-              href="#checkups"
-              class="inline-flex items-center justify-center px-[14px] py-[12px] rounded-[14px] font-bold border border-slate-200 bg-white"
-            >
-              View Check-ups
-            </a>
+          <!-- Box 2 -->
+          <div
+            class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm"
+          >
+            <h4 class="font-semibold text-base mb-2">
+              Expert Medical Consultation
+            </h4>
+            <p class="text-slate-500 text-sm">
+              Receive professional insights on your diagnosis, treatment
+              pathways, and recommended next steps.
+            </p>
+
+            <div class="mt-4 flex flex-col sm:flex-row gap-3">
+              <a
+                href="#"
+                class="w-full sm:w-auto text-center bg-green-500 text-white px-4 py-2.5 rounded-lg text-sm font-semibold"
+              >
+                WhatsApp: Consultation
+              </a>
+              <a
+                href="#lead-form"
+                class="w-full sm:w-auto text-center border px-4 py-2.5 rounded-lg text-sm"
+              >
+                Download Reports
+              </a>
+            </div>
+          </div>
+
+          <!-- Box 3 -->
+          <div
+            class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm"
+          >
+            <h4 class="font-semibold text-base mb-2">
+              Advanced & Specialized Care
+            </h4>
+            <p class="text-slate-500 text-sm">
+              Tailored support for complex conditions, surgical procedures, and
+              multidisciplinary treatment coordination.
+            </p>
+
+            <div class="mt-4 flex flex-col sm:flex-row gap-3">
+              <a
+                href="#"
+                class="w-full sm:w-auto text-center bg-green-500 text-white px-4 py-2.5 rounded-lg text-sm font-semibold"
+              >
+                WhatsApp: Treatment Plan
+              </a>
+              <a
+                href="#specialties"
+                class="w-full sm:w-auto text-center border px-4 py-2.5 rounded-lg text-sm"
+              >
+                View Departments
+              </a>
+            </div>
           </div>
         </div>
 
-        <!-- Box 2 -->
-        <div class="bg-white border border-slate-200 rounded-[18px] p-[16px]">
-          <h4 class="text-[16px] font-semibold mb-[6px]">
-            Medical Opinion / Second Opinion
-          </h4>
-          <p class="text-slate-500 text-[13px]">
-            For clarity on diagnosis, treatment options, and whether care in
-            India is sufficient or travel may help.
-          </p>
+        <!-- RIGHT COLUMN -->
+        <div class="lg:col-span-7">
+          <div
+            class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm"
+          >
+            <!-- Image -->
+            <div class="relative aspect-[4/3] overflow-hidden rounded-xl">
+              <img
+                src="./img/aster-hos.webp"
+                alt="Aster Medcity Hospital building in Kochi"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-black/10"></div>
 
-          <div class="mt-[10px] flex flex-wrap gap-[10px]">
-            <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20a%20medical%20opinion%20for%20my%20case%20(Aster%20Medcity%20Kochi).%20Please%20guide%20me."
-              target="_blank"
-              class="inline-flex items-center justify-center px-[14px] py-[12px] rounded-[14px] font-bold bg-[#25d366] text-[#05210e] shadow-md"
-            >
-              WhatsApp: Opinion
-            </a>
+              <!-- CTA -->
+              <div
+                class="absolute left-3 right-3 bottom-3 bg-white/95 backdrop-blur border border-slate-200 rounded-xl p-0 md:p-4 shadow-lg flex flex-col sm:flex-row items-center justify-between gap-3 hidden lg:flex"
+              >
+                <h3
+                  class="text-md lg:text-lg font-semibold text-[#2582a1] text-center sm:text-left leading-relaxed"
+                >
+                  Speak with our care coordinators for customized medical
+                  guidance.
+                </h3>
 
-            <a
-              href="#lead-form"
-              class="inline-flex items-center justify-center px-[14px] py-[12px] rounded-[14px] font-bold border border-slate-200 bg-white"
-            >
-              Send Report
-            </a>
+                <a
+                  href="#"
+                  class="min-w-[180px] sm:w-auto text-center px-2 py-2 rounded-lg bg-green-500 text-white font-semibold shadow-md"
+                >
+                  Chat on WhatsApp
+                </a>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="mt-6">
+              <h2 class="text-lg sm:text-xl font-bold text-slate-800">
+                About Aster Medcity
+              </h2>
+
+              <p class="text-slate-600 mt-3 text-sm leading-relaxed">
+                Aster Medcity is a leading 670-bed quaternary care hospital
+                situated on a scenic waterfront campus in Kochi, Kerala. With
+                advanced medical infrastructure, multidisciplinary expertise,
+                and international accreditations, it delivers high-quality
+                healthcare across a wide range of specialties.
+              </p>
+            </div>
           </div>
-        </div>
-
-        <!-- Box 3 -->
-        <div class="bg-white border border-slate-200 rounded-[18px] p-[16px]">
-          <h4 class="text-[16px] font-semibold mb-[6px]">
-            Specialized / Advanced Treatment
-          </h4>
-          <p class="text-slate-500 text-[13px]">
-            For advanced procedures, multidisciplinary care, surgery planning,
-            and complex case coordination.
-          </p>
-
-          <div class="mt-[10px] flex flex-wrap gap-[10px]">
-            <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20treatment%20planning%20guidance%20(Aster%20Medcity%20Kochi).%20Please%20guide%20me%20to%20the%20right%20department."
-              target="_blank"
-              class="inline-flex items-center justify-center px-[14px] py-[12px] rounded-[14px] font-bold bg-[#25d366] text-[#05210e] shadow-md"
-            >
-              WhatsApp: Treatment
-            </a>
-
-            <a
-              href="#specialties"
-              class="inline-flex items-center justify-center px-[14px] py-[12px] rounded-[14px] font-bold border border-slate-200 bg-white"
-            >
-              See Specialities
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SPECIALTIES -->
-    <section
-      class="max-w-[1140px] mx-auto px-[18px] py-[22px]"
-      id="specialties"
-    >
-      <h3 class="text-[22px] font-semibold mb-[10px]">
-        Specialities patients frequently enquire about
-      </h3>
-      <p class="text-slate-500 mb-[12px]">
-        Select a speciality to start a WhatsApp discussion.
-      </p>
-
-      <div class="grid md:grid-cols-3 gap-[14px]">
-        <div class="bg-white border border-slate-200 rounded-[18px] p-[16px]">
-          <h4 class="text-[16px] font-semibold mb-[6px]">
-            Oncology (Cancer Care)
-          </h4>
-          <p class="text-slate-500 text-[13px] mb-[8px]">
-            Consultation, treatment planning, and multidisciplinary cancer care
-            pathways.
-          </p>
-          <a
-            href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Oncology%20at%20Aster%20Medcity%20Kochi.%20Please%20advise%20next%20steps."
-            target="_blank"
-            class="text-emerald-500 underline"
-          >
-            Ask on WhatsApp →
-          </a>
-        </div>
-
-        <div class="bg-white border border-slate-200 rounded-[18px] p-[16px]">
-          <h4 class="text-[16px] font-semibold mb-[6px]">Cardiology</h4>
-          <p class="text-slate-500 text-[13px] mb-[8px]">
-            Heart consultation, diagnostics, and treatment/surgery coordination.
-          </p>
-          <a
-            href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Cardiology%20at%20Aster%20Medcity%20Kochi.%20Please%20advise%20next%20steps."
-            target="_blank"
-            class="text-emerald-500 underline"
-          >
-            Ask on WhatsApp →
-          </a>
-        </div>
-
-        <div class="bg-white border border-slate-200 rounded-[18px] p-[16px]">
-          <h4 class="text-[16px] font-semibold mb-[6px]">
-            Neurology & Neurosurgery
-          </h4>
-          <p class="text-slate-500 text-[13px] mb-[8px]">
-            Brain/spine consultations and surgical planning guidance.
-          </p>
-          <a
-            href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Neurology%20%2F%20Neurosurgery%20at%20Aster%20Medcity%20Kochi.%20Please%20advise%20next%20steps."
-            target="_blank"
-            class="text-emerald-500 underline"
-          >
-            Ask on WhatsApp →
-          </a>
         </div>
       </div>
     </section>
 
     <!-- LEAD FORM -->
-    <section class="max-w-[1140px] mx-auto px-[18px] py-[22px]" id="lead-form">
+    <section class="max-w-7xl mx-auto px-[18px] py-[22px]" id="lead-form">
       <h3 class="text-[22px] font-semibold mb-[10px]">
         Get a medical opinion / call back
       </h3>
@@ -398,10 +484,14 @@
           </p>
 
           <a
-            href="https://wa.me/919899187776"
-            class="inline-flex items-center justify-center px-[14px] py-[12px] rounded-[14px] font-bold bg-[#25d366] text-[#05210e] shadow-md"
+            href="https://what.sapp.link/aster-kochi"
+            target="_blank"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="inline-flex items-center justify-center px-[14px] py-[12px] rounded-[14px] font-bold bg-[#25d366] text-[#FFF] shadow-md"
           >
-            🟢 WhatsApp Now
+            <i class="fab fa-whatsapp mr-1 mt-1 fa-1x bg-transparent"></i>
+            WhatsApp Now
           </a>
 
           <div class="mt-[12px] pt-[12px] border-t border-slate-200">
@@ -439,7 +529,9 @@
           </p>
           <div class="mt-4 flex flex-wrap gap-3">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20am%20from%20India.%20I%20want%20a%20health%20check-up%20at%20Aster%20Medcity%20Kochi.%20Please%20share%20options."
+              href="https://what.sapp.link/aster-kochi"
+              target="_blank"
+              rel="noopener noreferrer"
               target="_blank"
               class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm"
             >
@@ -465,8 +557,9 @@
           </p>
           <div class="mt-4 flex flex-wrap gap-3">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20a%20medical%20opinion%20for%20my%20case%20(Aster%20Medcity%20Kochi).%20Please%20guide%20me."
+              href="https://what.sapp.link/aster-kochi"
               target="_blank"
+              rel="noopener noreferrer"
               class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm"
             >
               WhatsApp: Opinion
@@ -491,8 +584,9 @@
           </p>
           <div class="mt-4 flex flex-wrap gap-3">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20treatment%20planning%20guidance%20(Aster%20Medcity%20Kochi).%20Please%20guide%20me%20to%20the%20right%20department."
+              href="https://what.sapp.link/aster-kochi"
               target="_blank"
+              rel="noopener noreferrer"
               class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm"
             >
               WhatsApp: Treatment
@@ -525,8 +619,9 @@
             pathways.
           </p>
           <a
-            href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Oncology%20at%20Aster%20Medcity%20Kochi.%20Please%20advise%20next%20steps."
+            href="https://what.sapp.link/aster-kochi"
             target="_blank"
+            rel="noopener noreferrer"
             class="text-blue-600 hover:underline"
           >
             Ask on WhatsApp →
@@ -539,8 +634,9 @@
             Heart consultation, diagnostics, and treatment/surgery coordination.
           </p>
           <a
-            href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Cardiology%20at%20Aster%20Medcity%20Kochi.%20Please%20advise%20next%20steps."
+            href="https://what.sapp.link/aster-kochi"
             target="_blank"
+            rel="noopener noreferrer"
             class="text-blue-600 hover:underline"
           >
             Ask on WhatsApp →
@@ -553,8 +649,9 @@
             Brain/spine consultations and surgical planning guidance.
           </p>
           <a
-            href="https://wa.me/919899187776?text=Hello%2C%20I%20need%20guidance%20for%20Neurology%20%2F%20Neurosurgery%20at%20Aster%20Medcity%20Kochi.%20Please%20advise%20next%20steps."
+            href="https://what.sapp.link/aster-kochi"
             target="_blank"
+            rel="noopener noreferrer"
             class="text-blue-600 hover:underline"
           >
             Ask on WhatsApp →
@@ -631,47 +728,132 @@
           <div
             class="border rounded-xl p-4 text-center shadow-sm bg-[rgba(16,185,129,.06)]"
           >
+            <div
+              class="aspect-square rounded-xl bg-slate-50 border border-dashed border-slate-300 flex items-center justify-center text-xs text-slate-500 mb-2"
+            >
+              <img
+                src="./assets/ONCOLOGY/Dr. Arun R Warrier.png"
+                alt="Dr. Arun R Warrier"
+                class="w-full h-full object-cover"
+              />
+            </div>
             <p class="font-medium">Dr. Arun R Warrier</p>
             <p class="text-sm text-gray-500">Oncology</p>
-            <span class="inline-block mt-2 text-green-600 text-sm"
-              >Connect on WhatsApp</span
+            <a
+              href="https://what.sapp.link/aster-kochi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline"
             >
+              <span
+                class="inline-block mt-2 text-green-600 text-sm hover:text-green-700"
+                >Connect on WhatsApp</span
+              >
+            </a>
           </div>
           <div
             class="border rounded-xl p-4 text-center shadow-sm bg-[rgba(16,185,129,.06)]"
           >
+            <div
+              class="aspect-square rounded-xl bg-slate-50 border border-dashed border-slate-300 flex items-center justify-center text-xs text-slate-500 mb-2"
+            >
+              <img
+                src="./assets/ONCOLOGY/Dr. Durgapoorna.png"
+                alt="Dr. Durgapoorna"
+                class="w-full h-full object-cover"
+              />
+            </div>
             <p class="font-medium">Dr. Durgapoorna</p>
             <p class="text-sm text-gray-500">Oncology</p>
-            <span class="inline-block mt-2 text-green-600 text-sm"
-              >Connect on WhatsApp</span
+            <a
+              href="https://what.sapp.link/aster-kochi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline"
             >
+              <span
+                class="inline-block mt-2 text-green-600 text-sm hover:text-green-700"
+                >Connect on WhatsApp</span
+              >
+            </a>
           </div>
           <div
             class="border rounded-xl p-4 text-center shadow-sm bg-[rgba(16,185,129,.06)]"
           >
+            <div
+              class="aspect-square rounded-xl bg-slate-50 border border-dashed border-slate-300 flex items-center justify-center text-xs text-slate-500 mb-2"
+            >
+              <img
+                src="./assets/ONCOLOGY/Dr. Jem Kalathil.png"
+                alt="Dr. Jem Kalathil"
+                class="w-full h-full object-cover"
+              />
+            </div>
             <p class="font-medium">Dr. Jem Kalathil</p>
             <p class="text-sm text-gray-500">Oncology</p>
-            <span class="inline-block mt-2 text-green-600 text-sm"
-              >Connect on WhatsApp</span
+            <a
+              href="https://what.sapp.link/aster-kochi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline"
             >
+              <span
+                class="inline-block mt-2 text-green-600 text-sm hover:text-green-700"
+                >Connect on WhatsApp</span
+              >
+            </a>
           </div>
           <div
             class="border rounded-xl p-4 text-center shadow-sm bg-[rgba(16,185,129,.06)]"
           >
+            <div
+              class="aspect-square rounded-xl bg-slate-50 border border-dashed border-slate-300 flex items-center justify-center text-xs text-slate-500 mb-2"
+            >
+              <img
+                src="./assets/ONCOLOGY/Dr. Ramaswamy N V.png"
+                alt="Dr. Ramaswamy N V"
+                class="w-full h-full object-cover"
+              />
+            </div>
             <p class="font-medium">Dr. Ramaswamy N V</p>
             <p class="text-sm text-gray-500">Oncology</p>
-            <span class="inline-block mt-2 text-green-600 text-sm"
-              >Connect on WhatsApp</span
+            <a
+              href="https://what.sapp.link/aster-kochi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline"
             >
+              <span
+                class="inline-block mt-2 text-green-600 text-sm hover:text-green-700"
+                >Connect on WhatsApp</span
+              >
+            </a>
           </div>
           <div
             class="border rounded-xl p-4 text-center shadow-sm bg-[rgba(16,185,129,.06)]"
           >
+            <div
+              class="aspect-square rounded-xl bg-slate-50 border border-dashed border-slate-300 flex items-center justify-center text-xs text-slate-500 mb-2"
+            >
+              <img
+                src="./assets/ONCOLOGY/Dr. Subin Sugath.png"
+                alt="Dr. Subin Sugath"
+                class="w-full h-full object-cover"
+              />
+            </div>
             <p class="font-medium">Dr. Subin Sugath</p>
             <p class="text-sm text-gray-500">Oncology</p>
-            <span class="inline-block mt-2 text-green-600 text-sm"
-              >Connect on WhatsApp</span
+            <a
+              href="https://what.sapp.link/aster-kochi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline"
             >
+              <span
+                class="inline-block mt-2 text-green-600 text-sm hover:text-green-700"
+                >Connect on WhatsApp</span
+              >
+            </a>
           </div>
         </div>
       </div>
@@ -689,47 +871,132 @@
           <div
             class="border rounded-xl p-4 text-center shadow-sm bg-[rgba(16,185,129,.06)]"
           >
+            <div
+              class="aspect-square rounded-xl bg-slate-50 border border-dashed border-slate-300 flex items-center justify-center text-xs text-slate-500 mb-2"
+            >
+              <img
+                src="./assets/Cardiology/Dr Anil Kumar.webp"
+                alt="Dr Anil Kumar"
+                class="w-full h-full object-cover"
+              />
+            </div>
             <p class="font-medium">Dr. Anil Kumar R</p>
             <p class="text-sm text-gray-500">Cardiology</p>
-            <span class="inline-block mt-2 text-green-600 text-sm"
-              >Connect on WhatsApp</span
+            <a
+              href="https://what.sapp.link/aster-kochi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline"
             >
+              <span
+                class="inline-block mt-2 text-green-600 text-sm hover:text-green-700"
+                >Connect on WhatsApp</span
+              >
+            </a>
           </div>
           <div
             class="border rounded-xl p-4 text-center shadow-sm bg-[rgba(16,185,129,.06)]"
           >
+            <div
+              class="aspect-square rounded-xl bg-slate-50 border border-dashed border-slate-300 flex items-center justify-center text-xs text-slate-500 mb-2"
+            >
+              <img
+                src="./assets/Cardiology/Dr. Edwin Francis.png"
+                alt="Dr. Edwin Francis"
+                class="w-full h-full object-cover"
+              />
+            </div>
             <p class="font-medium">Dr. Edwin Francis</p>
             <p class="text-sm text-gray-500">Cardiology</p>
-            <span class="inline-block mt-2 text-green-600 text-sm"
-              >Connect on WhatsApp</span
+            <a
+              href="https://what.sapp.link/aster-kochi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline"
             >
+              <span
+                class="inline-block mt-2 text-green-600 text-sm hover:text-green-700"
+                >Connect on WhatsApp</span
+              >
+            </a>
           </div>
           <div
             class="border rounded-xl p-4 text-center shadow-sm bg-[rgba(16,185,129,.06)]"
           >
+            <div
+              class="aspect-square rounded-xl bg-slate-50 border border-dashed border-slate-300 flex items-center justify-center text-xs text-slate-500 mb-2"
+            >
+              <img
+                src="./assets/Cardiology/Dr. Rajasekhar Varma.png"
+                alt="Dr. Rajasekhar Varma"
+                class="w-full h-full object-cover"
+              />
+            </div>
             <p class="font-medium">Dr. Rajasekhar Varma</p>
             <p class="text-sm text-gray-500">Cardiology</p>
-            <span class="inline-block mt-2 text-green-600 text-sm"
-              >Connect on WhatsApp</span
+            <a
+              href="https://what.sapp.link/aster-kochi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline"
             >
+              <span
+                class="inline-block mt-2 text-green-600 text-sm hover:text-green-700"
+                >Connect on WhatsApp</span
+              >
+            </a>
           </div>
           <div
             class="border rounded-xl p-4 text-center shadow-sm bg-[rgba(16,185,129,.06)]"
           >
+            <div
+              class="aspect-square rounded-xl bg-slate-50 border border-dashed border-slate-300 flex items-center justify-center text-xs text-slate-500 mb-2"
+            >
+              <img
+                src="./assets/Cardiology/Dr. Sajan Koshy.png"
+                alt="Dr. Sajan Koshy"
+                class="w-full h-full object-cover"
+              />
+            </div>
             <p class="font-medium">Dr. Sajan Koshy</p>
             <p class="text-sm text-gray-500">Cardiology</p>
-            <span class="inline-block mt-2 text-green-600 text-sm"
-              >Connect on WhatsApp</span
+            <a
+              href="https://what.sapp.link/aster-kochi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline"
             >
+              <span
+                class="inline-block mt-2 text-green-600 text-sm hover:text-green-700"
+                >Connect on WhatsApp</span
+              >
+            </a>
           </div>
           <div
             class="border rounded-xl p-4 text-center shadow-sm bg-[rgba(16,185,129,.06)]"
           >
+            <div
+              class="aspect-square rounded-xl bg-slate-50 border border-dashed border-slate-300 flex items-center justify-center text-xs text-slate-500 mb-2"
+            >
+              <img
+                src="./assets/Cardiology/Dr.Manoj P Nair.png"
+                alt="Dr.Manoj P Nair"
+                class="w-full h-full object-cover"
+              />
+            </div>
             <p class="font-medium">Dr. Manoj P Nair</p>
             <p class="text-sm text-gray-500">Cardiology</p>
-            <span class="inline-block mt-2 text-green-600 text-sm"
-              >Connect on WhatsApp</span
+            <a
+              href="https://what.sapp.link/aster-kochi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline"
             >
+              <span
+                class="inline-block mt-2 text-green-600 text-sm hover:text-green-700"
+                >Connect on WhatsApp</span
+              >
+            </a>
           </div>
         </div>
       </div>
@@ -737,7 +1004,7 @@
       <!-- Neuro -->
       <div class="mb-10">
         <div class="flex items-center justify-between mb-4">
-          <h4 class="text-xl font-semibold">Neuro</h4>
+          <h4 class="text-xl font-semibold">Neurology</h4>
           <span class="text-sm bg-gray-100 px-3 py-1 rounded-full"
             >Department: Neuro Sciences</span
           >
@@ -747,47 +1014,132 @@
           <div
             class="border rounded-xl p-4 text-center shadow-sm bg-[rgba(16,185,129,.06)]"
           >
+            <div
+              class="aspect-square rounded-xl bg-slate-50 border border-dashed border-slate-300 flex items-center justify-center text-xs text-slate-500 mb-2"
+            >
+              <img
+                src="./assets/Neurology/Dr. Anup P Nair.png"
+                alt="Dr. Anup P Nair"
+                class="w-full h-full object-cover"
+              />
+            </div>
             <p class="font-medium">Dr. Anup P Nair</p>
             <p class="text-sm text-gray-500">Neurosurgery</p>
-            <span class="inline-block mt-2 text-green-600 text-sm"
-              >Connect on WhatsApp</span
+            <a
+              href="https://what.sapp.link/aster-kochi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline"
             >
+              <span
+                class="inline-block mt-2 text-green-600 text-sm hover:text-green-700"
+                >Connect on WhatsApp</span
+              >
+            </a>
           </div>
           <div
             class="border rounded-xl p-4 text-center shadow-sm bg-[rgba(16,185,129,.06)]"
           >
+            <div
+              class="aspect-square rounded-xl bg-slate-50 border border-dashed border-slate-300 flex items-center justify-center text-xs text-slate-500 mb-2"
+            >
+              <img
+                src="./assets/Neurology/Dr. Asha Kishore.png"
+                alt="Dr. Asha Kishore"
+                class="w-full h-full object-cover"
+              />
+            </div>
             <p class="font-medium">Dr. Asha Kishore</p>
             <p class="text-sm text-gray-500">Neurosurgery</p>
-            <span class="inline-block mt-2 text-green-600 text-sm"
-              >Connect on WhatsApp</span
+            <a
+              href="https://what.sapp.link/aster-kochi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline"
             >
+              <span
+                class="inline-block mt-2 text-green-600 text-sm hover:text-green-700"
+                >Connect on WhatsApp</span
+              >
+            </a>
           </div>
           <div
             class="border rounded-xl p-4 text-center shadow-sm bg-[rgba(16,185,129,.06)]"
           >
+            <div
+              class="aspect-square rounded-xl bg-slate-50 border border-dashed border-slate-300 flex items-center justify-center text-xs text-slate-500 mb-2"
+            >
+              <img
+                src="./assets/Neurology/Dr. Davidson Devasia.png"
+                alt="Dr. Davidson Devasia"
+                class="w-full h-full object-cover"
+              />
+            </div>
             <p class="font-medium">Dr. Davidson Devasia</p>
             <p class="text-sm text-gray-500">Neurosurgery</p>
-            <span class="inline-block mt-2 text-green-600 text-sm"
-              >Connect on WhatsApp</span
+            <a
+              href="https://what.sapp.link/aster-kochi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline"
             >
+              <span
+                class="inline-block mt-2 text-green-600 text-sm hover:text-green-700"
+                >Connect on WhatsApp</span
+              >
+            </a>
           </div>
           <div
             class="border rounded-xl p-4 text-center shadow-sm bg-[rgba(16,185,129,.06)]"
           >
+            <div
+              class="aspect-square rounded-xl bg-slate-50 border border-dashed border-slate-300 flex items-center justify-center text-xs text-slate-500 mb-2"
+            >
+              <img
+                src="./assets/Neurology/Dr. Dilip Panikar.png"
+                alt="Dr. Dilip Panikar"
+                class="w-full h-full object-cover"
+              />
+            </div>
             <p class="font-medium">Dr. Dilip Panikar</p>
             <p class="text-sm text-gray-500">Neurosurgery</p>
-            <span class="inline-block mt-2 text-green-600 text-sm"
-              >Connect on WhatsApp</span
+            <a
+              href="https://what.sapp.link/aster-kochi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline"
             >
+              <span
+                class="inline-block mt-2 text-green-600 text-sm hover:text-green-700"
+                >Connect on WhatsApp</span
+              >
+            </a>
           </div>
           <div
             class="border rounded-xl p-4 text-center shadow-sm bg-[rgba(16,185,129,.06)]"
           >
+            <div
+              class="aspect-square rounded-xl bg-slate-50 border border-dashed border-slate-300 flex items-center justify-center text-xs text-slate-500 mb-2"
+            >
+              <img
+                src="./assets/Neurology/Dr. Shyam Sundar S.png"
+                alt="Dr. Shyam Sundar S"
+                class="w-full h-full object-cover"
+              />
+            </div>
             <p class="font-medium">Dr. Shyam Sundar S</p>
             <p class="text-sm text-gray-500">Neurosurgery</p>
-            <span class="inline-block mt-2 text-green-600 text-sm"
-              >Connect on WhatsApp</span
+            <a
+              href="https://what.sapp.link/aster-kochi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline"
             >
+              <span
+                class="inline-block mt-2 text-green-600 text-sm hover:text-green-700"
+                >Connect on WhatsApp</span
+              >
+            </a>
           </div>
         </div>
       </div>
@@ -805,20 +1157,54 @@
           <div
             class="border rounded-xl p-4 text-center shadow-sm bg-[rgba(16,185,129,.06)]"
           >
+            <div
+              class="aspect-square rounded-xl bg-slate-50 border border-dashed border-slate-300 flex items-center justify-center text-xs text-slate-500 mb-2"
+            >
+              <img
+                src="./assets/ORTHOPAEDIC/Dr. Ananthakrishna Bhat V.png"
+                alt="Dr. Ananthakrishna Bhat V"
+                class="w-full h-full object-cover"
+              />
+            </div>
             <p class="font-medium">Dr. Ananthakrishna Bhat V</p>
             <p class="text-sm text-gray-500">Orthopaedics</p>
-            <span class="inline-block mt-2 text-green-600 text-sm"
-              >Connect on WhatsApp</span
+            <a
+              href="https://what.sapp.link/aster-kochi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline"
             >
+              <span
+                class="inline-block mt-2 text-green-600 text-sm hover:text-green-700"
+                >Connect on WhatsApp</span
+              >
+            </a>
           </div>
           <div
             class="border rounded-xl p-4 text-center shadow-sm bg-[rgba(16,185,129,.06)]"
           >
+            <div
+              class="aspect-square rounded-xl bg-slate-50 border border-dashed border-slate-300 flex items-center justify-center text-xs text-slate-500 mb-2"
+            >
+              <img
+                src="./assets/ORTHOPAEDIC/Dr. Joe Davis.png"
+                alt="Dr. Joe Davis"
+                class="w-full h-full object-cover"
+              />
+            </div>
             <p class="font-medium">Dr. Joe Davis</p>
             <p class="text-sm text-gray-500">Orthopaedics</p>
-            <span class="inline-block mt-2 text-green-600 text-sm"
-              >Connect on WhatsApp</span
+            <a
+              href="https://what.sapp.link/aster-kochi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline"
             >
+              <span
+                class="inline-block mt-2 text-green-600 text-sm hover:text-green-700"
+                >Connect on WhatsApp</span
+              >
+            </a>
           </div>
         </div>
       </div>
@@ -836,47 +1222,132 @@
           <div
             class="border rounded-xl p-4 text-center shadow-sm bg-[rgba(16,185,129,.06)]"
           >
+            <div
+              class="aspect-square rounded-xl bg-slate-50 border border-dashed border-slate-300 flex items-center justify-center text-xs text-slate-500 mb-2"
+            >
+              <img
+                src="./assets/Kidney/Dr. Bipi PK.png"
+                alt="Dr. Bipi PK"
+                class="w-full h-full object-cover"
+              />
+            </div>
             <p class="font-medium">Dr. Bipi PK</p>
             <p class="text-sm text-gray-500">Transplant</p>
-            <span class="inline-block mt-2 text-green-600 text-sm"
-              >Connect on WhatsApp</span
+            <a
+              href="https://what.sapp.link/aster-kochi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline"
             >
+              <span
+                class="inline-block mt-2 text-green-600 text-sm hover:text-green-700"
+                >Connect on WhatsApp</span
+              >
+            </a>
           </div>
           <div
             class="border rounded-xl p-4 text-center shadow-sm bg-[rgba(16,185,129,.06)]"
           >
+            <div
+              class="aspect-square rounded-xl bg-slate-50 border border-dashed border-slate-300 flex items-center justify-center text-xs text-slate-500 mb-2"
+            >
+              <img
+                src="./assets/Kidney/Dr. Geetha Mammayil.png"
+                alt="Dr. Geetha Mammayil"
+                class="w-full h-full object-cover"
+              />
+            </div>
             <p class="font-medium">Dr. Geetha Mammayil</p>
             <p class="text-sm text-gray-500">Transplant</p>
-            <span class="inline-block mt-2 text-green-600 text-sm"
-              >Connect on WhatsApp</span
+            <a
+              href="https://what.sapp.link/aster-kochi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline"
             >
+              <span
+                class="inline-block mt-2 text-green-600 text-sm hover:text-green-700"
+                >Connect on WhatsApp</span
+              >
+            </a>
           </div>
           <div
             class="border rounded-xl p-4 text-center shadow-sm bg-[rgba(16,185,129,.06)]"
           >
+            <div
+              class="aspect-square rounded-xl bg-slate-50 border border-dashed border-slate-300 flex items-center justify-center text-xs text-slate-500 mb-2"
+            >
+              <img
+                src="./assets/Kidney/Dr. Kishore T.A.png"
+                alt="Dr. Kishore T.A"
+                class="w-full h-full object-cover"
+              />
+            </div>
             <p class="font-medium">Dr. Kishore T.A</p>
             <p class="text-sm text-gray-500">Transplant</p>
-            <span class="inline-block mt-2 text-green-600 text-sm"
-              >Connect on WhatsApp</span
+            <a
+              href="https://what.sapp.link/aster-kochi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline"
             >
+              <span
+                class="inline-block mt-2 text-green-600 text-sm hover:text-green-700"
+                >Connect on WhatsApp</span
+              >
+            </a>
           </div>
           <div
             class="border rounded-xl p-4 text-center shadow-sm bg-[rgba(16,185,129,.06)]"
           >
+            <div
+              class="aspect-square rounded-xl bg-slate-50 border border-dashed border-slate-300 flex items-center justify-center text-xs text-slate-500 mb-2"
+            >
+              <img
+                src="./assets/Kidney/Dr. Mathew Jacob.png"
+                alt="Dr. Mathew Jacob"
+                class="w-full h-full object-cover"
+              />
+            </div>
             <p class="font-medium">Dr. Mathew Jacob</p>
             <p class="text-sm text-gray-500">Transplant</p>
-            <span class="inline-block mt-2 text-green-600 text-sm"
-              >Connect on WhatsApp</span
+            <a
+              href="https://what.sapp.link/aster-kochi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline"
             >
+              <span
+                class="inline-block mt-2 text-green-600 text-sm hover:text-green-700"
+                >Connect on WhatsApp</span
+              >
+            </a>
           </div>
           <div
             class="border rounded-xl p-4 text-center shadow-sm bg-[rgba(16,185,129,.06)]"
           >
+            <div
+              class="aspect-square rounded-xl bg-slate-50 border border-dashed border-slate-300 flex items-center justify-center text-xs text-slate-500 mb-2"
+            >
+              <img
+                src="./assets/Kidney/Dr. V. Narayanan Unni.png"
+                alt="Dr. V. Narayanan Unni"
+                class="w-full h-full object-cover"
+              />
+            </div>
             <p class="font-medium">Dr. V. Narayanan Unni</p>
             <p class="text-sm text-gray-500">Transplant</p>
-            <span class="inline-block mt-2 text-green-600 text-sm"
-              >Connect on WhatsApp</span
+            <a
+              href="https://what.sapp.link/aster-kochi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:underline"
             >
+              <span
+                class="inline-block mt-2 text-green-600 text-sm hover:text-green-700"
+                >Connect on WhatsApp</span
+              >
+            </a>
           </div>
         </div>
       </div>
@@ -978,8 +1449,9 @@
           <h4 class="font-semibold">TItsy By Treebo</h4>
           <p class="text-gray-500">4.6 star • 3.3km • ₹1604</p>
           <a
-            href="https://wa.me/919899187776?text=Hello%2C%20please%20share%20best%20deals%20for%20nearby%20stay%20options%20near%20Aster%20Medcity%20Kochi."
+            href="https://what.sapp.link/aster-kochi"
             target="_blank"
+            rel="noopener noreferrer"
             class="inline-block mt-3 text-blue-600 hover:underline"
           >
             Chat with us for Best Deals
@@ -990,7 +1462,7 @@
           <h4 class="font-semibold">HOTEL NUJOOM</h4>
           <p class="text-gray-500">3.8 star • 5.2km • ₹3000</p>
           <a
-            href="https://wa.me/919899187776?text=Hello%2C%20please%20share%20best%20deals%20for%20nearby%20stay%20options%20near%20Aster%20Medcity%20Kochi."
+            href="https://what.sapp.link/aster-kochi"
             target="_blank"
             class="inline-block mt-3 text-blue-600 hover:underline"
           >
@@ -1002,8 +1474,9 @@
           <h4 class="font-semibold">Nova Arafa Palace</h4>
           <p class="text-gray-500">4.0 star • 3.9km • ₹1796</p>
           <a
-            href="https://wa.me/919899187776?text=Hello%2C%20please%20share%20best%20deals%20for%20nearby%20stay%20options%20near%20Aster%20Medcity%20Kochi."
+            href="https://what.sapp.link/aster-kochi"
             target="_blank"
+            rel="noopener noreferrer"
             class="inline-block mt-3 text-blue-600 hover:underline"
           >
             Chat with us for Best Deals
@@ -1037,9 +1510,9 @@
               <a href="#" class="hover:text-gray-700">Terms & Conditions</a>
               <a href="#" class="hover:text-gray-700">Privacy Policy</a>
               <a
-                href="https://wa.me/919899187776"
+                href="https://what.sapp.link/aster-kochi"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 class="hover:text-gray-700"
               >
                 Chat on WhatsApp
@@ -1059,6 +1532,15 @@
 
     <script>
       document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
     </script>
   </body>
 </html>

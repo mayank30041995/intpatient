@@ -29,6 +29,41 @@
     };
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <link rel="preload" href="./public/css/font/Raleway-SemiBold.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="preload" href="./public/css/font/Raleway-Bold.ttf" as="font" type="font/ttf" crossorigin />
+  <style>
+    @font-face {
+      font-family: "Raleway";
+      src: url("./public/css/font/Raleway-SemiBold.ttf") format("truetype");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "RalewayBold";
+      src: url("./public/css/font/Raleway-Bold.ttf") format("truetype");
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    body {
+      font-family: "Raleway", sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "RalewayBold", sans-serif;
+      font-weight: 600;
+    }
+  </style>
 </head>
 
 <body>
@@ -43,7 +78,7 @@
   <main id="main" class="hidden">
     <!-- Top bar -->
     <div class="stic top-0 z-20 bg-white/90 backdrop-blur-sm border-b border-gray-200">
-      <div class="max-w-[1200px] mx-auto px-4">
+      <div class="max-w-7xl mx-auto px-4">
 
         <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 py-4">
 
@@ -56,7 +91,7 @@
 
             <!-- Title -->
             <div>
-              <h1 class="text-base md:text-xl lg:text-2xl font-extrabold tracking-wide text-[#009933] leading-tight">
+              <h1 class="text-base md:text-xl lg:text-xl font-bold tracking-wide text-[#009933] leading-tight">
                 Fortis Memorial Research Institute (FMRI), Gurugram
               </h1>
 
@@ -103,7 +138,7 @@
     <!-- Hero -->
     <header class="relative overflow-hidden border-b border-gray-200 bg-gradient-to-b from-gray-50 to-white hero"
       id="top">
-      <div class="max-w-[1200px] mx-auto px-4 py-6">
+      <div class="max-w-7xl mx-auto px-4 py-6">
         <div class="grid md:grid-cols-[1.05fr_.95fr] gap-4 items-stretch">
           <div>
             <div
@@ -271,7 +306,7 @@
 
     <!-- Opinion -->
     <section id="opinion" class="bg-sand border-y border-slate-200">
-      <div class="max-w-[1200px] mx-auto px-4 py-12">
+      <div class="max-w-7xl mx-auto px-4 py-12">
         <div class="grid lg:grid-cols-12 gap-6 items-start">
           <div class="lg:col-span-7">
             <h2 class="text-2xl sm:text-3xl text-[#009933] font-extrabold text-ink">Get a specialist opinion +
@@ -328,7 +363,7 @@
     <!-- End of Opinion -->
 
     <!-- Why Section -->
-    <section class="max-w-[1200px] mx-auto px-4 py-6" id="why">
+    <section class="max-w-7xl mx-auto px-4 py-6" id="why">
       <h3 class="text-3xl font-bold mb-2 text-[#009933]">
         Why patients choose Fortis FMRI
       </h3>
@@ -365,7 +400,7 @@
     </section>
 
     <!-- Specialties Section -->
-    <section class="max-w-[1200px] mx-auto px-4 py-6" id="specialties">
+    <section class="max-w-7xl mx-auto px-4 py-6" id="specialties">
       <h3 class="text-2xl font-semibold mb-2">Specialties</h3>
       <p class="text-gray-500 mb-4">
         Click a specialty to message us on WhatsApp.
@@ -434,7 +469,7 @@
       </div>
     </section>
 
-    <section class="max-w-[1200px] mx-auto px-4 py-10" id="doctors">
+    <section class="max-w-7xl mx-auto px-4 py-10" id="doctors">
       <h3 class="text-3xl font-bold mb-3 text-[#009933]">
         Our Dedicated Doctors
       </h3>
@@ -465,7 +500,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <div class="rounded-md border border-blue-200 bg-blue-50 p-3 flex items-center justify-between gap-2">
             <!-- Left: Text Content -->
-            <div>
+            <div class="flex flex-col space-y-2">
               <p class="font-bold text-md mb-1">Dr Nitesh Rohatgi
               </p>
               <p class="text-xs text-slate-600">Oncology</p>
@@ -479,13 +514,13 @@
             <!-- Right: Doctor Image -->
             <div class="shrink-0">
               <img src="./public/onco/webp/Dr Nitesh Rohatgi.webp" alt="Dr Nitesh Rohatgi.webp"
-                class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200" />
+                class="w-20 h-[8rem] object-cover rounded-xl border border-sky-200" />
             </div>
           </div>
 
           <div class="rounded-md border border-sky-200 bg-sky-50 p-3 flex items-center justify-between gap-2">
             <!-- Left: Text Content -->
-            <div>
+            <div class="flex flex-col space-y-2">
               <p class="font-bold text-md mb-1">Dr Vinod Raina
               </p>
               <p class="text-xs text-slate-600">Oncology</p>
@@ -499,13 +534,13 @@
             <!-- Right: Doctor Image -->
             <div class="shrink-0">
               <img src="./public/onco/webp/Dr Vinod Raina.webp" alt="Dr. Dipanjan Panda"
-                class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200" />
+                class="w-20 h-[8rem] object-cover rounded-xl border border-sky-200" />
             </div>
           </div>
 
           <div class="rounded-md border border-blue-200 bg-blue-50 p-3 flex items-center justify-between gap-2">
             <!-- Left: Text Content -->
-            <div>
+            <div class="flex flex-col space-y-2">
               <p class="font-bold text-md mb-1">Dr. Ankur Bahl
               </p>
               <p class="text-xs text-slate-600">Oncology</p>
@@ -519,13 +554,13 @@
             <!-- Right: Doctor Image -->
             <div class="shrink-0">
               <img src="./public/onco/webp/Dr. AnkurBahl.webp" alt="Dr. Ganesh Jadhav"
-                class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200" />
+                class="w-20 h-[8rem] object-cover rounded-xl border border-sky-200" />
             </div>
           </div>
 
           <div class="rounded-md border border-sky-200 bg-sky-50 p-3 flex items-center justify-between gap-2">
             <!-- Left: Text Content -->
-            <div>
+            <div class="flex flex-col space-y-2">
               <p class="font-bold text-md mb-1">Dr.Rahul Bhargava
               </p>
               <p class="text-xs text-slate-600">Oncology</p>
@@ -539,7 +574,7 @@
             <!-- Right: Doctor Image -->
             <div class="shrink-0">
               <img src="./public/onco/webp/dr-rahul-bhargava.webp" alt="Dr.Rahul Bhargava"
-                class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200" />
+                class="w-20 h-[8rem] object-cover rounded-xl border border-sky-200" />
             </div>
           </div>
         </div>
@@ -556,7 +591,7 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div class="rounded-md border border-blue-200 bg-blue-50 p-3 flex items-center justify-between gap-2">
               <!-- Left: Text Content -->
-              <div>
+              <div class="flex flex-col space-y-2">
                 <p class="font-bold text-md mb-1">Dr Nikhil Kumar</p>
                 <p class="text-xs text-slate-600">Cardiac Sciences</p>
                 <span
@@ -569,13 +604,13 @@
               <!-- Right: Doctor Image -->
               <div class="shrink-0">
                 <img src="./public/Cardio/webp/Dr Nikhil Kumar.webp" alt="Dr. Nisha Thomas"
-                  class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200" />
+                  class="w-20 h-[8rem] object-cover rounded-xl border border-sky-200" />
               </div>
             </div>
 
             <div class="rounded-md border border-sky-200 bg-sky-50 p-3 flex items-center justify-between gap-2">
               <!-- Left: Text Content -->
-              <div>
+              <div class="flex flex-col space-y-2">
                 <p class="font-bold text-md mb-1">Dr. Vinayak Agarwal</p>
                 <p class="text-xs text-slate-600">Cardiac Sciences</p>
                 <span
@@ -588,13 +623,13 @@
               <!-- Right: Doctor Image -->
               <div class="shrink-0">
                 <img src="./public/Cardio/webp/dr-vinayak-agarwal.webp" alt="Dr. Vinayak Agarwal"
-                  class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200" />
+                  class="w-20 h-[8rem] object-cover rounded-xl border border-sky-200" />
               </div>
             </div>
 
             <div class="rounded-md border border-blue-200 bg-blue-50 p-3 flex items-center justify-between gap-2">
               <!-- Left: Text Content -->
-              <div>
+              <div class="flex flex-col space-y-2">
                 <p class="font-bold text-md mb-1">Dr. Udgeath Dhir</p>
                 <p class="text-xs text-slate-600">Cardiac Sciences</p>
                 <span
@@ -607,13 +642,13 @@
               <!-- Right: Doctor Image -->
               <div class="shrink-0">
                 <img src="./public/Cardio/webp/Dr. UdgeathDhir.webp" alt="Dr. Udgeath Dhir"
-                  class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200" />
+                  class="w-20 h-[8rem] object-cover rounded-xl border border-sky-200" />
               </div>
             </div>
 
             <div class="rounded-md border border-sky-200 bg-sky-50 p-3 flex items-center justify-between gap-2">
               <!-- Left: Text Content -->
-              <div>
+              <div class="flex flex-col space-y-2">
                 <p class="font-bold text-md mb-1">Dr Manjinder Sandhu</p>
                 <p class="text-xs text-slate-600">Cardiac Sciences</p>
                 <span
@@ -626,7 +661,7 @@
               <!-- Right: Doctor Image -->
               <div class="shrink-0">
                 <img src="./public/Cardio/webp/dr-(col)-manjinder-sandhu.webp" alt="Dr Manjinder Sandhu<"
-                  class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200" />
+                  class="w-20 h-[8rem] object-cover rounded-xl border border-sky-200" />
               </div>
             </div>
           </div>
@@ -646,7 +681,7 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div class="rounded-md border border-blue-200 bg-blue-50 p-3 flex items-center justify-between gap-2">
               <!-- Left: Text Content -->
-              <div>
+              <div class="flex flex-col space-y-2">
                 <p class="font-bold text-md mb-1">Dr Manoj Padman</p>
                 <p class="text-xs text-slate-600">Orthopaedics</p>
                 <span
@@ -659,13 +694,13 @@
               <!-- Right: Doctor Image -->
               <div class="shrink-0">
                 <img src="./public/ortho/webp/Dr Manoj Padman.webp" alt="Dr Manoj Padman"
-                  class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200" />
+                  class="w-20 h-[8rem] object-cover rounded-xl border border-sky-200" />
               </div>
             </div>
 
             <div class="rounded-md border border-sky-200 bg-sky-50 p-3 flex items-center justify-between gap-2">
               <!-- Left: Text Content -->
-              <div>
+              <div class="flex flex-col space-y-2">
                 <p class="font-bold text-md mb-1">Dr. Jayant Arora</p>
                 <p class="text-xs text-slate-600">Orthopaedics</p>
                 <span class="block mt-3 text-xs font-semibold px-3 py-1 rounded-md border border-sky-200 bg-sky-100">
@@ -677,13 +712,13 @@
               <!-- Right: Doctor Image -->
               <div class="shrink-0">
                 <img src="./public/ortho/webp/Dr. Jayant Arora.webp" alt="Dr. Jayant Arora"
-                  class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200" />
+                  class="w-20 h-[8rem] object-cover rounded-xl border border-sky-200" />
               </div>
             </div>
 
             <div class="rounded-md border border-blue-200 bg-blue-50 p-3 flex items-center justify-between gap-2">
               <!-- Left: Text Content -->
-              <div>
+              <div class="flex flex-col space-y-2">
                 <p class="font-bold text-md mb-1">Dr Monu Singh</p>
                 <p class="text-xs text-slate-600">Orthopaedics</p>
                 <span class="block mt-3 text-xs font-semibold px-3 py-1 rounded-md border border-blue-200 bg-blue-100">
@@ -695,13 +730,13 @@
               <!-- Right: Doctor Image -->
               <div class="shrink-0">
                 <img src="./public/ortho/webp/dr-monu-singh.webp" alt="Dr Monu Singh"
-                  class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200" />
+                  class="w-20 h-[8rem] object-cover rounded-xl border border-sky-200" />
               </div>
             </div>
 
             <div class="rounded-md border border-sky-200 bg-sky-50 p-3 flex items-center justify-between gap-2">
               <!-- Left: Text Content -->
-              <div>
+              <div class="flex flex-col space-y-2">
                 <p class="font-bold text-md mb-1">Dr. Subhash Janghid</p>
                 <p class="text-xs text-slate-600">Orthopaedics</p>
                 <span class="block mt-3 text-xs font-semibold px-3 py-1 rounded-md border border-sky-200 bg-sky-100">
@@ -713,7 +748,7 @@
               <!-- Right: Doctor Image -->
               <div class="shrink-0">
                 <img src="./public/ortho/webp/Subhash Janghid.webp" alt="Dr. Nisha Thomas"
-                  class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200" />
+                  class="w-20 h-[8rem] object-cover rounded-xl border border-sky-200" />
               </div>
             </div>
 
@@ -733,7 +768,7 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div class="rounded-md border border-blue-200 bg-blue-50 p-3 flex items-center justify-between gap-2">
               <!-- Left: Text Content -->
-              <div>
+              <div class="flex flex-col space-y-2">
                 <p class="font-bold text-md mb-1">Dr Praveen Gupta
                 </p>
                 <p class="text-xs text-slate-600">Neuro Sciences</p>
@@ -747,13 +782,13 @@
               <!-- Right: Doctor Image -->
               <div class="shrink-0">
                 <img src="./public/Neuro/webp/Dr Praveen Gupta.webp" alt="Dr Praveen Gupta"
-                  class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200" />
+                  class="w-20 h-[8rem] object-cover rounded-xl border border-sky-200" />
               </div>
             </div>
 
             <div class="rounded-md border border-sky-200 bg-sky-50 p-3 flex items-center justify-between gap-2">
               <!-- Left: Text Content -->
-              <div>
+              <div class="flex flex-col space-y-2">
                 <p class="font-bold text-md mb-1">Dr Saurabh Yatish Bansal
                 </p>
                 <p class="text-xs text-slate-600">Neuro Sciences</p>
@@ -767,13 +802,13 @@
               <!-- Right: Doctor Image -->
               <div class="shrink-0">
                 <img src="./public/Neuro/webp/dr-saurabh-yatish-bansal.webp" alt="Dr. Charu Gauba"
-                  class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200" />
+                  class="w-20 h-[8rem] object-cover rounded-xl border border-sky-200" />
               </div>
             </div>
 
             <div class="rounded-md border border-blue-200 bg-blue-50 p-3 flex items-center justify-between gap-2">
               <!-- Left: Text Content -->
-              <div>
+              <div class="flex flex-col space-y-2">
                 <p class="font-bold text-md mb-1">Dr. Vikas Sharma
                 </p>
                 <p class="text-xs text-slate-600">Neuro Sciences</p>
@@ -787,13 +822,13 @@
               <!-- Right: Doctor Image -->
               <div class="shrink-0">
                 <img src="./public/Neuro/webp/dr-vikas-sharma.webp" alt="Dr. Mukul Varma"
-                  class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200" />
+                  class="w-20 h-[8rem] object-cover rounded-xl border border-sky-200" />
               </div>
             </div>
 
             <div class="rounded-md border border-sky-200 bg-sky-50 p-3 flex items-center justify-between gap-2">
               <!-- Left: Text Content -->
-              <div>
+              <div class="flex flex-col space-y-2">
                 <p class="font-bold text-md mb-1">Dr. Rama Joshi
                 </p>
                 <p class="text-xs text-slate-600">Neuro Sciences</p>
@@ -807,7 +842,7 @@
               <!-- Right: Doctor Image -->
               <div class="shrink-0">
                 <img src="./public/Neuro/webp/dr-rama-joshi.webp" alt="Dr Pushpendra Nath"
-                  class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200" />
+                  class="w-20 h-[8rem] object-cover rounded-xl border border-sky-200" />
               </div>
             </div>
           </div>
@@ -843,7 +878,7 @@
               <img
                 src="doctor-image.jpg"
                 alt="Dr. Nisha Thomas"
-                class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200"
+                class="w-20 h-[8rem] object-cover rounded-xl border border-sky-200"
               />
             </div>
           </div>
@@ -866,7 +901,7 @@
               <img
                 src="doctor-image.jpg"
                 alt="Dr. Nisha Thomas"
-                class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200"
+                class="w-20 h-[8rem] object-cover rounded-xl border border-sky-200"
               />
             </div>
           </div>
@@ -888,7 +923,7 @@
               <img
                 src="doctor-image.jpg"
                 alt="Dr. Nisha Thomas"
-                class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200"
+                class="w-20 h-[8rem] object-cover rounded-xl border border-sky-200"
               />
             </div>
           </div>
@@ -911,7 +946,7 @@
               <img
                 src="doctor-image.jpg"
                 alt="Dr. Nisha Thomas"
-                class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200"
+                class="w-20 h-[8rem] object-cover rounded-xl border border-sky-200"
               />
             </div>
           </div>
@@ -948,7 +983,7 @@
               <img
                 src="doctor-image.jpg"
                 alt="Dr. Nisha Thomas"
-                class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200"
+                class="w-20 h-[8rem] object-cover rounded-xl border border-sky-200"
               />
             </div>
           </div>
@@ -971,7 +1006,7 @@
               <img
                 src="doctor-image.jpg"
                 alt="Dr. Nisha Thomas"
-                class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200"
+                class="w-20 h-[8rem] object-cover rounded-xl border border-sky-200"
               />
             </div>
           </div>
@@ -995,7 +1030,7 @@
               <img
                 src="doctor-image.jpg"
                 alt="Dr. Nisha Thomas"
-                class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200"
+                class="w-20 h-[8rem] object-cover rounded-xl border border-sky-200"
               />
             </div>
           </div>
@@ -1018,7 +1053,7 @@
               <img
                 src="doctor-image.jpg"
                 alt="Dr. Nisha Thomas"
-                class="w-20 h-[7rem] object-cover rounded-xl border border-sky-200"
+                class="w-20 h-[8rem] object-cover rounded-xl border border-sky-200"
               />
             </div> 
           </div>
@@ -1033,7 +1068,7 @@
     </section>
 
     <!-- International Patient Support -->
-    <section class="max-w-[1200px] mx-auto px-4 py-6" id="international">
+    <section class="max-w-7xl mx-auto px-4 py-6" id="international">
       <h3 class="text-3xl font-bold mb-2 text-[#009933]">International patient support</h3>
       <p class="text-gray-500 mb-4">
         Support depends on case requirements. We guide step-by-step.
@@ -1063,7 +1098,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="max-w-[1200px] mx-auto px-4 py-6" id="faq">
+    <section class="max-w-7xl mx-auto px-4 py-6" id="faq">
       <h3 class="text-3xl font-bold mb-2 text-[#009933]">FAQ</h3>
 
       <div class="space-y-3">
@@ -1132,7 +1167,7 @@
     <!-- Sticky Mobile CTA -->
     <div class="fixed left-0 right-0 bottom-0 z-50 bg-white bg-opacity-95 border-t border-gray-200 p-2 md:visible"
       role="navigation" aria-label="Quick contact">
-      <div class="max-w-[1200px] mx-auto flex gap-2">
+      <div class="max-w-7xl mx-auto flex gap-2">
         <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
           class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-green-500 text-white rounded-lg shadow hover:brightness-105">
           <i class="fab fa-whatsapp fa-1x mx-2" aria-hidden="true"></i> WhatsApp
@@ -1196,72 +1231,72 @@
   </script>
   <!-- End of Google Tag (delayed for performance) -->
 
-   <!-- GEO + CHAT SCRIPT -->
-    <script defer>
-      function ipLookUp() {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function () {
-          if (this.readyState == 4 && this.status == 200) {
-            var response = JSON.parse(xhttp.response);
-            console.log("location response", response);
+  <!-- GEO + CHAT SCRIPT -->
+  <script defer>
+    function ipLookUp() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          var response = JSON.parse(xhttp.response);
+          console.log("location response", response);
 
-            window.ttLocation = response.country;
+          window.ttLocation = response.country;
 
-            if (response.country === "IN") {
-              document.title = "Page not found";
-              setVisible(".err", true);
-              setVisible("#loader", false);
-              setVisible("#main", false);
-              $zoho.salesiq.floatwindow.visible("show");
-              $zoho.salesiq.chat.start();
-            } else {
-              setVisible("#main", true);
-              setVisible("#loader", false);
-              initChat();
-            }
+          if (response.country === "IN") {
+            document.title = "Page not found";
+            setVisible(".err", true);
+            setVisible("#loader", false);
+            setVisible("#main", false);
+            $zoho.salesiq.floatwindow.visible("show");
+            $zoho.salesiq.chat.start();
+          } else {
+            setVisible("#main", true);
+            setVisible("#loader", false);
+            initChat();
           }
-        };
-
-        xhttp.open(
-          "GET",
-          "https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation",
-          true,
-        );
-        xhttp.send();
-      }
-
-      function setVisible(selector, visible) {
-        const el = document.querySelector(selector);
-        if (el) {
-          el.classList.toggle("hidden", !visible);
         }
+      };
+
+      xhttp.open(
+        "GET",
+        "https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation",
+        true,
+      );
+      xhttp.send();
+    }
+
+    function setVisible(selector, visible) {
+      const el = document.querySelector(selector);
+      if (el) {
+        el.classList.toggle("hidden", !visible);
       }
+    }
 
-      function initChat() {
-        if (window.ttLocation !== "IN") {
-          window.__lc = window.__lc || {};
-          window.__lc.license = 7595311;
+    function initChat() {
+      if (window.ttLocation !== "IN") {
+        window.__lc = window.__lc || {};
+        window.__lc.license = 7595311;
 
-          (function () {
-            var lc = document.createElement("script");
-            lc.type = "text/javascript";
-            lc.async = true;
-            lc.src =
-              (document.location.protocol === "https:"
-                ? "https://"
-                : "http://") + "cdn.livechatinc.com/tracking.js";
-            document.head.appendChild(lc);
-          })();
-        }
+        (function () {
+          var lc = document.createElement("script");
+          lc.type = "text/javascript";
+          lc.async = true;
+          lc.src =
+            (document.location.protocol === "https:"
+              ? "https://"
+              : "http://") + "cdn.livechatinc.com/tracking.js";
+          document.head.appendChild(lc);
+        })();
       }
+    }
 
-      document.addEventListener("DOMContentLoaded", function () {
-        setVisible("#main", true); // show page immediately
-        setVisible("#loader", false);
-        ipLookUp(); // run in background
-      });
-    </script>
-    <!-- End of GEO + CHAT SCRIPT -->
+    document.addEventListener("DOMContentLoaded", function () {
+      setVisible("#main", true); // show page immediately
+      setVisible("#loader", false);
+      ipLookUp(); // run in background
+    });
+  </script>
+  <!-- End of GEO + CHAT SCRIPT -->
 
   <!-- Zoho Live Chat -->
   <script>window.$zoho = window.$zoho || {}; $zoho.salesiq = $zoho.salesiq || { ready: function () { } }</script>

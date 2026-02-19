@@ -21,12 +21,6 @@
     <meta name="Baiduspider" content="noindex, nofollow" />
     <meta name="YandexBot" content="noindex, nofollow" />
 
-    <link rel="manifest" href="favicon_package_v0.16/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="favicon_package_v0.16/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
@@ -76,6 +70,52 @@
       };
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="preload"
+      href="./public/font/Montserrat-Regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./public/font/Montserrat-Italic.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <style>
+      @font-face {
+        font-family: "Montserrat";
+        src: url("./public/font/Montserrat-Regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "MontserratItalic";
+        src: url("./public/font/Montserrat-Italic.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-weight: 600;
+      }
+      h1 {
+        font-family: "MontserratItalic", sans-serif;
+      }
+    </style>
   </head>
   <body>
     <div class="err hidden text-center py-20 text-red-600 font-bold">
@@ -91,7 +131,7 @@
       <div
         class="md:sticky top-0 z-30 bg-[rgba(251,247,243,0.92)] backdrop-blur-md border-b border-[rgba(229,231,235,0.9)]"
       >
-        <div class="max-w-[1200px] mx-auto px-4">
+        <div class="max-w-7xl mx-auto px-4">
           <div
             class="flex flex-col lg:flex-row lg:items-center lg:justify-between py-3 gap-4"
           >
@@ -122,7 +162,7 @@
 
             <!-- Right Section -->
             <div
-              class="flex flex-wrap items-center gap-3 text-sm text-[#4b5563]"
+              class="flex flex-wrap items-center gap-2 text-sm text-[#4b5563]"
             >
               <a href="#specialties" class="hover:underline">Specialties</a>
               <a href="#doctors" class="hover:underline">Doctors</a>
@@ -145,7 +185,7 @@
 
       <!-- Hero -->
       <header class="py-[18px]" id="top">
-        <div class="max-w-[1200px] mx-auto px-[18px]">
+        <div class="max-w-7xl mx-auto px-[18px]">
           <div class="grid lg:grid-cols-[1.1fr_.9fr] gap-[18px] items-stretch">
             <div>
               <div
@@ -155,7 +195,7 @@
               </div>
 
               <h1
-                class="font-serif font-semibold text-[38px] leading-[1.08] tracking-[-.6px] text-[#111827] mb-[10px] max-[480px]:text-[30px]"
+                class="font-bold text-[38px] leading-[1.08] tracking-[-.6px] text-[#111827] mb-[10px] max-[480px]:text-[30px]"
               >
                 Clarity, confidence, and a clear plan — before you travel
               </h1>
@@ -251,7 +291,7 @@
 
       <!-- Why Section -->
       <section class="py-6">
-        <div class="max-w-[1200px] mx-auto px-4">
+        <div class="max-w-7xl mx-auto px-4">
           <div
             class="bg-white/90 border border-gray-200 rounded-3xl shadow-lg p-5"
           >
@@ -293,10 +333,7 @@
         </div>
       </section>
 
-      <section
-        class="max-w-[1200px] mx-auto px-[18px] py-[22px]"
-        id="specialties"
-      >
+      <section class="max-w-7xl mx-auto px-[18px] py-[22px]" id="specialties">
         <div
           class="bg-[rgba(255,255,255,.85)] border border-[rgba(229,231,235,.9)] rounded-[22px] shadow-[0_10px_28px_rgba(17,24,39,.06)] p-[18px]"
         >
@@ -415,7 +452,7 @@
         </div>
       </section>
 
-      <section class="max-w-[1200px] mx-auto px-4 py-10" id="doctors">
+      <section class="max-w-7xl mx-auto px-4 py-10" id="doctors">
         <h3 class="text-3xl text-[#f04e30] font-bold my-2">
           Doctors by Department
         </h3>
@@ -987,10 +1024,7 @@
         </div>
       </section>
 
-      <section
-        class="max-w-[1200px] mx-auto px-[18px] py-[22px]"
-        id="international"
-      >
+      <section class="max-w-7xl mx-auto px-[18px] py-[22px]" id="international">
         <div
           class="bg-[rgba(255,255,255,.85)] border border-[rgba(229,231,235,.9)] rounded-[22px] shadow-[0_10px_28px_rgba(17,24,39,.06)] p-[18px]"
         >
@@ -1052,7 +1086,7 @@
 
       <!-- Opinion -->
       <section id="opinion" class="bg-sand border-y border-slate-200">
-        <div class="max-w-[1200px] mx-auto px-4 py-12">
+        <div class="max-w-7xl mx-auto px-4 py-12">
           <div class="grid lg:grid-cols-12 gap-6 items-start">
             <div class="lg:col-span-7">
               <h2
@@ -1140,10 +1174,7 @@
       </section>
       <!-- End of Opinion -->
 
-      <section
-        class="max-w-[1200px] mx-auto px-[18px] py-[22px]"
-        id="lead-form"
-      >
+      <section class="max-w-7xl mx-auto px-[18px] py-[22px]" id="lead-form">
         <div
           class="bg-[rgba(255,255,255,.85)] border border-[rgba(229,231,235,.9)] rounded-[22px] shadow-[0_10px_28px_rgba(17,24,39,.06)] p-[18px]"
         >
@@ -1274,7 +1305,7 @@
         </div>
       </section>
 
-      <section id="faq" class="max-w-[1200px] mx-auto px-[18px] py-[22px]">
+      <section id="faq" class="max-w-7xl mx-auto px-[18px] py-[22px]">
         <div
           class="bg-[rgba(255,255,255,.85)] border border-[rgba(229,231,235,.9)] rounded-[22px] shadow-[0_10px_28px_rgba(17,24,39,.06)] p-[18px]"
         >
@@ -1360,7 +1391,7 @@
       <div
         class="fixed bottom-0 inset-x-0 z-50 bg-[rgba(255,255,255,.95)] backdrop-blur-md border-t border-[rgba(229,231,235,.9)]"
       >
-        <div class="max-w-[1200px] mx-auto px-[18px] py-[10px]">
+        <div class="max-w-7xl mx-auto px-[18px] py-[10px]">
           <div class="flex gap-[10px] flex-wrap">
             <a
               href="https://what.sapp.link/medanta"
