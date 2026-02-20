@@ -40,14 +40,14 @@
     />
 
     <!-- Preload hero/banner images with fetchpriority -->
-    <link
+    <!-- <link
       rel="preload"
       as="image"
       href="public/images/bckgrnd-medanta-_1_-1.webp"
       type="image/webp"
       fetchpriority="high"
       media="(min-width: 768px)"
-    />
+    /> -->
     <link
       rel="preload"
       as="image"
@@ -243,15 +243,19 @@
                   <!-- Desktop image -->
                   <source
                     media="(min-width: 768px)"
-                    srcset="./public/images/bckgrnd-medanta-_1_-1.webp"
+                    srcset="public/images/bckgrnd-medanta.webp"
+                    type="image/webp"
                   />
                   <!-- Mobile image (default) -->
                   <img
-                    src="./public/images/bckgrnd-medanta-_1_-1.webp"
+                    src="public/images/bckgrnd-medanta.webp"
                     alt="Medanta hospital doctor team"
+                    width="1200"
+                    height="600"
                     class="w-full min-h-[300px] object-cover"
                     loading="eager"
                     fetchpriority="high"
+                    decoding="async"
                   />
                 </picture>
 
@@ -1203,6 +1207,7 @@
                       type="text"
                       required
                       class="w-full px-[12px] py-[12px] rounded-[8px] border border-[rgba(229,231,235,.95)] bg-[rgba(255,255,255,.95)]"
+                      aria-label="patients-inquiry"
                     />
                   </div>
                   <div>
@@ -1211,6 +1216,7 @@
                       type="text"
                       required
                       class="w-full px-[12px] py-[12px] rounded-[8px] border border-[rgba(229,231,235,.95)] bg-[rgba(255,255,255,.95)]"
+                      aria-label="patients-inquiry"
                     />
                   </div>
                 </div>
@@ -1224,6 +1230,7 @@
                       type="tel"
                       required
                       class="w-full px-[12px] py-[12px] rounded-[8px] border border-[rgba(229,231,235,.95)] bg-[rgba(255,255,255,.95)]"
+                      aria-label="patients-inquiry"
                     />
                   </div>
                   <div>
@@ -1231,8 +1238,12 @@
                     <select
                       required
                       class="w-full px-[12px] py-[12px] rounded-[8px] border border-[rgba(229,231,235,.95)] bg-[rgba(255,255,255,.95)]"
+                      aria-label="patients-inquiry"
                     >
                       <option>Select</option>
+                      <option>Health check-up / general care</option>
+                      <option>Medical opinion / second opinion</option>
+                      <option>Treatment planning</option>
                     </select>
                   </div>
                 </div>
@@ -1241,6 +1252,7 @@
                   <label class="text-[12px] text-[#4b5563]">Message</label>
                   <textarea
                     class="w-full px-[12px] py-[12px] rounded-[8px] border border-[rgba(229,231,235,.95)] bg-[rgba(255,255,255,.95)] min-h-[96px]"
+                    aria-label="patients-inquiry"
                   ></textarea>
                 </div>
 
@@ -1251,6 +1263,7 @@
                   <input
                     type="file"
                     class="w-full px-[12px] py-[12px] rounded-[8px] border border-[rgba(229,231,235,.95)] bg-[rgba(255,255,255,.95)]"
+                    aria-label="patients-inquiry"
                   />
                   <p class="text-[12px] text-[#4b5563] mt-[8px]">
                     Optional. You can also share reports later on WhatsApp.
