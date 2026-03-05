@@ -150,7 +150,7 @@ const treatments = [
     id: "6",
     title: "Hydrotherapy and Massage ",
     slug: "hydrotherapy",
-    description1: "Pancha Tatva Healingsss",
+    description1: "Hydrotherapy and Massage Therapy in India",
     meta: {
       title:
         "Hydrotherapy and Massage Therapy in India | Sanjeevini India Holistic Wellness Center",
@@ -159,7 +159,7 @@ const treatments = [
       keywords:
         "Sanjeevini India, Yoga Therapy India, Pranayama Practice, Holistic Wellness, Stress Management Yoga, Breathing Exercises, Meditation Yoga, Mind Body Balance, Traditional Yoga Therapy",
     },
-    content: `../components/massagetherapy.ejs`,
+    content: `../components/hydrotherapy.ejs`,
   },
   {
     id: "7",
