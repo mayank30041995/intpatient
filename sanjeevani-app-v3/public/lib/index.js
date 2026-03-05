@@ -1,18 +1,18 @@
 // Fake database (replace with real DB later)
 const doctors = [
   {
-    id: '1',
-    name: 'Dr. Pradeep Mathur',
-    slug: 'pradeep-mathur',
-    specialty: 'Yoga & Naturopathy Specialist',
-    experience: '29 years',
-    image: '/images/doctors/pradeep_mathur.webp',
+    id: "1",
+    name: "Dr. Pradeep Mathur",
+    slug: "pradeep-mathur",
+    specialty: "Yoga & Naturopathy Specialist",
+    experience: "29 years",
+    image: "/images/doctors/pradeep_mathur.webp",
     meta: {
-      title: 'Dr. Pradeep Mathur - Sanjeevani Kaya Hospital',
+      title: "Dr. Pradeep Mathur - Sanjeevani Kaya Hospital",
       description:
-        'Meet the experienced acupressure doctor Dr. Pradeep Mathur at Sanjeevani Kaya Hospital, dedicated to personalized, natural healing through holistic and drug-free treatment approaches.',
+        "Meet the experienced acupressure doctor Dr. Pradeep Mathur at Sanjeevani Kaya Hospital, dedicated to personalized, natural healing through holistic and drug-free treatment approaches.",
       keywords:
-        'Sanjeevani Kaya Hospital doctors, acupressure specialists, holistic doctors, natural healing experts, acupressure physician team',
+        "Sanjeevani Kaya Hospital doctors, acupressure specialists, holistic doctors, natural healing experts, acupressure physician team",
     },
     description: `<p class="text-lg text-gray-300 leading-relaxed mb-6">
                         I'm dedicated to providing optimal health care in a relaxed environment
@@ -67,18 +67,18 @@ const doctors = [
                     </ul>`,
   },
   {
-    id: '2',
-    name: 'Dr. Divya Grover',
-    slug: 'divya-grover',
-    specialty: 'Physiotherapist',
-    experience: '10 years',
-    image: '/images/doctors/divya_grover.webp',
+    id: "2",
+    name: "Dr. Divya Grover",
+    slug: "divya-grover",
+    specialty: "Physiotherapist",
+    experience: "10 years",
+    image: "/images/doctors/divya_grover.webp",
     meta: {
-      title: 'Dr. Divya Grover - Sanjeevani Kaya Hospital',
+      title: "Dr. Divya Grover - Sanjeevani Kaya Hospital",
       description:
-        'Meet the experienced dedicated doctor Dr. Divya Grover physiotherapist at Sanjeevani Kaya Hospital, dedicated to personalized, natural healing through holistic and drug-free treatment approaches.',
+        "Meet the experienced dedicated doctor Dr. Divya Grover physiotherapist at Sanjeevani Kaya Hospital, dedicated to personalized, natural healing through holistic and drug-free treatment approaches.",
       keywords:
-        'Sanjeevani Kaya Hospital doctors, acupressure specialists, holistic doctors, natural healing experts, acupressure physician team',
+        "Sanjeevani Kaya Hospital doctors, acupressure specialists, holistic doctors, natural healing experts, acupressure physician team",
     },
     description: `<p class="text-lg text-gray-300 leading-relaxed mb-6">
                         Dr. Divya Grover is a dedicated physiotherapist practicing at Sanjeevani Kaya Shodhan Sansthan
@@ -135,18 +135,18 @@ const doctors = [
                     </ul>`,
   },
   {
-    id: '3',
-    name: 'Dr. Amit Sharma',
-    slug: 'amit-sharma',
-    specialty: 'accupressure specialist',
-    experience: '10 years',
-    image: '/images/doctors/amit_sharma.webp',
+    id: "3",
+    name: "Dr. Amit Sharma",
+    slug: "amit-sharma",
+    specialty: "accupressure specialist",
+    experience: "10 years",
+    image: "/images/doctors/amit_sharma.webp",
     meta: {
-      title: 'Dr. Amit Sharma - Sanjeevani Kaya Hospital',
+      title: "Dr. Amit Sharma - Sanjeevani Kaya Hospital",
       description:
-        'Meet the experienced acupressure doctor DR. Amit Sharma at Sanjeevani Kaya Hospital, dedicated to personalized, natural healing through holistic and drug-free treatment approaches.',
+        "Meet the experienced acupressure doctor DR. Amit Sharma at Sanjeevani Kaya Hospital, dedicated to personalized, natural healing through holistic and drug-free treatment approaches.",
       keywords:
-        'Sanjeevani Kaya Hospital doctors, acupressure specialists, holistic doctors, natural healing experts, acupressure physician team',
+        "Sanjeevani Kaya Hospital doctors, acupressure specialists, holistic doctors, natural healing experts, acupressure physician team",
     },
     description: `<p class="text-lg text-gray-300 leading-relaxed mb-6">
                         Dr. Amit Sharma is an accupressure specialist practicing at Sanjeevani Kaya Shodhan Sansthan in
@@ -196,19 +196,19 @@ const doctors = [
 
                     </ul>`,
   },
-    {
-    id: '4',
-    name: 'Dr. Reeta Majhi',
-    slug: 'reeta-majhi',
-    specialty: 'naturopathic specialist',
-    experience: '10 years',
-    image: '/images/doctors/dr-reeta-majhi.webp',
+  {
+    id: "4",
+    name: "Dr. Reeta Majhi",
+    slug: "reeta-majhi",
+    specialty: "naturopathic specialist",
+    experience: "10 years",
+    image: "/images/doctors/dr-reeta-majhi.webp",
     meta: {
-      title: 'Dr. Reeta Majhi - Sanjeevani Kaya Hospital',
+      title: "Dr. Reeta Majhi - Sanjeevani Kaya Hospital",
       description:
-        'Dr. Reeta Majhi is a Naturopathic Doctor at Sanjeevani Kaya Shodan Sansthan, Panipat, Haryana, India.',
+        "Dr. Reeta Majhi is a Naturopathic Doctor at Sanjeevani Kaya Shodan Sansthan, Panipat, Haryana, India.",
       keywords:
-        'Sanjeevani Kaya Hospital doctors, naturopathic specialists, holistic doctors, natural healing experts, naturopathic physician team',
+        "Sanjeevani Kaya Hospital doctors, naturopathic specialists, holistic doctors, natural healing experts, naturopathic physician team",
     },
     description: `<p class="text-lg text-gray-300 leading-relaxed mb-6">
                       Dr. Reeta Majhi is a Naturopathic Doctor at Sanjeevani Kaya Shodan Sansthan, Panipat, Haryana, India.
@@ -253,19 +253,19 @@ const doctors = [
 
                     </ul>`,
   },
-    {
-    id: '5',
-    name: 'Dr. Yogender Mishra',
-    slug: 'yogender-mishra',
-    specialty: 'yogacharya',
-    experience: '10 years',
-    image: '/images/doctors/dr-yogender-mishra.webp',
+  {
+    id: "5",
+    name: "Dr. Yogender Mishra",
+    slug: "yogender-mishra",
+    specialty: "yogacharya",
+    experience: "10 years",
+    image: "/images/doctors/dr-yogender-mishra.webp",
     meta: {
-      title: 'Dr. Yogender Mishra - Sanjeevani Kaya Hospital',
+      title: "Dr. Yogender Mishra - Sanjeevani Kaya Hospital",
       description:
-        'Dr. Yogender Mishra is a highly respected Yogacharya and holistic wellness expert with years of experience in therapeutic yoga, preventive healthcare',
+        "Dr. Yogender Mishra is a highly respected Yogacharya and holistic wellness expert with years of experience in therapeutic yoga, preventive healthcare",
       keywords:
-        'Sanjeevani Kaya Hospital doctors, yogacharya, yogacharya doctors, natural healing experts, acupressure physician team',
+        "Sanjeevani Kaya Hospital doctors, yogacharya, yogacharya doctors, natural healing experts, acupressure physician team",
     },
     description: `<p class="text-lg text-gray-300 leading-relaxed mb-6">
                         Dr. Yogender Mishra is an yogacharya specialist practicing at Sanjeevani Kaya Shodhan Sansthan in
@@ -298,33 +298,25 @@ const doctors = [
                             <i class="fa-solid fa-graduation-cap text-green-500 mt-1"></i>
                             <div>
                                 <span class="font-semibold text-white">Education</span><br>
-                              Master of Physiotherapy (MPT)
-                            </div>
-                        </li>
-
-                        <li class="flex gap-3">
-                            <i class="fa-solid fa-briefcase text-green-500 mt-1"></i>
-                            <div>
-                                <span class="font-semibold text-white">Experience</span><br>
-                               Chief Medical and Health Officer - (CMHO)
+                                M.A. Yoga Acharya
                             </div>
                         </li>
 
                     </ul>`,
   },
-    {
-    id: '6',
-    name: 'Dr. Nitin Dhruv',
-    slug: 'nitin-dhruv',
-    specialty: 'internal medicine',
-    experience: '10 years',
-    image: '/images/doctors/dr-nitin-dhruv.webp',
+  {
+    id: "6",
+    name: "Dr. Nitin Dhruv",
+    slug: "nitin-dhruv",
+    specialty: "internal medicine",
+    experience: "10 years",
+    image: "/images/doctors/dr-nitin-dhruv.webp",
     meta: {
-      title: 'Dr. Nitin Dhruv - Sanjeevani Kaya Hospital',
+      title: "Dr. Nitin Dhruv - Sanjeevani Kaya Hospital",
       description:
-        'Meet the experienced Internal Medicine doctor Dr. Nitin Dhruv at Sanjeevani Kaya Hospital, dedicated to personalized, natural healing through holistic and drug-free treatment approaches.',
+        "Meet the experienced Internal Medicine doctor Dr. Nitin Dhruv at Sanjeevani Kaya Hospital, dedicated to personalized, natural healing through holistic and drug-free treatment approaches.",
       keywords:
-        'Sanjeevani Kaya Hospital doctors, Internal Medicine specialists, holistic doctors, natural healing experts, Internal Medicine physician team',
+        "Sanjeevani Kaya Hospital doctors, Internal Medicine specialists, holistic doctors, natural healing experts, Internal Medicine physician team",
     },
     description: `<p class="text-lg text-gray-300 leading-relaxed mb-6">
                         Dr. Nitin Dhruv, a dedicated practitioner of Evidence-Based Ayurveda since 2018, specializes in Ayurvedic Internal Medicine (Kayachikitsa) and Panchkarma therapies. 
@@ -369,9 +361,9 @@ const doctors = [
 
                     </ul>`,
   },
-]
+];
 
-export { doctors }
+export { doctors };
 
 //    <h1>
 //         <%= doctor.name %>
