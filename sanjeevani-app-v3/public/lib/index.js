@@ -190,7 +190,7 @@ const doctors = [
                             <i class="fa-solid fa-briefcase text-green-500 mt-1"></i>
                             <div>
                                 <span class="font-semibold text-white">Experience</span><br>
-                                 Chief Medical and Health Officer - (CMHO)
+                                 Accupressure Specialist
                             </div>
                         </li>
 

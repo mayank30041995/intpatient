@@ -2,6 +2,18 @@
 <html lang="en">
   <head>
     <%- include('../partials/head') %>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/owl.css" />
+
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
   </head>
 
   <body class="font-[Heebo] text-white bg-black">
@@ -34,15 +46,41 @@
           </p>
         </div>
         <div class="relative max-w-6xl mx-auto px-2 py-4 lg:px-4 lg:py-12">
-          <!-- IMAGE -->
-          <div
-            class="rounded-2xl overflow-hidden shadow-xl border border-white/20"
-          >
-            <img
-              src="/images/treatment/physiotherapist-a.jpeg"
-              alt="Serene Nature Rich Campus at Sanjeevani"
-              class="w-full h-80 object-cover"
-            />
+          <!-- OWL SLIDER -->
+          <div class="owl-carousel therapy-slider w-full mb-8">
+            <div class="group bg-white rounded-xl overflow-hidden shadow-md">
+              <img
+                src="./images/infrastructure/1.webp"
+                fetchpriority="high"
+                class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110 h-full"
+              />
+            </div>
+
+            <div class="group bg-white rounded-xl overflow-hidden shadow-md">
+              <img
+                src="./images/infrastructure/2.webp"
+                class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110 h-full"
+              />
+            </div>
+
+            <div class="group bg-white rounded-xl overflow-hidden shadow-md">
+              <img
+                src="./images/infrastructure/3.webp"
+                class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110 h-full"
+              />
+            </div>
+            <div class="group bg-white rounded-xl overflow-hidden shadow-md">
+              <img
+                src="./images/infrastructure/4.webp"
+                class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110 h-full"
+              />
+            </div>
+            <div class="group bg-white rounded-xl overflow-hidden shadow-md">
+              <img
+                src="./images/infrastructure/5.webp"
+                class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110 h-full"
+              />
+            </div>
           </div>
 
           <!-- MAIN CONTENT -->
@@ -194,15 +232,44 @@
             </li>
           </ul>
         </div>
+
+        <!-- Video -->
+        <div
+          class="relative rounded-2xl overflow-hidden shadow-xl border border-white/20 cursor-pointer group"
+          onclick="loadVideo(this)"
+          data-video="Tb3MXqW4w_0"
+        >
+          <!-- Thumbnail -->
+          <img
+            src="https://img.youtube.com/vi/Tb3MXqW4w_0/maxresdefault.jpg"
+            class="w-full h-80 object-cover"
+            alt="Video Thumbnail"
+            loading="lazy"
+          />
+
+          <!-- Play Button -->
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div
+              class="bg-gray/80 rounded-full p-4 group-hover:scale-110 transition"
+            >
+              ▶
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- ================= FOOTER ================= -->
     <%- include('../partials/footer') %>
 
-    <!-- Scripts -->
+    <!-- jQuery first -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Your custom JS -->
+    <script src="js/custom.js"></script>
 
     <script>
       $(".therapy-slider").owlCarousel({
@@ -215,6 +282,21 @@
           1024: { items: 3 },
         },
       });
+    </script>
+
+    <script>
+      function loadVideo(el) {
+        const id = el.dataset.video;
+        el.innerHTML = `
+    <iframe
+      class="w-full h-80"
+      src="https://www.youtube.com/embed/${id}?autoplay=1"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen>
+    </iframe>
+  `;
+      }
     </script>
   </body>
 </html>
