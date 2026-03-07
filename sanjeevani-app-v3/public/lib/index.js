@@ -120,7 +120,7 @@ const doctors = [
                             <i class="fa-solid fa-graduation-cap text-green-500 mt-1"></i>
                             <div>
                                 <span class="font-semibold text-white">Education</span><br>
-                                 Chief Medical and Health Officer
+                                  MPT (Master of Physiotherapy)              
                             </div>
                         </li>
 
