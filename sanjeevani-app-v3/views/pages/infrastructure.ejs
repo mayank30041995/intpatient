@@ -21,68 +21,82 @@
     <%- include('../partials/header') %>
 
     <!-- ================= HERO ================= -->
-    <section
-      class="relative min-h-screen flex items-center justify-center pt-28 pb-16"
-    >
-      <div class="absolute inset-0 -z-10">
-        <img
-          src="/images/background/slider-image-2.webp"
-          class="w-full h-full object-cover"
-          fetchpriority="high"
-        />
-        <div class="absolute inset-0 bg-black/70"></div>
-      </div>
+    <section class="relative pt-28 pb-16">
+      <!-- Background Image -->
+      <img
+        src="/images/background/slider-image-2.webp"
+        class="absolute inset-0 w-full h-full object-cover -z-10"
+        fetchpriority="high"
+        alt="Background"
+      />
+      <!-- Dark Overlay -->
+      <div class="absolute inset-0 bg-black/70 -z-10"></div>
 
-      <div class="max-w-7xl mx-auto px-4 space-y-10">
+      <div class="max-w-7xl mx-auto px-4 space-y-10 relative z-10">
         <!-- HERO CARD -->
         <div
           class="relative max-w-6xl mx-auto px-6 py-8 lg:px-8 lg:py-12 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 text-center text-white shadow-2xl"
         >
-          <h1 class="text-lg lg:text-5xl font-bold mb-4">Infrastructure</h1>
+          <h1 class="text-2xl lg:text-5xl font-bold mb-4">Infrastructure</h1>
           <p class="text-md lg:text-lg text-gray-200">
             Sanjeevani Kaya Shodhan Sansthan is thoughtfully designed to support
             natural healing, comfort, and inner calm through a perfect blend of
             nature and modern wellness facilities.
           </p>
         </div>
-        <div class="relative max-w-6xl mx-auto px-2 py-4 lg:px-4 lg:py-12">
-          <!-- OWL SLIDER -->
-          <div class="owl-carousel therapy-slider w-full mb-8">
-            <div class="group bg-white rounded-xl overflow-hidden shadow-md">
-              <img
-                src="./images/infrastructure/1.webp"
-                fetchpriority="high"
-                class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110 h-full"
-              />
-            </div>
 
-            <div class="group bg-white rounded-xl overflow-hidden shadow-md">
-              <img
-                src="./images/infrastructure/2.webp"
-                class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110 h-full"
-              />
-            </div>
-
-            <div class="group bg-white rounded-xl overflow-hidden shadow-md">
-              <img
-                src="./images/infrastructure/3.webp"
-                class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110 h-full"
-              />
-            </div>
-            <div class="group bg-white rounded-xl overflow-hidden shadow-md">
-              <img
-                src="./images/infrastructure/4.webp"
-                class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110 h-full"
-              />
-            </div>
-            <div class="group bg-white rounded-xl overflow-hidden shadow-md">
-              <img
-                src="./images/infrastructure/5.webp"
-                class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110 h-full"
-              />
-            </div>
+        <!-- OWL CAROUSEL -->
+        <div class="owl-carousel therapy-slider w-full mb-8">
+          <!-- Example Card -->
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-md aspect-w-16 aspect-h-9"
+          >
+            <img
+              src="./images/infrastructure/1.webp"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              alt="Infrastructure Image 1"
+            />
           </div>
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-md aspect-w-16 aspect-h-9"
+          >
+            <img
+              src="./images/infrastructure/2.webp"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              alt="Infrastructure Image 2"
+            />
+          </div>
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-md aspect-w-16 aspect-h-9"
+          >
+            <img
+              src="./images/infrastructure/3.webp"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              alt="Infrastructure Image 3"
+            />
+          </div>
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-md aspect-w-16 aspect-h-9"
+          >
+            <img
+              src="./images/infrastructure/4.webp"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              alt="Infrastructure Image 4"
+            />
+          </div>
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-md aspect-w-16 aspect-h-9"
+          >
+            <img
+              src="./images/infrastructure/5.webp"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              alt="Infrastructure Image 5"
+            />
+          </div>
+        </div>
 
+        <!-- MAIN CONTENT ... -->
+        <div class="relative max-w-6xl mx-auto px-2 py-4 lg:px-4 lg:py-12">
           <!-- MAIN CONTENT -->
           <h2 class="text-lg md:text-3xl font-bold py-8">
             Serene & Nature-Rich Campus
@@ -233,24 +247,21 @@
           </ul>
         </div>
 
-        <!-- Video -->
+        <!-- VIDEO -->
         <div
           class="relative rounded-2xl overflow-hidden shadow-xl border border-white/20 cursor-pointer group"
           onclick="loadVideo(this)"
           data-video="Tb3MXqW4w_0"
         >
-          <!-- Thumbnail -->
           <img
             src="https://img.youtube.com/vi/Tb3MXqW4w_0/maxresdefault.jpg"
             class="w-full h-80 object-cover"
             alt="Video Thumbnail"
             loading="lazy"
           />
-
-          <!-- Play Button -->
           <div class="absolute inset-0 flex items-center justify-center">
             <div
-              class="bg-gray/80 rounded-full p-4 group-hover:scale-110 transition"
+              class="bg-gray-800 rounded-full p-4 group-hover:scale-110 transition"
             >
               ▶
             </div>
@@ -261,28 +272,6 @@
 
     <!-- ================= FOOTER ================= -->
     <%- include('../partials/footer') %>
-
-    <!-- jQuery first -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <!-- Owl Carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <!-- Your custom JS -->
-    <script src="js/custom.js"></script>
-
-    <script>
-      $(".therapy-slider").owlCarousel({
-        loop: true,
-        margin: 20,
-        autoplay: true,
-        responsive: {
-          0: { items: 1 },
-          640: { items: 2 },
-          1024: { items: 3 },
-        },
-      });
-    </script>
 
     <script>
       function loadVideo(el) {
@@ -298,5 +287,17 @@
   `;
       }
     </script>
+
+    <!-- jQuery first -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Your custom JS -->
+    <script src="js/custom.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
   </body>
 </html>
