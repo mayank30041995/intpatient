@@ -19,7 +19,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+
+    <link href="css/form.css" rel="stylesheet" type="text/css" />
+    <script src="js/validation.js"></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
+
     <script>
       function openVisaForm() {
         document.getElementById("visaModal").classList.remove("hidden");
@@ -317,10 +322,12 @@
       <div class="grid md:grid-cols-5 gap-4">
         <!-- Cardiology -->
         <div
-          class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm flex flex-col justify-between"
+          class="rounded-3xl border border-slate-200 bg-white p-5 shadow-md flex flex-col justify-between"
         >
           <div>
-            <p class="font-extrabold text-slate-900 flex items-center gap-2">
+            <p
+              class="font-extrabold text-lg text-slate-900 flex items-center gap-2"
+            >
               Cardiac Science <i class="fas fa-heartbeat text-red-500"></i>
             </p>
             <p class="mt-2 text-sm text-slate-600">
@@ -349,10 +356,12 @@
 
         <!-- Neurology -->
         <div
-          class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm flex flex-col justify-between"
+          class="rounded-3xl border border-slate-200 bg-white p-5 shadow-md flex flex-col justify-between"
         >
           <div>
-            <p class="font-extrabold text-slate-900 flex items-center gap-2">
+            <p
+              class="font-extrabold text-lg text-slate-900 flex items-center gap-2"
+            >
               Neurology <i class="fas fa-brain text-purple-500"></i>
             </p>
             <p class="mt-2 text-sm text-slate-600">
@@ -381,10 +390,12 @@
 
         <!-- Gastroenterology -->
         <div
-          class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm flex flex-col justify-between"
+          class="rounded-3xl border border-slate-200 bg-white p-5 shadow-md flex flex-col justify-between"
         >
           <div>
-            <p class="font-extrabold text-slate-900 flex items-center gap-2">
+            <p
+              class="font-extrabold text-lg text-slate-900 flex items-center gap-2"
+            >
               Gastroenterology <i class="fas fa-stomach text-yellow-600"></i>
             </p>
             <p class="mt-2 text-sm text-slate-600">
@@ -413,10 +424,12 @@
 
         <!-- Orthopaedics -->
         <div
-          class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm flex flex-col justify-between"
+          class="rounded-3xl border border-slate-200 bg-white p-5 shadow-md flex flex-col justify-between"
         >
           <div>
-            <p class="font-extrabold text-slate-900 flex items-center gap-2">
+            <p
+              class="font-extrabold text-lg text-slate-900 flex items-center gap-2"
+            >
               Orthopaedics <i class="fas fa-bone text-gray-700"></i>
             </p>
             <p class="mt-2 text-sm text-slate-600">
@@ -445,10 +458,12 @@
 
         <!-- Oncology -->
         <div
-          class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm flex flex-col justify-between"
+          class="rounded-3xl border border-slate-200 bg-white p-5 shadow-md flex flex-col justify-between"
         >
           <div>
-            <p class="font-extrabold text-slate-900 flex items-center gap-2">
+            <p
+              class="font-extrabold text-lg text-slate-900 flex items-center gap-2"
+            >
               Oncology <i class="fas fa-ribbon text-pink-500"></i>
             </p>
             <p class="mt-2 text-sm text-slate-600">
@@ -534,7 +549,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Imtiaz Ghani</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Imtiaz Ghani
+              </p>
               <p class="text-sm text-slate-600">Spine Surgery</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
 
@@ -575,7 +592,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Sajan K Hegde</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Sajan K Hegde
+              </p>
               <p class="text-sm text-slate-600">Spine Surgery</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -637,7 +656,7 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
                 Dr. Bhaswar Bhattacherjee
               </p>
               <p class="text-sm text-slate-600">Cardiac Sciences</p>
@@ -680,7 +699,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Ramesh B</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Ramesh B
+              </p>
               <p class="text-sm text-slate-600">Cardiac Sciences</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -721,7 +742,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Robert Mao</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Robert Mao
+              </p>
               <p class="text-sm text-slate-600">Cardiac Sciences</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -762,7 +785,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Yusuf M M</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Yusuf M M
+              </p>
               <p class="text-sm text-slate-600">Cardiac Sciences</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -825,7 +850,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Babu Manohar</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Babu Manohar
+              </p>
               <p class="text-sm text-slate-600">ENT Specialist</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -866,7 +893,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Balaji R</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Balaji R
+              </p>
               <p class="text-sm text-slate-600">ENT Specialist</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -907,7 +936,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Raja Mahesh</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Raja Mahesh
+              </p>
               <p class="text-sm text-slate-600">ENT Specialist</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -973,7 +1004,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Hariharan M</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Hariharan M
+              </p>
               <p class="text-sm text-slate-600">Gastroenterology</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -1014,7 +1047,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Revathi S Rajan</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Revathi S Rajan
+              </p>
               <p class="text-sm text-slate-600">Gastroenterology</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -1055,7 +1090,7 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
                 Dr. Balamurugan Srinivasan
               </p>
               <p class="text-sm text-slate-600">Gastroenterology</p>
@@ -1122,7 +1157,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Prithviraj T</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Prithviraj T
+              </p>
               <p class="text-sm text-slate-600">General Surgery</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -1188,7 +1225,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Arshad Akeel</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Arshad Akeel
+              </p>
               <p class="text-sm text-slate-600">Internal Medicine</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -1229,7 +1268,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Benin Rajesh R A</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Benin Rajesh R A
+              </p>
               <p class="text-sm text-slate-600">Internal Medicine</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -1270,7 +1311,7 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
                 Dr. Bhaswar Bhattacherjee
               </p>
               <p class="text-sm text-slate-600">Internal Medicine</p>
@@ -1313,7 +1354,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Dhanraj K</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Dhanraj K
+              </p>
               <p class="text-sm text-slate-600">Internal Medicine</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -1354,7 +1397,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Jebin Roger S</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Jebin Roger S
+              </p>
               <p class="text-sm text-slate-600">Internal Medicine</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -1395,7 +1440,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Shoukat Ali Abbas</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Shoukat Ali Abbas
+              </p>
               <p class="text-sm text-slate-600">Internal Medicine</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -1436,7 +1483,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Siva Kumar R</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Siva Kumar R
+              </p>
               <p class="text-sm text-slate-600">Internal Medicine</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -1477,7 +1526,7 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
                 Dr. Srimathy Venkatesh
               </p>
               <p class="text-sm text-slate-600">Internal Medicine</p>
@@ -1520,7 +1569,7 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
                 Dr. Vasanthi Thiyagarajan
               </p>
               <p class="text-sm text-slate-600">Internal Medicine</p>
@@ -1587,7 +1636,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Subba Rao B</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Subba Rao B
+              </p>
               <p class="text-sm text-slate-600">Nephrology</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -1651,7 +1702,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Siddhartha Ghosh</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Siddhartha Ghosh
+              </p>
               <p class="text-sm text-slate-600">Neurosurgery</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -1692,7 +1745,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Balaji Srinivas S</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Balaji Srinivas S
+              </p>
               <p class="text-sm text-slate-600">Neurosurgery</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -1733,7 +1788,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Murugan L</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Murugan L
+              </p>
               <p class="text-sm text-slate-600">Neurosurgery</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -1774,7 +1831,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Panneer A</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Panneer A
+              </p>
               <p class="text-sm text-slate-600">Neurosurgery</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -1815,7 +1874,7 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
                 Dr. Srinivasan Paramasivam
               </p>
               <p class="text-sm text-slate-600">Neurosurgery</p>
@@ -1858,7 +1917,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Arul Selvan</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Arul Selvan
+              </p>
               <p class="text-sm text-slate-600">Neurosurgery</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -1923,7 +1984,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Asna Zehra Naqvi</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Asna Zehra Naqvi
+              </p>
               <p class="text-sm text-slate-600">Obstetrics & Gynaecology</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -1964,7 +2027,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Janani Iyer</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Janani Iyer
+              </p>
               <p class="text-sm text-slate-600">Obstetrics & Gynaecology</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -2005,7 +2070,7 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
                 Dr. Meenakshi Sundaram
               </p>
               <p class="text-sm text-slate-600">Obstetrics & Gynaecology</p>
@@ -2048,7 +2113,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Sumana Manohar</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Sumana Manohar
+              </p>
               <p class="text-sm text-slate-600">Obstetrics & Gynaecology</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -2089,7 +2156,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Vishnu Vandana</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Vishnu Vandana
+              </p>
               <p class="text-sm text-slate-600">Obstetrics & Gynaecology</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -2155,7 +2224,7 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
                 Dr. R Srinath Bharadwaj
               </p>
               <p class="text-sm text-slate-600">Oncology</p>
@@ -2198,7 +2267,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Ajit Pai</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Ajit Pai
+              </p>
               <p class="text-sm text-slate-600">Oncology</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -2239,7 +2310,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. T Raja</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. T Raja
+              </p>
               <p class="text-sm text-slate-600">Oncology</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -2280,7 +2353,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Sridhar P. S</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Sridhar P. S
+              </p>
               <p class="text-sm text-slate-600">Oncology</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -2345,7 +2420,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Nitish Bhan</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Nitish Bhan
+              </p>
               <p class="text-sm text-slate-600">Orthopaedics</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -2386,7 +2463,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Arun Kannan</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Arun Kannan
+              </p>
               <p class="text-sm text-slate-600">Orthopaedics</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -2427,7 +2506,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Madan Mohan Reddy</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Madan Mohan Reddy
+              </p>
               <p class="text-sm text-slate-600">Orthopaedics</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -2468,7 +2549,7 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
                 Dr. Muralidhar Alavandi
               </p>
               <p class="text-sm text-slate-600">Orthopaedics</p>
@@ -2511,7 +2592,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Manivannan</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Manivannan
+              </p>
               <p class="text-sm text-slate-600">Orthopaedics</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -2573,7 +2656,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Vinod P Joseph</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Vinod P Joseph
+              </p>
               <p class="text-sm text-slate-600">Radiology</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -2635,7 +2720,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Padmanabhan R</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Padmanabhan R
+              </p>
               <p class="text-sm text-slate-600">Rheumatology</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -2675,7 +2762,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. V Krishnamurthy</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. V Krishnamurthy
+              </p>
               <p class="text-sm text-slate-600">Rheumatology</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -2737,7 +2826,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Meera Raghavan</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Meera Raghavan
+              </p>
               <p class="text-sm text-slate-600">Urology</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -2777,7 +2868,9 @@
                   class="w-full h-full object-cover"
                 />
               </div>
-              <p class="mt-3 font-bold text-slate-900">Dr. Ragavan N</p>
+              <p class="mt-3 font-bold text-slate-900 text-[15px]">
+                Dr. Ragavan N
+              </p>
               <p class="text-sm text-slate-600">Urology</p>
               <p class="text-xs text-slate-500 mt-1">Apollo Chennai</p>
               <div class="flex flex-col gap-2 mt-3">
@@ -2811,45 +2904,313 @@
 
     <!-- appointment form -->
     <section class="border-t border-slate-200 bg-white">
-      <div class="max-w-3xl mx-auto px-4 py-12">
-        <h2 class="text-3xl font-bold mb-5 text-slate-950">
+      <div class="max-w-5xl mx-auto px-4 py-12">
+        <h2 class="text-5xl font-bold mb-5 text-slate-950">
           Need appointment help?
         </h2>
-        <div class="bg-white border rounded-3xl shadow-xl p-6">
-          <form id="form" class="grid gap-4">
+        <div class="bg-white border rounded-3xl shadow-xl p-1">
+          <form
+            action="https://forms.zohopublic.in/treatmenttraveller/form/ApolloHospitalChannai/formperma/sJlXCac3mYOUh-xWmNCQemc8oovimRIqzVvgthV5GZc/htmlRecords/submit"
+            name="form"
+            method="POST"
+            onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();'
+            accept-charset="UTF-8"
+            enctype="multipart/form-data"
+            id="form"
+          >
             <input
-              class="border rounded-xl px-4 py-3"
-              placeholder="Full Name"
-            />
-            <div class="grid md:grid-cols-2 gap-4">
-              <input
-                class="border rounded-xl px-4 py-3"
-                placeholder="Country"
-                value="Bangladesh"
-              />
-              <input
-                class="border rounded-xl px-4 py-3"
-                placeholder="WhatsApp Number"
-              />
+              type="hidden"
+              name="zf_referrer_name"
+              value=""
+            /><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+            <input
+              type="hidden"
+              name="zf_redirect_url"
+              value=""
+            /><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+            <input
+              type="hidden"
+              name="zc_gad"
+              value=""
+            /><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+            <div class="zf-templateWrapper">
+              <ul class="zf-tempHeadBdr">
+                <li class="zf-tempHeadContBdr">
+                  <h2 class="zf-frmTitle">
+                    <em>Apollo Hospital Channai</em>
+                  </h2>
+                  <p class="zf-frmDesc"></p>
+                  <div class="zf-clearBoth"></div>
+                </li>
+              </ul>
+              <div class="zf-subContWrap zf-topAlign">
+                <ul>
+                  <div class="zf-tempFrmWrapper zf-name zf-namelarge">
+                    <label class="zf-labelName">
+                      Name
+                      <em class="zf-important"> *</em>
+                    </label>
+                    <div class="zf-tempContDiv zf-twoType">
+                      <div class="zf-nameWrapper">
+                        <span>
+                          <input
+                            type="text"
+                            maxlength="255"
+                            name="Name_First"
+                            fieldType="7"
+                            placeholder=""
+                          />
+                          <label>First Name </label>
+                        </span>
+                        <span>
+                          <input
+                            type="text"
+                            maxlength="255"
+                            name="Name_Last"
+                            fieldType="7"
+                            placeholder=""
+                          />
+                          <label>Last Name </label>
+                        </span>
+                        <div class="zf-clearBoth"></div>
+                      </div>
+                      <p
+                        id="Name_error"
+                        class="zf-errorMessage"
+                        style="display: none"
+                      >
+                        Invalid value
+                      </p>
+                    </div>
+                    <div class="zf-clearBoth"></div>
+                  </div>
+                  <div class="zf-tempFrmWrapper zf- zf-large">
+                    <label class="zf-labelName">
+                      Phone
+                      <em class="zf-important"> *</em>
+                    </label>
+                    <div class="zf-tempContDiv zf-phonefld">
+                      <div class="zf-phwrapper zf-phNumber">
+                        <span>
+                          <input
+                            type="text"
+                            compname="PhoneNumber"
+                            name="PhoneNumber_countrycode"
+                            maxlength="20"
+                            checktype="c7"
+                            value=""
+                            phoneFormat="1"
+                            isCountryCodeEnabled="false"
+                            fieldType="11"
+                            id="international_PhoneNumber_countrycode"
+                            valType="number"
+                            phoneFormatType="1"
+                            placeholder=""
+                          />
+                          <label>Number</label>
+                        </span>
+                        <div class="zf-clearBoth"></div>
+                      </div>
+                      <p
+                        id="PhoneNumber_error"
+                        class="zf-errorMessage"
+                        style="display: none"
+                      >
+                        Invalid value
+                      </p>
+                    </div>
+                    <div class="zf-clearBoth"></div>
+                  </div>
+                  <div class="zf-tempFrmWrapper zf-large">
+                    <label class="zf-labelName"> Email </label>
+                    <div class="zf-tempContDiv">
+                      <span>
+                        <input
+                          type="text"
+                          name="Email"
+                          checktype="c5"
+                          value=""
+                          maxlength="255"
+                          fieldType="9"
+                          placeholder=""
+                        />
+                      </span>
+                      <p
+                        id="Email_error"
+                        class="zf-errorMessage"
+                        style="display: none"
+                      >
+                        Invalid value
+                      </p>
+                    </div>
+                    <div class="zf-clearBoth"></div>
+                  </div>
+                  <div class="zf-tempFrmWrapper">
+                    <label class="zf-labelName"> File Upload </label>
+                    <div class="zf-tempContDiv">
+                      <input type="file" name="FileUpload" checktype="c1" />
+                      <p
+                        id="FileUpload_error"
+                        class="zf-errorMessage"
+                        style="display: none"
+                      >
+                        Choose any file for this field.
+                      </p>
+                    </div>
+                    <div class="zf-clearBoth"></div>
+                  </div>
+                  <div>
+                    <!-- <label class="zf-labelName"> CityAddress </label> -->
+                    <div class="zf-tempContDiv">
+                      <span>
+                        <input
+                          type="hidden"
+                          name="SingleLine"
+                          checktype="c1"
+                          value="CityAddress"
+                          maxlength="255"
+                          fieldType="1"
+                          placeholder="CityAddress"
+                        />
+                      </span>
+                      <p
+                        id="SingleLine_error"
+                        class="zf-errorMessage"
+                        style="display: none"
+                      >
+                        Invalid value
+                      </p>
+                    </div>
+                    <div class="zf-clearBoth"></div>
+                  </div>
+                  <div>
+                    <!-- <label class="zf-labelName"> CountryAddress </label> -->
+                    <div class="zf-tempContDiv">
+                      <span>
+                        <input
+                          type="hidden"
+                          name="SingleLine1"
+                          checktype="c1"
+                          value="CountryAddress"
+                          maxlength="255"
+                          fieldType="1"
+                          placeholder="CountryAddress"
+                        />
+                      </span>
+                      <p
+                        id="SingleLine1_error"
+                        class="zf-errorMessage"
+                        style="display: none"
+                      >
+                        Invalid value
+                      </p>
+                    </div>
+                    <div class="zf-clearBoth"></div>
+                  </div>
+                  <div>
+                    <!-- <label class="zf-labhiddenelName"> CityLatLong </label> -->
+                    <div class="zf-tempContDiv">
+                      <span>
+                        <input
+                          type="hidden"
+                          name="SingleLine2"
+                          checktype="c1"
+                          value=""
+                          maxlength="255"
+                          fieldType="1"
+                          placeholder=""
+                        />
+                      </span>
+                      <p
+                        id="SingleLine2_error"
+                        class="zf-errorMessage"
+                        style="display: none"
+                      >
+                        Invalid value
+                      </p>
+                    </div>
+                    <div class="zf-clearBoth"></div>
+                  </div>
+                  <div>
+                    <!-- <label class="zf-labelName"> Region </label> -->
+                    <div class="zf-tempContDiv">
+                      <span>
+                        <input
+                          type="hidden"
+                          name="SingleLine3"
+                          checktype="c1"
+                          value=""
+                          maxlength="255"
+                          fieldType="1"
+                          placeholder=""
+                        />
+                      </span>
+                      <p
+                        id="SingleLine3_error"
+                        class="zf-errorMessage"
+                        style="display: none"
+                      >
+                        Invalid value
+                      </p>
+                    </div>
+                    <div class="zf-clearBoth"></div>
+                  </div>
+                  <div>
+                    <!-- <label class="zf-labelName"> userIP </label> -->
+                    <div class="zf-tempContDiv">
+                      <span>
+                        <input
+                          type="hidden"
+                          name="SingleLine4"
+                          checktype="c1"
+                          value=""
+                          maxlength="255"
+                          fieldType="1"
+                          placeholder=""
+                        />
+                      </span>
+                      <p
+                        id="SingleLine4_error"
+                        class="zf-errorMessage"
+                        style="display: none"
+                      >
+                        Invalid value
+                      </p>
+                    </div>
+                    <div class="zf-clearBoth"></div>
+                  </div>
+                  <div>
+                    <!-- <label class="zf-labelName"> mapLocationUrl </label> -->
+                    <div class="zf-tempContDiv">
+                      <span>
+                        <input
+                          type="hidden"
+                          name="SingleLine6"
+                          checktype="c1"
+                          value="mapLocationUrl"
+                          maxlength="255"
+                          fieldType="1"
+                          placeholder="mapLocationUrl"
+                        />
+                      </span>
+                      <p
+                        id="SingleLine6_error"
+                        class="zf-errorMessage"
+                        style="display: none"
+                      >
+                        Invalid value
+                      </p>
+                    </div>
+                    <div class="zf-clearBoth"></div>
+                  </div>
+                </ul>
+              </div>
+              <ul>
+                <li class="zf-fmFooter">
+                  <button class="zf-submitColor">Submit</button>
+                </li>
+              </ul>
             </div>
-            <select class="border rounded-xl px-4 py-3">
-              <option>Preferred Specialty</option>
-              <option>Cardiology</option>
-              <option>Neurology</option>
-              <option>Gastroenterology</option>
-              <option>Orthopaedics</option>
-              <option>Oncology</option>
-            </select>
-            <textarea
-              class="border rounded-xl px-4 py-3"
-              placeholder="Doctor name / brief details"
-            ></textarea>
-            <button
-              class="font-bold py-3 rounded-xl text-white"
-              style="background: #3567b0"
-            >
-              Submit
-            </button>
           </form>
         </div>
       </div>
@@ -3095,5 +3456,105 @@
         trackConversion();
       }, 30000);
     </script>
+
+    <!-- GEO + CHAT SCRIPT -->
+    <script defer>
+      function ipLookUp() {
+        var xhttp = new XMLHttpRequest();
+
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            var response = JSON.parse(xhttp.response);
+            console.log("location response", response);
+
+            window.ttLocation = response.country;
+
+            /* -------- SET ZOHO FORM FIELDS -------- */
+
+            const city = response.city || "";
+            const country = response.country || "";
+            const region = response.region || "";
+            const latlong = response.cityLatLong || "";
+            const ip = response.userIP || "";
+
+            const cityField = document.querySelector('[name="SingleLine"]');
+            const countryField = document.querySelector('[name="SingleLine1"]');
+            const latLongField = document.querySelector('[name="SingleLine2"]');
+            const regionField = document.querySelector('[name="SingleLine3"]');
+            const ipField = document.querySelector('[name="SingleLine4"]');
+            const mapLocationUrl = document.querySelector(
+              '[name="SingleLine6"]',
+            );
+
+            if (cityField) cityField.value = city;
+            if (countryField) countryField.value = country;
+            if (latLongField) latLongField.value = latlong;
+            if (regionField) regionField.value = region;
+            if (ipField) ipField.value = ip;
+            if (mapLocationUrl && latlong) {
+              mapLocationUrl.value = "https://www.google.com/maps?q=" + latlong;
+            }
+            /* -------- COUNTRY CHECK -------- */
+
+            if (response.country === "IN") {
+              document.title = "Page not found";
+              setVisible(".err", true);
+              setVisible("#loader", false);
+              setVisible("#main", false);
+
+              if (window.$zoho && $zoho.salesiq) {
+                $zoho.salesiq.floatwindow.visible("show");
+                $zoho.salesiq.chat.start();
+              }
+            } else {
+              setVisible("#main", true);
+              setVisible("#loader", false);
+              initChat();
+            }
+          }
+        };
+
+        xhttp.open(
+          "GET",
+          "https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation",
+          true,
+        );
+
+        xhttp.send();
+      }
+
+      function setVisible(selector, visible) {
+        const el = document.querySelector(selector);
+        if (el) {
+          el.classList.toggle("hidden", !visible);
+        }
+      }
+
+      function initChat() {
+        if (window.ttLocation !== "IN") {
+          window.__lc = window.__lc || {};
+          window.__lc.license = 7595311;
+
+          (function () {
+            var lc = document.createElement("script");
+            lc.type = "text/javascript";
+            lc.async = true;
+            lc.src =
+              (document.location.protocol === "https:"
+                ? "https://"
+                : "http://") + "cdn.livechatinc.com/tracking.js";
+            document.head.appendChild(lc);
+          })();
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        setVisible("#main", true);
+        setVisible("#loader", false);
+
+        ipLookUp();
+      });
+    </script>
+    <!-- End of GEO + CHAT SCRIPT -->
   </body>
 </html>
