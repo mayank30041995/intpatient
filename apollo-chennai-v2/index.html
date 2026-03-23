@@ -20,7 +20,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
 
-    <link href="css/form.css" rel="stylesheet" type="text/css" />
     <script src="js/validation.js"></script>
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -2947,11 +2946,13 @@
                 name="zc_gad"
                 value=""
               /><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
-              <div class="zf-templateWrapper">
+              <div class="zf-templateWrapper space-y-6 p-4">
                 <ul class="zf-tempHeadBdr">
                   <li class="zf-tempHeadContBdr">
-                    <h2 class="zf-frmTitle">
-                      <em>Apollo Hospital Chennai</em>
+                    <h2 class="zf-frmTitle text-center">
+                      <em class="text-4xl font-semibold text-gray-800"
+                        >Apollo Hospital Chennai</em
+                      >
                     </h2>
                     <p class="zf-frmDesc"></p>
                     <div class="zf-clearBoth"></div>
@@ -2960,13 +2961,17 @@
                 <div class="zf-subContWrap zf-topAlign">
                   <ul>
                     <div class="zf-tempFrmWrapper zf-name zf-namelarge">
-                      <label class="zf-labelName">
+                      <!-- <label
+                        class="zf-labelName block text-sm font-medium text-gray-700"
+                      >
                         Name
                         <em class="zf-important"> *</em>
-                      </label>
+                      </label> -->
                       <div class="zf-tempContDiv zf-twoType">
                         <div class="zf-nameWrapper">
-                          <span>
+                          <span class="space-y-2">
+                            <label>First Name* </label>
+
                             <input
                               type="text"
                               maxlength="255"
@@ -2974,18 +2979,20 @@
                               fieldType="7"
                               placeholder=""
                               required
+                              class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
                             />
-                            <label>First Name </label>
                           </span>
-                          <span>
+                          <span class="space-y-2">
+                            <label>Last Name* </label>
+
                             <input
                               type="text"
                               maxlength="255"
                               name="Name_Last"
                               fieldType="7"
                               placeholder=""
+                              class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
                             />
-                            <label>Last Name </label>
                           </span>
                           <div class="zf-clearBoth"></div>
                         </div>
@@ -3006,7 +3013,7 @@
                       </label>
                       <div class="zf-tempContDiv zf-phonefld">
                         <div class="zf-phwrapper zf-phNumber">
-                          <span>
+                          <span class="space-y-2 my-2">
                             <input
                               type="text"
                               compname="PhoneNumber"
@@ -3022,8 +3029,9 @@
                               phoneFormatType="1"
                               placeholder=""
                               required
+                              class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
                             />
-                            <label>Number</label>
+                            <!-- <label>Number</label> -->
                           </span>
                           <div class="zf-clearBoth"></div>
                         </div>
@@ -3050,6 +3058,7 @@
                             fieldType="9"
                             placeholder=""
                             required
+                            class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
                           />
                         </span>
                         <p
@@ -3224,7 +3233,12 @@
                 </div>
                 <ul>
                   <li class="zf-fmFooter">
-                    <button class="zf-submitColor">Submit</button>
+                    <button
+                      class="zf-submitColor text-white px-6 py-3 rounded-2xl font-extrabold shadow-lg"
+                      style="background: #3567b0"
+                    >
+                      Submit
+                    </button>
                   </li>
                 </ul>
               </div>
