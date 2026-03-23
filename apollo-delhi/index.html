@@ -49,6 +49,13 @@
     <!-- Robots: not allow indexing and following -->
     <meta name="robots" content="noindex, nofollow" />
 
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link
       rel="icon"
       type="image/x-icon"
@@ -108,8 +115,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-
-    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body>
@@ -156,7 +161,7 @@
 
             <!-- Navigation / CTA -->
             <nav
-              class="flex flex-wrap gap-2 justify-start lg:justify-end mt-3 lg:mt-0"
+              class="hidden md:flex flex-wrap gap-2 justify-start lg:justify-end mt-3 lg:mt-0"
             >
               <a
                 href="#specialties"
@@ -201,13 +206,13 @@
               </div>
 
               <h2
-                class="text-3xl md:text-4xl font-extrabold leading-tight mb-3 text-[#2582a1] tracking-wider"
+                class="text-2xl md:text-3xl md:text-4xl font-extrabold leading-tight mb-3 text-[#2582a1] tracking-wider"
               >
                 Get guidance from the right specialist team — with clear next
                 steps
               </h2>
 
-              <p class="text-slate-600 mb-4 tracking-wide">
+              <p class="text-slate-600 mb-4 tracking-wider leading-relaxed">
                 We help international patients connect with the appropriate
                 department for consultation, medical opinion, and treatment
                 planning. You can start with a simple message — reports are
@@ -403,7 +408,7 @@
       <section id="opinion" class="max-w-7xl mx-auto px-4 py-14">
         <div class="grid lg:grid-cols-2 gap-10 items-center">
           <div>
-            <h2 class="text-3xl font-black text-[#2582a1]">
+            <h2 class="text-2xl md:text-3xl font-black text-[#2582a1]">
               Get Specialist Opinion & Estimate
             </h2>
             <p class="mt-4 text-slate-600">
@@ -447,7 +452,7 @@
       <!-- Why Section -->
       <div class="bg-slate-50 border-y border-slate-200 py-8">
         <section class="max-w-7xl mx-auto px-4">
-          <h3 class="text-2xl font-bold mb-3 text-[#2582a1]">
+          <h3 class="text-2xl md:text-3xl font-bold mb-3 text-[#2582a1]">
             Why patients choose Apollo Hospitals, Delhi
           </h3>
 
@@ -487,7 +492,7 @@
       </div>
 
       <section class="max-w-7xl mx-auto px-4 py-10" id="specialties">
-        <h3 class="text-2xl font-bold mb-3 text-[#2582a1]">
+        <h3 class="text-2xl md:text-3xl font-bold mb-3 text-[#2582a1]">
           Specialties patients commonly enquire about
         </h3>
         <p class="text-slate-600 mb-6">
@@ -622,7 +627,7 @@
       </section>
 
       <section class="max-w-7xl mx-auto px-4 py-10" id="doctors">
-        <h3 class="text-2xl font-bold mb-3 text-[#2582a1]">
+        <h3 class="text-2xl md:text-3xl font-bold mb-3 text-[#2582a1]">
           Doctors by department
         </h3>
 
@@ -1980,7 +1985,7 @@
 
       <div class="bg-slate-50 border-y border-slate-200 py-10">
         <section class="max-w-7xl mx-auto px-4" id="international">
-          <h3 class="text-2xl font-bold mb-3 text-[#2582a1]">
+          <h3 class="text-2xl md:text-3xl font-bold mb-3 text-[#2582a1]">
             International patient support
           </h3>
           <p class="text-slate-600 mb-6">
@@ -2013,7 +2018,7 @@
       </div>
 
       <section class="max-w-7xl mx-auto px-4 py-10" id="lead-form">
-        <h3 class="text-2xl font-bold mb-3 text-[#2582a1]">
+        <h3 class="text-2xl md:text-3xl font-bold mb-3 text-[#2582a1]">
           Get medical opinion / request call back
         </h3>
         <p class="text-slate-600 mb-6">
@@ -2374,7 +2379,7 @@
       </section>
 
       <section class="max-w-7xl mx-auto px-4 py-10" id="faq">
-        <h3 class="text-2xl font-bold mb-6 text-[#2582a1]">
+        <h3 class="text-2xl md:text-3xl font-bold mb-6 text-[#2582a1]">
           Frequently asked questions
         </h3>
 
