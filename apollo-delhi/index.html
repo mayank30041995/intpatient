@@ -26,7 +26,6 @@
     <meta name="YandexBot" content="noindex, nofollow" />
     <meta name="theme-color" content="#047C9E" />
 
-    <link href="public/css/form.css" rel="stylesheet" type="text/css" />
     <script src="public/js/validation.js"></script>
 
     <!-- Open Graph -->
@@ -75,7 +74,7 @@
       @font-face {
         font-family: "Inter";
         src: url("public/font/Inter_18pt-Regular.ttf") format("woff2");
-        font-weight: 400;
+        font-weight: 500;
         font-style: normal;
         font-display: swap;
       }
@@ -85,7 +84,10 @@
       }
 
       h1,
-      h2,
+      h2 {
+        font-weight: 900;
+      }
+
       h3,
       h4,
       h5,
@@ -93,52 +95,6 @@
         font-weight: 600;
       }
     </style>
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Hospital",
-        "name": "Indraprastha Apollo Hospital,New Delhi, India",
-        "image": "https://apollo-delhi.hosplan.com/img/delhi.webp",
-        "@id": "https://apollo-delhi.hosplan.com/",
-        "url": "https://apollo-delhi.hosplan.com/",
-        "telephone": "+91-9911163990",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Sarita Vihar, Mathura Road",
-          "addressLocality": "New Delhi",
-          "addressRegion": "Delhi",
-          "postalCode": "110076",
-          "addressCountry": "IN"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": "28.553502",
-          "longitude": "77.282402"
-        },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"
-          ],
-          "opens": "00:00",
-          "closes": "23:59"
-        },
-        "medicalSpecialty": [
-          "Cardiology",
-          "Orthopedic",
-          "General Surgery",
-          "Pediatrics",
-          "Emergency"
-        ]
-      }
-    </script>
 
     <link
       rel="stylesheet"
@@ -237,13 +193,13 @@
               </div>
 
               <h2
-                class="text-3xl md:text-4xl font-bold leading-tight mb-3 text-[#2582a1] tracking-wider"
+                class="text-3xl md:text-4xl font-extrabold leading-tight mb-3 text-[#2582a1] tracking-wider"
               >
                 Get guidance from the right specialist team — with clear next
                 steps
               </h2>
 
-              <p class="text-slate-600 mb-4">
+              <p class="text-slate-600 mb-4 tracking-wide">
                 We help international patients connect with the appropriate
                 department for consultation, medical opinion, and treatment
                 planning. You can start with a simple message — reports are
@@ -254,23 +210,27 @@
               <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-4">
                 <div class="border border-slate-200 rounded-xl p-3 bg-white">
                   <p class="font-bold text-sm">Trusted brand</p>
-                  <p class="text-xs text-slate-600">
+                  <p class="text-xs text-slate-600 tracking-wide">
                     High-intent hospital searches
                   </p>
                 </div>
                 <div class="border border-slate-200 rounded-xl p-3 bg-white">
                   <p class="font-bold text-sm">Specialist teams</p>
-                  <p class="text-xs text-slate-600">
+                  <p class="text-xs text-slate-600 tracking-wide">
                     Multidisciplinary approach
                   </p>
                 </div>
                 <div class="border border-slate-200 rounded-xl p-3 bg-white">
                   <p class="font-bold text-sm">Confidential</p>
-                  <p class="text-xs text-slate-600">Respectful guidance</p>
+                  <p class="text-xs text-slate-600 tracking-wide">
+                    Respectful guidance
+                  </p>
                 </div>
                 <div class="border border-slate-200 rounded-xl p-3 bg-white">
                   <p class="font-bold text-sm">Fast start</p>
-                  <p class="text-xs text-slate-600">WhatsApp / call / form</p>
+                  <p class="text-xs text-slate-600 tracking-wide">
+                    WhatsApp / call / form
+                  </p>
                 </div>
               </div>
 
@@ -2063,6 +2023,7 @@
               accept-charset="UTF-8"
               enctype="multipart/form-data"
               id="form"
+              class="max-w-2xl mx-auto bg-white shadow-xl rounded-2xl p-6 space-y-6"
             >
               <input
                 type="hidden"
@@ -2079,18 +2040,20 @@
                 name="zc_gad"
                 value=""
               /><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
-              <div class="zf-templateWrapper">
+              <div class="zf-templateWrapper" class="space-y-4 gap-5">
                 <ul class="zf-tempHeadBdr">
-                  <li class="zf-tempHeadContBdr">
+                  <li class="zf-tempHeadContBdr my-5">
                     <h2 class="zf-frmTitle">
-                      <em>Apollo Delhi International Patients</em>
+                      <span class="text-2xl font-semibold text-gray-800">
+                        Apollo Delhi International Patients</span
+                      >
                     </h2>
                     <p class="zf-frmDesc"></p>
                     <div class="zf-clearBoth"></div>
                   </li>
                 </ul>
                 <div class="zf-subContWrap zf-topAlign">
-                  <ul>
+                  <ul class="space-y-4">
                     <div class="zf-tempFrmWrapper zf-name zf-namelarge">
                       <label class="zf-labelName">
                         Name
@@ -2105,6 +2068,7 @@
                               name="Name_First"
                               fieldType="7"
                               placeholder=""
+                              class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
                             />
                             <label>First Name </label>
                           </span>
@@ -2115,6 +2079,7 @@
                               name="Name_Last"
                               fieldType="7"
                               placeholder=""
+                              class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
                             />
                             <label>Last Name </label>
                           </span>
@@ -2152,6 +2117,7 @@
                               valType="number"
                               phoneFormatType="1"
                               placeholder=""
+                              class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
                             />
                             <label>Number</label>
                           </span>
@@ -2179,6 +2145,7 @@
                             maxlength="255"
                             fieldType="9"
                             placeholder=""
+                            class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
                           />
                         </span>
                         <p
@@ -2194,7 +2161,12 @@
                     <div class="zf-tempFrmWrapper">
                       <label class="zf-labelName"> File Upload </label>
                       <div class="zf-tempContDiv">
-                        <input type="file" name="FileUpload" checktype="c1" />
+                        <input
+                          type="file"
+                          name="FileUpload"
+                          checktype="c1"
+                          class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                        />
                         <p
                           id="FileUpload_error"
                           class="zf-errorMessage"
@@ -2353,7 +2325,11 @@
                 </div>
                 <ul>
                   <li class="zf-fmFooter">
-                    <button class="zf-submitColor">Submit</button>
+                    <button
+                      class="zf-submitColor bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transitio"
+                    >
+                      Submit
+                    </button>
                   </li>
                 </ul>
               </div>
