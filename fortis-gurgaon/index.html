@@ -19,7 +19,7 @@
   <meta name="Baiduspider" content="noindex, nofollow">
   <meta name="YandexBot" content="noindex, nofollow">
 
-  <link href="public/css/form.css" rel="stylesheet" type="text/css" />
+  <!-- <link href="public/css/form.css" rel="stylesheet" type="text/css" /> -->
   <script src="public/js/validation.js"></script>
 
 
@@ -27,8 +27,24 @@
   <link rel="preload" href="./public/css/fortis-gurugram.webp" as="image" type="image/webp">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <!-- <script>
+    window.tailwind = {
+      config: {
+        corePlugins: {
+          preflight: false,
+        }
+      }
+    }
+  </script> -->
 
+  <!-- Preconnect -->
+  <!-- <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+  <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" /> -->
+
+  <!-- Tailwind -->
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link rel="stylesheet" href="./public/css/style.css">
 
   <link rel="preload" href="public/css/font/Raleway-SemiBold.ttf" as="font" type="font/ttf" crossorigin />
   <link rel="preload" href="public/css/font/Raleway-Bold.ttf" as="font" type="font/ttf" crossorigin />
@@ -62,6 +78,10 @@
       font-family: "RalewayBold", sans-serif;
       font-weight: 600;
     }
+
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
   </style>
 </head>
 
@@ -1552,21 +1572,21 @@
 
     $zoho.salesiq.ready = function () {
 
-  const brand = brandConfig.name;
+      const brand = brandConfig.name;
 
-  if (brand.includes("Fortis")) {
-    $zoho.salesiq.visitor.trigger("Fortis Auto Tag");
-  }
+      if (brand.includes("Fortis")) {
+        $zoho.salesiq.visitor.trigger("Fortis Auto Tag");
+      }
 
-  if (brand.includes("Apollo")) {
-    $zoho.salesiq.visitor.trigger("Apollo Auto Tag");
-  }
+      if (brand.includes("Apollo")) {
+        $zoho.salesiq.visitor.trigger("Apollo Auto Tag");
+      }
 
-  if (brand.includes("Medanta")) {
-    $zoho.salesiq.visitor.trigger("Medanta Auto Tag");
-  }
+      if (brand.includes("Medanta")) {
+        $zoho.salesiq.visitor.trigger("Medanta Auto Tag");
+      }
 
-};
+    };
   </script>
 
   <!-- ===================== -->
