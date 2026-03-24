@@ -1129,11 +1129,11 @@
                     <div class="zf-tempContDiv zf-twoType">
                       <div class="zf-nameWrapper">
                         <span>
-                          <input type="text" maxlength="255" name="Name_First" fieldType="7" placeholder="" />
+                          <input type="text" maxlength="255" name="Name_First" fieldType="7" placeholder="" aria-labelledby="firstname" />
                           <label>First Name </label>
                         </span>
                         <span>
-                          <input type="text" maxlength="255" name="Name_Last" fieldType="7" placeholder="" />
+                          <input type="text" maxlength="255" name="Name_Last" fieldType="7" placeholder="" aria-labelledby="lastname" />
                           <label>Last Name </label>
                         </span>
                         <div class="zf-clearBoth"></div>
@@ -1155,7 +1155,7 @@
                           <input type="text" compname="PhoneNumber" name="PhoneNumber_countrycode" maxlength="20"
                             checktype="c7" value="" phoneFormat="1" isCountryCodeEnabled="false" fieldType="11"
                             id="international_PhoneNumber_countrycode" valType="number" phoneFormatType="1"
-                            placeholder="" />
+                            placeholder="" aria-labelledby="phone" />
                           <label>Number</label>
                         </span>
                         <div class="zf-clearBoth"></div>
@@ -1171,7 +1171,7 @@
                     <div class="zf-tempContDiv">
                       <span>
                         <input type="text" name="Email" checktype="c5" value="" maxlength="255" fieldType="9"
-                          placeholder="" />
+                          placeholder="" aria-labelledby="email" />
                       </span>
                       <p id="Email_error" class="zf-errorMessage" style="display: none">
                         Invalid value
@@ -1182,7 +1182,7 @@
                   <div class="zf-tempFrmWrapper">
                     <label class="zf-labelName"> File Upload </label>
                     <div class="zf-tempContDiv">
-                      <input type="file" name="FileUpload" checktype="c1" />
+                      <input type="file" name="FileUpload" checktype="c1" aria-labelledby="file" />
                       <p id="FileUpload_error" class="zf-errorMessage" style="display: none">
                         Choose any file for this field.
                       </p>
@@ -1280,7 +1280,7 @@
 
         <!-- WhatsApp Box -->
         <div class="border border-slate-200 rounded-2xl bg-white p-6">
-          <h4 class="font-semibold mb-2 text-lg">Prefer WhatsApp?</h4>
+          <h5 class="font-semibold mb-2 text-lg">Prefer WhatsApp?</h5>
           <p class="text-sm text-slate-600 mb-4">
             WhatsApp is the fastest way to start.
           </p>

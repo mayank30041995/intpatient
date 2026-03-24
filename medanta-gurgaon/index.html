@@ -1248,6 +1248,7 @@
                                 name="Name_First"
                                 fieldType="7"
                                 placeholder=""
+                                aria-labelledby="firstname"
                               />
                               <label>First Name </label>
                             </span>
@@ -1258,6 +1259,7 @@
                                 name="Name_Last"
                                 fieldType="7"
                                 placeholder=""
+                                aria-labelledby="lastname"
                               />
                               <label>Last Name </label>
                             </span>
@@ -1285,6 +1287,7 @@
                               maxlength="255"
                               fieldType="9"
                               placeholder=""
+                              aria-labelledby="email"
                             />
                           </span>
                           <p
@@ -1319,6 +1322,7 @@
                                 valType="number"
                                 phoneFormatType="1"
                                 placeholder=""
+                                aria-labelledby="phone"
                               />
                               <label>Number</label>
                             </span>
@@ -1337,7 +1341,12 @@
                       <div class="zf-tempFrmWrapper">
                         <label class="zf-labelName"> File Upload </label>
                         <div class="zf-tempContDiv">
-                          <input type="file" name="FileUpload" checktype="c1" />
+                          <input
+                            type="file"
+                            name="FileUpload"
+                            checktype="c1"
+                            aria-labelledby="file"
+                          />
                           <p
                             id="FileUpload_error"
                             class="zf-errorMessage"
