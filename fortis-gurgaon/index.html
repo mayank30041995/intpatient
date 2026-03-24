@@ -1425,7 +1425,177 @@
         </p>
       </div>
     </footer>
+
   </main>
+
+
+  <!-- ===================== -->
+  <!-- 🔹 BRAND CONFIG -->
+  <!-- ===================== -->
+  <script>
+    const brandConfig = (function () {
+      const path = window.location.pathname.toLowerCase();
+
+      if (path.includes("apollo")) {
+        return {
+          name: "Apollo Delhi",
+          color: "#0057B8",
+          logo: "https://via.placeholder.com/100x30?text=Apollo"
+        };
+      }
+      if (path.includes("medanta")) {
+        return {
+          name: "Medanta",
+          color: "#009688",
+          logo: "https://via.placeholder.com/100x30?text=Medanta"
+        };
+      }
+      return {
+        name: "Fortis Gurgaon",
+        color: "#2E7D32",
+        logo: "https://via.placeholder.com/100x30?text=Fortis"
+      };
+    })();
+  </script>
+
+  <!-- ===================== -->
+  <!-- 🔹 HIDE DEFAULT ZOHO BUTTON -->
+  <!-- ===================== -->
+  <style>
+    #zsiq_float {
+      display: none !important;
+    }
+
+    /* Custom Chat Button */
+    #chatBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      z-index: 9999;
+    }
+
+    /* Custom Header */
+    #customChatHeader {
+      position: fixed;
+      bottom: 360px;
+      right: 20px;
+      width: 320px;
+      padding: 10px;
+      color: #fff;
+      display: none;
+      align-items: center;
+      gap: 10px;
+      border-radius: 10px 10px 0 0;
+      font-weight: 600;
+      z-index: 9999;
+    }
+
+    #customChatHeader img {
+      height: 24px;
+    }
+  </style>
+
+  <!-- ===================== -->
+  <!-- 🔹 CUSTOM BUTTON -->
+  <!-- ===================== -->
+  <button id="chatBtn">Chat</button>
+
+  <!-- ===================== -->
+  <!-- 🔹 CUSTOM HEADER -->
+  <!-- ===================== -->
+  <div id="customChatHeader">
+    <img id="chatLogo" src="" />
+    <span id="chatTitle"></span>
+  </div>
+
+  <!-- ===================== -->
+  <!-- 🔹 UI INIT -->
+  <!-- ===================== -->
+  <script>
+    const btn = document.getElementById("chatBtn");
+    const header = document.getElementById("customChatHeader");
+    const logo = document.getElementById("chatLogo");
+    const title = document.getElementById("chatTitle");
+
+    // Apply branding
+    btn.innerText = "Chat with " + brandConfig.name;
+    btn.style.background = brandConfig.color;
+
+    logo.src = brandConfig.logo;
+    title.innerText = brandConfig.name;
+    header.style.background = brandConfig.color;
+
+    // Button click → open chat
+    btn.onclick = function () {
+      $zoho.salesiq.floatwindow.visible("show");
+      $zoho.salesiq.chat.start();
+
+      header.style.display = "flex";
+
+      setTimeout(() => {
+        $zoho.salesiq.chat.message(
+          "[SOURCE:" + brandConfig.name + "]"
+        );
+
+        $zoho.salesiq.chat.message(
+          "You are connected with " + brandConfig.name + "."
+        );
+      }, 800);
+    };
+
+
+    $zoho.salesiq.ready = function () {
+
+  const brand = brandConfig.name;
+
+  if (brand.includes("Fortis")) {
+    $zoho.salesiq.visitor.trigger("Fortis Auto Tag");
+  }
+
+  if (brand.includes("Apollo")) {
+    $zoho.salesiq.visitor.trigger("Apollo Auto Tag");
+  }
+
+  if (brand.includes("Medanta")) {
+    $zoho.salesiq.visitor.trigger("Medanta Auto Tag");
+  }
+
+};
+  </script>
+
+  <!-- ===================== -->
+  <!-- 🔹 ZOHO CONFIG -->
+  <!-- ===================== -->
+  <script>
+    window.$zoho = window.$zoho || {};
+    $zoho.salesiq = $zoho.salesiq || {};
+
+    $zoho.salesiq.ready = function () {
+      console.log("Zoho Ready:", brandConfig.name);
+
+      // Attach hospital info
+      $zoho.salesiq.visitor.name(brandConfig.name + " Visitor");
+
+      $zoho.salesiq.visitorinfo({
+        Notes: "Hospital: " + brandConfig.name
+      });
+    };
+  </script>
+
+  <!-- ===================== -->
+  <!-- 🔹 ZOHO SCRIPT -->
+  <!-- ===================== -->
+  <script id="zsiqscript"
+    src="https://salesiq.zohopublic.in/widget?wc=siq367d95d869cfb0a60e7316445c07536ce914f0b2acca4d494a29391df96d37815f0b000cc8eb687133e4e9868f24bf72"
+    defer>
+    </script>
+
 
 
   <!-- Google Tag (delayed for performance) -->
@@ -1575,20 +1745,48 @@
   <!-- End of GEO + CHAT SCRIPT -->
 
   <!-- Zoho Live Chat -->
-<script>
+
+  <!-- <script>
+  const brandName = window.location.pathname.includes("apollo")
+    ? "Apollo Delhi"
+    : window.location.pathname.includes("medanta")
+    ? "Medanta"
+    : "Fortis Gurgaon";
+
   window.$zoho = window.$zoho || {};
   $zoho.salesiq = $zoho.salesiq || {};
 
   $zoho.salesiq.ready = function () {
-    // 🔥 Tag visitor as Fortis
-    $zoho.salesiq.visitor.info({
-      hospital: "fortis",
-    });
-  };
-</script>
-    
 
- 
+    console.log("Zoho Ready:", brandName);
+
+    // ✅ Put hospital inside NAME (this WILL show)
+    $zoho.salesiq.visitor.name(brandName + " Visitor");
+
+    // ✅ Also push inside NOTE (visible to agents)
+    $zoho.salesiq.visitorinfo({
+      Notes: "Hospital: " + brandName
+    });
+
+    // Open chat
+    $zoho.salesiq.floatwindow.visible("show");
+    $zoho.salesiq.chat.start();
+
+    // Show message
+    setTimeout(() => {
+      $zoho.salesiq.chat.message(
+        "Welcome to " + brandName + "! How can we help you?"
+      );
+    }, 1000);
+  };
+</script> -->
+
+  <!-- <script
+  id="zsiqscript"
+  src="https://salesiq.zohopublic.in/widget?wc=siq367d95d869cfb0a60e7316445c07536ce914f0b2acca4d494a29391df96d37815f0b000cc8eb687133e4e9868f24bf72"
+  defer>
+</script> -->
+
   <!-- End of Zoho Live Chat -->
 
 

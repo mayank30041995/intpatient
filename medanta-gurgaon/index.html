@@ -1692,6 +1692,140 @@
       </footer>
     </main>
 
+    <!-- ===================== -->
+    <!-- 🔹 MEDANTA CONFIG -->
+    <!-- ===================== -->
+    <script>
+      const brandConfig = {
+        name: "Medanta",
+        color: "rgb(240 78 48 / 1)",
+        logo: "./public/images/medantalogo.png.webp",
+      };
+    </script>
+
+    <!-- ===================== -->
+    <!-- 🔹 HIDE DEFAULT ZOHO BUTTON -->
+    <!-- ===================== -->
+    <style>
+      #zsiq_float {
+        display: none !important;
+      }
+
+      /* Custom Chat Button */
+      #chatBtn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 12px 18px;
+        border-radius: 999px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+        z-index: 9999;
+      }
+
+      /* Custom Header */
+      #customChatHeader {
+        position: fixed;
+        bottom: 360px;
+        right: 20px;
+        width: 320px;
+        padding: 10px;
+        color: #fff;
+        display: none;
+        align-items: center;
+        gap: 10px;
+        border-radius: 10px 10px 0 0;
+        font-weight: 600;
+        z-index: 9999;
+      }
+
+      #customChatHeader img {
+        height: 24px;
+      }
+    </style>
+
+    <!-- ===================== -->
+    <!-- 🔹 CUSTOM BUTTON -->
+    <!-- ===================== -->
+    <button id="chatBtn">Chat</button>
+
+    <!-- ===================== -->
+    <!-- 🔹 CUSTOM HEADER -->
+    <!-- ===================== -->
+    <div id="customChatHeader">
+      <img
+        id="chatLogo"
+        src="public/images/medantalogo.png.webp"
+        alt="Medanta logo"
+      />
+      <span id="chatTitle"></span>
+    </div>
+
+    <!-- ===================== -->
+    <!-- 🔹 UI INIT -->
+    <!-- ===================== -->
+    <script>
+      const btn = document.getElementById("chatBtn");
+      const header = document.getElementById("customChatHeader");
+      const logo = document.getElementById("chatLogo");
+      const title = document.getElementById("chatTitle");
+
+      // Apply Medanta branding
+      btn.innerText = "Chat with " + brandConfig.name;
+      btn.style.background = brandConfig.color;
+
+      logo.src = brandConfig.logo;
+      title.innerText = brandConfig.name;
+      header.style.background = brandConfig.color;
+
+      // Button click → open chat
+      btn.onclick = function () {
+        $zoho.salesiq.floatwindow.visible("show");
+        $zoho.salesiq.chat.start();
+
+        header.style.display = "flex";
+
+        // 🔥 Send hospital identity (acts like tag)
+        setTimeout(() => {
+          $zoho.salesiq.chat.message("[HOSPITAL=Medanta]");
+          $zoho.salesiq.chat.message(
+            "You are connected with Medanta. How can we help you?",
+          );
+        }, 800);
+      };
+    </script>
+
+    <!-- ===================== -->
+    <!-- 🔹 ZOHO CONFIG -->
+    <!-- ===================== -->
+    <script>
+      window.$zoho = window.$zoho || {};
+      $zoho.salesiq = $zoho.salesiq || {};
+
+      $zoho.salesiq.ready = function () {
+        console.log("Zoho Ready: Medanta");
+
+        // ✅ Visible tag for agents
+        $zoho.salesiq.visitor.name("[Medanta] Visitor");
+
+        // ✅ Hidden tag
+        $zoho.salesiq.visitorinfo({
+          Notes: "[HOSPITAL=Medanta | PAGE=/medanta-gurgaon/index.html]",
+        });
+      };
+    </script>
+
+    <!-- ===================== -->
+    <!-- 🔹 ZOHO SCRIPT -->
+    <!-- ===================== -->
+    <script
+      id="zsiqscript"
+      src="https://salesiq.zohopublic.in/widget?wc=siq367d95d869cfb0a60e7316445c07536ce914f0b2acca4d494a29391df96d37815f0b000cc8eb687133e4e9868f24bf72"
+      defer
+    ></script>
+
     <!-- Google Tag (delayed for performance) -->
     <script defer>
       window.dataLayer = window.dataLayer || [];
@@ -1709,7 +1843,7 @@
         gtag("config", "AW-922729084");
       }, 3000);
     </script>
-
+    <!-- 
     <script>
       window.$zoho = window.$zoho || {};
       $zoho.salesiq = $zoho.salesiq || { ready: function () {} };
@@ -1718,7 +1852,7 @@
       id="zsiqscript"
       src="https://salesiq.zohopublic.in/widget?wc=siqfe5a1b756338db7ba9dfed96aa7b470e9201e41f064734939e734314fb6414c7"
       defer
-    ></script>
+    ></script> -->
 
     <script defer>
       function trackConversion() {
