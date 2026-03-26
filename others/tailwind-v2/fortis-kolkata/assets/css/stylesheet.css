@@ -23,6 +23,10 @@ body {
     font-family: "Font Awesome 6 Brands";
 }
 
+.fa-1x {
+    font-size: 1em;
+}
+
 .fa-calendar-alt:before {
     content: "\f073";
 }
@@ -235,6 +239,15 @@ img {
     top: 0px;
 }
 
+.z-50 {
+    z-index: 50;
+}
+
+.mx-2 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
 .mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -424,6 +437,12 @@ img {
     margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
+.space-y-6> :not([hidden])~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
 .overflow-hidden {
     overflow: hidden;
 }
@@ -446,6 +465,10 @@ img {
 
 .rounded-full {
     border-radius: 9999px;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
 }
 
 .rounded-md {
@@ -477,6 +500,11 @@ img {
     border-style: dashed;
 }
 
+.border-gray-200 {
+    --tw-border-opacity: 1;
+    border-color: rgb(229 231 235 / var(--tw-border-opacity, 1));
+}
+
 .border-green-300 {
     --tw-border-opacity: 1;
     border-color: rgb(134 239 172 / var(--tw-border-opacity, 1));
@@ -496,14 +524,29 @@ img {
     border-color: rgb(255 255 255 / 0.2);
 }
 
+.bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
 .bg-\[\#113b66\] {
     --tw-bg-opacity: 1;
     background-color: rgb(17 59 102 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#4E9BC4\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(78 155 196 / var(--tw-bg-opacity, 1));
+}
+
 .bg-green-50 {
     --tw-bg-opacity: 1;
     background-color: rgb(240 253 244 / var(--tw-bg-opacity, 1));
+}
+
+.bg-green-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(34 197 94 / var(--tw-bg-opacity, 1));
 }
 
 .bg-slate-100 {
@@ -521,13 +564,12 @@ img {
     background-color: rgb(2 6 23 / var(--tw-bg-opacity, 1));
 }
 
-.bg-white {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
 .bg-white\/95 {
     background-color: rgb(255 255 255 / 0.95);
+}
+
+.bg-opacity-95 {
+    --tw-bg-opacity: 0.95;
 }
 
 .bg-\[linear-gradient\(135deg\2c rgba\(29\2c 78\2c 216\2c 0\.10\)\2c rgba\(14\2c 165\2c 233\2c 0\.08\)\2c rgba\(255\2c 255\2c 255\2c 1\)\)\] {
@@ -702,6 +744,11 @@ img {
     letter-spacing: 0.18em;
 }
 
+.text-slate-900 {
+    --tw-text-opacity: 1;
+    color: rgb(15 23 42 / var(--tw-text-opacity, 1));
+}
+
 .text-\[\#25D366\] {
     --tw-text-opacity: 1;
     color: rgb(37 211 102 / var(--tw-text-opacity, 1));
@@ -751,11 +798,6 @@ img {
     color: rgb(51 65 85 / var(--tw-text-opacity, 1));
 }
 
-.text-slate-900 {
-    --tw-text-opacity: 1;
-    color: rgb(15 23 42 / var(--tw-text-opacity, 1));
-}
-
 .text-slate-950 {
     --tw-text-opacity: 1;
     color: rgb(2 6 23 / var(--tw-text-opacity, 1));
@@ -769,6 +811,12 @@ img {
 .underline {
     -webkit-text-decoration-line: underline;
     text-decoration-line: underline;
+}
+
+.shadow {
+    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-lg {
@@ -846,6 +894,11 @@ img {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.hover\:brightness-105:hover {
+    --tw-brightness: brightness(1.05);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .focus\:outline-none:focus {
     outline: 2px solid transparent;
     outline-offset: 2px;
@@ -878,6 +931,10 @@ img {
 }
 
 @media (min-width: 768px) {
+    .md\:visible {
+        visibility: visible;
+    }
+
     .md\:flex {
         display: flex;
     }
@@ -1158,7 +1215,7 @@ img {
 
 @font-face {
     font-family: "Poppins";
-    src: url("https://mayank30041995.github.io/intpatient/others/tailwind-v2/fortis-kolkata/assets/css/font/Poppins-Regular.ttf") format("truetype");
+    src: url("http://127.0.0.1:5500/others/tailwind-v2/fortis-kolkata/assets/css/font/Poppins-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;

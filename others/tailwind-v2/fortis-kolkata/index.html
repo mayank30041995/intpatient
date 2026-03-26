@@ -2050,7 +2050,7 @@
       >
         <div class="max-w-7xl mx-auto flex gap-2">
           <a
-            href="http://what.sapp.link/fortis-kolkata"
+            id="callback-btn"
             target="_blank"
             rel="noopener"
             class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-green-500 text-white rounded-lg shadow hover:brightness-105 text-lg"
@@ -2062,13 +2062,14 @@
             onclick="trackConversion()"
             class="cursor-pointer flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-[#4E9BC4] text-white rounded-lg shadow hover:brightness-105 text-lg"
           >
+            <i class="fas fa-comments mr-2"></i>
             Request Call Back
           </a>
         </div>
       </div>
     </main>
 
-    <script defer>
+    <!-- <script defer>
       function trackConversion() {
         gtag("event", "conversion", {
           send_to: "AW-922729084/CONVERSION_LABEL",
@@ -2083,41 +2084,108 @@
       setInterval(() => {
         trackConversion();
       }, 30000);
-    </script>
+    </script> -->
 
-    <script>
-      window.$zoho = window.$zoho || {};
-      $zoho.salesiq = $zoho.salesiq || { ready: function () {} };
-    </script>
+    <!-- Google Tag -->
     <script
-      id="zsiqscript"
-      src="https://salesiq.zohopublic.in/widget?wc=siq367d95d869cfb0a60e7316445c07536ce914f0b2acca4d494a29391df96d37815f0b000cc8eb687133e4e9868f24bf72"
-      defer
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-922729084"
     ></script>
-
-    <!-- Google Tag (delayed for performance) -->
-    <script defer>
+    <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
-      setTimeout(function () {
-        var gtagScript = document.createElement("script");
-        gtagScript.src =
-          "https://www.googletagmanager.com/gtag/js?id=AW-922729084";
-        gtagScript.async = true;
-        document.head.appendChild(gtagScript);
+      gtag("js", new Date());
+      gtag("config", "AW-922729084");
+    </script>
 
-        gtag("js", new Date());
-        gtag("config", "AW-922729084");
-      }, 3000);
+    <!-- Conversion trigger (example) -->
+    <script>
+      function trackConversion() {
+        gtag("event", "conversion", {
+          send_to: "AW-922729084/CONVERSION_LABEL",
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.getElementById("cta-btn");
+        if (btn) btn.addEventListener("click", trackConversion);
+      });
+    </script>
+
+    <!-- Lazy Zoho Chat -->
+    <script>
+      window.$zoho = window.$zoho || {};
+      $zoho.salesiq = $zoho.salesiq || { ready: function () {} };
+
+      function loadZohoChat() {
+        var s = document.createElement("script");
+        s.src =
+          "https://salesiq.zohopublic.in/widget?wc=siq367d95d869cfb0a60e7316445c07536ce914f0b2acca4d494a29391df96d37815f0b000cc8eb687133e4e9868f24bf72";
+        s.defer = true;
+        document.body.appendChild(s);
+      }
+
+      setTimeout(loadZohoChat, 3000);
+    </script>
+    <!-- Add JS listener for buttons -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.getElementById("callback-btn");
+
+        if (btn) {
+          btn.addEventListener("click", function () {
+            if (typeof gtag === "function") {
+              gtag("event", "conversion", {
+                send_to: "AW-922729084/CONVERSION_LABEL",
+              });
+            }
+
+            // Optional: open Zoho chat
+            if (window.$zoho && $zoho.salesiq) {
+              $zoho.salesiq.floatwindow.visible("show");
+            }
+          });
+        }
+      });
+    </script>
+
+    <script>
+      let conversionFired = false;
+
+      function trackConversion() {
+        if (conversionFired) return;
+        conversionFired = true;
+
+        // Google Ads conversion
+        if (typeof gtag === "function") {
+          gtag("event", "conversion", {
+            send_to: "AW-922729084/CONVERSION_LABEL",
+          });
+        }
+
+        // Open Zoho chat (optional)
+        if (window.$zoho && $zoho.salesiq) {
+          $zoho.salesiq.floatwindow.visible("show");
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".track-conversion").forEach(function (el) {
+          el.addEventListener("click", function (e) {
+            if (el.tagName === "A") e.preventDefault();
+            trackConversion();
+          });
+        });
+      });
     </script>
     <!-- End of Google Tag (delayed for performance) -->
     <!-- GEO + CHAT SCRIPT -->
     <script type="text/javascript">
-      var dateAndMonthRegexFormateArray =
-        zf_SetDateAndMonthRegexBasedOnDateFormate("dd-MMM-yyyy");
-      var zf_DateRegex = new RegExp(dateAndMonthRegexFormateArray[0]);
+      // var dateAndMonthRegexFormateArray =
+      //   zf_SetDateAndMonthRegexBasedOnDateFormate("dd-MMM-yyyy");
+      // var zf_DateRegex = new RegExp(dateAndMonthRegexFormateArray[0]);
       var zf_MonthYearRegex = new RegExp(dateAndMonthRegexFormateArray[1]);
 
       var zf_MandArray = ["Name_First", "Name_Last", "PhoneNumber_countrycode"];
