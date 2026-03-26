@@ -78,15 +78,15 @@
   </head>
 
   <body class="bg-white text-slate-900">
-    <div class="err hidden text-center py-20 text-red-600 font-bold">
+    <!-- <div class="err hidden text-center py-20 text-red-600 font-bold">
       <div class="midcontainer">
         <h1>Not found <span>:(</span></h1>
         <p>Sorry, but the page you were trying to view does not exist.</p>
 
         <i>404</i>
       </div>
-    </div>
-    <main id="main" class="hidden">
+    </div> -->
+    <main id="main">
       <!-- utility bar -->
       <div class="bg-[#050910] text-white">
         <div
@@ -3564,103 +3564,7 @@
     </script>
 
     <!-- GEO + CHAT SCRIPT -->
-    <script defer>
-      function ipLookUp() {
-        var xhttp = new XMLHttpRequest();
 
-        xhttp.onreadystatechange = function () {
-          if (this.readyState == 4 && this.status == 200) {
-            var response = JSON.parse(xhttp.response);
-            console.log("location response", response);
-
-            window.ttLocation = response.country;
-
-            /* -------- SET ZOHO FORM FIELDS -------- */
-
-            const city = response.city || "";
-            const country = response.country || "";
-            const region = response.region || "";
-            const latlong = response.cityLatLong || "";
-            const ip = response.userIP || "";
-
-            const cityField = document.querySelector('[name="SingleLine"]');
-            const countryField = document.querySelector('[name="SingleLine1"]');
-            const latLongField = document.querySelector('[name="SingleLine2"]');
-            const regionField = document.querySelector('[name="SingleLine3"]');
-            const ipField = document.querySelector('[name="SingleLine4"]');
-            const mapLocationUrl = document.querySelector(
-              '[name="SingleLine6"]',
-            );
-
-            if (cityField) cityField.value = city;
-            if (countryField) countryField.value = country;
-            if (latLongField) latLongField.value = latlong;
-            if (regionField) regionField.value = region;
-            if (ipField) ipField.value = ip;
-            if (mapLocationUrl && latlong) {
-              mapLocationUrl.value = "https://www.google.com/maps?q=" + latlong;
-            }
-            /* -------- COUNTRY CHECK -------- */
-
-            if (response.country === "IN") {
-              document.title = "Page not found";
-              setVisible(".err", true);
-              setVisible("#loader", false);
-              setVisible("#main", false);
-
-              if (window.$zoho && $zoho.salesiq) {
-                $zoho.salesiq.floatwindow.visible("show");
-                $zoho.salesiq.chat.start();
-              }
-            } else {
-              setVisible("#main", true);
-              setVisible("#loader", false);
-              // initChat();
-            }
-          }
-        };
-
-        xhttp.open(
-          "GET",
-          "https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation",
-          true,
-        );
-
-        xhttp.send();
-      }
-
-      function setVisible(selector, visible) {
-        const el = document.querySelector(selector);
-        if (el) {
-          el.classList.toggle("hidden", !visible);
-        }
-      }
-
-      // function initChat() {
-      //   if (window.ttLocation !== "IN") {
-      //     window.__lc = window.__lc || {};
-      //     window.__lc.license = 7595311;
-
-      //     (function () {
-      //       var lc = document.createElement("script");
-      //       lc.type = "text/javascript";
-      //       lc.async = true;
-      //       lc.src =
-      //         (document.location.protocol === "https:"
-      //           ? "https://"
-      //           : "http://") + "cdn.livechatinc.com/tracking.js";
-      //       document.head.appendChild(lc);
-      //     })();
-      //   }
-      // }
-
-      document.addEventListener("DOMContentLoaded", function () {
-        setVisible("#main", true);
-        setVisible("#loader", false);
-
-        ipLookUp();
-      });
-    </script>
     <!-- End of GEO + CHAT SCRIPT -->
   </body>
 </html>
