@@ -68,6 +68,11 @@
       h6 {
         font-weight: 600;
       }
+
+      .opacity-0 {
+        opacity: 0;
+        pointer-events: none;
+      }
     </style>
   </head>
 
@@ -2211,101 +2216,99 @@
     </script>
 
     <!-- GEO + CHAT SCRIPT -->
-    <script defer>
-      function ipLookUp() {
-        var xhttp = new XMLHttpRequest();
+    <script>
+      let ttLocation = null;
 
-        xhttp.onreadystatechange = function () {
-          if (this.readyState == 4 && this.status == 200) {
-            var response = JSON.parse(xhttp.response);
-            console.log("location response", response);
+      async function ipLookUp() {
+        try {
+          const res = await fetch(
+            "https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation",
+          );
 
-            window.ttLocation = response.country;
+          if (!res.ok) return;
 
-            /* -------- SET ZOHO FORM FIELDS -------- */
+          const response = await res.json();
+          ttLocation = response.country;
 
-            const city = response.city || "";
-            const country = response.country || "";
-            const region = response.region || "";
-            const latlong = response.cityLatLong || "";
-            const ip = response.userIP || "";
-            const mapLocationUrl = response.mapLocationUrl || "";
+          /* -------- SET FORM FIELDS -------- */
+          const setVal = (name, value) => {
+            const el = document.querySelector(`[name="${name}"]`);
+            if (el) el.value = value || "";
+          };
 
-            const cityField = document.querySelector('[name="SingleLine"]');
-            const countryField = document.querySelector('[name="SingleLine1"]');
-            const latLongField = document.querySelector('[name="SingleLine2"]');
-            const regionField = document.querySelector('[name="SingleLine3"]');
-            const ipField = document.querySelector('[name="SingleLine4"]');
-            const mapLocationUrlField = document.querySelector(
-              '[name="SingleLine5"]',
+          setVal("SingleLine", response.city);
+          setVal("SingleLine1", response.country);
+          setVal("SingleLine2", response.cityLatLong);
+          setVal("SingleLine3", response.region);
+          setVal("SingleLine4", response.userIP);
+
+          if (response.cityLatLong) {
+            setVal(
+              "SingleLine5",
+              "https://www.google.com/maps?q=" + response.cityLatLong,
             );
-
-            if (cityField) cityField.value = city;
-            if (countryField) countryField.value = country;
-            if (latLongField) latLongField.value = latlong;
-            if (regionField) regionField.value = region;
-            if (ipField) ipField.value = ip;
-            if (mapLocationUrlField && latlong) {
-              mapLocationUrlField.value =
-                "https://www.google.com/maps?q=" + latlong;
-            }
-            /* -------- COUNTRY CHECK -------- */
-
-            if (response.country === "IN") {
-              document.title = "Page not found";
-              setVisible(".err", true);
-              setVisible("#loader", false);
-              setVisible("#main", false);
-
-              if (window.$zoho && $zoho.salesiq) {
-                $zoho.salesiq.floatwindow.visible("show");
-                $zoho.salesiq.chat.start();
-              }
-            } else {
-              setVisible("#main", true);
-              setVisible("#loader", false);
-              initChat();
-            }
           }
-        };
 
-        xhttp.open(
-          "GET",
-          "https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation",
-          true,
-        );
+          /* -------- COUNTRY CHECK -------- */
 
-        xhttp.send();
+          if (response.country === "IN") {
+            document.title = "Page not found";
+
+            show(".err");
+            hide("#main");
+
+            loadZohoAndOpen();
+          } else {
+            show("#main");
+            loadChatLazy();
+          }
+        } catch (err) {
+          console.error("Geo lookup failed", err);
+          show("#main"); // fallback
+        } finally {
+          hide("#loader");
+        }
       }
 
-      function setVisible(selector, visible) {
+      /* ---------- VISIBILITY (NO CLS) ---------- */
+
+      function show(selector) {
         const el = document.querySelector(selector);
-        if (el) {
-          el.classList.toggle("hidden", !visible);
-        }
+        if (el) el.classList.remove("opacity-0");
       }
 
-      function initChat() {
-        if (window.ttLocation !== "IN") {
-          window.__lc = window.__lc || {};
-          window.__lc.license = 7595311;
-
-          (function () {
-            var lc = document.createElement("script");
-            lc.type = "text/javascript";
-            lc.async = true;
-            lc.src =
-              (document.location.protocol === "https:"
-                ? "https://"
-                : "http://") + "cdn.livechatinc.com/tracking.js";
-            document.head.appendChild(lc);
-          })();
-        }
+      function hide(selector) {
+        const el = document.querySelector(selector);
+        if (el) el.classList.add("opacity-0");
       }
 
-      document.addEventListener("DOMContentLoaded", function () {
-        setVisible("#main", true);
-        setVisible("#loader", false);
+      /* ---------- CHAT (LAZY LOAD) ---------- */
+
+      function loadChatLazy() {
+        if (ttLocation === "IN") return;
+
+        setTimeout(() => {
+          const s = document.createElement("script");
+          s.src = "https://cdn.livechatinc.com/tracking.js";
+          s.async = true;
+          document.body.appendChild(s);
+        }, 4000); // delay load
+      }
+
+      function loadZohoAndOpen() {
+        if (!window.$zoho || !$zoho.salesiq) return;
+
+        setTimeout(() => {
+          $zoho.salesiq.floatwindow.visible("show");
+          $zoho.salesiq.chat.start();
+        }, 1000);
+      }
+
+      /* ---------- INIT ---------- */
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // show immediately (no flicker)
+        document.querySelector("#main")?.classList.remove("hidden");
 
         ipLookUp();
       });
