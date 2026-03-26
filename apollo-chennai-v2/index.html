@@ -3599,7 +3599,7 @@
             } else {
               setVisible("#main", true);
               setVisible("#loader", false);
-              initChat();
+              // initChat();
             }
           }
         };
@@ -3620,23 +3620,23 @@
         }
       }
 
-      function initChat() {
-        if (window.ttLocation !== "IN") {
-          window.__lc = window.__lc || {};
-          window.__lc.license = 7595311;
+      // function initChat() {
+      //   if (window.ttLocation !== "IN") {
+      //     window.__lc = window.__lc || {};
+      //     window.__lc.license = 7595311;
 
-          (function () {
-            var lc = document.createElement("script");
-            lc.type = "text/javascript";
-            lc.async = true;
-            lc.src =
-              (document.location.protocol === "https:"
-                ? "https://"
-                : "http://") + "cdn.livechatinc.com/tracking.js";
-            document.head.appendChild(lc);
-          })();
-        }
-      }
+      //     (function () {
+      //       var lc = document.createElement("script");
+      //       lc.type = "text/javascript";
+      //       lc.async = true;
+      //       lc.src =
+      //         (document.location.protocol === "https:"
+      //           ? "https://"
+      //           : "http://") + "cdn.livechatinc.com/tracking.js";
+      //       document.head.appendChild(lc);
+      //     })();
+      //   }
+      // }
 
       document.addEventListener("DOMContentLoaded", function () {
         setVisible("#main", true);
