@@ -15,6 +15,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/x-icon" href="assets/logo/favicon.ico" />
     <link
+      rel="preload"
+      as="image"
+      href="assets/img/hero.webp"
+      imagesrcset="assets/img/hero.webp 1x"
+      fetchpriority="high"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
@@ -171,8 +178,12 @@
             >
               <img
                 src="assets/img/hero.webp"
+                width="813"
+                height="406"
                 alt="MIOT Hospital building"
                 class="w-full h-full object-cover"
+                fetchpriority="high"
+                decoding="async"
               />
             </div>
             <div class="grid md:grid-cols-3 border-t border-slate-200">

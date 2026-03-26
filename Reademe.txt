@@ -1,0 +1,18 @@
+<!-- HEAD -->
+<link 
+  rel="preload" 
+  as="image" 
+  href="assets/img/MIOT.webp"
+  fetchpriority="high"
+/>
+
+<!-- HERO IMAGE -->
+<img
+  src="assets/img/MIOT.webp"
+  alt="MIOT Hospital"
+  width="1200"
+  height="600"
+  class="w-full h-auto object-cover"
+  fetchpriority="high"
+  decoding="async"
+/>

@@ -15,6 +15,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/webp" href="assets/logo/favicon-32x32.webp" />
     <link
+      rel="preload"
+      as="image"
+      src="assets/logo/desun-siliguri.webp"
+      imagesrcset="assets/img/desun-siliguri.webp 1x"
+      fetchpriority="high"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
@@ -270,7 +277,9 @@
               <img
                 src="assets/logo/desun-siliguri.webp"
                 alt="Desun Hospital Siliguri"
-                class="h-full w-full object-cover"
+                class="w-full h-full object-cover"
+                fetchpriority="high"
+                decoding="async"
               />
             </div>
             <div class="border-t border-slate-200 p-6 bg-slate-50">

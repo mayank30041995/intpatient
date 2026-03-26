@@ -25,6 +25,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
 
+    <link
+      rel="preload"
+      as="image"
+      src="assets/logo/fortis-kolkata.avif"
+      imagesrcset="assets/img/fortis-kolkata.avif 1x"
+      fetchpriority="high"
+    />
+
     <style>
       body {
         font-family:
@@ -212,8 +220,12 @@
               >
                 <img
                   src="assets/logo/fortis-kolkata.avif"
-                  alt="MIOT Hospital building"
+                  width="813"
+                  height="406"
+                  alt="Fortis Hospital Kolkata building"
                   class="w-full h-full object-cover"
+                  fetchpriority="high"
+                  decoding="async"
                 />
               </div>
               <div class="p-5 border-t border-slate-200 bg-slate-50">
