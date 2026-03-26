@@ -1212,30 +1212,44 @@
             </div>
           </section>
 
-          <section id="form" class="mt-10">
-            <div class="rounded-[30px] border border-slate-200 bg-white p-8">
+          <section id="form" class="mt-10 px-4 md:px-0">
+            <div
+              class="rounded-[30px] border border-slate-200 bg-white p-5 md:p-8 max-w-full overflow-hidden"
+            >
               <p class="text-[11px] uppercase tracking-[0.18em] text-slate-500">
                 Appointment request
               </p>
-              <h2 class="mt-2 text-3xl font-black text-slate-950">
+
+              <h2
+                class="mt-2 text-2xl md:text-3xl font-black text-slate-950 leading-tight"
+              >
                 Proceed with appointment planning
               </h2>
+
               <form class="mt-6 grid gap-4">
                 <input
-                  class="border rounded-xl px-4 py-3"
+                  class="w-full border rounded-xl px-4 py-3 text-sm md:text-base"
                   placeholder="Full Name"
+                  aria-labelledby="full name"
                 />
-                <div class="grid md:grid-cols-2 gap-4">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <input
-                    class="border rounded-xl px-4 py-3"
+                    class="w-full border rounded-xl px-4 py-3 text-sm md:text-base"
                     placeholder="Country"
+                    aria-labelledby="country"
                   />
                   <input
-                    class="border rounded-xl px-4 py-3"
+                    class="w-full border rounded-xl px-4 py-3 text-sm md:text-base"
                     placeholder="WhatsApp Number"
+                    aria-labelledby="WhatsApp"
                   />
                 </div>
-                <select class="border rounded-xl px-4 py-3 bg-white">
+
+                <select
+                  class="w-full border rounded-xl px-4 py-3 bg-white text-sm md:text-base"
+                  aria-labelledby="name doctor"
+                >
                   <option>Preferred Specialty</option>
                   <option>Orthopaedics & Joint Care</option>
                   <option>Cardiac Care</option>
@@ -1244,12 +1258,15 @@
                   <option>Renal & Urology Care</option>
                   <option>General Surgery & Multi-specialty Care</option>
                 </select>
+
                 <textarea
-                  class="border rounded-xl px-4 py-3"
+                  class="w-full border rounded-xl px-4 py-3 text-sm md:text-base"
                   placeholder="Doctor name / brief details"
+                  aria-labelledby="doctor name"
                 ></textarea>
+
                 <button
-                  class="rounded-xl px-5 py-3 text-white font-extrabold"
+                  class="w-full rounded-xl px-5 py-3 text-white font-extrabold"
                   style="background: #113b66"
                 >
                   Submit
