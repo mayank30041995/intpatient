@@ -12,7 +12,20 @@
       name="robots"
       content="noindex,nofollow,noarchive,nosnippet,noimageindex"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link
+      rel="preload"
+      href="assets/css/font/stylesheet.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript>
+      <link href="assets/css/font/stylesheet.css" rel="stylesheet" />
+    </noscript>
+
     <link rel="icon" type="image/x-icon" href="assets/logo/favicon.ico" />
     <link
       rel="preload"
