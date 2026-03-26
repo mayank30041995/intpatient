@@ -24,6 +24,22 @@
     <link rel="preload" href="css/stylesheet.css" as="style" />
     <link href="css/stylesheet.css" rel="stylesheet" />
 
+    <link
+      rel="preload"
+      as="image"
+      src="assets/apollo-hospital-image.webp"
+      imagesrcset="assets/apollo-hospital-image.webp 1x"
+      fetchpriority="high"
+    />
+
+    <link
+      rel="preload"
+      href="css/stylesheet.css"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
     <script>
       function openVisaForm() {
         document.getElementById("visaModal").classList.remove("hidden");
@@ -255,7 +271,7 @@
                     alt="Apollo Chennai Hospital Building"
                     class="w-full h-full object-cover"
                     fetchpriority="high"
-                    loading="eager"
+                    decoding="async"
                   />
                 </div>
                 <div class="p-5 border-t border-slate-200 bg-slate-50">
