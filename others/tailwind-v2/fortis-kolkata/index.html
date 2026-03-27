@@ -49,6 +49,7 @@
       html {
         scroll-behavior: smooth;
       }
+
       @font-face {
         font-family: "Poppins";
         src: url("assets/css/font/Poppins-Regular.ttf") format("truetype");
@@ -56,6 +57,7 @@
         font-style: normal;
         font-display: swap;
       }
+
       body {
         font-family: "Poppins", sans-serif;
       }
@@ -2147,65 +2149,95 @@
 
     <!-- GEO + CHAT SCRIPT -->
     <script defer>
-      async function ipLookUp() {
-        try {
-          const res = await fetch(
-            "https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation",
-          );
+      function ipLookUp() {
+        var xhttp = new XMLHttpRequest();
 
-          const response = await res.json();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4) {
+            try {
+              if (this.status == 200) {
+                var response = JSON.parse(xhttp.response);
 
-          window.ttLocation = response.country;
+                window.ttLocation = response.country;
 
-          const city = response.city || "";
-          const country = response.country || "";
-          const region = response.region || "";
-          const latlong = response.cityLatLong || "";
-          const ip = response.userIP || "";
+                /* -------- SET ZOHO FORM FIELDS -------- */
+                const city = response.city || "";
+                const country = response.country || "";
+                const region = response.region || "";
+                const latlong = response.cityLatLong || "";
+                const ip = response.userIP || "";
 
-          const setValue = (name, value) => {
-            const el = document.querySelector(`[name="${name}"]`);
-            if (el) el.value = value;
-          };
+                const cityField = document.querySelector('[name="SingleLine"]');
+                const countryField = document.querySelector(
+                  '[name="SingleLine1"]',
+                );
+                const latLongField = document.querySelector(
+                  '[name="SingleLine2"]',
+                );
+                const regionField = document.querySelector(
+                  '[name="SingleLine3"]',
+                );
+                const ipField = document.querySelector('[name="SingleLine4"]');
+                const mapLocationUrl = document.querySelector(
+                  '[name="SingleLine6"]',
+                );
 
-          setValue("SingleLine", city);
-          setValue("SingleLine1", country);
-          setValue("SingleLine2", latlong);
-          setValue("SingleLine3", region);
-          setValue("SingleLine4", ip);
+                if (cityField) cityField.value = city;
+                if (countryField) countryField.value = country;
+                if (latLongField) latLongField.value = latlong;
+                if (regionField) regionField.value = region;
+                if (ipField) ipField.value = ip;
 
-          if (latlong && latlong.includes(",")) {
-            setValue("SingleLine6", "https://www.google.com/maps?q=" + latlong);
-          }
+                if (mapLocationUrl && latlong) {
+                  mapLocationUrl.value =
+                    "https://www.google.com/maps?q=" + latlong;
+                }
 
-          if (country === "IN") {
-            document.title = "Page not found";
-            setVisible(".err", true);
-            setVisible("#main", false);
+                /* -------- COUNTRY CHECK -------- */
+                if (country === "IN") {
+                  document.title = "Page not found";
 
-            if (window.$zoho && $zoho.salesiq) {
-              $zoho.salesiq.floatwindow.visible("show");
-              $zoho.salesiq.chat.start();
+                  setVisible(".err", true);
+                  setVisible("#main", false);
+                } else {
+                  setVisible("#main", true);
+                  setVisible(".err", false); // ✅ FIX
+                }
+              } else {
+                // fallback if API fails
+                setVisible("#main", true);
+                setVisible(".err", false);
+              }
+            } catch (e) {
+              console.error("Error parsing response", e);
+              setVisible("#main", true);
+              setVisible(".err", false);
             }
-          } else {
-            setVisible("#main", true);
+
+            // always hide loader at end
+            setVisible("#loader", false);
           }
-        } catch (e) {
-          console.error("Geo lookup failed", e);
-          setVisible("#main", true);
-        } finally {
-          setVisible("#loader", false);
-        }
+        };
+
+        xhttp.open(
+          "GET",
+          "https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation",
+          true,
+        );
+
+        xhttp.send();
       }
 
       function setVisible(selector, visible) {
         const el = document.querySelector(selector);
-        if (el) el.classList.toggle("hidden", !visible);
+        if (el) {
+          el.classList.toggle("hidden", !visible);
+        }
       }
 
       document.addEventListener("DOMContentLoaded", function () {
-        setVisible("#main", false);
-        setVisible("#loader", true);
+        setVisible("#main", true); // ✅ FIX (no flash)
+        setVisible("#loader", true); // ✅ FIX
         ipLookUp();
       });
     </script>
