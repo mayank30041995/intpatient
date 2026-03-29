@@ -26,7 +26,7 @@
     <meta name="YandexBot" content="noindex, nofollow" />
     <meta name="theme-color" content="#047C9E" />
 
-    <script src="public/js/validation.js"></script>
+    <!-- <script src="public/js/validation.js"></script> -->
 
     <!-- Open Graph -->
     <meta
@@ -50,11 +50,15 @@
     <meta name="robots" content="noindex, nofollow" />
 
     <!-- Preconnect -->
-    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
-    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
+    <!-- <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" /> -->
+
+    <link rel="preload" href="public/css/stylesheet.css" as="style" />
+
+    <link rel="stylesheet" href="public/css/stylesheet.css" />
 
     <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
     <link
       rel="icon"
@@ -2079,6 +2083,7 @@
                               type="text"
                               maxlength="255"
                               name="Name_First"
+                              required
                               fieldType="7"
                               placeholder=""
                               class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
@@ -2090,6 +2095,7 @@
                               type="text"
                               maxlength="255"
                               name="Name_Last"
+                              required
                               fieldType="7"
                               placeholder=""
                               class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
@@ -2130,6 +2136,7 @@
                               valType="number"
                               phoneFormatType="1"
                               placeholder=""
+                              required
                               class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
                             />
                             <label>Number</label>
