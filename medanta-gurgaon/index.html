@@ -94,9 +94,6 @@
     </style>
   </head>
   <body>
-    <div id="loader" class="loader">
-      <div class="spinner"></div>
-    </div>
     <div class="err hidden text-center py-20 text-red-600 font-bold">
       <div class="midcontainer">
         <h1>Not found <span>:(</span></h1>
@@ -1629,6 +1626,36 @@
 
     <!-- GEO + CHAT SCRIPT -->
 
+    <script>
+      let conversionFired = false;
+
+      function trackConversion() {
+        if (conversionFired) return;
+        conversionFired = true;
+
+        // Google Ads conversion
+        if (typeof gtag === "function") {
+          gtag("event", "conversion", {
+            send_to: "AW-922729084/CONVERSION_LABEL",
+          });
+        }
+
+        // Open Zoho chat (optional)
+        if (window.$zoho && $zoho.salesiq) {
+          $zoho.salesiq.floatwindow.visible("show");
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".track-conversion").forEach(function (el) {
+          el.addEventListener("click", function (e) {
+            if (el.tagName === "A") e.preventDefault();
+            trackConversion();
+          });
+        });
+      });
+    </script>
+
     <!-- GEO + CHAT SCRIPT -->
     <script defer>
       function ipLookUp() {
@@ -1729,6 +1756,9 @@
         ipLookUp();
       });
     </script>
+
+    <!-- GEO + CHAT SCRIPT -->
+
     <!-- End of GEO + CHAT SCRIPT -->
 
     <script>
