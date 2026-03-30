@@ -39,8 +39,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
 
-    <link href="./public/css/form.css" rel="stylesheet" type="text/css" />
-    <script src="./public/js/validation.js"></script>
     <!-- Preload hero/banner images with fetchpriority -->
     <!-- <link
       rel="preload"
@@ -220,19 +218,21 @@
                   WhatsApp (Fast Response)
                 </a>
 
-                <span
+                <a
+                  id="callback-btn"
+                  href="javascript:void(0);"
+                  rel="noopener"
                   class="inline-flex items-center justify-center px-[14px] py-[12px] rounded-[8px] bg-[#f04e30] text-white font-semibold cursor-pointer"
-                  onclick="trackConversion()"
                 >
-                  Request Call Back
-                </span>
+                  Live Chat
+                </a>
 
-                <span
+                <a
                   class="inline-flex items-center justify-center px-[14px] py-[12px] rounded-[8px] border border-[rgba(17,24,39,.16)] text-[#111827] cursor-pointer"
-                  onclick="trackConversion()"
+                  id="callback-btn"
                 >
                   Get Medical Opinion
-                </span>
+                </a>
               </div>
             </div>
 
@@ -495,7 +495,7 @@
               >
                 <!-- Left: Text Content -->
                 <div>
-                  <p class="font-bold text-md mb-1">Dr. Naresh Trehan</p>
+                  <p class="font-bold text-lg mb-1">Dr. Naresh Trehan</p>
                   <p class="text-xs text-slate-600">Cardiac Sciences</p>
                   <span
                     class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-blue-200 bg-blue-100"
@@ -526,7 +526,7 @@
               >
                 <!-- Left: Text Content -->
                 <div>
-                  <p class="font-bold text-md mb-1">Dr. Anil Bhan</p>
+                  <p class="font-bold text-lg mb-1">Dr. Anil Bhan</p>
                   <p class="text-xs text-slate-600">Cardiac Sciences</p>
                   <span
                     class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-sky-200 bg-sky-100"
@@ -557,7 +557,7 @@
               >
                 <!-- Left: Text Content -->
                 <div>
-                  <p class="font-bold text-md mb-1">Dr. Adarsh Chaudhary</p>
+                  <p class="font-bold text-lg mb-1">Dr. Adarsh Chaudhary</p>
                   <p class="text-xs text-slate-600">Cardiac Sciences</p>
                   <span
                     class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-blue-200 bg-blue-100"
@@ -588,7 +588,7 @@
               >
                 <!-- Left: Text Content -->
                 <div>
-                  <p class="font-bold text-md mb-1">Dr. Ramesh Kumar Bapna</p>
+                  <p class="font-bold text-lg mb-1">Dr. Ramesh Kumar Bapna</p>
                   <p class="text-xs text-slate-600">Cardiac Sciences</p>
                   <span
                     class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-sky-200 bg-sky-100"
@@ -631,7 +631,7 @@
             >
               <!-- Left: Text Content -->
               <div>
-                <p class="font-bold text-md mb-1">Dr.ASHOK</p>
+                <p class="font-bold text-lg mb-1">Dr.ASHOK</p>
                 <p class="text-xs text-slate-600">Oncology</p>
                 <span
                   class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-blue-200 bg-blue-100"
@@ -662,7 +662,7 @@
             >
               <!-- Left: Text Content -->
               <div>
-                <p class="font-bold text-md mb-1">Dr. Susovan Banerje</p>
+                <p class="font-bold text-lg mb-1">Dr. Susovan Banerje</p>
                 <p class="text-xs text-slate-600">Oncology</p>
                 <span
                   class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-sky-200 bg-sky-100"
@@ -693,7 +693,7 @@
             >
               <!-- Left: Text Content -->
               <div>
-                <p class="font-bold text-md mb-1">Dr. Satya Prakash Yadav</p>
+                <p class="font-bold text-lg mb-1">Dr. Satya Prakash Yadav</p>
                 <p class="text-xs text-slate-600">Oncology</p>
                 <span
                   class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-blue-200 bg-blue-100"
@@ -724,7 +724,7 @@
             >
               <!-- Left: Text Content -->
               <div>
-                <p class="font-bold text-md mb-1">Dr. DEEPAK GUPTA</p>
+                <p class="font-bold text-lg mb-1">Dr. DEEPAK GUPTA</p>
                 <p class="text-xs text-slate-600">Oncology</p>
                 <span
                   class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-sky-200 bg-sky-100"
@@ -770,7 +770,7 @@
               >
                 <!-- Left: Text Content -->
                 <div>
-                  <p class="font-bold text-md mb-1">Dr. Ashok Rajgopal</p>
+                  <p class="font-bold text-lg mb-1">Dr. Ashok Rajgopal</p>
                   <p class="text-xs text-slate-600">Orthopaedics</p>
                   <span
                     class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-blue-200 bg-blue-100"
@@ -801,7 +801,7 @@
               >
                 <!-- Left: Text Content -->
                 <div>
-                  <p class="font-bold text-md mb-1">Dr.Vipin Chand Tyagi</p>
+                  <p class="font-bold text-lg mb-1">Dr.Vipin Chand Tyagi</p>
                   <p class="text-xs text-slate-600">Orthopaedics</p>
                   <span
                     class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-sky-200 bg-sky-100"
@@ -832,7 +832,7 @@
               >
                 <!-- Left: Text Content -->
                 <div>
-                  <p class="font-bold text-md mb-1">Dr. Sumit Kumar</p>
+                  <p class="font-bold text-lg mb-1">Dr. Sumit Kumar</p>
                   <p class="text-xs text-slate-600">Orthopaedics</p>
                   <span
                     class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-blue-200 bg-blue-100"
@@ -863,7 +863,7 @@
               >
                 <!-- Left: Text Content -->
                 <div>
-                  <p class="font-bold text-md mb-1">Dr. Attique Vasudev</p>
+                  <p class="font-bold text-lg mb-1">Dr. Attique Vasudev</p>
                   <p class="text-xs text-slate-600">Orthopaedics</p>
                   <span
                     class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-sky-200 bg-sky-100"
@@ -908,7 +908,7 @@
               >
                 <!-- Left: Text Content -->
                 <div>
-                  <p class="font-bold text-md mb-1">Dr. ARUN GARG</p>
+                  <p class="font-bold text-lg mb-1">Dr. ARUN GARG</p>
                   <p class="text-xs text-slate-600">Neuro Sciences</p>
                   <span
                     class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-blue-200 bg-blue-100"
@@ -939,7 +939,7 @@
               >
                 <!-- Left: Text Content -->
                 <div>
-                  <p class="font-bold text-md mb-1">Dr. Raj Kumar</p>
+                  <p class="font-bold text-lg mb-1">Dr. Raj Kumar</p>
                   <p class="text-xs text-slate-600">Neuro Sciences</p>
                   <span
                     class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-sky-200 bg-sky-100"
@@ -970,7 +970,7 @@
               >
                 <!-- Left: Text Content -->
                 <div>
-                  <p class="font-bold text-md mb-1">Dr. Atma Ram Bansal</p>
+                  <p class="font-bold text-lg mb-1">Dr. Atma Ram Bansal</p>
                   <p class="text-xs text-slate-600">Neuro Sciences</p>
                   <span
                     class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-blue-200 bg-blue-100"
@@ -1001,7 +1001,7 @@
               >
                 <!-- Left: Text Content -->
                 <div>
-                  <p class="font-bold text-md mb-1">Dr. Gaurav Goel</p>
+                  <p class="font-bold text-lg mb-1">Dr. Gaurav Goel</p>
                   <p class="text-xs text-slate-600">Neuro Sciences</p>
                   <span
                     class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-full border border-sky-200 bg-sky-100"
@@ -1211,16 +1211,19 @@
                   type="hidden"
                   name="zf_referrer_name"
                   value=""
+                  aria-labelledby="input-field"
                 /><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
                 <input
                   type="hidden"
                   name="zf_redirect_url"
                   value=""
+                  aria-labelledby="input-field"
                 /><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
                 <input
                   type="hidden"
                   name="zc_gad"
                   value=""
+                  aria-labelledby="input-field"
                 /><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
                 <div class="zf-templateWrapper">
                   <ul class="zf-tempHeadBdr">
@@ -1248,6 +1251,7 @@
                                 name="Name_First"
                                 fieldType="7"
                                 placeholder=""
+                                required
                                 aria-labelledby="firstname"
                               />
                               <label>First Name </label>
@@ -1259,6 +1263,7 @@
                                 name="Name_Last"
                                 fieldType="7"
                                 placeholder=""
+                                required
                                 aria-labelledby="lastname"
                               />
                               <label>Last Name </label>
@@ -1284,6 +1289,7 @@
                               name="Email"
                               checktype="c5"
                               value=""
+                              aria-labelledby="input-field"
                               maxlength="255"
                               fieldType="9"
                               placeholder=""
@@ -1315,6 +1321,7 @@
                                 maxlength="20"
                                 checktype="c7"
                                 value=""
+                                aria-labelledby="input-field"
                                 phoneFormat="1"
                                 isCountryCodeEnabled="false"
                                 fieldType="11"
@@ -1323,6 +1330,7 @@
                                 phoneFormatType="1"
                                 placeholder=""
                                 aria-labelledby="phone"
+                                required
                               />
                               <label>Number</label>
                             </span>
@@ -1486,6 +1494,7 @@
                               name="SingleLine7"
                               checktype="c1"
                               value=""
+                              aria-labelledby="input-field"
                               maxlength="255"
                               fieldType="1"
                               placeholder="mapLocationUrl"
@@ -1634,7 +1643,7 @@
       >
         <div class="max-w-7xl mx-auto px-[18px] py-[10px]">
           <div class="flex gap-[10px] flex-wrap">
-            <a
+            <button
               href="https://what.sapp.link/medanta"
               target="_blank"
               rel="noopener noreferrer"
@@ -1642,14 +1651,15 @@
             >
               <i class="fab fa-whatsapp fa-1x mx-2" aria-hidden="true"></i>
               WhatsApp
-            </a>
+            </button>
             <!-- href="#lead-form" -->
-            <a
-              onclick="trackConversion()"
+            <button
+              id="callback-btn2"
+              rel="noopener"
               class="flex-1 inline-flex items-center justify-center cursor-pointer px-[14px] py-[12px] text-sm md:text-[14px] bg-[#f04e30] rounded-[8px] font-semibold bg-[#f04e30] text-white"
             >
-              Request Call Back
-            </a>
+              Live Chat
+            </button>
           </div>
         </div>
       </div>
@@ -1705,207 +1715,107 @@
     <!-- ===================== -->
     <!-- 🔹 MEDANTA CONFIG -->
     <!-- ===================== -->
-    <script>
-      const brandConfig = {
-        name: "Medanta",
-        color: "rgb(240 78 48 / 1)",
-        logo: "./public/images/medantalogo.png.webp",
-      };
-    </script>
 
     <!-- ===================== -->
-    <!-- 🔹 HIDE DEFAULT ZOHO BUTTON -->
-    <!-- ===================== -->
-    <style>
-      #zsiq_float {
-        display: none !important;
-      }
-
-      /* Custom Chat Button */
-      #chatBtn {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        padding: 12px 18px;
-        border-radius: 999px;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-        font-weight: 600;
-        z-index: 9999;
-      }
-
-      /* Custom Header */
-      #customChatHeader {
-        position: fixed;
-        bottom: 360px;
-        right: 20px;
-        width: 320px;
-        padding: 10px;
-        color: #fff;
-        display: none;
-        align-items: center;
-        gap: 10px;
-        border-radius: 10px 10px 0 0;
-        font-weight: 600;
-        z-index: 9999;
-      }
-
-      #customChatHeader img {
-        height: 24px;
-      }
-    </style>
-
-    <!-- ===================== -->
-    <!-- 🔹 CUSTOM BUTTON -->
-    <!-- ===================== -->
-    <button id="chatBtn">Chat</button>
-
-    <!-- ===================== -->
-    <!-- 🔹 CUSTOM HEADER -->
-    <!-- ===================== -->
-    <div id="customChatHeader">
-      <img
-        id="chatLogo"
-        src="public/images/medantalogo.png.webp"
-        alt="Medanta logo"
-      />
-      <span id="chatTitle"></span>
-    </div>
-
-    <!-- ===================== -->
-    <!-- 🔹 UI INIT -->
-    <!-- ===================== -->
-    <script>
-      const btn = document.getElementById("chatBtn");
-      const header = document.getElementById("customChatHeader");
-      const logo = document.getElementById("chatLogo");
-      const title = document.getElementById("chatTitle");
-
-      // Apply Medanta branding
-      btn.innerText = "Chat with " + brandConfig.name;
-      btn.style.background = brandConfig.color;
-
-      logo.src = brandConfig.logo;
-      title.innerText = brandConfig.name;
-      header.style.background = brandConfig.color;
-
-      // Button click → open chat
-      btn.onclick = function () {
-        $zoho.salesiq.floatwindow.visible("show");
-        $zoho.salesiq.chat.start();
-
-        header.style.display = "flex";
-
-        // 🔥 Send hospital identity (acts like tag)
-        setTimeout(() => {
-          $zoho.salesiq.chat.message("[HOSPITAL=Medanta]");
-          $zoho.salesiq.chat.message(
-            "You are connected with Medanta. How can we help you?",
-          );
-        }, 800);
-      };
-    </script>
-
-    <!-- ===================== -->
-    <!-- 🔹 ZOHO CONFIG -->
-    <!-- ===================== -->
-    <script>
-      window.$zoho = window.$zoho || {};
-      $zoho.salesiq = $zoho.salesiq || {};
-
-      $zoho.salesiq.ready = function () {
-        console.log("Zoho Ready: Medanta");
-
-        // ✅ Visible tag for agents
-        $zoho.salesiq.visitor.name("[Medanta] Visitor");
-
-        // ✅ Hidden tag
-        $zoho.salesiq.visitorinfo({
-          Notes: "[HOSPITAL=Medanta | PAGE=/medanta-gurgaon/index.html]",
-        });
-      };
-    </script>
-
-    <!-- ===================== -->
-    <!-- 🔹 ZOHO SCRIPT -->
-    <!-- ===================== -->
+    <!-- Google Tag -->
     <script
-      id="zsiqscript"
-      src="https://salesiq.zohopublic.in/widget?wc=siq367d95d869cfb0a60e7316445c07536ce914f0b2acca4d494a29391df96d37815f0b000cc8eb687133e4e9868f24bf72"
-      defer
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-922729084"
     ></script>
-
-    <!-- Google Tag (delayed for performance) -->
-    <script defer>
+    <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
-      setTimeout(function () {
-        var gtagScript = document.createElement("script");
-        gtagScript.src =
-          "https://www.googletagmanager.com/gtag/js?id=AW-922729084";
-        gtagScript.async = true;
-        document.head.appendChild(gtagScript);
-
-        gtag("js", new Date());
-        gtag("config", "AW-922729084");
-      }, 3000);
+      gtag("js", new Date());
+      gtag("config", "AW-922729084");
     </script>
-    <!-- 
+
+    <!-- Conversion trigger (example) -->
     <script>
-      window.$zoho = window.$zoho || {};
-      $zoho.salesiq = $zoho.salesiq || { ready: function () {} };
-    </script>
-    <script
-      id="zsiqscript"
-      src="https://salesiq.zohopublic.in/widget?wc=siqfe5a1b756338db7ba9dfed96aa7b470e9201e41f064734939e734314fb6414c7"
-      defer
-    ></script> -->
-
-    <script defer>
       function trackConversion() {
         gtag("event", "conversion", {
           send_to: "AW-922729084/CONVERSION_LABEL",
         });
+      }
 
-        // Optional: also open Zoho chat
-        if (window.$zoho && $zoho.salesiq) {
-          $zoho.salesiq.floatwindow.visible("show");
+      document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.getElementById("cta-btn");
+        if (btn) btn.addEventListener("click", trackConversion);
+      });
+    </script>
+
+    <script>
+      let zohoLoaded = false;
+      let zohoLoading = false;
+
+      function loadZohoChat(callback) {
+        if (zohoLoaded) {
+          callback && callback();
+          return;
+        }
+
+        if (zohoLoading) return;
+
+        zohoLoading = true;
+
+        const s = document.createElement("script");
+        s.src =
+          "https://salesiq.zohopublic.in/widget?wc=siq367d95d869cfb0a60e7316445c07536ce914f0b2acca4d494a29391df96d37815f0b000cc8eb687133e4e9868f24bf72";
+        s.async = true;
+
+        s.onload = function () {
+          const wait = setInterval(() => {
+            if (window.$zoho && $zoho.salesiq && $zoho.salesiq.ready) {
+              clearInterval(wait);
+              zohoLoaded = true;
+              callback && callback();
+            }
+          }, 200);
+        };
+
+        document.body.appendChild(s);
+      }
+
+      /* ✅ AUTO LOAD (lazy) */
+      function initLazyZoho() {
+        // load after page idle (best for performance)
+        if ("requestIdleCallback" in window) {
+          requestIdleCallback(() => loadZohoChat());
+        } else {
+          setTimeout(() => loadZohoChat(), 3000);
         }
       }
 
-      setInterval(() => {
-        trackConversion();
-      }, [30000]);
+      /* ✅ BUTTON CLICK HANDLER */
+      document.addEventListener("DOMContentLoaded", function () {
+        initLazyZoho(); // auto load
+
+        var btn = document.getElementById("callback-btn");
+        var btn2 = document.getElementById("callback-btn2");
+
+        [btn, btn2].forEach(function (el) {
+          if (el) {
+            el.addEventListener("click", function (e) {
+              e.preventDefault();
+
+              if (typeof gtag === "function") {
+                gtag("event", "conversion", {
+                  send_to: "AW-922729084/CONVERSION_LABEL",
+                });
+              }
+
+              if (window.$zoho && $zoho.salesiq) {
+                $zoho.salesiq.floatwindow.visible("show");
+                $zoho.salesiq.chat.start();
+              }
+            });
+          }
+        });
+      });
     </script>
 
-    <script type="text/javascript">
-      var dateAndMonthRegexFormateArray =
-        zf_SetDateAndMonthRegexBasedOnDateFormate("dd-MMM-yyyy");
-      var zf_DateRegex = new RegExp(dateAndMonthRegexFormateArray[0]);
-      var zf_MonthYearRegex = new RegExp(dateAndMonthRegexFormateArray[1]);
-
-      var zf_MandArray = ["Name_First", "Name_Last", "PhoneNumber_countrycode"];
-
-      var zf_FieldArray = [
-        "Name_First",
-        "Name_Last",
-        "Email",
-        "PhoneNumber_countrycode",
-        "FileUpload",
-        "SingleLine2",
-        "SingleLine3",
-        "SingleLine4",
-        "SingleLine5",
-        "SingleLine6",
-        "SingleLine7",
-      ];
-
-      var isSalesIQIntegrationEnabled = false;
-      var salesIQFieldsArray = [];
-    </script>
+    <!-- GEO + CHAT SCRIPT -->
 
     <!-- GEO + CHAT SCRIPT -->
     <script defer>
