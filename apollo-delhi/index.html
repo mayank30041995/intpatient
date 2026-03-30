@@ -115,10 +115,10 @@
       }
     </style>
 
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    /> -->
+    />
   </head>
 
   <body>
@@ -268,6 +268,7 @@
                   href="javascript:void(0);"
                   class="cursor-pointer inline-flex items-center justify-center px-5 py-3 rounded-xl bg-[#2582a1] text-white font-semibold hover:brightness-105"
                 >
+                  <i class="fas fa-comments mr-2"></i>
                   Live Chat (Fast Response)
                 </a>
 
@@ -2535,10 +2536,12 @@
 
           <!-- Request Callback -->
           <a
-            href="#lead-form"
+            id="callback-btn2"
+            rel="noopener"
             class="flex-1 inline-flex justify-center items-center min-h-[48px] px-6 py-3 text-base font-semibold text-white rounded-xl bg-[#2582a1] hover:bg-[#2582a5] transition mt-2 shadow-md hover:opacity-90 transition focus:outline-none focus:ring-2 focus:ring-[#2582a1]/50"
           >
-            Get Medical Opinion
+            <i class="fas fa-comments mr-2"></i>
+            Live Chat
           </a>
         </div>
       </div>
@@ -2560,33 +2563,75 @@
 
     <!-- Conversion trigger (example) -->
     <script>
-      function trackConversion() {
-        gtag("event", "conversion", {
-          send_to: "AW-922729084/CONVERSION_LABEL",
-        });
-      }
+      let zohoLoaded = false;
+      let zohoLoading = false;
 
-      document.addEventListener("DOMContentLoaded", function () {
-        const btn = document.getElementById("cta-btn");
-        if (btn) btn.addEventListener("click", trackConversion);
-      });
-    </script>
+      function loadZohoChat(callback) {
+        if (zohoLoaded) {
+          callback && callback();
+          return;
+        }
 
-    <!-- Lazy Zoho Chat -->
-    <script>
-      window.$zoho = window.$zoho || {};
-      $zoho.salesiq = $zoho.salesiq || { ready: function () {} };
+        if (zohoLoading) return;
 
-      function loadZohoChat() {
-        var s = document.createElement("script");
+        zohoLoading = true;
+
+        const s = document.createElement("script");
         s.src =
           "https://salesiq.zohopublic.in/widget?wc=siq367d95d869cfb0a60e7316445c07536ce914f0b2acca4d494a29391df96d37815f0b000cc8eb687133e4e9868f24bf72";
-        s.defer = true;
+        s.async = true;
+
+        s.onload = function () {
+          const wait = setInterval(() => {
+            if (window.$zoho && $zoho.salesiq && $zoho.salesiq.ready) {
+              clearInterval(wait);
+              zohoLoaded = true;
+              callback && callback();
+            }
+          }, 200);
+        };
+
         document.body.appendChild(s);
       }
 
-      setTimeout(loadZohoChat, 3000);
+      /* ✅ AUTO LOAD (lazy) */
+      function initLazyZoho() {
+        // load after page idle (best for performance)
+        if ("requestIdleCallback" in window) {
+          requestIdleCallback(() => loadZohoChat());
+        } else {
+          setTimeout(() => loadZohoChat(), 3000);
+        }
+      }
+
+      /* ✅ BUTTON CLICK HANDLER */
+      document.addEventListener("DOMContentLoaded", function () {
+        initLazyZoho(); // auto load
+
+        var btn = document.getElementById("callback-btn");
+        var btn2 = document.getElementById("callback-btn2");
+
+        [btn, btn2].forEach(function (el) {
+          if (el) {
+            el.addEventListener("click", function (e) {
+              e.preventDefault();
+
+              if (typeof gtag === "function") {
+                gtag("event", "conversion", {
+                  send_to: "AW-922729084/CONVERSION_LABEL",
+                });
+              }
+
+              if (window.$zoho && $zoho.salesiq) {
+                $zoho.salesiq.floatwindow.visible("show");
+                $zoho.salesiq.chat.start();
+              }
+            });
+          }
+        });
+      });
     </script>
+
     <!-- Add JS listener for buttons -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
