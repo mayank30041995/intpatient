@@ -179,7 +179,8 @@
                 <i class="fab fa-whatsapp fa-1x" aria-hidden="true"></i>
                 WhatsApp (Fast Response)</a>
               <a id="callback-btn" href="javascript:void(0);" rel="noopener"
-                class="inline-flex items-center gap-2 px-3 py-2 rounded-lg font-semibold bg-[#4E9BC4] text-white hover:brightness-105"><i class="fas fa-comments mr-2"></i>
+                class="inline-flex items-center gap-2 px-3 py-2 rounded-lg font-semibold bg-[#4E9BC4] text-white hover:brightness-105"><i
+                  class="fas fa-comments mr-2"></i>
                 Live Chat</a>
               <a href="#lead-form"
                 class="inline-flex items-center gap-2 px-3 py-2 rounded-lg font-semibold border border-gray-200 bg-white text-gray-900 hover:bg-gray-50">Get
@@ -1119,163 +1120,90 @@
                   <div class="zf-clearBoth"></div>
                 </li>
               </ul>
-              <div class="zf-subContWrap zf-topAlign">
-                <ul>
-                  <div class="zf-tempFrmWrapper zf-name zf-namelarge">
-                    <label class="zf-labelName">
-                      Name
-                      <em class="zf-important"> *</em>
-                    </label>
-                    <div class="zf-tempContDiv zf-twoType">
-                      <div class="zf-nameWrapper">
-                        <span>
-                          <input type="text" maxlength="255" name="Name_First" fieldType="7" placeholder=""
-                            aria-labelledby="firstname" />
-                          <label>First Name </label>
-                        </span>
-                        <span>
-                          <input type="text" maxlength="255" name="Name_Last" fieldType="7" placeholder=""
-                            aria-labelledby="lastname" />
-                          <label>Last Name </label>
-                        </span>
-                        <div class="zf-clearBoth"></div>
-                      </div>
-                      <p id="Name_error" class="zf-errorMessage" style="display: none">
-                        Invalid value
-                      </p>
-                    </div>
-                    <div class="zf-clearBoth"></div>
-                  </div>
-                  <div class="zf-tempFrmWrapper zf- zf-large">
-                    <label class="zf-labelName">
-                      Phone
-                      <em class="zf-important"> *</em>
-                    </label>
-                    <div class="zf-tempContDiv zf-phonefld">
-                      <div class="zf-phwrapper zf-phNumber">
-                        <span>
-                          <input type="text" compname="PhoneNumber" name="PhoneNumber_countrycode" maxlength="20"
-                            checktype="c7" value="" phoneFormat="1" isCountryCodeEnabled="false" fieldType="11"
-                            id="international_PhoneNumber_countrycode" valType="number" phoneFormatType="1"
-                            placeholder="" aria-labelledby="phone" />
-                          <label>Number</label>
-                        </span>
-                        <div class="zf-clearBoth"></div>
-                      </div>
-                      <p id="PhoneNumber_error" class="zf-errorMessage" style="display: none">
-                        Invalid value
-                      </p>
-                    </div>
-                    <div class="zf-clearBoth"></div>
-                  </div>
-                  <div class="zf-tempFrmWrapper zf-large">
-                    <label class="zf-labelName"> Email </label>
-                    <div class="zf-tempContDiv">
-                      <span>
-                        <input type="text" name="Email" checktype="c5" value="" maxlength="255" fieldType="9"
-                          placeholder="" aria-labelledby="email" />
-                      </span>
-                      <p id="Email_error" class="zf-errorMessage" style="display: none">
-                        Invalid value
-                      </p>
-                    </div>
-                    <div class="zf-clearBoth"></div>
-                  </div>
+              <div
+                class="zf-subContWrap zf-topAlign max-w-2xl mx-auto bg-white p-6 rounded-2xl shadow-xl border border-gray-200">
+
+                <ul class="space-y-5">
+
+                  <!-- Name -->
                   <div class="zf-tempFrmWrapper">
-                    <label class="zf-labelName"> File Upload </label>
-                    <div class="zf-tempContDiv">
-                      <input type="file" name="FileUpload" checktype="c1" aria-labelledby="file" />
-                      <p id="FileUpload_error" class="zf-errorMessage" style="display: none">
-                        Choose any file for this field.
-                      </p>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">
+                      Name <span class="text-[#f04e30]">*</span>
+                    </label>
+
+                    <div class="grid grid-cols-2 gap-3">
+                      <input type="text" name="Name_First" placeholder="First Name"
+                        class="w-full h-11 px-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f04e30] focus:border-[#f04e30] outline-none transition" />
+                      <input type="text" name="Name_Last" placeholder="Last Name"
+                        class="w-full h-11 px-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f04e30] focus:border-[#f04e30] outline-none transition" />
                     </div>
-                    <div class="zf-clearBoth"></div>
+
+                    <p id="Name_error" class="text-red-500 text-xs mt-1 hidden">
+                      Invalid value
+                    </p>
                   </div>
-                  <div>
-                    <!-- <label class="zf-labelName"> CityAddress </label> -->
-                    <div class="zf-tempContDiv">
-                      <span>
-                        <input type="hidden" name="SingleLine" checktype="c1" value="CityAddress" maxlength="255"
-                          fieldType="1" placeholder="CityAddress" />
-                      </span>
-                      <p id="SingleLine_error" class="zf-errorMessage" style="display: none">
-                        Invalid value
-                      </p>
-                    </div>
-                    <div class="zf-clearBoth"></div>
+
+                  <!-- Phone -->
+                  <div class="zf-tempFrmWrapper">
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">
+                      Phone <span class="text-[#f04e30]">*</span>
+                    </label>
+
+                    <input type="tel" name="PhoneNumber_countrycode" placeholder="Enter phone number"
+                      class="w-full h-11 px-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f04e30] focus:border-[#f04e30] outline-none transition" />
+
+                    <p id="PhoneNumber_error" class="text-red-500 text-xs mt-1 hidden">
+                      Invalid value
+                    </p>
                   </div>
-                  <div>
-                    <!-- <label class="zf-labelName"> CountryAddress </label> -->
-                    <div class="zf-tempContDiv">
-                      <span>
-                        <input type="hidden" name="SingleLine1" checktype="c1" value="CountryAddress" maxlength="255"
-                          fieldType="1" placeholder="CountryAddress" />
-                      </span>
-                      <p id="SingleLine1_error" class="zf-errorMessage" style="display: none">
-                        Invalid value
-                      </p>
-                    </div>
-                    <div class="zf-clearBoth"></div>
+
+                  <!-- Email -->
+                  <div class="zf-tempFrmWrapper">
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">
+                      Email
+                    </label>
+
+                    <input type="email" name="Email" placeholder="Enter your email"
+                      class="w-full h-11 px-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f04e30] focus:border-[#f04e30] outline-none transition" />
+
+                    <p id="Email_error" class="text-red-500 text-xs mt-1 hidden">
+                      Invalid value
+                    </p>
                   </div>
-                  <div>
-                    <!-- <label class="zf-labelName"> CityLatLong </label> -->
-                    <div class="zf-tempContDiv">
-                      <span>
-                        <input type="hidden" name="SingleLine2" checktype="c1" value="CityLatLong" maxlength="255"
-                          fieldType="1" placeholder="CityLatLong" />
-                      </span>
-                      <p id="SingleLine2_error" class="zf-errorMessage" style="display: none">
-                        Invalid value
-                      </p>
-                    </div>
-                    <div class="zf-clearBoth"></div>
+
+                  <!-- File Upload -->
+                  <div class="zf-tempFrmWrapper">
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">
+                      Upload Reports
+                    </label>
+
+                    <input type="file" name="FileUpload"
+                      class="w-full text-sm border border-gray-300 rounded-lg p-2 file:bg-[#f04e30] file:text-white file:border-0 file:px-4 file:py-2 file:rounded-lg file:cursor-pointer hover:file:bg-[#d84328]" />
+
+                    <p id="FileUpload_error" class="text-red-500 text-xs mt-1 hidden">
+                      Choose a file
+                    </p>
                   </div>
-                  <div>
-                    <!-- <label class="zf-labelName"> Region </label> -->
-                    <div class="zf-tempContDiv">
-                      <span>
-                        <input type="hidden" name="SingleLine3" checktype="c1" value="Region" maxlength="255"
-                          fieldType="1" placeholder="Region" />
-                      </span>
-                      <p id="SingleLine3_error" class="zf-errorMessage" style="display: none">
-                        Invalid value
-                      </p>
-                    </div>
-                    <div class="zf-clearBoth"></div>
-                  </div>
-                  <div>
-                    <!-- <label class="zf-labelName"> userIP </label> -->
-                    <div class="zf-tempContDiv">
-                      <span>
-                        <input type="hidden" name="SingleLine4" checktype="c1" value="userIP" maxlength="255"
-                          fieldType="1" placeholder="userIP" />
-                      </span>
-                      <p id="SingleLine4_error" class="zf-errorMessage" style="display: none">
-                        Invalid value
-                      </p>
-                    </div>
-                    <div class="zf-clearBoth"></div>
-                  </div>
-                  <div>
-                    <!-- <label class="zf-labelName"> mapLocationUrl </label> -->
-                    <div class="zf-tempContDiv">
-                      <span>
-                        <input type="hidden" name="SingleLine5" checktype="c1" value="mapLocationUrl" maxlength="255"
-                          fieldType="1" placeholder="mapLocationUrl" />
-                      </span>
-                      <p id="SingleLine5_error" class="zf-errorMessage" style="display: none">
-                        Invalid value
-                      </p>
-                    </div>
-                    <div class="zf-clearBoth"></div>
-                  </div>
+
+                  <!-- Hidden Fields (unchanged) -->
+                  <input type="hidden" name="SingleLine" />
+                  <input type="hidden" name="SingleLine1" />
+                  <input type="hidden" name="SingleLine2" />
+                  <input type="hidden" name="SingleLine3" />
+                  <input type="hidden" name="SingleLine4" />
+                  <input type="hidden" name="SingleLine5" />
+
                 </ul>
+
+                <!-- Submit -->
+                <div class="mt-6">
+                  <button
+                    class="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                    Submit
+                  </button>
+                </div>
+
               </div>
-              <ul>
-                <li class="zf-fmFooter">
-                  <button class="zf-submitColor">Submit</button>
-                </li>
-              </ul>
             </div>
           </form>
         </div>
