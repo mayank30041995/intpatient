@@ -3352,33 +3352,40 @@
             </p>
             <form class="grid gap-4">
               <input
+                id="name"
                 class="border rounded-xl px-4 py-3"
                 placeholder="Patient Name"
               />
               <div class="grid md:grid-cols-2 gap-4">
                 <input
+                  id="passport"
                   class="border rounded-xl px-4 py-3"
                   placeholder="Passport Number"
                 />
                 <input
+                  id="country"
                   class="border rounded-xl px-4 py-3"
                   placeholder="Nationality"
                   value="Bangladesh"
                 />
               </div>
               <input
+                id="phone"
                 class="border rounded-xl px-4 py-3"
                 placeholder="WhatsApp Number"
               />
               <input
+                id="doctor"
                 class="border rounded-xl px-4 py-3"
                 placeholder="Preferred Doctor / Department"
               />
               <textarea
+                id="notes"
                 class="border rounded-xl px-4 py-3"
                 placeholder="Additional notes"
               ></textarea>
               <button
+                onclick="sendToWhatsApp()"
                 class="text-white font-bold py-3 rounded-xl"
                 style="background: #3567b0"
               >
@@ -3660,6 +3667,38 @@
 
         ipLookUp();
       });
+    </script>
+
+    <script>
+      function sendToWhatsApp() {
+        const name = document.getElementById("name").value;
+        const passport = document.getElementById("passport").value;
+        const country = document.getElementById("country").value;
+        const phone = document.getElementById("phone").value;
+        const doctor = document.getElementById("doctor").value;
+        const notes = document.getElementById("notes").value;
+        console.log(name, passport, country, phone, doctor, notes);
+        // Build message
+        const message = `Patient Details:
+            Name: ${name}
+            Passport: ${passport}
+            Country: ${country}
+            WhatsApp: ${phone}
+            Preferred Doctor: ${doctor}
+            Notes: ${notes}`;
+
+        // Encode message
+        const encodedMessage = encodeURIComponent(message);
+
+        // Your WhatsApp number (with country code, no +)
+        const whatsappNumber = "919911163990";
+
+        // Final URL
+        const url = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+        // Open WhatsApp
+        window.open(url, "_blank");
+      }
     </script>
     <!-- End of GEO + CHAT SCRIPT -->
   </body>
