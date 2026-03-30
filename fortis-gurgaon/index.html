@@ -178,9 +178,9 @@
                 class="inline-flex items-center gap-2 px-3 py-2 rounded-lg font-semibold bg-green-500 text-white shadow-md hover:brightness-105">
                 <i class="fab fa-whatsapp fa-1x" aria-hidden="true"></i>
                 WhatsApp (Fast Response)</a>
-              <a href="#lead-form"
-                class="inline-flex items-center gap-2 px-3 py-2 rounded-lg font-semibold bg-[#4E9BC4] text-white hover:brightness-105">Request
-                Call Back</a>
+              <a id="callback-btn" href="javascript:void(0);" rel="noopener"
+                class="inline-flex items-center gap-2 px-3 py-2 rounded-lg font-semibold bg-[#4E9BC4] text-white hover:brightness-105"><i class="fas fa-comments mr-2"></i>
+                Live Chat</a>
               <a href="#lead-form"
                 class="inline-flex items-center gap-2 px-3 py-2 rounded-lg font-semibold border border-gray-200 bg-white text-gray-900 hover:bg-gray-50">Get
                 Medical Opinion</a>
@@ -1129,11 +1129,13 @@
                     <div class="zf-tempContDiv zf-twoType">
                       <div class="zf-nameWrapper">
                         <span>
-                          <input type="text" maxlength="255" name="Name_First" fieldType="7" placeholder="" aria-labelledby="firstname" />
+                          <input type="text" maxlength="255" name="Name_First" fieldType="7" placeholder=""
+                            aria-labelledby="firstname" />
                           <label>First Name </label>
                         </span>
                         <span>
-                          <input type="text" maxlength="255" name="Name_Last" fieldType="7" placeholder="" aria-labelledby="lastname" />
+                          <input type="text" maxlength="255" name="Name_Last" fieldType="7" placeholder=""
+                            aria-labelledby="lastname" />
                           <label>Last Name </label>
                         </span>
                         <div class="zf-clearBoth"></div>
@@ -1408,9 +1410,10 @@
           class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-green-500 text-white rounded-lg shadow hover:brightness-105 text-lg">
           <i class="fab fa-whatsapp fa-1x mx-2" aria-hidden="true"></i> WhatsApp
         </a>
-        <a onclick="trackConversion()"
+        <a id="callback-btn2" rel="noopener"
           class="cursor-pointer flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-[#4E9BC4] text-white rounded-lg shadow hover:brightness-105 text-lg">
-          Request Call Back
+          <i class="fas fa-comments mr-2"></i>
+          Live Chat
         </a>
       </div>
     </div>
@@ -1452,216 +1455,110 @@
   <!-- ===================== -->
   <!-- 🔹 BRAND CONFIG -->
   <!-- ===================== -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-922729084"></script>
   <script>
-    const brandConfig = (function () {
-      const path = window.location.pathname.toLowerCase();
-
-      if (path.includes("apollo")) {
-        return {
-          name: "Apollo Delhi",
-          color: "#0057B8",
-          logo: "https://via.placeholder.com/100x30?text=Apollo"
-        };
-      }
-      if (path.includes("medanta")) {
-        return {
-          name: "Medanta",
-          color: "#009688",
-          logo: "https://via.placeholder.com/100x30?text=Medanta"
-        };
-      }
-      return {
-        name: "Fortis Gurgaon",
-        color: "#2E7D32",
-        logo: "https://via.placeholder.com/100x30?text=Fortis"
-      };
-    })();
-  </script>
-
-  <!-- ===================== -->
-  <!-- 🔹 HIDE DEFAULT ZOHO BUTTON -->
-  <!-- ===================== -->
-  <style>
-    #zsiq_float {
-      display: none !important;
-    }
-
-    /* Custom Chat Button */
-    #chatBtn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      padding: 12px 18px;
-      border-radius: 999px;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-      font-weight: 600;
-      z-index: 9999;
-    }
-
-    /* Custom Header */
-    #customChatHeader {
-      position: fixed;
-      bottom: 360px;
-      right: 20px;
-      width: 320px;
-      padding: 10px;
-      color: #fff;
-      display: none;
-      align-items: center;
-      gap: 10px;
-      border-radius: 10px 10px 0 0;
-      font-weight: 600;
-      z-index: 9999;
-    }
-
-    #customChatHeader img {
-      height: 24px;
-    }
-  </style>
-
-  <!-- ===================== -->
-  <!-- 🔹 CUSTOM BUTTON -->
-  <!-- ===================== -->
-  <button id="chatBtn">Chat</button>
-
-  <!-- ===================== -->
-  <!-- 🔹 CUSTOM HEADER -->
-  <!-- ===================== -->
-  <div id="customChatHeader">
-    <img id="chatLogo" src="" />
-    <span id="chatTitle"></span>
-  </div>
-
-  <!-- ===================== -->
-  <!-- 🔹 UI INIT -->
-  <!-- ===================== -->
-  <script>
-    const btn = document.getElementById("chatBtn");
-    const header = document.getElementById("customChatHeader");
-    const logo = document.getElementById("chatLogo");
-    const title = document.getElementById("chatTitle");
-
-    // Apply branding
-    btn.innerText = "Chat with " + brandConfig.name;
-    btn.style.background = brandConfig.color;
-
-    logo.src = brandConfig.logo;
-    title.innerText = brandConfig.name;
-    header.style.background = brandConfig.color;
-
-    // Button click → open chat
-    btn.onclick = function () {
-      $zoho.salesiq.floatwindow.visible("show");
-      $zoho.salesiq.chat.start();
-
-      header.style.display = "flex";
-
-      setTimeout(() => {
-        $zoho.salesiq.chat.message(
-          "[SOURCE:" + brandConfig.name + "]"
-        );
-
-        $zoho.salesiq.chat.message(
-          "You are connected with " + brandConfig.name + "."
-        );
-      }, 800);
-    };
-
-
-    $zoho.salesiq.ready = function () {
-
-      const brand = brandConfig.name;
-
-      if (brand.includes("Fortis")) {
-        $zoho.salesiq.visitor.trigger("Fortis Auto Tag");
-      }
-
-      if (brand.includes("Apollo")) {
-        $zoho.salesiq.visitor.trigger("Apollo Auto Tag");
-      }
-
-      if (brand.includes("Medanta")) {
-        $zoho.salesiq.visitor.trigger("Medanta Auto Tag");
-      }
-
-    };
-  </script>
-
-  <!-- ===================== -->
-  <!-- 🔹 ZOHO CONFIG -->
-  <!-- ===================== -->
-  <script>
-    window.$zoho = window.$zoho || {};
-    $zoho.salesiq = $zoho.salesiq || {};
-
-    $zoho.salesiq.ready = function () {
-      console.log("Zoho Ready:", brandConfig.name);
-
-      // Attach hospital info
-      $zoho.salesiq.visitor.name(brandConfig.name + " Visitor");
-
-      $zoho.salesiq.visitorinfo({
-        Notes: "Hospital: " + brandConfig.name
-      });
-    };
-  </script>
-
-  <!-- ===================== -->
-  <!-- 🔹 ZOHO SCRIPT -->
-  <!-- ===================== -->
-  <script id="zsiqscript"
-    src="https://salesiq.zohopublic.in/widget?wc=siq367d95d869cfb0a60e7316445c07536ce914f0b2acca4d494a29391df96d37815f0b000cc8eb687133e4e9868f24bf72"
-    defer>
-    </script>
-
-
-
-  <!-- Google Tag (delayed for performance) -->
-  <script defer>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
       dataLayer.push(arguments);
     }
-    setTimeout(function () {
-      var gtagScript = document.createElement("script");
-      gtagScript.src =
-        "https://www.googletagmanager.com/gtag/js?id=AW-922729084";
-      gtagScript.async = true;
-      document.head.appendChild(gtagScript);
-
-      gtag("js", new Date());
-      gtag("config", "AW-922729084");
-    }, 3000);
+    gtag("js", new Date());
+    gtag("config", "AW-922729084");
   </script>
-  <!-- End of Google Tag (delayed for performance) -->
-  <!-- GEO + CHAT SCRIPT -->
-  <script type="text/javascript">
-    var dateAndMonthRegexFormateArray =
-      zf_SetDateAndMonthRegexBasedOnDateFormate("dd-MMM-yyyy");
-    var zf_DateRegex = new RegExp(dateAndMonthRegexFormateArray[0]);
-    var zf_MonthYearRegex = new RegExp(dateAndMonthRegexFormateArray[1]);
 
-    var zf_MandArray = ["Name_First", "Name_Last", "PhoneNumber_countrycode"];
+  <!-- Conversion trigger (example) -->
+  <script>
+    let zohoLoaded = false;
+    let zohoLoading = false;
 
-    var zf_FieldArray = [
-      "Name_First",
-      "Name_Last",
-      "Email",
-      "PhoneNumber_countrycode",
-      "FileUpload",
-      "SingleLine",
-      "SingleLine1",
-      "SingleLine2",
-      "SingleLine3",
-      "SingleLine4",
-      "SingleLine5",
-    ];
+    function loadZohoChat(callback) {
+      if (zohoLoaded) {
+        callback && callback();
+        return;
+      }
 
-    var isSalesIQIntegrationEnabled = false;
-    var salesIQFieldsArray = [];
+      if (zohoLoading) return;
+
+      zohoLoading = true;
+
+      const s = document.createElement("script");
+      s.src =
+        "https://salesiq.zohopublic.in/widget?wc=siq367d95d869cfb0a60e7316445c07536ce914f0b2acca4d494a29391df96d37815f0b000cc8eb687133e4e9868f24bf72";
+      s.async = true;
+
+      s.onload = function () {
+        const wait = setInterval(() => {
+          if (window.$zoho && $zoho.salesiq && $zoho.salesiq.ready) {
+            clearInterval(wait);
+            zohoLoaded = true;
+            callback && callback();
+          }
+        }, 200);
+      };
+
+      document.body.appendChild(s);
+    }
+
+    /* ✅ AUTO LOAD (lazy) */
+    function initLazyZoho() {
+      // load after page idle (best for performance)
+      if ("requestIdleCallback" in window) {
+        requestIdleCallback(() => loadZohoChat());
+      } else {
+        setTimeout(() => loadZohoChat(), 3000);
+      }
+    }
+
+    /* ✅ BUTTON CLICK HANDLER */
+    document.addEventListener("DOMContentLoaded", function () {
+      initLazyZoho(); // auto load
+
+      var btn = document.getElementById("callback-btn");
+      var btn2 = document.getElementById("callback-btn2");
+
+      [btn, btn2].forEach(function (el) {
+        if (el) {
+          el.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            if (typeof gtag === "function") {
+              gtag("event", "conversion", {
+                send_to: "AW-922729084/CONVERSION_LABEL",
+              });
+            }
+
+            if (window.$zoho && $zoho.salesiq) {
+              $zoho.salesiq.floatwindow.visible("show");
+              $zoho.salesiq.chat.start();
+            }
+          });
+        }
+      });
+    });
   </script>
+
+  <!-- Add JS listener for buttons -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const btn = document.getElementById("callback-btn");
+      console.log(btn);
+      if (btn) {
+        btn.addEventListener("click", function () {
+          if (typeof gtag === "function") {
+            gtag("event", "conversion", {
+              send_to: "AW-922729084/CONVERSION_LABEL",
+            });
+          }
+
+          // Optional: open Zoho chat
+          if (window.$zoho && $zoho.salesiq) {
+            $zoho.salesiq.floatwindow.visible("show");
+          }
+        });
+      }
+    });
+  </script>
+
 
   <!-- GEO + CHAT SCRIPT -->
   <script defer>
@@ -1765,49 +1662,6 @@
   <!-- End of GEO + CHAT SCRIPT -->
 
   <!-- Zoho Live Chat -->
-
-  <!-- <script>
-  const brandName = window.location.pathname.includes("apollo")
-    ? "Apollo Delhi"
-    : window.location.pathname.includes("medanta")
-    ? "Medanta"
-    : "Fortis Gurgaon";
-
-  window.$zoho = window.$zoho || {};
-  $zoho.salesiq = $zoho.salesiq || {};
-
-  $zoho.salesiq.ready = function () {
-
-    console.log("Zoho Ready:", brandName);
-
-    // ✅ Put hospital inside NAME (this WILL show)
-    $zoho.salesiq.visitor.name(brandName + " Visitor");
-
-    // ✅ Also push inside NOTE (visible to agents)
-    $zoho.salesiq.visitorinfo({
-      Notes: "Hospital: " + brandName
-    });
-
-    // Open chat
-    $zoho.salesiq.floatwindow.visible("show");
-    $zoho.salesiq.chat.start();
-
-    // Show message
-    setTimeout(() => {
-      $zoho.salesiq.chat.message(
-        "Welcome to " + brandName + "! How can we help you?"
-      );
-    }, 1000);
-  };
-</script> -->
-
-  <!-- <script
-  id="zsiqscript"
-  src="https://salesiq.zohopublic.in/widget?wc=siq367d95d869cfb0a60e7316445c07536ce914f0b2acca4d494a29391df96d37815f0b000cc8eb687133e4e9868f24bf72"
-  defer>
-</script> -->
-
-  <!-- End of Zoho Live Chat -->
 
 
   <script>
