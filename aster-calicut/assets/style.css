@@ -492,3 +492,54 @@ p {
       text-align: left;
     }
   }
+
+
+
+.overlay-full {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999999;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  padding: 32px;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  margin: 0 16px;
+}
+
+.overlay-404 {
+  font-size: 64px;
+  font-weight: 900;
+  color: #b91c1c;
+  margin: 0 0 8px;
+  line-height: 1;
+}
+
+.overlay-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 8px;
+}
+
+.overlay-text {
+  color: #4b5563;
+  margin: 0;
+}
+
+.overlay-subtext {
+  color: #9ca3af;
+  font-size: 14px;
+  margin-top: 8px;
+}
