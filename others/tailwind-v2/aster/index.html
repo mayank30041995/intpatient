@@ -4,10 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Aster Medcity, Kochi | India Private Patients</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+
     <link
       rel="preload"
       href="css/font/Poppins-Regular.ttf"
@@ -17,7 +14,10 @@
     />
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <link rel="preload" href="css/font/style.css" as="style" />
+    <link href="css/font/style.css" rel="stylesheet" />
     <script>
       tailwind.config = {
         theme: {
@@ -73,7 +73,7 @@
               />
             </div>
 
-            <div class="hidden sm:block">
+            <div>
               <p class="font-bold text-sm">Aster Medcity, Kochi</p>
               <p class="text-xs text-slate-500">
                 Information & coordination support
@@ -89,25 +89,25 @@
               rel="noopener noreferrer"
               class="px-3 py-2 border rounded-full hover:bg-slate-50"
             >
-              Refer Us
+              <i class="fa-solid fa-circle-info mr-1"></i> Refer Us
             </a>
             <a
               href="#specialties"
               class="px-3 py-2 border rounded-full hover:bg-slate-50"
             >
-              Specialities
+              <i class="fa-solid fa-stethoscope mr-1"></i> Specialities
             </a>
             <a
               href="#checkups"
               class="px-3 py-2 border rounded-full hover:bg-slate-50"
             >
-              Check-ups
+              <i class="fa-solid fa-ribbon mr-1"></i> Check-ups
             </a>
             <a
               href="#faq"
               class="px-3 py-2 border rounded-full hover:bg-slate-50"
             >
-              FAQ
+              <i class="fa-solid fa-circle-info mr-1"></i> FAQ
             </a>
           </nav>
 
@@ -215,7 +215,7 @@
                 href="javascript:void(0);"
                 rel="noopener"
                 role="button"
-                class="open-zoho-chat bg-gradient-to-r from-emerald-500 to-cyan-500 text-white font-bold py-3 rounded-lg text-center"
+                class="open-zoho-chat gradient-emerald-cyan bg-gradient-to-r from-emerald-500 to-cyan-500 text-white font-bold py-3 rounded-lg text-center"
               >
                 Start Live Chat / Request Call Back
               </a>
