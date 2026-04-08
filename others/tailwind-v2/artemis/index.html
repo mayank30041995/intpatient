@@ -43,51 +43,6 @@
       type="font/ttf"
       crossorigin
     />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Hospital",
-        "name": "Artemis Hospitals: Best Hospital in Gurgaon, haryana",
-        "image": "https://artimis-gurgaon.hosplan.com/artemis/img/artmis-hos.jpg",
-        "@id": "https://artimis-gurgaon.hosplan.com/",
-        "url": "https://artimis-gurgaon.hosplan.com/",
-        "telephone": "+91-9911163990",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Sector 51, Gurugram, Bindapur, Haryana",
-          "addressLocality": "Haryana",
-          "addressRegion": "Haryana",
-          "postalCode": "122018",
-          "addressCountry": "IN"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": "28.4311541",
-          "longitude": "77.0721527"
-        },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"
-          ],
-          "opens": "00:00",
-          "closes": "23:59"
-        },
-        "medicalSpecialty": [
-          "Cardiology",
-          "Orthopedic",
-          "General Surgery",
-          "Pediatrics",
-          "Emergency"
-        ]
-      }
-    </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -141,19 +96,20 @@
       >
         <div class="flex flex-wrap items-center gap-3">
           <span class="font-semibold">International Patients</span>
-          <span class="opacity-80">Call: +91-9911163990</span>
-          <span class="opacity-80">Emergency: +91-9911163990</span>
+          <span class="opacity-80">Medical Opinion </span>
+          <span class="opacity-80">• Appointment Help</span>
+          <span class="opacity-80">• Quick Connect</span>
         </div>
-        <div class="flex items-center gap-3">
+        <!-- <div class="flex items-center gap-3">
           <a
-            href="https://what.sapp.link/artemis"
-            target="_blank"
+            href="javascript:void(0);"
+           
             rel="noopener"
             class="font-bold underline"
             >WhatsApp</a
           >
           <span class="opacity-80">Email: [email protected]</span>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -183,6 +139,14 @@
 
         <div class="hidden md:flex items-center gap-2">
           <a
+            href="https://www.hosplan.com/refer-us"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="px-3 py-2 rounded-full border border-slate-200 hover:bg-slate-50 text-sm font-semibold"
+          >
+            <i class="fa-solid fa-circle-info mr-1"></i> Refer Us
+          </a>
+          <a
             href="#intl"
             class="px-3 py-2 rounded-full border border-slate-200 hover:bg-slate-50 text-sm font-semibold"
             >Intl services</a
@@ -201,15 +165,6 @@
             href="#doctors"
             class="px-3 py-2 rounded-full border border-slate-200 hover:bg-slate-50 text-sm font-semibold"
             >Doctors</a
-          >
-          <a
-            href="https://what.sapp.link/artemis"
-            target="_blank"
-            rel="noopener"
-            class="px-4 py-2 rounded-md bg-emerald-500 text-white font-bold shadow-soft"
-          >
-            <i class="fab fa-whatsapp mr-1 mt-1 fa-1x bg-transparent"></i>
-            WhatsApp</a
           >
         </div>
       </div>
@@ -234,19 +189,24 @@
               </p>
 
               <div class="mt-5 grid gap-3">
-                <a
-                  href="https://what.sapp.link/artemis"
-                  target="_blank"
+                <!-- <a
+                                    href="javascript:void(0);"
+
+                 
                   rel="noopener"
                   class="w-full text-center rounded-md bg-emerald-500 text-white font-semibold py-3 shadow-soft"
                 >
-                  <i class="fab fa-whatsapp mr-1 mt-1 fa-1x bg-transparent"></i>
+                 <i class="fa-solid fa-comments mr-2 text-lg"></i>
                   WhatsApp (For fast respond)</a
-                >
+                > -->
                 <a
-                  href="#form"
-                  class="w-full text-center rounded-md bg-[#a69837] text-white font-semibold py-3 shadow-soft"
-                  >Request call back</a
+                  id="callback-btn"
+                  href="javascript:void(0);"
+                  rel="noopener"
+                  role="button"
+                  class="open-zoho-chat w-full text-center rounded-md bg-[#a69837] text-white font-semibold py-3 shadow-soft"
+                  ><i class="fa-solid fa-comments mr-2 text-lg"></i> Live
+                  Chat</a
                 >
                 <a
                   href="#opinion"
@@ -292,20 +252,6 @@
               </p>
 
               <div class="mt-5 grid gap-3">
-                <a
-                  href="https://what.sapp.link/artemis"
-                  target="_blank"
-                  rel="noopener"
-                  class="w-full text-center rounded-md bg-emerald-500 text-white font-semibold py-3 shadow-soft"
-                >
-                  <i class="fab fa-whatsapp mr-1 mt-1 fa-1x bg-transparent"></i>
-                  WhatsApp (For fast respond)</a
-                >
-                <a
-                  href="#form"
-                  class="w-full text-center rounded-md bg-[#a69837] text-white font-semibold py-3 shadow-soft"
-                  >Request call back</a
-                >
                 <a
                   href="#opinion"
                   class="w-full text-center rounded-md border border-slate-200 bg-white font-bold py-3 hover:bg-slate-50"
@@ -391,15 +337,13 @@
 
                 <div class="mt-7 flex flex-wrap gap-3">
                   <a
-                    href="https://what.sapp.link/artemis"
-                    target="_blank"
+                    href="javascript:void(0);"
                     rel="noopener"
-                    class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md bg-emerald-500 text-white font-bold shadow-lift"
+                    role="button"
+                    class="open-zoho-chat inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md bg-emerald-500 text-white font-bold shadow-lift"
                   >
-                    <i
-                      class="fab fa-whatsapp mr-1 mt-1 fa-1x bg-transparent"
-                    ></i>
-                    Start on WhatsApp</a
+                    <i class="fa-solid fa-comments mr-2 text-lg"></i>
+                    Live Chat</a
                   >
                   <a
                     href="#intl"
@@ -472,15 +416,12 @@
                         </h3>
 
                         <a
-                          href="http://what.sapp.link/blk-max"
-                          target="_blank"
+                          href="javascript:void(0);"
                           rel="noopener"
-                          class="inline-flex items-center justify-center px-2 w-100 py-2 rounded-md bg-green-500 text-white font-semibold shadow-md hover:brightness-105 transition whitespace-nowrap"
+                          class="open-zoho-chat inline-flex items-center justify-center px-2 w-100 py-2 rounded-md bg-green-500 text-white font-semibold shadow-md hover:brightness-105 transition whitespace-nowrap"
                         >
-                          <i
-                            class="fab fa-whatsapp mr-1 mt-1 fa-1x bg-transparent"
-                          ></i>
-                          WhatsApp Now
+                          <i class="fa-solid fa-comments mr-2 text-lg"></i>
+                          Live Chat
                         </a>
                       </div>
                     </div>
@@ -566,11 +507,11 @@
           </p>
         </div>
         <a
-          href="https://what.sapp.link/artemis"
-          target="_blank"
+          href="javascript:void(0);"
           rel="noopener"
-          class="text-sm font-bold text-brand underline"
-          >WhatsApp now →</a
+          class="open-zoho-chat text-sm font-bold text-brand underline"
+        >
+          <i class="fa-solid fa-comments mr-2 text-lg"></i> Live Chat →</a
         >
       </div>
 
@@ -721,11 +662,10 @@
           </p>
         </div>
         <a
-          href="https://what.sapp.link/artemis"
-          target="_blank"
+          href="javascript:void(0);"
           rel="noopener"
-          class="text-sm font-bold text-brand underline"
-          >WhatsApp now →</a
+          class="open-zoho-chat text-sm font-bold text-brand underline"
+          >Live Chat →</a
         >
       </div>
       <div class="mt-6 grid md:grid-cols-3 gap-4 text-sm">
@@ -739,13 +679,12 @@
           </p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://what.sapp.link/artemis"
-              target="_blank"
+              href="javascript:void(0);"
               rel="noopener"
               class="px-4 py-2 rounded-xl bg-emerald-500 text-white font-bold shadow-soft"
             >
-              <i class="fab fa-whatsapp mr-1 mt-1 fa-1x bg-transparent"></i>
-              WhatsApp</a
+              <i class="fa-solid fa-comments mr-2 text-lg"></i>
+              Live Chat</a
             >
             <a
               href="#opinion"
@@ -770,13 +709,11 @@
           </p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://what.sapp.link/artemis"
-              target="_blank"
+              href="javascript:void(0);"
               rel="noopener"
-              class="px-4 py-2 rounded-xl bg-emerald-500 text-white font-bold shadow-soft"
+              class="open-zoho-chat px-4 py-2 rounded-xl bg-emerald-500 text-white font-bold shadow-soft"
             >
-              <i class="fab fa-whatsapp mr-1 mt-1 fa-1x bg-transparent"></i>
-              WhatsApp</a
+              <i class="fa-solid fa-comments mr-2 text-lg"></i> Live Chat</a
             >
             <a
               href="#opinion"
@@ -801,13 +738,11 @@
           </p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://what.sapp.link/artemis"
-              target="_blank"
+              href="javascript:void(0);"
               rel="noopener"
-              class="px-4 py-2 rounded-xl bg-emerald-500 text-white font-bold shadow-soft"
+              class="open-zoho-chat px-4 py-2 rounded-xl bg-emerald-500 text-white font-bold shadow-soft"
             >
-              <i class="fab fa-whatsapp mr-1 mt-1 fa-1x bg-transparent"></i>
-              WhatsApp</a
+              <i class="fa-solid fa-comments mr-2 text-lg"></i> Live Chat</a
             >
             <a
               href="#opinion"
@@ -832,13 +767,12 @@
           </p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://what.sapp.link/artemis"
-              target="_blank"
+              href="javascript:void(0);"
               rel="noopener"
-              class="px-4 py-2 rounded-xl bg-emerald-500 text-white font-bold shadow-soft"
+              class="open-zoho-chat px-4 py-2 rounded-xl bg-emerald-500 text-white font-bold shadow-soft"
             >
-              <i class="fab fa-whatsapp mr-1 mt-1 fa-1x bg-transparent"></i>
-              WhatsApp</a
+              <i class="fa-solid fa-comments mr-2 text-lg"></i>
+              Live Chat</a
             >
             <a
               href="#opinion"
@@ -863,13 +797,12 @@
           </p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://what.sapp.link/artemis"
-              target="_blank"
+              href="javascript:void(0);"
               rel="noopener"
-              class="px-4 py-2 rounded-xl bg-emerald-500 text-white font-bold shadow-soft"
+              class="open-zoho-chat px-4 py-2 rounded-xl bg-emerald-500 text-white font-bold shadow-soft"
             >
-              <i class="fab fa-whatsapp mr-1 mt-1 fa-1x bg-transparent"></i>
-              WhatsApp</a
+              <i class="fa-solid fa-comments mr-2 text-lg"></i>
+              Live Chat</a
             >
             <a
               href="#opinion"
@@ -894,13 +827,12 @@
           </p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://what.sapp.link/artemis"
-              target="_blank"
+              href="javascript:void(0);"
               rel="noopener"
-              class="px-4 py-2 rounded-xl bg-emerald-500 text-white font-bold shadow-soft"
+              class="open-zoho-chat px-4 py-2 rounded-xl bg-emerald-500 text-white font-bold shadow-soft"
             >
-              <i class="fab fa-whatsapp mr-1 mt-1 fa-1x bg-transparent"></i>
-              WhatsApp</a
+              <i class="fa-solid fa-comments mr-2 text-lg"></i>
+              Live Chat</a
             >
             <a
               href="#opinion"
@@ -942,24 +874,15 @@
                 </ul>
                 <div class="mt-4 flex flex-wrap gap-2">
                   <a
-                    href="#form"
-                    class="px-4 py-3 rounded-md bg-[#a69837] text-white font-bold shadow-soft"
-                    >Request opinion</a
-                  >
-                  <a
-                    href="https://what.sapp.link/artemis"
-                    target="_blank"
+                    href="javascript:void(0);"
                     rel="noopener"
-                    class="px-4 py-3 rounded-md bg-emerald-500 text-white font-bold shadow-soft"
-                  >
-                    <i
-                      class="fab fa-whatsapp mr-1 mt-1 fa-1x bg-transparent"
-                    ></i>
-                    WhatsApp</a
+                    role="button"
+                    class="open-zoho-chat px-4 py-3 rounded-md bg-[#a69837] text-white font-bold shadow-soft"
+                    >Request opinion</a
                   >
                 </div>
               </div>
-              <div
+              <!-- <div
                 class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft"
               >
                 <p class="font-bold text-ink">Download sample</p>
@@ -974,7 +897,7 @@
                 <p class="mt-2 text-xs text-slate-500">
                   Sample contains no personal medical data.
                 </p>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="lg:col-span-5">
@@ -989,13 +912,12 @@
                 <li>• Your top questions</li>
               </ul>
               <a
-                href="https://what.sapp.link/artemis"
-                target="_blank"
+                href="javascript:void(0);"
                 rel="noopener"
-                class="mt-4 inline-flex w-full items-center justify-center px-4 py-3 rounded-md bg-emerald-500 text-white font-bold shadow-soft"
+                class="open-zoho-chat mt-4 inline-flex w-full items-center justify-center px-4 py-3 rounded-md bg-emerald-500 text-white font-bold shadow-soft"
               >
-                <i class="fab fa-whatsapp mr-1 mt-1 fa-1x bg-transparent"></i>
-                Ask on WhatsApp</a
+                <i class="fa-solid fa-comments mr-2 text-lg"></i>
+                Live Chat</a
               >
             </div>
           </div>
@@ -1009,7 +931,7 @@
         Teleconsultation (free / paid)
       </h2>
       <p class="mt-2 text-slate-600">
-        Start online. Confirm slot availability and specialty on WhatsApp.
+        Start online. Confirm slot availability and specialty on Chat.
       </p>
       <div class="mt-6 grid md:grid-cols-3 gap-4 text-sm">
         <div
@@ -1017,16 +939,15 @@
         >
           <p class="font-bold text-ink">Free teleconsult (campaign)</p>
           <p class="mt-2 text-slate-600">
-            Eligibility & slots confirmed via WhatsApp.
+            Eligibility & slots confirmed via Live Chat.
           </p>
           <a
-            href="https://what.sapp.link/artemis"
-            target="_blank"
+            href="javascript:void(0);"
             rel="noopener"
-            class="mt-4 inline-flex w-full items-center justify-center px-4 py-3 rounded-md bg-emerald-500 text-white font-bold shadow-soft"
+            class="open-zoho-chat mt-4 inline-flex w-full items-center justify-center px-4 py-3 rounded-md bg-emerald-500 text-white font-bold shadow-soft"
           >
-            <i class="fab fa-whatsapp mr-1 mt-1 fa-1x bg-transparent"></i>
-            Connect on WhatsApp</a
+            <i class="fa-solid fa-comments mr-2 text-lg"></i>
+            Live chat</a
           >
         </div>
         <div class="rounded-3xl border border-slate-200 bg-sand p-6">
@@ -1035,8 +956,10 @@
             Priority scheduling with chosen specialist options (when available).
           </p>
           <a
-            href="#form"
-            class="mt-4 inline-flex w-full items-center justify-center px-4 py-3 rounded-md bg-[#a69837] text-white font-bold shadow-soft"
+            href="javascript:void(0);"
+            rel="noopener"
+            role="button"
+            class="open-zoho-chat mt-4 inline-flex w-full items-center justify-center px-4 py-3 rounded-md bg-[#a69837] text-white font-bold shadow-soft"
             >Request paid consult</a
           >
         </div>
@@ -1048,8 +971,10 @@
             Share a short summary. We’ll map the right department first.
           </p>
           <a
-            href="#form"
-            class="mt-4 inline-flex w-full items-center justify-center px-4 py-3 rounded-md border border-slate-200 bg-white font-bold hover:bg-slate-50"
+            href="javascript:void(0);"
+            rel="noopener"
+            role="button"
+            class="open-zoho-chat mt-4 inline-flex w-full items-center justify-center px-4 py-3 rounded-md border border-slate-200 bg-white font-bold hover:bg-slate-50"
             >Request help</a
           >
         </div>
@@ -1068,7 +993,9 @@
               Connect with an expert for personalized guidance and support.
             </p>
           </div>
-          <a href="#form" class="text-sm font-bold text-brand underline"
+          <a
+            href="#form"
+            class="open-zoho-chat text-sm font-bold text-brand underline"
             >Request doctor options →</a
           >
         </div>
@@ -1082,12 +1009,14 @@
               <p class="mt-1 text-sm text-slate-600"></p>
             </div>
             <div class="flex gap-2">
-              <a href="#opinion" class="text-sm font-bold text-brand underline"
+              <a
+                href="#opinion"
+                class="open-zoho-chat text-sm font-bold text-brand underline"
                 >Opinion</a
               >
               <a
                 href="#teleconsult"
-                class="text-sm font-bold text-brand underline"
+                class="open-zoho-chat text-sm font-bold text-brand underline"
                 >Teleconsult</a
               >
             </div>
@@ -1107,7 +1036,16 @@
               </div>
               <p class="mt-2 font-bold text-ink">Dr. Akhil Govil</p>
               <p class="text-sm text-slate-600">Cardiac Sciences</p>
-              <p class="text-sm text-slate-600">Artemis Hospital</p>
+              <p class="text-sm text-slate-600 my-2">Artemis Hospital</p>
+              <a
+                id="callback-btn"
+                href="javascript:void(0);"
+                rel="noopener"
+                role="button"
+                class="open-zoho-chat flex-1 text-center px-3 py-2 rounded-xl font-bold text-sm bg-[#a69837] text-white"
+              >
+                <i class="fa-solid fa-comments mr-2 text-lg"></i> Live Chat
+              </a>
             </div>
 
             <div
@@ -1124,7 +1062,16 @@
               </div>
               <p class="mt-2 font-bold text-ink">Dr. Balbir Kalra</p>
               <p class="text-sm text-slate-600">Cardiac Sciences</p>
-              <p class="text-sm text-slate-600">Artemis Hospital</p>
+              <p class="text-sm text-slate-600 my-2">Artemis Hospital</p>
+              <a
+                id="callback-btn"
+                href="javascript:void(0);"
+                rel="noopener"
+                role="button"
+                class="open-zoho-chat flex-1 text-center px-3 py-2 rounded-xl font-bold text-sm bg-[#a69837] text-white"
+              >
+                <i class="fa-solid fa-comments mr-2 text-lg"></i> Live Chat
+              </a>
             </div>
 
             <div
@@ -1141,7 +1088,16 @@
               </div>
               <p class="mt-2 font-bold text-ink">Dr. Kuldeep Arora</p>
               <p class="text-sm text-slate-600">Cardiac Sciences</p>
-              <p class="text-sm text-slate-600">Artemis Hospital</p>
+              <p class="text-sm text-slate-600 my-2">Artemis Hospital</p>
+              <a
+                id="callback-btn"
+                href="javascript:void(0);"
+                rel="noopener"
+                role="button"
+                class="open-zoho-chat flex-1 text-center px-3 py-2 rounded-xl font-bold text-sm bg-[#a69837] text-white"
+              >
+                <i class="fa-solid fa-comments mr-2 text-lg"></i> Live Chat
+              </a>
             </div>
 
             <div
@@ -1158,7 +1114,16 @@
               </div>
               <p class="mt-2 font-bold text-ink">Dr. Sushant Srivastava</p>
               <p class="text-sm text-slate-600">Cardiac Sciences</p>
-              <p class="text-sm text-slate-600">Artemis Hospital</p>
+              <p class="text-sm text-slate-600 my-2">Artemis Hospital</p>
+              <a
+                id="callback-btn"
+                href="javascript:void(0);"
+                rel="noopener"
+                role="button"
+                class="open-zoho-chat flex-1 text-center px-3 py-2 rounded-xl font-bold text-sm bg-[#a69837] text-white"
+              >
+                <i class="fa-solid fa-comments mr-2 text-lg"></i> Live Chat
+              </a>
             </div>
           </div>
         </div>
@@ -1197,7 +1162,16 @@
               </div>
               <p class="mt-2 font-bold text-ink">Dr. Aditya Gupta</p>
               <p class="text-sm text-slate-600">Neuro Sciences</p>
-              <p class="text-sm text-slate-600">Artemis Hospital</p>
+              <p class="text-sm text-slate-600 my-2">Artemis Hospital</p>
+              <a
+                id="callback-btn"
+                href="javascript:void(0);"
+                rel="noopener"
+                role="button"
+                class="open-zoho-chat flex-1 text-center px-3 py-2 rounded-xl font-bold text-sm bg-[#a69837] text-white"
+              >
+                <i class="fa-solid fa-comments mr-2 text-lg"></i> Live Chat
+              </a>
             </div>
 
             <div
@@ -1214,7 +1188,16 @@
               </div>
               <p class="mt-2 font-bold text-ink">Dr. Pawan Goyal</p>
               <p class="text-sm text-slate-600">Neuro Sciences</p>
-              <p class="text-sm text-slate-600">Artemis Hospital</p>
+              <p class="text-sm text-slate-600 my-2">Artemis Hospital</p>
+              <a
+                id="callback-btn"
+                href="javascript:void(0);"
+                rel="noopener"
+                role="button"
+                class="open-zoho-chat flex-1 text-center px-3 py-2 rounded-xl font-bold text-sm bg-[#a69837] text-white"
+              >
+                <i class="fa-solid fa-comments mr-2 text-lg"></i> Live Chat
+              </a>
             </div>
 
             <div
@@ -1231,7 +1214,16 @@
               </div>
               <p class="mt-2 font-bold text-ink">Dr. SK Rajan</p>
               <p class="text-sm text-slate-600">Neuro Sciences</p>
-              <p class="text-sm text-slate-600">Artemis Hospital</p>
+              <p class="text-sm text-slate-600 my-2">Artemis Hospital</p>
+              <a
+                id="callback-btn"
+                href="javascript:void(0);"
+                rel="noopener"
+                role="button"
+                class="open-zoho-chat flex-1 text-center px-3 py-2 rounded-xl font-bold text-sm bg-[#a69837] text-white"
+              >
+                <i class="fa-solid fa-comments mr-2 text-lg"></i> Live Chat
+              </a>
             </div>
 
             <div
@@ -1248,7 +1240,16 @@
               </div>
               <p class="mt-2 font-bold text-ink">Dr. Vipul Gupta</p>
               <p class="text-sm text-slate-600">Neuro Sciences</p>
-              <p class="text-sm text-slate-600">Artemis Hospital</p>
+              <p class="text-sm text-slate-600 my-2">Artemis Hospital</p>
+              <a
+                id="callback-btn"
+                href="javascript:void(0);"
+                rel="noopener"
+                role="button"
+                class="open-zoho-chat flex-1 text-center px-3 py-2 rounded-xl font-bold text-sm bg-[#a69837] text-white"
+              >
+                <i class="fa-solid fa-comments mr-2 text-lg"></i> Live Chat
+              </a>
             </div>
             <div
               class="rounded-md border border-slate-200 bg-white p-4 shadow-soft text-center tracking-wide"
@@ -1264,7 +1265,16 @@
               </div>
               <p class="mt-2 font-bold text-ink">Sumit Singh</p>
               <p class="text-sm text-slate-600">Neuro Sciences</p>
-              <p class="text-sm text-slate-600">Artemis Hospital</p>
+              <p class="text-sm text-slate-600 my-2">Artemis Hospital</p>
+              <a
+                id="callback-btn"
+                href="javascript:void(0);"
+                rel="noopener"
+                role="button"
+                class="open-zoho-chat flex-1 text-center px-3 py-2 rounded-xl font-bold text-sm bg-[#a69837] text-white"
+              >
+                <i class="fa-solid fa-comments mr-2 text-lg"></i> Live Chat
+              </a>
             </div>
           </div>
         </div>
@@ -1278,12 +1288,14 @@
               <p class="mt-1 text-sm text-slate-600"></p>
             </div>
             <div class="flex gap-2">
-              <a href="#opinion" class="text-sm font-bold text-brand underline"
+              <a
+                href="#opinion"
+                class="open-zoho-chat text-sm font-bold text-brand underline"
                 >Opinion</a
               >
               <a
                 href="#teleconsult"
-                class="text-sm font-bold text-brand underline"
+                class="open-zoho-chat text-sm font-bold text-brand underline"
                 >Teleconsult</a
               >
             </div>
@@ -1303,7 +1315,16 @@
               </div>
               <p class="mt-2 font-bold text-ink">Dr. Hitesh Garg</p>
               <p class="text-sm text-slate-600">Orthopaedics & Spine</p>
-              <p class="text-sm text-slate-600">Artemis Hospital</p>
+              <p class="text-sm text-slate-600 my-2">Artemis Hospital</p>
+              <a
+                id="callback-btn"
+                href="javascript:void(0);"
+                rel="noopener"
+                role="button"
+                class="open-zoho-chat flex-1 text-center px-3 py-2 rounded-xl font-bold text-sm bg-[#a69837] text-white"
+              >
+                <i class="fa-solid fa-comments mr-2 text-lg"></i> Live Chat
+              </a>
             </div>
 
             <div
@@ -1320,7 +1341,16 @@
               </div>
               <p class="mt-2 font-bold text-ink">Dr. Ramkinkar Jha</p>
               <p class="text-sm text-slate-600">Orthopaedics & Spine</p>
-              <p class="text-sm text-slate-600">Artemis Hospital</p>
+              <p class="text-sm text-slate-600 my-2">Artemis Hospital</p>
+              <a
+                id="callback-btn"
+                href="javascript:void(0);"
+                rel="noopener"
+                role="button"
+                class="open-zoho-chat flex-1 text-center px-3 py-2 rounded-xl font-bold text-sm bg-[#a69837] text-white"
+              >
+                <i class="fa-solid fa-comments mr-2 text-lg"></i> Live Chat
+              </a>
             </div>
 
             <div
@@ -1337,7 +1367,16 @@
               </div>
               <p class="mt-2 font-bold text-ink">Dr. Ravi Sahota</p>
               <p class="text-sm text-slate-600">Orthopaedics & Spine</p>
-              <p class="text-sm text-slate-600">Artemis Hospital</p>
+              <p class="text-sm text-slate-600 my-2">Artemis Hospital</p>
+              <a
+                id="callback-btn"
+                href="javascript:void(0);"
+                rel="noopener"
+                role="button"
+                class="open-zoho-chat flex-1 text-center px-3 py-2 rounded-xl font-bold text-sm bg-[#a69837] text-white"
+              >
+                <i class="fa-solid fa-comments mr-2 text-lg"></i> Live Chat
+              </a>
             </div>
 
             <div
@@ -1354,7 +1393,16 @@
               </div>
               <p class="mt-2 font-bold text-ink">Dr. Sanjay Sarup</p>
               <p class="text-sm text-slate-600">Orthopaedics & Spine</p>
-              <p class="text-sm text-slate-600">Artemis Hospital</p>
+              <p class="text-sm text-slate-600 my-2">Artemis Hospital</p>
+              <a
+                id="callback-btn"
+                href="javascript:void(0);"
+                rel="noopener"
+                role="button"
+                class="open-zoho-chat flex-1 text-center px-3 py-2 rounded-xl font-bold text-sm bg-[#a69837] text-white"
+              >
+                <i class="fa-solid fa-comments mr-2 text-lg"></i> Live Chat
+              </a>
             </div>
           </div>
         </div>
@@ -1368,12 +1416,14 @@
               <p class="mt-1 text-sm text-slate-600"></p>
             </div>
             <div class="flex gap-2">
-              <a href="#opinion" class="text-sm font-bold text-brand underline"
+              <a
+                href="#opinion"
+                class="open-zoho-chat text-sm font-bold text-brand underline"
                 >Opinion</a
               >
               <a
                 href="#teleconsult"
-                class="text-sm font-bold text-brand underline"
+                class="open-zoho-chat text-sm font-bold text-brand underline"
                 >Teleconsult</a
               >
             </div>
@@ -1393,7 +1443,16 @@
               </div>
               <p class="mt-2 font-bold text-ink">Dr. Kapil Dev Jamwal</p>
               <p class="text-sm text-slate-600">Gastro Sciences</p>
-              <p class="text-sm text-slate-600">Artemis Hospital</p>
+              <p class="text-sm text-slate-600 my-2">Artemis Hospital</p>
+              <a
+                id="callback-btn"
+                href="javascript:void(0);"
+                rel="noopener"
+                role="button"
+                class="open-zoho-chat flex-1 text-center px-3 py-2 rounded-xl font-bold text-sm bg-[#a69837] text-white"
+              >
+                <i class="fa-solid fa-comments mr-2 text-lg"></i> Live Chat
+              </a>
             </div>
 
             <div
@@ -1410,7 +1469,16 @@
               </div>
               <p class="mt-2 font-bold text-ink">Dr. Atul Sharma</p>
               <p class="text-sm text-slate-600">Gastro Sciences</p>
-              <p class="text-sm text-slate-600">Artemis Hospital</p>
+              <p class="text-sm text-slate-600 my-2">Artemis Hospital</p>
+              <a
+                id="callback-btn"
+                href="javascript:void(0);"
+                rel="noopener"
+                role="button"
+                class="open-zoho-chat flex-1 text-center px-3 py-2 rounded-xl font-bold text-sm bg-[#a69837] text-white"
+              >
+                <i class="fa-solid fa-comments mr-2 text-lg"></i> Live Chat
+              </a>
             </div>
 
             <div
@@ -1427,7 +1495,16 @@
               </div>
               <p class="mt-2 font-bold text-ink">Dr. Rajesh Kumar Padhan</p>
               <p class="text-sm text-slate-600">Gastro Sciences</p>
-              <p class="text-sm text-slate-600">Artemis Hospital</p>
+              <p class="text-sm text-slate-600 my-2">Artemis Hospital</p>
+              <a
+                id="callback-btn"
+                href="javascript:void(0);"
+                rel="noopener"
+                role="button"
+                class="open-zoho-chat flex-1 text-center px-3 py-2 rounded-xl font-bold text-sm bg-[#a69837] text-white"
+              >
+                <i class="fa-solid fa-comments mr-2 text-lg"></i> Live Chat
+              </a>
             </div>
 
             <div
@@ -1444,7 +1521,16 @@
               </div>
               <p class="mt-2 font-bold text-ink">Dr. Sakshi Karkra</p>
               <p class="text-sm text-slate-600">Gastro Sciences</p>
-              <p class="text-sm text-slate-600">Artemis Hospital</p>
+              <p class="text-sm text-slate-600 my-2">Artemis Hospital</p>
+              <a
+                id="callback-btn"
+                href="javascript:void(0);"
+                rel="noopener"
+                role="button"
+                class="open-zoho-chat flex-1 text-center px-3 py-2 rounded-xl font-bold text-sm bg-[#a69837] text-white"
+              >
+                <i class="fa-solid fa-comments mr-2 text-lg"></i> Live Chat
+              </a>
             </div>
           </div>
         </div>
@@ -1458,12 +1544,14 @@
               <p class="mt-1 text-sm text-slate-600"></p>
             </div>
             <div class="flex gap-2">
-              <a href="#opinion" class="text-sm font-bold text-brand underline"
+              <a
+                href="#opinion"
+                class="open-zoho-chat text-sm font-bold text-brand underline"
                 >Opinion</a
               >
               <a
                 href="#teleconsult"
-                class="text-sm font-bold text-brand underline"
+                class="open-zoho-chat text-sm font-bold text-brand underline"
                 >Teleconsult</a
               >
             </div>
@@ -1552,7 +1640,7 @@
     </section>
 
     <!-- Form -->
-    <section id="form" class="max-w-3xl mx-auto px-4 py-12">
+    <!-- <section id="form" class="max-w-3xl mx-auto px-4 py-12">
       <div
         class="rounded-[36px] border border-slate-200 bg-white shadow-lift overflow-hidden"
       >
@@ -1628,12 +1716,12 @@
             Submit
           </button>
           <a
-            href="https://what.sapp.link/artemis"
-            target="_blank"
+            href="javascript:void(0);"
+           
             rel="noopener"
             class="w-full text-center rounded-md bg-emerald-500 text-white font-bold py-3 shadow-lift"
           >
-            <i class="fab fa-whatsapp mr-1 mt-1 fa-1x bg-transparent"></i>
+           <i class="fa-solid fa-comments mr-2 text-lg"></i>
             WhatsApp now</a
           >
           <p class="text-xs text-slate-500">
@@ -1641,7 +1729,7 @@
           </p>
         </form>
       </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer class="border-t border-slate-200 bg-white">
@@ -1664,22 +1752,23 @@
           <div class="flex gap-5 flex-wrap justify-start">
             <a
               href="https://www.hosplan.com/t&c/patients"
-              target="_blank"
               rel="noopener noreferrer"
+              target="_blank"
               class="hover:underline text-[14px] text-black/80"
             >
               Terms & Conditions
             </a>
             <a
               href="https://www.hosplan.com/privacypolicy"
-              target="_blank"
               rel="noopener noreferrer"
+              target="_blank"
               class="hover:underline text-[14px] text-black/80"
             >
               Privacy Policy
             </a>
             <a
               href="#faq"
+              target="_blank"
               rel="noopener noreferrer"
               class="hover:underline text-[14px] text-black/80"
             >
@@ -1690,24 +1779,24 @@
         <div
           class="mt-6 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-500"
         >
-          <p>© 2026 Treatment Traveller (Hosplan)</p>
+          <p>© 2026 - Hosplan</p>
           <p>No analytics / tracker scripts included.</p>
         </div>
       </div>
     </footer>
 
     <!-- Mobile sticky CTA -->
-    <div
+    <!-- <div
       class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur border-t border-slate-200 md:hidden"
     >
       <div class="max-w-7xl mx-auto px-4 py-3 flex gap-2">
         <a
-          href="https://what.sapp.link/artemis"
-          target="_blank"
+          href="javascript:void(0);"
+         
           rel="noopener"
           class="flex-1 text-center rounded-md bg-emerald-500 text-white font-semibold py-3 shadow-soft"
         >
-          <i class="fab fa-whatsapp mr-1 mt-1 fa-1x bg-transparent"></i>
+         <i class="fa-solid fa-comments mr-2 text-lg"></i>
           WhatsApp</a
         >
         <a
@@ -1716,7 +1805,200 @@
           >Call back</a
         >
       </div>
-    </div>
+    </div> -->
     <div class="h-24 md:hidden"></div>
+
+    <!-- ===================== -->
+    <!-- Google Tag -->
+    <!-- Google Tag -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-922729084"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-922729084");
+    </script>
+
+    <script>
+      window.$zoho = window.$zoho || {};
+      $zoho.salesiq = $zoho.salesiq || {};
+
+      let zohoLoaded = false;
+
+      function loadZohoChat() {
+        if (zohoLoaded) return;
+        zohoLoaded = true;
+
+        const s = document.createElement("script");
+        s.src =
+          "https://salesiq.zohopublic.in/widget?wc=siq367d95d869cfb0a60e7316445c07536ce914f0b2acca4d494a29391df96d37815f0b000cc8eb687133e4e9868f24bf72";
+        s.defer = true;
+
+        document.body.appendChild(s);
+      }
+
+      function openZohoChat() {
+        try {
+          $zoho.salesiq.floatwindow.visible("show");
+        } catch (e) {
+          console.log("Zoho not ready yet");
+        }
+      }
+
+      // ✅ Ensures auto-open works when loaded
+      // $zoho.salesiq.ready = function () {
+      //   openZohoChat();
+      // };
+
+      function handleChatClick(e) {
+        e.preventDefault();
+
+        // ✅ conversion tracking
+        if (typeof gtag === "function") {
+          gtag("event", "conversion", {
+            send_to: "AW-922729084/CONVERSION_LABEL",
+          });
+        }
+
+        loadZohoChat();
+        openZohoChat();
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // ✅ attach to ALL elements
+        document.querySelectorAll(".open-zoho-chat").forEach((el) => {
+          el.addEventListener("click", handleChatClick);
+        });
+
+        // ✅ optimized auto-load (optional)
+        if ("requestIdleCallback" in window) {
+          requestIdleCallback(loadZohoChat);
+        } else {
+          setTimeout(loadZohoChat, 2000);
+        }
+      });
+    </script>
+
+    <!-- GEO + CHAT SCRIPT -->
+    <!-- Location Block For User -->
+    <script>
+      (function () {
+        const CACHE_KEY = "IN";
+        let isIndia = false;
+
+        // -----------------------
+        // 🚫 BLOCK UI (Tailwind)
+        // -----------------------
+        function showBlockedUI() {
+          const overlay = document.createElement("div");
+
+          overlay.innerHTML = `
+            <div
+              style="
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                z-index: 999999;
+              "
+              class="bg-white backdrop-blur-sm flex items-center justify-center"
+            >
+              <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md text-center mx-4">
+                
+                <h1 class="text-[64px] font-black text-[#b91c1c] leading-none mb-2">
+                  404
+                </h1>
+
+                <h2 class="text-2xl font-bold text-gray-800 mb-2">
+                  Page not found
+                </h2>
+
+                <p class="text-gray-600">
+                  Sorry, but the page you were trying to view does not exist.
+                </p>
+
+                <p class="text-gray-400 text-sm mt-2">
+                  Not found :(
+                </p>
+
+              </div>
+            </div>
+          `;
+
+          document.body.appendChild(overlay);
+          document.body.style.overflow = "hidden";
+        }
+
+        // -----------------------
+        // 💬 ZOHO CONTROL
+        // -----------------------
+        function initZoho() {
+          if (isIndia) return; // ❌ never load in India
+
+          window.$zoho = window.$zoho || {};
+          $zoho.salesiq = $zoho.salesiq || {};
+
+          const s = document.createElement("script");
+          s.src =
+            "https://salesiq.zohopublic.in/widget?wc=siq367d95d869cfb0a60e7316445c07536ce914f0b2acca4d494a29391df96d37815f0b000cc8eb687133e4e9868f24bf72";
+          s.defer = true;
+
+          document.body.appendChild(s);
+        }
+
+        function handleCountry(country) {
+          localStorage.setItem(CACHE_KEY, country);
+
+          if (country === "IN") {
+            isIndia = true;
+
+            // 🚫 block UI
+            showBlockedUI();
+
+            // 🚫 extra safety: hide any Zoho remnants
+            const style = document.createElement("style");
+            style.innerHTML = `
+          #zsiq_float, .zsiq_float, iframe[src*="zoho"] {
+            display: none !important;
+            visibility: hidden !important;
+          }
+        `;
+            document.head.appendChild(style);
+          } else {
+            // ✅ load Zoho lazily (optimized)
+            if ("requestIdleCallback" in window) {
+              requestIdleCallback(initZoho);
+            } else {
+              setTimeout(initZoho, 1500);
+            }
+          }
+        }
+
+        // -----------------------
+        // 🌍 COUNTRY DETECTION
+        // -----------------------
+
+        const cached = localStorage.getItem(CACHE_KEY);
+
+        if (cached) {
+          handleCountry(cached);
+          return;
+        }
+
+        fetch("https://ipapi.co/country/")
+          .then((res) => res.text())
+          .then((country) => handleCountry(country.trim()))
+          .catch(() => {
+            // fallback → allow Zoho
+            initZoho();
+          });
+      })();
+    </script>
   </body>
 </html>
