@@ -238,16 +238,17 @@
               class="rounded-[30px] border border-stone-200 bg-white shadow-xl overflow-hidden"
             >
               <amp-img
-                src="img/lilavati-map.png"
+                src="img/lilavati-map-400.webp"
+                srcset="
+                  img/lilavati-map-400.webp 400w,
+                  img/lilavati-map-800.webp 800w
+                "
+                sizes="(max-width: 768px) 102vw, 500px"
                 width="4"
                 height="3"
                 layout="responsive"
+                alt="Lilavati Map location"
               >
-                <amp-img
-                  placeholder
-                  src="img/lilavati-map-blur.png"
-                  layout="fill"
-                ></amp-img>
               </amp-img>
               <div class="p-5 border-t border-stone-200 bg-stone-50">
                 <p class="font-bold text-slate-900">
