@@ -2010,58 +2010,72 @@
     <!-- Location Block For User -->
     <script>
       (function () {
-        const CACHE_KEY = "IN";
+        const CACHE_KEY = "user_country_blocked";
         let isIndia = false;
 
-        // -----------------------
-        // 🚫 BLOCK UI (Tailwind)
-        // -----------------------
         function showBlockedUI() {
           const overlay = document.createElement("div");
 
           overlay.innerHTML = `
-            <div
-              style="
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100vw;
-                height: 100vh;
-                z-index: 999999;
-              "
-              class="bg-white backdrop-blur-sm flex items-center justify-center"
-            >
-              <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md text-center mx-4">
-                
-                <h1 class="text-[64px] font-black text-[#b91c1c] leading-none mb-2">
-                  404
-                </h1>
+        <div style="
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          z-index: 999999;
+        " class="bg-white flex items-center justify-center">
 
-                <h2 class="text-2xl font-bold text-gray-800 mb-2">
-                  Page not found
-                </h2>
+          <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md text-center mx-4">
+            <h1 class="text-[64px] font-black text-[#b91c1c] mb-2">404</h1>
 
-                <p class="text-gray-600">
-                  Sorry, but the page you were trying to view does not exist.
-                </p>
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">
+              Page not found
+            </h2>
 
-                <p class="text-gray-400 text-sm mt-2">
-                  Not found :(
-                </p>
+            <p class="text-gray-600">
+              This service is not available in your region.
+            </p>
+          </div>
 
-              </div>
-            </div>
-          `;
+        </div>
+      `;
 
           document.body.appendChild(overlay);
           document.body.style.overflow = "hidden";
         }
 
-        // -----------------------
-        // 💬 ZOHO CONTROL
-        // -----------------------
-        function initZoho() {
-          if (isIndia) return; // ❌ never load in India
+        function blockIndia() {
+          isIndia = true;
+
+          if (document.body) {
+            showBlockedUI();
+          } else {
+            document.addEventListener("DOMContentLoaded", showBlockedUI);
+          }
+
+          // Hide Zoho completely
+          const style = document.createElement("style");
+          style.innerHTML = `
+        #zsiq_float, .zsiq_float, iframe[src*="zoho"] {
+          display: none !important;
+          visibility: hidden !important;
+        }
+      `;
+          document.head.appendChild(style);
+        }
+
+        function allowSite() {
+          // Lazy load Zoho only if allowed
+          if ("requestIdleCallback" in window) {
+            requestIdleCallback(loadZoho);
+          } else {
+            setTimeout(loadZoho, 1500);
+          }
+        }
+
+        function loadZoho() {
+          if (isIndia) return;
 
           window.$zoho = window.$zoho || {};
           $zoho.salesiq = $zoho.salesiq || {};
@@ -2074,52 +2088,44 @@
           document.body.appendChild(s);
         }
 
-        function handleCountry(country) {
-          localStorage.setItem(CACHE_KEY, country);
+        // -----------------------
+        // 🚀 FAST DETECTION (timezone)
+        // -----------------------
 
-          if (country === "IN") {
-            isIndia = true;
+        const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
-            // 🚫 block UI
-            showBlockedUI();
-
-            // 🚫 extra safety: hide any Zoho remnants
-            const style = document.createElement("style");
-            style.innerHTML = `
-          #zsiq_float, .zsiq_float, iframe[src*="zoho"] {
-            display: none !important;
-            visibility: hidden !important;
-          }
-        `;
-            document.head.appendChild(style);
-          } else {
-            // ✅ load Zoho lazily (optimized)
-            if ("requestIdleCallback" in window) {
-              requestIdleCallback(initZoho);
-            } else {
-              setTimeout(initZoho, 1500);
-            }
-          }
+        if (timezone === "Asia/Kolkata") {
+          localStorage.setItem(CACHE_KEY, "IN");
+          blockIndia();
+          return;
         }
 
         // -----------------------
-        // 🌍 COUNTRY DETECTION
+        // ⚡ CACHE CHECK
         // -----------------------
 
         const cached = localStorage.getItem(CACHE_KEY);
 
-        if (cached) {
-          handleCountry(cached);
+        if (cached === "IN") {
+          blockIndia();
           return;
         }
 
+        // -----------------------
+        // 🌍 FALLBACK API (optional)
+        // -----------------------
+
         fetch("https://ipapi.co/country/")
           .then((res) => res.text())
-          .then((country) => handleCountry(country.trim()))
-          .catch(() => {
-            // fallback → allow Zoho
-            initZoho();
-          });
+          .then((country) => {
+            if (country.trim() === "IN") {
+              localStorage.setItem(CACHE_KEY, "IN");
+              blockIndia();
+            } else {
+              allowSite();
+            }
+          })
+          .catch(() => allowSite());
       })();
     </script>
   </body>
