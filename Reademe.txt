@@ -88,5 +88,78 @@
 
 
 
+You can resize your image to 400px and 800px versions in a few reliable ways. I’ll give you the fastest + production-friendly approach.
+
+✅ Option 1: Using Online Tool (Easiest)
+
+      Use Squoosh (by Google):
+
+      Go to: https://squoosh.app
+      Upload lilavati-map.png
+      In right panel:
+      Resize → enable
+      Set width = 400
+      Download → lilavati-map-400.webp
+      Change width = 800
+      Download → lilavati-map-800.webp
+
+      👉 Also select:
+
+      Format: WebP
+      Quality: 70–80
+✅ Option 2: Using CLI (Best for dev workflow)
+
+If you have Node.js:
+
+   Install sharp
+    npm install sharp
+    Script
+    const sharp = require("sharp");
+
+// 400px
+    sharp("lilavati-map.png")
+      .resize(400)
+      .webp({ quality: 75 })
+      .toFile("lilavati-map-400.webp");
+
+    // 800px
+    sharp("lilavati-map.png")
+      .resize(800)
+      .webp({ quality: 75 })
+      .toFile("lilavati-map-800.webp");
+
+Run:
+
+node script.js
+✅ Option 3: Using ImageMagick (CLI)
+    # 400px
+    magick lilavati-map.png -resize 400 -quality 75 lilavati-map-400.webp
+
+    # 800px
+    magick lilavati-map.png -resize 800 -quality 75 lilavati-map-800.webp
+✅ Final AMP Usage (after resize)
+    <amp-img
+      src="img/lilavati-map-400.webp"
+      srcset="
+        img/lilavati-map-400.webp 400w,
+        img/lilavati-map-800.webp 800w
+      "
+      sizes="(max-width: 768px) 100vw, 378px"
+      width="4"
+      height="3"
+      layout="responsive"
+      alt="Lilavati Map location"
+    >
+    </amp-img>
+🚀 Expected Result
+
+
+| Before      | After          |
+| ----------- | -------------- |
+| 264 KB PNG  | ~50–80 KB WebP |
+| 673px fixed | responsive     |
+| Slow LCP    | Faster load    |
+
+
 
     
