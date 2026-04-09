@@ -1553,125 +1553,96 @@
     </script>
 
     <!-- GEO + CHAT SCRIPT -->
-    <script>
-      (function () {
-        const CACHE_KEY = "user_country_blocked";
-        let isIndia = false;
+    <script defer>
+      async function ipLookUp() {
+        try {
+          const response = await fetch(
+            "https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation",
+          );
 
-        function showBlockedUI() {
-          const overlay = document.createElement("div");
+          if (!response.ok) throw new Error("Network error");
 
-          overlay.innerHTML = `
+          const data = await response.json();
+          const country = data.country;
+
+          console.log("Location:", country);
+
+          if (country === "IN") {
+            blockPage();
+          } else {
+            allowPage();
+          }
+        } catch (err) {
+          console.error("Geo error:", err);
+
+          // fallback → allow page
+          allowPage();
+        }
+      }
+
+      // 🚫 BLOCK UI
+      function blockPage() {
+        document.title = "Page not found";
+
+        document.body.innerHTML = `
+      <div style="
+        position:fixed;
+        top:0;
+        left:0;
+        width:100vw;
+        height:100vh;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        background:#f3f4f6;
+        z-index:999999;
+        font-family:sans-serif;
+      ">
         <div style="
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100vw;
-          height: 100vh;
-          z-index: 999999;
-        " class="bg-white flex items-center justify-center">
+          background:#fff;
+          padding:32px;
+          border-radius:16px;
+          box-shadow:0 10px 30px rgba(0,0,0,0.1);
+          text-align:center;
+          max-width:400px;
+          width:90%;
+        ">
+          <h1 style="font-size:64px;font-weight:900;color:#dc2626;margin-bottom:8px;">
+            404
+          </h1>
 
-          <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md text-center mx-4">
-            <h1 class="text-[64px] font-black text-[#b91c1c] mb-2">404</h1>
+          <h2 style="font-size:24px;font-weight:700;margin-bottom:8px;">
+            Page not found
+          </h2>
 
-            <h2 class="text-2xl font-bold text-gray-800 mb-2">
-              Page not found
-            </h2>
-
-            <p class="text-gray-600">
-              This service is not available in your region.
-            </p>
-          </div>
-
+          <p style="color:#6b7280;">
+            This service is not available in your region.
+          </p>
         </div>
-      `;
+      </div>
+    `;
 
-          document.body.appendChild(overlay);
-          document.body.style.overflow = "hidden";
-        }
+        // 🚫 stop scroll
+        document.body.style.overflow = "hidden";
 
-        function blockIndia() {
-          isIndia = true;
+        // 🚫 kill Zoho if present
+        const style = document.createElement("style");
+        style.innerHTML = `
+      #zsiq_float, .zsiq_float, iframe[src*="zoho"] {
+        display:none !important;
+      }
+    `;
+        document.head.appendChild(style);
+      }
 
-          if (document.body) {
-            showBlockedUI();
-          } else {
-            document.addEventListener("DOMContentLoaded", showBlockedUI);
-          }
+      // ✅ NORMAL PAGE
+      function allowPage() {
+        // nothing special, just ensure page visible
+        document.body.style.display = "block";
+      }
 
-          // Hide Zoho completely
-          const style = document.createElement("style");
-          style.innerHTML = `
-        #zsiq_float, .zsiq_float, iframe[src*="zoho"] {
-          display: none !important;
-          visibility: hidden !important;
-        }
-      `;
-          document.head.appendChild(style);
-        }
-
-        function allowSite() {
-          // Lazy load Zoho only if allowed
-          if ("requestIdleCallback" in window) {
-            requestIdleCallback(loadZoho);
-          } else {
-            setTimeout(loadZoho, 1500);
-          }
-        }
-
-        function loadZoho() {
-          if (isIndia) return;
-
-          window.$zoho = window.$zoho || {};
-          $zoho.salesiq = $zoho.salesiq || {};
-
-          const s = document.createElement("script");
-          s.src =
-            "https://salesiq.zohopublic.in/widget?wc=siq367d95d869cfb0a60e7316445c07536ce914f0b2acca4d494a29391df96d37815f0b000cc8eb687133e4e9868f24bf72";
-          s.defer = true;
-
-          document.body.appendChild(s);
-        }
-
-        // -----------------------
-        // 🚀 FAST DETECTION (timezone)
-        // -----------------------
-
-        const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-
-        if (timezone === "Asia/Kolkata") {
-          localStorage.setItem(CACHE_KEY, "IN");
-          blockIndia();
-          return;
-        }
-
-        // -----------------------
-        // ⚡ CACHE CHECK
-        // -----------------------
-
-        const cached = localStorage.getItem(CACHE_KEY);
-
-        if (cached === "IN") {
-          blockIndia();
-          return;
-        }
-
-        // -----------------------
-        // 🌍 FALLBACK API (optional)
-        // -----------------------
-
-        fetch("https://ipapi.co/country/")
-          .then((res) => res.text())
-          .then((country) => {
-            if (country.trim() === "IN") {
-              localStorage.setItem(CACHE_KEY, "IN");
-              blockIndia();
-            } else {
-              allowSite();
-            }
-          })
-          .catch(() => allowSite());
-      })();
+      // 🚀 INIT
+      ipLookUp();
     </script>
   </body>
 </html>
