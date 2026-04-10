@@ -1933,67 +1933,80 @@
       gtag("config", "AW-922729084");
     </script>
 
+    <!-- GEO + CHAT SCRIPT -->
+
     <script>
       window.$zoho = window.$zoho || {};
       $zoho.salesiq = $zoho.salesiq || {};
 
       let zohoLoaded = false;
+      let zohoLoading = false;
 
       function loadZohoChat() {
-        if (zohoLoaded) return;
-        zohoLoaded = true;
+        if (zohoLoaded || zohoLoading) return;
+
+        zohoLoading = true;
 
         const s = document.createElement("script");
         s.src =
           "https://salesiq.zohopublic.in/widget?wc=siq367d95d869cfb0a60e7316445c07536ce914f0b2acca4d494a29391df96d37815f0b000cc8eb687133e4e9868f24bf72";
-        s.defer = true;
+        s.async = true;
+
+        s.onload = () => {
+          zohoLoaded = true;
+          zohoLoading = false;
+        };
 
         document.body.appendChild(s);
       }
 
       function openZohoChat() {
-        try {
+        if (window.$zoho?.salesiq?.floatwindow) {
           $zoho.salesiq.floatwindow.visible("show");
-        } catch (e) {
-          console.log("Zoho not ready yet");
         }
       }
-
-      // ✅ Ensures auto-open works when loaded
-      // $zoho.salesiq.ready = function () {
-      //   openZohoChat();
-      // };
 
       function handleChatClick(e) {
         e.preventDefault();
 
-        // ✅ conversion tracking
+        // conversion tracking (non-blocking)
         if (typeof gtag === "function") {
-          gtag("event", "conversion", {
-            send_to: "AW-922729084/CONVERSION_LABEL",
+          requestIdleCallback?.(() => {
+            gtag("event", "conversion", {
+              send_to: "AW-922729084/CONVERSION_LABEL",
+            });
           });
         }
 
         loadZohoChat();
-        openZohoChat();
+
+        // wait until script loads then open
+        const interval = setInterval(() => {
+          if (zohoLoaded) {
+            openZohoChat();
+            clearInterval(interval);
+          }
+        }, 200);
       }
 
-      document.addEventListener("DOMContentLoaded", function () {
-        // ✅ attach to ALL elements
+      document.addEventListener("DOMContentLoaded", () => {
+        // attach click events
         document.querySelectorAll(".open-zoho-chat").forEach((el) => {
           el.addEventListener("click", handleChatClick);
         });
 
-        // ✅ optimized auto-load (optional)
-        if ("requestIdleCallback" in window) {
-          requestIdleCallback(loadZohoChat);
-        } else {
-          setTimeout(loadZohoChat, 2000);
-        }
+        // 🚀 load ONLY on user intent signals (BEST for Lighthouse)
+        ["scroll", "mousemove", "touchstart"].forEach((event) => {
+          window.addEventListener(
+            event,
+            () => {
+              loadZohoChat();
+            },
+            { once: true, passive: true },
+          );
+        });
       });
     </script>
-
-    <!-- GEO + CHAT SCRIPT -->
 
     <!-- Location Block For User -->
 
