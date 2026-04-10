@@ -3,7 +3,11 @@ body {
     transition: opacity ease-in 0.2s;
 }
 
-/*! CSS Used from: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css */
+/*! CSS Used from: http://127.0.0.1:5500/others/tailwind-v2/miot-chennai/assets/css/font/stylesheet.css */
+body {
+    transition: opacity ease-in 0.2s;
+}
+
 .fas {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -52,7 +56,6 @@ body {
     font-weight: 900;
 }
 
-/*! CSS Used from: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css */
 .fas {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -101,7 +104,6 @@ body {
     font-weight: 900;
 }
 
-/*! CSS Used from: Embedded */
 html {
     scroll-behavior: smooth;
 }
@@ -116,7 +118,6 @@ h3 {
     font-weight: 600;
 }
 
-/*! CSS Used from: Embedded */
 *,
 ::before,
 ::after {
@@ -748,7 +749,6 @@ img {
     }
 }
 
-/*! CSS Used from: https://css.zohocdn.com/salesiq/RESOURCE_BUNDLES/embedfloat/css/float.lxA5QpOPpkOzdyFrId69TnuMzZxGiKy6v3NVm8TZksItzlyzR4xjf7gPbEoiSDIV.css */
 :root {
     --zsiqf-custom-bg-color: #06c;
     --zsiqf-cw-bg-color: var(--zsiqf-custom-bg-color);
@@ -792,10 +792,6 @@ img {
     content: "\e903";
 }
 
-.siqico-close:before {
-    content: "\e904";
-}
-
 [data-id=zsalesiq] {
     position: relative;
     z-index: 2247483647 !important;
@@ -817,65 +813,6 @@ img {
     position: fixed;
     right: calc(10px + var(--zsiq-seasonal-float-image-position));
     width: var(--zsiqf-float-close-height);
-}
-
-.zsiq-float-tooltip {
-    animation: zsiqcntanim 1s ease-in-out;
-    background-color: #fff;
-    border-radius: 8px;
-    bottom: 0;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .25);
-    height: 60px;
-    line-height: 1.3;
-    margin: auto;
-    min-width: 200px;
-    padding: 10px 15px;
-    position: absolute;
-    right: calc(100% + 20px);
-    top: 0;
-    white-space: nowrap;
-}
-
-.zsiq-float-tooltip:before {
-    background-color: inherit;
-    bottom: 0;
-    box-shadow: -2px -2px 5px 0 rgba(0, 0, 0, .08);
-    content: "";
-    height: 10px;
-    margin: auto;
-    position: absolute;
-    right: -5px;
-    top: 0;
-    transform: rotate(135deg);
-    width: 10px;
-    z-index: 1;
-}
-
-.zsiq-float-tooltip:hover .zsiq-tultip-close {
-    opacity: 1;
-}
-
-.zsiq-tultip-desc {
-    font-size: 13px;
-}
-
-.zsiq-tultip-close {
-    background-color: var(--zsiqf-tooltip-close-bg);
-    border-radius: 100%;
-    color: var(--zsiqf-primary-color);
-    font-size: 14px;
-    height: 22px;
-    left: -6px;
-    line-height: 22px;
-    position: absolute;
-    top: -6px;
-    width: 22px;
-}
-
-.zsiq-tultip-close {
-    left: -10px;
-    opacity: 0;
-    top: -10px;
 }
 
 .zsiq-chat-icn {
@@ -923,32 +860,7 @@ img {
     justify-content: center;
 }
 
-.zsiq-clr3 {
-    color: #121212;
-}
-
-.zsiq-clr6 {
-    color: #666;
-}
-
-.zsiq-m0 {
-    margin: 0;
-}
-
-.zsiq-mT3 {
-    margin-top: 3px;
-}
-
-.zsiq-elips {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
 @media (max-width:554px) {
-    .zsiq-tultip-close {
-        opacity: 1 !important;
-    }
 
     .seasonal-float-img,
     .zsiq-float {
@@ -970,7 +882,6 @@ img {
     }
 }
 
-/*! CSS Used from: https://css.zohocdn.com/salesiq/RESOURCE_BUNDLES/embedfloat/css/float.lxA5QpOPpkOzdyFrId69TnuMzZxGiKy6v3NVm8TZksItzlyzR4xjf7gPbEoiSDIV.css */
 :root {
     --zsiqf-custom-bg-color: #06c;
     --zsiqf-cw-bg-color: var(--zsiqf-custom-bg-color);
@@ -1014,10 +925,6 @@ img {
     content: "\e903";
 }
 
-.siqico-close:before {
-    content: "\e904";
-}
-
 [data-id=zsalesiq] {
     position: relative;
     z-index: 2247483647 !important;
@@ -1039,65 +946,6 @@ img {
     position: fixed;
     right: calc(10px + var(--zsiq-seasonal-float-image-position));
     width: var(--zsiqf-float-close-height);
-}
-
-.zsiq-float-tooltip {
-    animation: zsiqcntanim 1s ease-in-out;
-    background-color: #fff;
-    border-radius: 8px;
-    bottom: 0;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .25);
-    height: 60px;
-    line-height: 1.3;
-    margin: auto;
-    min-width: 200px;
-    padding: 10px 15px;
-    position: absolute;
-    right: calc(100% + 20px);
-    top: 0;
-    white-space: nowrap;
-}
-
-.zsiq-float-tooltip:before {
-    background-color: inherit;
-    bottom: 0;
-    box-shadow: -2px -2px 5px 0 rgba(0, 0, 0, .08);
-    content: "";
-    height: 10px;
-    margin: auto;
-    position: absolute;
-    right: -5px;
-    top: 0;
-    transform: rotate(135deg);
-    width: 10px;
-    z-index: 1;
-}
-
-.zsiq-float-tooltip:hover .zsiq-tultip-close {
-    opacity: 1;
-}
-
-.zsiq-tultip-desc {
-    font-size: 13px;
-}
-
-.zsiq-tultip-close {
-    background-color: var(--zsiqf-tooltip-close-bg);
-    border-radius: 100%;
-    color: var(--zsiqf-primary-color);
-    font-size: 14px;
-    height: 22px;
-    left: -6px;
-    line-height: 22px;
-    position: absolute;
-    top: -6px;
-    width: 22px;
-}
-
-.zsiq-tultip-close {
-    left: -10px;
-    opacity: 0;
-    top: -10px;
 }
 
 .zsiq-chat-icn {
@@ -1145,32 +993,7 @@ img {
     justify-content: center;
 }
 
-.zsiq-clr3 {
-    color: #121212;
-}
-
-.zsiq-clr6 {
-    color: #666;
-}
-
-.zsiq-m0 {
-    margin: 0;
-}
-
-.zsiq-mT3 {
-    margin-top: 3px;
-}
-
-.zsiq-elips {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
 @media (max-width:554px) {
-    .zsiq-tultip-close {
-        opacity: 1 !important;
-    }
 
     .seasonal-float-img,
     .zsiq-float {
@@ -1192,36 +1015,240 @@ img {
     }
 }
 
-/*! CSS Used keyframes */
-@keyframes zsiqcntanim {
-
-    0%,
-    60% {
-        opacity: 0;
-        transform: translateX(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+/*! CSS Used from: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css */
+.fa-solid,
+.fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display, inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
 }
 
-@keyframes zsiqcntanim {
+.fa-solid,
+.fas {
+    font-family: "Font Awesome 6 Free";
+}
 
-    0%,
-    60% {
-        opacity: 0;
-        transform: translateX(20px);
+.fa-calendar-alt:before {
+    content: "\f073";
+}
+
+.fa-comments:before {
+    content: "\f086";
+}
+
+.fa-passport:before {
+    content: "\f5ab";
+}
+
+.fa-head-side-mask:before {
+    content: "\e063";
+}
+
+.fa-ribbon:before {
+    content: "\f4d6";
+}
+
+.fa-circle-info:before {
+    content: "\f05a";
+}
+
+:root {
+    --fa-style-family-brands: "Font Awesome 6 Brands";
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+
+:root {
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+}
+
+:root {
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+}
+
+.fa-solid,
+.fas {
+    font-weight: 900;
+}
+
+/*! CSS Used from: Embedded */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+}
+
+/*! CSS Used from: https://css.zohocdn.com/salesiq/RESOURCE_BUNDLES/embedfloat/css/float.lxA5QpOPpkOzdyFrId69TnuMzZxGiKy6v3NVm8TZksItzlyzR4xjf7gPbEoiSDIV.css */
+:root {
+    --zsiqf-custom-bg-color: #06c;
+    --zsiqf-cw-bg-color: var(--zsiqf-custom-bg-color);
+    --zsiqf-tooltip-close-bg: #000;
+    --zsiqf-intigator-bg-color: #ff3520;
+    --zsiqf-mob-minimise-bg-color: rgba(0, 0, 0, .14);
+    --zsiqf-progress-load-cont-bg: hsla(0, 0%, 90%, .3);
+    --zsiqf-progress-load-bar-bg: hsla(0, 0%, 90%, .15);
+    --zsiqf-primary-bg: #fff;
+    --zsiqf-defualt-upload-bg: #666;
+    --zsiqf-primary-color: #fff;
+    --zsiqf-media-thumbnail-icon-bg: rgba(221, 28, 28, .05);
+    --zsiqf-media-thumbnail-icon-color: #dd1c1c;
+    --zsiqf-icon-color: #888;
+    --zsiqf-d6-border: #d6d6d6;
+    --zsiqf-float-close-height: 55px;
+    --zsiq-seasonal-float-image-position: 0px;
+    --zsiqf-custom-widget-images: url(https://css.zohocdn.com/salesiq/RESOURCE_BUNDLES/embedfloat/ASSETS_V6/images/png/Industry_2x_Q5LR9s-2HBcXR_Gub5iwGqwnlLeEufbtkM7cx6t58Ww2C3GSzdmr77INlC9VIm91_.png) no-repeat;
+}
+
+[class*=siqico-] {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+}
+
+[class*=siqico-]:after,
+[class*=siqico-]:before {
+    font-family: siq !important;
+    speak: none;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.siqico-chat:before {
+    content: "\e903";
+}
+
+[data-id=zsalesiq] {
+    position: relative;
+    z-index: 2247483647 !important;
+}
+
+[data-id=zsalesiq],
+[data-id=zsalesiq] * {
+    box-sizing: border-box;
+}
+
+.zsiq-float {
+    background: var(--zsiqf-custom-bg);
+    border-radius: 100%;
+    bottom: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    height: var(--zsiqf-float-close-height);
+    padding: 3px;
+    position: fixed;
+    right: calc(10px + var(--zsiq-seasonal-float-image-position));
+    width: var(--zsiqf-float-close-height);
+}
+
+.zsiq-chat-icn {
+    color: var(--zsiqf-primary-color);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: .25s linear;
+    width: 100%;
+}
+
+.zsiq-chat-icn {
+    font-size: 25px;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.chat-iframe-wrap {
+    bottom: calc(var(--zsiqf-float-close-height) + 20px);
+    height: min(640px, 100% - 104px);
+    opacity: 0;
+    position: fixed;
+    right: 5px;
+    transform: translateY(15px);
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: width .4s cubic-bezier(.25, .1, .17, 1.01), max-height .4s cubic-bezier(.25, .1, .26, .99), transform .4s cubic-bezier(0, 1.18, .99, .98), opacity .2s cubic-bezier(0, 0, .58, 1.05);
+    visibility: hidden;
+    width: min(361px, max(0px, -20px + 100vw));
+    z-index: 1;
+}
+
+.chat-iframe-wrap iframe {
+    border: none;
+    border-radius: 18px;
+    height: 100%;
+    width: 100%;
+}
+
+.zsiq-large-size {
+    height: min(674px, 100% - 104px);
+    width: min(380px, max(0px, -20px + 100vw));
+}
+
+.zsiq-flexM {
+    align-items: center;
+    display: flex;
+}
+
+.zsiq-flexM {
+    justify-content: center;
+}
+
+@media (max-width:554px) {
+
+    .seasonal-float-img,
+    .zsiq-float {
+        transform: scale(.8) !important;
     }
 
-    to {
-        opacity: 1;
-        transform: translateX(0);
+    .chat-iframe-wrap {
+        bottom: 0 !important;
+        height: 100% !important;
+        left: auto !important;
+        max-height: 100% !important;
+        max-width: 100% !important;
+        right: 0 !important;
+        width: 100% !important;
+    }
+
+    .chat-iframe-wrap,
+    .chat-iframe-wrap iframe {
+        border-radius: 0 !important;
     }
 }
 
 /*! CSS Used fontfaces */
+@font-face {
+    font-family: "Font Awesome 6 Free";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-regular-400.woff2) format("woff2"), url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-regular-400.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Font Awesome 6 Free";
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2) format("woff2"), url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.ttf) format("truetype");
+}
+
 @font-face {
     font-family: "Font Awesome 6 Free";
     font-style: normal;
@@ -1260,6 +1287,23 @@ img {
     font-weight: 400;
     font-style: normal;
     font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("http://127.0.0.1:5500/others/tailwind-v2/miot-chennai/assets/css/font/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: siq;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://css.zohocdn.com/salesiq/RESOURCE_BUNDLES/embedfloat/ASSETS_V6/fonts/siq_tjlsyz0I7_4SOURgudgPwd8-vtmw87ooMPBTjnuYANjPRwiimCNYvhc37SSu2SNn_.eot);
+    src: url(https://css.zohocdn.com/salesiq/RESOURCE_BUNDLES/embedfloat/ASSETS_V6/fonts/siq_tjlsyz0I7_4SOURgudgPwd8-vtmw87ooMPBTjnuYANjPRwiimCNYvhc37SSu2SNn_.eot) format("embedded-opentype"), url(https://css.zohocdn.com/salesiq/RESOURCE_BUNDLES/embedfloat/ASSETS_V6/fonts/siq_6qFBvN4YSQR-6jIu-TdH0-Y2mv3M0QrH6Ct6CIB4t4kW16LnYf1-AQb2sFEWBKHL_.ttf) format("truetype"), url(https://css.zohocdn.com/salesiq/RESOURCE_BUNDLES/embedfloat/ASSETS_V6/fonts/siq_vQkvIcwK3cYhr6L3SAirTjAIgpPTfkx62DmrsQChP6w1CWMh8LvbHDbKh1NqH7rh_.woff) format("woff"), url(https://css.zohocdn.com/salesiq/RESOURCE_BUNDLES/embedfloat/ASSETS_V6/fonts/siq_TV4L9UKGs13Rh1AjkJ5f_AGisvV75Pnh2NdxbNCHopzJRH3tCKapKBJqMp3kRAq2_.svg) format("svg");
 }
 
 @font-face {
