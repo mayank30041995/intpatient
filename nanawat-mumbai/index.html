@@ -111,15 +111,17 @@
           </a>
         </div>
         <div
-          class="sm:w-[15px] sm:h-[15px] md:w-[105px] md:h-[45px] rounded-[16px] text-white flex items-center justify-center font-black"
+          class="w-[105px] h-[45px] sm:w-[105px] sm:h-[45px] rounded-[16px] flex items-center justify-center"
         >
           <img
             src="img/hosplan.webp"
             alt="Nanavati Hospital Mumbai Logo"
             width="105"
             height="45"
+            loading="eager"
             fetchpriority="high"
-            class="max-h-full py-1 max-w-full mx-auto my-auto object-cover"
+            decoding="async"
+            class="w-full h-full object-contain"
           />
         </div>
       </div>
