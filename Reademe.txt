@@ -163,3 +163,33 @@ node script.js
 
 
     
+       <amp-img
+                src="img/lilavati-map-400.avif"
+                srcset="
+                  img/lilavati-map-400.avif 400w,
+                  img/lilavati-map-800.avif 800w
+                "
+                width="4"
+                height="3"
+                layout="responsive"
+                alt="Lilavati Map location"
+              >
+              </amp-img>
+
+🔥 3. Use placeholder (improves perceived speed)
+
+              <amp-img
+                src="img/lilavati-map-400.avif"
+                srcset="img/lilavati-map-400.avif 400w, img/lilavati-map-800.avif 800w"
+                width="800"
+                height="600"
+                layout="responsive"
+                alt="Lilavati Map location"
+              >
+                <amp-img
+                  placeholder
+                  src="img/lilavati-map-400.avif"
+                  layout="fill"
+                  alt="Loading..."
+                ></amp-img>
+              </amp-img>
