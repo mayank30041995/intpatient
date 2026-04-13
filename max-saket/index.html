@@ -18,9 +18,9 @@
       as="image"
       fetchpriority="high"
     />
-    <link rel="preload" href="assets/css/style.css" as="style" />
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- <link rel="preload" href="assets/css/style.css" as="style" />
+    <link href="assets/css/style.css" rel="stylesheet" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- <link rel="preconnect" href="https://salesiq.zohopublic.in" /> -->
   </head>
   <body>
@@ -62,7 +62,7 @@
         class="max-w-[1280px] mx-auto flex justify-between items-center gap-[16px] flex-wrap py-[14px] px-[16px]"
       >
         <!-- LOGO + TITLE -->
-        <div class="flex items-center gap-[12px]">
+        <div class="flex items-center gap-[12px] w-[230px] md:w-auto">
           <div>
             <p class="font-[800]">Max Super Speciality Hospital Saket</p>
             <p class="text-[12px] text-[#64748b] font-bold">
@@ -104,14 +104,15 @@
           </a>
         </div>
         <div
-          class="w-[136px] h-[55px] rounded-[16px] text-white flex items-center justify-center font-[900] hidden md:flex"
+          class="w-[90px] h-[36px] sm:w-[120px] sm:h-[48px] md:w-[136px] md:h-[55px] flex items-center justify-center overflow-hidden"
         >
           <img
             src="assets/hosplan.webp"
             alt="Hosplan"
-            width="152"
+            width="136"
             height="55"
-            class="max-h-full py-1 max-w-full mx-auto my-auto object-contain"
+            loading="lazy"
+            class="w-full h-auto object-contain"
           />
         </div>
       </div>
@@ -121,7 +122,7 @@
       class="py-[44px] border-b border-[#fecaca] bg-[linear-gradient(186deg,#35B6B4,#067393)] p-2"
     >
       <div
-        class="max-w-[1280px] mx-auto grid grid-cols-2 gap-[24px] items-start max-[899px]:grid-cols-1"
+        class="max-w-[1280px] mx-auto grid grid-cols-2 gap-[24px] items-start max-[899px]:grid-cols-1 items-center"
       >
         <!-- LEFT CONTENT -->
         <div>
