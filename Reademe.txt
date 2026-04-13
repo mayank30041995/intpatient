@@ -17,6 +17,27 @@
   decoding="async"
 />
 
+
+<!-- <div
+        class="aspect-[4/3] flex items-center justify-center text-center p-[14px] text-[#991b1b]"
+      >
+        <img
+          src="assets/max-saket-building-640.webp"
+          srcset="
+            assets/max-saket-building-480.webp 480w,
+            assets/max-saket-building-640.webp 640w,
+            assets/max-saket-building-720.webp 720w
+          "
+          sizes="(max-width: 640px) 100vw, 641px"
+          alt="Max Saket New Delhi Building"
+          width="641"
+          height="480"
+          fetchpriority="high"
+          decoding="async"
+          class="w-full h-full object-cover rounded-[30px]"
+        />
+</div> -->
+
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css"
