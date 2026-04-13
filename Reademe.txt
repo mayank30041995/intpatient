@@ -18,7 +18,25 @@
 />
 
 
-<!-- <div
+<!-- 
+// Navbar logo
+<img
+  src="assets/hosplan-160.webp"
+  srcset="
+    assets/hosplan-90.webp 90w,
+    assets/hosplan-120.webp 120w,
+    assets/hosplan-160.webp 160w
+  "
+  sizes="(max-width: 640px) 90px, (max-width: 768px) 120px, 158px"
+  alt="Hosplan"
+  width="158"
+  height="49"
+  loading="lazy"
+  class="w-full h-auto object-contain"
+/>
+
+// Hero Image Optimization
+<div
         class="aspect-[4/3] flex items-center justify-center text-center p-[14px] text-[#991b1b]"
       >
         <img
