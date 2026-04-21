@@ -1,0 +1,2218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Apollo Chennai Doctors | Appointment Search Page</title>
+    <meta
+      name="description"
+      content="Search Apollo Chennai doctors by name or specialty. Browse all doctors, view Apollo hospitals in Chennai, and get fast appointment support."
+    />
+    <meta
+      name="robots"
+      content="noindex,nofollow,noarchive,nosnippet,noimageindex"
+    />
+    <meta
+      name="googlebot"
+      content="noindex,nofollow,noarchive,nosnippet,noimageindex"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial,
+          sans-serif;
+        color: #0f172a;
+        background: #ffffff;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial,
+          sans-serif;
+        letter-spacing: -0.02em;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-slate-900">
+    <div class="bg-slate-950 text-white">
+      <div
+        class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2 px-4 py-2 text-xs sm:text-sm"
+      >
+        <div class="flex flex-wrap items-center gap-3">
+          <span class="font-semibold">Apollo Chennai Doctor Appointments</span>
+          <span class="text-slate-300"
+            >Search doctors by name or specialty</span
+          >
+        </div>
+        <a
+          href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20help%20finding%20the%20right%20doctor%20at%20Apollo%20Chennai."
+          target="_blank"
+          rel="noopener"
+          class="font-bold underline"
+        >
+          Live Chat with us
+        </a>
+      </div>
+    </div>
+
+    <section
+      class="border-b border-slate-200 bg-[linear-gradient(135deg,rgba(37,99,235,0.10),rgba(255,255,255,1)_45%,rgba(14,165,233,0.06))]"
+    >
+      <div class="mx-auto max-w-7xl px-4 py-12 md:py-16">
+        <div class="grid items-center gap-8 lg:grid-cols-12">
+          <div class="lg:col-span-8">
+            <div
+              class="inline-flex rounded-full border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-700 shadow-sm"
+            >
+              Apollo Chennai Doctor Appointments
+            </div>
+
+            <h1
+              class="mt-4 text-4xl font-black leading-[1.05] text-slate-950 md:text-6xl"
+            >
+              Find the Right Apollo Chennai Doctor — Book Appointment Easily
+            </h1>
+
+            <p
+              class="mt-5 max-w-3xl text-[18px] leading-8 text-slate-600 md:text-[21px]"
+            >
+              Search by doctor name or specialty, view available specialists,
+              and get fast appointment support for Apollo Hospitals Chennai.
+              Designed for patients who already know Apollo and want a smooth,
+              direct path to treatment.
+            </p>
+
+            <p class="mt-4 text-sm font-semibold text-slate-700">
+              This page is for patients looking specifically for Apollo Chennai
+              doctors and appointments.
+            </p>
+
+            <div
+              class="mt-8 rounded-[28px] border border-slate-200 bg-white p-4 shadow-lg"
+            >
+              <label
+                for="doctorSearch"
+                class="mb-2 block text-sm font-bold text-slate-900"
+              >
+                Search Doctor Name or Specialty
+              </label>
+              <div class="flex flex-col gap-3 md:flex-row">
+                <input
+                  id="doctorSearch"
+                  type="text"
+                  placeholder="Type doctor name (e.g. Doctor 1) or specialty (e.g. Cardiology)"
+                  class="w-full rounded-2xl border border-slate-300 px-5 py-4 text-base outline-none focus:border-blue-600"
+                />
+                <a
+                  href="#appointment-form"
+                  class="inline-flex shrink-0 items-center justify-center rounded-2xl bg-blue-700 px-6 py-4 text-base font-extrabold text-white"
+                >
+                  Request Appointment
+                </a>
+              </div>
+              <p class="mt-3 text-sm text-slate-600">
+                You can search by doctor name, department, or medical concern.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2 text-sm">
+                <a
+                  href="#doctorGrid"
+                  class="filter-chip rounded-full border border-blue-700 bg-blue-700 px-3 py-2 font-semibold text-white"
+                  data-filter="all"
+                >
+                  All
+                </a>
+                <a
+                  href="#doctorGrid"
+                  class="filter-chip rounded-full border border-slate-200 bg-slate-50 px-3 py-2 font-semibold text-slate-700"
+                  data-filter="cardiology"
+                >
+                  Cardiology
+                </a>
+                <a
+                  href="#doctorGrid"
+                  class="filter-chip rounded-full border border-slate-200 bg-slate-50 px-3 py-2 font-semibold text-slate-700"
+                  data-filter="neurology"
+                >
+                  Neurology
+                </a>
+                <a
+                  href="#doctorGrid"
+                  class="filter-chip rounded-full border border-slate-200 bg-slate-50 px-3 py-2 font-semibold text-slate-700"
+                  data-filter="gastroenterology"
+                >
+                  Gastroenterology
+                </a>
+                <a
+                  href="#doctorGrid"
+                  class="filter-chip rounded-full border border-slate-200 bg-slate-50 px-3 py-2 font-semibold text-slate-700"
+                  data-filter="orthopaedics"
+                >
+                  Orthopaedics
+                </a>
+                <a
+                  href="#doctorGrid"
+                  class="filter-chip rounded-full border border-slate-200 bg-slate-50 px-3 py-2 font-semibold text-slate-700"
+                  data-filter="oncology"
+                >
+                  Oncology
+                </a>
+                <a
+                  href="#doctorGrid"
+                  class="filter-chip rounded-full border border-slate-200 bg-slate-50 px-3 py-2 font-semibold text-slate-700"
+                  data-filter="nephrology"
+                >
+                  Nephrology
+                </a>
+              </div>
+            </div>
+
+            <div class="mt-8 grid gap-4 text-sm sm:grid-cols-3">
+              <div
+                class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
+              >
+                <p class="font-black text-slate-900">
+                  Search by doctor or specialty
+                </p>
+                <p class="mt-2 text-slate-600">
+                  Quickly find the specialist you are looking for.
+                </p>
+              </div>
+              <div
+                class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
+              >
+                <p class="font-black text-slate-900">
+                  Direct appointment support
+                </p>
+                <p class="mt-2 text-slate-600">
+                  We help schedule appointments with Apollo Chennai doctors.
+                </p>
+              </div>
+              <div
+                class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
+              >
+                <p class="font-black text-slate-900">
+                  Trusted by international patients
+                </p>
+                <p class="mt-2 text-slate-600">
+                  Widely preferred by patients from Bangladesh, Africa and GCC.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-4">
+            <div
+              class="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-xl"
+            >
+              <div class="aspect-[4/3] bg-slate-100 overflow-hidden rounded-xl">
+                <img
+                  src="./apollo-hospital-image.webp"
+                  alt="Dr T Raja Apollo Proton Centre Chennai"
+                  width="768"
+                  height="576"
+                  fetchpriority="high"
+                  loading="eager"
+                  decoding="async"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="border-t border-slate-200 bg-slate-50 p-5">
+                <p class="font-bold text-slate-900">Why use this page</p>
+                <ul class="mt-3 space-y-2 text-sm text-slate-600">
+                  <li>• Find all Apollo Chennai doctors in one place</li>
+                  <li>• Search quickly instead of browsing multiple pages</li>
+                  <li>• Get help with appointment and next steps</li>
+                  <li>• Designed for fast action after search</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-y border-slate-200 bg-slate-50">
+      <div class="mx-auto max-w-7xl px-4 py-12">
+        <div class="mb-6 flex flex-wrap items-end justify-between gap-3">
+          <div>
+            <h2 class="text-3xl font-black text-slate-950">
+              Apollo Hospitals in Chennai
+            </h2>
+            <p class="mt-2 text-slate-600">
+              Apollo Chennai includes multiple hospitals and specialty centres.
+              Depending on your condition, your appointment may be scheduled at
+              the most appropriate unit.
+            </p>
+          </div>
+          <a
+            href="#appointment-form"
+            class="text-sm font-bold underline text-blue-700"
+            >Request Appointment</a
+          >
+        </div>
+
+        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="rounded-[24px] border border-slate-200 bg-white p-6 shadow-sm"
+          >
+            <p class="text-[11px] uppercase tracking-[0.18em] text-slate-500">
+              Main flagship
+            </p>
+            <h3 class="mt-2 text-xl font-bold text-slate-950">
+              Apollo Hospitals, Greams Road
+            </h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">
+              Flagship multispecialty hospital in Chennai with full tertiary and
+              quaternary care across all major specialties.
+            </p>
+          </div>
+          <div
+            class="rounded-[24px] border border-slate-200 bg-white p-6 shadow-sm"
+          >
+            <p class="text-[11px] uppercase tracking-[0.18em] text-slate-500">
+              Women’s care
+            </p>
+            <h3 class="mt-2 text-xl font-bold text-slate-950">
+              Apollo Women’s Hospital
+            </h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">
+              Focused care for women including maternity, gynecology, and
+              related specialties.
+            </p>
+          </div>
+          <div
+            class="rounded-[24px] border border-slate-200 bg-white p-6 shadow-sm"
+          >
+            <p class="text-[11px] uppercase tracking-[0.18em] text-slate-500">
+              Children’s care
+            </p>
+            <h3 class="mt-2 text-xl font-bold text-slate-950">
+              Apollo Children’s Hospital
+            </h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">
+              Dedicated pediatric hospital with specialized care for infants,
+              children and adolescents.
+            </p>
+          </div>
+          <div
+            class="rounded-[24px] border border-slate-200 bg-white p-6 shadow-sm"
+          >
+            <p class="text-[11px] uppercase tracking-[0.18em] text-slate-500">
+              Cancer care
+            </p>
+            <h3 class="mt-2 text-xl font-bold text-slate-950">
+              Apollo Cancer Centres, Chennai
+            </h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">
+              Comprehensive oncology care covering medical, surgical and
+              radiation oncology.
+            </p>
+          </div>
+          <div
+            class="rounded-[24px] border border-slate-200 bg-white p-6 shadow-sm"
+          >
+            <p class="text-[11px] uppercase tracking-[0.18em] text-slate-500">
+              Advanced radiation
+            </p>
+            <h3 class="mt-2 text-xl font-bold text-slate-950">
+              Apollo Proton Cancer Centre
+            </h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">
+              Advanced proton therapy and precision radiation planning for
+              selected oncology cases.
+            </p>
+          </div>
+          <div
+            class="rounded-[24px] border border-slate-200 bg-white p-6 shadow-sm"
+          >
+            <p class="text-[11px] uppercase tracking-[0.18em] text-slate-500">
+              Other Apollo units
+            </p>
+            <h3 class="mt-2 text-xl font-bold text-slate-950">
+              Other Apollo Units in Chennai
+            </h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">
+              Appointments may also align with Apollo specialty institutes and
+              satellite units depending on doctor availability and treatment
+              needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 py-12">
+      <div class="mb-6 flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <h2 class="text-3xl font-black text-slate-950">
+            Browse Apollo Chennai Doctors
+          </h2>
+          <p class="mt-2 text-slate-600">
+            Search or filter to find the right doctor. Click below to proceed
+            with appointment support.
+          </p>
+        </div>
+        <p id="resultsCount" class="text-sm font-semibold text-slate-600">
+          50 doctors shown
+        </p>
+      </div>
+
+      <div id="doctorGrid" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <!-- SPINE SURGERY -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Sajan K Hegde"
+          data-specialty="spine surgery"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/spine-surgon/Dr. Sajan K Hegde.webp"
+              alt="Dr Sajan K Hegde"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+
+          <h3 class="mt-3 font-bold text-slate-900">Dr Sajan K Hegde</h3>
+          <p class="text-sm text-slate-600">Spine Surgery</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20with%20Dr%20Sajan%20K%20Hegde%20at%20Apollo%20Chennai."
+              target="_blank"
+              rel="noopener"
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+            >
+              Chat for Appointment
+            </a>
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+            >
+              Request Appointment
+            </a>
+          </div>
+        </article>
+
+        <!-- ONCOLOGY -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr T Raja"
+          data-specialty="oncology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/oncology/Dr-T-Raja-Apollo-proton-Centrre-Chennai-214x203.png.webp"
+              alt="Dr T Raja"
+              class="w-full h-full object-cover"
+              fetchpriority="high"
+            />
+          </div>
+
+          <h3 class="mt-3 font-bold text-slate-900">Dr T Raja</h3>
+          <p class="text-sm text-slate-600">Oncology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20with%20Dr%20T%20Raja%20at%20Apollo%20Chennai."
+              target="_blank"
+              rel="noopener"
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+            >
+              Chat for Appointment
+            </a>
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+            >
+              Request Appointment
+            </a>
+          </div>
+        </article>
+
+        <!-- CARDIOLOGY -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Bhaswar Bhattacherjee"
+          data-specialty="cardiology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/cardiologist/Dr. Bhaswar Bhattacherjee.webp"
+              alt="Dr Bhaswar Bhattacherjee"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+
+          <h3 class="mt-3 font-bold text-slate-900">
+            Dr Bhaswar Bhattacherjee
+          </h3>
+          <p class="text-sm text-slate-600">Cardiology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20with%20Dr%20Bhaswar%20Bhattacherjee%20at%20Apollo%20Chennai."
+              target="_blank"
+              rel="noopener"
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+            >
+              Chat for Appointment
+            </a>
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+            >
+              Request Appointment
+            </a>
+          </div>
+        </article>
+
+        <!-- RADIOLOGY -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Vinod P Joseph"
+          data-specialty="radiology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/radiologist/Dr. Vinod P Joseph.webp"
+              alt="Dr Vinod P Joseph"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Vinod P Joseph</h3>
+          <p class="text-sm text-slate-600">Radiology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Vinod%20P%20Joseph%20at%20Apollo%20Chennai."
+              target="_blank"
+              rel="noopener"
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <!-- NEUROLOGY -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Murugan L"
+          data-specialty="neurology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/neurosurgery/Dr. Murugan L.webp"
+              alt="Dr Murugan L"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Murugan L</h3>
+          <p class="text-sm text-slate-600">Neurology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Murugan%20L%20at%20Apollo%20Chennai."
+              target="_blank"
+              rel="noopener"
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <!-- UROLOGY -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Ragavan N"
+          data-specialty="urology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/urology/Dr. Ragavan N.webp"
+              alt="Dr Ragavan N"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+
+          <h3 class="mt-3 font-bold text-slate-900">Dr Ragavan N</h3>
+          <p class="text-sm text-slate-600">Urology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20with%20Dr%20Ragavan%20N%20at%20Apollo%20Chennai."
+              target="_blank"
+              rel="noopener"
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+            >
+              Chat for Appointment
+            </a>
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+            >
+              Request Appointment
+            </a>
+          </div>
+        </article>
+
+        <!-- GASTRO -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="dr hariharan m"
+          data-specialty="gastroenterology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/gastroenterology/Dr. Hariharan M.webp"
+              alt="Dr Hariharan M"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr. Hariharan M</h3>
+          <p class="text-sm text-slate-600">Gastroenterology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Hariharan%20M%20at%20Apollo%20Chennai."
+              target="_blank"
+              rel="noopener"
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+            >
+              Chat for Appointment
+            </a>
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+            >
+              Request Appointment
+            </a>
+          </div>
+        </article>
+
+        <!-- ORTHO -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="dr arun kannan"
+          data-specialty="orthopaedics"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/orthopaedician/Dr. Arun Kannan.webp"
+              alt="Dr Arun Kannan"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr. Arun Kannan</h3>
+          <p class="text-sm text-slate-600">Orthopaedics</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Arun%20Kannan%20at%20Apollo%20Chennai."
+              target="_blank"
+              rel="noopener"
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+            >
+              Chat for Appointment
+            </a>
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+            >
+              Request Appointment
+            </a>
+          </div>
+        </article>
+
+        <!-- NEPHROLOGY -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="dr subba rao b"
+          data-specialty="nephrology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/Nephrologist/Dr. Subba Rao B.webp"
+              alt="Dr Subba Rao B"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr. Subba Rao B</h3>
+          <p class="text-sm text-slate-600">Nephrology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Subba%20Rao%20B"
+              target="_blank"
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+            >
+              Chat for Appointment
+            </a>
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+            >
+              Request Appointment
+            </a>
+          </div>
+        </article>
+
+        <!-- NEUROLOGY -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Siddhartha Ghosh"
+          data-specialty="neurology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/neurosurgery/dr-siddhartha-ghosh.webp"
+              alt="Dr Siddhartha Ghosh"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Siddhartha Ghosh</h3>
+          <p class="text-sm text-slate-600">Neurology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Siddhartha%20Ghosh%20at%20Apollo%20Chennai."
+              target="_blank"
+              rel="noopener"
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <!-- ONCOLOGY -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr R Srinath Bharadwaj"
+          data-specialty="oncology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/oncology/Dr R Srinath Bharadwaj.webp"
+              alt="Dr R Srinath Bharadwaj"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr R Srinath Bharadwaj</h3>
+          <p class="text-sm text-slate-600">Oncology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Murugan%20L%20at%20Apollo%20Chennai."
+              target="_blank"
+              rel="noopener"
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <!-- PULMONOLOGY -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Siva Kumar R"
+          data-specialty="pulmonology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/internal-medicine/Dr. Siva Kumar R.webp"
+              alt="Dr Siva Kumar R"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Siva Kumar R</h3>
+          <p class="text-sm text-slate-600">Pulmonology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Siva%20Kumar%20R%20at%20Apollo%20Chennai."
+              target="_blank"
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+            >
+              Chat for Appointment
+            </a>
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+            >
+              Request Appointment
+            </a>
+          </div>
+        </article>
+
+        <!-- NEUROLOGY -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Balaji Srinivas S"
+          data-specialty="neurology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/neurosurgery/Dr. Balaji Srinivas S.webp"
+              alt="Dr Balaji Srinivas S"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Balaji Srinivas S</h3>
+          <p class="text-sm text-slate-600">Neurology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20Srinivas%20S%20at%20Apollo%20Chennai."
+              target="_blank"
+              rel="noopener"
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Muralidhar Alavandi"
+          data-specialty="orthopaedics"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/orthopaedician/Dr. Muralidhar Alavandi.webp"
+              alt="Dr Muralidhar Alavandi"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Muralidhar Alavandi</h3>
+          <p class="text-sm text-slate-600">Orthopaedics</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Muralidhar%20Alavandi%20at%20Apollo%20Chennai."
+              target="_blank"
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Padmanabhan R"
+          data-specialty="rheumatology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/rheumatologist/Dr. Padmanabhan R.webp"
+              alt="Dr Padmanabhan R"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Padmanabhan R</h3>
+          <p class="text-sm text-slate-600">Rheumatology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Padmanabhan%20R%20at%20Apollo%20Chennai."
+              target="_blank"
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr V Krishnamurthy"
+          data-specialty="rheumatology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/rheumatologist/Dr. V Krishnamurthy.webp"
+              alt="Dr V Krishnamurthy"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr V Krishnamurthy</h3>
+          <p class="text-sm text-slate-600">Rheumatology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20V%20Krishnamurthy%20at%20Apollo%20Chennai."
+              target="_blank"
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Asna Zehra Naqvi"
+          data-specialty="obstetrics & gynaecology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/obstetrician-gynaecologist/Dr Asna Zehra Naqvi.webp"
+              alt="Dr Asna Zehra Naqvi"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Asna Zehra Naqvi</h3>
+          <p class="text-sm text-slate-600">Obstetrics & Gynaecology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Asna%20Zehra%20Naqvi%20at%20Apollo%20Chennai."
+              target="_blank"
+              rel="noopener"
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Janani Iyer"
+          data-specialty="obstetrics & gynaecology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/obstetrician-gynaecologist/Dr. Janani Iyer.webp"
+              alt="Dr Janani Iyer"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Janani Iyer</h3>
+          <p class="text-sm text-slate-600">Obstetrics & Gynaecology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Janani%20Iyer%20at%20Apollo%20Chennai."
+              target="_blank"
+              rel="noopener"
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Meenakshi Sundaram"
+          data-specialty="obstetrics & gynaecology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/obstetrician-gynaecologist/Dr. Meenakshi Sundaram.webp"
+              alt="Dr Meenakshi Sundaram"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Meenakshi Sundaram</h3>
+          <p class="text-sm text-slate-600">Obstetrics & Gynaecology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Meenakshi%20Sundaram%20at%20Apollo%20Chennai."
+              target="_blank"
+              rel="noopener"
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Sumana Manohar"
+          data-specialty="obstetrics & gynaecology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/obstetrician-gynaecologist/Dr. Sumana Manohar.webp"
+              alt="Dr Sumana Manohar"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Sumana Manohar</h3>
+          <p class="text-sm text-slate-600">Obstetrics & Gynaecology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Sumana%20Manohar%20at%20Apollo%20Chennai."
+              target="_blank"
+              rel="noopener"
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Vishnu Vandana"
+          data-specialty="obstetrics & gynaecology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/obstetrician-gynaecologist/Dr. Vishnu Vandana.webp"
+              alt="Dr Vishnu Vandana"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Vishnu Vandana</h3>
+          <p class="text-sm text-slate-600">Obstetrics & Gynaecology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Vishnu%20Vandana%20at%20Apollo%20Chennai."
+              target="_blank"
+              rel="noopener"
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Nitish Bhan"
+          data-specialty="orthopaedics"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/orthopaedician/Dr Nitish Bhan.webp"
+              alt="Dr Nitish Bhan"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Nitish Bhan</h3>
+          <p class="text-sm text-slate-600">Orthopaedics</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Nitish%20Bhan%20at%20Apollo%20Chennai."
+              target="_blank"
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <!-- GASTROENTEROLOGY -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Revathi S Rajan"
+          data-specialty="gastroenterology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/gastroenterology/Dr. Revathi S Rajan.webp"
+              alt="Dr Revathi S Rajan"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+
+          <h3 class="mt-3 font-bold text-slate-900">Dr Revathi S Rajan</h3>
+          <p class="text-sm text-slate-600">Gastroenterology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Revathi%20S%20Rajan%20at%20Apollo%20Chennai."
+              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+            >
+              Chat for Appointment
+            </a>
+            <a
+              href="#appointment-form"
+              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+            >
+              Request Appointment
+            </a>
+          </div>
+        </article>
+
+        <!-- ORTHOPAEDICS -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Madan Mohan Reddy"
+          data-specialty="orthopaedics"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/orthopaedician/Dr. Madan Mohan Reddy.webp"
+              alt="Dr Madan Mohan Reddy"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+
+          <h3 class="mt-3 font-bold text-slate-900">Dr Madan Mohan Reddy</h3>
+          <p class="text-sm text-slate-600">Orthopaedics</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Madan%20Mohan%20Reddy%20at%20Apollo%20Chennai."
+              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+            >
+              Chat for Appointment
+            </a>
+            <a
+              href="#appointment-form"
+              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+            >
+              Request Appointment
+            </a>
+          </div>
+        </article>
+
+        <!-- NEUROLOGY -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Arul Selvan"
+          data-specialty="neurology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/neurosurgery/Dr.Arul Selvan.webp"
+              alt="Dr Arul Selvan"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Arul Selvan</h3>
+          <p class="text-sm text-slate-600">Neurology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Arul%20Selvan%20at%20Apollo%20Chennai."
+              target="_blank"
+              rel="noopener"
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <!-- ONCOLOGY -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Ajit Pai"
+          data-specialty="oncology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/oncology/dr-ajit-pai.webp"
+              alt="Dr Ajit Pai"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+
+          <h3 class="mt-3 font-bold text-slate-900">Dr Ajit Pai</h3>
+          <p class="text-sm text-slate-600">Oncology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Ajit%20Pai%20at%20Apollo%20Chennai."
+              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+            >
+              Chat for Appointment
+            </a>
+            <a
+              href="#appointment-form"
+              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+            >
+              Request Appointment
+            </a>
+          </div>
+        </article>
+
+        <!-- ONCOLOGY -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Sridhar P S"
+          data-specialty="oncology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/oncology/Dr. Sridhar P. S.webp"
+              alt="Dr Sridhar P S"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Sridhar P S</h3>
+          <p class="text-sm text-slate-600">Oncology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Sridhar%20P%20S%20at%20Apollo%20Chennai."
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+            >
+              Request Appointment
+            </a>
+          </div>
+        </article>
+
+        <!-- UROLOGY -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Meera Raghavan"
+          data-specialty="urology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/urology/Dr. Meera Raghavan.webp"
+              alt="Dr Meera Raghavan"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Meera Raghavan</h3>
+          <p class="text-sm text-slate-600">Urology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Meera%20Raghavan%20at%20Apollo%20Chennai."
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+            >
+              Request Appointment
+            </a>
+          </div>
+        </article>
+
+        <!-- SPINE SURGERY -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Imtiaz Ghani"
+          data-specialty="spine surgery"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/spine-surgon/Dr. Imtiaz Ghani.webp"
+              alt="Dr Imtiaz Ghani"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Imtiaz Ghani</h3>
+          <p class="text-sm text-slate-600">Spine Surgery</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Imtiaz%20Ghani%20at%20Apollo%20Chennai."
+              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white"
+            >
+              Request Appointment
+            </a>
+          </div>
+        </article>
+
+        <!-- CARDIOLOGY -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Ramesh B"
+          data-specialty="cardiology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/cardiologist/Dr. Ramesh B.webp"
+              alt="Dr Ramesh B"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Ramesh B</h3>
+          <p class="text-sm text-slate-600">Cardiology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Ramesh%20B%20at%20Apollo%20Chennai."
+              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <!-- CARDIOLOGY -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Robert Mao"
+          data-specialty="cardiology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/cardiologist/Dr. Robert Mao.webp"
+              alt="Dr Robert Mao"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Robert Mao</h3>
+          <p class="text-sm text-slate-600">Cardiology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Robert%20Mao%20at%20Apollo%20Chennai."
+              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <!-- CARDIOLOGY -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Yusuf M M"
+          data-specialty="cardiology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/cardiologist/Dr. Yusuf M M.webp"
+              alt="Dr Yusuf M M"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Yusuf M M</h3>
+          <p class="text-sm text-slate-600">Cardiology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Yusuf%20M%20M%20at%20Apollo%20Chennai."
+              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <!-- ENT -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Babu Manohar"
+          data-specialty="ent"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/ent/Dr. Babu Manohar.webp"
+              alt="Dr Babu Manohar"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Babu Manohar</h3>
+          <p class="text-sm text-slate-600">ENT</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Babu%20Manohar%20at%20Apollo%20Chennai."
+              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <!-- ENT -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Balaji R"
+          data-specialty="ent"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/ent/Dr. Balaji R.webp"
+              alt="Dr Balaji R"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Balaji R</h3>
+          <p class="text-sm text-slate-600">ENT</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20R%20at%20Apollo%20Chennai."
+              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+        <!-- ENT -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Raja Mahesh"
+          data-specialty="ent"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/ent/Dr. Raja Mahesh.webp"
+              alt="Dr Raja Mahesh"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Raja Mahesh</h3>
+          <p class="text-sm text-slate-600">ENT</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20R%20at%20Apollo%20Chennai."
+              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <!-- GASTRO -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Balamurugan Srinivasan"
+          data-specialty="gastroenterology"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/gastroenterology/Dr.Balamurugan Srinivasan.webp"
+              alt="Dr Balamurugan Srinivasan"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">
+            Dr Balamurugan Srinivasan
+          </h3>
+          <p class="text-sm text-slate-600">Gastroenterology</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20R%20at%20Apollo%20Chennai."
+              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <!-- GENERAL SURGERY -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Prithviraj T"
+          data-specialty="general surgery"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/general-surgon/Dr. Prithviraj T.webp"
+              alt="Dr Prithviraj T"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Prithviraj T</h3>
+          <p class="text-sm text-slate-600">General Surgery</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20R%20at%20Apollo%20Chennai."
+              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <!-- INTERNAL MEDICINE -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Benin Rajesh R A"
+          data-specialty="internal medicine"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/internal-medicine/Dr. Benin Rajesh R A.webp"
+              alt="Dr Benin Rajesh R A"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Benin Rajesh R A</h3>
+          <p class="text-sm text-slate-600">Internal Medicine</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20R%20at%20Apollo%20Chennai."
+              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <!-- INTERNAL MEDICINE -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Dhanraj K"
+          data-specialty="internal medicine"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/internal-medicine/Dr. Dhanraj K.webp"
+              alt="Dr Dhanraj K"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Dhanraj K</h3>
+          <p class="text-sm text-slate-600">Internal Medicine</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20R%20at%20Apollo%20Chennai."
+              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <!-- INTERNAL MEDICINE -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Jebin Roger S"
+          data-specialty="internal medicine"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/internal-medicine/Dr. Jebin Roger S.webp"
+              alt="Dr Jebin Roger S"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Jebin Roger S</h3>
+          <p class="text-sm text-slate-600">Internal Medicine</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20R%20at%20Apollo%20Chennai."
+              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <!-- INTERNAL MEDICINE -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Shoukat Ali Abbas"
+          data-specialty="internal medicine"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/internal-medicine/Dr. Shoukat Ali Abbas.webp"
+              alt="Dr Shoukat Ali Abbas"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Shoukat Ali Abbas</h3>
+          <p class="text-sm text-slate-600">Internal Medicine</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20R%20at%20Apollo%20Chennai."
+              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <!-- INTERNAL MEDICINE -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Srimathy Venkatesh"
+          data-specialty="internal medicine"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/internal-medicine/Dr. Srimathy Venkatesh.webp"
+              alt="Dr Srimathy Venkatesh"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Srimathy Venkatesh</h3>
+          <p class="text-sm text-slate-600">Internal Medicine</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20R%20at%20Apollo%20Chennai."
+              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <!-- INTERNAL MEDICINE -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Vasanthi Thiyagarajan"
+          data-specialty="internal medicine"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/internal-medicine/Dr. Vasanthi Thiyagarajan.webp"
+              alt="Dr Vasanthi Thiyagarajan"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">
+            Dr Vasanthi Thiyagarajan
+          </h3>
+          <p class="text-sm text-slate-600">Internal Medicine</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20R%20at%20Apollo%20Chennai."
+              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <!-- NEUROSURGERY -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Panneer A"
+          data-specialty="neurosurgery"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/neurosurgery/Dr. Panneer A.webp"
+              alt="Dr Panneer A"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">Dr Panneer A</h3>
+          <p class="text-sm text-slate-600">Neurosurgery</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20R%20at%20Apollo%20Chennai."
+              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+
+        <!-- NEUROSURGERY -->
+        <article
+          class="doctor-card rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md transition"
+          data-name="Dr Srinivasan Paramasivam"
+          data-specialty="neurosurgery"
+        >
+          <div class="aspect-square rounded-xl overflow-hidden">
+            <img
+              src="./assets/neurosurgery/Dr. Srinivasan Paramasivam.webp"
+              alt="Dr Srinivasan Paramasivam"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="mt-3 font-bold text-slate-900">
+            Dr Srinivasan Paramasivam
+          </h3>
+          <p class="text-sm text-slate-600">Neurosurgery</p>
+          <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20R%20at%20Apollo%20Chennai."
+              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              >Chat for Appointment</a
+            >
+            <a
+              href="#appointment-form"
+              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              >Request Appointment</a
+            >
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 
+    <section class="border-y border-slate-200 bg-slate-50">
+      <div class="mx-auto max-w-3xl px-4 py-14">
+        <div
+          class="rounded-[30px] border border-slate-200 bg-white p-8 shadow-sm"
+        >
+          <p class="text-[11px] uppercase tracking-[0.18em] text-slate-500">
+            Appointment request
+          </p>
+          <h2 class="mt-2 text-3xl font-black text-slate-950">
+            Need Help Booking an Apollo Chennai Appointment?
+          </h2>
+          <p class="mt-3 text-slate-600">
+            Share your details and preferred doctor or specialty. Our team will
+            help coordinate your appointment and guide you on the next steps.
+          </p>
+          <form id="appointment-form" class="mt-6 grid gap-4">
+            <input
+              class="rounded-xl border px-4 py-3"
+              placeholder="Full Name"
+            />
+            <div class="grid gap-4 md:grid-cols-2">
+              <input
+                class="rounded-xl border px-4 py-3"
+                placeholder="Country"
+              />
+              <input
+                class="rounded-xl border px-4 py-3"
+                placeholder="WhatsApp Number"
+              />
+            </div>
+            <input
+              class="rounded-xl border px-4 py-3"
+              placeholder="Doctor Name or Specialty"
+            />
+            <textarea
+              class="rounded-xl border px-4 py-3"
+              placeholder="Brief Medical Details (optional)"
+            ></textarea>
+            <button
+              class="rounded-xl bg-blue-700 px-5 py-3 font-extrabold text-white"
+            >
+              Submit Appointment Request
+            </button>
+          </form>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- International Patient Services (align to official offerings) -->
+    <section id="intl" class="max-w-7xl mx-auto px-4 py-12">
+      <div class="flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-black text-ink">
+            International Patient Services at Apollo Chennai
+          </h2>
+          <p class="mt-2 text-slate-600">
+            Practical support areas that matter to overseas patients.
+          </p>
+        </div>
+        <a
+          href="javascript:void(0);"
+          rel="noopener"
+          class="open-zoho-chat text-sm font-bold text-brand underline"
+        >
+          <i class="fa-solid fa-comments mr-2 text-lg"></i> Live Chat →</a
+        >
+      </div>
+
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-5 gap-4 text-lg">
+        <div
+          class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft bg-[radial-gradient(circle_at_16%_12%,rgba(14,165,233,0.16),transparent_55%),radial-gradient(circle_at_82%_22%,rgba(16,185,129,0.10),transparent_60%)] border-b border-slate-200"
+        >
+          <p class="font-bold text-ink">Treatment plan & estimate</p>
+          <p class="mt-2 text-slate-600">
+            Pre‑visit planning and indicative estimate.
+          </p>
+        </div>
+        <div class="rounded-3xl border border-slate-200 bg-sand p-6">
+          <p class="font-bold text-ink">Visa assistance</p>
+          <p class="mt-2 text-slate-600">
+            Guidance for invitation letter / extension.
+          </p>
+        </div>
+        <div
+          class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft bg-[radial-gradient(circle_at_16%_12%,rgba(14,165,233,0.16),transparent_55%),radial-gradient(circle_at_82%_22%,rgba(16,185,129,0.10),transparent_60%)] border-b border-slate-200"
+        >
+          <p class="font-bold text-ink">Airport pick & drop</p>
+          <p class="mt-2 text-slate-600">
+            Transfer support from nearest airport.
+          </p>
+        </div>
+        <div class="rounded-3xl border border-slate-200 bg-sand p-6">
+          <p class="font-bold text-ink">Quick help desk</p>
+          <p class="mt-2 text-slate-600">Fast on-ground assistance.</p>
+        </div>
+        <div
+          class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft bg-[radial-gradient(circle_at_16%_12%,rgba(14,165,233,0.16),transparent_55%),radial-gradient(circle_at_82%_22%,rgba(16,185,129,0.10),transparent_60%)] border-b border-slate-200"
+        >
+          <p class="font-bold text-ink">Accommodation & food</p>
+          <p class="mt-2 text-slate-600">Help arranging stay near hospital.</p>
+        </div>
+      </div>
+
+      <div class="mt-6 grid lg:grid-cols-3 gap-4 text-lg">
+        <div
+          class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft bg-[radial-gradient(circle_at_16%_12%,rgba(14,165,233,0.16),transparent_55%),radial-gradient(circle_at_82%_22%,rgba(16,185,129,0.10),transparent_60%)] border-b border-slate-200"
+        >
+          <p class="font-bold text-ink">Single point of contact</p>
+          <p class="mt-2 text-slate-600">
+            A dedicated case manager supports medical and non‑medical needs.
+          </p>
+        </div>
+        <div
+          class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft bg-[radial-gradient(circle_at_16%_12%,rgba(14,165,233,0.16),transparent_55%),radial-gradient(circle_at_82%_22%,rgba(16,185,129,0.10),transparent_60%)] border-b border-slate-200"
+        >
+          <p class="font-bold text-ink">Interpreter facility</p>
+          <p class="mt-2 text-slate-600">
+            Trained interpreters familiar with medical terms and patient
+            requirements.
+          </p>
+        </div>
+        <div
+          class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft bg-[radial-gradient(circle_at_16%_12%,rgba(14,165,233,0.16),transparent_55%),radial-gradient(circle_at_82%_22%,rgba(16,185,129,0.10),transparent_60%)] border-b border-slate-200"
+        >
+          <p class="font-bold text-ink">Assured follow‑up</p>
+          <p class="mt-2 text-slate-600">
+            Post‑treatment continuity support after you return home.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journey section (mirrors official journey headings, paraphrased) -->
+    <section id="journey" class="bg-sand border-y border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 py-12">
+        <h2 class="text-2xl sm:text-3xl font-black text-ink">
+          Treatment journey for international patients
+        </h2>
+        <p class="mt-2 text-slate-600">
+          A clear pathway from first contact to return home and follow‑up.
+        </p>
+
+        <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+          <div
+            class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft bg-[radial-gradient(circle_at_16%_12%,rgba(14,165,233,0.16),transparent_55%),radial-gradient(circle_at_82%_22%,rgba(16,185,129,0.10),transparent_60%)] border-b border-slate-200"
+          >
+            <p class="text-xs font-semibold text-slate-500">Step 1</p>
+            <p class="mt-1 font-bold text-ink text-lg">
+              Schedule & pre‑visit guidance
+            </p>
+            <p class="mt-2 text-slate-600">
+              Complimentary pre‑visit consultation via phone/email can be
+              arranged.
+            </p>
+          </div>
+          <div
+            class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft bg-[radial-gradient(circle_at_16%_12%,rgba(14,165,233,0.16),transparent_55%),radial-gradient(circle_at_82%_22%,rgba(16,185,129,0.10),transparent_60%)] border-b border-slate-200"
+          >
+            <p class="text-xs font-semibold text-slate-500">Step 2</p>
+            <p class="mt-1 font-bold text-ink text-lg">Visa & travel support</p>
+            <p class="mt-2 text-slate-600">
+              Guidance for visa letter/extension and airport transfer support.
+            </p>
+          </div>
+          <div
+            class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft bg-[radial-gradient(circle_at_16%_12%,rgba(14,165,233,0.16),transparent_55%),radial-gradient(circle_at_82%_22%,rgba(16,185,129,0.10),transparent_60%)] border-b border-slate-200"
+          >
+            <p class="text-xs font-semibold text-slate-500">Step 3</p>
+            <p class="mt-1 font-bold text-ink text-lg">Case manager (SPOC)</p>
+            <p class="mt-2 text-slate-600">
+              A single point of contact supports medical + non‑medical needs.
+            </p>
+          </div>
+          <div
+            class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft bg-[radial-gradient(circle_at_16%_12%,rgba(14,165,233,0.16),transparent_55%),radial-gradient(circle_at_82%_22%,rgba(16,185,129,0.10),transparent_60%)] border-b border-slate-200"
+          >
+            <p class="text-xs font-semibold text-slate-500">Step 4</p>
+            <p class="mt-1 font-bold text-ink text-lg">Interpreter support</p>
+            <p class="mt-2 text-slate-600">
+              Language assistance through trained interpreters.
+            </p>
+          </div>
+          <div
+            class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft bg-[radial-gradient(circle_at_16%_12%,rgba(14,165,233,0.16),transparent_55%),radial-gradient(circle_at_82%_22%,rgba(16,185,129,0.10),transparent_60%)] border-b border-slate-200"
+          >
+            <p class="text-xs font-semibold text-slate-500">Step 5</p>
+            <p class="mt-1 font-bold text-ink text-lg">Stay & meals</p>
+            <p class="mt-2 text-slate-600">
+              Assistance arranging accommodation for patients and attendants.
+            </p>
+          </div>
+          <div
+            class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft bg-[radial-gradient(circle_at_16%_12%,rgba(14,165,233,0.16),transparent_55%),radial-gradient(circle_at_82%_22%,rgba(16,185,129,0.10),transparent_60%)] border-b border-slate-200"
+          >
+            <p class="text-xs font-semibold text-slate-500">Step 6</p>
+            <p class="mt-1 font-bold text-ink text-lg">Follow‑up</p>
+            <p class="mt-2 text-slate-600">
+              Continue communication after discharge, as needed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white">
+      <div class="max-w-7xl mx-auto px-4 py-10">
+        <div class="grid lg:grid-cols-2 gap-6 text-sm text-slate-600">
+          <div>
+            <p class="font-bold text-ink">International patient support</p>
+            <p class="mt-2">
+              Guidance for planning appointments, opinions, teleconsults, and
+              travel-ready steps.
+            </p>
+          </div>
+          <div>
+            <p class="font-bold text-ink">Disclaimer</p>
+            <p class="mt-2">
+              Final diagnosis and treatment decisions are made by licensed
+              medical professionals and the treating hospital.
+            </p>
+          </div>
+          <div class="flex gap-5 flex-wrap justify-start">
+            <a
+              href="https://www.hosplan.com/t&c/patients"
+              rel="noopener noreferrer"
+              target="_blank"
+              class="hover:underline text-[14px] text-black/80"
+            >
+              Terms & Conditions
+            </a>
+            <a
+              href="https://www.hosplan.com/privacypolicy"
+              rel="noopener noreferrer"
+              target="_blank"
+              class="hover:underline text-[14px] text-black/80"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="#faq"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:underline text-[14px] text-black/80"
+            >
+              FAQ
+            </a>
+          </div>
+        </div>
+        <div
+          class="mt-6 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-500"
+        >
+          <p>© 2026 - Hosplan</p>
+          <!-- <p>No analytics / tracker scripts included.</p> -->
+        </div>
+      </div>
+    </footer>
+    <div
+      class="fixed bottom-0 left-0 right-0 border-t border-slate-200 bg-white/95 backdrop-blur md:hidden"
+    >
+      <div class="mx-auto flex max-w-6xl gap-2 px-4 py-3">
+        <a
+          href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20help%20finding%20the%20right%20doctor%20at%20Apollo%20Chennai."
+          target="_blank"
+          rel="noopener"
+          class="flex-1 rounded-2xl bg-blue-700 py-3 text-center font-extrabold text-white"
+          >Chat Now</a
+        >
+        <a
+          href="#appointment-form"
+          class="flex-1 rounded-2xl bg-sky-500 py-3 text-center font-extrabold text-white"
+          >Book Appointment</a
+        >
+      </div>
+    </div>
+    <div class="h-24 md:hidden"></div>
+
+    <script>
+      const searchInput = document.getElementById("doctorSearch");
+      const cards = Array.from(document.querySelectorAll(".doctor-card"));
+      const count = document.getElementById("resultsCount");
+      const chips = Array.from(document.querySelectorAll(".filter-chip"));
+      let activeFilter = "all";
+
+      function normalize(str) {
+        return (str || "")
+          .toLowerCase()
+          .replace(/[-_]/g, " ") // handle spine-surgery, internal_medicine
+          .replace(/\s+/g, " ") // normalize spaces
+          .trim();
+      }
+
+      function applyFilters() {
+        const q = normalize(searchInput.value);
+        let visible = 0;
+
+        cards.forEach((card) => {
+          const name = normalize(card.dataset.name);
+          const specialty = normalize(card.dataset.specialty);
+
+          const matchesText = !q || name.includes(q) || specialty.includes(q);
+
+          const matchesFilter =
+            activeFilter === "all" ||
+            specialty.includes(normalize(activeFilter));
+
+          const show = matchesText && matchesFilter;
+
+          card.style.display = show ? "" : "none";
+
+          if (show) visible++;
+        });
+
+        count.textContent = `${visible} doctor${visible === 1 ? "" : "s"} shown`;
+      }
+
+      searchInput.addEventListener("input", applyFilters);
+
+      chips.forEach((chip) => {
+        chip.addEventListener("click", () => {
+          activeFilter = chip.dataset.filter;
+          chips.forEach((c) => {
+            c.classList.remove("bg-blue-700", "text-white", "border-blue-700");
+            c.classList.add(
+              "bg-slate-50",
+              "text-slate-700",
+              "border-slate-200",
+            );
+          });
+          chip.classList.remove(
+            "bg-slate-50",
+            "text-slate-700",
+            "border-slate-200",
+          );
+          chip.classList.add("bg-blue-700", "text-white", "border-blue-700");
+          applyFilters();
+        });
+      });
+
+      applyFilters();
+    </script>
+
+    <script>
+      const searchInput1 = document.getElementById("doctorSearch");
+      const doctorGrid = document.getElementById("doctorGrid");
+
+      function scrollToDoctors() {
+        window.scrollTo({
+          top: doctorGrid.offsetTop - 80,
+          behavior: "smooth",
+        });
+      }
+
+      let typingTimer;
+
+      searchInput1.addEventListener("input", function () {
+        clearTimeout(typingTimer);
+
+        if (this.value.trim().length >= 4) {
+          typingTimer = setTimeout(() => {
+            scrollToDoctors();
+          }, 2800); // delay after user stops typing
+        }
+      });
+
+      // 🔹 Trigger on Enter key
+      searchInput1.addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          scrollToDoctors();
+        }
+      });
+    </script>
+  </body>
+</html>
