@@ -83,7 +83,7 @@
             <h1
               class="mt-4 text-4xl font-black leading-[1.05] text-slate-950 md:text-6xl"
             >
-              Find the Right Apollo Chennai Doctor — Book Appointment Easily
+              Find the Right Doctor atApollo Chennai — Book Appointment Easily
             </h1>
 
             <p
@@ -116,15 +116,15 @@
                   placeholder="Search doctor name or specialty"
                   class="w-full rounded-2xl border border-slate-300 px-5 py-4 text-base outline-none focus:border-blue-600"
                 />
-                <a
-                  href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20with%20Dr%20Bhaswar%20Bhattacherjee%20at%20Apollo%20Chennai."
+                <button
+                  onclick="handleSearch()"
                   target="_blank"
                   rel="noopener"
                   class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-lg font-bold text-black items-center text-white"
                 >
                   <i class="fa-solid fa-magnifying-glass mx-1"></i>
                   Search
-                </a>
+                </button>
 
                 <a
                   href="#appointment-form"
@@ -2348,6 +2348,18 @@
           scrollToDoctors();
         }
       });
+
+      function handleSearch() {
+        const query = searchInput1.value.trim();
+
+        if (!query) {
+          alert("Please enter doctor name or specialty");
+          return;
+        }
+        clearTimeout(typingTimer); // This will clear the timer or  reset the timer
+        // 👉 Scroll to results
+        scrollToDoctors();
+      }
     </script>
   </body>
 </html>
