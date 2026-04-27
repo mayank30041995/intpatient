@@ -16,6 +16,21 @@
       name="googlebot"
       content="noindex,nofollow,noarchive,nosnippet,noimageindex"
     />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="apollo-favicon.ico" />
+
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="preload" href="css/stylesheet.css" as="style" />
+    <link href="css/stylesheet.css" rel="stylesheet" />
+
+    <link
+      rel="preload"
+      as="image"
+      src="apollo-hospital-image.webp"
+      imagesrcset="apollo-hospital-image.webp 1x"
+      fetchpriority="high"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link
@@ -58,15 +73,85 @@
           >
         </div>
         <a
-          href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20help%20finding%20the%20right%20doctor%20at%20Apollo%20Chennai."
-          target="_blank"
+          id="callback-btn"
+          href="javascript:void(0);"
           rel="noopener"
-          class="font-bold underline"
+          role="button"
+          class="open-zoho-chat font-bold underline"
         >
+          <i class="fas fa-comments mr-2"></i>
           Live Chat with us
         </a>
       </div>
     </div>
+
+    <!-- header -->
+    <header
+      class="top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between gap-4"
+      >
+        <div class="flex items-center gap-3 min-w-0">
+          <div
+            class="h-18 w-24 rounded-md flex items-center justify-center shadow overflow-hidden"
+          >
+            <img
+              src="logo.png"
+              alt="Apollo Hospital Logo"
+              class="max-h-full pt-2 max-w-full mx-auto my-auto object-contain"
+            />
+          </div>
+          <div class="min-w-0">
+            <p class="font-extrabold text-slate-900 truncate">Apollo Chennai</p>
+            <p class="text-xs text-slate-500 truncate">
+              International Patients • Appointment-first journey
+            </p>
+          </div>
+        </div>
+        <nav class="hidden md:flex items-center gap-2">
+          <!-- <a
+            href="#specialties"
+            class="px-3 py-2 rounded-full text-md font-semibold border border-slate-200 hover:bg-slate-50"
+          >
+            <i class="fas fa-ribbon text-pink-500"></i>
+            Specialties</a
+          > -->
+          <a
+            href="#doctors"
+            class="px-3 py-2 rounded-full text-md font-semibold border border-slate-200 hover:bg-slate-50"
+          >
+            <i class="fas fa-head-side-mask text-orange-500"></i>
+            Doctors</a
+          >
+          <a
+            href="#visa"
+            class="px-3 py-2 rounded-full text-md font-semibold border border-slate-200 hover:bg-slate-50"
+          >
+            <i class="fas fa-passport mr-2"></i>
+            Visa</a
+          >
+          <a
+            id="callback-btn"
+            href="javascript:void(0);"
+            rel="noopener"
+            role="button"
+            class="open-zoho-chat px-3 py-2 rounded-full text-md font-semibold border border-slate-200 hover:bg-slate-50"
+          >
+            <i class="fas fa-calendar-alt mr-2"></i>
+            Appointment</a
+          >
+          <a
+            href="https://www.hosplan.com/refer-us"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="px-3 py-2 rounded-full text-md font-semibold border border-slate-200 hover:bg-slate-50"
+          >
+            <i class="fas fa-ribbon text-pink-500"></i> Work with us</a
+          >
+        </nav>
+      </div>
+    </header>
 
     <section
       class="border-b border-slate-200 bg-[linear-gradient(135deg,rgba(37,99,235,0.10),rgba(255,255,255,1)_45%,rgba(14,165,233,0.06))]"
@@ -127,8 +212,11 @@
                 </button>
 
                 <a
-                  href="#appointment-form"
-                  class="inline-flex shrink-0 items-center justify-center rounded-2xl bg-blue-700 px-6 py-4 text-base font-extrabold text-white text-lg"
+                  id="callback-btn"
+                  href="javascript:void(0);"
+                  rel="noopener"
+                  role="button"
+                  class="open-zoho-chat inline-flex shrink-0 items-center justify-center rounded-2xl bg-blue-700 px-6 py-4 text-base font-extrabold text-white text-lg"
                 >
                   <i class="fa-solid fa-calendar-check mx-2"></i>
 
@@ -257,6 +345,16 @@
                   </li>
                   <li>• দ্রুত সিদ্ধান্ত ও কার্যকর পদক্ষেপ নিতে সহায়ক</li>
                 </ul>
+                <a
+                  id="callback-btn"
+                  href="javascript:void(0);"
+                  rel="noopener"
+                  role="button"
+                  class="open-zoho-chat flex shrink-0 items-center justify-center rounded-2xl bg-blue-700 my-4 px-6 py-2 text-base font-extrabold text-white text-lg"
+                >
+                  <i class="fas fa-comments mr-2"></i>
+                  Live Chat
+                </a>
               </div>
             </div>
           </div>
@@ -278,8 +376,11 @@
             </p>
           </div>
           <a
-            href="#appointment-form"
-            class="text-sm font-bold underline text-blue-700"
+            id="callback-btn"
+            href="javascript:void(0);"
+            rel="noopener"
+            role="button"
+            class="open-zoho-chat text-sm font-bold underline text-blue-700"
             >Request Appointment</a
           >
         </div>
@@ -374,7 +475,7 @@
       </div>
     </section>
 
-    <section class="mx-auto max-w-7xl px-4 py-12">
+    <section id="doctors" class="mx-auto max-w-7xl px-4 py-12">
       <div class="mb-6 flex flex-wrap items-end justify-between gap-3">
         <div>
           <h2 class="text-3xl font-black text-slate-950">
@@ -412,16 +513,20 @@
 
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20with%20Dr%20Sajan%20K%20Hegde%20at%20Apollo%20Chennai."
-              target="_blank"
+              id="callback-btn"
+              href="javascript:void(0);"
               rel="noopener"
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i> Chat for Appointment
             </a>
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i>
               Request Appointment
@@ -450,16 +555,20 @@
 
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20with%20Dr%20T%20Raja%20at%20Apollo%20Chennai."
-              target="_blank"
+              id="callback-btn"
+              href="javascript:void(0);"
               rel="noopener"
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i> Chat for Appointment
             </a>
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i>
               Request Appointment
@@ -490,16 +599,20 @@
 
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20with%20Dr%20Bhaswar%20Bhattacherjee%20at%20Apollo%20Chennai."
-              target="_blank"
+              id="callback-btn"
+              href="javascript:void(0);"
               rel="noopener"
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i> Chat for Appointment
             </a>
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i>
               Request Appointment
@@ -526,16 +639,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Vinod%20P%20Joseph%20at%20Apollo%20Chennai."
-              target="_blank"
+              id="callback-btn"
+              href="javascript:void(0);"
               rel="noopener"
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -562,16 +679,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Murugan%20L%20at%20Apollo%20Chennai."
-              target="_blank"
+              id="callback-btn"
+              href="javascript:void(0);"
               rel="noopener"
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -600,16 +721,20 @@
 
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20with%20Dr%20Ragavan%20N%20at%20Apollo%20Chennai."
-              target="_blank"
+              id="callback-btn"
+              href="javascript:void(0);"
               rel="noopener"
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i> Chat for Appointment
             </a>
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i>
               Request Appointment
@@ -636,16 +761,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Hariharan%20M%20at%20Apollo%20Chennai."
-              target="_blank"
+              id="callback-btn"
+              href="javascript:void(0);"
               rel="noopener"
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i> Chat for Appointment
             </a>
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i>
               Request Appointment
@@ -672,16 +801,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Arun%20Kannan%20at%20Apollo%20Chennai."
-              target="_blank"
+              id="callback-btn"
+              href="javascript:void(0);"
               rel="noopener"
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i> Chat for Appointment
             </a>
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i>
               Request Appointment
@@ -708,15 +841,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Subba%20Rao%20B"
-              target="_blank"
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i> Chat for Appointment
             </a>
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i>
               Request Appointment
@@ -743,16 +881,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Siddhartha%20Ghosh%20at%20Apollo%20Chennai."
-              target="_blank"
+              id="callback-btn"
+              href="javascript:void(0);"
               rel="noopener"
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -779,16 +921,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Murugan%20L%20at%20Apollo%20Chennai."
-              target="_blank"
+              id="callback-btn"
+              href="javascript:void(0);"
               rel="noopener"
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -815,15 +961,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Siva%20Kumar%20R%20at%20Apollo%20Chennai."
-              target="_blank"
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i> Chat for Appointment
             </a>
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i>
               Request Appointment
@@ -850,16 +1001,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20Srinivas%20S%20at%20Apollo%20Chennai."
-              target="_blank"
+              id="callback-btn"
+              href="javascript:void(0);"
               rel="noopener"
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -885,15 +1040,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Muralidhar%20Alavandi%20at%20Apollo%20Chennai."
-              target="_blank"
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -919,15 +1079,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Padmanabhan%20R%20at%20Apollo%20Chennai."
-              target="_blank"
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -953,15 +1118,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20V%20Krishnamurthy%20at%20Apollo%20Chennai."
-              target="_blank"
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -987,16 +1157,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Asna%20Zehra%20Naqvi%20at%20Apollo%20Chennai."
-              target="_blank"
+              id="callback-btn"
+              href="javascript:void(0);"
               rel="noopener"
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -1022,16 +1196,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Janani%20Iyer%20at%20Apollo%20Chennai."
-              target="_blank"
+              id="callback-btn"
+              href="javascript:void(0);"
               rel="noopener"
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -1057,16 +1235,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Meenakshi%20Sundaram%20at%20Apollo%20Chennai."
-              target="_blank"
+              id="callback-btn"
+              href="javascript:void(0);"
               rel="noopener"
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -1092,16 +1274,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Sumana%20Manohar%20at%20Apollo%20Chennai."
-              target="_blank"
+              id="callback-btn"
+              href="javascript:void(0);"
               rel="noopener"
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -1127,16 +1313,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Vishnu%20Vandana%20at%20Apollo%20Chennai."
-              target="_blank"
+              id="callback-btn"
+              href="javascript:void(0);"
               rel="noopener"
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -1162,15 +1352,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Nitish%20Bhan%20at%20Apollo%20Chennai."
-              target="_blank"
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -1199,14 +1394,20 @@
 
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Revathi%20S%20Rajan%20at%20Apollo%20Chennai."
-              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
             >
               <i class="fas fa-comment mx-1"></i> Chat for Appointment
             </a>
             <a
-              href="#appointment-form"
-              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i>
               Request Appointment
@@ -1235,14 +1436,20 @@
 
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Madan%20Mohan%20Reddy%20at%20Apollo%20Chennai."
-              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
             >
               <i class="fas fa-comment mx-1"></i> Chat for Appointment
             </a>
             <a
-              href="#appointment-form"
-              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i>
               Request Appointment
@@ -1269,16 +1476,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Arul%20Selvan%20at%20Apollo%20Chennai."
-              target="_blank"
+              id="callback-btn"
+              href="javascript:void(0);"
               rel="noopener"
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -1307,14 +1518,20 @@
 
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Ajit%20Pai%20at%20Apollo%20Chennai."
-              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
             >
               <i class="fas fa-comment mx-1"></i> Chat for Appointment
             </a>
             <a
-              href="#appointment-form"
-              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i>
               Request Appointment
@@ -1341,14 +1558,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Sridhar%20P%20S%20at%20Apollo%20Chennai."
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i>
               Request Appointment
@@ -1375,14 +1598,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Meera%20Raghavan%20at%20Apollo%20Chennai."
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i>
               Request Appointment
@@ -1409,14 +1638,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Imtiaz%20Ghani%20at%20Apollo%20Chennai."
-              class="inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-green-500 px-4 py-2 text-sm font-bold text-black items-center"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat inline-flex rounded-xl bg-blue-700 px-4 py-2 text-sm font-bold text-white items-center"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i>
               Request Appointment
@@ -1443,14 +1678,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Ramesh%20B%20at%20Apollo%20Chennai."
-              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -1477,14 +1718,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Robert%20Mao%20at%20Apollo%20Chennai."
-              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -1511,14 +1758,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Yusuf%20M%20M%20at%20Apollo%20Chennai."
-              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -1545,14 +1798,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Babu%20Manohar%20at%20Apollo%20Chennai."
-              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -1579,14 +1838,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20R%20at%20Apollo%20Chennai."
-              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -1612,14 +1877,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20R%20at%20Apollo%20Chennai."
-              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -1648,14 +1919,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20R%20at%20Apollo%20Chennai."
-              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -1682,14 +1959,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20R%20at%20Apollo%20Chennai."
-              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -1716,14 +1999,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20R%20at%20Apollo%20Chennai."
-              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -1750,14 +2039,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20R%20at%20Apollo%20Chennai."
-              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -1784,14 +2079,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20R%20at%20Apollo%20Chennai."
-              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -1818,14 +2119,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20R%20at%20Apollo%20Chennai."
-              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -1852,14 +2159,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20R%20at%20Apollo%20Chennai."
-              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -1888,14 +2201,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20R%20at%20Apollo%20Chennai."
-              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -1922,14 +2241,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20R%20at%20Apollo%20Chennai."
-              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -1958,14 +2283,20 @@
           <p class="mt-1 text-xs text-slate-500">Apollo Chennai</p>
           <div class="mt-4 flex flex-wrap gap-2">
             <a
-              href="https://wa.me/919899187776?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20for%20Dr%20Balaji%20R%20at%20Apollo%20Chennai."
-              class="bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-green-500 px-4 py-2 rounded-xl text-sm font-bold text-black"
             >
               <i class="fas fa-comment mx-1"></i>Chat for Appointment</a
             >
             <a
-              href="#appointment-form"
-              class="bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
+              id="callback-btn"
+              href="javascript:void(0);"
+              rel="noopener"
+              role="button"
+              class="open-zoho-chat bg-blue-700 px-4 py-2 rounded-xl text-sm font-bold text-white"
             >
               <i class="fa-solid fa-calendar-check mx-2"></i> Request
               Appointment</a
@@ -2025,7 +2356,7 @@
     </section> -->
 
     <!-- International Patient Services (align to official offerings) -->
-    <section id="intl" class="max-w-7xl mx-auto px-4 py-12">
+    <section id="visa" class="max-w-7xl mx-auto px-4 py-12">
       <div class="flex flex-wrap items-end justify-between gap-3">
         <div>
           <h2 class="text-2xl sm:text-3xl font-black text-ink">
@@ -2111,12 +2442,25 @@
     <!-- Journey section (mirrors official journey headings, paraphrased) -->
     <section id="journey" class="bg-sand border-y border-slate-200">
       <div class="max-w-7xl mx-auto px-4 py-12">
-        <h2 class="text-2xl sm:text-3xl font-black text-ink">
-          Treatment journey for international patients
-        </h2>
-        <p class="mt-2 text-slate-600">
-          A clear pathway from first contact to return home and follow‑up.
-        </p>
+        <div class="max-w-7xl mx-auto px-4 py-12">
+          <div class="flex flex-wrap items-end justify-between gap-3">
+            <div>
+              <h2 class="text-2xl sm:text-3xl font-black text-ink">
+                Treatment journey for international patients
+              </h2>
+              <p class="mt-2 text-slate-600">
+                A clear pathway from first contact to return home and follow‑up.
+              </p>
+            </div>
+            <a
+              href="javascript:void(0);"
+              rel="noopener"
+              class="open-zoho-chat text-sm font-bold text-brand underline"
+            >
+              <i class="fa-solid fa-comments mr-2 text-lg"></i> Live Chat →</a
+            >
+          </div>
+        </div>
 
         <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
           <div
@@ -2360,6 +2704,187 @@
         // 👉 Scroll to results
         scrollToDoctors();
       }
+    </script>
+
+    <!-- ===================== -->
+    <!-- Google Tag -->
+    <!-- Google Tag -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-922729084"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-922729084");
+    </script>
+
+    <!-- GEO + CHAT SCRIPT -->
+
+    <script>
+      window.$zoho = window.$zoho || {};
+      $zoho.salesiq = $zoho.salesiq || {};
+
+      let zohoLoaded = false;
+      let zohoLoading = false;
+
+      function loadZohoChat() {
+        if (zohoLoaded || zohoLoading) return;
+
+        zohoLoading = true;
+
+        const s = document.createElement("script");
+        s.src =
+          "https://salesiq.zohopublic.in/widget?wc=siq367d95d869cfb0a60e7316445c07536ce914f0b2acca4d494a29391df96d37815f0b000cc8eb687133e4e9868f24bf72";
+        s.async = true;
+
+        s.onload = () => {
+          zohoLoaded = true;
+          zohoLoading = false;
+        };
+
+        document.body.appendChild(s);
+      }
+
+      function openZohoChat() {
+        if (window.$zoho?.salesiq?.floatwindow) {
+          $zoho.salesiq.floatwindow.visible("show");
+        }
+      }
+
+      function handleChatClick(e) {
+        e.preventDefault();
+
+        // conversion tracking (non-blocking)
+        if (typeof gtag === "function") {
+          requestIdleCallback?.(() => {
+            gtag("event", "conversion", {
+              send_to: "AW-922729084/CONVERSION_LABEL",
+            });
+          });
+        }
+
+        loadZohoChat();
+
+        // wait until script loads then open
+        const interval = setInterval(() => {
+          if (zohoLoaded) {
+            openZohoChat();
+            clearInterval(interval);
+          }
+        }, 200);
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // attach click events
+        document.querySelectorAll(".open-zoho-chat").forEach((el) => {
+          el.addEventListener("click", handleChatClick);
+        });
+
+        // 🚀 load ONLY on user intent signals (BEST for Lighthouse)
+        ["scroll", "mousemove", "touchstart"].forEach((event) => {
+          window.addEventListener(
+            event,
+            () => {
+              loadZohoChat();
+            },
+            { once: true, passive: true },
+          );
+        });
+      });
+    </script>
+
+    <!-- Location Block For User -->
+    <script>
+      window.$zoho = window.$zoho || {};
+      $zoho.salesiq = $zoho.salesiq || {};
+
+      let geoChecked = false;
+
+      function blockPage() {
+        document.title = "Page not found";
+
+        const blocker = document.createElement("div");
+        blocker.innerHTML = `
+      <div style="
+        position:fixed;
+        inset:0;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        background:#f3f4f6;
+        z-index:999999;
+        font-family:sans-serif;
+      ">
+        <div style="
+          background:#fff;
+          padding:32px;
+          border-radius:16px;
+          box-shadow:0 10px 30px rgba(0,0,0,0.1);
+          text-align:center;
+          max-width:400px;
+          width:90%;
+        ">
+          <h1 style="font-size:64px;font-weight:900;color:#dc2626;margin-bottom:8px;">
+            404
+          </h1>
+          <h2 style="font-size:24px;font-weight:700;">
+            Page not found
+          </h2>
+        </div>
+      </div>
+    `;
+
+        document.body.appendChild(blocker);
+
+        // hide Zoho chat if present
+        const style = document.createElement("style");
+        style.innerHTML = `
+      #zsiq_float, .zsiq_float, iframe[src*="zoho"] {
+        display:none !important;
+      }
+    `;
+        document.head.appendChild(style);
+
+        document.body.style.overflow = "hidden";
+      }
+
+      function ipLookUp() {
+        fetch(
+          "https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation",
+        )
+          .then((res) => res.json())
+          .then((data) => {
+            if (data.country === "IN") {
+              blockPage();
+            }
+          })
+          .catch(() => {
+            // fail silently (don’t affect UX)
+          });
+      }
+
+      // 🚀 Optimized execution (no impact on LCP)
+      window.addEventListener("load", () => {
+        if ("requestIdleCallback" in window) {
+          requestIdleCallback(() => {
+            if (!geoChecked) {
+              geoChecked = true;
+              ipLookUp();
+            }
+          });
+        } else {
+          setTimeout(() => {
+            if (!geoChecked) {
+              geoChecked = true;
+              ipLookUp();
+            }
+          }, 1500);
+        }
+      });
     </script>
   </body>
 </html>
