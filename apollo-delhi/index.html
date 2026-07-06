@@ -126,7 +126,7 @@
         <i>404</i>
       </div>
     </div>
-    <main id="main" class="hidden">
+    <main>
       <div
         class="bg-white/90 backdrop-blur-sm border-b border-gray-200 top-0 z-20"
       >
@@ -259,9 +259,8 @@
                 </a>
 
                 <a
-                  id="callback-btn"
                   href="javascript:void(0);"
-                  class="cursor-pointer inline-flex items-center justify-center px-5 py-3 rounded-xl bg-[#2582a1] text-white font-semibold hover:brightness-105"
+                  class="open-zoho-chat cursor-pointer inline-flex items-center justify-center px-5 py-3 rounded-xl bg-[#2582a1] text-white font-semibold hover:brightness-105"
                 >
                   <i class="fas fa-comments mr-2"></i>
                   Live Chat (Fast Response)
@@ -388,8 +387,10 @@
                 </a>
 
                 <a
-                  href="http://what.sapp.link/apollo-del"
-                  class="inline-flex items-center justify-center px-5 py-3 rounded-xl border border-slate-200 bg-white font-semibold hover:bg-slate-50"
+                  href="javascript:void(0);"
+                  rel="noopener"
+                  role="button"
+                  class="open-zoho-chat inline-flex items-center justify-center px-5 py-3 rounded-xl border border-slate-200 bg-white font-semibold hover:bg-slate-50"
                 >
                   📞 Call +91 99111 63990
                 </a>
@@ -2531,9 +2532,10 @@
 
           <!-- Request Callback -->
           <a
-            id="callback-btn2"
+            href="javascript:void(0);"
             rel="noopener"
-            class="flex-1 inline-flex justify-center items-center min-h-[48px] px-6 py-3 text-base font-semibold text-white rounded-xl bg-[#2582a1] hover:bg-[#2582a5] transition mt-2 shadow-md hover:opacity-90 transition focus:outline-none focus:ring-2 focus:ring-[#2582a1]/50"
+            role="button"
+            class="open-zoho-chat flex-1 inline-flex justify-center items-center min-h-[48px] px-6 py-3 text-base font-semibold text-white rounded-xl bg-[#2582a1] hover:bg-[#2582a5] transition mt-2 shadow-md hover:opacity-90 transition focus:outline-none focus:ring-2 focus:ring-[#2582a1]/50"
           >
             <i class="fas fa-comments mr-2"></i>
             Live Chat
@@ -2542,6 +2544,8 @@
       </div>
     </main>
 
+    <!-- ===================== -->
+    <!-- Google Tag -->
     <!-- Google Tag -->
     <script
       async
@@ -2556,18 +2560,17 @@
       gtag("config", "AW-922729084");
     </script>
 
-    <!-- Conversion trigger (example) -->
+    <!-- GEO + CHAT SCRIPT -->
+
     <script>
+      window.$zoho = window.$zoho || {};
+      $zoho.salesiq = $zoho.salesiq || {};
+
       let zohoLoaded = false;
       let zohoLoading = false;
 
-      function loadZohoChat(callback) {
-        if (zohoLoaded) {
-          callback && callback();
-          return;
-        }
-
-        if (zohoLoading) return;
+      function loadZohoChat() {
+        if (zohoLoaded || zohoLoading) return;
 
         zohoLoading = true;
 
@@ -2576,180 +2579,151 @@
           "https://salesiq.zohopublic.in/widget?wc=siq367d95d869cfb0a60e7316445c07536ce914f0b2acca4d494a29391df96d37815f0b000cc8eb687133e4e9868f24bf72";
         s.async = true;
 
-        s.onload = function () {
-          const wait = setInterval(() => {
-            if (window.$zoho && $zoho.salesiq && $zoho.salesiq.ready) {
-              clearInterval(wait);
-              zohoLoaded = true;
-              callback && callback();
-            }
-          }, 200);
+        s.onload = () => {
+          zohoLoaded = true;
+          zohoLoading = false;
         };
 
         document.body.appendChild(s);
       }
 
-      /* ✅ AUTO LOAD (lazy) */
-      function initLazyZoho() {
-        // load after page idle (best for performance)
-        if ("requestIdleCallback" in window) {
-          requestIdleCallback(() => loadZohoChat());
-        } else {
-          setTimeout(() => loadZohoChat(), 3000);
+      function openZohoChat() {
+        if (window.$zoho?.salesiq?.floatwindow) {
+          $zoho.salesiq.floatwindow.visible("show");
         }
       }
 
-      /* ✅ BUTTON CLICK HANDLER */
-      document.addEventListener("DOMContentLoaded", function () {
-        initLazyZoho(); // auto load
+      function handleChatClick(e) {
+        e.preventDefault();
 
-        var btn = document.getElementById("callback-btn");
-        var btn2 = document.getElementById("callback-btn2");
-
-        [btn, btn2].forEach(function (el) {
-          if (el) {
-            el.addEventListener("click", function (e) {
-              e.preventDefault();
-
-              if (typeof gtag === "function") {
-                gtag("event", "conversion", {
-                  send_to: "AW-922729084/CONVERSION_LABEL",
-                });
-              }
-
-              if (window.$zoho && $zoho.salesiq) {
-                $zoho.salesiq.floatwindow.visible("show");
-                $zoho.salesiq.chat.start();
-              }
+        // conversion tracking (non-blocking)
+        if (typeof gtag === "function") {
+          requestIdleCallback?.(() => {
+            gtag("event", "conversion", {
+              send_to: "AW-922729084/CONVERSION_LABEL",
             });
+          });
+        }
+
+        loadZohoChat();
+
+        // wait until script loads then open
+        const interval = setInterval(() => {
+          if (zohoLoaded) {
+            openZohoChat();
+            clearInterval(interval);
           }
+        }, 200);
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // attach click events
+        document.querySelectorAll(".open-zoho-chat").forEach((el) => {
+          el.addEventListener("click", handleChatClick);
+        });
+
+        // 🚀 load ONLY on user intent signals (BEST for Lighthouse)
+        ["scroll", "mousemove", "touchstart"].forEach((event) => {
+          window.addEventListener(
+            event,
+            () => {
+              loadZohoChat();
+            },
+            { once: true, passive: true },
+          );
         });
       });
     </script>
 
-    <!-- Add JS listener for buttons -->
+    <!-- Location Block For User -->
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const btn = document.getElementById("callback-btn");
-        console.log(btn);
-        if (btn) {
-          btn.addEventListener("click", function () {
-            if (typeof gtag === "function") {
-              gtag("event", "conversion", {
-                send_to: "AW-922729084/CONVERSION_LABEL",
-              });
-            }
+      window.$zoho = window.$zoho || {};
+      $zoho.salesiq = $zoho.salesiq || {};
 
-            // Optional: open Zoho chat
-            if (window.$zoho && $zoho.salesiq) {
-              $zoho.salesiq.floatwindow.visible("show");
+      let geoChecked = false;
+
+      function blockPage() {
+        document.title = "Page not found";
+
+        const blocker = document.createElement("div");
+        blocker.innerHTML = `
+      <div style="
+        position:fixed;
+        inset:0;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        background:#f3f4f6;
+        z-index:999999;
+        font-family:sans-serif;
+      ">
+        <div style="
+          background:#fff;
+          padding:32px;
+          border-radius:16px;
+          box-shadow:0 10px 30px rgba(0,0,0,0.1);
+          text-align:center;
+          max-width:400px;
+          width:90%;
+        ">
+          <h1 style="font-size:64px;font-weight:900;color:#dc2626;margin-bottom:8px;">
+            404
+          </h1>
+          <h2 style="font-size:24px;font-weight:700;">
+            Page not found
+          </h2>
+        </div>
+      </div>
+    `;
+
+        document.body.appendChild(blocker);
+
+        // hide Zoho chat if present
+        const style = document.createElement("style");
+        style.innerHTML = `
+      #zsiq_float, .zsiq_float, iframe[src*="zoho"] {
+        display:none !important;
+      }
+    `;
+        document.head.appendChild(style);
+
+        document.body.style.overflow = "hidden";
+      }
+
+      function ipLookUp() {
+        fetch(
+          "https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation",
+        )
+          .then((res) => res.json())
+          .then((data) => {
+            if (data.country === "IN") {
+              blockPage();
+            }
+          })
+          .catch(() => {
+            // fail silently (don’t affect UX)
+          });
+      }
+
+      // 🚀 Optimized execution (no impact on LCP)
+      window.addEventListener("load", () => {
+        if ("requestIdleCallback" in window) {
+          requestIdleCallback(() => {
+            if (!geoChecked) {
+              geoChecked = true;
+              ipLookUp();
             }
           });
+        } else {
+          setTimeout(() => {
+            if (!geoChecked) {
+              geoChecked = true;
+              ipLookUp();
+            }
+          }, 1500);
         }
       });
     </script>
-
-    <!-- GEO + CHAT SCRIPT -->
-
-    <!-- GEO + CHAT SCRIPT -->
-    <script defer>
-      function ipLookUp() {
-        var xhttp = new XMLHttpRequest();
-
-        xhttp.onreadystatechange = function () {
-          if (this.readyState == 4 && this.status == 200) {
-            var response = JSON.parse(xhttp.response);
-            console.log("location response", response);
-
-            window.ttLocation = response.country;
-
-            /* -------- SET ZOHO FORM FIELDS -------- */
-
-            const city = response.city || "";
-            const country = response.country || "";
-            const region = response.region || "";
-            const latlong = response.cityLatLong || "";
-            const ip = response.userIP || "";
-
-            const cityField = document.querySelector('[name="SingleLine"]');
-            const countryField = document.querySelector('[name="SingleLine1"]');
-            const latLongField = document.querySelector('[name="SingleLine2"]');
-            const regionField = document.querySelector('[name="SingleLine3"]');
-            const ipField = document.querySelector('[name="SingleLine4"]');
-            const mapLocationUrl = document.querySelector(
-              '[name="SingleLine6"]',
-            );
-
-            if (cityField) cityField.value = city;
-            if (countryField) countryField.value = country;
-            if (latLongField) latLongField.value = latlong;
-            if (regionField) regionField.value = region;
-            if (ipField) ipField.value = ip;
-            if (mapLocationUrl && latlong) {
-              mapLocationUrl.value = "https://www.google.com/maps?q=" + latlong;
-            }
-            /* -------- COUNTRY CHECK -------- */
-
-            if (response.country === "IN") {
-              document.title = "Page not found";
-              setVisible(".err", true);
-              setVisible("#loader", false);
-              setVisible("#main", false);
-
-              if (window.$zoho && $zoho.salesiq) {
-                $zoho.salesiq.floatwindow.visible("show");
-                $zoho.salesiq.chat.start();
-              }
-            } else {
-              setVisible("#main", true);
-              setVisible("#loader", false);
-              initChat();
-            }
-          }
-        };
-
-        xhttp.open(
-          "GET",
-          "https://asia-east2-handy-amplifier-259811.cloudfunctions.net/geolocation",
-          true,
-        );
-
-        xhttp.send();
-      }
-
-      function setVisible(selector, visible) {
-        const el = document.querySelector(selector);
-        if (el) {
-          el.classList.toggle("hidden", !visible);
-        }
-      }
-
-      function initChat() {
-        if (window.ttLocation !== "IN") {
-          window.__lc = window.__lc || {};
-          window.__lc.license = 7595311;
-
-          (function () {
-            var lc = document.createElement("script");
-            lc.type = "text/javascript";
-            lc.async = true;
-            lc.src =
-              (document.location.protocol === "https:"
-                ? "https://"
-                : "http://") + "cdn.livechatinc.com/tracking.js";
-            document.head.appendChild(lc);
-          })();
-        }
-      }
-
-      document.addEventListener("DOMContentLoaded", function () {
-        setVisible("#main", true);
-        setVisible("#loader", false);
-
-        ipLookUp();
-      });
-    </script>
-    <!-- End of GEO + CHAT SCRIPT -->
     <script>
       document.getElementById("y").textContent = new Date().getFullYear();
     </script>
