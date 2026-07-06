@@ -44,19 +44,8 @@
     </script> -->
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <!-- <link rel="preload" href="public/css/stylesheet.css" as="style" /> -->
-    <link
-      rel="preload"
-      href="public/css/style.css"
-      as="style"
-      onload="
-        this.onload = null;
-        this.rel = 'stylesheet';
-      "
-    />
+    <link rel="stylesheet" href="public/css/style.css" />
 
-    <noscript>
-      <link rel="stylesheet" href="public/css/style.css" />
-    </noscript>
     <style>
       body {
         font-family: "Montserrat", sans-serif;
@@ -171,7 +160,7 @@
                   id="callback-btn"
                   href="javascript:void(0);"
                   rel="noopener"
-                  class="inline-flex items-center justify-center px-[14px] py-[12px] rounded-[8px] bg-[#f04e30] text-white font-semibold cursor-pointer"
+                  class="open-zoho-chat inline-flex items-center justify-center px-[14px] py-[12px] rounded-[8px] bg-[#f04e30] text-white font-semibold cursor-pointer"
                 >
                   <i class="fas fa-comments mx-2"></i>
 
@@ -1434,15 +1423,15 @@
               WhatsApp
             </a>
             <!-- href="#lead-form" -->
-            <button
-              id="callback-btn2"
+            <a
+              href="javascript:void(0);"
               rel="noopener"
-              class="flex-1 inline-flex items-center justify-center cursor-pointer px-[14px] py-[12px] text-sm md:text-[14px] bg-[#f04e30] rounded-[8px] font-semibold bg-[#f04e30] text-white"
+              class="open-zoho-chat flex-1 inline-flex items-center justify-center cursor-pointer px-[14px] py-[12px] text-sm md:text-[14px] bg-[#f04e30] rounded-[8px] font-semibold bg-[#f04e30] text-white"
             >
               <i class="fas fa-comments mx-2"></i>
 
               Live Chat
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -1499,8 +1488,7 @@
     <!-- 🔹 MEDANTA CONFIG -->
     <!-- ===================== -->
 
-    <!-- ===================== -->
-    <!-- Google Tag -->
+    <!-- ================= GOOGLE TAG ================= -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=AW-922729084"
@@ -1514,32 +1502,31 @@
       gtag("config", "AW-922729084");
     </script>
 
-    <!-- Conversion trigger (example) -->
-    <script>
-      function trackConversion() {
-        gtag("event", "conversion", {
-          send_to: "AW-922729084/CONVERSION_LABEL",
-        });
-      }
-
-      document.addEventListener("DOMContentLoaded", function () {
-        const btn = document.getElementById("cta-btn");
-        if (btn) btn.addEventListener("click", trackConversion);
-      });
-    </script>
-
+    <!-- ================= GLOBAL STATE ================= -->
     <script>
       let zohoLoaded = false;
       let zohoLoading = false;
+      let conversionFired = false;
 
-      function loadZohoChat(callback) {
-        if (zohoLoaded) {
-          callback && callback();
-          return;
+      /* ===== CONVERSION ===== */
+      function trackConversion() {
+        if (conversionFired) return;
+        conversionFired = true;
+
+        if (typeof gtag === "function") {
+          gtag("event", "conversion", {
+            send_to: "AW-922729084/CONVERSION_LABEL",
+          });
         }
 
-        if (zohoLoading) return;
+        if (window.$zoho?.salesiq) {
+          $zoho.salesiq.floatwindow.visible("show");
+        }
+      }
 
+      /* ===== ZOHO LAZY LOAD ===== */
+      function loadZohoChat() {
+        if (zohoLoaded || zohoLoading) return;
         zohoLoading = true;
 
         const s = document.createElement("script");
@@ -1547,144 +1534,128 @@
           "https://salesiq.zohopublic.in/widget?wc=siq367d95d869cfb0a60e7316445c07536ce914f0b2acca4d494a29391df96d37815f0b000cc8eb687133e4e9868f24bf72";
         s.async = true;
 
-        s.onload = function () {
-          const wait = setInterval(() => {
-            if (window.$zoho && $zoho.salesiq && $zoho.salesiq.ready) {
-              clearInterval(wait);
-              zohoLoaded = true;
-              callback && callback();
-            }
-          }, 200);
+        s.onload = () => {
+          zohoLoaded = true;
+          zohoLoading = false;
         };
 
         document.body.appendChild(s);
       }
 
-      /* ✅ AUTO LOAD (lazy) */
-      function initLazyZoho() {
-        // load after page idle (best for performance)
-        if ("requestIdleCallback" in window) {
-          requestIdleCallback(() => loadZohoChat());
-        } else {
-          setTimeout(() => loadZohoChat(), 3000);
-        }
-      }
+      /* ===== CHAT BUTTONS ===== */
+      function handleChatClick(e) {
+        e.preventDefault();
+        trackConversion();
+        loadZohoChat();
 
-      /* ✅ BUTTON CLICK HANDLER */
-      document.addEventListener("DOMContentLoaded", function () {
-        initLazyZoho(); // auto load
-
-        var btn = document.getElementById("callback-btn");
-        var btn2 = document.getElementById("callback-btn2");
-
-        [btn, btn2].forEach(function (el) {
-          if (el) {
-            el.addEventListener("click", function (e) {
-              e.preventDefault();
-
-              if (typeof gtag === "function") {
-                gtag("event", "conversion", {
-                  send_to: "AW-922729084/CONVERSION_LABEL",
-                });
-              }
-
-              if (window.$zoho && $zoho.salesiq) {
-                $zoho.salesiq.floatwindow.visible("show");
-                $zoho.salesiq.chat.start();
-              }
-            });
+        const interval = setInterval(() => {
+          if (zohoLoaded) {
+            if (window.$zoho?.salesiq) {
+              $zoho.salesiq.floatwindow.visible("show");
+              $zoho.salesiq.chat.start?.();
+            }
+            clearInterval(interval);
           }
-        });
-      });
+        }, 200);
+      }
     </script>
 
-    <!-- GEO + CHAT SCRIPT -->
-
+    <!-- ================= GEO LOCATION ================= -->
     <script>
-      let conversionFired = false;
+      function blockPage() {
+        document.title = "Page not found";
 
-      function trackConversion() {
-        if (conversionFired) return;
-        conversionFired = true;
+        const blocker = document.createElement("div");
+        blocker.innerHTML = `
+      <div style="
+        position:fixed;
+        inset:0;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        background:#f3f4f6;
+        z-index:999999;
+        font-family:sans-serif;
+      ">
+        <div style="
+          background:#fff;
+          padding:32px;
+          border-radius:16px;
+          box-shadow:0 10px 30px rgba(0,0,0,0.1);
+          text-align:center;
+          max-width:400px;
+          width:90%;
+        ">
+          <h1 style="font-size:64px;font-weight:900;color:#dc2626;margin-bottom:8px;">
+            404
+          </h1>
+          <h2 style="font-size:24px;font-weight:700;">
+            Page not found
+          </h2>
+        </div>
+      </div>
+    `;
 
-        // Google Ads conversion
-        if (typeof gtag === "function") {
-          gtag("event", "conversion", {
-            send_to: "AW-922729084/CONVERSION_LABEL",
-          });
-        }
+        document.body.appendChild(blocker);
 
-        // Open Zoho chat (optional)
-        if (window.$zoho && $zoho.salesiq) {
-          $zoho.salesiq.floatwindow.visible("show");
-        }
+        // hide Zoho chat if present
+        const style = document.createElement("style");
+        style.innerHTML = `
+      #zsiq_float, .zsiq_float, iframe[src*="zoho"] {
+        display:none !important;
+      }
+    `;
+        document.head.appendChild(style);
+
+        document.body.style.overflow = "hidden";
       }
 
-      document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll(".track-conversion").forEach(function (el) {
-          el.addEventListener("click", function (e) {
-            if (el.tagName === "A") e.preventDefault();
-            trackConversion();
-          });
-        });
-      });
-    </script>
-
-    <!-- GEO + CHAT SCRIPT -->
-    <script defer>
       function ipLookUp() {
         var xhttp = new XMLHttpRequest();
 
         xhttp.onreadystatechange = function () {
           if (this.readyState == 4 && this.status == 200) {
             var response = JSON.parse(xhttp.response);
-            console.log("location response", response);
-
             window.ttLocation = response.country;
-
-            /* -------- SET ZOHO FORM FIELDS -------- */
 
             const city = response.city || "";
             const country = response.country || "";
             const region = response.region || "";
             const latlong = response.cityLatLong || "";
             const ip = response.userIP || "";
-            const mapLocationUrl = response.mapLocationUrl || "";
 
             const cityField = document.querySelector('[name="SingleLine2"]');
             const countryField = document.querySelector('[name="SingleLine3"]');
             const latLongField = document.querySelector('[name="SingleLine4"]');
             const regionField = document.querySelector('[name="SingleLine5"]');
             const ipField = document.querySelector('[name="SingleLine6"]');
-            const mapLocationUrlField = document.querySelector(
-              '[name="SingleLine7"]',
-            );
+            const mapField = document.querySelector('[name="SingleLine7"]');
 
             if (cityField) cityField.value = city;
             if (countryField) countryField.value = country;
             if (latLongField) latLongField.value = latlong;
             if (regionField) regionField.value = region;
             if (ipField) ipField.value = ip;
-            if (mapLocationUrlField && latlong) {
-              mapLocationUrlField.value =
-                "https://www.google.com/maps?q=" + latlong;
-            }
-            /* -------- COUNTRY CHECK -------- */
 
+            if (mapField && latlong) {
+              mapField.value = "https://www.google.com/maps?q=" + latlong;
+            }
+
+            /* ===== COUNTRY BLOCK ===== */
             if (response.country === "IN") {
               document.title = "Page not found";
+              blockPage();
               setVisible(".err", true);
               setVisible("#loader", false);
               setVisible("#main", false);
 
-              if (window.$zoho && $zoho.salesiq) {
+              if (window.$zoho?.salesiq) {
                 $zoho.salesiq.floatwindow.visible("show");
-                $zoho.salesiq.chat.start();
+                $zoho.salesiq.chat.start?.();
               }
             } else {
               setVisible("#main", true);
               setVisible("#loader", false);
-              // initChat();
             }
           }
         };
@@ -1698,40 +1669,40 @@
         xhttp.send();
       }
 
+      /* ===== UI TOGGLE ===== */
       function setVisible(selector, visible) {
         const el = document.querySelector(selector);
-        if (el) {
-          el.classList.toggle("hidden", !visible);
-        }
+        if (el) el.classList.toggle("hidden", !visible);
       }
+    </script>
 
-      // function initChat() {
-      //   if (window.ttLocation !== "IN") {
-      //     window.__lc = window.__lc || {};
-      //     window.__lc.license = 7595311;
-
-      //     (function () {
-      //       var lc = document.createElement("script");
-      //       lc.type = "text/javascript";
-      //       lc.async = true;
-      //       lc.src =
-      //         (document.location.protocol === "https:"
-      //           ? "https://"
-      //           : "http://") + "cdn.livechatinc.com/tracking.js";
-      //       document.head.appendChild(lc);
-      //     })();
-      //   }
-      // }
-
+    <!-- ================= INIT ================= -->
+    <script>
       document.addEventListener("DOMContentLoaded", function () {
         setVisible("#main", true);
         setVisible("#loader", false);
 
         ipLookUp();
+
+        /* CHAT BUTTONS */
+        document.querySelectorAll(".open-zoho-chat").forEach((el) => {
+          el.addEventListener("click", handleChatClick);
+        });
+
+        /* FORM TRACKING (safe version) */
+        document.querySelectorAll("form").forEach((form) => {
+          form.addEventListener("submit", trackConversion);
+        });
+
+        /* LAZY LOAD ZOHO */
+        ["scroll", "mousemove", "touchstart"].forEach((evt) => {
+          window.addEventListener(evt, loadZohoChat, {
+            once: true,
+            passive: true,
+          });
+        });
       });
     </script>
-
-    <!-- GEO + CHAT SCRIPT -->
 
     <!-- End of GEO + CHAT SCRIPT -->
 
