@@ -1,0 +1,1147 @@
+<!doctype html>
+<html lang="bn">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    Medanta Hospital Gurgaon | বাংলাদেশের রোগীদের জন্য ডাক্তার ও
+    অ্যাপয়েন্টমেন্ট সহায়তা
+  </title>
+  <meta name="description"
+    content="বাংলাদেশ থেকে Medanta – The Medicity, Gurugram-এ চিকিৎসা নিতে ডাক্তার নির্বাচন, অ্যাপয়েন্টমেন্ট, রিপোর্ট শেয়ার ও আন্তর্জাতিক রোগী সহায়তা।" />
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex" />
+  <link rel="icon" href="public/images/favicon.ico" />
+  <!-- <script src="https://cdn.tailwindcss.com"></script>-->
+
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    as="style" onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      " />
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </noscript>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { medanta: "#ec671c", ink: "#10243e", teal: "#087f8c" },
+          boxShadow: { soft: "0 22px 60px rgba(15,35,60,.10)" },
+        },
+      },
+    };
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial,
+        sans-serif;
+    }
+
+    .bg-emerald-500 {
+      background-color: #22c55e !important;
+    }
+
+    .hero {
+      background:
+        linear-gradient(90deg,
+          rgba(255, 255, 255, 0.98) 0%,
+          rgba(255, 255, 255, 0.94) 44%,
+          rgba(255, 255, 255, 0.18) 74%),
+        url("public/images/bckgrnd-medanta-_1_-2.webp") center/cover no-repeat;
+    }
+
+    .doctor-card {
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+    .doctor-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 24px 55px rgba(15, 35, 60, 0.13);
+    }
+
+    .doctor-img {
+      object-position: center top;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        background:
+          linear-gradient(rgba(255, 255, 255, 0.93),
+            rgba(255, 255, 255, 0.97)),
+          url("public/images/medanta-mobile.webp") center/cover no-repeat;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-white text-slate-800">
+  <div class="bg-ink text-white">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-2 text-xs sm:text-sm">
+      <span>বাংলাদেশের রোগীদের জন্য বাংলা ভাষায় মেডিক্যাল কো-অর্ডিনেশন</span>
+      <a class="font-bold text-emerald-300" href="https://what.sapp.link/medanta" target="_blank"><i
+          class="fa fa-whatsapp fa-btn" style="font-size: 16px"></i>&nbsp;WhatsApp করুন +91 98991 87776 →</a>
+    </div>
+  </div>
+
+  <header class="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
+      <div class="flex items-center gap-3">
+        <img src="public/images/medantalogo.png.webp" alt="Medanta – The Medicity" class="h-10 w-auto" />
+        <div class="hidden border-l border-slate-200 pl-3 text-xs leading-5 text-slate-500 sm:block">
+          Bangladesh Patient Support<br /><span class="font-semibold text-slate-800">Independent coordination
+            service</span>
+        </div>
+      </div>
+      <nav class="hidden items-center gap-6 text-sm font-semibold text-slate-600 lg:flex">
+        <a href="#doctors" class="hover:text-medanta">Doctors</a><a href="#specialities"
+          class="hover:text-medanta">Specialities</a><a href="#journey" class="hover:text-medanta">Patient Journey</a><a
+          href="#faq" class="hover:text-medanta">FAQ</a>
+      </nav>
+      <a href="https://what.sapp.link/medanta" target="_blank"
+        class="rounded-xl bg-emerald-500 px-4 py-2.5 text-sm font-extrabold text-white shadow">
+        <i class="fa fa-whatsapp fa-btn" style="font-size: 16px"></i>&nbsp;
+        বাংলায় কথা বলুন</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="mx-auto max-w-7xl px-4 py-14 md:py-24">
+        <div class="max-w-3xl">
+          <p
+            class="inline-flex rounded-full border border-orange-200 bg-orange-50 px-4 py-2 text-sm font-bold text-medanta">
+            Medanta – The Medicity, Gurugram
+          </p>
+          <h1 class="mt-5 text-4xl font-black leading-[1.08] text-ink md:text-6xl">
+            End-to-End International Patient Support for Your Medanta Journey
+          </h1>
+          <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-650 md:text-xl">
+            বাংলাদেশের রোগীদের উপযুক্ত Medanta specialist-এর সাথে সংযোগ,
+            অ্যাপয়েন্টমেন্ট সমন্বয় এবং ভারতে চিকিৎসার পুরো যাত্রা পরিকল্পনা
+            করতে সহায়তা করি।
+          </p>
+          <div class="mt-7 rounded-2xl border border-slate-200 bg-white/90 p-5 shadow-soft">
+            <p class="font-black text-ink">
+              আপনার চিকিৎসা যাত্রা শুরু করুন আত্মবিশ্বাসের সাথে
+            </p>
+            <p class="mt-1 leading-7 text-slate-600">
+              আমাদের International Patient Team আপনার চিকিৎসার প্রয়োজন বুঝে
+              সঠিক বিশেষজ্ঞ নির্বাচন, চিকিৎসার পরিকল্পনা, আনুমানিক খরচ, ভিসা
+              সহায়তা এবং হাসপাতাল ভিজিটের প্রস্তুতিতে পাশে থাকবে।
+            </p>
+          </div>
+          <div class="mt-7 flex flex-wrap gap-3">
+            <a href="https://what.sapp.link/medanta" target="_blank"
+              class="rounded-2xl bg-emerald-500 px-6 py-4 font-extrabold text-white shadow-lg">
+              <i class="fa fa-whatsapp fa-btn" style="font-size: 20px"></i>
+              বাংলায় Medical Coordinator-এর সাথে কথা বলুন</a>
+            <a href="#doctors"
+              class="rounded-2xl border border-slate-300 bg-white px-6 py-4 font-extrabold text-ink">Medanta Doctors
+              দেখুন</a>
+          </div>
+          <div class="mt-7 flex flex-wrap gap-x-7 gap-y-3 text-sm font-semibold text-slate-600">
+            <span>✓ রিপোর্ট WhatsApp-এ পাঠান</span><span>✓ নির্দিষ্ট ডাক্তার বেছে নিন</span><span>✓ Appointment
+              support</span><span>✓ Travel guidance</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Section -->
+    <section class="py-10 sm:py-14">
+      <div class="max-w-7xl mx-auto  sm:px-6 lg:px-5">
+        <div
+          class="relative overflow-hidden bg-white border border-slate-200 rounded-[32px] shadow-[0_20px_60px_rgba(15,23,42,0.08)] p-6 sm:p-10">
+          <!-- Background Glow -->
+
+          <div class="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-red-100/40 blur-3xl"></div>
+
+          <div class="absolute -bottom-24 -left-24 w-72 h-72 rounded-full bg-blue-100/40 blur-3xl"></div>
+
+          <!-- Heading -->
+
+          <div class="relative max-w-3xl">
+            <span
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-50 text-red-700 border border-red-100 text-xs font-bold">
+              🏥 Trusted Healthcare Partner
+            </span>
+
+            <h3 class="mt-5 text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-900 leading-tight">
+              Why patients choose
+
+              <span class="text-[#f04e30]"> Medanta, Gurugram </span>
+            </h3>
+
+            <p class="mt-4 text-base sm:text-lg leading-relaxed text-slate-600">
+              অভিজ্ঞ বিশেষজ্ঞদের পরামর্শ নিন, আপনার চিকিৎসার পথ সম্পর্কে পরিষ্কার ধারণা পান এবং আপনার স্বাস্থ্যসেবা
+              যাত্রা শুরু করার আগে সমন্বিত সহায়তা গ্রহণ করুন।
+            </p>
+          </div>
+
+          <!-- Cards -->
+
+          <div class="relative mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <!-- Card 1 -->
+
+            <div
+              class="group rounded-3xl border border-blue-100 bg-gradient-to-br from-blue-50 to-white p-6 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+              <div
+                class="w-14 h-14 flex items-center justify-center rounded-2xl bg-blue-600 text-white text-2xl shadow-lg shadow-blue-600/30">
+                👨‍⚕️
+              </div>
+
+              <h4 class="mt-5 text-xl font-black text-slate-900">
+                Specialist Pathways
+              </h4>
+
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">
+                আপনার শারীরিক অবস্থা, রিপোর্ট এবং চিকিৎসার প্রয়োজনীয়তার ভিত্তিতে সঠিক বিশেষজ্ঞ টিমের সঙ্গে যোগাযোগ
+                করুন।
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+
+            <div
+              class="group rounded-3xl border border-green-100 bg-gradient-to-br from-green-50 to-white p-6 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+              <div
+                class="w-14 h-14 flex items-center justify-center rounded-2xl bg-green-600 text-white text-2xl shadow-lg shadow-green-600/30">
+                ✈️
+              </div>
+
+              <h4 class="mt-5 text-xl font-black text-slate-900">
+                Plan Before Travel
+              </h4>
+
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">
+                হাসপাতালে আসার আগে পরামর্শ, পরীক্ষা-নিরীক্ষা, চিকিৎসার বিকল্প এবং সম্ভাব্য সময়সীমা সম্পর্কে
+                পরিষ্কারভাবে বুঝে নিন।
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+
+            <div
+              class="group rounded-3xl border border-orange-100 bg-gradient-to-br from-orange-50 to-white p-6 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+              <div
+                class="w-14 h-14 flex items-center justify-center rounded-2xl bg-orange-500 text-white text-2xl shadow-lg shadow-orange-500/30">
+                🌍
+              </div>
+
+              <h4 class="mt-5 text-xl font-black text-slate-900">
+                International Coordination
+              </h4>
+
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">
+                অ্যাপয়েন্টমেন্ট সমন্বয়, যোগাযোগ এবং বাস্তবসম্মত স্বাস্থ্যসেবা পরিকল্পনার ক্ষেত্রে সহায়তা পান।
+              </p>
+            </div>
+          </div>
+
+          <!-- Bottom Trust Bar -->
+
+          <div
+            class="relative mt-10 flex flex-col sm:flex-row items-center justify-between gap-4 rounded-2xl bg-slate-900 px-6 py-5 text-white">
+            <div>
+              <p class="font-bold text-lg">
+                Need help choosing the right specialist?
+              </p>
+
+              <p class="text-sm text-slate-300 mt-1">
+                মেদান্তার আন্তর্জাতিক রোগী সহায়তা টিমের সঙ্গে যোগাযোগ করুন।
+              </p>
+            </div>
+
+            <a href="https://what.sapp.link/medanta" target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-green-600 text-white font-bold hover:bg-green-700 transition whitespace-nowrap">
+              <i class="fa fa-whatsapp"></i>
+
+              WhatsApp Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="specialities" class="border-y border-slate-200 bg-slate-50 py-14">
+      <div class="mx-auto max-w-7xl px-4">
+        <div class="max-w-3xl">
+          <p class="font-bold text-medanta">চিকিৎসার প্রয়োজন অনুযায়ী</p>
+          <h2 class="mt-2 text-3xl font-black text-ink md:text-4xl">
+            Medanta-এর প্রধান বিশেষজ্ঞ বিভাগগুলো থেকে আপনার প্রয়োজনীয়
+            ডাক্তার খুঁজুন
+          </h2>
+          <p class="mt-3 leading-7 text-slate-600">
+            রোগের রিপোর্ট পাঠালে আমাদের টিম প্রাসঙ্গিক specialty এবং সম্ভাব্য
+            specialist বাছাইয়ে সাহায্য করবে। চূড়ান্ত চিকিৎসা পরামর্শ
+            সংশ্লিষ্ট ডাক্তার দেবেন।
+          </p>
+        </div>
+        <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-6">
+          <a href="#cardiac"
+            class="rounded-2xl bg-white p-5 shadow-sm justify-center items-center text-center flex flex-col">
+            <div class="text-7xl">❤️</div>
+            <p class="mt-3 font-black text-ink">Cardiac Sciences</p>
+            <p class="mt-1 text-xs text-slate-500">
+              Heart surgery & cardiology
+            </p>
+          </a>
+          <a href="#cancer"
+            class="rounded-2xl bg-white p-5 shadow-sm justify-center items-center text-center flex flex-col">
+            <div class="text-7xl">🎗️</div>
+            <p class="mt-3 font-black text-ink">Cancer Care</p>
+            <p class="mt-1 text-xs text-slate-500">
+              Medical, surgical & paediatric oncology
+            </p>
+          </a>
+          <a href="#neuro"
+            class="rounded-2xl bg-white p-5 shadow-sm justify-center items-center text-center flex flex-col">
+            <div class="text-7xl">🧠</div>
+            <p class="mt-3 font-black text-ink">Neurosciences</p>
+            <p class="mt-1 text-xs text-slate-500">
+              Neurology & neurosurgery
+            </p>
+          </a>
+          <a href="#ortho"
+            class="rounded-2xl bg-white p-5 shadow-sm justify-center items-center text-center flex flex-col">
+            <div class="text-7xl">🦴</div>
+            <p class="mt-3 font-black text-ink">Bone & Joint</p>
+            <p class="mt-1 text-xs text-slate-500">
+              Joint replacement & orthopaedics
+            </p>
+          </a>
+          <a href="#liver"
+            class="rounded-2xl bg-white p-5 shadow-sm justify-center items-center text-center flex flex-col">
+            <div class="text-7xl">🫀</div>
+            <p class="mt-3 font-black text-ink">Liver & Digestive</p>
+            <p class="mt-1 text-xs text-slate-500">
+              Liver transplant & GI surgery
+            </p>
+          </a>
+          <a href="#kidney"
+            class="rounded-2xl bg-white p-5 shadow-sm justify-center items-center text-center flex flex-col">
+            <div class="text-7xl">🩺</div>
+            <p class="mt-3 font-black text-ink">Kidney & Urology</p>
+            <p class="mt-1 text-xs text-slate-500">Urology & kidney care</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="doctors" class="py-16">
+      <div class="mx-auto max-w-7xl px-4">
+        <div class="flex flex-col justify-between gap-5 lg:flex-row lg:items-end">
+          <div class="max-w-3xl">
+            <p class="font-bold text-medanta">Doctors in focus</p>
+            <h2 class="mt-2 text-3xl font-black text-ink md:text-4xl">
+              বাংলাদেশ রোগীদের জন্য Medanta specialist doctors
+            </h2>
+            <p class="mt-3 leading-7 text-slate-600">
+              আপনি নির্দিষ্ট ডাক্তার জানলে সরাসরি তাঁর card থেকে WhatsApp
+              appointment request পাঠাতে পারেন। ডাক্তার নিশ্চিত না হলে রিপোর্ট
+              শেয়ার করুন।
+            </p>
+          </div>
+          <input id="doctorSearch"
+            class="w-full rounded-2xl border border-slate-300 px-5 py-4 outline-none focus:border-medanta lg:max-w-sm"
+            placeholder="Doctor বা department লিখুন..." aria-label="Search doctors" />
+        </div>
+
+        <div id="doctorGrid" class="mt-9 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- cardiac -->
+          <article id="cardiac" class="doctor-card overflow-hidden rounded-3xl border border-slate-200 bg-white"
+            data-search="naresh trehan cardiac cardiovascular cardiothoracic heart">
+            <img src="public/images/cardio/Dr. Naresh Trehan.webp" alt="Dr. Naresh Trehan"
+              class="doctor-img h-64 w-full bg-slate-100 object-cover" />
+            <div class="p-5">
+              <span class="text-xs font-bold uppercase tracking-wider text-medanta">Cardiac Sciences</span>
+              <h3 class="mt-2 text-xl font-black text-ink">
+                Dr. Naresh Trehan
+              </h3>
+              <p class="mt-1 text-sm leading-6 text-slate-600">
+                Cardiovascular & Cardiothoracic Surgery
+              </p>
+              <a class="mt-4 block rounded-xl bg-emerald-500 px-4 py-3 text-center text-sm font-extrabold text-white"
+                target="_blank" href="https://what.sapp.link/medanta"><i class="fa fa-whatsapp fa-btn"
+                  style="font-size: 14px"></i>&nbsp;Appointment on WhatsApp</a>
+            </div>
+          </article>
+          <article class="doctor-card overflow-hidden rounded-3xl border border-slate-200 bg-white"
+            data-search="anil bhan cardiac cardiovascular surgery heart">
+            <img src="public/images/cardio/dr-anil-bhan.webp" alt="Dr. Anil Bhan"
+              class="doctor-img h-64 w-full bg-slate-100 object-cover" />
+            <div class="p-5">
+              <span class="text-xs font-bold uppercase tracking-wider text-medanta">Cardiac Sciences</span>
+              <h3 class="mt-2 text-xl font-black text-ink">Dr. Anil Bhan</h3>
+              <p class="mt-1 text-sm leading-6 text-slate-600">
+                Cardiovascular Surgery
+              </p>
+              <a class="mt-4 block rounded-xl bg-emerald-500 px-4 py-3 text-center text-sm font-extrabold text-white"
+                target="_blank" href="https://what.sapp.link/medanta"><i class="fa fa-whatsapp fa-btn"
+                  style="font-size: 14px"></i>&nbsp;Appointment on WhatsApp</a>
+            </div>
+          </article>
+          <article class="doctor-card overflow-hidden rounded-3xl border border-slate-200 bg-white"
+            data-search="adarsh chaudhary gastrointestinal gi surgery digestive">
+            <img src="public/images/cardio/dr-adarsh-chaudhary.webp" alt="Dr. Adarsh Chaudhary"
+              class="doctor-img h-64 w-full bg-slate-100 object-cover" />
+            <div class="p-5">
+              <span class="text-xs font-bold uppercase tracking-wider text-medanta">Digestive Sciences</span>
+              <h3 class="mt-2 text-xl font-black text-ink">
+                Dr. Adarsh Chaudhary
+              </h3>
+              <p class="mt-1 text-sm leading-6 text-slate-600">
+                GI Surgery & Digestive Diseases
+              </p>
+              <a class="mt-4 block rounded-xl bg-emerald-500 px-4 py-3 text-center text-sm font-extrabold text-white"
+                target="_blank" href="https://what.sapp.link/medanta"><i class="fa fa-whatsapp fa-btn"
+                  style="font-size: 14px"></i>&nbsp;Appointment on WhatsApp</a>
+            </div>
+          </article>
+          <article class="doctor-card overflow-hidden rounded-3xl border border-slate-200 bg-white"
+            data-search="ramesh kumar bapna cardiac heart surgery">
+            <img src="public/images/cardio/dr-ramesh-kumar-bapna.webp" alt="Dr. Ramesh Kumar Bapna"
+              class="doctor-img h-64 w-full bg-slate-100 object-cover" />
+            <div class="p-5">
+              <span class="text-xs font-bold uppercase tracking-wider text-medanta">Cardiac Sciences</span>
+              <h3 class="mt-2 text-xl font-black text-ink">
+                Dr. Ramesh Kumar Bapna
+              </h3>
+              <p class="mt-1 text-sm leading-6 text-slate-600">
+                Cardiac Surgery
+              </p>
+              <a class="mt-4 block rounded-xl bg-emerald-500 px-4 py-3 text-center text-sm font-extrabold text-white"
+                target="_blank" href="https://what.sapp.link/medanta"><i class="fa fa-whatsapp fa-btn"
+                  style="font-size: 14px"></i>&nbsp;Appointment on WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- oncology -->
+          <article id="cancer" class="doctor-card overflow-hidden rounded-3xl border border-slate-200 bg-white"
+            data-search="ashok cancer oncology">
+            <img src="public/images/onco/ASHOK.webp" alt="Dr. Ashok"
+              class="doctor-img h-64 w-full bg-slate-100 object-cover" />
+            <div class="p-5">
+              <span class="text-xs font-bold uppercase tracking-wider text-medanta">Cancer Care</span>
+              <h3 class="mt-2 text-xl font-black text-ink">Dr. Ashok</h3>
+              <p class="mt-1 text-sm leading-6 text-slate-600">Oncology</p>
+              <a class="mt-4 block rounded-xl bg-emerald-500 px-4 py-3 text-center text-sm font-extrabold text-white"
+                target="_blank" href="https://what.sapp.link/medanta"><i class="fa fa-whatsapp fa-btn"
+                  style="font-size: 14px"></i>&nbsp;Appointment on WhatsApp</a>
+            </div>
+          </article>
+          <article class="doctor-card overflow-hidden rounded-3xl border border-slate-200 bg-white"
+            data-search="susovan banerje cancer oncology">
+            <img src="public/images/onco/Dr.-susovan-banerje-3.webp" alt="Dr. Susovan Banerje"
+              class="doctor-img h-64 w-full bg-slate-100 object-cover" />
+            <div class="p-5">
+              <span class="text-xs font-bold uppercase tracking-wider text-medanta">Cancer Care</span>
+              <h3 class="mt-2 text-xl font-black text-ink">
+                Dr. Susovan Banerje
+              </h3>
+              <p class="mt-1 text-sm leading-6 text-slate-600">Oncology</p>
+              <a class="mt-4 block rounded-xl bg-emerald-500 px-4 py-3 text-center text-sm font-extrabold text-white"
+                target="_blank" href="https://what.sapp.link/medanta"><i class="fa fa-whatsapp fa-btn"
+                  style="font-size: 14px"></i>&nbsp;Appointment on WhatsApp</a>
+            </div>
+          </article>
+          <article class="doctor-card overflow-hidden rounded-3xl border border-slate-200 bg-white"
+            data-search="satya prakash yadav paediatric pediatric oncology bone marrow transplant cancer">
+            <img src="public/images/onco/Dr.-Satya-Prakash-Yadav.webp" alt="Dr. Satya Prakash Yadav"
+              class="doctor-img h-64 w-full bg-slate-100 object-cover" />
+            <div class="p-5">
+              <span class="text-xs font-bold uppercase tracking-wider text-medanta">Paediatric Oncology</span>
+              <h3 class="mt-2 text-xl font-black text-ink">
+                Dr. Satya Prakash Yadav
+              </h3>
+              <p class="mt-1 text-sm leading-6 text-slate-600">
+                Paediatric Oncology & Haematology
+              </p>
+              <a class="mt-4 block rounded-xl bg-emerald-500 px-4 py-3 text-center text-sm font-extrabold text-white"
+                target="_blank" href="https://what.sapp.link/medanta"><i class="fa fa-whatsapp fa-btn"
+                  style="font-size: 14px"></i>&nbsp;Appointment on WhatsApp</a>
+            </div>
+          </article>
+          <article class="doctor-card overflow-hidden rounded-3xl border border-slate-200 bg-white"
+            data-search="deepak gupta radiation oncology cancer">
+            <img src="public/images/onco/Dr.DEEPAK-GUPTA-4.webp" alt="Dr. Deepak Gupta"
+              class="doctor-img h-64 w-full bg-slate-100 object-cover" />
+            <div class="p-5">
+              <span class="text-xs font-bold uppercase tracking-wider text-medanta">Cancer Care</span>
+              <h3 class="mt-2 text-xl font-black text-ink">
+                Dr. Deepak Gupta
+              </h3>
+              <p class="mt-1 text-sm leading-6 text-slate-600">
+                Radiation Oncology
+              </p>
+              <a class="mt-4 block rounded-xl bg-emerald-500 px-4 py-3 text-center text-sm font-extrabold text-white"
+                target="_blank" href="https://what.sapp.link/medanta"><i class="fa fa-whatsapp fa-btn"
+                  style="font-size: 14px"></i>&nbsp;Appointment on WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- ortho -->
+          <article id="ortho" class="doctor-card overflow-hidden rounded-3xl border border-slate-200 bg-white"
+            data-search="ashok rajgopal orthopaedic orthopedic knee joint replacement">
+            <img src="public/images/ortho/Ashok-Rajgopal.webp" alt="Dr. Ashok Rajgopal"
+              class="doctor-img h-64 w-full bg-slate-100 object-cover" />
+            <div class="p-5">
+              <span class="text-xs font-bold uppercase tracking-wider text-medanta">Bone & Joint</span>
+              <h3 class="mt-2 text-xl font-black text-ink">
+                Dr. Ashok Rajgopal
+              </h3>
+              <p class="mt-1 text-sm leading-6 text-slate-600">
+                Orthopaedics & Joint Replacement
+              </p>
+              <a class="mt-4 block rounded-xl bg-emerald-500 px-4 py-3 text-center text-sm font-extrabold text-white"
+                target="_blank" href="https://what.sapp.link/medanta"><i class="fa fa-whatsapp fa-btn"
+                  style="font-size: 14px"></i>&nbsp;Appointment on WhatsApp</a>
+            </div>
+          </article>
+          <article class="doctor-card overflow-hidden rounded-3xl border border-slate-200 bg-white"
+            data-search="vipin chand tyagi orthopaedic orthopedic">
+            <img src="public/images/ortho/Dr-Vipin-chand-tyagi-.webp" alt="Dr. Vipin Chand Tyagi"
+              class="doctor-img h-64 w-full bg-slate-100 object-cover" />
+            <div class="p-5">
+              <span class="text-xs font-bold uppercase tracking-wider text-medanta">Bone & Joint</span>
+              <h3 class="mt-2 text-xl font-black text-ink">
+                Dr. Vipin Chand Tyagi
+              </h3>
+              <p class="mt-1 text-sm leading-6 text-slate-600">
+                Orthopaedics
+              </p>
+              <a class="mt-4 block rounded-xl bg-emerald-500 px-4 py-3 text-center text-sm font-extrabold text-white"
+                target="_blank" href="https://what.sapp.link/medanta"><i class="fa fa-whatsapp fa-btn"
+                  style="font-size: 14px"></i>&nbsp;Appointment on WhatsApp</a>
+            </div>
+          </article>
+          <article class="doctor-card overflow-hidden rounded-3xl border border-slate-200 bg-white"
+            data-search="sumit kumar orthopaedic orthopedic">
+            <img src="public/images/ortho/Dr. Sumit Kumar.webp" alt="Dr. Sumit Kumar"
+              class="doctor-img h-64 w-full bg-slate-100 object-cover" />
+            <div class="p-5">
+              <span class="text-xs font-bold uppercase tracking-wider text-medanta">Bone & Joint</span>
+              <h3 class="mt-2 text-xl font-black text-ink">
+                Dr. Sumit Kumar
+              </h3>
+              <p class="mt-1 text-sm leading-6 text-slate-600">
+                Orthopaedics
+              </p>
+              <a class="mt-4 block rounded-xl bg-emerald-500 px-4 py-3 text-center text-sm font-extrabold text-white"
+                target="_blank" href="https://what.sapp.link/medanta"><i class="fa fa-whatsapp fa-btn"
+                  style="font-size: 14px"></i>&nbsp;Appointment on WhatsApp</a>
+            </div>
+          </article>
+          <article class="doctor-card overflow-hidden rounded-3xl border border-slate-200 bg-white"
+            data-search="attique vasudev orthopaedic orthopedic">
+            <img src="public/images/ortho/Dr.-Attique-vasudev-3.webp" alt="Dr. Attique Vasudev"
+              class="doctor-img h-64 w-full bg-slate-100 object-cover" />
+            <div class="p-5">
+              <span class="text-xs font-bold uppercase tracking-wider text-medanta">Bone & Joint</span>
+              <h3 class="mt-2 text-xl font-black text-ink">
+                Dr. Attique Vasudev
+              </h3>
+              <p class="mt-1 text-sm leading-6 text-slate-600">
+                Orthopaedics
+              </p>
+              <a class="mt-4 block rounded-xl bg-emerald-500 px-4 py-3 text-center text-sm font-extrabold text-white"
+                target="_blank" href="https://what.sapp.link/medanta"><i class="fa fa-whatsapp fa-btn"
+                  style="font-size: 14px"></i>&nbsp;Appointment on WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- neuro -->
+          <article id="neuro" class="doctor-card overflow-hidden rounded-3xl border border-slate-200 bg-white"
+            data-search="arun garg neurology neuro stroke">
+            <img src="public/images/Neuro/arun-garg.webp" alt="Dr. Arun Garg"
+              class="doctor-img h-64 w-full bg-slate-100 object-cover" />
+            <div class="p-5">
+              <span class="text-xs font-bold uppercase tracking-wider text-medanta">Neurosciences</span>
+              <h3 class="mt-2 text-xl font-black text-ink">Dr. Arun Garg</h3>
+              <p class="mt-1 text-sm leading-6 text-slate-600">Neurology</p>
+              <a class="mt-4 block rounded-xl bg-emerald-500 px-4 py-3 text-center text-sm font-extrabold text-white"
+                target="_blank" href="https://what.sapp.link/medanta"><i class="fa fa-whatsapp fa-btn"
+                  style="font-size: 14px"></i>&nbsp;Appointment on WhatsApp</a>
+            </div>
+          </article>
+          <article class="doctor-card overflow-hidden rounded-3xl border border-slate-200 bg-white"
+            data-search="raj kumar neurosurgery neuro brain spine">
+            <img src="public/images/Neuro/Dr-Raj-Kumar.webp" alt="Dr. Raj Kumar"
+              class="doctor-img h-64 w-full bg-slate-100 object-cover" />
+            <div class="p-5">
+              <span class="text-xs font-bold uppercase tracking-wider text-medanta">Neurosciences</span>
+              <h3 class="mt-2 text-xl font-black text-ink">Dr. Raj Kumar</h3>
+              <p class="mt-1 text-sm leading-6 text-slate-600">
+                Neurosurgery
+              </p>
+              <a class="mt-4 block rounded-xl bg-emerald-500 px-4 py-3 text-center text-sm font-extrabold text-white"
+                target="_blank" href="https://what.sapp.link/medanta"><i class="fa fa-whatsapp fa-btn"
+                  style="font-size: 14px"></i>&nbsp;Appointment on WhatsApp</a>
+            </div>
+          </article>
+          <article class="doctor-card overflow-hidden rounded-3xl border border-slate-200 bg-white"
+            data-search="atma ram bansal neurology epilepsy neuro">
+            <img src="public/images/Neuro/Dr. Atma Ram Bansal.webp" alt="Dr. Atma Ram Bansal"
+              class="doctor-img h-64 w-full bg-slate-100 object-cover" />
+            <div class="p-5">
+              <span class="text-xs font-bold uppercase tracking-wider text-medanta">Neurosciences</span>
+              <h3 class="mt-2 text-xl font-black text-ink">
+                Dr. Atma Ram Bansal
+              </h3>
+              <p class="mt-1 text-sm leading-6 text-slate-600">Neurology</p>
+              <a class="mt-4 block rounded-xl bg-emerald-500 px-4 py-3 text-center text-sm font-extrabold text-white"
+                target="_blank" href="https://what.sapp.link/medanta"><i class="fa fa-whatsapp fa-btn"
+                  style="font-size: 14px"></i>&nbsp;Appointment on WhatsApp</a>
+            </div>
+          </article>
+          <article class="doctor-card overflow-hidden rounded-3xl border border-slate-200 bg-white"
+            data-search="gaurav goel neurointervention neurology stroke">
+            <img src="public/images/Neuro/Dr. Gaurav Goel.webp" alt="Dr. Gaurav Goel"
+              class="doctor-img h-64 w-full bg-slate-100 object-cover" />
+            <div class="p-5">
+              <span class="text-xs font-bold uppercase tracking-wider text-medanta">Neurosciences</span>
+              <h3 class="mt-2 text-xl font-black text-ink">
+                Dr. Gaurav Goel
+              </h3>
+              <p class="mt-1 text-sm leading-6 text-slate-600">
+                Neurointervention
+              </p>
+              <a class="mt-4 block rounded-xl bg-emerald-500 px-4 py-3 text-center text-sm font-extrabold text-white"
+                target="_blank" href="https://what.sapp.link/medanta"><i class="fa fa-whatsapp fa-btn"
+                  style="font-size: 14px"></i>&nbsp;Appointment on WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- liver & kidney -->
+          <article id="liver" class="doctor-card overflow-hidden rounded-3xl border border-slate-200 bg-white"
+            data-search="arvinder singh soin liver transplant hpb">
+            <img src="public/images/Liver/AS SOIN.webp" alt="Dr. Arvinder Singh Soin"
+              class="doctor-img h-64 w-full bg-slate-100 object-cover" />
+            <div class="p-5">
+              <span class="text-xs font-bold uppercase tracking-wider text-medanta">Liver Institute</span>
+              <h3 class="mt-2 text-xl font-black text-ink">
+                Dr. Arvinder Singh Soin
+              </h3>
+              <p class="mt-1 text-sm leading-6 text-slate-600">
+                Liver Transplant & HPB Surgery
+              </p>
+              <a class="mt-4 block rounded-xl bg-emerald-500 px-4 py-3 text-center text-sm font-extrabold text-white"
+                target="_blank" href="https://what.sapp.link/medanta"><i class="fa fa-whatsapp fa-btn"
+                  style="font-size: 14px"></i>&nbsp;Appointment on WhatsApp</a>
+            </div>
+          </article>
+          <article id="kidney" class="doctor-card overflow-hidden rounded-3xl border border-slate-200 bg-white"
+            data-search="rajesh ahlawat urology kidney transplant">
+            <img src="public/images/urology/Rajesh-Ahlawat.webp" alt="Dr. Rajesh Ahlawat"
+              class="doctor-img h-64 w-full bg-slate-100 object-cover" />
+            <div class="p-5">
+              <span class="text-xs font-bold uppercase tracking-wider text-medanta">Kidney & Urology</span>
+              <h3 class="mt-2 text-xl font-black text-ink">
+                Dr. Rajesh Ahlawat
+              </h3>
+              <p class="mt-1 text-sm leading-6 text-slate-600">
+                Urology & Kidney Transplant
+              </p>
+              <a class="mt-4 block rounded-xl bg-emerald-500 px-4 py-3 text-center text-sm font-extrabold text-white"
+                target="_blank" href="https://what.sapp.link/medanta"><i class="fa fa-whatsapp fa-btn"
+                  style="font-size: 14px"></i>&nbsp;Appointment on WhatsApp</a>
+            </div>
+          </article>
+        </div>
+        <p id="noDoctors" class="mt-8 hidden rounded-2xl bg-slate-50 p-6 text-center text-slate-600">
+          এই নাম বা বিভাগে ডাক্তার পাওয়া যায়নি। রিপোর্ট WhatsApp-এ পাঠালে
+          আমরা সাহায্য করব।
+        </p>
+      </div>
+    </section>
+
+    <section id="journey" class="bg-ink py-16 text-white">
+      <div class="mx-auto max-w-7xl px-4">
+        <div class="max-w-3xl">
+          <p class="font-bold text-orange-300">বাংলাদেশ থেকে Medanta</p>
+          <h2 class="mt-2 text-3xl font-black md:text-4xl">
+            আপনার চিকিৎসা যাত্রা—ধাপে ধাপে
+          </h2>
+          <p class="mt-3 leading-7 text-slate-300">
+            প্রথম WhatsApp message থেকে treatment follow-up পর্যন্ত একজন
+            coordinator আপনার সঙ্গে যোগাযোগ রাখবে।
+          </p>
+        </div>
+        <div class="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="rounded-2xl bg-white/8 p-5">
+            <span class="text-sm font-black text-orange-300">01</span>
+            <h3 class="mt-2 font-black">রিপোর্ট পাঠান</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-300">
+              Medical reports, diagnosis ও preferred doctor WhatsApp-এ শেয়ার
+              করুন।
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white/8 p-5">
+            <span class="text-sm font-black text-orange-300">02</span>
+            <h3 class="mt-2 font-black">Doctor selection</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-300">
+              নির্দিষ্ট ডাক্তার বা relevant specialty-এর appointment request
+              সাজানো হবে।
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white/8 p-5">
+            <span class="text-sm font-black text-orange-300">03</span>
+            <h3 class="mt-2 font-black">Appointment & travel</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-300">
+              Appointment confirmation, visa-related guidance এবং arrival
+              planning।
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white/8 p-5">
+            <span class="text-sm font-black text-orange-300">04</span>
+            <h3 class="mt-2 font-black">Hospital & follow-up</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-300">
+              Hospital coordination এবং বাংলাদেশে ফেরার পর follow-up support।
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16">
+      <div class="mx-auto grid max-w-7xl gap-8 px-4 lg:grid-cols-2">
+        <div>
+          <p class="font-bold text-medanta">বাংলা সহায়তা</p>
+          <h2 class="mt-2 text-3xl font-black text-ink">
+            একটি conversation দিয়েই শুরু করুন
+          </h2>
+          <p class="mt-4 leading-8 text-slate-600">
+            লম্বা form পূরণের প্রয়োজন নেই। রোগীর নাম, বয়স, diagnosis,
+            preferred doctor এবং প্রধান রিপোর্ট WhatsApp-এ পাঠান। তথ্য পাওয়ার
+            পর coordinator পরবর্তী ধাপ বুঝিয়ে দেবে।
+          </p>
+          <div class="mt-6 grid gap-3 sm:grid-cols-2 text-sm font-semibold text-slate-700">
+            <div class="rounded-xl bg-slate-50 p-4">
+              ✓ বাংলা ভাষায় যোগাযোগ
+            </div>
+            <div class="rounded-xl bg-slate-50 p-4">
+              ✓ Doctor appointment request
+            </div>
+            <div class="rounded-xl bg-slate-50 p-4">
+              ✓ Report sharing guidance
+            </div>
+            <div class="rounded-xl bg-slate-50 p-4">
+              ✓ Travel & stay guidance
+            </div>
+          </div>
+        </div>
+        <form id="waForm" class="rounded-3xl border border-slate-200 bg-white p-7 shadow-soft">
+          <h3 class="text-2xl font-black text-ink">
+            WhatsApp request তৈরি করুন
+          </h3>
+          <p class="mt-2 text-sm leading-6 text-slate-500">
+            Submit করলে আপনার তথ্যসহ WhatsApp খুলবে।
+          </p>
+          <div class="mt-5 grid gap-4">
+            <input id="patientName" required class="rounded-xl border border-slate-300 px-4 py-3"
+              placeholder="রোগীর নাম" /><input id="countryCity" class="rounded-xl border border-slate-300 px-4 py-3"
+              value="Bangladesh" placeholder="শহর / দেশ" /><input id="preferredDoctor"
+              class="rounded-xl border border-slate-300 px-4 py-3"
+              placeholder="Preferred doctor / department" /><textarea id="medicalSummary"
+              class="min-h-28 rounded-xl border border-slate-300 px-4 py-3"
+              placeholder="Diagnosis বা সংক্ষিপ্ত medical problem"></textarea><button
+              class="rounded-xl bg-emerald-500 px-5 py-4 font-extrabold text-white">
+              <i class="fa fa-whatsapp fa-btn" style="font-size: 16px"></i>&nbsp; WhatsApp-এ request পাঠান
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="faq" class="border-t border-slate-200 bg-slate-50 py-16">
+      <div class="mx-auto max-w-4xl px-4">
+        <p class="text-center font-bold text-medanta">
+          Frequently Asked Questions
+        </p>
+        <h2 class="mt-2 text-center text-3xl font-black text-ink">
+          বাংলাদেশের রোগীদের সাধারণ প্রশ্ন
+        </h2>
+        <div class="mt-8 space-y-3">
+          <details class="rounded-2xl bg-white p-5 shadow-sm">
+            <summary class="cursor-pointer font-black text-ink">
+              বাংলাদেশ থেকে Medanta appointment কীভাবে নেব?
+            </summary>
+            <p class="mt-3 leading-7 text-slate-600">
+              রোগীর রিপোর্ট এবং preferred doctor বা department
+              <a href="https://what.sapp.link/medanta" target="_blank" rel="noopener noreferrer">
+                WhatsApp</a>-এ পাঠান। Coordinator appointment request-এর জন্য প্রয়োজনীয়
+              তথ্য সংগ্রহ করবে।
+            </p>
+          </details>
+          <details class="rounded-2xl bg-white p-5 shadow-sm">
+            <summary class="cursor-pointer font-black text-ink">
+              আমি কি নির্দিষ্ট Medanta doctor বেছে নিতে পারি?
+            </summary>
+            <p class="mt-3 leading-7 text-slate-600">
+              হ্যাঁ। উপরের doctor card থেকে সরাসরি request পাঠাতে পারেন।
+              Availability হাসপাতাল ও ডাক্তারের schedule-এর ওপর নির্ভর করবে।
+            </p>
+          </details>
+          <details class="rounded-2xl bg-white p-5 shadow-sm">
+            <summary class="cursor-pointer font-black text-ink">
+              ভ্রমণের আগে রিপোর্ট দেখানো যাবে?
+            </summary>
+            <p class="mt-3 leading-7 text-slate-600">
+              রিপোর্ট আগে শেয়ার করা যায়। Formal medical opinion বা
+              teleconsult availability সংশ্লিষ্ট হাসপাতাল/ডাক্তারের
+              প্রক্রিয়ার ওপর নির্ভর করে।
+            </p>
+          </details>
+          <details class="rounded-2xl bg-white p-5 shadow-sm">
+            <summary class="cursor-pointer font-black text-ink">
+              মেডিক্যাল ভিসার জন্য সাহায্য পাওয়া যাবে?
+            </summary>
+            <p class="mt-3 leading-7 text-slate-600">
+              Appointment এবং hospital invitation-related process সম্পর্কে
+              guidance দেওয়া হবে। Visa approval সম্পূর্ণভাবে সংশ্লিষ্ট
+              ভারতীয় কর্তৃপক্ষের সিদ্ধান্ত।
+            </p>
+          </details>
+          <details class="rounded-2xl bg-white p-5 shadow-sm">
+            <summary class="cursor-pointer font-black text-ink">
+              এই পেজটি কি Medanta-র official website?
+            </summary>
+            <p class="mt-3 leading-7 text-slate-600">
+              না। এটি Treatment Traveller / Hosplan-এর independent
+              international patient coordination page। Hospital services,
+              doctors এবং appointment availability Medanta কর্তৃপক্ষের অধীন।
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-10">
+      <div class="flex flex-col justify-between gap-5 md:flex-row">
+        <div>
+          <p class="text-xl font-black text-ink">
+            Treatment Traveller • Hosplan
+          </p>
+          <p class="mt-2 max-w-2xl text-sm leading-6 text-slate-500">
+            Independent international patient coordination support for
+            patients seeking treatment at hospitals in India. This page does
+            not represent itself as Medanta's official website.
+          </p>
+
+        </div>
+        <div>
+          <button type="submit" style="background: #22C55E"
+            class="px-4 py-3 bg-[#0ea5e9] hover:bg-[#22C55E] text-white font-bold  rounded-xl transition">
+            <a href="https://what.sapp.link/medanta" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-whatsapp fa-btn" style="font-size: 16px;"></i>&nbsp;বাংলায় WhatsApp করুন</a>
+          </button>
+        </div>
+      </div>
+      <p class="mt-7 border-t border-slate-200 pt-5 text-xs text-slate-400">
+        Doctor names and department references have been reused from the
+        supplied previous landing-page assets. Doctor roles, availability and
+        affiliations should be checked before publishing campaign updates.
+      </p>
+    </div>
+  </footer>
+
+  <div id="supportDrawer" class="fixed z-50
+            bottom-2
+            left-2
+            right-2
+            sm:left-auto
+            sm:right-5
+            sm:w-80
+            max-w-[calc(100vw-16px)]
+            bg-white
+            rounded-xl
+            shadow-xl
+            overflow-hidden
+            border border-gray-100
+            transition-all duration-500">
+
+
+    <!-- Small Box -->
+    <div id="smallBox" class="p-3 sm:p-5
+                bg-gradient-to-r
+               from-[#ec671c]
+               to-[#ec671c]">
+
+
+      <div class="flex items-center gap-3">
+
+
+        <div class="w-9 h-9 sm:w-11 sm:h-11
+                        flex-shrink-0
+                        rounded-lg
+                        bg-white/20
+                        flex items-center justify-center
+                        text-lg sm:text-xl">
+          💬
+        </div>
+
+
+
+        <div class="flex-1 min-w-0">
+
+          <h3 class="text-base sm:text-lg
+                           font-bold text-white">
+            Instant Support
+          </h3>
+
+
+          <p class="text-xs sm:text-sm text-green-100">
+            <span class="inline-block w-2 h-2
+                                 bg-white rounded-full mr-1">
+            </span>
+            Online Now
+          </p>
+
+        </div>
+
+
+      </div>
+
+
+
+
+      <a href="https://what.sapp.link/medanta" target="_blank" class="mt-3 block
+                  w-full
+                  bg-white
+                  text-green-600
+                  text-center
+                  text-sm
+                  font-semibold
+                  py-2.5
+                  rounded-lg
+                  shadow
+                  hover:bg-gray-100
+                  transition">
+
+        <i class="fa fa-whatsapp"></i> Connect on WhatsApp
+
+      </a>
+
+
+    </div>
+
+
+
+
+
+    <!-- Expanded Drawer -->
+    <div id="expandedBox" class="hidden w-full">
+
+
+      <!-- Header -->
+      <div class="relative
+                    p-4
+                    border-b">
+
+
+        <button id="closeDrawer" class="absolute
+                           right-3
+                           top-3
+                           w-7
+                           h-7
+                           rounded-full
+                           bg-gray-100
+                           text-gray-500
+                           text-sm">
+
+          ✕
+
+        </button>
+
+
+
+        <div class="flex items-center gap-3 pr-8">
+
+
+          <div class="w-9 h-9
+                            bg-gradient-to-r
+                            rounded-lg
+                            from-[#ec671c]
+                            to-[#ec671c]
+                            flex items-center justify-center
+                            text-white
+                            text-lg">
+
+            💬
+
+          </div>
+
+
+
+          <div>
+
+            <h2 class="text-base
+                               sm:text-lg
+                               font-bold
+                               text-gray-800">
+
+              Need Instant Help?
+
+            </h2>
+
+
+            <p class="text-xs
+                              text-green-500">
+
+              Support Available
+
+            </p>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+
+      <!-- Content -->
+      <div class="p-4
+                    max-h-[35vh]
+                    overflow-y-auto">
+
+
+        <p class="text-sm
+                      text-gray-600
+                      leading-relaxed">
+
+          Our support team is ready to assist you.
+          Connect with us on WhatsApp and get quick answers.
+
+        </p>
+
+
+
+
+        <a href="https://what.sapp.link/medanta" target="_blank" class="mt-4 block
+                      w-full
+                      bg-green-500
+                      text-white
+                      text-center
+                      text-sm
+                      font-semibold
+                      py-2.5
+                      rounded-lg
+                      hover:bg-green-600
+                      transition">
+
+          <i class="fa fa-whatsapp"></i> Chat on WhatsApp
+
+        </a>
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+  <div class=" bottom-0 left-0 right-0 z-50 border-t border-slate-200 bg-white p-3 shadow-2xl md:hidden">
+    <a href="https://what.sapp.link/medanta" target="_blank"
+      class="block rounded-xl bg-emerald-500 py-3 text-center font-extrabold text-white"><i
+        class="fa fa-whatsapp fa-btn" style="font-size: 14px"></i>&nbsp;
+      বাংলায় Medical Coordinator-এর সাথে কথা বলুন</a>
+  </div>
+  <div class="h-20 md:hidden"></div>
+
+  <script>
+    const input = document.getElementById("doctorSearch"),
+      cards = [...document.querySelectorAll(".doctor-card")],
+      empty = document.getElementById("noDoctors");
+    input.addEventListener("input", () => {
+      const q = input.value.toLowerCase().trim();
+      let n = 0;
+      cards.forEach((c) => {
+        const show =
+          !q ||
+          c.dataset.search.includes(q) ||
+          c.innerText.toLowerCase().includes(q);
+        c.style.display = show ? "" : "none";
+        if (show) n++;
+      });
+      empty.classList.toggle("hidden", n > 0);
+    });
+    document.getElementById("waForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const n = document.getElementById("patientName").value,
+        c = document.getElementById("countryCity").value,
+        d = document.getElementById("preferredDoctor").value,
+        m = document.getElementById("medicalSummary").value;
+      const text = `Hello, I need Medanta Gurugram appointment support.\nPatient: ${n}\nLocation: ${c}\nPreferred doctor/department: ${d}\nMedical problem: ${m}`;
+      window.open(
+        "https://wa.me/919899187776?text=" + encodeURIComponent(text),
+        "_blank",
+      );
+    });
+  </script>
+
+  <script>
+
+    const drawer = document.getElementById("supportDrawer");
+    const smallBox = document.getElementById("smallBox");
+    const expandedBox = document.getElementById("expandedBox");
+    const closeBtn = document.getElementById("closeDrawer");
+
+
+    // Expand drawer function
+    function expandDrawer() {
+
+      drawer.classList.remove("w-64");
+      drawer.classList.add("w-96");
+
+      smallBox.classList.add("hidden");
+      expandedBox.classList.remove("hidden");
+
+    }
+
+
+    // Close drawer
+    function closeDrawer() {
+
+      drawer.classList.remove("w-96");
+      drawer.classList.add("w-64");
+
+      expandedBox.classList.add("hidden");
+      smallBox.classList.remove("hidden");
+
+    }
+
+
+    // Auto expand every 15 seconds
+    setInterval(() => {
+      expandDrawer();
+    }, 15000);
+
+
+    // Close button
+    closeBtn.addEventListener("click", closeDrawer);
+
+
+  </script>
+</body>
+
+</html>

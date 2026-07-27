@@ -25,7 +25,7 @@
 
   <link rel="icon" type="image/x-icon" href="./public/logo/favicon.ico" />
   <link rel="preload" href="./public/css/fortis-gurugram.webp" as="image" type="image/webp">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" /> -->
   <!-- Tailwind CDN -->
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <!-- <script>
@@ -155,343 +155,1363 @@
 
 
     <!-- Hero -->
-    <header class="relative overflow-hidden border-b border-gray-200 bg-gradient-to-b from-gray-50 to-white hero"
+    <header
+      class="relative overflow-hidden border-b border-gray-200 bg-gradient-to-br from-slate-50 via-white to-blue-50"
       id="top">
-      <div class="max-w-7xl mx-auto px-4 py-6">
-        <div class="grid md:grid-cols-[1.05fr_.95fr] gap-4 items-stretch">
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
+
+        <div class="grid lg:grid-cols-2 gap-8 items-center">
+
+          <!-- LEFT CONTENT -->
           <div>
-            <div
-              class="inline-flex items-center gap-2 px-2 py-1 rounded-md border border-blue-200 bg-blue-50 text-gray-500 text-xs mb-3">
-              🌍 For International Patients • Fortis FMRI, Gurugram
-            </div>
-            <h2 class="text-3xl md:text-4xl font-bold leading-tight tracking-tight mb-2 text-[#009933] tracking-wide">
-              Specialist guidance and clear next steps — before you decide to
-              travel
-            </h2>
-            <p class="text-gray-500 text-sm mb-4">
-              Start with a confidential discussion. We guide you to the right
-              specialty team, help you understand the pathway, and coordinate
-              next steps. Reports are optional to start.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-4 text-lg">
-              <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-                class="inline-flex items-center gap-2 px-3 py-2 rounded-lg font-semibold bg-green-500 text-white shadow-md hover:brightness-105">
-                <i class="fab fa-whatsapp fa-1x" aria-hidden="true"></i>
-                WhatsApp (Fast Response)</a>
-              <a id="callback-btn" href="javascript:void(0);" rel="noopener"
-                class="inline-flex items-center gap-2 px-3 py-2 rounded-lg font-semibold bg-[#4E9BC4] text-white hover:brightness-105"><i
-                  class="fas fa-comments mr-2"></i>
-                Live Chat</a>
-              <a href="#lead-form"
-                class="inline-flex items-center gap-2 px-3 py-2 rounded-lg font-semibold border border-gray-200 bg-white text-gray-900 hover:bg-gray-50">Get
-                Medical Opinion</a>
+
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full 
+                    border border-blue-200 bg-blue-50 text-blue-700 
+                    text-xs font-medium mb-5">
+              🌍 International Patients • Fortis Memorial Research Institute, Gurugram
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-4" aria-label="Trust row">
-              <div class="bg-white border border-gray-200 rounded-lg p-3">
-                <b class="block text-xs">Structured care</b>
-                <span class="block text-xs text-gray-500">Multispecialty pathways</span>
-              </div>
-              <div class="bg-white border border-gray-200 rounded-lg p-3">
-                <b class="block text-xs">Confidential</b>
-                <span class="block text-xs text-gray-500">Respectful guidance</span>
-              </div>
-              <div class="bg-white border border-gray-200 rounded-lg p-3">
-                <b class="block text-xs">Fast start</b>
-                <span class="block text-xs text-gray-500">WhatsApp / call / form</span>
-              </div>
-              <div class="bg-white border border-gray-200 rounded-lg p-3">
-                <b class="block text-xs">gurgaon</b>
-                <span class="block text-xs text-gray-500">Easy access from airport</span>
-              </div>
+
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight 
+                   tracking-wider text-[#009933] mb-4">
+              Instant help for Fortis Memorial Research Institute
+              <span class="text-gray-900">
+                Gurugram India
+              </span>
+            </h1>
+
+
+            <p class="text-gray-600 text-base leading-relaxed max-w-xl mb-6">
+              Connect with our international patient team for personalised guidance,
+              specialist referrals, treatment planning and next steps.
+              Medical reports are optional to begin.
+            </p>
+
+
+            <!-- CTA BUTTONS -->
+            <div class="flex flex-wrap gap-3 mb-8">
+
+              <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl
+                    bg-green-500 text-white font-semibold shadow-lg
+                    hover:bg-green-600 transition">
+
+                <i class="fab fa-whatsapp"></i>
+                WhatsApp Consultation
+              </a>
+
+
+              <a href="#lead-form" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl
+                    bg-white border border-gray-200 text-gray-900
+                    font-semibold shadow-sm hover:bg-gray-50 transition">
+
+                <i class="fas fa-user-doctor"></i>
+                Get Medical Opinion
+              </a>
+
             </div>
+
+
+
+            <!-- TRUST GRID -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+
+              <div class="bg-white rounded-xl border border-gray-100 p-4 shadow-sm">
+                <div class="text-green-600 text-lg mb-1">
+                  ✓
+                </div>
+                <p class="font-semibold text-sm">
+                  Structured Care
+                </p>
+                <p class="text-xs text-gray-500">
+                  Multispecialty pathways
+                </p>
+              </div>
+
+
+              <div class="bg-white rounded-xl border border-gray-100 p-4 shadow-sm">
+                <div class="text-blue-600 text-lg mb-1">
+                  🔒
+                </div>
+                <p class="font-semibold text-sm">
+                  Confidential
+                </p>
+                <p class="text-xs text-gray-500">
+                  Secure guidance
+                </p>
+              </div>
+
+
+              <div class="bg-white rounded-xl border border-gray-100 p-4 shadow-sm">
+                <div class="text-orange-500 text-lg mb-1">
+                  ⚡
+                </div>
+                <p class="font-semibold text-sm">
+                  Fast Response
+                </p>
+                <p class="text-xs text-gray-500">
+                  WhatsApp support
+                </p>
+              </div>
+
+
+              <div class="bg-white rounded-xl border border-gray-100 p-4 shadow-sm">
+                <div class="text-red-500 text-lg mb-1">
+                  📍
+                </div>
+                <p class="font-semibold text-sm">
+                  Gurugram
+                </p>
+                <p class="text-xs text-gray-500">
+                  Near Delhi Airport
+                </p>
+              </div>
+
+            </div>
+
           </div>
 
-          <div
-            class="relative border border-slate-200 rounded-md overflow-hidden bg-gradient-to-b from-blue-50 to-slate-50 min-h-[400px] shadow-lg">
-            <!-- <div class="absolute inset-0 flex items-center justify-center text-slate-500 font-semibold text-center p-4">
-            Add a hospital / doctor-team image here (recommended for B2C feel)
-          </div> -->
-            <div
-              class="relative border border-slate-200 rounded-md overflow-hidden bg-gradient-to-b from-blue-50 to-slate-50 min-h-[400px] shadow-lg">
-              <!-- Responsive Image -->
-              <picture class="absolute inset-0">
-                <!-- AVIF (best compression) -->
-                <source srcset="
-                    ./public/css/fortis-gurugram.webp  480w,
-                    ./public/css/fortis-gurugram.webp  768w,
-                    ./public/css/fortis-gurugram.webp 1200w
-                  " type="image/avif" sizes="(max-width: 768px) 100vw, 50vw" />
 
-                <!-- WebP fallback -->
-                <source srcset="
-                    /images/hospital-480.webp   480w,
-                    /images/hospital-768.webp   768w,
-                    /images/hospital-1200.webp 1200w
-                  " type="image/webp" sizes="(max-width: 768px) 100vw, 50vw" />
 
-                <!-- Default fallback (JPEG/PNG) -->
-                <img src="./public/css/fortis-gurugram.webp" srcset="
-                    ./public/css/fortis-gurugram.webp  480w,
-                    ./public/css/fortis-gurugram.webp  768w,
-                    ./public/css/fortis-gurugram.webp 1200w
-                  " sizes="(max-width: 768px) 100vw, 50vw" alt="fortis fmri gurgaon medical team"
-                  class="w-full h-full object-cover" loading="eager" fetchpriority="high" />
+          <!-- RIGHT IMAGE -->
+          <div class="relative">
+
+            <div class="relative overflow-hidden rounded-3xl shadow-2xl
+                    border border-white bg-white">
+
+
+              <picture>
+
+                <source srcset="./public/css/fortis-gurugram.webp" type="image/webp">
+
+
+                <img src="./public/css/fortis-gurugram.webp"
+                  alt="Fortis Memorial Research Institute Gurugram medical team"
+                  class="w-full h-[420px] lg:h-[560px] object-cover" loading="eager" fetchpriority="high">
+
               </picture>
 
-              <!-- Optional subtle overlay (for better text readability if needed) -->
-              <div class="absolute inset-0 bg-black/10"></div>
 
-              <!-- Tip Box -->
-              <div
-                class="absolute left-3 right-3 bottom-3 bg-white/95 border border-slate-200 rounded-xl p-4 shadow-md flex flex-col md:flex-row items-center justify-between gap-3">
-                <h3 class="text-base md:text-md font-semibold text-[#2582a1] text-center md:text-left">
-                  Connect with an expert for personalized guidance and support.
-                </h3>
-
-                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-                  class="inline-flex items-center justify-center px-5 h-11 rounded-xl bg-green-500 text-white font-semibold shadow-lg hover:brightness-105 transition whitespace-nowrap">
-                  <i class="fab fa-whatsapp fa-1x mx-2" aria-hidden="true"></i>
-                  WhatsApp (Fast Response)
-                </a>
+              <!-- IMAGE OVERLAY -->
+              <div class="absolute inset-0 bg-gradient-to-t 
+                      from-black/50 via-transparent to-transparent">
               </div>
+
+
+
+              <!-- FLOATING CARD -->
+              <div class="absolute bottom-5 left-5 right-5
+                      bg-white/95 backdrop-blur-md
+                      rounded-2xl p-5 shadow-xl">
+
+
+                <div class="flex flex-col sm:flex-row 
+                        items-center justify-between gap-4">
+
+
+                  <div>
+
+                    <h3 class="font-semibold text-gray-900 text-lg">
+                      Speak with a medical expert
+                    </h3>
+
+                    <p class="text-sm text-gray-500">
+                      Personalized support for international patients
+                    </p>
+
+                  </div>
+
+
+
+                  <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener" class="flex items-center gap-2 px-5 py-3
+                        rounded-xl bg-green-500 text-white
+                        font-semibold shadow-md hover:bg-green-600">
+
+                    <i class="fab fa-whatsapp"></i>
+                    Chat Now
+
+                  </a>
+
+
+                </div>
+
+              </div>
+
+
             </div>
-            <!-- <div
-            class="absolute left-3 right-3 bottom-3 bg-white/95 border border-slate-200 rounded-xl p-3 text-xs text-slate-600 shadow-md">
-            Tip: Use a real hospital or doctor-team photo to increase trust
-            and reduce bounce.
-          </div> -->
+
+
+            <!-- DECORATIVE ELEMENT -->
+            <div class="absolute -z-10 -right-10 -top-10 
+                    w-48 h-48 bg-blue-200 rounded-full blur-3xl opacity-40">
+            </div>
+
+
           </div>
+
+
         </div>
 
-        <!-- Lead form -->
-        <!-- <div class="bg-white border border-gray-200 rounded-xl shadow-md p-4 mt-4" id="lead-form">
-          <h3 class="text-lg font-semibold mb-1">Quick request (60 seconds)</h3>
-          <p class="text-gray-500 text-sm mb-3">
-            Share basic details and we’ll guide you to the right specialty team.
-            Reports optional.
-          </p>
-
-          <form action="#" method="post" class="grid gap-2">
-            <div class="grid md:grid-cols-2 gap-2">
-              <div>
-                <label class="text-xs text-gray-500">Full Name*</label>
-                <input type="text" name="name" placeholder="Your name" required
-                  class="w-full px-3 py-2 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-300"
-                  aria-label="form-inquiry" />
-              </div>
-              <div>
-                <label class="text-xs text-gray-500">Country*</label>
-                <input type="text" name="country" placeholder="Country" required
-                  class="w-full px-3 py-2 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-300"
-                  aria-label="form-inquiry" />
-              </div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-2">
-              <div>
-                <label class="text-xs text-gray-500">WhatsApp (with country code)*</label>
-                <input type="tel" name="whatsapp" placeholder="+971 / +968 / +965 ..." required
-                  class="w-full px-3 py-2 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-300"
-                  aria-label="form-inquiry" />
-              </div>
-              <div>
-                <label class="text-xs text-gray-500">Specialty*</label>
-                <select name="need" required
-                  class="w-full px-3 py-2 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-300"
-                  aria-label="form-inquiry">
-                  <option value="" disabled selected>Select</option>
-                  <option>Oncology (Cancer Care)</option>
-                  <option>Cardiac Sciences</option>
-                  <option>Orthopaedics / Joint Replacement</option>
-                  <option>Neurology / Neurosurgery</option>
-                  <option>Gastroenterology & Hepatology</option>
-                  <option>Organ Transplant</option>
-                  <option>Other / Not sure</option>
-                </select>
-              </div>
-            </div>
-            <div>
-              <label class="text-xs text-gray-500">Message (optional)</label>
-              <textarea name="message" placeholder="Brief diagnosis/symptoms, how urgent, any preferred dates…"
-                class="w-full px-3 py-2 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-300 min-h-[92px] resize-y"
-                aria-label="form-inquiry"></textarea>
-            </div>
-
-            <button type="submit"
-              class="px-3 py-2 rounded-xl bg-[#4E9BC4] text-white font-semibold hover:brightness-105">
-              Submit
-            </button>
-            <p class="text-xs text-gray-500 mt-1">
-              Confidential. No pressure to proceed. We guide you, you decide.
-            </p>
-          </form>
-        </div> -->
       </div>
+
     </header>
 
     <!-- Opinion -->
-    <section id="opinion" class="bg-sand border-y border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 py-12">
-        <div class="grid lg:grid-cols-12 gap-6 items-start">
-          <div class="lg:col-span-7">
-            <h2 class="text-2xl sm:text-3xl text-[#009933] font-extrabold text-ink">Get a specialist opinion +
-              indicative estimate</h2>
-            <p class="mt-3 text-slate-600">Request specialist opinion(s) and indicative estimate requests (when
-              available) before travel.</p>
-            <div class="mt-6 grid sm:grid-cols-2 gap-4 text-sm">
-              <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft">
-                <p class="font-medium text-ink">What you receive</p>
-                <ul class="mt-3 space-y-2 text-slate-700">
-                  <li>• Specialty mapping (right department)</li>
-                  <li>• Opinion(s) from selected doctors (optional)</li>
-                  <li>• Indicative estimate request (when available)</li>
-                  <li>• Suggested next steps & timeline</li>
-                </ul>
-                <div class="flex flex-wrap gap-2">
-                  <a href="#form" class="px-4 py-1 rounded-md bg-brand text-white font-medium shadow-soft">Request
-                    opinion</a>
-                  <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-                    class="mt-4 inline-flex w-full items-center justify-center px-4 py-3 rounded-md bg-green-500 text-white font-medium shadow-soft"><i
-                      class="fab fa-whatsapp fa-1x mx-2" aria-hidden="true"></i>
-                    Ask on WhatsApp</a>
-                </div>
-              </div>
-              <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft">
-                <p class="font-medium text-ink text-md">Download Opinion</p>
-                <p class="mt-2 text-slate-600">Click below to download the sample medical opinion PDF.</p>
-                <a href="./public/pdf/Performa  Invoice ALICE WAIRIMU.pdf" download
-                  class="mt-6 w-full inline-flex items-center justify-center px-6 py-3 border rounded-md font-bold hover:bg-slate-100 transition">
-                  ⬇️ Download Sample Opinion
-                </a>
-                <p class="mt-2 text-xs text-slate-500">Sample contains no personal medical data.</p>
-              </div>
-            </div>
-          </div>
-          <div class="lg:col-span-5">
-            <div class="rounded-[32px] border border-slate-200 bg-white p-7 shadow-soft">
-              <p class="font-medium text-ink">Quick checklist</p>
-              <ul class="mt-3 space-y-2 text-sm text-slate-700">
-                <li>• Summary of concern / diagnosis</li>
-                <li>• Reports (PDF/images), if available</li>
-                <li>• Current medications (optional)</li>
-                <li>• Your top questions</li>
-              </ul>
-              <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-                class="mt-4 inline-flex w-full items-center justify-center px-4 py-3 rounded-md bg-green-500 text-white font-medium shadow-soft"><i
-                  class="fab fa-whatsapp fa-1x mx-2" aria-hidden="true"></i>
-                Ask on WhatsApp</a>
-            </div>
-          </div>
-        </div>
+    <section id="opinion"
+      class="relative py-12 sm:py-16 bg-gradient-to-br from-green-50 via-white to-slate-50 border-y border-slate-200 overflow-hidden">
+
+
+      <!-- Background Glow -->
+
+      <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-green-200/30 blur-3xl">
       </div>
+
+      <div class="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-emerald-100/40 blur-3xl">
+      </div>
+
+
+
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+
+        <div class="grid lg:grid-cols-12 gap-8 items-start">
+
+
+          <!-- LEFT CONTENT -->
+
+          <div class="lg:col-span-7">
+
+
+            <span class="
+          inline-flex
+          items-center
+          gap-2
+          px-4
+          py-2
+          rounded-full
+          bg-green-100
+          text-green-700
+          text-xs
+          font-bold
+          border border-green-200
+          ">
+              🩺 International Patient Support
+            </span>
+
+
+
+            <h2 class="
+          mt-5
+          text-3xl
+          sm:text-4xl
+          lg:text-5xl
+          leading-tight
+          font-black
+          text-slate-900
+          ">
+
+              Get a
+
+              <span class="text-[#009933]">
+                Specialist Opinion
+              </span>
+
+              &
+              Treatment Estimate
+
+            </h2>
+
+
+
+            <p class="
+          mt-4
+          text-slate-600
+          text-base
+          sm:text-lg
+          max-w-2xl
+          leading-relaxed
+          ">
+              Share your medical details and receive guidance on the right
+              specialist, possible treatment pathway, and next steps before your
+              hospital visit.
+            </p>
+
+
+
+
+
+
+
+            <div class="mt-8 grid sm:grid-cols-2 gap-5">
+
+
+
+              <!-- Receive Card -->
+
+              <div class="
+            rounded-[28px]
+            bg-white
+            border border-slate-200
+            p-6
+            shadow-lg
+            hover:shadow-xl
+            transition
+            ">
+
+
+                <div class="
+              w-12
+              h-12
+              rounded-2xl
+              bg-green-100
+              flex
+              items-center
+              justify-center
+              text-2xl
+              ">
+                  📋
+                </div>
+
+
+
+                <h3 class="mt-5 text-xl font-black text-slate-900">
+                  What you receive
+                </h3>
+
+
+
+                <ul class="
+              mt-4
+              space-y-3
+              text-sm
+              text-slate-600
+              ">
+
+                  <li class="flex gap-2">
+                    <span class="text-green-600">✓</span>
+                    Specialty mapping to the right department
+                  </li>
+
+                  <li class="flex gap-2">
+                    <span class="text-green-600">✓</span>
+                    Specialist opinion guidance
+                  </li>
+
+                  <li class="flex gap-2">
+                    <span class="text-green-600">✓</span>
+                    Indicative estimate request support
+                  </li>
+
+                  <li class="flex gap-2">
+                    <span class="text-green-600">✓</span>
+                    Suggested timeline and next steps
+                  </li>
+
+                </ul>
+
+
+
+
+                <div class="mt-6 space-y-3">
+
+
+                  <a href="#form" class="
+              flex
+              items-center
+              justify-center
+              w-full
+              px-5
+              py-3
+              rounded-xl
+              bg-[#009933]
+              text-white
+              font-bold
+              shadow-lg
+              shadow-green-600/20
+              hover:bg-green-700
+              transition
+              ">
+                    Request Opinion
+                  </a>
+
+
+
+
+                  <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener" class="
+              flex
+              items-center
+              justify-center
+              gap-2
+              w-full
+              px-5
+              py-3
+              rounded-xl
+              bg-green-500
+              text-white
+              font-bold
+              hover:bg-green-600
+              transition
+              ">
+
+                    <i class="fab fa-whatsapp"></i>
+
+                    WhatsApp Specialist
+
+                  </a>
+
+
+                </div>
+
+
+              </div>
+
+
+
+
+
+
+
+              <!-- PDF CARD -->
+
+
+              <div class="
+            rounded-[28px]
+            bg-white
+            border border-slate-200
+            p-6
+            shadow-lg
+            hover:shadow-xl
+            transition
+            ">
+
+
+                <div class="
+              w-12
+              h-12
+              rounded-2xl
+              bg-blue-100
+              flex
+              items-center
+              justify-center
+              text-2xl
+              ">
+                  📄
+                </div>
+
+
+
+                <h3 class="mt-5 text-xl font-black text-slate-900">
+                  Sample Opinion Format
+                </h3>
+
+
+
+                <p class="mt-3 text-sm text-slate-600 leading-relaxed">
+                  View a sample medical opinion document format to understand the
+                  information shared during consultation.
+                </p>
+
+
+
+
+                <a href="./public/pdf/Performa Invoice ALICE WAIRIMU.pdf" download class="
+            mt-8
+            flex
+            items-center
+            justify-center
+            gap-2
+            w-full
+            px-5
+            py-3
+            rounded-xl
+            border-2
+            border-slate-200
+            text-slate-800
+            font-bold
+            hover:bg-slate-100
+            transition
+            ">
+
+                  ⬇️ Download Sample Opinion
+
+                </a>
+
+
+
+                <p class="mt-3 text-xs text-slate-500">
+                  ✓ Sample document contains no personal medical information.
+                </p>
+
+
+              </div>
+
+
+            </div>
+
+
+          </div>
+
+
+
+
+
+
+
+
+          <!-- RIGHT PANEL -->
+
+
+          <div class="lg:col-span-5">
+
+
+            <div class="
+          sticky
+          top-6
+          rounded-[32px]
+          bg-gradient-to-br
+          from-[#009933]
+          to-[#006622]
+          p-8
+          text-white
+          shadow-2xl
+          ">
+
+
+              <div class="
+            w-14
+            h-14
+            rounded-2xl
+            bg-white/20
+            flex
+            items-center
+            justify-center
+            text-3xl
+            ">
+                ✅
+              </div>
+
+
+
+              <h3 class="mt-6 text-2xl font-black">
+                Quick Checklist
+              </h3>
+
+
+
+              <p class="mt-2 text-green-100 text-sm">
+                Keep these details ready for faster specialist guidance.
+              </p>
+
+
+
+
+              <ul class="mt-6 space-y-4 text-sm">
+
+
+                <li class="flex gap-3">
+                  <span>✓</span>
+                  Diagnosis summary or medical concern
+                </li>
+
+
+                <li class="flex gap-3">
+                  <span>✓</span>
+                  Reports, scans or previous prescriptions
+                </li>
+
+
+                <li class="flex gap-3">
+                  <span>✓</span>
+                  Current medicines (if applicable)
+                </li>
+
+
+                <li class="flex gap-3">
+                  <span>✓</span>
+                  Important questions for the doctor
+                </li>
+
+
+              </ul>
+
+
+
+
+
+              <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener" class="
+          mt-8
+          flex
+          items-center
+          justify-center
+          gap-2
+          w-full
+          py-4
+          rounded-xl
+          bg-white
+          text-[#009933]
+          font-black
+          hover:bg-green-50
+          transition
+          ">
+
+                <i class="fab fa-whatsapp"></i>
+
+                Start WhatsApp Consultation
+
+              </a>
+
+
+
+            </div>
+
+
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+
+
     </section>
     <!-- End of Opinion -->
 
     <!-- Why Section -->
-    <section class="max-w-7xl mx-auto px-4 py-6" id="why">
-      <h3 class="text-3xl font-bold mb-2 text-[#009933]">
-        Why patients choose Fortis FMRI
-      </h3>
-      <p class="text-gray-500 mb-4">
-        For high-intent patients, the main need is clarity and the right
-        specialist path—fast.
-      </p>
+    <section class="py-10 sm:py-14" id="why">
 
-      <div class="grid md:grid-cols-3 gap-3">
-        <div class="bg-white border border-gray-200 rounded-xl p-4">
-          <h4 class="text-base font-semibold mb-1">Specialist matching</h4>
-          <p class="text-gray-500 text-sm">
-            We route your case to the right department based on symptoms,
-            diagnosis and reports (optional).
-          </p>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
+
+
+        <div class="
+      relative
+      overflow-hidden
+      bg-white
+      border border-slate-200
+      rounded-[32px]
+      shadow-[0_20px_60px_rgba(15,23,42,0.08)]
+      p-6
+      sm:p-10
+      ">
+
+
+          <!-- Decorative Background -->
+
+          <div class="
+        absolute
+        -top-24
+        -right-24
+        w-72
+        h-72
+        rounded-full
+        bg-green-100/50
+        blur-3xl
+        ">
+          </div>
+
+
+          <div class="
+        absolute
+        -bottom-24
+        -left-24
+        w-72
+        h-72
+        rounded-full
+        bg-emerald-100/40
+        blur-3xl
+        ">
+          </div>
+
+
+
+
+
+          <!-- Header -->
+
+          <div class="relative max-w-3xl">
+
+
+            <span class="
+          inline-flex
+          items-center
+          gap-2
+          px-4
+          py-2
+          rounded-full
+          bg-green-50
+          text-green-700
+          border border-green-100
+          text-xs
+          font-bold
+          ">
+              🏥 Fortis Healthcare Support
+            </span>
+
+
+
+            <h3 class="
+          mt-5
+          text-3xl
+          sm:text-4xl
+          lg:text-5xl
+          font-black
+          tracking-tight
+          text-slate-900
+          leading-tight
+          ">
+
+              Why patients choose
+
+              <span class="text-[#009933]">
+                Fortis FMRI
+              </span>
+
+            </h3>
+
+
+
+            <p class="
+          mt-4
+          text-base
+          sm:text-lg
+          leading-relaxed
+          text-slate-600
+          ">
+              For international patients, the right specialist connection and a
+              clear treatment pathway make every healthcare decision easier.
+            </p>
+
+
+          </div>
+
+
+
+
+
+
+
+          <!-- Feature Cards -->
+
+          <div class="
+        relative
+        mt-10
+        grid
+        grid-cols-1
+        sm:grid-cols-2
+        lg:grid-cols-3
+        gap-5
+        ">
+
+
+            <!-- Card 1 -->
+
+            <div class="
+          rounded-3xl
+          border border-green-100
+          bg-gradient-to-br
+          from-green-50
+          to-white
+          p-6
+          hover:-translate-y-2
+          hover:shadow-xl
+          transition-all
+          duration-300
+          ">
+
+
+              <div class="
+            w-14
+            h-14
+            rounded-2xl
+            bg-green-600
+            text-white
+            flex
+            items-center
+            justify-center
+            text-2xl
+            shadow-lg
+            shadow-green-600/30
+            ">
+                👨‍⚕️
+              </div>
+
+
+
+              <h4 class="mt-5 text-xl font-black text-slate-900">
+                Specialist Matching
+              </h4>
+
+
+
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">
+                Your case is guided toward the appropriate department based on
+                symptoms, diagnosis, and available medical reports.
+              </p>
+
+
+            </div>
+
+
+
+
+
+
+
+            <!-- Card 2 -->
+
+            <div class="
+          rounded-3xl
+          border border-emerald-100
+          bg-gradient-to-br
+          from-emerald-50
+          to-white
+          p-6
+          hover:-translate-y-2
+          hover:shadow-xl
+          transition-all
+          duration-300
+          ">
+
+
+              <div class="
+            w-14
+            h-14
+            rounded-2xl
+            bg-emerald-600
+            text-white
+            flex
+            items-center
+            justify-center
+            text-2xl
+            shadow-lg
+            shadow-emerald-600/30
+            ">
+                📋
+              </div>
+
+
+
+              <h4 class="mt-5 text-xl font-black text-slate-900">
+                Clinical Pathway Clarity
+              </h4>
+
+
+
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">
+                Understand consultations, evaluation steps, expected timelines,
+                and possible next actions before your hospital visit.
+              </p>
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- Card 3 -->
+
+            <div class="
+          rounded-3xl
+          border border-teal-100
+          bg-gradient-to-br
+          from-teal-50
+          to-white
+          p-6
+          hover:-translate-y-2
+          hover:shadow-xl
+          transition-all
+          duration-300
+          ">
+
+
+              <div class="
+            w-14
+            h-14
+            rounded-2xl
+            bg-teal-600
+            text-white
+            flex
+            items-center
+            justify-center
+            text-2xl
+            shadow-lg
+            shadow-teal-600/30
+            ">
+                🌍
+              </div>
+
+
+
+              <h4 class="mt-5 text-xl font-black text-slate-900">
+                International Coordination
+              </h4>
+
+
+
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">
+                Receive practical support with appointments, communication, and
+                healthcare journey planning.
+              </p>
+
+
+            </div>
+
+
+
+          </div>
+
+          <!-- CTA -->
+
+          <div class="
+        relative
+        mt-10
+        rounded-2xl
+        bg-gradient-to-r
+        from-[#009933]
+        to-[#006622]
+        px-6
+        py-5
+        flex
+        flex-col
+        sm:flex-row
+        items-center
+        justify-between
+        gap-4
+        text-white
+        ">
+
+
+            <div>
+
+              <h4 class="text-lg sm:text-xl font-black">
+                Need help finding the right Fortis specialist?
+              </h4>
+
+              <p class="mt-1 text-sm text-green-100">
+                Start a confidential conversation with our support team.
+              </p>
+
+            </div>
+
+
+
+            <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener noreferrer" class="
+          flex
+          items-center
+          justify-center
+          gap-2
+          px-6
+          py-3
+          rounded-xl
+          bg-white
+          text-[#009933]
+          font-bold
+          hover:bg-green-50
+          transition
+          whitespace-nowrap
+          ">
+
+              <i class="fab fa-whatsapp"></i>
+
+              WhatsApp Now
+
+            </a>
+
+
+          </div>
+
+
+
         </div>
-        <div class="bg-white border border-gray-200 rounded-xl p-4">
-          <h4 class="text-base font-semibold mb-1">Clinical pathway clarity</h4>
-          <p class="text-gray-500 text-sm">
-            Understand evaluation steps, timelines and next actions before you
-            travel.
-          </p>
-        </div>
-        <div class="bg-white border border-gray-200 rounded-xl p-4">
-          <h4 class="text-base font-semibold mb-1">
-            International coordination
-          </h4>
-          <p class="text-gray-500 text-sm">
-            Appointment coordination and practical support guidance (as
-            applicable).
-          </p>
-        </div>
+
       </div>
+
+
     </section>
 
     <!-- Specialties Section -->
-    <section class="max-w-7xl mx-auto px-4 py-6" id="specialties">
-      <h3 class="text-2xl font-semibold mb-2">Specialties</h3>
-      <p class="text-gray-500 mb-4">
-        Click a specialty to message us on WhatsApp.
-      </p>
+    <section class="py-8 sm:py-8" id="specialties">
 
-      <div class="grid md:grid-cols-3 gap-3">
-        <div class="bg-white border border-gray-200 rounded-xl p-4">
-          <h4 class="text-base font-semibold mb-1">Oncology (Cancer Care)</h4>
-          <p class="text-gray-500 text-sm mb-2">
-            Guidance on treatment planning and next steps.
-          </p>
-          <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-            class="text-blue-600 underline text-sm">Ask
-            on WhatsApp →</a>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
+
+
+        <div class="
+      bg-white
+      border border-slate-200
+      rounded-[32px]
+      shadow-[0_20px_60px_rgba(15,23,42,0.08)]
+      p-6
+      sm:p-10
+      ">
+
+
+          <!-- Header -->
+
+          <div class="max-w-3xl mb-10">
+
+            <span class="
+          inline-flex
+          items-center
+          gap-2
+          px-4
+          py-2
+          rounded-full
+          bg-green-50
+          border border-green-100
+          text-green-700
+          text-xs
+          font-bold
+          ">
+              🏥 Fortis FMRI Specialist Care
+            </span>
+
+
+            <h3 class="
+          mt-5
+          text-3xl
+          sm:text-4xl
+          font-black
+          text-slate-900
+          tracking-tight
+          ">
+              Explore our
+              <span class="text-[#009933]">
+                Medical Specialties
+              </span>
+            </h3>
+
+
+            <p class="
+          mt-3
+          text-slate-600
+          text-base
+          sm:text-lg
+          ">
+              Choose your area of care and connect with our team for specialist
+              guidance and treatment planning.
+            </p>
+
+          </div>
+
+
+
+
+
+          <!-- Specialty Grid -->
+
+          <div class="
+        grid
+        grid-cols-1
+        sm:grid-cols-2
+        lg:grid-cols-3
+        gap-5
+        ">
+
+
+            <!-- Card -->
+
+            <div class="
+          group
+          relative
+          overflow-hidden
+          rounded-3xl
+          border border-slate-200
+          bg-gradient-to-br
+          from-green-50
+          via-white
+          to-white
+          p-6
+          hover:-translate-y-2
+          hover:shadow-xl
+          transition-all
+          duration-300
+          ">
+
+
+              <div class="
+            w-12
+            h-12
+            rounded-2xl
+            bg-red-100
+            flex
+            items-center
+            justify-center
+            text-2xl
+            ">
+                🎗️
+              </div>
+
+              <a href="#onco" rel="noopener" class="hover:underline">
+                <h4 class="mt-5 text-xl font-black text-slate-900">
+                  Oncology
+                </h4>
+              </a>
+
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+                Cancer care guidance, treatment planning, and specialist pathway
+                support.
+              </p>
+
+
+              <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener" class="
+            inline-flex
+            items-center
+            gap-2
+            mt-5
+            px-5
+            py-3
+            rounded-xl
+            bg-green-600
+            text-white
+            text-sm
+            font-bold
+            hover:bg-green-700
+            transition
+            ">
+                <i class="fab fa-whatsapp"></i>
+                Ask Specialist
+              </a>
+
+
+            </div>
+
+
+
+
+
+            <!-- Card -->
+
+            <div class="
+          group
+          rounded-3xl
+          border border-slate-200
+          bg-gradient-to-br
+          from-blue-50
+          via-white
+          to-white
+          p-6
+          hover:-translate-y-2
+          hover:shadow-xl
+          transition
+          ">
+
+
+              <div class="
+            w-12
+            h-12
+            rounded-2xl
+            bg-blue-100
+            flex
+            items-center
+            justify-center
+            text-2xl
+            ">
+                ❤️
+              </div>
+
+              <a href="#cardiac" rel="noopener" class="hover:underline">
+                <h4 class="mt-5 text-xl font-black text-slate-900">
+                  Cardiac Sciences
+                </h4>
+              </a>
+              <p class="mt-2 text-sm text-slate-600">
+                Heart care evaluation, diagnostics, surgery planning, and expert
+                consultation.
+              </p>
+
+
+              <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener" class="
+            inline-flex
+            items-center
+            gap-2
+            mt-5
+            px-5
+            py-3
+            rounded-xl
+            bg-green-600
+            text-white
+            text-sm
+            font-bold
+            ">
+                <i class="fab fa-whatsapp"></i>
+                Ask Specialist
+              </a>
+
+            </div>
+
+
+
+
+
+
+            <!-- Card -->
+
+            <div class="
+          rounded-3xl
+          border border-slate-200
+          bg-gradient-to-br
+          from-orange-50
+          via-white
+          to-white
+          p-6
+          hover:-translate-y-2
+          hover:shadow-xl
+          transition
+          ">
+
+
+              <div class="w-12 h-12 rounded-2xl bg-orange-100 flex items-center justify-center text-2xl">
+                🦴
+              </div>
+
+              <a href="#ortho" rel="noopener" class="hover:underline">
+
+                <h4 class="mt-5 text-xl font-black text-slate-900">
+                  Orthopaedics
+                </h4>
+              </a>
+
+              <p class="mt-2 text-sm text-slate-600">
+                Joint replacement, spine care, and mobility restoration pathways.
+              </p>
+
+
+              <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
+                class="inline-flex items-center gap-2 mt-5 px-5 py-3 rounded-xl bg-green-600 text-white text-sm font-bold">
+
+                <i class="fab fa-whatsapp"></i>
+                Ask Specialist
+
+              </a>
+
+
+            </div>
+
+
+
+
+
+
+
+            <!-- Card -->
+
+            <div
+              class="rounded-3xl border border-slate-200 bg-gradient-to-br from-purple-50 to-white p-6 hover:-translate-y-2 hover:shadow-xl transition">
+
+
+              <div class="w-12 h-12 rounded-2xl bg-purple-100 flex items-center justify-center text-2xl">
+                🧠
+              </div>
+
+              <a href="#neuro" rel="noopener" class="hover:underline">
+
+                <h4 class="mt-5 text-xl font-black text-slate-900">
+                  Neurology & Neurosurgery
+                </h4>
+              </a>
+
+              <p class="mt-2 text-sm text-slate-600">
+                Brain, spine, stroke and neurological treatment planning support.
+              </p>
+
+
+              <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
+                class="inline-flex items-center gap-2 mt-5 px-5 py-3 rounded-xl bg-green-600 text-white text-sm font-bold">
+
+                <i class="fab fa-whatsapp"></i>
+                Ask Specialist
+
+              </a>
+
+
+            </div>
+
+
+
+
+
+
+            <!-- Card -->
+
+            <div
+              class="rounded-3xl border border-slate-200 bg-gradient-to-br from-yellow-50 to-white p-6 hover:-translate-y-2 hover:shadow-xl transition">
+
+              <div class="w-12 h-12 rounded-2xl bg-yellow-100 flex items-center justify-center text-2xl">
+                🩺
+              </div>
+
+
+              <h4 class="mt-5 text-xl font-black text-slate-900">
+                Gastro & Liver
+              </h4>
+
+
+              <p class="mt-2 text-sm text-slate-600">
+                Digestive health, liver evaluation, and advanced treatment guidance.
+              </p>
+
+
+              <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
+                class="inline-flex items-center gap-2 mt-5 px-5 py-3 rounded-xl bg-green-600 text-white text-sm font-bold">
+
+                <i class="fab fa-whatsapp"></i>
+                Ask Specialist
+
+              </a>
+
+            </div>
+
+
+
+
+
+
+
+            <!-- Card -->
+
+            <div
+              class="rounded-3xl border border-slate-200 bg-gradient-to-br from-teal-50 to-white p-6 hover:-translate-y-2 hover:shadow-xl transition">
+
+              <div class="w-12 h-12 rounded-2xl bg-teal-100 flex items-center justify-center text-2xl">
+                🏥
+              </div>
+
+
+              <h4 class="mt-5 text-xl font-black text-slate-900">
+                Organ Transplant
+              </h4>
+
+
+              <p class="mt-2 text-sm text-slate-600">
+                Eligibility assessment, evaluation steps, and transplant guidance.
+              </p>
+
+
+              <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
+                class="inline-flex items-center gap-2 mt-5 px-5 py-3 rounded-xl bg-green-600 text-white text-sm font-bold">
+
+                <i class="fab fa-whatsapp"></i>
+                Ask Specialist
+
+              </a>
+
+
+            </div>
+
+
+          </div>
+
+
         </div>
 
-        <div class="bg-white border border-gray-200 rounded-xl p-4">
-          <h4 class="text-base font-semibold mb-1">Cardiac Sciences</h4>
-          <p class="text-gray-500 text-sm mb-2">
-            Heart care guidance, diagnostics and planning.
-          </p>
-          <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-            class="text-blue-600 underline text-sm">Ask
-            on WhatsApp →</a>
-        </div>
-
-        <div class="bg-white border border-gray-200 rounded-xl p-4">
-          <h4 class="text-base font-semibold mb-1">Orthopaedics</h4>
-          <p class="text-gray-500 text-sm mb-2">
-            Joint replacement / spine evaluation pathways.
-          </p>
-          <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-            class="text-blue-600 underline text-sm">Ask
-            on WhatsApp →</a>
-        </div>
-
-        <div class="bg-white border border-gray-200 rounded-xl p-4">
-          <h4 class="text-base font-semibold mb-1">Neurology & Neurosurgery</h4>
-          <p class="text-gray-500 text-sm mb-2">
-            Brain/spine evaluation and surgical planning.
-          </p>
-          <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-            class="text-blue-600 underline text-sm">Ask
-            on WhatsApp →</a>
-        </div>
-
-        <div class="bg-white border border-gray-200 rounded-xl p-4">
-          <h4 class="text-base font-semibold mb-1">Gastro & Liver</h4>
-          <p class="text-gray-500 text-sm mb-2">
-            Digestive/liver evaluation and next steps.
-          </p>
-          <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-            class="text-blue-600 underline text-sm">Ask
-            on WhatsApp →</a>
-        </div>
-
-        <div class="bg-white border border-gray-200 rounded-xl p-4">
-          <h4 class="text-base font-semibold mb-1">Organ Transplant</h4>
-          <p class="text-gray-500 text-sm mb-2">
-            Eligibility guidance and evaluation steps.
-          </p>
-          <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-            class="text-blue-600 underline text-sm">Ask
-            on WhatsApp →</a>
-        </div>
       </div>
+
     </section>
 
     <section class="max-w-7xl mx-auto px-4 py-10" id="doctors">
@@ -515,186 +1535,1074 @@
 
       <!-- ================= Oncology ================= -->
       <div class="mt-6">
-        <div class="flex flex-wrap items-end justify-between gap-3 mb-4">
+        <div id="onco" class="flex flex-wrap items-end justify-between gap-3 mb-4">
           <h4 class="text-lg font-semibold">Oncology (Cancer Care)</h4>
           <span class="text-xs text-slate-600 border border-slate-200 bg-white px-3 py-1.5 rounded-md">
             Department: Oncology
           </span>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <div class="rounded-md border border-blue-200 bg-blue-50 p-3 flex items-center justify-between gap-2">
-            <!-- Left: Text Content -->
-            <div class="flex flex-col space-y-2">
-              <p class="font-bold text-md mb-1">Dr Nitesh Rohatgi
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="
+  group
+  relative
+  bg-white
+  rounded-2xl
+  border border-slate-200
+  overflow-hidden
+  flex items-center
+  justify-between
+  gap-4
+  p-5
+  shadow-[0_4px_20px_rgba(15,23,42,0.05)]
+  hover:shadow-[0_10px_30px_rgba(34,197,94,0.15)]
+  hover:border-green-200
+  transition-all duration-300
+  ">
+
+
+            <!-- Doctor Info -->
+            <div class="flex flex-col">
+
+              <h3 class="
+      text-[17px]
+      font-bold
+      text-slate-900
+      leading-snug">
+                Dr Nitesh Rohatgi
+              </h3>
+
+
+              <p class="
+      mt-1
+      text-sm
+      text-slate-500">
+                Oncology Specialist
               </p>
-              <p class="text-xs text-slate-600">Oncology</p>
-              <span
-                class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-md border border-blue-200 bg-blue-100">
-                MEDICAL ONCOLOGY
-              </span>
-              <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-                class="text-blue-600 underline text-sm">Ask on WhatsApp →</a>
+
+
+              <div class="flex items-center gap-2 mt-3">
+
+                <span class="
+        w-2
+        h-2
+        rounded-full
+        bg-[#22C55E]
+        ring-4
+        ring-green-100">
+                </span>
+
+
+                <span class="
+        text-[11px]
+        font-bold
+        tracking-wide
+        text-green-700">
+                  MEDICAL ONCOLOGY
+                </span>
+
+              </div>
+
+
+              <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener" class="
+      mt-5
+      inline-flex
+      items-center
+      justify-center
+      gap-2
+      w-fit
+      px-4
+      py-2
+      rounded-lg
+      bg-[#22C55E]
+      text-white
+      text-xs
+      font-semibold
+      shadow-sm
+      shadow-green-200
+      hover:bg-[#16A34A]
+      transition-all
+      duration-300">
+
+                Consult on WhatsApp
+                <span class="text-sm">→</span>
+
+              </a>
+
             </div>
-            <!-- Right: Doctor Image -->
-            <div class="shrink-0">
-              <img src="./public/onco/webp/Dr Nitesh Rohatgi.webp" alt="Dr Nitesh Rohatgi.webp"
-                class="w-20 md:w-[100px] h-[8rem] object-cover rounded-xl border border-sky-200" />
+
+
+
+            <!-- Image Section -->
+            <div class="
+    relative
+    flex
+    items-end
+    shrink-0">
+
+
+              <div class="
+      absolute
+      bottom-0
+      right-0
+      w-28
+      h-28
+      rounded-full
+      bg-green-50
+      group-hover:bg-green-100
+      transition">
+              </div>
+
+
+              <img src="./public/onco/webp/Dr Nitesh Rohatgi.webp" alt="Dr Nitesh Rohatgi" class="
+      relative
+      w-[100px]
+      h-[130px]
+      object-cover
+      object-top
+      rounded-xl
+      border-2
+      border-white
+      shadow-md
+      z-10
+      group-hover:scale-105
+      transition-transform
+      duration-300" />
+
             </div>
           </div>
 
-          <div class="rounded-md border border-sky-200 bg-sky-50 p-3 flex items-center justify-between gap-2">
-            <!-- Left: Text Content -->
-            <div class="flex flex-col space-y-2">
-              <p class="font-bold text-md mb-1">Dr Vinod Raina
+          <div class="
+  group
+  relative
+  bg-white
+  rounded-2xl
+  border border-slate-200
+  overflow-hidden
+  flex items-center
+  justify-between
+  gap-4
+  p-5
+  shadow-[0_4px_20px_rgba(15,23,42,0.05)]
+  hover:shadow-[0_10px_30px_rgba(34,197,94,0.15)]
+  hover:border-green-200
+  transition-all duration-300
+  ">
+
+
+            <!-- Doctor Info -->
+            <div class="flex flex-col">
+
+              <h3 class="
+      text-[17px]
+      font-bold
+      text-slate-900
+      leading-snug">
+                Dr Vinod Raina
+              </h3>
+
+
+              <p class="
+      mt-1
+      text-sm
+      text-slate-500">
+                Oncology Specialist
               </p>
-              <p class="text-xs text-slate-600">Oncology</p>
-              <span
-                class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-md border border-sky-200 bg-sky-100">
-                MEDICAL ONCOLOGY
-              </span>
-              <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-                class="text-blue-600 underline text-sm">Ask on WhatsApp →</a>
+
+
+              <div class="flex items-center gap-2 mt-3">
+
+                <span class="
+        w-2
+        h-2
+        rounded-full
+        bg-[#22C55E]
+        ring-4
+        ring-green-100">
+                </span>
+
+
+                <span class="
+        text-[11px]
+        font-bold
+        tracking-wide
+        text-green-700">
+                  MEDICAL ONCOLOGY
+                </span>
+
+              </div>
+
+
+              <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener" class="
+      mt-5
+      inline-flex
+      items-center
+      justify-center
+      gap-2
+      w-fit
+      px-4
+      py-2
+      rounded-lg
+      bg-[#22C55E]
+      text-white
+      text-xs
+      font-semibold
+      shadow-sm
+      shadow-green-200
+      hover:bg-[#16A34A]
+      transition-all
+      duration-300">
+
+                Consult on WhatsApp
+                <span class="text-sm">→</span>
+
+              </a>
+
             </div>
-            <!-- Right: Doctor Image -->
-            <div class="shrink-0">
-              <img src="./public/onco/webp/Dr Vinod Raina.webp" alt="Dr. Dipanjan Panda"
-                class="w-20 md:w-[100px] h-[8rem] object-cover rounded-xl border border-sky-200" />
+
+
+
+            <!-- Image Section -->
+            <div class="
+    relative
+    flex
+    items-end
+    shrink-0">
+
+
+              <div class="
+      absolute
+      bottom-0
+      right-0
+      w-28
+      h-28
+      rounded-full
+      bg-green-50
+      group-hover:bg-green-100
+      transition">
+              </div>
+
+
+              <img src="./public/onco/webp/Dr Vinod Raina.webp" alt="Dr Vinod Raina" class="
+      relative
+      w-[100px]
+      h-[130px]
+      object-cover
+      object-top
+      rounded-xl
+      border-2
+      border-white
+      shadow-md
+      z-10
+      group-hover:scale-105
+      transition-transform
+      duration-300" />
+
             </div>
+
+
           </div>
 
-          <div class="rounded-md border border-blue-200 bg-blue-50 p-3 flex items-center justify-between gap-2">
-            <!-- Left: Text Content -->
-            <div class="flex flex-col space-y-2">
-              <p class="font-bold text-md mb-1">Dr. Ankur Bahl
+          <div class="
+  group
+  relative
+  bg-white
+  rounded-2xl
+  border border-slate-200
+  overflow-hidden
+  flex items-center
+  justify-between
+  gap-4
+  p-5
+  shadow-[0_4px_20px_rgba(15,23,42,0.05)]
+  hover:shadow-[0_10px_30px_rgba(34,197,94,0.15)]
+  hover:border-green-200
+  transition-all duration-300
+  ">
+
+
+            <!-- Doctor Info -->
+            <div class="flex flex-col">
+
+              <h3 class="
+      text-[17px]
+      font-bold
+      text-slate-900
+      leading-snug">
+                Dr. Ankur Bahl
+              </h3>
+
+
+              <p class="
+      mt-1
+      text-sm
+      text-slate-500">
+                Oncology Specialist
               </p>
-              <p class="text-xs text-slate-600">Oncology</p>
-              <span
-                class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-md border border-blue-200 bg-blue-100">
-                MEDICAL ONCOLOGY
-              </span>
-              <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-                class="text-blue-600 underline text-sm">Ask on WhatsApp →</a>
+
+
+              <div class="flex items-center gap-2 mt-3">
+
+                <span class="
+        w-2
+        h-2
+        rounded-full
+        bg-[#22C55E]
+        ring-4
+        ring-green-100">
+                </span>
+
+
+                <span class="
+        text-[11px]
+        font-bold
+        tracking-wide
+        text-green-700">
+                  MEDICAL ONCOLOGY
+                </span>
+
+              </div>
+
+
+              <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener" class="
+      mt-5
+      inline-flex
+      items-center
+      justify-center
+      gap-2
+      w-fit
+      px-4
+      py-2
+      rounded-lg
+      bg-[#22C55E]
+      text-white
+      text-xs
+      font-semibold
+      shadow-sm
+      shadow-green-200
+      hover:bg-[#16A34A]
+      transition-all
+      duration-300">
+
+                Consult on WhatsApp
+                <span class="text-sm">→</span>
+
+              </a>
+
             </div>
-            <!-- Right: Doctor Image -->
-            <div class="shrink-0">
-              <img src="./public/onco/webp/Dr. AnkurBahl.webp" alt="Dr. Ganesh Jadhav"
-                class="w-20 md:w-[100px] h-[8rem] object-cover rounded-xl border border-sky-200" />
+
+
+
+            <!-- Image Section -->
+            <div class="
+    relative
+    flex
+    items-end
+    shrink-0">
+
+
+              <div class="
+      absolute
+      bottom-0
+      right-0
+      w-28
+      h-28
+      rounded-full
+      bg-green-50
+      group-hover:bg-green-100
+      transition">
+              </div>
+
+
+              <img src="./public/onco/webp/Dr. AnkurBahl.webp" alt="Dr. Ankur Bahl" class="
+      relative
+      w-[100px]
+      h-[130px]
+      object-cover
+      object-top
+      rounded-xl
+      border-2
+      border-white
+      shadow-md
+      z-10
+      group-hover:scale-105
+      transition-transform
+      duration-300" />
+
             </div>
+
+
           </div>
 
-          <div class="rounded-md border border-sky-200 bg-sky-50 p-3 flex items-center justify-between gap-2">
-            <!-- Left: Text Content -->
-            <div class="flex flex-col space-y-2">
-              <p class="font-bold text-md mb-1">Dr.Rahul Bhargava
+          <div class="
+  group
+  relative
+  bg-white
+  rounded-2xl
+  border border-slate-200
+  overflow-hidden
+  flex items-center
+  justify-between
+  gap-4
+  p-5
+  shadow-[0_4px_20px_rgba(15,23,42,0.05)]
+  hover:shadow-[0_10px_30px_rgba(34,197,94,0.15)]
+  hover:border-green-200
+  transition-all duration-300
+  ">
+
+
+            <!-- Doctor Info -->
+            <div class="flex flex-col">
+
+              <h3 class="
+      text-[17px]
+      font-bold
+      text-slate-900
+      leading-snug">
+                Dr. Rahul Bhargava
+              </h3>
+
+
+              <p class="
+      mt-1
+      text-sm
+      text-slate-500">
+                Oncology Specialist
               </p>
-              <p class="text-xs text-slate-600">Oncology</p>
-              <span
-                class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-md border border-sky-200 bg-sky-100">
-                MEDICAL ONCOLOGY
-              </span>
-              <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-                class="text-blue-600 underline text-sm">Ask on WhatsApp →</a>
+
+
+              <div class="flex items-center gap-2 mt-3">
+
+                <span class="
+        w-2
+        h-2
+        rounded-full
+        bg-[#22C55E]
+        ring-4
+        ring-green-100">
+                </span>
+
+
+                <span class="
+        text-[11px]
+        font-bold
+        tracking-wide
+        text-green-700">
+                  MEDICAL ONCOLOGY
+                </span>
+
+              </div>
+
+
+              <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener" class="
+      mt-5
+      inline-flex
+      items-center
+      justify-center
+      gap-2
+      w-fit
+      px-4
+      py-2
+      rounded-lg
+      bg-[#22C55E]
+      text-white
+      text-xs
+      font-semibold
+      shadow-sm
+      shadow-green-200
+      hover:bg-[#16A34A]
+      transition-all
+      duration-300">
+
+                Consult on WhatsApp
+                <span class="text-sm">→</span>
+
+              </a>
+
             </div>
-            <!-- Right: Doctor Image -->
-            <div class="shrink-0">
-              <img src="./public/onco/webp/dr-rahul-bhargava.webp" alt="Dr.Rahul Bhargava"
-                class="w-20 md:w-[100px] h-[8rem] object-cover rounded-xl border border-sky-200" />
+
+
+
+            <!-- Image Section -->
+            <div class="
+    relative
+    flex
+    items-end
+    shrink-0">
+
+
+              <div class="
+      absolute
+      bottom-0
+      right-0
+      w-28
+      h-28
+      rounded-full
+      bg-green-50
+      group-hover:bg-green-100
+      transition">
+              </div>
+
+
+              <img src="./public/onco/webp/dr-rahul-bhargava.webp" alt="Dr. Rahul Bhargava" class="
+      relative
+      w-[100px]
+      h-[130px]
+      object-cover
+      object-top
+      rounded-xl
+      border-2
+      border-white
+      shadow-md
+      z-10
+      group-hover:scale-105
+      transition-transform
+      duration-300" />
+
             </div>
+
+
           </div>
         </div>
 
         <!-- ================= Cardiac ================= -->
         <div class="mt-10">
-          <div class="flex flex-wrap items-end justify-between gap-3 mb-4">
+          <div id="cardiac" class="flex flex-wrap items-end justify-between gap-3 mb-4">
             <h4 class="text-lg font-semibold">Cardiac Sciences</h4>
             <span class="text-xs text-slate-600 border border-slate-200 bg-white px-3 py-1.5 rounded-md">
               Department: Cardiology / Cardiac Surgery
             </span>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div class="rounded-md border border-blue-200 bg-blue-50 p-3 flex items-center justify-between gap-2">
-              <!-- Left: Text Content -->
-              <div class="flex flex-col space-y-2">
-                <p class="font-bold text-md mb-1">Dr Nikhil Kumar</p>
-                <p class="text-xs text-slate-600">Cardiac Sciences</p>
-                <span
-                  class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-md border border-blue-200 bg-blue-100">
-                  Interventional Cardiologist
-                </span>
-                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-                  class="text-blue-600 underline text-sm">Ask on WhatsApp →</a>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="
+  group
+  relative
+  bg-white
+  rounded-2xl
+  border border-slate-200
+  overflow-hidden
+  flex items-center
+  justify-between
+  gap-4
+  p-5
+  shadow-[0_4px_20px_rgba(15,23,42,0.05)]
+  hover:shadow-[0_10px_30px_rgba(34,197,94,0.15)]
+  hover:border-green-200
+  transition-all duration-300
+  ">
+
+
+              <!-- Doctor Info -->
+              <div class="flex flex-col">
+
+                <h3 class="
+      text-[17px]
+      font-bold
+      text-slate-900
+      leading-snug">
+                  Dr Nikhil Kumar
+                </h3>
+
+
+                <p class="
+      mt-1
+      text-sm
+      text-slate-500">
+                  Cardiac Sciences
+                </p>
+
+
+                <div class="flex items-center gap-2 mt-3">
+
+                  <span class="
+        w-2
+        h-2
+        rounded-full
+        bg-[#22C55E]
+        ring-4
+        ring-green-100">
+                  </span>
+
+
+                  <span class="
+        text-[11px]
+        font-bold
+        tracking-wide
+        text-green-700">
+                    INTERVENTIONAL CARDIOLOGIST
+                  </span>
+
+                </div>
+
+
+                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener" class="
+      mt-5
+      inline-flex
+      items-center
+      justify-center
+      gap-2
+      w-fit
+      px-4
+      py-2
+      rounded-lg
+      bg-[#22C55E]
+      text-white
+      text-xs
+      font-semibold
+      shadow-sm
+      shadow-green-200
+      hover:bg-[#16A34A]
+      transition-all
+      duration-300">
+
+                  Consult on WhatsApp
+                  <span class="text-sm">→</span>
+
+                </a>
+
               </div>
-              <!-- Right: Doctor Image -->
-              <div class="shrink-0">
-                <img src="./public/Cardio/webp/Dr Nikhil Kumar.webp" alt="Dr. Nisha Thomas"
-                  class="w-20 md:w-[100px] h-[8rem] object-cover rounded-xl border border-sky-200" />
+
+
+
+              <!-- Image Section -->
+              <div class="
+    relative
+    flex
+    items-end
+    shrink-0">
+
+
+                <div class="
+      absolute
+      bottom-0
+      right-0
+      w-28
+      h-28
+      rounded-full
+      bg-green-50
+      group-hover:bg-green-100
+      transition">
+                </div>
+
+
+                <img src="./public/Cardio/webp/Dr Nikhil Kumar.webp" alt="Dr Nikhil Kumar" class="
+      relative
+      w-[100px]
+      h-[130px]
+      object-cover
+      object-top
+      rounded-xl
+      border-2
+      border-white
+      shadow-md
+      z-10
+      group-hover:scale-105
+      transition-transform
+      duration-300" />
+
               </div>
+
+
+            </div>
+            <div class="
+  group
+  relative
+  bg-white
+  rounded-2xl
+  border border-slate-200
+  overflow-hidden
+  flex items-center
+  justify-between
+  gap-4
+  p-5
+  shadow-[0_4px_20px_rgba(15,23,42,0.05)]
+  hover:shadow-[0_10px_30px_rgba(34,197,94,0.15)]
+  hover:border-green-200
+  transition-all duration-300
+  ">
+
+
+              <!-- Doctor Info -->
+              <div class="flex flex-col">
+
+                <h3 class="
+      text-[17px]
+      font-bold
+      text-slate-900
+      leading-snug">
+                  Dr. Vinayak Agarwal
+                </h3>
+
+
+                <p class="
+      mt-1
+      text-sm
+      text-slate-500">
+                  Cardiac Sciences
+                </p>
+
+
+                <div class="flex items-center gap-2 mt-3">
+
+                  <span class="
+        w-2
+        h-2
+        rounded-full
+        bg-[#22C55E]
+        ring-4
+        ring-green-100">
+                  </span>
+
+
+                  <span class="
+        text-[11px]
+        font-bold
+        tracking-wide
+        text-green-700">
+                    INTERVENTIONAL CARDIOLOGIST
+                  </span>
+
+                </div>
+
+
+                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener" class="
+      mt-5
+      inline-flex
+      items-center
+      justify-center
+      gap-2
+      w-fit
+      px-4
+      py-2
+      rounded-lg
+      bg-[#22C55E]
+      text-white
+      text-xs
+      font-semibold
+      shadow-sm
+      shadow-green-200
+      hover:bg-[#16A34A]
+      transition-all
+      duration-300">
+
+                  Consult on WhatsApp
+                  <span class="text-sm">→</span>
+
+                </a>
+
+              </div>
+
+
+
+              <!-- Image Section -->
+              <div class="
+    relative
+    flex
+    items-end
+    shrink-0">
+
+
+                <div class="
+      absolute
+      bottom-0
+      right-0
+      w-28
+      h-28
+      rounded-full
+      bg-green-50
+      group-hover:bg-green-100
+      transition">
+                </div>
+
+
+                <img src="./public/Cardio/webp/dr-vinayak-agarwal.webp" alt="Dr. Vinayak Agarwal" class="
+      relative
+      w-[100px]
+      h-[130px]
+      object-cover
+      object-top
+      rounded-xl
+      border-2
+      border-white
+      shadow-md
+      z-10
+      group-hover:scale-105
+      transition-transform
+      duration-300" />
+
+              </div>
+
+
+            </div>
+            <div class="
+  group
+  relative
+  bg-white
+  rounded-2xl
+  border border-slate-200
+  overflow-hidden
+  flex items-center
+  justify-between
+  gap-4
+  p-5
+  shadow-[0_4px_20px_rgba(15,23,42,0.05)]
+  hover:shadow-[0_10px_30px_rgba(34,197,94,0.15)]
+  hover:border-green-200
+  transition-all duration-300
+  ">
+
+
+              <!-- Doctor Info -->
+              <div class="flex flex-col">
+
+                <h3 class="
+      text-[17px]
+      font-bold
+      text-slate-900
+      leading-snug">
+                  Dr. Udgeath Dhir
+                </h3>
+
+
+                <p class="
+      mt-1
+      text-sm
+      text-slate-500">
+                  Cardiac Sciences
+                </p>
+
+
+                <div class="flex items-center gap-2 mt-3">
+
+                  <span class="
+        w-2
+        h-2
+        rounded-full
+        bg-[#22C55E]
+        ring-4
+        ring-green-100">
+                  </span>
+
+
+                  <span class="
+        text-[11px]
+        font-bold
+        tracking-wide
+        text-green-700">
+                    INTERVENTIONAL CARDIOLOGIST
+                  </span>
+
+                </div>
+
+
+                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener" class="
+      mt-5
+      inline-flex
+      items-center
+      justify-center
+      gap-2
+      w-fit
+      px-4
+      py-2
+      rounded-lg
+      bg-[#22C55E]
+      text-white
+      text-xs
+      font-semibold
+      shadow-sm
+      shadow-green-200
+      hover:bg-[#16A34A]
+      transition-all
+      duration-300">
+
+                  Consult on WhatsApp
+                  <span class="text-sm">→</span>
+
+                </a>
+
+              </div>
+
+
+
+              <!-- Image Section -->
+              <div class="
+    relative
+    flex
+    items-end
+    shrink-0">
+
+
+                <div class="
+      absolute
+      bottom-0
+      right-0
+      w-28
+      h-28
+      rounded-full
+      bg-green-50
+      group-hover:bg-green-100
+      transition">
+                </div>
+
+
+                <img src="./public/Cardio/webp/Dr. UdgeathDhir.webp" alt="Dr. Udgeath Dhir" class="
+      relative
+      w-[100px]
+      h-[130px]
+      object-cover
+      object-top
+      rounded-xl
+      border-2
+      border-white
+      shadow-md
+      z-10
+      group-hover:scale-105
+      transition-transform
+      duration-300" />
+
+              </div>
+
+
             </div>
 
-            <div class="rounded-md border border-sky-200 bg-sky-50 p-3 flex items-center justify-between gap-2">
-              <!-- Left: Text Content -->
-              <div class="flex flex-col space-y-2">
-                <p class="font-bold text-md mb-1">Dr. Vinayak Agarwal</p>
-                <p class="text-xs text-slate-600">Cardiac Sciences</p>
-                <span
-                  class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-md border border-sky-200 bg-sky-100">
-                  Interventional Cardiologist
-                </span>
-                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-                  class="text-blue-600 underline text-sm">Ask on WhatsApp →</a>
-              </div>
-              <!-- Right: Doctor Image -->
-              <div class="shrink-0">
-                <img src="./public/Cardio/webp/dr-vinayak-agarwal.webp" alt="Dr. Vinayak Agarwal"
-                  class="w-20 md:w-[100px] h-[8rem] object-cover rounded-xl border border-sky-200" />
-              </div>
-            </div>
+            <div class="
+  group
+  relative
+  bg-white
+  rounded-2xl
+  border border-slate-200
+  overflow-hidden
+  flex items-center
+  justify-between
+  gap-4
+  p-5
+  shadow-[0_4px_20px_rgba(15,23,42,0.05)]
+  hover:shadow-[0_10px_30px_rgba(34,197,94,0.15)]
+  hover:border-green-200
+  transition-all duration-300
+  ">
 
-            <div class="rounded-md border border-blue-200 bg-blue-50 p-3 flex items-center justify-between gap-2">
-              <!-- Left: Text Content -->
-              <div class="flex flex-col space-y-2">
-                <p class="font-bold text-md mb-1">Dr. Udgeath Dhir</p>
-                <p class="text-xs text-slate-600">Cardiac Sciences</p>
-                <span
-                  class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-md border border-blue-200 bg-blue-100">
-                  Interventional Cardiologist
-                </span>
-                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-                  class="text-blue-600 underline text-sm">Ask on WhatsApp →</a>
-              </div>
-              <!-- Right: Doctor Image -->
-              <div class="shrink-0">
-                <img src="./public/Cardio/webp/Dr. UdgeathDhir.webp" alt="Dr. Udgeath Dhir"
-                  class="w-20 md:w-[100px] h-[8rem] object-cover rounded-xl border border-sky-200" />
-              </div>
-            </div>
 
-            <div class="rounded-md border border-sky-200 bg-sky-50 p-3 flex items-center justify-between gap-2">
-              <!-- Left: Text Content -->
-              <div class="flex flex-col space-y-2">
-                <p class="font-bold text-md mb-1">Dr Manjinder Sandhu</p>
-                <p class="text-xs text-slate-600">Cardiac Sciences</p>
-                <span
-                  class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-md border border-sky-200 bg-sky-100">
-                  Interventional Cardiologist
-                </span>
-                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-                  class="text-blue-600 underline text-sm">Ask on WhatsApp →</a>
+              <!-- Doctor Info -->
+              <div class="flex flex-col">
+
+                <h3 class="
+      text-[17px]
+      font-bold
+      text-slate-900
+      leading-snug">
+                  Dr Manjinder Sandhu
+                </h3>
+
+
+                <p class="
+      mt-1
+      text-sm
+      text-slate-500">
+                  Cardiac Sciences
+                </p>
+
+
+                <div class="flex items-center gap-2 mt-3">
+
+                  <span class="
+        w-2
+        h-2
+        rounded-full
+        bg-[#22C55E]
+        ring-4
+        ring-green-100">
+                  </span>
+
+
+                  <span class="
+        text-[11px]
+        font-bold
+        tracking-wide
+        text-green-700">
+                    INTERVENTIONAL CARDIOLOGIST
+                  </span>
+
+                </div>
+
+
+                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener" class="
+      mt-5
+      inline-flex
+      items-center
+      justify-center
+      gap-2
+      w-fit
+      px-4
+      py-2
+      rounded-lg
+      bg-[#22C55E]
+      text-white
+      text-xs
+      font-semibold
+      shadow-sm
+      shadow-green-200
+      hover:bg-[#16A34A]
+      transition-all
+      duration-300">
+
+                  Consult on WhatsApp
+                  <span class="text-sm">→</span>
+
+                </a>
+
               </div>
-              <!-- Right: Doctor Image -->
-              <div class="shrink-0">
-                <img src="./public/Cardio/webp/dr-(col)-manjinder-sandhu.webp" alt="Dr Manjinder Sandhu<"
-                  class="w-20 md:w-[100px] h-[8rem] object-cover rounded-xl border border-sky-200" />
+
+
+
+              <!-- Image Section -->
+              <div class="
+    relative
+    flex
+    items-end
+    shrink-0">
+
+
+                <div class="
+      absolute
+      bottom-0
+      right-0
+      w-28
+      h-28
+      rounded-full
+      bg-green-50
+      group-hover:bg-green-100
+      transition">
+                </div>
+
+
+                <img src="./public/Cardio/webp/dr-(col)-manjinder-sandhu.webp" alt="Dr Manjinder Sandhu" class="
+      relative
+      w-[100px]
+      h-[130px]
+      object-cover
+      object-top
+      rounded-xl
+      border-2
+      border-white
+      shadow-md
+      z-10
+      group-hover:scale-105
+      transition-transform
+      duration-300" />
+
               </div>
+
+
             </div>
           </div>
         </div>
 
         <!-- ================= Orthopaedics ================= -->
         <div class="mt-10">
-          <div class="flex flex-wrap items-end justify-between gap-3 mb-4">
+          <div id="ortho" class="flex flex-wrap items-end justify-between gap-3 mb-4">
             <h4 class="text-lg font-semibold">
               Orthopaedics & Joint Replacement
             </h4>
@@ -703,78 +2611,529 @@
             </span>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div class="rounded-md border border-blue-200 bg-blue-50 p-3 flex items-center justify-between gap-2">
-              <!-- Left: Text Content -->
-              <div class="flex flex-col space-y-2">
-                <p class="font-bold text-md mb-1">Dr Manoj Padman</p>
-                <p class="text-xs text-slate-600">Orthopaedics</p>
-                <span
-                  class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-md border border-blue-200 bg-blue-100">
-                  Orthopedics/Orthopedic Surgery
-                </span>
-                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-                  class="text-blue-600 underline text-sm">Ask on WhatsApp →</a>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="
+  group
+  relative
+  bg-white
+  rounded-2xl
+  border border-slate-200
+  overflow-hidden
+  flex items-center
+  justify-between
+  gap-4
+  p-5
+  shadow-[0_4px_20px_rgba(15,23,42,0.05)]
+  hover:shadow-[0_10px_30px_rgba(34,197,94,0.15)]
+  hover:border-green-200
+  transition-all duration-300
+  ">
+
+
+              <!-- Doctor Info -->
+              <div class="flex flex-col">
+
+                <h3 class="
+      text-[17px]
+      font-bold
+      text-slate-900
+      leading-snug">
+                  Dr Manoj Padman
+                </h3>
+
+
+                <p class="
+      mt-1
+      text-sm
+      text-slate-500">
+                  Orthopaedics
+                </p>
+
+
+                <div class="flex items-center gap-2 mt-3">
+
+                  <span class="
+        w-2
+        h-2
+        rounded-full
+        bg-[#22C55E]
+        ring-4
+        ring-green-100">
+                  </span>
+
+
+                  <span class="
+        text-[11px]
+        font-bold
+        tracking-wide
+        text-green-700">
+                    ORTHOPEDICS / ORTHOPEDIC SURGERY
+                  </span>
+
+                </div>
+
+
+                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener" class="
+      mt-5
+      inline-flex
+      items-center
+      justify-center
+      gap-2
+      w-fit
+      px-4
+      py-2
+      rounded-lg
+      bg-[#22C55E]
+      text-white
+      text-xs
+      font-semibold
+      shadow-sm
+      shadow-green-200
+      hover:bg-[#16A34A]
+      transition-all
+      duration-300">
+
+                  Consult on WhatsApp
+                  <span class="text-sm">→</span>
+
+                </a>
+
               </div>
-              <!-- Right: Doctor Image -->
-              <div class="shrink-0">
-                <img src="./public/ortho/webp/Dr Manoj Padman.webp" alt="Dr Manoj Padman"
-                  class="w-20 md:w-[100px] h-[8rem] object-cover rounded-xl border border-sky-200" />
+
+
+
+              <!-- Image Section -->
+              <div class="
+    relative
+    flex
+    items-end
+    shrink-0">
+
+
+                <div class="
+      absolute
+      bottom-0
+      right-0
+      w-28
+      h-28
+      rounded-full
+      bg-green-50
+      group-hover:bg-green-100
+      transition">
+                </div>
+
+
+                <img src="./public/ortho/webp/Dr Manoj Padman.webp" alt="Dr Manoj Padman" class="
+      relative
+      w-[100px]
+      h-[130px]
+      object-cover
+      object-top
+      rounded-xl
+      border-2
+      border-white
+      shadow-md
+      z-10
+      group-hover:scale-105
+      transition-transform
+      duration-300" />
+
               </div>
+
+
             </div>
 
-            <div class="rounded-md border border-sky-200 bg-sky-50 p-3 flex items-center justify-between gap-2">
-              <!-- Left: Text Content -->
-              <div class="flex flex-col space-y-2">
-                <p class="font-bold text-md mb-1">Dr. Jayant Arora</p>
-                <p class="text-xs text-slate-600">Orthopaedics</p>
-                <span class="block mt-3 text-xs font-semibold px-3 py-1 rounded-md border border-sky-200 bg-sky-100">
-                  Orthopedic Surgery
-                </span>
-                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-                  class="text-blue-600 underline text-sm">Ask on WhatsApp →</a>
+            <div class="
+  group
+  relative
+  bg-white
+  rounded-2xl
+  border border-slate-200
+  overflow-hidden
+  flex items-center
+  justify-between
+  gap-4
+  p-5
+  shadow-[0_4px_20px_rgba(15,23,42,0.05)]
+  hover:shadow-[0_10px_30px_rgba(34,197,94,0.15)]
+  hover:border-green-200
+  transition-all duration-300
+  ">
+
+
+              <!-- Doctor Info -->
+              <div class="flex flex-col">
+
+                <h3 class="
+      text-[17px]
+      font-bold
+      text-slate-900
+      leading-snug">
+                  Dr. Jayant Arora
+                </h3>
+
+
+                <p class="
+      mt-1
+      text-sm
+      text-slate-500">
+                  Orthopaedics
+                </p>
+
+
+                <div class="flex items-center gap-2 mt-3">
+
+                  <span class="
+        w-2
+        h-2
+        rounded-full
+        bg-[#22C55E]
+        ring-4
+        ring-green-100">
+                  </span>
+
+
+                  <span class="
+        text-[11px]
+        font-bold
+        tracking-wide
+        text-green-700">
+                    ORTHOPEDIC SURGERY
+                  </span>
+
+                </div>
+
+
+                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener" class="
+      mt-5
+      inline-flex
+      items-center
+      justify-center
+      gap-2
+      w-fit
+      px-4
+      py-2
+      rounded-lg
+      bg-[#22C55E]
+      text-white
+      text-xs
+      font-semibold
+      shadow-sm
+      shadow-green-200
+      hover:bg-[#16A34A]
+      transition-all
+      duration-300">
+
+                  Consult on WhatsApp
+                  <span class="text-sm">→</span>
+
+                </a>
+
               </div>
-              <!-- Right: Doctor Image -->
-              <div class="shrink-0">
-                <img src="./public/ortho/webp/Dr. Jayant Arora.webp" alt="Dr. Jayant Arora"
-                  class="w-20 md:w-[100px] h-[8rem] object-cover rounded-xl border border-sky-200" />
+
+
+
+              <!-- Image Section -->
+              <div class="
+    relative
+    flex
+    items-end
+    shrink-0">
+
+
+                <div class="
+      absolute
+      bottom-0
+      right-0
+      w-28
+      h-28
+      rounded-full
+      bg-green-50
+      group-hover:bg-green-100
+      transition">
+                </div>
+
+
+                <img src="./public/ortho/webp/Dr. Jayant Arora.webp" alt="Dr. Jayant Arora" class="
+      relative
+      w-[100px]
+      h-[130px]
+      object-cover
+      object-top
+      rounded-xl
+      border-2
+      border-white
+      shadow-md
+      z-10
+      group-hover:scale-105
+      transition-transform
+      duration-300" />
+
               </div>
+
+
             </div>
 
-            <div class="rounded-md border border-blue-200 bg-blue-50 p-3 flex items-center justify-between gap-2">
-              <!-- Left: Text Content -->
-              <div class="flex flex-col space-y-2">
-                <p class="font-bold text-md mb-1">Dr Monu Singh</p>
-                <p class="text-xs text-slate-600">Orthopaedics</p>
-                <span class="block mt-3 text-xs font-semibold px-3 py-1 rounded-md border border-blue-200 bg-blue-100">
-                  Orthopedic Surgery
-                </span>
-                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-                  class="text-blue-600 underline text-sm">Ask on WhatsApp →</a>
+            <div class="
+  group
+  relative
+  bg-white
+  rounded-2xl
+  border border-slate-200
+  overflow-hidden
+  flex items-center
+  justify-between
+  gap-4
+  p-5
+  shadow-[0_4px_20px_rgba(15,23,42,0.05)]
+  hover:shadow-[0_10px_30px_rgba(34,197,94,0.15)]
+  hover:border-green-200
+  transition-all duration-300
+  ">
+
+
+              <!-- Doctor Info -->
+              <div class="flex flex-col">
+
+                <h3 class="
+      text-[17px]
+      font-bold
+      text-slate-900
+      leading-snug">
+                  Dr Monu Singh
+                </h3>
+
+
+                <p class="
+      mt-1
+      text-sm
+      text-slate-500">
+                  Orthopaedics
+                </p>
+
+
+                <div class="flex items-center gap-2 mt-3">
+
+                  <span class="
+        w-2
+        h-2
+        rounded-full
+        bg-[#22C55E]
+        ring-4
+        ring-green-100">
+                  </span>
+
+
+                  <span class="
+        text-[11px]
+        font-bold
+        tracking-wide
+        text-green-700">
+                    ORTHOPEDIC SURGERY
+                  </span>
+
+                </div>
+
+
+                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener" class="
+      mt-5
+      inline-flex
+      items-center
+      justify-center
+      gap-2
+      w-fit
+      px-4
+      py-2
+      rounded-lg
+      bg-[#22C55E]
+      text-white
+      text-xs
+      font-semibold
+      shadow-sm
+      shadow-green-200
+      hover:bg-[#16A34A]
+      transition-all
+      duration-300">
+
+                  Consult on WhatsApp
+                  <span class="text-sm">→</span>
+
+                </a>
+
               </div>
-              <!-- Right: Doctor Image -->
-              <div class="shrink-0">
-                <img src="./public/ortho/webp/dr-monu-singh.webp" alt="Dr Monu Singh"
-                  class="w-20 md:w-[100px] h-[8rem] object-cover rounded-xl border border-sky-200" />
+
+
+
+              <!-- Image Section -->
+              <div class="
+    relative
+    flex
+    items-end
+    shrink-0">
+
+
+                <div class="
+      absolute
+      bottom-0
+      right-0
+      w-28
+      h-28
+      rounded-full
+      bg-green-50
+      group-hover:bg-green-100
+      transition">
+                </div>
+
+
+                <img src="./public/ortho/webp/dr-monu-singh.webp" alt="Dr Monu Singh" class="
+      relative
+      w-[100px]
+      h-[130px]
+      object-cover
+      object-top
+      rounded-xl
+      border-2
+      border-white
+      shadow-md
+      z-10
+      group-hover:scale-105
+      transition-transform
+      duration-300" />
+
               </div>
+
+
             </div>
 
-            <div class="rounded-md border border-sky-200 bg-sky-50 p-3 flex items-center justify-between gap-2">
-              <!-- Left: Text Content -->
-              <div class="flex flex-col space-y-2">
-                <p class="font-bold text-md mb-1">Dr. Subhash Janghid</p>
-                <p class="text-xs text-slate-600">Orthopaedics</p>
-                <span class="block mt-3 text-xs font-semibold px-3 py-1 rounded-md border border-sky-200 bg-sky-100">
-                  Orthopedic Surgery
-                </span>
-                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-                  class="text-blue-600 underline text-sm">Ask on WhatsApp →</a>
+            <div class="
+  group
+  relative
+  bg-white
+  rounded-2xl
+  border border-slate-200
+  overflow-hidden
+  flex items-center
+  justify-between
+  gap-4
+  p-5
+  shadow-[0_4px_20px_rgba(15,23,42,0.05)]
+  hover:shadow-[0_10px_30px_rgba(34,197,94,0.15)]
+  hover:border-green-200
+  transition-all duration-300
+  ">
+
+
+              <!-- Doctor Info -->
+              <div class="flex flex-col">
+
+                <h3 class="
+      text-[17px]
+      font-bold
+      text-slate-900
+      leading-snug">
+                  Dr. Subhash Janghid
+                </h3>
+
+
+                <p class="
+      mt-1
+      text-sm
+      text-slate-500">
+                  Orthopaedics
+                </p>
+
+
+                <div class="flex items-center gap-2 mt-3">
+
+                  <span class="
+        w-2
+        h-2
+        rounded-full
+        bg-[#22C55E]
+        ring-4
+        ring-green-100">
+                  </span>
+
+
+                  <span class="
+        text-[11px]
+        font-bold
+        tracking-wide
+        text-green-700">
+                    ORTHOPEDIC SURGERY
+                  </span>
+
+                </div>
+
+
+                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener" class="
+      mt-5
+      inline-flex
+      items-center
+      justify-center
+      gap-2
+      w-fit
+      px-4
+      py-2
+      rounded-lg
+      bg-[#22C55E]
+      text-white
+      text-xs
+      font-semibold
+      shadow-sm
+      shadow-green-200
+      hover:bg-[#16A34A]
+      transition-all
+      duration-300">
+
+                  Consult on WhatsApp
+                  <span class="text-sm">→</span>
+
+                </a>
+
               </div>
-              <!-- Right: Doctor Image -->
-              <div class="shrink-0">
-                <img src="./public/ortho/webp/Subhash Janghid.webp" alt="Dr. Nisha Thomas"
-                  class="w-20 md:w-[100px] h-[8rem] object-cover rounded-xl border border-sky-200" />
+
+
+
+              <!-- Image Section -->
+              <div class="
+    relative
+    flex
+    items-end
+    shrink-0">
+
+
+                <div class="
+      absolute
+      bottom-0
+      right-0
+      w-28
+      h-28
+      rounded-full
+      bg-green-50
+      group-hover:bg-green-100
+      transition">
+                </div>
+
+
+                <img src="./public/ortho/webp/Subhash Janghid.webp" alt="Dr. Subhash Janghid" class="
+      relative
+      w-[100px]
+      h-[130px]
+      object-cover
+      object-top
+      rounded-xl
+      border-2
+      border-white
+      shadow-md
+      z-10
+      group-hover:scale-105
+      transition-transform
+      duration-300" />
+
               </div>
+
+
             </div>
 
 
@@ -783,92 +3142,536 @@
 
         <!-- ================= Neuro Sciences ================= -->
         <div class="mt-10">
-          <div class="flex flex-wrap items-end justify-between gap-3 mb-4">
+          <div id="neuro" class="flex flex-wrap items-end justify-between gap-3 mb-4">
             <h4 class="text-lg font-semibold">Neurology & Neurosurgery</h4>
             <span class="text-xs text-slate-600 border border-slate-200 bg-white px-3 py-1.5 rounded-md">
               Department: Neuro Sciences
             </span>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div class="rounded-md border border-blue-200 bg-blue-50 p-3 flex items-center justify-between gap-2">
-              <!-- Left: Text Content -->
-              <div class="flex flex-col space-y-2">
-                <p class="font-bold text-md mb-1">Dr Praveen Gupta
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="
+  group
+  relative
+  bg-white
+  rounded-2xl
+  border border-slate-200
+  overflow-hidden
+  flex items-center
+  justify-between
+  gap-4
+  p-5
+  shadow-[0_4px_20px_rgba(15,23,42,0.05)]
+  hover:shadow-[0_10px_30px_rgba(34,197,94,0.15)]
+  hover:border-green-200
+  transition-all duration-300
+  ">
+
+
+              <!-- Doctor Info -->
+              <div class="flex flex-col">
+
+                <h3 class="
+      text-[17px]
+      font-bold
+      text-slate-900
+      leading-snug">
+                  Dr Praveen Gupta
+                </h3>
+
+
+                <p class="
+      mt-1
+      text-sm
+      text-slate-500">
+                  Neuro Sciences
                 </p>
-                <p class="text-xs text-slate-600">Neuro Sciences</p>
-                <span
-                  class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-md border border-blue-200 bg-blue-100">
-                  MBBS, MD - General Medicine
-                </span>
-                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-                  class="text-blue-600 underline text-sm">Ask on WhatsApp →</a>
+
+
+                <div class="flex items-center gap-2 mt-3">
+
+                  <span class="
+        w-2
+        h-2
+        rounded-full
+        bg-[#22C55E]
+        ring-4
+        ring-green-100">
+                  </span>
+
+
+                  <span class="
+        text-[11px]
+        font-bold
+        tracking-wide
+        text-green-700">
+                    MBBS, MD - GENERAL MEDICINE
+                  </span>
+
+                </div>
+
+
+                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener" class="
+      mt-5
+      inline-flex
+      items-center
+      justify-center
+      gap-2
+      w-fit
+      px-4
+      py-2
+      rounded-lg
+      bg-[#22C55E]
+      text-white
+      text-xs
+      font-semibold
+      shadow-sm
+      shadow-green-200
+      hover:bg-[#16A34A]
+      transition-all
+      duration-300">
+
+                  Consult on WhatsApp
+                  <span class="text-sm">→</span>
+
+                </a>
+
               </div>
-              <!-- Right: Doctor Image -->
-              <div class="shrink-0">
-                <img src="./public/Neuro/webp/Dr Praveen Gupta.webp" alt="Dr Praveen Gupta"
-                  class="w-20 md:w-[100px] h-[8rem] object-cover rounded-xl border border-sky-200" />
+
+
+
+              <!-- Image Section -->
+              <div class="
+    relative
+    flex
+    items-end
+    shrink-0">
+
+
+                <div class="
+      absolute
+      bottom-0
+      right-0
+      w-28
+      h-28
+      rounded-full
+      bg-green-50
+      group-hover:bg-green-100
+      transition">
+                </div>
+
+
+                <img src="./public/Neuro/webp/Dr Praveen Gupta.webp" alt="Dr Praveen Gupta" class="
+      relative
+      w-[100px]
+      h-[130px]
+      object-cover
+      object-top
+      rounded-xl
+      border-2
+      border-white
+      shadow-md
+      z-10
+      group-hover:scale-105
+      transition-transform
+      duration-300" />
+
               </div>
+
+
             </div>
 
-            <div class="rounded-md border border-sky-200 bg-sky-50 p-3 flex items-center justify-between gap-2">
-              <!-- Left: Text Content -->
-              <div class="flex flex-col space-y-2">
-                <p class="font-bold text-md mb-1">Dr Saurabh Yatish Bansal
+            <div class="
+  group
+  relative
+  bg-white
+  rounded-2xl
+  border border-slate-200
+  overflow-hidden
+  flex items-center
+  justify-between
+  gap-4
+  p-5
+  shadow-[0_4px_20px_rgba(15,23,42,0.05)]
+  hover:shadow-[0_10px_30px_rgba(34,197,94,0.15)]
+  hover:border-green-200
+  transition-all duration-300
+  ">
+
+
+              <!-- Doctor Info -->
+              <div class="flex flex-col">
+
+                <h3 class="
+      text-[17px]
+      font-bold
+      text-slate-900
+      leading-snug">
+                  Dr Saurabh Yatish Bansal
+                </h3>
+
+
+                <p class="
+      mt-1
+      text-sm
+      text-slate-500">
+                  Neuro Sciences
                 </p>
-                <p class="text-xs text-slate-600">Neuro Sciences</p>
-                <span
-                  class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-md border border-sky-200 bg-sky-100">
-                  MBBS, MD - General Medicine
-                </span>
-                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-                  class="text-blue-600 underline text-sm">Ask on WhatsApp →</a>
+
+
+                <div class="flex items-center gap-2 mt-3">
+
+                  <span class="
+        w-2
+        h-2
+        rounded-full
+        bg-[#22C55E]
+        ring-4
+        ring-green-100">
+                  </span>
+
+
+                  <span class="
+        text-[11px]
+        font-bold
+        tracking-wide
+        text-green-700">
+                    MBBS, MD - GENERAL MEDICINE
+                  </span>
+
+                </div>
+
+
+                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener" class="
+      mt-5
+      inline-flex
+      items-center
+      justify-center
+      gap-2
+      w-fit
+      px-4
+      py-2
+      rounded-lg
+      bg-[#22C55E]
+      text-white
+      text-xs
+      font-semibold
+      shadow-sm
+      shadow-green-200
+      hover:bg-[#16A34A]
+      transition-all
+      duration-300">
+
+                  Consult on WhatsApp
+                  <span class="text-sm">→</span>
+
+                </a>
+
               </div>
-              <!-- Right: Doctor Image -->
-              <div class="shrink-0">
-                <img src="./public/Neuro/webp/dr-saurabh-yatish-bansal.webp" alt="Dr. Charu Gauba"
-                  class="w-20 md:w-[100px] h-[8rem] object-cover rounded-xl border border-sky-200" />
+
+
+
+              <!-- Image Section -->
+              <div class="
+    relative
+    flex
+    items-end
+    shrink-0">
+
+
+                <div class="
+      absolute
+      bottom-0
+      right-0
+      w-28
+      h-28
+      rounded-full
+      bg-green-50
+      group-hover:bg-green-100
+      transition">
+                </div>
+
+
+                <img src="./public/Neuro/webp/dr-saurabh-yatish-bansal.webp" alt="Dr Saurabh Yatish Bansal" class="
+      relative
+      w-[100px]
+      h-[130px]
+      object-cover
+      object-top
+      rounded-xl
+      border-2
+      border-white
+      shadow-md
+      z-10
+      group-hover:scale-105
+      transition-transform
+      duration-300" />
+
               </div>
+
+
             </div>
 
-            <div class="rounded-md border border-blue-200 bg-blue-50 p-3 flex items-center justify-between gap-2">
-              <!-- Left: Text Content -->
-              <div class="flex flex-col space-y-2">
-                <p class="font-bold text-md mb-1">Dr. Vikas Sharma
+            <div class="
+  group
+  relative
+  bg-white
+  rounded-2xl
+  border border-slate-200
+  overflow-hidden
+  flex items-center
+  justify-between
+  gap-4
+  p-5
+  shadow-[0_4px_20px_rgba(15,23,42,0.05)]
+  hover:shadow-[0_10px_30px_rgba(34,197,94,0.15)]
+  hover:border-green-200
+  transition-all duration-300
+  ">
+
+
+              <!-- Doctor Info -->
+              <div class="flex flex-col">
+
+                <h3 class="
+      text-[17px]
+      font-bold
+      text-slate-900
+      leading-snug">
+                  Dr. Vikas Sharma
+                </h3>
+
+
+                <p class="
+      mt-1
+      text-sm
+      text-slate-500">
+                  Neuro Sciences
                 </p>
-                <p class="text-xs text-slate-600">Neuro Sciences</p>
-                <span
-                  class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-md border border-blue-200 bg-blue-100">
-                  MBBS, MD - General Medicine
-                </span>
-                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-                  class="text-blue-600 underline text-sm">Ask on WhatsApp →</a>
+
+
+                <div class="flex items-center gap-2 mt-3">
+
+                  <span class="
+        w-2
+        h-2
+        rounded-full
+        bg-[#22C55E]
+        ring-4
+        ring-green-100">
+                  </span>
+
+
+                  <span class="
+        text-[11px]
+        font-bold
+        tracking-wide
+        text-green-700">
+                    MBBS, MD - GENERAL MEDICINE
+                  </span>
+
+                </div>
+
+
+                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener" class="
+      mt-5
+      inline-flex
+      items-center
+      justify-center
+      gap-2
+      w-fit
+      px-4
+      py-2
+      rounded-lg
+      bg-[#22C55E]
+      text-white
+      text-xs
+      font-semibold
+      shadow-sm
+      shadow-green-200
+      hover:bg-[#16A34A]
+      transition-all
+      duration-300">
+
+                  Consult on WhatsApp
+                  <span class="text-sm">→</span>
+
+                </a>
+
               </div>
-              <!-- Right: Doctor Image -->
-              <div class="shrink-0">
-                <img src="./public/Neuro/webp/dr-vikas-sharma.webp" alt="Dr. Mukul Varma"
-                  class="w-20 md:w-[100px] h-[8rem] object-cover rounded-xl border border-sky-200" />
+
+
+
+              <!-- Image Section -->
+              <div class="
+    relative
+    flex
+    items-end
+    shrink-0">
+
+
+                <div class="
+      absolute
+      bottom-0
+      right-0
+      w-28
+      h-28
+      rounded-full
+      bg-green-50
+      group-hover:bg-green-100
+      transition">
+                </div>
+
+
+                <img src="./public/Neuro/webp/dr-vikas-sharma.webp" alt="Dr. Vikas Sharma" class="
+      relative
+      w-[100px]
+      h-[130px]
+      object-cover
+      object-top
+      rounded-xl
+      border-2
+      border-white
+      shadow-md
+      z-10
+      group-hover:scale-105
+      transition-transform
+      duration-300" />
+
               </div>
+
+
             </div>
 
-            <div class="rounded-md border border-sky-200 bg-sky-50 p-3 flex items-center justify-between gap-2">
-              <!-- Left: Text Content -->
-              <div class="flex flex-col space-y-2">
-                <p class="font-bold text-md mb-1">Dr. Rama Joshi
+            <div class="
+  group
+  relative
+  bg-white
+  rounded-2xl
+  border border-slate-200
+  overflow-hidden
+  flex items-center
+  justify-between
+  gap-4
+  p-5
+  shadow-[0_4px_20px_rgba(15,23,42,0.05)]
+  hover:shadow-[0_10px_30px_rgba(34,197,94,0.15)]
+  hover:border-green-200
+  transition-all duration-300
+  ">
+
+
+              <!-- Doctor Info -->
+              <div class="flex flex-col">
+
+                <h3 class="
+      text-[17px]
+      font-bold
+      text-slate-900
+      leading-snug">
+                  Dr. Rama Joshi
+                </h3>
+
+
+                <p class="
+      mt-1
+      text-sm
+      text-slate-500">
+                  Neuro Sciences
                 </p>
-                <p class="text-xs text-slate-600">Neuro Sciences</p>
-                <span
-                  class="inline-flex mt-3 text-xs font-semibold px-3 py-1 rounded-md border border-sky-200 bg-sky-100">
-                  MBBS, MD - General Medicine
-                </span>
-                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-                  class="text-blue-600 underline text-sm">Ask on WhatsApp →</a>
+
+
+                <div class="flex items-center gap-2 mt-3">
+
+                  <span class="
+        w-2
+        h-2
+        rounded-full
+        bg-[#22C55E]
+        ring-4
+        ring-green-100">
+                  </span>
+
+
+                  <span class="
+        text-[11px]
+        font-bold
+        tracking-wide
+        text-green-700">
+                    MBBS, MD - GENERAL MEDICINE
+                  </span>
+
+                </div>
+
+
+                <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener" class="
+      mt-5
+      inline-flex
+      items-center
+      justify-center
+      gap-2
+      w-fit
+      px-4
+      py-2
+      rounded-lg
+      bg-[#22C55E]
+      text-white
+      text-xs
+      font-semibold
+      shadow-sm
+      shadow-green-200
+      hover:bg-[#16A34A]
+      transition-all
+      duration-300">
+
+                  Consult on WhatsApp
+                  <span class="text-sm">→</span>
+
+                </a>
+
               </div>
-              <!-- Right: Doctor Image -->
-              <div class="shrink-0">
-                <img src="./public/Neuro/webp/dr-rama-joshi.webp" alt="Dr Pushpendra Nath"
-                  class="w-20 md:w-[100px] h-[8rem] object-cover rounded-xl border border-sky-200" />
+
+
+
+              <!-- Image Section -->
+              <div class="
+    relative
+    flex
+    items-end
+    shrink-0">
+
+
+                <div class="
+      absolute
+      bottom-0
+      right-0
+      w-28
+      h-28
+      rounded-full
+      bg-green-50
+      group-hover:bg-green-100
+      transition">
+                </div>
+
+
+                <img src="./public/Neuro/webp/dr-rama-joshi.webp" alt="Dr. Rama Joshi" class="
+      relative
+      w-[100px]
+      h-[130px]
+      object-cover
+      object-top
+      rounded-xl
+      border-2
+      border-white
+      shadow-md
+      z-10
+      group-hover:scale-105
+      transition-transform
+      duration-300" />
+
               </div>
+
+
             </div>
           </div>
         </div>
@@ -1215,7 +4018,7 @@
             WhatsApp is the fastest way to start.
           </p>
 
-          <a href="http://what.sapp.link/apollo-del" target="_blank" rel="noopener"
+          <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
             class="inline-flex items-center justify-center text-lg px-5 py-3 rounded-xl bg-green-600 text-white font-semibold shadow-lg hover:brightness-105">
             <i class="fab fa-whatsapp fa-1x mx-2" aria-hidden="true"></i>
             WhatsApp Now
@@ -1331,19 +4134,210 @@
 
 
     <!-- Sticky Mobile CTA -->
-    <div class="fixed left-0 right-0 bottom-0 z-50 bg-white bg-opacity-95 border-t border-gray-200 p-2 md:visible"
-      role="navigation" aria-label="Quick contact">
-      <div class="max-w-7xl mx-auto flex gap-2">
-        <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
-          class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-green-500 text-white rounded-lg shadow hover:brightness-105 text-lg">
-          <i class="fab fa-whatsapp fa-1x mx-2" aria-hidden="true"></i> WhatsApp
+    <!-- <div class="fixed right-5 bottom-5 z-50" role="navigation" aria-label="Quick contact">
+      <a href="https://what.sapp.link/fmri" target="_blank" rel="noopener"
+        class="group w-16 h-16 flex items-center justify-center bg-green-500 text-white rounded-full shadow-xl hover:bg-green-600 hover:scale-110 transition-all duration-300">
+        <i class="fab fa-whatsapp text-4xl" aria-hidden="true"></i>
+      </a>
+    </div> -->
+
+    <div id="supportDrawer" class="fixed z-50
+            bottom-2
+            left-2
+            right-2
+            sm:left-auto
+            sm:right-5
+            sm:w-80
+            max-w-[calc(100vw-16px)]
+            bg-white
+            rounded-xl
+            shadow-xl
+            overflow-hidden
+            border border-gray-100
+            transition-all duration-500">
+
+
+      <!-- Small Box -->
+      <div id="smallBox" class="p-3 sm:p-5
+                bg-gradient-to-r
+                from-green-500
+                to-emerald-600">
+
+
+        <div class="flex items-center gap-3">
+
+
+          <div class="w-9 h-9 sm:w-11 sm:h-11
+                        flex-shrink-0
+                        rounded-lg
+                        bg-white/20
+                        flex items-center justify-center
+                        text-lg sm:text-xl">
+            💬
+          </div>
+
+
+
+          <div class="flex-1 min-w-0">
+
+            <h3 class="text-base sm:text-lg
+                           font-bold text-white">
+              Instant Support
+            </h3>
+
+
+            <p class="text-xs sm:text-sm text-green-100">
+              <span class="inline-block w-2 h-2
+                                 bg-white rounded-full mr-1">
+              </span>
+              Online Now
+            </p>
+
+          </div>
+
+
+        </div>
+
+
+
+        <a href="https://what.sapp.link/fmri" target="_blank" class="mt-3 block
+                  w-full
+                  bg-white
+                  text-green-600
+                  text-center
+                  text-sm
+                  font-semibold
+                  py-2.5
+                  rounded-lg
+                  shadow
+                  hover:bg-gray-100
+                  transition">
+
+          <i class="fab fa-whatsapp"></i> Connect on WhatsApp
+
         </a>
-        <a id="callback-btn2" rel="noopener"
-          class="cursor-pointer flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-[#4E9BC4] text-white rounded-lg shadow hover:brightness-105 text-lg">
-          <i class="fas fa-comments mr-2"></i>
-          Live Chat
-        </a>
+
+
       </div>
+
+
+
+
+
+      <!-- Expanded Drawer -->
+      <div id="expandedBox" class="hidden w-full">
+
+
+        <!-- Header -->
+        <div class="relative
+                    p-4
+                    border-b">
+
+
+          <button id="closeDrawer" class="absolute
+                           right-3
+                           top-3
+                           w-7
+                           h-7
+                           rounded-full
+                           bg-gray-100
+                           text-gray-500
+                           text-sm">
+
+            ✕
+
+          </button>
+
+
+
+          <div class="flex items-center gap-3 pr-8">
+
+
+            <div class="w-9 h-9
+                            rounded-lg
+                            bg-green-500
+                            flex items-center justify-center
+                            text-white
+                            text-lg">
+
+              💬
+
+            </div>
+
+
+
+            <div>
+
+              <h2 class="text-base
+                               sm:text-lg
+                               font-bold
+                               text-gray-800">
+
+                Need Instant Help?
+
+              </h2>
+
+
+              <p class="text-xs
+                              text-green-500">
+
+                Support Available
+
+              </p>
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+
+
+
+
+        <!-- Content -->
+        <div class="p-4
+                    max-h-[35vh]
+                    overflow-y-auto">
+
+
+          <p class="text-sm
+                      text-gray-600
+                      leading-relaxed">
+
+            Our support team is ready to assist you.
+            Connect with us on WhatsApp and get quick answers.
+
+          </p>
+
+
+
+
+          <a href="https://what.sapp.link/fmri" target="_blank" class="mt-4 block
+                      w-full
+                      bg-green-500
+                      text-white
+                      text-center
+                      text-sm
+                      font-semibold
+                      py-2.5
+                      rounded-lg
+                      hover:bg-green-600
+                      transition">
+
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+
+          </a>
+
+
+        </div>
+
+
+      </div>
+
+
     </div>
 
     <!-- Footer -->
@@ -1395,7 +4389,7 @@
   </script>
 
   <!-- Conversion trigger (example) -->
-  <script>
+  <!-- <script>
     let zohoLoaded = false;
     let zohoLoading = false;
 
@@ -1463,7 +4457,7 @@
         }
       });
     });
-  </script>
+  </script> -->
 
   <!-- Add JS listener for buttons -->
   <script>
@@ -1590,6 +4584,50 @@
   <!-- End of GEO + CHAT SCRIPT -->
 
   <!-- Zoho Live Chat -->
+
+  <script>
+
+    const drawer = document.getElementById("supportDrawer");
+    const smallBox = document.getElementById("smallBox");
+    const expandedBox = document.getElementById("expandedBox");
+    const closeBtn = document.getElementById("closeDrawer");
+
+
+    // Expand drawer function
+    function expandDrawer() {
+
+      drawer.classList.remove("w-64");
+      drawer.classList.add("w-96");
+
+      smallBox.classList.add("hidden");
+      expandedBox.classList.remove("hidden");
+
+    }
+
+
+    // Close drawer
+    function closeDrawer() {
+
+      drawer.classList.remove("w-96");
+      drawer.classList.add("w-64");
+
+      expandedBox.classList.add("hidden");
+      smallBox.classList.remove("hidden");
+
+    }
+
+
+    // Auto expand every 15 seconds
+    setInterval(() => {
+      expandDrawer();
+    }, 15000);
+
+
+    // Close button
+    closeBtn.addEventListener("click", closeDrawer);
+
+
+  </script>
 
 
   <script>
