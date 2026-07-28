@@ -25,9 +25,9 @@
 
   <link rel="icon" type="image/x-icon" href="./public/logo/favicon.ico" />
   <link rel="preload" href="./public/css/fortis-gurugram.webp" as="image" type="image/webp">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <!-- Tailwind CDN -->
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <!-- <script>
     window.tailwind = {
       config: {
@@ -44,7 +44,7 @@
 
   <!-- Tailwind -->
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-  <link rel="stylesheet" href="./public/css/style.css">
+  <!-- <link rel="stylesheet" href="./public/css/style.css"> -->
 
   <link rel="preload" href="public/css/font/Raleway-SemiBold.ttf" as="font" type="font/ttf" crossorigin />
   <link rel="preload" href="public/css/font/Raleway-Bold.ttf" as="font" type="font/ttf" crossorigin />
@@ -121,7 +121,8 @@
           </div>
 
           <!-- Navigation -->
-          <nav class="flex flex-wrap gap-2 justify-start lg:justify-end">
+          <nav class="flex flex-wrap gap-2 justify-start lg:justify-end items-center">
+
             <a href="#specialties"
               class="text-xs px-3 py-2 rounded-md border border-gray-200 bg-white hover:bg-gray-50 transition">
               Specialties
@@ -142,10 +143,24 @@
               FAQ
             </a>
 
+            <!-- Hospital Selector -->
+            <select onchange="if(this.value) window.location.href=this.value"
+              class="text-xs px-3 py-2 rounded-md border border-gray-200 bg-white hover:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500 cursor-pointer">
+              <option value="">🏥 Select Hospital</option>
+              <option value="https://fortis-escorts.hosplan.com">Fortis Escorts, Delhi</option>
+              <option value="https://fortisgurgaon.hosplan.com">Fortis Memorial, Gurugram</option>
+              <option value="https://fortisbangalore.hosplan.com">Fortis Bangalore</option>
+              <option value="https://fortiskolkata.hosplan.com">Fortis Kolkata</option>
+              <option value="https://fortismulund.hosplan.com">Fortis Mulund, Mumbai</option>
+              <option value="https://fortismohali.hosplan.com">Fortis Mohali</option>
+              <option value="https://fortisnoida.hosplan.com">Fortis Noida</option>
+            </select>
+
             <a href="https://what.sapp.link/fmri" target="_blank"
               class="text-xs px-3 py-2 rounded-md border border-green-300 bg-green-50 font-semibold hover:bg-green-100 transition whitespace-nowrap">
               WhatsApp: +91 98991 87776
             </a>
+
           </nav>
 
         </div>
@@ -216,55 +231,44 @@
             <!-- TRUST GRID -->
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
 
-              <div class="bg-white rounded-xl border border-gray-100 p-4 shadow-sm">
-                <div class="text-green-600 text-lg mb-1">
-                  ✓
+              <!-- Fortis Escorts -->
+              <div class="bg-white rounded-xl border border-gray-100 overflow-hidden shadow-sm">
+                <img src="./public/logo/fortis-escorts.webp" alt="Fortis Escorts Hospital"
+                  class="w-full h-28 object-cover" />
+                <div class="p-3">
+                  <p class="font-semibold text-sm">Fortis Escorts</p>
+                  <p class="text-xs text-gray-500">New Delhi</p>
                 </div>
-                <p class="font-semibold text-sm">
-                  Structured Care
-                </p>
-                <p class="text-xs text-gray-500">
-                  Multispecialty pathways
-                </p>
               </div>
 
-
-              <div class="bg-white rounded-xl border border-gray-100 p-4 shadow-sm">
-                <div class="text-blue-600 text-lg mb-1">
-                  🔒
+              <!-- Fortis Mulund -->
+              <div class="bg-white rounded-xl border border-gray-100 overflow-hidden shadow-sm">
+                <img src="./public/logo/fortis-hospital-mumbai-59006fec57b1b.JPG" alt="Fortis Hospital Mulund"
+                  class="w-full h-28 object-cover" />
+                <div class="p-3">
+                  <p class="font-semibold text-sm">Fortis Mulund</p>
+                  <p class="text-xs text-gray-500">Mumbai</p>
                 </div>
-                <p class="font-semibold text-sm">
-                  Confidential
-                </p>
-                <p class="text-xs text-gray-500">
-                  Secure guidance
-                </p>
               </div>
 
-
-              <div class="bg-white rounded-xl border border-gray-100 p-4 shadow-sm">
-                <div class="text-orange-500 text-lg mb-1">
-                  ⚡
+              <!-- Fortis Bangalore -->
+              <div class="bg-white rounded-xl border border-gray-100 overflow-hidden shadow-sm">
+                <img src="./public/logo/fortis-bangalore.jpg" alt="Fortis Hospital Bangalore"
+                  class="w-full h-28 object-cover" />
+                <div class="p-3">
+                  <p class="font-semibold text-sm">Fortis Bangalore</p>
+                  <p class="text-xs text-gray-500">Bannerghatta Road</p>
                 </div>
-                <p class="font-semibold text-sm">
-                  Fast Response
-                </p>
-                <p class="text-xs text-gray-500">
-                  WhatsApp support
-                </p>
               </div>
 
-
-              <div class="bg-white rounded-xl border border-gray-100 p-4 shadow-sm">
-                <div class="text-red-500 text-lg mb-1">
-                  📍
+              <!-- Fortis Kolkata -->
+              <div class="bg-white rounded-xl border border-gray-100 overflow-hidden shadow-sm">
+                <img src="./public/logo/fortis-kolkata.avif" alt="Fortis Hospital Kolkata"
+                  class="w-full h-28 object-cover" />
+                <div class="p-3">
+                  <p class="font-semibold text-sm">Fortis Kolkata</p>
+                  <p class="text-xs text-gray-500">Anandapur</p>
                 </div>
-                <p class="font-semibold text-sm">
-                  Gurugram
-                </p>
-                <p class="text-xs text-gray-500">
-                  Near Delhi Airport
-                </p>
               </div>
 
             </div>
@@ -615,7 +619,7 @@
 
 
 
-                <a href="./public/pdf/Performa Invoice ALICE WAIRIMU.pdf" download class="
+                <a href="./public/pdf/Performa  Invoice ALICE WAIRIMU.pdf" download class="
             mt-8
             flex
             items-center
