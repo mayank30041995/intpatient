@@ -15,7 +15,7 @@ const ALLOWED_COUNTRIES = [
 "EG","LY","TN","DZ","MA",
 "NG","GH","CI","SN","ML","BF","TG","BJ","NE","GM","GN","GW","SL","LR","MR","CV",
 "CM","TD","CF","CG","CD","GA","GQ","ST","AO",
-"ZA","NA","BW","ZM","ZW","MW","MZ","LS","SZ","MG","MU","SC","KM","RE","YT"
+"ZA","NA","BW","ZM","ZW","MW","MZ","LS","SZ","MG","MU","SC","KM","RE","YT", "SG"
 ];
 
 BD  Bangladesh
