@@ -1,5 +1,5 @@
 The Bangladesh-specific URL: (Existing Url)
-https://artimisgurgaon.hosplan.com 
+https://artemisgurgaon.hosplan.com 
 
 is currently redirecting users to the non-Bangladesh page:
 https://www.hosplan.com/hospital/artemis-hospital/6090dbef0c66ab2b0b58c53e

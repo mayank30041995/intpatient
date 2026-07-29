@@ -1,8 +1,8 @@
 The Bangladesh-specific URL or ALLOWED_COUNTRIES: (Create New Url)
-https://fortis-escorts.hosplan.com
+https://fortis-mumbai.hosplan.com
 
 is currently redirecting users to the non-Bangladesh page :
-https://www.hosplan.com/hospital/fortis-escorts-heart-institute-new-delhi/6039355f1338ee777603f272
+https://www.hosplan.com/hospital/fortis-hospital-mulund/60940ae20c66ab2b0b58c8ed
 
 Please update the redirect so that the Bangladesh URL points to the appropriate
 Bangladesh-specific destination instead of the global/non-Bangladesh page.
@@ -51,4 +51,4 @@ Check viewer country
           HTTP 302 Redirect
                |
                ↓
-         https://www.hosplan.com/hospital/fortis-escorts-heart-institute-new-delhi/6039355f1338ee777603f272
+        https://www.hosplan.com/hospital/fortis-hospital-mulund/60940ae20c66ab2b0b58c8ed
