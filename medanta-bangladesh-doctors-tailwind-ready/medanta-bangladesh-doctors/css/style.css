@@ -1,24 +1,6 @@
-/*! CSS Used from: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css */
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.fa-whatsapp:before {
-    content: "\f232";
-}
-
 /*! CSS Used from: Embedded */
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    transition: opacity ease-in 0.2s;
 }
 
 *,
@@ -77,12 +59,35 @@ body {
     --tw-contain-style: ;
 }
 
+/*! CSS Used from: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css */
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-whatsapp:before {
+    content: "\f232";
+}
+
+/*! CSS Used from: Embedded */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
 .bg-emerald-500 {
     background-color: #22c55e !important;
 }
 
 .hero {
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.94) 44%, rgba(255, 255, 255, 0.18) 74%), url("http://127.0.0.1:5500/others/medanta-bangladesh-doctors-tailwind-ready/medanta-bangladesh-doctors/public/images/bckgrnd-medanta-_1_-2.webp") center/cover no-repeat;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.94) 44%, rgba(255, 255, 255, 0.18) 74%), url("http://127.0.0.1:5500/intpatient/medanta-bangladesh-doctors-tailwind-ready/medanta-bangladesh-doctors/public/images/bckgrnd-medanta-_1_-2.webp") center/cover no-repeat;
 }
 
 .doctor-card {
@@ -100,7 +105,7 @@ body {
 
 @media (max-width: 900px) {
     .hero {
-        background: linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.97)), url("http://127.0.0.1:5500/others/medanta-bangladesh-doctors-tailwind-ready/medanta-bangladesh-doctors/public/images/medanta-mobile.webp") center/cover no-repeat;
+        background: linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.97)), url("http://127.0.0.1:5500/intpatient/medanta-bangladesh-doctors-tailwind-ready/medanta-bangladesh-doctors/public/images/medanta-mobile.webp") center/cover no-repeat;
     }
 }
 
@@ -384,10 +389,6 @@ img {
     display: none;
 }
 
-.h-10 {
-    height: 2.5rem;
-}
-
 .h-14 {
     height: 3.5rem;
 }
@@ -442,10 +443,6 @@ img {
 
 .w-9 {
     width: 2.25rem;
-}
-
-.w-auto {
-    width: auto;
 }
 
 .w-full {
@@ -647,11 +644,6 @@ img {
     border-color: rgb(203 213 225 / var(--tw-border-opacity, 1));
 }
 
-.bg-white {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
 .bg-\[\#0ea5e9\] {
     --tw-bg-opacity: 1;
     background-color: rgb(14 165 233 / var(--tw-bg-opacity, 1));
@@ -686,11 +678,6 @@ img {
     background-color: rgb(22 163 74 / var(--tw-bg-opacity, 1));
 }
 
-.bg-ink {
-    --tw-bg-opacity: 1;
-    background-color: rgb(16 36 62 / var(--tw-bg-opacity, 1));
-}
-
 .bg-orange-50 {
     --tw-bg-opacity: 1;
     background-color: rgb(255 247 237 / var(--tw-bg-opacity, 1));
@@ -723,6 +710,11 @@ img {
 .bg-slate-900 {
     --tw-bg-opacity: 1;
     background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .bg-white\/20 {
@@ -973,11 +965,6 @@ img {
     letter-spacing: 0.05em;
 }
 
-.text-slate-800 {
-    --tw-text-opacity: 1;
-    color: rgb(30 41 59 / var(--tw-text-opacity, 1));
-}
-
 .text-\[\#f04e30\] {
     --tw-text-opacity: 1;
     color: rgb(240 78 48 / var(--tw-text-opacity, 1));
@@ -1018,16 +1005,6 @@ img {
     color: rgb(22 163 74 / var(--tw-text-opacity, 1));
 }
 
-.text-ink {
-    --tw-text-opacity: 1;
-    color: rgb(16 36 62 / var(--tw-text-opacity, 1));
-}
-
-.text-medanta {
-    --tw-text-opacity: 1;
-    color: rgb(236 103 28 / var(--tw-text-opacity, 1));
-}
-
 .text-orange-300 {
     --tw-text-opacity: 1;
     color: rgb(253 186 116 / var(--tw-text-opacity, 1));
@@ -1061,6 +1038,11 @@ img {
 .text-slate-700 {
     --tw-text-opacity: 1;
     color: rgb(51 65 85 / var(--tw-text-opacity, 1));
+}
+
+.text-slate-800 {
+    --tw-text-opacity: 1;
+    color: rgb(30 41 59 / var(--tw-text-opacity, 1));
 }
 
 .text-slate-900 {
@@ -1100,12 +1082,6 @@ img {
 .shadow-sm {
     --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-soft {
-    --tw-shadow: 0 22px 60px rgba(15, 35, 60, .10);
-    --tw-shadow-colored: 0 22px 60px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1193,20 +1169,10 @@ img {
     background-color: rgb(21 128 61 / var(--tw-bg-opacity, 1));
 }
 
-.hover\:text-medanta:hover {
-    --tw-text-opacity: 1;
-    color: rgb(236 103 28 / var(--tw-text-opacity, 1));
-}
-
 .hover\:shadow-xl:hover {
     --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
     --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.focus\:border-medanta:focus {
-    --tw-border-opacity: 1;
-    border-color: rgb(236 103 28 / var(--tw-border-opacity, 1));
 }
 
 @media (min-width: 640px) {
