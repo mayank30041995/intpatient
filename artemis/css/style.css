@@ -3,20 +3,6 @@ body {
     transition: opacity ease-in 0.2s;
 }
 
-/*! CSS Used from: Embedded */
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: "Poppins", sans-serif;
-}
-
-h1,
-h2,
-h3 {
-    font-weight: 600;
-}
 
 *,
 ::after,
@@ -26,7 +12,6 @@ h3 {
     border-style: solid;
     border-color: #e5e7eb;
 }
-
 
 *,
 ::before,
@@ -82,6 +67,71 @@ h3 {
     --tw-contain-layout: ;
     --tw-contain-paint: ;
     --tw-contain-style: ;
+}
+
+/*! CSS Used from: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css */
+.fa-solid,
+.fab {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display, inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+
+.fa-solid {
+    font-family: "Font Awesome 6 Free";
+}
+
+.fab {
+    font-family: "Font Awesome 6 Brands";
+}
+
+.fa-circle-info:before {
+    content: "\f05a";
+}
+
+:root {
+    --fa-style-family-brands: "Font Awesome 6 Brands";
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+
+.fab {
+    font-weight: 400;
+}
+
+.fa-whatsapp:before {
+    content: "\f232";
+}
+
+:root {
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+}
+
+:root {
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+}
+
+.fa-solid {
+    font-weight: 900;
+}
+
+/*! CSS Used from: Embedded */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
 }
 
 /*! CSS Used from: Embedded */
@@ -1242,4 +1292,29 @@ img {
     50% {
         opacity: .5;
     }
+}
+
+/*! CSS Used fontfaces */
+@font-face {
+    font-family: "Font Awesome 6 Free";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-regular-400.woff2) format("woff2"), url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-regular-400.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Font Awesome 6 Free";
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2) format("woff2"), url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Font Awesome 6 Brands";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2) format("woff2"), url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.ttf) format("truetype");
 }
