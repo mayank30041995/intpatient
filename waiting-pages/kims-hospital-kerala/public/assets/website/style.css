@@ -371,7 +371,7 @@
    src: url('../fonts/icomoon.eot?8qbrmc#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?8qbrmc') format('truetype'), url('../fonts/icomoon.woff?8qbrmc') format('woff'), url('../fonts/icomoon.svg?8qbrmc#icomoon') format('svg');
    font-weight: normal;
    font-style: normal;
-   font-display: block;
+   font-display: swap;
  }
 
  [class^="icon-"],
