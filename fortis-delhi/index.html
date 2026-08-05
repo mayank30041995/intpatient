@@ -1940,30 +1940,36 @@
       const expandedBox = document.getElementById("expandedBox");
       const closeBtn = document.getElementById("closeDrawer");
 
-      // Expand drawer function
-      function expandDrawer() {
-        drawer.classList.remove("w-64");
-        drawer.classList.add("w-96");
+      let drawerTimer;
 
+      function expandDrawer() {
         smallBox.classList.add("hidden");
         expandedBox.classList.remove("hidden");
       }
 
-      // Close drawer
       function closeDrawer() {
-        drawer.classList.remove("w-96");
-        drawer.classList.add("w-64");
-
         expandedBox.classList.add("hidden");
         smallBox.classList.remove("hidden");
+
+        startTimer();
       }
 
-      // Auto expand every 15 seconds
-      setInterval(() => {
-        expandDrawer();
-      }, 15000);
+      function startTimer() {
+        clearTimeout(drawerTimer);
 
-      // Close button
+        drawerTimer = setTimeout(() => {
+          expandDrawer();
+        }, 15000);
+      }
+
+      // Initial state
+      expandedBox.classList.add("hidden");
+      smallBox.classList.remove("hidden");
+
+      // Start the first timer
+      startTimer();
+
+      // Close event
       closeBtn.addEventListener("click", closeDrawer);
     </script>
   </body>

@@ -2815,37 +2815,42 @@
       /* -------------------------------
        Support drawer
     -------------------------------- */
+      const drawer = document.getElementById("supportDrawer");
+      const smallBox = document.getElementById("smallBox");
+      const expandedBox = document.getElementById("expandedBox");
+      const closeBtn = document.getElementById("closeDrawer");
 
-      function initializeDrawer() {
-        const drawer = $("#supportDrawer");
-        const smallBox = $("#smallBox");
-        const expandedBox = $("#expandedBox");
-        const closeBtn = $("#closeDrawer");
+      let drawerTimer;
 
-        if (!drawer) return;
-
-        function expandDrawer() {
-          drawer.classList.replace("w-64", "w-96");
-
-          smallBox?.classList.add("hidden");
-          expandedBox?.classList.remove("hidden");
-        }
-
-        function collapseDrawer() {
-          drawer.classList.replace("w-96", "w-64");
-
-          expandedBox?.classList.add("hidden");
-          smallBox?.classList.remove("hidden");
-        }
-
-        closeBtn?.addEventListener("click", collapseDrawer);
-
-        const timer = setInterval(expandDrawer, 15000);
-
-        window.addEventListener("beforeunload", () => {
-          clearInterval(timer);
-        });
+      function expandDrawer() {
+        smallBox.classList.add("hidden");
+        expandedBox.classList.remove("hidden");
       }
+
+      function closeDrawer() {
+        expandedBox.classList.add("hidden");
+        smallBox.classList.remove("hidden");
+
+        startTimer();
+      }
+
+      function startTimer() {
+        clearTimeout(drawerTimer);
+
+        drawerTimer = setTimeout(() => {
+          expandDrawer();
+        }, 15000);
+      }
+
+      // Initial state
+      expandedBox.classList.add("hidden");
+      smallBox.classList.remove("hidden");
+
+      // Start the first timer
+      startTimer();
+
+      // Close event
+      closeBtn.addEventListener("click", closeDrawer);
 
       /* -------------------------------
        Initialization
