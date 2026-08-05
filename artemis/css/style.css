@@ -1210,7 +1210,7 @@ img {
 }
 
 /*! CSS Used fontfaces */
-@font-face {
+/* @font-face {
     font-family: "Font Awesome 6 Free";
     font-style: normal;
     font-weight: 400;
@@ -1240,4 +1240,4 @@ img {
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-}
+} */
