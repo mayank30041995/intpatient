@@ -1300,13 +1300,14 @@ img {
 }
 
 /*! CSS Used keyframes */
-@keyframes pulse {
+/* @keyframes pulse {
     50% {
         opacity: .5;
     }
 }
 
 /*! CSS Used fontfaces */
+/*
 @font-face {
     font-family: "Font Awesome 6 Free";
     font-style: normal;
@@ -1338,3 +1339,5 @@ img {
     font-style: normal;
     font-display: swap;
 }
+
+*/
