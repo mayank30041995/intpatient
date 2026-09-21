@@ -92,6 +92,28 @@ h4 {
     var(--tw-shadow);
 }
 
+.dtwidget-chat-container {
+  position: fixed;
+  z-index: 100000;
+  top: auto;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  color: #FFF !important;
+  background: #2582A1 !important;
+  padding: 36px 50px !important;
+  font-size: 25px !important;
+  font-weight: 700;
+  border-radius: 50px !important;
+  cursor: pointer;
+  user-select: none;
+  max-height: 42px;
+  box-shadow: 0px 1px 20px 0px rgb(0 0 0 / 10%);
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+
 /* Text */
 .text-white {
   color: rgb(255 255 255 / var(--tw-text-opacity));
