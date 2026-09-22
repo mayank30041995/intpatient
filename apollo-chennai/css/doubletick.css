@@ -1,0 +1,232 @@
+#dt-chatButton {
+    width: 300px !important;
+    min-height: 145px !important;
+
+    padding: 12px 16px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 8px !important;
+
+    background: linear-gradient(180deg,
+            #2582a1 0%,
+            #15556d 100%) !important;
+
+    border: none !important;
+    border-radius: 18px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Hide original CHAT */
+#dt-chatButton>span {
+    display: none !important;
+}
+
+
+/* Main wrapper */
+#dt-chatButton .apollo-widget-content {
+    width: 100% !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: center !important;
+
+    gap: 8px !important;
+}
+
+
+/* =========================================
+   ROW 1 — APOLLO LOGO ONLY
+   ========================================= */
+
+#dt-chatButton .apollo-logo-row {
+    width: 100% !important;
+
+    display: flex !important;
+
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+
+/* Apollo logo */
+#dt-chatButton .apollo-widget-logo {
+    width: 80px !important;
+    height: 60px !important;
+    padding: 5px;
+    object-fit: contain !important;
+
+    background: #ffffff !important;
+    border-radius: 7px !important;
+
+    display: block !important;
+}
+
+
+/* =========================================
+   ROW 2
+   WHATSAPP LOGO + TEXT COLUMN
+   ========================================= */
+
+#dt-chatButton .apollo-info-row {
+    display: flex !important;
+
+    flex-direction: row !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    gap: 9px !important;
+
+    width: 100% !important;
+}
+
+
+/* Original DoubleTick WhatsApp logo */
+#dt-chatButton .apollo-info-row>svg {
+    width: 34px !important;
+    height: 34px !important;
+
+    min-width: 34px !important;
+    flex: 0 0 34px !important;
+
+    display: block !important;
+
+    margin: 0 !important;
+}
+
+
+/* =========================================
+   TEXT COLUMN
+   ========================================= */
+
+#dt-chatButton .apollo-text-column {
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    align-items: flex-start !important;
+
+    justify-content: center !important;
+
+    gap: 2px !important;
+
+    min-width: 0 !important;
+}
+
+
+/* Instant Support */
+#dt-chatButton .apollo-widget-support {
+    margin: 0 !important;
+
+    font-size: 16px !important;
+    line-height: 16px !important;
+    text-align: center !important;
+    margin-left: 30px !important;
+    font-weight: 600 !important;
+
+    color: rgba(255, 255, 255, 0.88) !important;
+
+    white-space: nowrap !important;
+}
+
+
+/* Connect on WhatsApp */
+#dt-chatButton .apollo-widget-title {
+    margin: 0 !important;
+
+    font-size: 18px !important;
+    line-height: 20px !important;
+
+    font-weight: 700 !important;
+
+    color: #ffffff !important;
+
+    white-space: nowrap !important;
+}
+
+
+/* Company */
+#dt-chatButton .apollo-widget-company {
+    margin: 0 !important;
+
+    max-width: 205px !important;
+
+    font-size: 12px !important;
+    line-height: 14px !important;
+
+    letter-spacing: 0.6px !important;
+
+    font-weight: 500 !important;
+
+    color: rgba(255, 255, 255, 0.92) !important;
+
+    white-space: normal !important;
+
+    text-align: left !important;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    #dt-chatButton {
+        width: 270px !important;
+        min-height: 130px !important;
+
+        padding: 11px 12px !important;
+    }
+
+
+    #dt-chatButton .apollo-widget-logo {
+        width: 73px !important;
+        height: 53px !important;
+    }
+
+
+    #dt-chatButton .apollo-info-row {
+        gap: 8px !important;
+    }
+
+
+    #dt-chatButton .apollo-info-row>svg {
+        width: 31px !important;
+        height: 31px !important;
+
+        min-width: 31px !important;
+        flex-basis: 31px !important;
+    }
+
+
+    #dt-chatButton .apollo-widget-support {
+        font-size: 12px !important;
+        line-height: 12px !important;
+    }
+
+
+    #dt-chatButton .apollo-widget-title {
+        font-size: 14px !important;
+        line-height: 16px !important;
+    }
+
+
+    #dt-chatButton .apollo-widget-company {
+        max-width: 190px !important;
+
+        font-size: 10px !important;
+        line-height: 12px !important;
+
+        letter-spacing: 0.6px !important;
+    }
+}

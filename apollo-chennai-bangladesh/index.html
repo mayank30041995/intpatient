@@ -23,6 +23,8 @@
 
     <link rel="preload" href="css/stylesheet.css" as="style" />
     <link href="css/stylesheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/doubletick.css" />
+    <script src="./js/doubletick.js"></script>
 
     <link
       rel="preload"
@@ -99,8 +101,8 @@
             rel="noopener"
             class="doubletick-trigger font-bold underline"
           >
-            <i class="fab fa-whatsapp mr-2"></i>Connect on Whatsapp (+91 98991
-            87776)
+            <i class="fab fa-whatsapp mr-2"></i>Connect on Whatsapp (+91 87968
+            54848)
           </a>
         </div>
       </div>
@@ -166,7 +168,7 @@
               class="doubletick-trigger px-4 py-2 text-sm rounded-md border border-green-300 bg-green-50 font-semibold hover:bg-green-100 transition whitespace-nowrap"
             >
               <i class="fab fa-whatsapp mr-2"></i>
-              WhatsApp: +91 98991 87776
+              WhatsApp: +91 87968 54848
             </a>
           </nav>
         </div>
@@ -3117,37 +3119,6 @@
         </div>
       </section>
 
-      <!-- <footer
-      class="border-t border-slate-200 py-8 text-center text-sm text-slate-500"
-    >
-      © 2026 Treatment Traveller (Hosplan) • No trackers included.
-    </footer> -->
-
-      <!-- mobile sticky CTA -->
-      <div
-        class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur border-t border-slate-200 md:hidden"
-      >
-        <div class="max-w-7xl mx-auto px-4 py-3 flex gap-2">
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener"
-            class="flex-1 text-center rounded-2xl text-white font-extrabold py-3 shadow-sm"
-            style="background: #3567b0"
-          >
-            Live Chat
-          </a>
-          <button
-            onclick="openVisaForm()"
-            class="flex-1 text-center rounded-2xl font-extrabold py-3 shadow-sm text-white"
-            style="background: #65bebf"
-          >
-            Visa
-          </button>
-        </div>
-      </div>
-      <div class="h-24 md:hidden"></div>
-
       <!-- visa modal -->
       <div id="visaModal" class="hidden fixed inset-0 bg-black/50 z-50">
         <div class="min-h-full flex items-center justify-center p-4">
@@ -3298,12 +3269,12 @@
       });
     </script>
 
-    <!-- Google tag (gtag.js) -->
     <!-- Google Tag -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=AW-922729084"
     ></script>
+
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -3326,73 +3297,6 @@
         if (btn) btn.addEventListener("click", trackConversion);
       });
     </script>
-
-    <!-- Lazy Zoho Chat -->
-    <!-- <script>
-    window.$zoho = window.$zoho || {};
-    $zoho.salesiq = $zoho.salesiq || { ready: function () { } };
-
-    function loadZohoChat() {
-      var s = document.createElement("script");
-      s.src =
-        "https://salesiq.zohopublic.in/widget?wc=siq367d95d869cfb0a60e7316445c07536ce914f0b2acca4d494a29391df96d37815f0b000cc8eb687133e4e9868f24bf72";
-      s.defer = true;
-      document.body.appendChild(s);
-    }
-
-    setTimeout(loadZohoChat, 3000);
-  </script> -->
-    <!-- Add JS listener for buttons -->
-    <!-- <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const btn = document.getElementById("callback-btn");
-
-      if (btn) {
-        btn.addEventListener("click", function () {
-          if (typeof gtag === "function") {
-            gtag("event", "conversion", {
-              send_to: "AW-922729084/CONVERSION_LABEL",
-            });
-          }
-
-          // Optional: open Zoho chat
-          if (window.$zoho && $zoho.salesiq) {
-            $zoho.salesiq.floatwindow.visible("show");
-          }
-        });
-      }
-    });
-  </script> -->
-
-    <!-- <script>
-    let conversionFired = false;
-
-    function trackConversion() {
-      if (conversionFired) return;
-      conversionFired = true;
-
-      // Google Ads conversion
-      if (typeof gtag === "function") {
-        gtag("event", "conversion", {
-          send_to: "AW-922729084/CONVERSION_LABEL",
-        });
-      }
-
-      // Open Zoho chat (optional)
-      if (window.$zoho && $zoho.salesiq) {
-        $zoho.salesiq.floatwindow.visible("show");
-      }
-    }
-
-    document.addEventListener("DOMContentLoaded", function () {
-      document.querySelectorAll(".track-conversion").forEach(function (el) {
-        el.addEventListener("click", function (e) {
-          if (el.tagName === "A") e.preventDefault();
-          trackConversion();
-        });
-      });
-    });
-  </script> -->
 
     <!-- GEO + CHAT SCRIPT -->
     <script defer>
@@ -3467,24 +3371,6 @@
         }
       }
 
-      // function initChat() {
-      //   if (window.ttLocation !== "IN") {
-      //     window.__lc = window.__lc || {};
-      //     window.__lc.license = 7595311;
-
-      //     (function () {
-      //       var lc = document.createElement("script");
-      //       lc.type = "text/javascript";
-      //       lc.async = true;
-      //       lc.src =
-      //         (document.location.protocol === "https:"
-      //           ? "https://"
-      //           : "http://") + "cdn.livechatinc.com/tracking.js";
-      //       document.head.appendChild(lc);
-      //     })();
-      //   }
-      // }
-
       document.addEventListener("DOMContentLoaded", function () {
         setVisible("#main", true);
         setVisible("#loader", false);
@@ -3515,7 +3401,7 @@
         const encodedMessage = encodeURIComponent(message);
 
         // Your WhatsApp number (with country code, no +)
-        const whatsappNumber = "919911163990";
+        const whatsappNumber = "918796854848";
 
         // Final URL
         const url = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
@@ -3528,7 +3414,13 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".doubletick-trigger").forEach((trigger) => {
+        function attachDoubleTickTrigger(trigger) {
+          if (trigger.dataset.doubletickTriggerAttached === "true") {
+            return;
+          }
+
+          trigger.dataset.doubletickTriggerAttached = "true";
+
           trigger.addEventListener("click", (e) => {
             e.preventDefault();
 
@@ -3548,13 +3440,33 @@
             }
 
             textarea.value =
-              "Hello! I want assistance from Indraprastha Apollo Hospital, New Delhi, India.";
+              "Hello! I want assistance from Apollo Hospital, Chennai, India.";
 
             textarea.dispatchEvent(new Event("input", { bubbles: true }));
             textarea.dispatchEvent(new Event("change", { bubbles: true }));
 
             widgetButton.click();
           });
+        }
+
+        // Existing .doubletick-trigger buttons
+        document
+          .querySelectorAll(".doubletick-trigger")
+          .forEach(attachDoubleTickTrigger);
+
+        // DoubleTick creates #dt-chatButton dynamically
+        const observer = new MutationObserver(() => {
+          const button = document.getElementById("dt-chatButton");
+
+          if (button) {
+            button.classList.add("doubletick-trigger");
+            attachDoubleTickTrigger(button);
+          }
+        });
+
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true,
         });
       });
     </script>
