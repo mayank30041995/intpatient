@@ -1,0 +1,1562 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>
+      Cancer Treatment in India | Specialist Opinions & Patient Support |
+      Hosplan
+    </title>
+    <meta
+      name="description"
+      content="Understand your cancer diagnosis and treatment options. Get a specialist opinion from oncologists at leading Indian hospitals, see transparent cost estimates, and talk to a patient coordinator on WhatsApp."
+    />
+    <link rel="icon" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              teal: "#0f766e",
+              deep: "#0e3b3f",
+              ink: "#14212b",
+              mist: "#f4f7f8",
+            },
+            fontFamily: {
+              serif: ["Newsreader", "Georgia", "serif"],
+              sans: ["Figtree", "system-ui", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 76px;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+      body {
+        color: #14212b;
+        font-family: Figtree, system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      h1,
+      h2,
+      h3.serif {
+        font-family: Newsreader, Georgia, serif;
+      }
+      .containerx {
+        max-width: 1120px;
+        margin: auto;
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+      .section {
+        padding: 72px 0;
+      }
+      .h2 {
+        font-family: Newsreader, Georgia, serif;
+        font-size: clamp(28px, 3.2vw, 40px);
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        line-height: 1.15;
+      }
+      .lede {
+        font-size: 18px;
+        line-height: 1.65;
+        color: #475766;
+        max-width: 62ch;
+      }
+      .muted {
+        color: #566574;
+      }
+      .cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background: #0f766e;
+        color: #fff;
+        padding: 14px 22px;
+        border-radius: 10px;
+        font-weight: 700;
+        text-align: center;
+        transition: background 0.15s;
+      }
+      .cta:hover {
+        background: #0b5f58;
+      }
+      .cta-light {
+        background: #fff;
+        color: #0e3b3f;
+      }
+      .cta-light:hover {
+        background: #e7f4f2;
+      }
+      .ghost {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #b8c4cc;
+        border-radius: 10px;
+        padding: 13px 20px;
+        font-weight: 600;
+        background: #fff;
+      }
+      .ghost:hover {
+        border-color: #0f766e;
+        color: #0f766e;
+      }
+      .card {
+        background: #fff;
+        border: 1px solid #dfe6eb;
+        border-radius: 14px;
+        padding: 22px;
+      }
+      .navlink {
+        font-size: 14px;
+        color: #475766;
+      }
+      .navlink:hover {
+        color: #0f766e;
+      }
+      a:focus-visible,
+      summary:focus-visible,
+      button:focus-visible {
+        outline: 3px solid #0f766e;
+        outline-offset: 3px;
+        border-radius: 6px;
+      }
+      .chip {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 5px 10px;
+        border-radius: 99px;
+        background: #e6f4f1;
+        color: #0b5f58;
+      }
+      .chip-amber {
+        background: #fdf1d8;
+        color: #7a4b00;
+      }
+      .chip-grey {
+        background: #eef1f4;
+        color: #566574;
+      }
+      .qrow {
+        display: grid;
+        gap: 10px;
+        padding: 26px 0;
+        border-top: 1px solid #dfe6eb;
+      }
+      @media (min-width: 768px) {
+        .qrow {
+          grid-template-columns: 5fr 7fr;
+          gap: 40px;
+        }
+      }
+      .qrow h3 {
+        font-family: Newsreader, Georgia, serif;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.25;
+        letter-spacing: -0.01em;
+      }
+      .acc {
+        border-bottom: 1px solid #dfe6eb;
+      }
+      .acc summary {
+        cursor: pointer;
+        font-weight: 600;
+        padding: 18px 28px 18px 0;
+        list-style: none;
+        position: relative;
+      }
+      .acc summary::-webkit-details-marker {
+        display: none;
+      }
+      .acc summary::after {
+        content: "+";
+        position: absolute;
+        right: 4px;
+        top: 15px;
+        font-size: 24px;
+        color: #0f766e;
+        font-weight: 500;
+      }
+      .acc[open] summary::after {
+        content: "–";
+      }
+      .acc p {
+        padding-bottom: 18px;
+        color: #566574;
+        max-width: 70ch;
+      }
+      .slot {
+        border: 1.5px dashed #b8c4cc;
+        border-radius: 14px;
+        padding: 22px;
+        background: #fafcfc;
+      }
+      .bar-track {
+        position: relative;
+        height: 30px;
+        background: #eef2f5;
+        border-radius: 6px;
+      }
+      .bar {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        border-radius: 6px;
+        background: #9fb4be;
+      }
+      .bar.me {
+        background: #0f766e;
+      }
+      .sample {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+        font-weight: 800;
+        font-size: 22px;
+        letter-spacing: 0.2em;
+        color: rgba(180, 40, 40, 0.35);
+        transform: rotate(-8deg);
+        text-align: center;
+      }
+      @media (max-width: 640px) {
+        .section {
+          padding: 48px 0;
+        }
+        .mobilebar {
+          display: flex !important;
+        }
+        body {
+          padding-bottom: 76px;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <!-- HEADER -->
+    <header
+      class="border-b border-slate-200 bg-white/95 backdrop-blur sticky top-0 z-30"
+    >
+      <div class="containerx flex justify-between items-center py-3 gap-4">
+        <a href="#top" aria-label="Hosplan home"
+          ><img
+            src="assets/hosplan-logo.svg"
+            alt="Hosplan"
+            class="h-10 max-w-[160px]"
+        /></a>
+        <nav class="hidden lg:flex gap-6" aria-label="Main">
+          <a class="navlink" href="#questions">Your questions</a>
+          <a class="navlink" href="#specialists">Specialists</a>
+          <a class="navlink" href="#hospitals">Hospitals</a>
+          <a class="navlink" href="#treatments">Treatment</a>
+          <a class="navlink" href="#cost">Costs</a>
+          <a class="navlink" href="#support">Support</a>
+          <a class="navlink" href="#faq">FAQ</a>
+        </nav>
+        <a class="cta !py-2.5 !px-4 text-sm" data-wa="general"
+          ><svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path
+              d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"
+            /></svg
+          >Chat on WhatsApp</a
+        >
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="bg-mist py-14 md:py-20">
+        <div
+          class="containerx grid lg:grid-cols-[1.35fr_.65fr] gap-12 items-center"
+        >
+          <div>
+            <p class="text-teal font-semibold mb-4">
+              Cancer care in India for international patients
+            </p>
+            <h1
+              class="text-4xl md:text-[56px] font-semibold tracking-tight leading-[1.08] mb-6"
+            >
+              Get a specialist's view on your cancer before you decide anything.
+            </h1>
+            <p class="lede mb-8">
+              Tell us what you know so far. We connect you with oncologists at
+              leading Indian hospitals who review your reports and explain your
+              options in plain language, so you can decide with clarity and
+              without pressure.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a class="cta" data-wa="general"
+                ><svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"
+                  /></svg
+                >Talk to a patient coordinator</a
+              >
+              <a class="ghost" href="#questions"
+                >Read the questions most patients ask</a
+              >
+            </div>
+            <ul
+              class="mt-8 grid sm:grid-cols-2 gap-x-8 gap-y-2 text-[15px] text-slate-700 max-w-xl"
+            >
+              <li class="flex gap-2">
+                <span class="text-teal font-bold">✓</span> Your first
+                conversation is confidential
+              </li>
+              <li class="flex gap-2">
+                <span class="text-teal font-bold">✓</span> No obligation to
+                travel or to pay
+              </li>
+              <li class="flex gap-2">
+                <span class="text-teal font-bold">✓</span> Online opinions, no
+                flight needed first
+              </li>
+              <li class="flex gap-2">
+                <span class="text-teal font-bold">✓</span> Honest about costs
+                and uncertainty
+              </li>
+            </ul>
+          </div>
+
+          <aside
+            class="card !p-7 shadow-lg"
+            aria-label="What happens after you message us"
+          >
+            <h2 class="font-serif text-2xl font-semibold mb-1">
+              What happens when you message us
+            </h2>
+            <p class="muted text-sm mb-5">
+              You don't need every report or every answer to begin.
+            </p>
+            <ol class="space-y-4 text-[15px]">
+              <li class="flex gap-3">
+                <span class="font-bold text-teal">1</span
+                ><span
+                  >A coordinator listens to your situation and your
+                  questions.</span
+                >
+              </li>
+              <li class="flex gap-3">
+                <span class="font-bold text-teal">2</span
+                ><span
+                  >They explain how to share your reports securely. Please don't
+                  send reports before this step.</span
+                >
+              </li>
+              <li class="flex gap-3">
+                <span class="font-bold text-teal">3</span
+                ><span
+                  >A suitable oncologist reviews your case, by free case opinion
+                  or video consult, and the options are explained to you.</span
+                >
+              </li>
+            </ol>
+            <a class="cta w-full mt-6" data-wa="reports"
+              >Discuss my medical reports</a
+            >
+          </aside>
+        </div>
+
+        <div class="containerx mt-12">
+          <div class="rounded-xl border border-slate-200 bg-white px-5 py-5">
+            <p class="text-center text-sm font-semibold text-slate-700 mb-3">
+              Care coordinated across leading hospital groups in India
+            </p>
+            <div
+              class="flex flex-wrap justify-center gap-x-8 gap-y-2 text-slate-600 font-semibold"
+              id="hospital-strip"
+            ></div>
+            <p class="text-center text-xs text-slate-500 mt-3">
+              Specialists, services and availability depend on the hospital and
+              on your diagnosis.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SIX QUESTIONS -->
+      <section id="questions" class="section">
+        <div class="containerx">
+          <h2 class="h2 max-w-3xl">
+            The six questions almost every patient asks first
+          </h2>
+          <p class="lede mt-4 mb-8">
+            If your head is full of them right now, that is completely normal.
+            Here is where we can help with each one, honestly.
+          </p>
+
+          <div>
+            <div class="qrow">
+              <h3>Can I become cancer-free?</h3>
+              <div>
+                <p class="muted">
+                  Many cancers can be cured, especially when treated at the
+                  right stage, and others can be controlled for years. The
+                  honest answer depends on your cancer type, stage, test results
+                  and general health. A specialist who has reviewed your actual
+                  reports can give you a realistic picture, not a general one.
+                </p>
+                <a
+                  class="text-teal font-semibold underline mt-2 inline-block"
+                  href="#specialists"
+                  >See how a specialist opinion works</a
+                >
+              </div>
+            </div>
+            <div class="qrow">
+              <h3>What is the best treatment for me?</h3>
+              <div>
+                <p class="muted">
+                  Cancer is many different diseases, so the best plan is
+                  specific to you. It usually starts with confirming the
+                  diagnosis, modern molecular testing where relevant, and a
+                  review by surgeons, medical oncologists and radiation
+                  oncologists together. We help you reach that stage of the
+                  process.
+                </p>
+                <a
+                  class="text-teal font-semibold underline mt-2 inline-block"
+                  href="#treatments"
+                  >How treatment plans are built</a
+                >
+              </div>
+            </div>
+            <div class="qrow">
+              <h3>Whom can I trust?</h3>
+              <div>
+                <p class="muted">
+                  Trust should be checkable. You can see doctors' names,
+                  qualifications and hospitals, check each hospital's
+                  accreditation with the accrediting body itself, and ask us how
+                  Hosplan is paid. You can also compare anything you are told
+                  with independent guides from ASCO, NCCN and the US National
+                  Cancer Institute.
+                </p>
+                <a
+                  class="text-teal font-semibold underline mt-2 inline-block"
+                  href="#trust"
+                  >How you can verify us</a
+                >
+              </div>
+            </div>
+            <div class="qrow">
+              <h3>Who will take care of me?</h3>
+              <div>
+                <p class="muted">
+                  Clinical care comes from your doctors. Everything around it,
+                  such as appointments, paperwork, travel, airport pick-up,
+                  hospital navigation and keeping your family informed, is
+                  handled by a named coordinator who stays in touch with you
+                  from the first message to your follow-up.
+                </p>
+                <a
+                  class="text-teal font-semibold underline mt-2 inline-block"
+                  href="#support"
+                  >What our patient team does</a
+                >
+              </div>
+            </div>
+            <div class="qrow">
+              <h3>How much will it cost, and how will I manage it?</h3>
+              <div>
+                <p class="muted">
+                  No one can quote a responsible price without your reports.
+                  What we can do is request an itemised estimate from the
+                  hospital, show what is and isn't included, and tell you what
+                  could change it, so you can plan before you travel and avoid
+                  surprises.
+                </p>
+                <a
+                  class="text-teal font-semibold underline mt-2 inline-block"
+                  href="#cost"
+                  >Compare costs across countries</a
+                >
+              </div>
+            </div>
+            <div class="qrow border-b border-slate-200">
+              <h3>Where do I get guidance as treatment goes on?</h3>
+              <div>
+                <p class="muted">
+                  Many hospitals offer follow-up teleconsultations once you are
+                  home, and our team helps arrange them. For independent,
+                  trusted explanations at any time, ASCO's Cancer.Net and NCCN's
+                  patient guides are written by leading oncology bodies and are
+                  free to read.
+                </p>
+                <a
+                  class="text-teal font-semibold underline mt-2 inline-block"
+                  href="#guidance"
+                  >Trusted sources and questions to ask</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SPECIALISTS -->
+      <section id="specialists" class="section bg-mist">
+        <div class="containerx">
+          <h2 class="h2 max-w-3xl">
+            Specialists who treat your type of cancer, not just any oncologist
+          </h2>
+          <p class="lede mt-4">
+            We match your case to the relevant oncology team. A lung cancer
+            needs a different team from a leukaemia, so we do not recommend the
+            same doctor to everyone.
+          </p>
+
+          <div class="grid md:grid-cols-3 gap-4 mt-8">
+            <div class="card">
+              <h3 class="font-bold mb-1 text-teal">Medical oncologists</h3>
+              <p class="muted text-sm">
+                Medicines such as chemotherapy, targeted therapy and
+                immunotherapy.
+              </p>
+            </div>
+            <div class="card">
+              <h3 class="font-bold mb-1 text-teal">Surgical oncologists</h3>
+              <p class="muted text-sm">
+                Whether surgery is appropriate, and which technique, including
+                minimally invasive and robotic options.
+              </p>
+            </div>
+            <div class="card">
+              <h3 class="font-bold mb-1 text-teal">Radiation oncologists</h3>
+              <p class="muted text-sm">
+                Radiation planning, including precision techniques where
+                clinically indicated.
+              </p>
+            </div>
+          </div>
+
+          <h3 class="font-serif text-2xl font-semibold mt-12 mb-5">
+            Meet some of the doctors you may be matched with
+          </h3>
+          <div class="grid md:grid-cols-3 gap-4" id="doctor-grid"></div>
+
+          <div class="grid md:grid-cols-2 gap-4 mt-10">
+            <div class="card border-teal/40">
+              <span class="chip">Free</span>
+              <h3 class="font-bold text-lg mt-3 mb-1">Initial case opinion</h3>
+              <p class="muted text-sm">
+                At selected hospitals, a specialist team reviews your reports
+                and gives an initial view of your options. Availability varies
+                by hospital and case.
+              </p>
+            </div>
+            <div class="card">
+              <span class="chip chip-grey">Paid, fee confirmed in advance</span>
+              <h3 class="font-bold text-lg mt-3 mb-1">
+                Scheduled video consultation
+              </h3>
+              <p class="muted text-sm">
+                A live conversation with your chosen oncologist, where you and
+                your family can ask questions face to face. The fee is shared
+                before you book.
+              </p>
+            </div>
+          </div>
+          <div class="mt-6">
+            <a class="cta" data-wa="consult">Request an oncologist opinion</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOSPITALS -->
+      <section id="hospitals" class="section">
+        <div class="containerx">
+          <h2 class="h2 max-w-3xl">
+            Hospitals chosen for your diagnosis, with accreditation you can
+            check
+          </h2>
+          <p class="lede mt-4">
+            International accreditation such as JCI is awarded to individual
+            hospital facilities, so we tell you which facility holds which
+            accreditation and link you to the accrediting body so you can
+            confirm it yourself.
+          </p>
+
+          <div
+            class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8"
+            id="hospital-grid"
+          ></div>
+
+          <div class="flex flex-wrap gap-x-6 gap-y-2 mt-6 text-sm">
+            <a
+              class="text-teal underline"
+              href="https://www.jointcommissioninternational.org/who-we-are/accredited-organizations/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Verify a hospital on the JCI directory</a
+            >
+            <a
+              class="text-teal underline"
+              href="https://nabh.co/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >NABH (India)</a
+            >
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-4 mt-10">
+            <div class="card">
+              <h3 class="font-bold mb-1">Multidisciplinary tumor boards</h3>
+              <p class="muted text-sm">
+                For complex cases, surgeons, oncologists, pathologists and
+                radiologists review your case together before a plan is
+                proposed.
+              </p>
+            </div>
+            <div class="card">
+              <h3 class="font-bold mb-1">Advanced diagnostics on site</h3>
+              <p class="muted text-sm">
+                Molecular and genomic testing, PET-CT and other modern imaging,
+                where relevant to your diagnosis.
+              </p>
+            </div>
+            <div class="card">
+              <h3 class="font-bold mb-1">Matched to your needs</h3>
+              <p class="muted text-sm">
+                We consider your cancer type, the expertise needed, city,
+                language and budget, not the largest hospital by default.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TREATMENTS -->
+      <section id="treatments" class="section bg-mist">
+        <div class="containerx">
+          <h2 class="h2 max-w-3xl">
+            Modern cancer care, chosen for you, not for the technology
+          </h2>
+          <p class="lede mt-4">
+            New technology helps only when it fits your cancer. Your treating
+            team decides what is medically right for you. These are the tools
+            that may be considered.
+          </p>
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+            <div class="card">
+              <h3 class="font-bold mb-1">Molecular and biomarker testing</h3>
+              <p class="muted text-sm">
+                Tests that look for changes in your tumour that can guide which
+                medicines are most likely to help.
+              </p>
+            </div>
+            <div class="card">
+              <h3 class="font-bold mb-1">Targeted therapy</h3>
+              <p class="muted text-sm">
+                Medicines aimed at specific features of certain cancers.
+              </p>
+            </div>
+            <div class="card">
+              <h3 class="font-bold mb-1">Immunotherapy</h3>
+              <p class="muted text-sm">
+                Treatments that help the immune system respond to selected
+                cancers.
+              </p>
+            </div>
+            <div class="card">
+              <h3 class="font-bold mb-1">Advanced radiation</h3>
+              <p class="muted text-sm">
+                IMRT, IGRT, SBRT and other precision techniques that aim
+                radiation at the tumour while sparing healthy tissue, when
+                indicated and available.
+              </p>
+            </div>
+            <div class="card">
+              <h3 class="font-bold mb-1">
+                Minimally invasive and robotic surgery
+              </h3>
+              <p class="muted text-sm">
+                Smaller incisions and, for suitable patients, quicker recovery.
+              </p>
+            </div>
+            <div class="card">
+              <h3 class="font-bold mb-1">Supportive and palliative care</h3>
+              <p class="muted text-sm">
+                Managing pain, nutrition and side effects so you can get through
+                treatment more comfortably.
+              </p>
+            </div>
+          </div>
+
+          <h3 class="font-serif text-2xl font-semibold mt-12 mb-6">
+            How a treatment plan is usually built
+          </h3>
+          <ol class="grid md:grid-cols-4 gap-4">
+            <li class="border-t-2 border-teal pt-3">
+              <div class="font-bold">1. Confirm the diagnosis</div>
+              <p class="muted text-sm mt-1">
+                Pathology and imaging are reviewed, and repeated if needed.
+              </p>
+            </li>
+            <li class="border-t-2 border-teal pt-3">
+              <div class="font-bold">2. Profile the tumour</div>
+              <p class="muted text-sm mt-1">
+                Molecular testing where it could change treatment.
+              </p>
+            </li>
+            <li class="border-t-2 border-teal pt-3">
+              <div class="font-bold">3. Specialists review together</div>
+              <p class="muted text-sm mt-1">
+                A tumor board weighs surgery, medicines and radiation.
+              </p>
+            </li>
+            <li class="border-t-2 border-teal pt-3">
+              <div class="font-bold">4. Plan explained to you</div>
+              <p class="muted text-sm mt-1">
+                Goals, benefits, side effects and cost, in plain language.
+              </p>
+            </li>
+          </ol>
+
+          <div class="mt-10 card bg-white">
+            <h3 class="font-bold mb-1">
+              Guided by recognised international standards
+            </h3>
+            <p class="muted text-sm">
+              Oncologists commonly refer to evidence-based guidelines such as
+              those from ASCO and NCCN. You can read the same plain-language
+              patient guides yourself:
+              <a
+                class="text-teal underline"
+                href="https://www.cancer.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >ASCO Cancer.Net</a
+              >,
+              <a
+                class="text-teal underline"
+                href="https://www.nccn.org/patients"
+                target="_blank"
+                rel="noopener noreferrer"
+                >NCCN Guidelines for Patients</a
+              >,
+              <a
+                class="text-teal underline"
+                href="https://www.cancer.gov/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >US National Cancer Institute</a
+              >. These organisations do not endorse Hosplan or any hospital.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CANCER TYPES -->
+      <section id="types" class="section">
+        <div class="containerx">
+          <h2 class="h2 max-w-3xl">Start with your diagnosis</h2>
+          <p class="lede mt-4 mb-8">
+            Choose your cancer type to start a chat about it, or message us if
+            your diagnosis is not confirmed yet.
+          </p>
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 gap-3"
+            id="cancer-grid"
+          ></div>
+        </div>
+      </section>
+
+      <!-- COST -->
+      <section id="cost" class="section bg-mist">
+        <div class="containerx">
+          <h2 class="h2 max-w-3xl">
+            Know the likely cost before you make travel plans
+          </h2>
+          <p class="lede mt-4">
+            India's cancer care is often substantially less expensive than in
+            many other countries, but there is no single price for "cancer
+            treatment". Cost depends on the diagnosis, stage, medicines,
+            surgery, duration and hospital.
+          </p>
+
+          <div class="grid lg:grid-cols-[1.15fr_.85fr] gap-6 mt-8 items-start">
+            <div class="card relative overflow-hidden" id="cost-card">
+              <h3 class="font-bold text-lg" id="cost-title">
+                Treatment cost comparison
+              </h3>
+              <p class="text-sm muted mb-5" id="cost-sub">
+                Same treatment, same scope, four countries.
+              </p>
+              <div id="cost-chart" class="space-y-3"></div>
+              <p class="text-xs muted mt-5" id="cost-note"></p>
+            </div>
+            <div class="card">
+              <h3 class="font-bold text-lg mb-3">
+                A good estimate should show
+              </h3>
+              <ul class="space-y-2 text-sm muted">
+                <li class="flex gap-2">
+                  <span class="text-teal font-bold">✓</span>Surgery, medicines
+                  and radiation, itemised
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-teal font-bold">✓</span>Tests, scans and
+                  doctor fees
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-teal font-bold">✓</span>Expected hospital
+                  stay and room type
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-teal font-bold">✓</span>What is not included
+                </li>
+                <li class="flex gap-2">
+                  <span class="text-teal font-bold">✓</span>What could change
+                  after in-person assessment
+                </li>
+              </ul>
+              <a class="cta w-full mt-6" data-wa="cost"
+                >Request a treatment cost estimate</a
+              >
+              <p class="text-xs muted mt-3">
+                Final costs can change after in-person evaluation, additional
+                tests or changes in the treatment plan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY INDIA -->
+      <section id="why-india" class="section">
+        <div class="containerx">
+          <h2 class="h2 max-w-3xl">
+            Why patients from around the world choose India for cancer treatment
+          </h2>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+            <div>
+              <h3 class="font-bold mb-1">Experienced oncology teams</h3>
+              <p class="muted text-sm">
+                Many Indian oncologists are trained or have worked at leading
+                centres in the US, UK and Europe, and treat a high volume of
+                patients.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-bold mb-1">Modern technology</h3>
+              <p class="muted text-sm">
+                Advanced radiation, robotic surgery and molecular diagnostics
+                are available in major hospitals.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-bold mb-1">Shorter waits</h3>
+              <p class="muted text-sm">
+                Many patients can start evaluation and treatment quickly, rather
+                than waiting weeks.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-bold mb-1">English-speaking care</h3>
+              <p class="muted text-sm">
+                Doctors and nursing teams communicate in English, and
+                interpreters can be arranged for other languages.
+              </p>
+            </div>
+          </div>
+          <div class="mt-10 grid sm:grid-cols-3 gap-4" id="stats-row"></div>
+        </div>
+      </section>
+
+      <!-- SUPPORT -->
+      <section id="support" class="section bg-mist">
+        <div class="containerx">
+          <h2 class="h2 max-w-3xl">
+            You won't be navigating a new country alone
+          </h2>
+          <p class="lede mt-4">
+            From your first message to your follow-up, a coordinator handles the
+            practical work so you and your family can focus on treatment and
+            recovery.
+          </p>
+          <div class="grid md:grid-cols-4 gap-4 mt-8">
+            <div class="card">
+              <h3 class="font-bold text-teal mb-1">Before you travel</h3>
+              <p class="muted text-sm">
+                Specialist opinions, estimates, medical visa invitation letters
+                and travel planning.
+              </p>
+            </div>
+            <div class="card">
+              <h3 class="font-bold text-teal mb-1">When you arrive</h3>
+              <p class="muted text-sm">
+                Airport pick-up, transfers and help settling in, as per your
+                agreed service plan.
+              </p>
+            </div>
+            <div class="card">
+              <h3 class="font-bold text-teal mb-1">During treatment</h3>
+              <p class="muted text-sm">
+                Appointments, hospital navigation, accommodation near the
+                hospital, interpreters, and food that suits your diet.
+              </p>
+            </div>
+            <div class="card">
+              <h3 class="font-bold text-teal mb-1">After treatment</h3>
+              <p class="muted text-sm">
+                Discharge records, follow-up consultations with the hospital and
+                help staying connected once you are home.
+              </p>
+            </div>
+          </div>
+          <p class="text-sm muted mt-6 max-w-3xl">
+            Family members are welcome to join conversations. We can also keep
+            relatives updated on your behalf if you wish.
+          </p>
+        </div>
+      </section>
+
+      <!-- GUIDANCE + QUESTIONS TO ASK -->
+      <section id="guidance" class="section">
+        <div class="containerx grid lg:grid-cols-2 gap-12">
+          <div>
+            <h2 class="h2">Ongoing guidance from sources you can trust</h2>
+            <p class="lede mt-4">
+              Questions don't stop after the first consultation. Alongside your
+              treating doctors, these free resources are written by leading
+              cancer organisations.
+            </p>
+            <div class="mt-6 space-y-3">
+              <a
+                class="card block hover:border-teal"
+                href="https://www.cancer.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="font-bold">ASCO Cancer.Net</div>
+                <div class="muted text-sm">
+                  Patient information by oncologists from the American Society
+                  of Clinical Oncology.
+                </div></a
+              >
+              <a
+                class="card block hover:border-teal"
+                href="https://www.nccn.org/patients"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="font-bold">NCCN Guidelines for Patients</div>
+                <div class="muted text-sm">
+                  Plain-language versions of widely used treatment guidelines.
+                </div></a
+              >
+              <a
+                class="card block hover:border-teal"
+                href="https://www.cancer.gov/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="font-bold">US National Cancer Institute</div>
+                <div class="muted text-sm">
+                  Cancer types, treatments, clinical trials and coping support.
+                </div></a
+              >
+            </div>
+            <p class="text-xs muted mt-4">
+              These organisations are independent and do not endorse Hosplan.
+            </p>
+          </div>
+          <div>
+            <h2 class="h2">Questions worth asking any oncologist</h2>
+            <p class="muted mt-3 mb-4">
+              Take these to any consultation, including ours. A good doctor will
+              welcome them.
+            </p>
+            <div>
+              <details class="acc">
+                <summary>
+                  What exactly is my cancer type and stage, and how was it
+                  confirmed?
+                </summary>
+                <p>
+                  Ask to see the pathology report and what imaging was used. A
+                  second pathology review can matter.
+                </p>
+              </details>
+              <details class="acc">
+                <summary>
+                  Has my tumour been tested for molecular changes?
+                </summary>
+                <p>
+                  For some cancers, these tests can open up targeted or
+                  immunotherapy options. Ask whether they apply to you.
+                </p>
+              </details>
+              <details class="acc">
+                <summary>
+                  Is the goal of treatment cure, control or comfort?
+                </summary>
+                <p>
+                  Understanding the goal helps you weigh benefits against side
+                  effects.
+                </p>
+              </details>
+              <details class="acc">
+                <summary>
+                  What are all my options, including doing less or waiting?
+                </summary>
+                <p>
+                  Ask how the options compare on benefit, risk and recovery
+                  time.
+                </p>
+              </details>
+              <details class="acc">
+                <summary>
+                  Has my case been reviewed by a multidisciplinary tumor board?
+                </summary>
+                <p>
+                  For many cancers, combined review by several specialists leads
+                  to better-considered plans.
+                </p>
+              </details>
+              <details class="acc">
+                <summary>
+                  How much experience does this team have with my type of
+                  cancer?
+                </summary>
+                <p>
+                  It is reasonable to ask how many similar patients they treat.
+                </p>
+              </details>
+              <details class="acc">
+                <summary>
+                  What are the likely side effects and how will they be managed?
+                </summary>
+                <p>
+                  Ask who to contact if side effects start after you return
+                  home.
+                </p>
+              </details>
+              <details class="acc">
+                <summary>
+                  What is the total expected cost, and what could change it?
+                </summary>
+                <p>Ask for it in writing and itemised.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRUST / COMMITMENTS -->
+      <section id="trust" class="section bg-deep text-white">
+        <div class="containerx">
+          <h2 class="h2 max-w-3xl">Our commitments to you</h2>
+          <p class="text-teal-50/90 text-lg mt-4 max-w-3xl">
+            You are trusting us at a very hard time. These are the standards we
+            hold ourselves to.
+            <span class="opacity-70 text-sm"
+              >(Hosplan to confirm each commitment before publishing.)</span
+            >
+          </p>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-7 mt-9">
+            <div>
+              <h3 class="font-bold mb-1">We are open about our role</h3>
+              <p class="text-teal-50/85 text-sm">
+                Hosplan is a patient facilitator, not a hospital. We will
+                explain how we are paid, in plain words, if you ask.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-bold mb-1">No pressure to travel</h3>
+              <p class="text-teal-50/85 text-sm">
+                If a remote opinion or treatment closer to home is the better
+                choice for you, we will say so.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-bold mb-1">Your records stay private</h3>
+              <p class="text-teal-50/85 text-sm">
+                Reports are shared only through a secure process, only with the
+                doctors reviewing your case.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-bold mb-1">No guarantees we can't keep</h3>
+              <p class="text-teal-50/85 text-sm">
+                No one can promise a cure. We will not promise outcomes, and we
+                will tell you what is uncertain.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-bold mb-1">Costs explained before you commit</h3>
+              <p class="text-teal-50/85 text-sm">
+                Fees, estimates and what could change them are shared in writing
+                before you decide.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-bold mb-1">You can stop at any point</h3>
+              <p class="text-teal-50/85 text-sm">
+                Asking for an opinion creates no obligation. The decisions are
+                always yours.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section">
+        <div class="containerx max-w-4xl">
+          <h2 class="h2 mb-6">Frequently asked questions</h2>
+          <details class="acc">
+            <summary>Can I be completely cured of cancer?</summary>
+            <p>
+              Some cancers can be cured and others controlled for long periods.
+              The outlook depends on the type, stage, biology and response to
+              treatment. An oncologist can discuss realistic goals after
+              reviewing your case.
+            </p>
+          </details>
+          <details class="acc">
+            <summary>Can I get an opinion without travelling to India?</summary>
+            <p>
+              Often, yes. Depending on the hospital and specialist, your records
+              can be reviewed remotely and an online consultation may be
+              available. We explain the process and any fees in advance.
+            </p>
+          </details>
+          <details class="acc">
+            <summary>Which reports should I prepare?</summary>
+            <p>
+              Helpful documents include a biopsy or pathology report, CT, MRI or
+              PET reports, molecular test results if available, recent blood
+              tests and a summary of any treatment already received. Please
+              contact us even if some are missing.
+            </p>
+          </details>
+          <details class="acc">
+            <summary>Are the consultations free?</summary>
+            <p>
+              Some hospitals offer a complimentary initial case opinion.
+              Scheduled video consultations may be chargeable. Availability and
+              fees are confirmed before you book.
+            </p>
+          </details>
+          <details class="acc">
+            <summary>Will I get a cost estimate before I travel?</summary>
+            <p>
+              We request an indicative estimate from the hospital based on your
+              medical records. Final costs can change after in-person
+              evaluation, extra tests or changes to the plan.
+            </p>
+          </details>
+          <details class="acc">
+            <summary>Are your partner hospitals accredited?</summary>
+            <p>
+              Accreditation such as JCI or NABH applies to individual hospital
+              facilities. We tell you which facility holds which accreditation,
+              and you can verify it with the accrediting body.
+            </p>
+          </details>
+          <details class="acc">
+            <summary>Does Hosplan provide medical treatment?</summary>
+            <p>
+              No. Medical care is provided by licensed doctors and hospitals.
+              Hosplan coordinates specialist access, communication and patient
+              travel services.
+            </p>
+          </details>
+          <details class="acc">
+            <summary>Can Hosplan help after I return home?</summary>
+            <p>
+              We can help coordinate follow-up communication and remote
+              appointments with the treating hospital where available. Ongoing
+              local care should be arranged with your own clinicians.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <section class="bg-deep text-white py-16">
+        <div class="containerx text-center max-w-3xl">
+          <h2
+            class="font-serif text-3xl md:text-5xl font-semibold tracking-tight mb-5"
+          >
+            You don't have to work through every question alone.
+          </h2>
+          <p class="text-lg text-teal-50/90 mb-8">
+            Tell a Hosplan coordinator what you know so far. We'll listen first,
+            then explain your options.
+          </p>
+          <a class="cta cta-light !px-8 !py-4" data-wa="general"
+            ><svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"
+              /></svg
+            >Start a confidential WhatsApp conversation</a
+          >
+          <p class="text-xs text-teal-100/80 mt-6">
+            For urgent symptoms or emergencies, seek immediate medical care
+            locally. WhatsApp is not an emergency service.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-white py-9 border-t border-slate-200">
+      <div class="containerx flex flex-col md:flex-row gap-6 justify-between">
+        <div>
+          <img src="assets/hosplan-logo.svg" alt="Hosplan" class="h-9" />
+          <p class="text-sm muted mt-3 max-w-xl">
+            Hosplan is a medical value travel facilitator, not a hospital or
+            treating medical provider. This page is for general information and
+            is not medical advice. Treatment decisions and outcomes depend on
+            individual clinical circumstances.
+          </p>
+        </div>
+        <div class="text-xs muted max-w-md">
+          <!-- BEFORE PUBLISHING: add company address, official contact details, privacy policy link, and verified ISO / NABH details (scope and validity). -->
+          © Hosplan. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="mobilebar hidden fixed bottom-0 inset-x-0 z-40 bg-white border-t border-slate-200 p-3 shadow-xl"
+    >
+      <a class="cta w-full" data-wa="general">Chat with Hosplan on WhatsApp</a>
+    </div>
+
+    <script>
+      /* ============ CONTENT YOU EDIT (nothing here is shown as fact until you fill it in) ============ */
+
+      /* REQUIRED: Hosplan's verified WhatsApp business number, international format, digits only (e.g. '919876543210') */
+      const WHATSAPP_NUMBER = "";
+
+      const messages = {
+        general:
+          "Hello Hosplan, I would like guidance about cancer treatment in India.",
+        reports:
+          "Hello Hosplan, I would like to discuss my cancer reports and request specialist guidance.",
+        consult:
+          "Hello Hosplan, I would like to arrange an online consultation with a cancer specialist.",
+        cost: "Hello Hosplan, I would like an estimate for cancer treatment in India.",
+      };
+
+      /* Hospitals. Only add accreditations the hospital facility actually holds, and only with their permission to be named.
+   accreditations example: ['JCI','NABH']   (leave [] if not yet verified) */
+      const HOSPITALS = [
+        { name: "Apollo Hospitals", city: "", accreditations: [] },
+        { name: "Medanta", city: "", accreditations: [] },
+        { name: "Fortis Healthcare", city: "", accreditations: [] },
+        { name: "Aster Hospitals", city: "", accreditations: [] },
+        { name: "Manipal Hospitals", city: "", accreditations: [] },
+      ];
+
+      /* Doctors: add only verified, consented profiles.
+   Example: {name:'Dr. Full Name',specialty:'Medical Oncologist · Lung & breast cancer',hospital:'Hospital, City',credentials:'MBBS, MD, DM (Medical Oncology)',experience:'20+ years',languages:'English, Hindi',consult:'free'|'paid'|'both',photo:'assets/doctors/name.jpg'} */
+      const DOCTORS = [];
+
+      /* Optional proof points. Add only figures you can source, e.g. {value:'XX,XXX',label:'international patients guided by Hosplan since 20XX'} */
+      const STATS = [];
+
+      /* Cost comparison. Use the SAME treatment and scope for all four countries; all values in one currency.
+   Add low/high figures, the date, and the source. The chart appears only when every row has numbers.
+   Add ?preview to the page URL to see the chart layout with obviously fake sample data. */
+      const COSTS = {
+        treatment: "", // e.g. 'Breast cancer: surgery + 6 cycles chemotherapy'
+        currency: "USD",
+        asOf: "", // e.g. 'March 2026'
+        source: "", // e.g. 'Hospital quotations obtained by Hosplan; published price lists'
+        rows: [
+          { country: "India", low: null, high: null, highlight: true },
+          { country: "Thailand", low: null, high: null },
+          { country: "Singapore", low: null, high: null },
+          { country: "Germany", low: null, high: null },
+        ],
+      };
+
+      /* ============ RENDERING (no need to edit) ============ */
+      const esc = (s) =>
+        String(s).replace(
+          /[&<>"']/g,
+          (c) =>
+            ({
+              "&": "&amp;",
+              "<": "&lt;",
+              ">": "&gt;",
+              '"': "&quot;",
+              "'": "&#39;",
+            })[c],
+        );
+      const waLink = (m) =>
+        (WHATSAPP_NUMBER
+          ? "https://wa.me/" + WHATSAPP_NUMBER
+          : "https://wa.me/") +
+        "?text=" +
+        encodeURIComponent(m);
+
+      document.querySelectorAll("[data-wa]").forEach((a) => {
+        a.href = waLink(messages[a.dataset.wa] || messages.general);
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+      });
+
+      /* hero strip */
+      document.getElementById("hospital-strip").innerHTML = HOSPITALS.map(
+        (h) => "<span>" + esc(h.name) + "</span>",
+      ).join("");
+
+      /* hospitals */
+      document.getElementById("hospital-grid").innerHTML = HOSPITALS.map(
+        (h) => {
+          const chips = h.accreditations.length
+            ? h.accreditations
+                .map(
+                  (a) => '<span class="chip">' + esc(a) + " accredited</span>",
+                )
+                .join(" ")
+            : '<span class="chip chip-grey">Accreditation details on request</span>';
+          return (
+            '<div class="card"><h3 class="font-bold text-lg">' +
+            esc(h.name) +
+            "</h3>" +
+            (h.city ? '<p class="muted text-sm">' + esc(h.city) + "</p>" : "") +
+            '<div class="mt-3 flex flex-wrap gap-2">' +
+            chips +
+            "</div></div>"
+          );
+        },
+      ).join("");
+
+      /* doctors */
+      (function () {
+        const g = document.getElementById("doctor-grid");
+        if (DOCTORS.length) {
+          g.innerHTML = DOCTORS.map((d) => {
+            const tag =
+              d.consult === "free"
+                ? "Free initial opinion"
+                : d.consult === "paid"
+                  ? "Video consult available"
+                  : "Free opinion · Video consult";
+            const photo = d.photo
+              ? '<img src="' +
+                esc(d.photo) +
+                '" alt="' +
+                esc(d.name) +
+                '" class="w-16 h-16 rounded-full object-cover bg-slate-100">'
+              : '<div class="w-16 h-16 rounded-full bg-slate-100 flex items-center justify-center text-xl font-bold text-teal">' +
+                esc(d.name.replace(/^Dr\.?\s*/i, "").charAt(0)) +
+                "</div>";
+            return (
+              '<div class="card"><div class="flex gap-4 items-center">' +
+              photo +
+              '<div><h4 class="font-bold">' +
+              esc(d.name) +
+              '</h4><p class="text-sm muted">' +
+              esc(d.specialty) +
+              '</p></div></div><dl class="text-sm mt-4 space-y-1"><div><dt class="inline font-semibold">Hospital: </dt><dd class="inline muted">' +
+              esc(d.hospital) +
+              '</dd></div><div><dt class="inline font-semibold">Qualifications: </dt><dd class="inline muted">' +
+              esc(d.credentials) +
+              '</dd></div><div><dt class="inline font-semibold">Experience: </dt><dd class="inline muted">' +
+              esc(d.experience) +
+              '</dd></div><div><dt class="inline font-semibold">Languages: </dt><dd class="inline muted">' +
+              esc(d.languages) +
+              '</dd></div></dl><span class="chip mt-4">' +
+              tag +
+              "</span></div>"
+            );
+          }).join("");
+        } else {
+          g.innerHTML = [1, 2, 3]
+            .map(
+              () =>
+                '<div class="slot"><div class="flex gap-4 items-center"><div class="w-16 h-16 rounded-full bg-slate-200"></div><div class="flex-1"><div class="h-3 bg-slate-200 rounded w-3/4 mb-2"></div><div class="h-3 bg-slate-200 rounded w-1/2"></div></div></div><p class="text-xs muted mt-4">Verified doctor profile appears here: name, photo, specialty, qualifications, years of experience, hospital, languages and consultation type.</p></div>',
+            )
+            .join("");
+        }
+      })();
+
+      /* stats */
+      (function () {
+        const s = document.getElementById("stats-row");
+        if (!STATS.length) {
+          s.remove();
+          return;
+        }
+        s.innerHTML = STATS.map(
+          (x) =>
+            '<div class="border-l-4 border-teal pl-4"><div class="font-serif text-4xl font-semibold">' +
+            esc(x.value) +
+            '</div><div class="muted text-sm mt-1">' +
+            esc(x.label) +
+            "</div></div>",
+        ).join("");
+      })();
+
+      /* cancer types */
+      const types = [
+        "Breast cancer",
+        "Lung cancer",
+        "Blood cancers",
+        "Colorectal cancer",
+        "Liver cancer",
+        "Brain tumours",
+        "Prostate cancer",
+        "Oral & head-neck cancer",
+        "Ovarian & cervical cancer",
+        "Pancreatic cancer",
+        "Kidney & bladder cancer",
+        "Stomach & oesophageal cancer",
+      ];
+      document.getElementById("cancer-grid").innerHTML = types
+        .map(
+          (t) =>
+            '<a class="card !p-4 hover:border-teal hover:shadow-md transition text-sm font-semibold flex justify-between gap-2" target="_blank" rel="noopener noreferrer" href="' +
+            waLink(
+              "Hello Hosplan, I need specialist guidance for " +
+                t +
+                " in India.",
+            ) +
+            '"><span>' +
+            esc(t) +
+            '</span><span class="text-teal" aria-hidden="true">↗</span></a>',
+        )
+        .join("");
+
+      /* cost chart */
+      (function () {
+        const preview = /[?&]preview\b/.test(location.search);
+        let c = COSTS;
+        if (preview) {
+          c = {
+            treatment: "SAMPLE treatment",
+            currency: "USD",
+            asOf: "SAMPLE",
+            source: "SAMPLE",
+            rows: [
+              { country: "India", low: 100, high: 160, highlight: true },
+              { country: "Thailand", low: 200, high: 300 },
+              { country: "Singapore", low: 400, high: 600 },
+              { country: "Germany", low: 500, high: 700 },
+            ],
+          };
+        }
+        const ready =
+          c.rows.every((r) => r.low != null && r.high != null) &&
+          c.treatment &&
+          c.asOf &&
+          c.source;
+        const chart = document.getElementById("cost-chart");
+        if (!ready) {
+          chart.innerHTML =
+            c.rows
+              .map(
+                (r) =>
+                  '<div class="flex items-center gap-3"><div class="w-24 text-sm font-semibold">' +
+                  esc(r.country) +
+                  '</div><div class="bar-track flex-1"><div class="bar" style="left:0;width:0"></div></div></div>',
+              )
+              .join("") +
+            '<p class="text-sm muted mt-4">A dated, source-backed comparison for a specific treatment is being prepared. Ask us and we will share comparable estimates for your case.</p>';
+          return;
+        }
+        const max = Math.max(...c.rows.map((r) => r.high));
+        const fmt = (n) =>
+          new Intl.NumberFormat("en-US", {
+            style: "currency",
+            currency: c.currency,
+            maximumFractionDigits: 0,
+          }).format(n);
+        document.getElementById("cost-title").textContent = c.treatment;
+        chart.innerHTML = c.rows
+          .map((r) => {
+            const left = ((r.low / max) * 100).toFixed(1),
+              w = Math.max(((r.high - r.low) / max) * 100, 2).toFixed(1);
+            return (
+              '<div><div class="flex justify-between text-sm mb-1"><span class="font-semibold">' +
+              esc(r.country) +
+              '</span><span class="muted">' +
+              fmt(r.low) +
+              " – " +
+              fmt(r.high) +
+              '</span></div><div class="bar-track"><div class="bar' +
+              (r.highlight ? " me" : "") +
+              '" style="left:' +
+              left +
+              "%;width:" +
+              w +
+              '%"></div></div></div>'
+            );
+          })
+          .join("");
+        document.getElementById("cost-note").textContent =
+          "Estimated total range per patient, " +
+          c.currency +
+          ", as of " +
+          c.asOf +
+          ". Source: " +
+          c.source +
+          ". Actual costs vary by patient and hospital.";
+        if (preview)
+          document
+            .getElementById("cost-card")
+            .insertAdjacentHTML(
+              "beforeend",
+              '<div class="sample">SAMPLE DATA<br>NOT REAL</div>',
+            );
+      })();
+    </script>
+  </body>
+</html>
