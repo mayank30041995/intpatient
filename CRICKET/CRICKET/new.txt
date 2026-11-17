@@ -1,0 +1,270 @@
+let myTarget = 1500;
+
+class Player {
+    name: string;
+    isBatsman: boolean;
+    isTailender: boolean;
+    runs: number;
+    ballsFaced: number;
+    isOut: boolean;
+    team: Object;
+    singles: number;
+    doubles: number;
+    boundaries: number;
+    sixes: number;
+
+    constructor(name: string, isBatsman: boolean, isTailender: boolean = false, team: Object) {
+        this.name = name;
+        this.isBatsman = isBatsman;
+        this.isTailender = isTailender;
+        this.runs = 0;
+        this.ballsFaced = 0;
+        this.isOut = false;
+        this.team = team;
+        this.singles = 0;
+        this.doubles = 0;
+        this.boundaries = 0;
+        this.sixes = 0;
+    }
+
+    async bat(): Promise<number> {
+        if (this.isBatsman) {
+            const runOptions = [0, 1, 2, 3, 4, 6];
+            const probabilities = [64, 25, 5, 0.5, 3.5, 2];
+            const randomPick = Math.random() * 100;
+            let cumulativeProbability = 0;
+            let scored = 0;
+            for (let i = 0; i < runOptions.length; i++) {
+                cumulativeProbability += probabilities[i];
+                if (randomPick < cumulativeProbability) {
+                    scored = runOptions[i];
+                    this.runs += scored;
+                    switch (scored) {
+                        case 1:
+                            this.singles++;
+                            break;
+                        case 2:
+                            this.doubles++;
+                            break;
+                        case 4:
+                            this.boundaries++;
+                            break;
+                        case 6:
+                            this.sixes++;
+                            break;
+                    }
+                    break;
+                }
+            }
+            let FOW = Boolean(this.name) === this.isTailender ? 0.015 : 0.013;
+            if (Math.random() < FOW) {
+                this.isOut = true;
+                console.log(`${this.name} is OUT!`);
+            }
+            this.ballsFaced++;
+            console.log(`${this.name} faces ${this.ballsFaced} balls and scores ${scored} runs.`);
+            return scored;
+        }
+        return 0;
+    }
+
+    getTotalScore(): string {
+        return `${this.name}: ${this.runs} runs off ${this.ballsFaced} balls [4s: ${this.boundaries}, 6s: ${this.sixes}, 1s: ${this.singles}, 2s: ${this.doubles}]`;
+    }
+}
+
+class Team {
+    name: string;
+    players: Player[] = [];
+    totalRuns: number;
+    wickets: number;
+    overs: number;
+    battingOrder: number;
+    indivisualScore = 0;
+
+    constructor(name: string) {
+        this.name = name;
+        this.totalRuns = 0;
+        this.wickets = 0;
+        this.overs = 0;
+        this.battingOrder = 0;
+        this.indivisualScore = 0;
+    }
+
+    getRunRate(overs: number, runs: number): string {
+        if (overs <= 0) return '0';
+        return (runs / overs).toFixed(2);
+    }
+
+    addPlayer(player: Player) {
+        this.players.push(player);
+    }
+
+    showStatus() {
+        let completedOvers = Math.floor(this.overs);
+        let ballsInCurrentOver = Math.floor((this.overs % 1) * 6);
+        let currentOver = `${completedOvers}.${ballsInCurrentOver}`;
+        console.log(`\n${this.name}'s Current Status:`);
+        console.log(`Total Runs: ${this.totalRuns}, Wickets: ${this.wickets}, Overs: ${currentOver}, Run Rate: ${this.getRunRate(Number(currentOver), this.totalRuns)}`);
+    }
+
+    async batInInnings(target: number, isSecondInnings: boolean): Promise<void> {
+        let strikerIndex = this.battingOrder;
+        let nonStrikerIndex = this.battingOrder + 1;
+        let striker = this.players[strikerIndex];
+        let nonStriker = this.players[nonStrikerIndex];
+        let ballsInCurrentOver = 0;
+        let overRuns = 0;
+
+        while (this.wickets < 10 && this.battingOrder < this.players.length) {
+            [striker, nonStriker] = await this.simulateBall(striker, nonStriker);
+            const runs = await striker.bat();
+            this.totalRuns += runs;
+            this.indivisualScore += runs;
+
+            if (striker.isOut) {
+                this.wickets++;
+                this.battingOrder++;
+                if (this.battingOrder < this.players.length) {
+                    striker = this.players[this.battingOrder];
+                    this.indivisualScore = 0;
+                }
+            }
+
+            if (nonStriker.isOut) {
+                this.wickets++;
+                this.battingOrder++;
+                if (this.battingOrder < this.players.length) {
+                    nonStriker = this.players[this.battingOrder];
+                }
+            }
+
+            overRuns += runs;
+            ballsInCurrentOver++;
+            if (ballsInCurrentOver === 6) {
+                this.overs++;
+                this.showStatus();
+                console.log(`---------------------${striker.name}'s Total Score:  ${this.indivisualScore}---------------------`);
+                if (isSecondInnings) {
+                    console.log(`---------------------Target score: ${target} runs & ${target - this.totalRuns} need's to win ---------------------`);
+                }
+                await new Promise((resolve) => setTimeout(resolve, 200));
+                ballsInCurrentOver = 0;
+                overRuns = 0;
+            }
+
+            if (isSecondInnings && this.totalRuns >= target) {
+                console.log(`${this.name} has reached the target!`);
+                break;
+            }
+        }
+
+        console.log(`${this.name} innings completed. Total Runs: ${this.totalRuns}, Wickets: ${this.wickets}`);
+        this.players.forEach(player => {
+            if (player.ballsFaced > 0) {
+                console.log(player.getTotalScore());
+            }
+        });
+        this.showStatus();
+    }
+
+    async simulateBall(striker: Player, nonStriker: Player): Promise<[Player, Player]> {
+        let onBatter = striker;
+        console.log(`Bowler bowls to ${onBatter.name}...`);
+        await new Promise((resolve) => setTimeout(resolve, 100));
+        const runs = await striker.bat();
+        console.log(striker.getTotalScore());
+        if ([1, 3].includes(runs)) {
+            [striker, nonStriker] = [nonStriker, striker];
+        }
+        if (Math.random() < 0.0045) {
+            nonStriker.isOut = true;
+            console.log(`${nonStriker.name} is OUT while running!`);
+        }
+        return [striker, nonStriker];
+    }
+}
+
+const indiaBatsmen = [
+    'Yashaswi Jaiswal', 'Rohit Sharma', 'KL Rahul', 'Virat Kohli', 'Shubman Gill',
+    'Rishabh Pant', 'Washington Sundar', 'Nitish Kumar Reddy',
+    'Ravindra Jadeja', 'Mohammed Siraj', 'Jasprit Bumrah',
+];
+
+const bangladeshBatsmen = [
+    'Shadman Islam', 'Zakir Hasan', 'Najmul Hossain Shanto', 'Mominul Haque',
+    'Mushfiqur Rahim', 'Shakib Al Hasan', 'Litton Das', 'Mehidy Hasan Miraz',
+    'Taskin Ahmed', 'Hasan Mahmud', 'Nahid Rana',
+];
+
+const india = new Team("India");
+const bangladesh = new Team("Bangladesh");
+
+indiaBatsmen.forEach((name, index) => {
+    india.addPlayer(new Player(name, true, index >= 8, india));
+});
+
+bangladeshBatsmen.forEach((name, index) => {
+    bangladesh.addPlayer(new Player(name, true, index >= 8, bangladesh));
+});
+
+class Match {
+    Bangladesh: Team;
+    India: Team;
+    constructor() {
+        this.Bangladesh = bangladesh;
+        this.India = india;
+    }
+
+    async playMatch() {
+        console.log("Match Begins!");
+
+        console.log("1st Innings: Bangladesh Batting");
+        await this.Bangladesh.batInInnings(0, false);
+        const bangladeshFirst = this.Bangladesh.totalRuns;
+
+        console.log("2nd Innings: India Batting");
+        await this.India.batInInnings(0, false);
+        const indiaFirst = this.India.totalRuns;
+
+        const lead = indiaFirst - bangladeshFirst;
+
+        console.log(`\nLead after 2 innings: India leads by ${lead}`);
+
+        this.Bangladesh.totalRuns = 0;
+        this.Bangladesh.wickets = 0;
+        this.Bangladesh.overs = 0;
+        this.Bangladesh.battingOrder = 0;
+        this.Bangladesh.players.forEach(p => { p.isOut = false; p.runs = 0; p.ballsFaced = 0; });
+
+        console.log("3rd Innings: Bangladesh Batting");
+        await this.Bangladesh.batInInnings(0, false);
+        const bangladeshSecond = this.Bangladesh.totalRuns;
+
+        const target = bangladeshFirst + bangladeshSecond - indiaFirst + 1;
+
+        this.India.totalRuns = 0;
+        this.India.wickets = 0;
+        this.India.overs = 0;
+        this.India.battingOrder = 0;
+        this.India.players.forEach(p => { p.isOut = false; p.runs = 0; p.ballsFaced = 0; });
+
+        console.log(`4th Innings: India needs ${target} runs to win`);
+        await this.India.batInInnings(bangladeshFirst + bangladeshSecond, true);
+
+        this.getResult(target);
+    }
+
+    getResult(target: number) {
+        console.log('Match Results:');
+        if (this.India.totalRuns >= target) {
+            console.log(`India won by ${10 - this.India.wickets} wickets.`);
+        } else {
+            const margin = target - this.India.totalRuns;
+            console.log(`Bangladesh won by ${margin} runs.`);
+        }
+    }
+}
+
+const match = new Match();
+match.playMatch();

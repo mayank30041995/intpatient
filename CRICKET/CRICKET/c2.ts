@@ -1,0 +1,421 @@
+let myTarget = 1500;
+
+class Player {
+  name: string;
+  isBatsman: boolean;
+  isHomeTeam: boolean;
+  runs: number;
+  ballsFaced: number;
+  isOut: boolean;
+  team: Object;
+  lastBallRuns: number;
+
+  constructor(
+    name: string,
+    isBatsman: boolean,
+    isHomeTeam: boolean = false,
+    team: Object,
+  ) {
+    this.name = name;
+    this.isBatsman = isBatsman;
+    this.isHomeTeam = isHomeTeam;
+    this.runs = 0;
+    this.ballsFaced = 0;
+    this.isOut = false;
+    this.team = team;
+    this.lastBallRuns = 0;
+  }
+
+  async bat(): Promise<void> {
+    if (this.isBatsman) {
+      const runOptions = [0, 1, 2, 3, 4, 6];
+      const probabilities = [75, 14, 5, 0.2, 3.6, 2.2];
+
+      const randomPick = Math.random() * 100;
+
+      let cumulativeProbability = 0;
+
+      for (let i = 0; i < runOptions.length; i++) {
+        cumulativeProbability += probabilities[i];
+
+        if (randomPick < cumulativeProbability) {
+          this.lastBallRuns = runOptions[i];
+          this.runs += runOptions[i];
+          break;
+        }
+      }
+
+      let FOW = this.isHomeTeam ? 0.011 : 0.011;
+
+      if (Math.random() < FOW) {
+        this.isOut = true;
+        console.log(`${this.name} is OUT! ❌`);
+      }
+
+      if ((this as any).team["wickets"] > 8) {
+        if (Math.random() < 0.02) {
+          this.isOut = true;
+          console.log(`${this.name} is OUT! ❌`);
+        }
+      }
+
+      this.ballsFaced++;
+
+      console.log(
+        `${this.name} faces ${this.ballsFaced} balls and scores ${
+          this.lastBallRuns === 4
+            ? "✅ 4"
+            : this.lastBallRuns === 6
+              ? "✅ 6"
+              : this.lastBallRuns
+        } runs.`,
+      );
+    }
+  }
+
+  getTotalScore(): string {
+    return `${this.name}: ${this.runs} runs Of ${this.ballsFaced} ball`;
+  }
+
+  getBallFaced(): String {
+    return `${this.ballsFaced}`;
+  }
+}
+
+class Team {
+  name: string;
+  players: Player[] = [];
+  totalRuns: number;
+  wickets: number;
+  overs: number;
+  battingOrder: number;
+  indivisualScore = 0;
+
+  constructor(name: string) {
+    this.name = name;
+    this.totalRuns = 0;
+    this.wickets = 0;
+    this.overs = 0;
+    this.battingOrder = 0;
+    this.indivisualScore = 0;
+  }
+
+  getRunRate(overs: number, runs: number): string {
+    if (overs <= 0) {
+      return "0";
+    }
+
+    const runRate = runs / overs;
+    return runRate.toFixed(2);
+  }
+
+  addPlayer(player: Player) {
+    this.players.push(player);
+  }
+
+  showStatus() {
+    let completedOvers = Math.floor(this.overs);
+    let ballsInCurrentOver = Math.floor((this.overs % 1) * 6);
+    let currentOver = `${completedOvers}.${ballsInCurrentOver}`;
+
+    console.log(`\n${this.name}'s Current Status:`);
+
+    console.log(
+      `Total Runs: ${this.totalRuns}, Wickets: ${
+        this.wickets
+      }, Overs: ${currentOver}, Run Rate: ${this.getRunRate(
+        Number(currentOver),
+        this.totalRuns,
+      )}`,
+    );
+  }
+
+  async batInInnings(
+    target: number,
+    isSecondInnings: boolean,
+  ): Promise<boolean> {
+    let overRuns: number = 0;
+    let ballCountInOver: number = 0;
+
+    let strikerIndex = 0;
+    let nonStrikerIndex = 1;
+    let nextBatsmanIndex = 2;
+
+    while (nextBatsmanIndex <= this.players.length && this.wickets < 10) {
+      let striker = this.players[strikerIndex];
+      let nonStriker = this.players[nonStrikerIndex];
+
+      console.log(`Bowler bowls to ${striker.name}...`);
+
+      await new Promise((resolve) => setTimeout(resolve, 0));
+
+      await striker.bat();
+
+      console.log(striker.getTotalScore());
+
+      this.totalRuns += striker.lastBallRuns;
+
+      overRuns += striker.lastBallRuns;
+      console.table({
+        StrikerName: `${striker.name} - ${striker.runs} (${striker.ballsFaced})`,
+        NonStriker: `${nonStriker.name}- ${nonStriker.runs} (${nonStriker.ballsFaced})`,
+        Score: `${this.totalRuns}/${this.wickets} (${this.overs})`,
+      });
+
+      console.log("--------------------------------------------------");
+
+      if (striker.isOut) {
+        this.wickets++;
+
+        if (nextBatsmanIndex < this.players.length) {
+          strikerIndex = nextBatsmanIndex;
+          nextBatsmanIndex++;
+
+          console.log(`${this.players[strikerIndex].name} is the new striker.`);
+        } else {
+          break;
+        }
+      } else {
+        if (striker.lastBallRuns === 1 || striker.lastBallRuns === 3) {
+          let temp = strikerIndex;
+          strikerIndex = nonStrikerIndex;
+          nonStrikerIndex = temp;
+        }
+      }
+
+      if (!nonStriker.isOut && Math.random() < 0.0045) {
+        nonStriker.isOut = true;
+
+        console.log(`${nonStriker.name} is OUT while running! ❌`);
+
+        this.wickets++;
+
+        if (nextBatsmanIndex < this.players.length) {
+          nonStrikerIndex = nextBatsmanIndex;
+
+          console.log(
+            `${this.players[nonStrikerIndex].name} is the new non-striker.`,
+          );
+
+          nextBatsmanIndex++;
+        } else {
+          break;
+        }
+      }
+
+      ballCountInOver++;
+
+      if (this.totalRuns > target) {
+        console.log(`${this.name} has reached the target! 😁`);
+        return true;
+      }
+
+      if (ballCountInOver === 6) {
+        this.overs += 1;
+
+        console.log(`Over completed. Runs in this over: ${overRuns}`);
+
+        overRuns = 0;
+        ballCountInOver = 0;
+
+        let temp = strikerIndex;
+        strikerIndex = nonStrikerIndex;
+        nonStrikerIndex = temp;
+
+        this.showStatus();
+
+        if (isSecondInnings) {
+          console.log(
+            `---------------------Target score: ${target} runs & ${
+              target - this.totalRuns
+            } need's to win ---------------------`,
+          );
+        }
+
+        //Wait for 18 seconds while over completed
+        await new Promise((resolve) => setTimeout(resolve, 0));
+      }
+    }
+
+    console.log(
+      `${this.name} innings completed. Total Runs: ${this.totalRuns}, Wickets: ${this.wickets}`,
+    );
+
+    this.showStatus();
+
+    return false;
+  }
+
+  async simulateBall(striker: Player, nonStriker: Player) {
+    console.log(`Bowler bowls to ${striker.name}...`);
+
+    await new Promise((resolve) => setTimeout(resolve, 0)); // Simulate 15 second per ball
+
+    await striker.bat();
+
+    console.log(striker.getTotalScore());
+
+    if (striker.lastBallRuns === 1) {
+      let temp = striker;
+      striker = nonStriker;
+      nonStriker = temp;
+    }
+
+    if (Math.random() < 0.0045) {
+      nonStriker.isOut = true;
+      console.log(`${nonStriker.name} is OUT while running! ❌`);
+    }
+  }
+}
+
+class Match {
+  India: Team;
+  NewZealand: Team;
+  totalOvers: number;
+  maxBallsPerDay: number;
+  days: number;
+  targetScore: number;
+
+  constructor(targetScore: number) {
+    this.India = new Team("India");
+    this.NewZealand = new Team("NewZealand");
+    this.totalOvers = 90 * 5;
+    this.maxBallsPerDay = 90 * 6;
+    this.days = 5;
+    this.targetScore = targetScore;
+  }
+
+  createTeam(teamName: string, isIndia: boolean) {
+    const indiaBatsmen = [
+      "Yashaswi Jaiswal",
+      "KL Rahul",
+      "Shubman Gill (c)",
+      "Sai Sudharsan",
+      "Rishabh Pant",
+      "Washington Sundar",
+      "Dhruv Jurel",
+      "Nitish Kumar Reddy",
+      "Ravindra Jadeja",
+      "Mohammed Siraj",
+      "Jasprit Bumrah",
+    ];
+
+    const newZealandBatsman = [
+      "Tom Latham",
+      "Will Young",
+      "Kane Williamson",
+      "Daryl Mitchell",
+      "Tom Blundell",
+      "Glenn Phillips",
+      "Rachin Ravindra",
+      "Kyle Jamieson",
+      "Tim Southee",
+      "Ajaz Patel",
+      "Matt Henry",
+    ];
+
+    const team = isIndia ? this.India : this.NewZealand;
+
+    const batsmenNames = isIndia ? indiaBatsmen : newZealandBatsman;
+
+    batsmenNames.forEach((name) => {
+      let batsman = new Player(name, true, isIndia, team);
+      team.addPlayer(batsman);
+    });
+
+    return team;
+  }
+
+  async playMatch() {
+    this.createTeam("India", true);
+    this.createTeam("NewZealand", false);
+
+    for (let day = 1; day <= this.days; day++) {
+      console.log(`\nDay ${day} - India bats`);
+
+      console.log(`India's First Innings`);
+
+      let IndiaFinished = await this.India.batInInnings(
+        this.India.totalRuns ? this.India.totalRuns : this.targetScore,
+        false,
+      );
+
+      if (IndiaFinished) {
+        console.log("India has reached the target, match ends!");
+        break;
+      }
+
+      console.log(`NewZealand's First Innings`);
+
+      let NewZealandFinished = await this.NewZealand.batInInnings(
+        this.India.totalRuns ? this.India.totalRuns : this.targetScore,
+        true,
+      );
+
+      if (NewZealandFinished) {
+        console.log("NewZealand has reached the target, match ends!");
+        break;
+      }
+
+      console.log(`India's Second Innings`);
+      await this.India.batInInnings(this.targetScore, true);
+
+      console.log(`NewZealand's Second Innings`);
+      await this.NewZealand.batInInnings(this.targetScore, true);
+    }
+
+    this.getResult();
+  }
+
+  getResult() {
+    console.log("Match Results:");
+
+    if (this.India.totalRuns > this.NewZealand.totalRuns) {
+      console.log(
+        `Congratulations India won by ${
+          this.India.totalRuns - this.NewZealand.totalRuns
+        } runs`,
+      );
+    } else if (this.NewZealand.totalRuns > this.India.totalRuns) {
+      console.log(
+        `Congratulations NewZealand won by ${
+          10 - this.NewZealand.wickets
+        } wickets`,
+      );
+    } else {
+      console.log("It's a draw.");
+    }
+
+    console.log(
+      `India's Final Score: ${this.India.totalRuns} Runs, Wickets: ${this.India.wickets} (${this.India.overs} Overs)`,
+    );
+
+    console.log(
+      `NewZealand's Final Score: ${this.NewZealand.totalRuns} Runs, Wickets: ${this.NewZealand.wickets} (${this.NewZealand.overs} Overs)`,
+    );
+  }
+}
+
+const match = new Match(myTarget);
+
+match.playMatch().then(() => {
+  console.log("\n========== India SCORECARD ==========\n");
+
+  match.India.players.forEach((player) => {
+    console.log(
+      `${player.name} - ${player.runs} (${player.ballsFaced}) ${
+        player.isOut ? "OUT" : "NOT OUT"
+      }`,
+    );
+  });
+
+  console.log("\n========== NewZealand SCORECARD ==========\n");
+
+  match.NewZealand.players.forEach((player) => {
+    console.log(
+      `${player.name} - ${player.runs} (${player.ballsFaced}) ${
+        player.isOut ? "OUT" : "NOT OUT"
+      }`,
+    );
+  });
+});

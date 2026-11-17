@@ -1,0 +1,414 @@
+let myTarget = 1500;
+
+class Player {
+  name: string;
+  isBatsman: boolean;
+  isHomeTeam: boolean;
+  runs: number;
+  ballsFaced: number;
+  isOut: boolean;
+  team: Object;
+  // wickets: any
+
+  constructor(
+    name: string,
+    isBatsman: boolean,
+    isHomeTeam: boolean = false,
+    team: Object,
+  ) {
+    this.name = name;
+    this.isBatsman = isBatsman;
+    this.isHomeTeam = isHomeTeam;
+    this.runs = 0;
+    this.ballsFaced = 0;
+    this.isOut = false;
+    this.team = team;
+    // this.wickets = wickets
+  }
+
+  // Simulate a player's batting with weighted probabilities for runs
+  async bat(): Promise<void> {
+    if (this.isBatsman) {
+      // Weighted probabilities for runs:
+      const runOptions = [0, 1, 2, 3, 4, 6];
+      const probabilities = [75, 14, 5, 0.2, 3.6, 2.2]; // Probabilities in percentage
+
+      const randomPick = Math.random() * 100;
+
+      let cumulativeProbability = 0;
+
+      for (let i = 0; i < runOptions.length; i++) {
+        cumulativeProbability += probabilities[i];
+        if (randomPick < cumulativeProbability) {
+          this.runs = runOptions[i];
+          break;
+        }
+      }
+
+      // Chance of wicket based on 2.5% probability
+
+      // let FOW = Boolean(this.name) === this.isHomeTeam ? 0.011 : 0.010;
+      let FOW = this.isHomeTeam ? 0.011 : 0.011;
+      // console.log('this-object', FOW)
+      if (Math.random() < FOW) {
+        this.isOut = true;
+        console.log(`${this.name} is OUT! ❌`);
+      }
+
+      if ((this as any).team["wickets"] > 8) {
+        if (Math.random() < 0.02) {
+          this.isOut = true;
+          console.log(`${this.name} is OUT! ❌`);
+        }
+      }
+
+      this.ballsFaced++;
+      console.log(
+        `${this.name} faces ${this.ballsFaced} balls and scores ${this.runs === 4 ? "✅ 4" : this.runs === 6 ? "✅ 6" : this.runs} runs.`,
+      );
+    }
+  }
+
+  // Display batsman's total score
+  getTotalScore(): string {
+    return `${this.name}: ${this.runs} runs Of ${this.ballsFaced}"th ball`;
+  }
+
+  getBallFaced(): String {
+    return `${this.ballsFaced}`;
+  }
+}
+
+class Team {
+  name: string;
+  players: Player[] = [];
+  totalRuns: number;
+  wickets: number;
+  overs: number;
+  battingOrder: number; // Keeps track of the current batting player
+  indivisualScore = 0;
+
+  constructor(name: string) {
+    this.name = name;
+    this.totalRuns = 0;
+    this.wickets = 0;
+    this.overs = 0;
+    this.battingOrder = 0; // Index for batting order
+    this.indivisualScore = 0;
+  }
+
+  getRunRate(overs: number, runs: number): string {
+    if (overs <= 0) {
+      return "0";
+    }
+    const runRate = runs / overs;
+    return runRate.toFixed(2);
+  }
+
+  addPlayer(player: Player) {
+    this.players.push(player);
+  }
+
+  // Show current status of the match
+  showStatus() {
+    let completedOvers = Math.floor(this.overs);
+    let ballsInCurrentOver = Math.floor((this.overs % 1) * 6);
+    let currentOver = `${completedOvers}.${ballsInCurrentOver}`;
+
+    console.log(`\n${this.name}'s Current Status:`);
+    console.log(
+      `Total Runs: ${this.totalRuns}, Wickets: ${
+        this.wickets
+      }, Overs: ${currentOver}, Run Rate: ${this.getRunRate(
+        Number(currentOver),
+        this.totalRuns,
+      )}`,
+    );
+  }
+
+  // Simulate an innings for this team
+  async batInInnings(
+    target: number,
+    isSecondInnings: boolean,
+  ): Promise<boolean> {
+    let overRuns: number = 0;
+    let ballCountInOver: number = 0;
+
+    // Set up the first two batsmen (striker and non-striker)
+    let strikerIndex = this.battingOrder;
+    let nonStrikerIndex = this.battingOrder + 1;
+
+    // Ensure striker and non-striker are different players
+    if (strikerIndex === nonStrikerIndex) {
+      nonStrikerIndex++;
+    }
+    //
+    while (this.battingOrder < this.players.length && this.wickets < 10) {
+      let striker = this.players[strikerIndex];
+      let nonStriker = this.players[nonStrikerIndex];
+
+      await this.simulateBall(striker, nonStriker); // Simulate a ball being bowled
+
+      // After each ball, check if striker or non-striker gets out and adjust batting order
+      if (striker.isOut) {
+        this.wickets++; // Increment the wicket count
+        this.battingOrder++;
+        this.indivisualScore = 0;
+        if (this.battingOrder < this.players.length) {
+          console.log(`${striker.name} is OUT! ❌`);
+          console.log(
+            `${this.players[this.battingOrder].name} is the new striker.`,
+          );
+          strikerIndex = this.battingOrder; // Replace striker
+        }
+      }
+
+      // If the non-striker is out, swap positions with the striker and replace non-striker
+      if (nonStriker.isOut) {
+        this.wickets++; // Increment the wicket count
+        this.battingOrder++;
+        if (this.battingOrder < this.players.length) {
+          console.log(`${nonStriker.name} is OUT! ❌`);
+          console.log(
+            `${this.players[this.battingOrder].name} is the new non-striker. 🙂`,
+          );
+          nonStrikerIndex = this.battingOrder; // Replace non-striker
+        }
+      }
+
+      // Update total runs after each ball
+      this.totalRuns += striker.runs;
+      this.indivisualScore += striker.runs;
+
+      console.log("#################################################");
+      console.log(
+        `${striker.name} (striker) and ${nonStriker.name} (non-striker). Total Score: ${this.totalRuns}, Wickets: ${this.wickets},${striker.name} ---> ${this.indivisualScore} (${striker.getBallFaced()})`,
+      );
+
+      // Check if the target has been reached
+      if (this.totalRuns > target) {
+        console.log(`${this.name} has reached the target! 😁`);
+        return true; // Target reached, stop the match
+      }
+
+      // Track runs for the current over
+      overRuns += striker.runs;
+      ballCountInOver++;
+
+      // Every time 6 balls are bowled, it's the end of an over
+      if (ballCountInOver === 6) {
+        this.overs += 1; // Increment overs
+        console.log(`Over completed. Runs in this over: ${overRuns}`);
+        overRuns = 0; // Reset for the next over
+        ballCountInOver = 0; // Reset ball count for the next over
+        this.showStatus(); // Show updated status after the over
+
+        // Display batsman total score after every over
+        console.log(
+          `---------------------${striker.name}'s Total Score:  ${this.indivisualScore}  ---------------------`,
+        );
+        //  console.log(
+        //    `${nonStriker.name}'s Total Score: ${nonStriker.getTotalScore()}`
+        //  );
+
+        // If it's the second innings, display the target score
+        if (isSecondInnings) {
+          console.log(
+            `---------------------Target score: ${target} runs & ${
+              target - (this.totalRuns - 1)
+            } need's to win ---------------------`,
+          );
+        }
+        //Wait for 15 seconds while over completed
+        await new Promise((resolve) => setTimeout(resolve, 18000));
+      }
+    }
+
+    console.log(
+      `${this.name} innings completed. Total Runs: ${this.totalRuns}, Wickets: ${this.wickets}`,
+    );
+    this.showStatus(); // Final status after innings
+    return false; // Target not reached yet
+  }
+
+  async simulateBall(striker: Player, nonStriker: Player) {
+    let onBatter = striker;
+    console.log(`Bowler bowls to ${onBatter.name}...`);
+    await new Promise((resolve) => setTimeout(resolve, 15000)); // Simulate 5.5 second per ball
+
+    // Simulate run or wicket outcome
+    await striker.bat();
+    //
+    // Display batsman's total score after the ball is faced
+    console.log(striker.getTotalScore());
+    //
+    // If the striker scores 1 run, swap the striker and non-striker
+    if (striker.runs === 1) {
+      // Swap striker and non-striker
+      let temp = striker;
+      striker = nonStriker;
+      nonStriker = temp;
+
+      //    console.log(
+      //    `Strike changes. Now, ${striker.name} is the striker and ${nonStriker.name} is the non-striker.`
+      //   );
+      onBatter = striker;
+
+      // Bowler now bowls to the new striker (who was the non-striker previously)
+      //  console.log(`Bowler bowls to new striker: ${striker.name}`);
+    }
+
+    // Non-striker might get out while running
+
+    // console.log('this-object', this)
+    if (Math.random() < 0.0045) {
+      // 1% chance of non-striker getting out
+      nonStriker.isOut = true;
+      console.log(`${nonStriker.name} is OUT while running! ❌`);
+    }
+  }
+}
+
+// Simulate the match
+class Match {
+  Australia: Team;
+  SouthAfrica: Team;
+  totalOvers: number;
+  maxBallsPerDay: number;
+  days: number;
+  targetScore: number;
+
+  constructor(targetScore: number) {
+    this.Australia = new Team("Australia");
+    this.SouthAfrica = new Team("SouthAfrica");
+    this.totalOvers = 90 * 5; // 90 overs a day, 5 days
+    this.maxBallsPerDay = 90 * 6; // Max balls per day (6 balls per over)
+    this.days = 5; // Number of days in the test match
+    this.targetScore = targetScore; // Set target score for the match
+  }
+
+  createTeam(teamName: string, isAustralia: boolean) {
+    const australiaBatsmen = [
+      "Usman Khawaja",
+      "Jake Weatherald",
+      "Marnus Labuschagne",
+      "Steve Smith",
+      "Travis Head",
+      "Cameron Green",
+      "Alex Carey",
+      "Mitchell Starc",
+      "Nathan Lyon",
+      "Brendan Doggett",
+      "Scott Boland",
+    ];
+
+    const southAfricaBatsmen = [
+      "Aiden Markram",
+      "Tony de Zorzi",
+      "David Bedingham",
+      "Temba Bavuma",
+      "Ryan Rickelton",
+      "Tristan Stubbs",
+      "Kyle Verreynne",
+      "Wiaan Mulder",
+      "Marco Jansen",
+      "Kagiso Rabada",
+      "Corbin Bosch",
+    ];
+
+    const team = isAustralia ? this.Australia : this.SouthAfrica;
+
+    // Adding batsmen for Australia or SouthAfrica
+    const batsmenNames = isAustralia ? australiaBatsmen : southAfricaBatsmen;
+
+    // Adding main batsmen
+    batsmenNames.forEach((name) => {
+      let batsman = new Player(name, true, isAustralia, team);
+      team.addPlayer(batsman);
+    });
+
+    return team;
+  }
+
+  async playMatch() {
+    let AustraliaBattingOrder = this.createTeam("Australia", true);
+    let SouthAfricaBattingOrder = this.createTeam("SouthAfrica", false);
+
+    for (let day = 1; day <= this.days; day++) {
+      console.log(`\nDay ${day} - Australia bats`);
+
+      // First innings: Australia bats
+      console.log(`Australia's First Innings`);
+      let AustraliaFinished = await this.Australia.batInInnings(
+        this.Australia.totalRuns ? this.Australia.totalRuns : this.targetScore,
+        false,
+      );
+
+      if (AustraliaFinished) {
+        console.log("Australia has reached the target, match ends!");
+
+        break; // Stop the match if Australia surpasses the target
+      }
+
+      // First innings: SouthAfrica bats (Australia's first innings ends)
+      console.log(`SouthAfrica's First Innings`);
+      let SouthAfricaFinished = await this.SouthAfrica.batInInnings(
+        this.Australia.totalRuns ? this.Australia.totalRuns : this.targetScore,
+        true,
+      );
+
+      if (SouthAfricaFinished) {
+        console.log("SouthAfrica has reached the target, match ends!");
+        break; // Stop the match if SouthAfrica surpasses the target
+      }
+
+      // Second innings for both teams (if match has not been concluded)
+      console.log(`Australia's Second Innings`);
+      await this.Australia.batInInnings(this.targetScore, true);
+
+      console.log(`SouthAfrica's Second Innings`);
+      await this.SouthAfrica.batInInnings(this.targetScore, true);
+    }
+
+    this.getResult();
+  }
+
+  getResult() {
+    console.log("Match Results:");
+    if (this.Australia.totalRuns > this.SouthAfrica.totalRuns) {
+      console.log(
+        `Congratulations Australia won by ${
+          this.Australia.totalRuns - this.SouthAfrica.totalRuns
+        } runs`,
+      );
+    } else if (this.SouthAfrica.totalRuns > this.Australia.totalRuns) {
+      console.log(
+        `Congratulations SouthAfrica won by ${10 - this.SouthAfrica.wickets} wickets`,
+      );
+    } else {
+      console.log("It's a draw.");
+    }
+
+    console.log(
+      `Australia's Final Score: ${this.Australia.totalRuns} Runs, Wickets: ${this.Australia.wickets}`,
+    );
+    console.log(
+      `SouthAfrica's Final Score: ${this.SouthAfrica.totalRuns} Runs, Wickets: ${this.SouthAfrica.wickets}`,
+    );
+  }
+}
+
+// Run the match with a target score (example: 300)
+const match = new Match(myTarget);
+match.playMatch().then(() => {
+  console.log(
+    `Australia's Final Score: ${match.Australia.totalRuns} Runs, Wickets: ${match.Australia.wickets},  Overs: ${match.Australia.overs}`,
+  );
+  console.log(
+    `SouthAfrica's Final Score: ${match.SouthAfrica.totalRuns} Runs, Wickets: ${match.SouthAfrica.wickets},  Overs: ${match.SouthAfrica.overs}`,
+  );
+
+  // console.log("ScoreCard", match.Australia, match.SouthAfrica)
+});
+
+// npx ts-node index.ts
