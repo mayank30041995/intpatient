@@ -45,7 +45,7 @@ class Player {
         }
       }
 
-      let FOW = this.isHomeTeam ? 0.011 : 0.013;
+      let FOW = this.isHomeTeam ? 0.011 : 0.012;
 
       if (Math.random() < FOW) {
         this.isOut = true;
@@ -366,57 +366,57 @@ class Team {
 }
 
 class Match {
-  SouthAfrica: Team;
-  India: Team;
+  England: Team;
+  NewZealand: Team;
   totalOvers: number;
   maxBallsPerDay: number;
   days: number;
   targetScore: number;
 
   constructor(targetScore: number) {
-    this.SouthAfrica = new Team("SouthAfrica");
-    this.India = new Team("India");
+    this.England = new Team("England");
+    this.NewZealand = new Team("NewZealand");
     this.totalOvers = 90 * 5;
     this.maxBallsPerDay = 90 * 6;
     this.days = 5;
     this.targetScore = targetScore;
   }
 
-  createTeam(teamName: string, isSouthAfrica: boolean) {
-    const southAfricaBatsmen = [
-      "Aiden Markram",
-      "Marques Ackerman",
-      "David Bedingham",
-      "Temba Bavuma (c)",
-      "Matthew Breetzke",
-      "Ryan Rickelton",
-      "Wiaan Mulder",
-      "Marco Jansen",
-      "Simon Harmer",
-      "Gerald Coetzee",
-      "Kagiso Rabada",
+  createTeam(teamName: string, isEngland: boolean) {
+    const englandBatsmen = [
+      "Ben Duckett",
+      "Emilio Gay",
+      "Jordan Cox",
+      "Joe Root",
+      "Harry Brook",
+      "Dan Lawrence",
+      "Jamie Smith",
+      "Gus Atkinson",
+      "Ollie Robinson",
+      "Jofra Archer",
+      "Josh Tongue",
     ];
 
-    const indiaBatsmen = [
-      "Yashaswi Jaiswal",
-      "KL Rahul",
-      "Shubman Gill (c)",
-      "Devdutt Padikkal",
-      "Rishabh Pant",
-      "Washington Sundar",
-      "Dhruv Jurel",
-      "Nitish Kumar Reddy",
-      "Mohammed Siraj",
-      "Gurnoor Brar",
-      "Jasprit Bumrah",
+    const newZealandBatsmen = [
+      "Tom Latham",
+      "Devon Conway",
+      "Henry Nicholls",
+      "Rachin Ravindra",
+      "Daryl Mitchell",
+      "Tom Blundell",
+      "Glenn Phillips",
+      "Nathan Smith",
+      "Kyle Jamieson",
+      "Matt Henry",
+      "Jacob Duffy",
     ];
 
-    const team = isSouthAfrica ? this.SouthAfrica : this.India;
+    const team = isEngland ? this.England : this.NewZealand;
 
-    const batsmenNames = isSouthAfrica ? southAfricaBatsmen : indiaBatsmen;
+    const batsmenNames = isEngland ? englandBatsmen : newZealandBatsmen;
 
     batsmenNames.forEach((name) => {
-      let batsman = new Player(name, true, isSouthAfrica, team);
+      let batsman = new Player(name, true, isEngland, team);
       team.addPlayer(batsman);
     });
 
@@ -424,16 +424,16 @@ class Match {
   }
 
   async playMatch() {
-    this.createTeam("SouthAfrica", true);
-    this.createTeam("India", false);
+    this.createTeam("England", true);
+    this.createTeam("NewZealand", false);
 
-    console.log(`SouthAfrica's First Innings`);
+    console.log(`England's First Innings`);
 
-    await this.SouthAfrica.batInInnings(this.targetScore, false);
+    await this.England.batInInnings(this.targetScore, false);
 
-    console.log(`India's First Innings`);
+    console.log(`NewZealand's First Innings`);
 
-    await this.India.batInInnings(this.SouthAfrica.totalRuns, true);
+    await this.NewZealand.batInInnings(this.England.totalRuns, true);
 
     this.getResult();
   }
@@ -441,35 +441,35 @@ class Match {
   getResult() {
     console.log("Match Results:");
 
-    if (this.SouthAfrica.totalRuns > this.India.totalRuns) {
+    if (this.England.totalRuns > this.NewZealand.totalRuns) {
       console.log(
-        `Congratulations SouthAfrica won by ${
-          this.SouthAfrica.totalRuns - this.India.totalRuns
+        `Congratulations England won by ${
+          this.England.totalRuns - this.NewZealand.totalRuns
         } runs`,
       );
-    } else if (this.India.totalRuns > this.SouthAfrica.totalRuns) {
+    } else if (this.NewZealand.totalRuns > this.England.totalRuns) {
       console.log(
-        `Congratulations India won by ${10 - this.India.wickets} wickets`,
+        `Congratulations NewZealand won by ${10 - this.NewZealand.wickets} wickets`,
       );
     } else {
       console.log("It's a draw.");
     }
 
     console.log(
-      `SouthAfrica's Final Score: ${this.SouthAfrica.totalRuns} Runs, Wickets: ${
-        this.SouthAfrica.wickets
-      } (${this.SouthAfrica.getOvers()} Overs) | Run Rate: ${this.SouthAfrica.getRunRate(
-        Number(this.SouthAfrica.getOvers()),
-        this.SouthAfrica.totalRuns,
+      `England's Final Score: ${this.England.totalRuns} Runs, Wickets: ${
+        this.England.wickets
+      } (${this.England.getOvers()} Overs) | Run Rate: ${this.England.getRunRate(
+        Number(this.England.getOvers()),
+        this.England.totalRuns,
       )}`,
     );
 
     console.log(
-      `India's Final Score: ${this.India.totalRuns} Runs, Wickets: ${
-        this.India.wickets
-      } (${this.India.getOvers()} Overs) | Run Rate: ${this.India.getRunRate(
-        Number(this.India.getOvers()),
-        this.India.totalRuns,
+      `NewZealand's Final Score: ${this.NewZealand.totalRuns} Runs, Wickets: ${
+        this.NewZealand.wickets
+      } (${this.NewZealand.getOvers()} Overs) | Run Rate: ${this.NewZealand.getRunRate(
+        Number(this.NewZealand.getOvers()),
+        this.NewZealand.totalRuns,
       )}`,
     );
   }
@@ -478,9 +478,9 @@ class Match {
 const match = new Match(myTarget);
 
 match.playMatch().then(() => {
-  console.log("\n========== SouthAfrica SCORECARD ==========\n");
+  console.log("\n========== England SCORECARD ==========\n");
 
-  match.SouthAfrica.players.forEach((player) => {
+  match.England.players.forEach((player) => {
     console.log(
       `${player.name} - ${player.runs} (${player.ballsFaced}) ${
         player.isOut ? "OUT" : "NOT OUT"
@@ -488,9 +488,9 @@ match.playMatch().then(() => {
     );
   });
 
-  console.log("\n========== India SCORECARD ==========\n");
+  console.log("\n========== NewZealand SCORECARD ==========\n");
 
-  match.India.players.forEach((player) => {
+  match.NewZealand.players.forEach((player) => {
     console.log(
       `${player.name} - ${player.runs} (${player.ballsFaced}) ${
         player.isOut ? "OUT" : "NOT OUT"
@@ -498,9 +498,9 @@ match.playMatch().then(() => {
     );
   });
 
-  console.log("\n========== SouthAfrica FALL OF WICKETS ==========\n");
-  match.SouthAfrica.showFallOfWickets();
+  console.log("\n========== England FALL OF WICKETS ==========\n");
+  match.England.showFallOfWickets();
 
-  console.log("\n========== India FALL OF WICKETS ==========\n");
-  match.India.showFallOfWickets();
+  console.log("\n========== NewZealand FALL OF WICKETS ==========\n");
+  match.NewZealand.showFallOfWickets();
 });

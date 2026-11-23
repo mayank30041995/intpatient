@@ -1282,6 +1282,69 @@ const englandBatsmen = [
   "Brydon Carse"   
 ];
 
+const englandTestSquad = [
+  "Joe Root",
+  "Jofra Archer",
+  "Gus Atkinson",
+  "Sonny Baker",
+  "Jacob Bethell",
+  "Harry Brook",
+  "Sam Cook",
+  "Jordan Cox",
+  "Ben Duckett",
+  "Emilio Gay",
+  "Dan Lawrence",
+  "Liam Patterson-White",
+  "Ollie Robinson",
+  "Jamie Smith",
+  "Josh Tongue"
+];
+
+
+const englandBatsmen = [
+  "Ben Duckett",
+  "Emilio Gay",
+  "Jordan Cox",
+  "Joe Root",
+  "Harry Brook",
+  "Dan Lawrence",
+  "Jamie Smith",
+  "Gus Atkinson",
+  "Ollie Robinson",
+  "Jofra Archer",
+  "Josh Tongue"
+];
+
+const newZealandTestSquad = [
+  "Tom Latham",
+  "Tom Blundell",
+  "Devon Conway",
+  "Jacob Duffy",
+  "Dean Foxcroft",
+  "Matt Henry",
+  "Kyle Jamieson",
+  "Daryl Mitchell",
+  "Henry Nicholls",
+  "Glenn Phillips",
+  "Rachin Ravindra",
+  "Nathan Smith",
+  "Blair Tickner",
+  "Will Young"
+];
+
+const newZealandBatsmen = [
+  "Tom Latham",
+  "Devon Conway",
+  "Henry Nicholls",
+  "Rachin Ravindra",
+  "Daryl Mitchell",
+  "Tom Blundell",
+  "Glenn Phillips",
+  "Nathan Smith",
+  "Kyle Jamieson",
+  "Matt Henry",
+  "Jacob Duffy"
+];
 
 
 const bangladeshBatsman = [
